@@ -1,5 +1,10 @@
 {{ define "main" }}
-<div id="home-jumbotron" class="jumbotron text-center">
-  <h1 class="title">{{ .Site.Title }}</h1>
-</div>
+<ul>
+    {{range .Site.RegularPages}}
+    <li>
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </li>
+    {{ end }}
+</ul>
+
 {{ end }}

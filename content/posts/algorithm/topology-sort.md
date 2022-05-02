@@ -1,6 +1,8 @@
 ---
 author: Guangzong Chen
-title: Directed acyclic graph
+title: Topology Sort
+categories: [Algorithm]
+tags: [Algorithm]
 ---
 
 ## Graph 
