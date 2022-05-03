@@ -9,9 +9,7 @@
         <div id="main-wrapper">
             <div id="main"> 
                 <div class="row">
-                    <div id="post-wrapper" class="col-12 col-lg-11 col-xl-8">
                             {{- block "main" . }}{{- end }}
-                    </div>
 
                     <div id="panel-wrapper" class="col-xl-3 pl-2 text-muted topbar-down"> 
                         {{- partial "panel.html" . -}}
@@ -20,6 +18,8 @@
                 </div>
                 {{- partial "footer.html" . -}}
         </div>
+        <a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button" style="display: inline;"> <i class="fas fa-angle-up"></i> </a>
+
     </div>
     </body>
 </html>

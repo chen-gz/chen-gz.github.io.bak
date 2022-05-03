@@ -15,14 +15,14 @@ enableGitInfo=true
 
 
 [menu]
-  #[[menu.main]]
-    #name = "Home"
-    #pre = "home"
-    #url = "/"
-    #weight = 1
+  [[menu.main]]
+    name = "Home"
+    pre = "home"
+    url = "/"
+    weight = 1
   [[menu.main]]
     name = "Archive"
-    #pre = "pen-tool"
+    pre = "pen-tool"
     url = "/Archive/"
     weight = 2
   [[menu.main]]
@@ -34,4 +34,9 @@ enableGitInfo=true
     name = "Categories"
     pre = "folder"
     url = "/categories/"
+    weight = 4
+  [[menu.main]]
+    name = "About"
+    pre = "folder"
+    url = "/about/"
     weight = 4
