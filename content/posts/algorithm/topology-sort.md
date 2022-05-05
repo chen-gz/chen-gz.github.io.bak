@@ -1,13 +1,14 @@
 ---
 author: Guangzong Chen
 title: Topology Sort
+date: 2022-05-05
 categories: [Algorithm]
 tags: [Algorithm]
 ---
 
 ## Graph 
 
-The graph has 3 member variables. `edges` store all edges. To retrieve an edge the index of the edge is required. So there is an another member variables `g` to store the index of the edges. The content in `g[i]` are the edges index which start from node `i`.  The member variable `n` is  number of node. The node index in this template is [0, n-1].
+The graph has 3 member variables. `edges` store all edges. To retrieve an edge the index of the edge is required. So there are other member variables `g` to store the index of the edges. The content in `g[i]` are the edges index which start from node `i`.  The member variable `n` is  number of node. The node index in this template is [0, n-1].
 
 The edge have three attribution, `from`, `to`, `cost`. The `cost` is weight of the edge. 
 
