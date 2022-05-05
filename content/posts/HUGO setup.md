@@ -22,7 +22,7 @@ I deploy my blog in GitLab. So I need to set up docker for Hugo in order to auto
 
 The docker file is shown as the following block.
 
-~~~ dockerfile
+~~~
 FROM pandoc/ubuntu
 RUN apt update && apt -y install hugo
 ENTRYPOINT [""]
