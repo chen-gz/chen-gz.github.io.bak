@@ -8,7 +8,7 @@
         <div class="post-content">
             <div id="archives" class="pl-xl-2">
             {{$previous_year := ""}}
-            {{range $i, $p := .RegularPages}}
+            {{range $i, $p := .Pages}}
             {{$this_year := (.PublishDate.Format "2006")}}
             {{$this_month := (.PublishDate.Format "01")}}
             {{$this_day := (.PublishDate.Format "02")}}
