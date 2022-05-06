@@ -1,5 +1,5 @@
 ---
-title: Replace With the Previous, Minimize
+title: 787E Replace With the Previous, Minimize
 Date: 2022-05-05
 ---
 
