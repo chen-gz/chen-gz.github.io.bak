@@ -2,7 +2,6 @@
 author: Corgi
 date: 2019-02-15
 title: prime numbers 
-category: Algorithm
 ---
 
 

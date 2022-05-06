@@ -33,9 +33,8 @@ Recursive version will take more space.
 
 #### FFT
 
-<details> <summary> view code </summary> 
-
-~~~cpp
+<details> 
+``` cpp
 using cd = complex<double>;
 const double PI = acos(-1);
 
@@ -64,14 +63,13 @@ void fft(vector<cd> & a, bool invert) {
         w *= wn;
     }
 }
-~~~
+```
 </details>
 
 #### multiply two polynomials
 
-<details> <summary> view code </summary> 
-
-~~~cpp
+<details>
+``` cpp
 vector<int> multiply(vector<int> const& a, vector<int> const& b) {
     vector<cd> fa(a.begin(), a.end()), fb(b.begin(), b.end());
     int n = 1;
@@ -91,14 +89,13 @@ vector<int> multiply(vector<int> const& a, vector<int> const& b) {
         result[i] = round(fa[i].real());
     return result;
 }
-~~~
+```
 </details>
 
 ### in-place version
 
-<details> <summary> view code </summary> 
-
-~~~cpp
+<details> 
+``` cpp
 using cd = complex<double>;
 const double PI = acos(-1);
 
@@ -134,7 +131,7 @@ void fft(vector<cd> & a, bool invert) {
             x /= n;
     }
 }
-~~~
+```
 </details>
 
 

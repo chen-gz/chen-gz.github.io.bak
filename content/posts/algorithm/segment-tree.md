@@ -1,6 +1,8 @@
 ---
 title: Segment Tree
 author: Guangzong Chen
+categories: [Algorithm]
+tags: [Algorithm]
 ---
 
 ## Background

@@ -1,7 +1,7 @@
 ---
 author: Guangzong Chen
 title: Topology Sort
-date: 2022-05-05
+date: 2022-05-04
 categories: [Algorithm]
 tags: [Algorithm]
 ---
@@ -13,9 +13,7 @@ The graph has 3 member variables. `edges` store all edges. To retrieve an edge t
 The edge have three attribution, `from`, `to`, `cost`. The `cost` is weight of the edge. 
 
 <details>
-    <summary>show code</summary>
-
-~~~ { #id .cpp .numberLines}
+``` cpp
 template <typename T> class graph {
   public:
     struct edge {
@@ -32,8 +30,7 @@ template <typename T> class graph {
     
     virtual int add(int from, int to, T cost) = 0;
 };
-
-~~~
+```
 </details>
 
 ## Directly acyclic graph
@@ -45,9 +42,7 @@ The class `digraph `is inherit from graph. The function `add`  in the parent cla
 The function `reverse` will will change the direction for all edge and return an reversed `diagraph`.
 
 <details>
-    <summary> show code </summary>
-
-~~~ { #id .cpp .numberLines}
+``` cpp
 template <typename T> class digraph : public graph<T> {
   public:
     using graph<T>::edges;
@@ -72,7 +67,7 @@ template <typename T> class digraph : public graph<T> {
         return rev;
     }
 };
-~~~
+```
 </details>
 
 ## Topological Sort
@@ -127,9 +122,7 @@ template <typename T> vector<int> find_topsort(const digraph<T> &g) {
 ## Whole code [^3]
 
 <details>
-    <summary> show code </summary>
-
-~~~ { #id .cpp .numberLines}
+``` cpp
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -202,7 +195,7 @@ template <typename T> vector<int> find_topsort(const digraph<T> &g) {
     }
     return x;
 }
-~~~
+```
 </details>
 
 
