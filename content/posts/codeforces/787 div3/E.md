@@ -13,6 +13,7 @@ Now the string can divide into two parts. The first part is we can get all `a` w
 
 Support first part is $s1$, the second part is $s2$. the whole string is $s1 + s2$.  When we minimize the first part we should replace the character which ranges from $a$ to $max(s1)$ to $a$. Because we perform from the largest element. For the second part, we just optimize for the first element. Suppose  we have $k2$ operations left. We need to replace the character range from $s2[0] - k2$ to $s2[0]$ to $s2[0] - k2$. 
 
+<details>
 ```cpp
 //#include <bits/stdc++.h>
 #include <iostream>
@@ -75,8 +76,12 @@ int32_t main() {
         cout << s << endl;
     }
 }
-
 ```
+</details>
+
+
+
+
 
 
 
