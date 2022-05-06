@@ -9,7 +9,7 @@ https://codeforces.com/contest/1670/problem/D
 
 ## Solution
 
-There are 3 kinds for lines \, /, —. When we add a new line to the graph it will across with two other different type of line. Each cross will increase 2 equilateral triangles. 
+There are 3 kinds for lines \\, /, —. When we add a new line to the graph it will across with two other different type of line. Each cross will increase 2 equilateral triangles. 
 
 <details>
 ``` cpp
