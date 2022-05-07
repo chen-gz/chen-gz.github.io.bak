@@ -33,7 +33,7 @@ Recursive version will take more space.
 
 #### FFT
 
-<details> 
+<details>
 ``` cpp
 using cd = complex<double>;
 const double PI = acos(-1);
@@ -50,7 +50,7 @@ void fft(vector<cd> & a, bool invert) {
     }
     fft(a0, invert);
     fft(a1, invert);
-
+    
     double ang = 2 * PI / n * (invert ? -1 : 1);
     cd w(1), wn(cos(ang), sin(ang));
     for (int i = 0; 2 * i < n; i++) {
@@ -83,7 +83,7 @@ vector<int> multiply(vector<int> const& a, vector<int> const& b) {
     for (int i = 0; i < n; i++)
         fa[i] *= fb[i];
     fft(fa, true);
-
+    
     vector<int> result(n);
     for (int i = 0; i < n; i++)
         result[i] = round(fa[i].real());
@@ -107,11 +107,11 @@ void fft(vector<cd> & a, bool invert) {
         for (; j & bit; bit >>= 1)
             j ^= bit;
         j ^= bit;
-
+    
         if (i < j)
             swap(a[i], a[j]);
     }
-
+    
     for (int len = 2; len <= n; len <<= 1) {
         double ang = 2 * PI / len * (invert ? -1 : 1);
         cd wlen(cos(ang), sin(ang));
@@ -125,7 +125,7 @@ void fft(vector<cd> & a, bool invert) {
             }
         }
     }
-
+    
     if (invert) {
         for (cd & x : a)
             x /= n;
