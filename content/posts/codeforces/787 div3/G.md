@@ -1,6 +1,6 @@
 ---
 title: 787G Sorting Pancakes
-Date: 2022-05-06
+Date: 2022-05-07
 ---
 
 ## Problem link
@@ -37,4 +37,50 @@ $$
 
 
 Thus we just need to maintain a min value for $dp[i+1][m-1][sum+m-1]$ is good enough to calculate the transfer function by 1 calculation. Now the time complexity become $O(nm^2)$ . This is good enough for pass the judgment.
+
+<details>
+``` cpp
+    #include <bits/stdc++.h>
+#define endl "\n"
+using namespace std;
+#define fastio cin.tie(0), cout.tie(0), ios_base::sync_with_stdio(0);
+int32_t main() {
+    fastio;
+    int n, m;
+    cin >> n >> m;
+
+    vector<int> a(n + 1);
+    vector<int> sum(n + 1);
+    for (int i = 1; i <= n; i++) {
+        cin >> a[i];
+        sum[i] = sum[i - 1] + a[i];
+    }
+    const int INF = 1e8;
+    uint32_t dp[n + 1][m + 1][m + 1];
+    for (int i = 0; i < n + 1; i++) {
+        for (int j = 0; j < m + 1; j++)
+            for (int k = 0; k < m + 1; k++) {
+                dp[i][j][k] = INF;
+            }
+    }
+    for (int i = 0; i <= m; i++)
+        dp[1][i][i] = abs(a[1] - i);
+    for (int i = 1; i < n; i++) {
+        for (int j = 0; j <= m; j++) {
+            uint32_t mn = INF;
+            for (int k = m; k >= 0; k--) {
+                 mn = min(mn, dp[i][k][j]);
+                if (j+k <=m)
+                dp[i + 1][k][j + k] = min(dp[i + 1][k][j + k], mn + abs(sum[i + 1] - (j+k)));
+            }
+        }
+    }
+    uint32_t ans = -1;
+    for (int i = 0; i <= m; i++) {
+        ans = min(ans, dp[n][i][m]);
+    }
+    cout << ans << endl;
+}
+```
+</details>
 
