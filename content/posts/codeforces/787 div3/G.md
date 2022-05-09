@@ -30,9 +30,12 @@ notice
 $dp[i+1][m][sum+m]$ can only transfer from $dp[i][m][sum]$, because the last element need to grater than $m$ in $dp[i]$ . Let's consider for $dp[i+1][m-1][sum + m - 1]$. 
 
 $dp[i+1][m-1][sum + m - 1]$ can transfer from $dp[i][m][sum]$ and $dp[i][m-1][sum]$. Now we notice we need minimum value for $dp[i][m][sum]$ and $dp[i][m-1][sum]$. Then we calculate the transfer process in one calculation. The transfer for $dp[i+1][m-1][sum + m - 1]$ is 
+
 $$
-dp[i][m-1][sum] + sum[i+1] - (m-1) \rightarrow  dp[i+1][m-1][sum+m-1] \\\
+\begin{align}
+dp[i][m-1][sum] + sum[i+1] - (m-1) \rightarrow  dp[i+1][m-1][sum+m-1] \\
 dp[i][m][sum] + sum[i+1] - (m-1) \rightarrow  dp[i+1][m-1][sum+m-1]
+\end{align}
 $$
 
 
@@ -40,7 +43,7 @@ Thus we just need to maintain a min value for $dp[i+1][m-1][sum+m-1]$ is good en
 
 <details>
 ``` cpp
-    #include <bits/stdc++.h>
+#include <bits/stdc++.h>
 #define endl "\n"
 using namespace std;
 #define fastio cin.tie(0), cout.tie(0), ios_base::sync_with_stdio(0);
@@ -83,5 +86,3 @@ int32_t main() {
 }
 ```
 </details>
-```
-
