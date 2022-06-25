@@ -15,7 +15,7 @@ For this problem, we only need position of $x$ and position of $y$ separately. W
 So use fenwick tree to store the presum of $x$ and $y$. The value in each node only 1 and 0. Stand for has $x$ or haven't $x$. Then the answer just the $presum(x2) - presum(x1) == x2 - x1 || presum(y2) - presum(y1) == y2 - y1$ 
 
 <details>
-```
+``` cpp
 #include <bits/stdc++.h>
 using namespace std;
 #define endl "\n"

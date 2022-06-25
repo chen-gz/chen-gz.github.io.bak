@@ -1,4 +1,4 @@
 ---
-title: codeforce 788 Div. 2
+title: codeforces 788 Div. 2
 ---
 

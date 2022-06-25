@@ -24,5 +24,5 @@ $dp[bit][num]$ stand for combination in $bit$ and $num$ bits total in $bit$
 
 we will have following equation
 $$
-dp[bit][num] = {n \choose c} dp[bit-1][(num + c + current\_bit\_on)/2]
+dp[bit][num] = {n \choose c} dp[bit+1][(num + c - current\_bit\_on)/2]
 $$

@@ -2,7 +2,7 @@ baseURL = 'https://blog.zongpitt.com/'
 languageCode = 'en-us'
 title = 'Guangzong Blog'
 theme = "zong"
-#publishDir = "/home/zong/www"
+# publishDir = "/home/zong/www"
 enableGitInfo=true
 # uglyurls = true
 
