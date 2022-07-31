@@ -3,7 +3,7 @@ title: SERIES
 date: 2022-07-16
 ---
 
-$3.20$ Theorem
+**$3.20$ Theorem**
 (a) If $p>0$, then $\lim_{n \rightarrow \infty} \frac{1}{n^{p}}=0$.
 (b) If $p>0$, then $\lim_{n \rightarrow \infty} \sqrt[n]{p}=1$.
 (c) $\lim _{n \rightarrow \infty} \sqrt[n]{n}=1$.

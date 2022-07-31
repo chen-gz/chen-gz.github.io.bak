@@ -4,6 +4,7 @@ date: 2022-07-17
 ---
 
 The series $\Sigma a_{n}$ is said to converge absolutely if the series $\Sigma\left|a_{n}\right|$ converges.
+
 **3.45 Theorem** If $\Sigma a_{n}$ converges absolutely, then $\Sigma a_{n}$ converges.
 
 Proof The assertion follows from the inequality
