@@ -1,0 +1,1 @@
+![](/home/zong/Dropbox/blog/content/posts/sd-card-pinout.png)

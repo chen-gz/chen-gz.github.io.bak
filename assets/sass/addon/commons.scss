@@ -40,7 +40,10 @@ body {
   background: var(--body-bg);
   color: var(--text-color);
   -webkit-font-smoothing: antialiased;
-  font-family: 'Source Sans Pro', 'Microsoft Yahei', sans-serif;
+  // font-family: 'Source Sans Pro', 'Microsoft Yahei', sans-serif;
+  // font-family: 'Computer Modern Math';
+  font-family: 'Times New Roman';
+  // font-family: 'Latin Modern Math';
 }
 
 /* --- Scrollbar --- */
