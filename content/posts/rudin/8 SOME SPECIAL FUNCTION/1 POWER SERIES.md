@@ -1,5 +1,5 @@
 ---
-title: POWER SERIES
+title: 1 POWER SERIES
 date: 2022-08-07
 ---
 
