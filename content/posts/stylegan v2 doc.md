@@ -1,3 +1,6 @@
+---
+title: stylegan v2 doc
+---
 import training speed
 
 

@@ -1,0 +1,3 @@
+[submodule "themes/hugo_zong"]
+	path = themes/hugo_zong
+	url = https://github.com/chen-gz/hugo_zong.git
