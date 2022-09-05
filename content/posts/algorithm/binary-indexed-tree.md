@@ -2,6 +2,7 @@
 title: Binary indexed tree (Fenwick Tree)
 author: Guangzong Chen
 categories: ["Algorithm"]
+date: 2022-08-24
 
 ---
 

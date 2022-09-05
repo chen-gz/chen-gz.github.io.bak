@@ -1,5 +1,6 @@
 ---
 title: Fast Fourier tranform
+date: 2022-08-24
 ---
 
 A **fast Fourier transform** (**FFT**) is an [algorithm](https://en.wikipedia.org/wiki/Algorithm) that computes the [discrete Fourier transform](https://en.wikipedia.org/wiki/Discrete_Fourier_transform) (DFT) of a sequence, or its inverse (IDFT). [^1]

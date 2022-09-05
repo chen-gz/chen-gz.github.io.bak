@@ -3,6 +3,7 @@ title: Segment Tree
 author: Guangzong Chen
 categories: [Algorithm]
 tags: [Algorithm]
+date:  2022-08-24
 ---
 
 ## Background

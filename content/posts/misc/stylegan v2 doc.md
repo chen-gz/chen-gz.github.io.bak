@@ -1,5 +1,6 @@
 ---
 title: stylegan v2 doc
+date: 2022-08-24
 ---
 import training speed
 

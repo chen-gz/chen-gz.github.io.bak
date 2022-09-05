@@ -3,7 +3,7 @@ title: Breadth-first search
 author: Guangzong Chen
 math: true
 mermaid: true
-markup: pandoc
+date: 2022-08-24
 ---
 
 ## Background

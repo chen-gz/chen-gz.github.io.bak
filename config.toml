@@ -1,10 +1,14 @@
-baseURL = 'https://g.zongpitt.com/'
+# baseURL = 'https://g.zongpitt.com/'
+baseURL = 'https://localhost/'
 languageCode = 'en-us'
 title = 'Guangzong Blog'
 theme = "hugo_zong"
 publishDir = "/home/zong/www"
 enableGitInfo=true
 # uglyurls = true
+
+[params]
+  avatar = 'https://github.com/chen-gz/chen-gz/blob/main/mine_square.jpg?raw=truehttps://raw.githubusercontent.com/chen-gz/chen-gz/blob/main/mine_square.jpg'
 
 [markup]
 	defaultMarkdownHandler = "pandoc"

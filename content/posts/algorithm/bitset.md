@@ -3,7 +3,6 @@ author: guangzong
 date: 2022-07-28
 title: bitset
 category: Algorithm
-markup: pandoc
 ---
 
 ``` C++

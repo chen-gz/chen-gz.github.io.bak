@@ -1,5 +1,6 @@
 ---
 title: dynamic programming
+date: 2022-08-24
 ---
 ## Abstract
 
