@@ -12,7 +12,10 @@ call defx#custom#option('_', {
 
 autocmd FileType defx call s:defx_my_settings()
 " autostart the defx plugin, set the position to the right of the current window
-autocmd VimEnter * Defx -columns=indent:indent:indent:icons:filename:type
+autocmd VimEnter * Defx -columns=indent:indent:indent:icons:filename:type -no-focus
+autocmd bufenter * if (winnr("$") == 1 && exists("b:defx")) | q | endif
+
+
 function! s:defx_my_settings() abort
         " Define mappings
         nnoremap <silent><buffer><expr> <CR> defx#do_action('drop')

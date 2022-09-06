@@ -8,7 +8,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 
     Plug 'tmsvg/pear-tree'
     Plug 'dstein64/vim-startuptime'
-    
+
     Plug 'scrooloose/nerdtree'
     Plug 'scrooloose/nerdcommenter'
     Plug 'Yggdroot/indentLine'
@@ -18,7 +18,7 @@ call plug#begin('~/.local/share/nvim/plugged')
     Plug 'Chiel92/vim-autoformat'
     " Plug 'sbdchd/neoformat'
     Plug 'dense-analysis/ale'
-    
+
     Plug 'tomasr/molokai'             "colorscheme
     Plug 'morhetz/gruvbox'            "colorscheme
     Plug 'sickill/vim-monokai'      "colorscheme
@@ -28,9 +28,6 @@ call plug#begin('~/.local/share/nvim/plugged')
     Plug 'doums/darcula'
     "
     Plug 'Yggdroot/LeaderF'
-    
-    " " Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-    " " Plug 'Shougo/deoplete-clangx'
     if has('nvim')
         Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
     else
@@ -38,7 +35,7 @@ call plug#begin('~/.local/share/nvim/plugged')
         Plug 'roxma/nvim-yarp'
         Plug 'roxma/vim-hug-neovim-rpc'
     endif
-	Plug 'kristijanhusak/defx-icons'
+    Plug 'kristijanhusak/defx-icons'
 call plug#end()
 
 source /home/zong/.config/nvim/defx.vim
@@ -46,7 +43,6 @@ source /home/zong/.config/nvim/keymap.vim
 source /home/zong/.config/nvim/helloworld.vim
 " colorscheme molokai
 colorscheme darcula
-set conceallevel=0
 set termguicolors
 "set clipboard+=unnamedplus
 set clipboard=unnamedplus
@@ -71,6 +67,7 @@ set fileencoding=utf-8
 set nocompatible
 set showmatch
 set completeopt-=preview
+set list
 set listchars=tab:>-,trail:-,nbsp:+
 hi MatchParen cterm=none ctermbg=green ctermfg=blue
 
@@ -85,3 +82,4 @@ let g:cpp_experimental_template_highlight = 1
 let g:cpp_concepts_highlight = 1
 
 let g:cpp_no_function_highlight = 1
+let g:indentLine_conceallevel = 0

@@ -16,7 +16,7 @@ Generally, BFS is implemented using a queue. First, we are starting from the roo
 
 The pseudocode is shown as follows.
 
-```
+``` c++
 procedure BFS(G, root) is
     let Q be a queue
     label root as explored
