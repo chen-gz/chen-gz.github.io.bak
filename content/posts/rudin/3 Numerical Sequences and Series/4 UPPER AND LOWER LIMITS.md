@@ -1,10 +1,9 @@
 ---
-title: 4.UPPER AND LOWER LIMITS
+title: 4 UPPER AND LOWER LIMITS
 date: 2022-09-06
 ---
 
-3.15 Definition Let $\left\{s_{n}\right\}$ be a sequence of real numbers with the following property: For every real $M$ there is an integer $N$ such that $n \geq N$ implies $s_{n} \geq M$. We then write
-
+**3.15 Definition** Let $\left\{s_{n}\right\}$ be a sequence of real numbers with the following property: For every real $M$ there is an integer $N$ such that $n \geq N$ implies $s_{n} \geq M$. We then write
 $$
 s_{n} \rightarrow+\infty .
 $$
@@ -17,7 +16,7 @@ $$
 
 It should be noted that we now use the symbol $\rightarrow$ (introduced in Definition 3.1) for certain types of divergent sequences, as well as for convergent sequences, but that the definitions of convergence and of limit, given in Definition 3.1, are in no way changed.
 
-3.16 Definition Let $\left\{s_{n}\right\}$ be a sequence of real numbers. Let $E$ be the set of numbers $x$ (in the extended real number system) such that $s_{n_{k}} \rightarrow x$ for some subsequence $\left\{s_{n_{k}}\right\}$. This set $E$ contains all subsequential limits as defined in Definition 3.5, plus possibly the numbers $+\infty,-\infty$.
+**3.16 Definition** Let $\left\{s_{n}\right\}$ be a sequence of real numbers. Let $E$ be the set of numbers $x$ (in the extended real number system) such that $s_{n_{k}} \rightarrow x$ for some subsequence $\left\{s_{n_{k}}\right\}$. This set $E$ contains all subsequential limits as defined in Definition 3.5, plus possibly the numbers $+\infty,-\infty$.
 
 We now recall Definitions $1.8$ and $1.23$ and put
 
@@ -34,7 +33,7 @@ $$
 \limsup _{n \rightarrow \infty} s_{n}=s^{*}, \quad \liminf _{n \rightarrow \infty} s_{n}=s_{*} .
 $$
 
-3.17 Theorem Let $\left\{s_{n}\right\}$ be a sequence of real numbers. Let $E$ and $s^{*}$ have the same meaning as in Definition 3.16. Then $s^{*}$ has the following two properties:
+**3.17 Theorem** Let $\left\{s_{n}\right\}$ be a sequence of real numbers. Let $E$ and $s^{*}$ have the same meaning as in Definition 3.16. Then $s^{*}$ has the following two properties:
 
 (a) $s^{*} \in E$.
 
@@ -44,7 +43,7 @@ Moreover, $s^{*}$ is the only number with the properties $(a)$ and $(b)$.
 
 Of course, an analogous result is true for $s_{*}$.
 
-Proof
+**Proof**
 
 (a) If $s^{*}=+\infty$, then $E$ is not bounded above; hence $\left\{s_{n}\right\}$ is not bounded above, and there is a subsequence $\left\{s_{n_{k}}\right\}$ such that $s_{n_{k}} \rightarrow+\infty$.
 
@@ -60,7 +59,7 @@ Thus $s^{*}$ satisfies $(a)$ and $(b)$.
 
 To show the uniqueness, suppose there are two numbers, $p$ and $q$, which satisfy $(a)$ and $(b)$, and suppose $p<q$. Choose $x$ such that $p<x<q$. Since $p$ satisfies $(b)$, we have $s_{n}<x$ for $n \geq N$. But then $q$ cannot satisfy $(a)$. 
 
-\subsection{Examples}
+**3.18 Examples**
 
 (a) Let $\left\{s_{n}\right\}$ be a sequence containing all rationals. Then every real number is a subsequential limit, and
 
@@ -82,27 +81,10 @@ $$
 
 We close this section with a theorem which is useful, and whose proof is quite trivial:
 
-3.19 Theorem If $s_{n} \leq t_{n}$ for $n \geq N$, where $N$ is fixed, then
-
+**3.19 Theorem** If $s_{n} \leq t_{n}$ for $n \geq N$, where $N$ is fixed, then
 $$
 \begin{aligned}
-\liminf _{n \rightarrow \infty} s_{n} & \leq \underset{n \rightarrow \infty}{\lim \inf } t_{n}, \\
+\liminf _{n \rightarrow \infty} s_{n} & \leq \underset{n \rightarrow \infty}{\lim \inf } \  t_{n}, \\
 \limsup _{n \rightarrow \infty} s_{n} & \leq \limsup _{n \rightarrow \infty} t_{n} .
 \end{aligned}
 $$
-
-\section{SOME SPECIAL SEQUENCES}
-
-We shall now compute the limits of some sequences which occur frequently. The proofs will all be based on the following remark: If $0 \leq x_{n} \leq s_{n}$ for $n \geq N$, where $N$ is some fixed number, and if $s_{n} \rightarrow 0$, then $x_{n} \rightarrow 0$.
-
-\subsection{Theorem}
-
-(a) If $p>0$, then $\lim _{n \rightarrow \infty} \frac{1}{n^{p}}=0$.
-
-(b) If $p>0$, then $\lim _{n \rightarrow \infty} \sqrt[n]{p}=1$.
-
-(c) $\lim _{n \rightarrow \infty} \sqrt[n]{n}=1$.
-
-(d) If $p>0$ and $\alpha$ is real, then $\lim _{n \rightarrow \infty} \frac{n^{\alpha}}{(1+p)^{n}}=0$.
-
-(e) If $|x|<1$, then $\lim _{n \rightarrow \infty} x^{n}=0$.
