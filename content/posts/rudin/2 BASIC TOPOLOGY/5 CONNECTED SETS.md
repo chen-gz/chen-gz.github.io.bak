@@ -1,5 +1,5 @@
 ---
-title: CONNECTED SETS
+title: 5 CONNECTED SETS
 date: 2022-08-30
 ---
 

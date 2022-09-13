@@ -1,5 +1,3 @@
-<!-- ---
-title: 10 INTEGRATION OF DIFFERENTIAL FORMS
-
+ ---
+title: 10 Integration of Differential Forms
 ---
- -->

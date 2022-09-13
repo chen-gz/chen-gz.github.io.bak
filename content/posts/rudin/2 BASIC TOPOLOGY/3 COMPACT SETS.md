@@ -1,5 +1,5 @@
 ---
-title: COMPACT SETS
+title: 3 COMPACT SETS
 date: 2022-08-20
 ---
 

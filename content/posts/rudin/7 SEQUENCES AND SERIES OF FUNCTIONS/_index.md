@@ -1,5 +1,5 @@
 ---
-title: 7 SEQUENCES AND SERIES OF FUNCTIONS
+title: 7 Sequences and Series of Functions
 
 ---
 
