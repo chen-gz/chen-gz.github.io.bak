@@ -1,5 +1,5 @@
 ---
-title: SERIES OF NONNEGATIVE TERMS
+title: 7 SERIES OF NONNEGATIVE TERMS
 date: 2022-07-16
 ---
 
@@ -28,7 +28,8 @@ $$
 \sum_{k=0}^{\infty} 2^{k} a_{2^{k}}=a_{1}+2 a_{2}+4 a_{4}+8 a_{8}+\cdots
 $$
 converges.
-Proof By Theorem 3.24, it suffices to consider boundedness of the partial sums. Let
+
+**Proof** By Theorem 3.24, it suffices to consider boundedness of the partial sums. Let
 $$
 \begin{aligned}
 &s_{n}=a_{1}+a_{2}+\cdots+a_{n}, \\
@@ -77,7 +78,7 @@ $$
 converges; if $p \leq 1$, the series diverges.
 Remark "'log $n$ "' denotes the logarithm of $n$ to the base $e$ (compare Exercise 7, Chap. 1); the number $e$ will be defined in a moment (see Definition 3.30). We let the series start with $n=2$, since $\log 1=0$.
 
-Proof The monotonicity of the logarithmic function (which will be discussed in more detail in Chap. 8) implies that $\{\log n\}$ increases. Hence $\{1 / n \log n\}$ decreases, and we can apply Theorem $3.27$ to (10); this leads us to the series
+**Proof** The monotonicity of the logarithmic function (which will be discussed in more detail in Chap. 8) implies that $\{\log n\}$ increases. Hence $\{1 / n \log n\}$ decreases, and we can apply Theorem $3.27$ to (10); this leads us to the series
 $$
 \sum_{k=1}^{\infty} 2^{k} \cdot \frac{1}{2^{k}\left(\log 2^{k}\right)^{p}}=\sum_{k=1}^{\infty} \frac{1}{(k \log 2)^{p}}=\frac{1}{(\log 2)^{p}} \sum_{k=1}^{\infty} \frac{1}{k^{p}}
 $$

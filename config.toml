@@ -1,5 +1,5 @@
- baseURL = 'https://zongpitt.com/'
-#baseURL = 'https://localhost/'
+ #baseURL = 'https://zongpitt.com/'
+baseURL = 'https://localhost/'
 #baseURL = 'https://71.245.188.46/'
 languageCode = 'en-us'
 title = 'Guangzong Blog'

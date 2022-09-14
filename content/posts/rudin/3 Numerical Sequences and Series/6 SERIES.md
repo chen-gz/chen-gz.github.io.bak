@@ -1,16 +1,7 @@
 ---
-title: SERIES
+title: 6 SERIES
 date: 2022-07-16
 ---
-
-**$3.20$ Theorem**
-(a) If $p>0$, then $\lim_{n \rightarrow \infty} \frac{1}{n^{p}}=0$.
-(b) If $p>0$, then $\lim_{n \rightarrow \infty} \sqrt[n]{p}=1$.
-(c) $\lim _{n \rightarrow \infty} \sqrt[n]{n}=1$.
-(d) If $p>0$ and $\alpha$ is real, then $\lim _{n \rightarrow \infty} \frac{n^{\alpha}}{(1+p)^{n}}=0$.
-(e) If $|x|<1$, then $\lim _{n \rightarrow \infty} x^{n}=0$.
-
-##### SERIES
 
 In the remainder of this chapter, all sequences and series under consideration will be complex-valued, unless the contrary is explicitly stated. Extensions of some of the theorems which follow, to series with terms in $R^{k}$, are mentioned in Exercise $15 .$
 
