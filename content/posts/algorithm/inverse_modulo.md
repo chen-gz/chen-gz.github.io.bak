@@ -16,8 +16,7 @@ $ax \equiv 1 (\mod m)$
 $x \equiv a^{-1} (\mod m)$
 $a$ 与 $x$ 互为乘法逆元
 
-
-####扩展欧几里得算法
+####扩展欧几里得算法  
 
 [欧几里得算法(GCD)](./gcd.html)
 
@@ -41,6 +40,7 @@ ext_euclid(3,7)
 ```
 
 ``` cpp
+// this function will return gcd, x, y are return as reference parameter.
 int gcdEx(int a, int b, int & x, int & y)
 {
     if(b == 0){

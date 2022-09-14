@@ -7,7 +7,7 @@ date: 2022-09-13
 
 
 
-[textbook](/posts/rudin/3-numerical-sequences-and-series/7-series-of-nonnegative-terms/)
+[textbook](/posts/rudin/3-numerical-sequences-and-series/8-the-number-e/)
 
  <video width ="100%" controls>
   <source src="/video/real analysis/chapter 3/19 THE NUMBER e/part1_final.mp4" type="video/mp4">
