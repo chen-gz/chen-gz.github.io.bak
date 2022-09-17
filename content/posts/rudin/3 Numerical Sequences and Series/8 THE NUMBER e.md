@@ -1,5 +1,5 @@
 ---
-title: 8 THE NUMBER $e$
+title: 8 THE NUMBER e
 date: 2022-07-16
 ---
 
