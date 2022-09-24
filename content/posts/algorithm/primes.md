@@ -1,12 +1,10 @@
 ---
-author: Corgi
 date: 2019-02-15
 title: prime numbers 
 ---
 
 
-C++
-```
+``` cpp
 #include <cstring>
 #define maxn 555555
 //素数保存在prime数组

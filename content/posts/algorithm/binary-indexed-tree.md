@@ -30,7 +30,7 @@ The picture show the data store in the binary indexed tree.
 
 Supporse the name of original array is `arr`, the name of binary indexed tree is `fenw`. Than we have following relationship between `arr` and `fenw`. 
 
-```c++
+``` c++
 fenw[0] = arr[0];
 fenw[1] = arr[0] + arr[1];
 fenw[2] = arr[2];
