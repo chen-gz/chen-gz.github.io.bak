@@ -1,10 +1,10 @@
-# baseURL = 'https://g.zongpitt.com/'
+baseURL = 'https://zongpitt.com/'
 #baseURL = 'https://localhost/'
-baseURL = 'https://71.245.188.46/'
+#baseURL = 'https://71.245.188.46/'
 languageCode = 'en-us'
 title = 'Guangzong Blog'
 theme = "hugo_zong"
-publishDir = "/home/zong/www"
+#publishDir = "/home/zong/www"
 enableGitInfo=true
 # uglyurls = true
 

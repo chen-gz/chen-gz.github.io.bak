@@ -12,8 +12,6 @@ The graph has 3 member variables. `edges` store all edges. To retrieve an edge t
 
 The edge have three attribution, `from`, `to`, `cost`. The `cost` is weight of the edge. 
 
-<details>
-<summary> show code </summary>
 ``` cpp
 template <typename T> class graph {
   public:
@@ -32,7 +30,6 @@ template <typename T> class graph {
     virtual int add(int from, int to, T cost) = 0;
 };
 ```
-</details>
 
 ## Directly acyclic graph
 
@@ -42,9 +39,8 @@ The class `digraph `is inherit from graph. The function `add`  in the parent cla
 
 The function `reverse` will will change the direction for all edge and return an reversed `diagraph`.
 
-<details>
-<summary> show code </summary>
-``` cpp template <typename T> class digraph : public graph<T> {
+``` cpp
+template <typename T> class digraph : public graph<T> {
   public:
     using graph<T>::edges;
     using graph<T>::g;
@@ -69,7 +65,6 @@ The function `reverse` will will change the direction for all edge and return an
     }
 };
 ```
-</details>
 
 ## Topological Sort
 
@@ -84,8 +79,6 @@ Base on this property, we found out all node which in-degree is 0. Since these n
 If we are able to find a topological sort, all node should be pushed in to vector. Otherwise there are some circular dependency which will not able the satisfied. 
 
 
-<details>
-<summary> show code </summary>
 ``` cpp
 template <typename T> vector<int> find_topsort(const digraph<T> &g) {
     vector<int> deg(g.n, 0);
@@ -114,8 +107,6 @@ template <typename T> vector<int> find_topsort(const digraph<T> &g) {
     return x;
 }
 ```
-</details>
-
 
 ## Probelm set
 
@@ -123,8 +114,6 @@ template <typename T> vector<int> find_topsort(const digraph<T> &g) {
 
 ## Whole code [^3]
 
-<details>
-<summary> show code </summary>
 ``` cpp
 #include <bits/stdc++.h>
 
@@ -199,7 +188,6 @@ template <typename T> vector<int> find_topsort(const digraph<T> &g) {
     return x;
 }
 ```
-</details>
 
 
 [^1]: https://en.wikipedia.org/wiki/Directed_acyclic_graph
