@@ -9,11 +9,13 @@ date: 2022-09-18
 A complex function $s$ on a measurable space $X$ whose range consists of only finitely many points will be called a simple function. Among these are the nonnegative simple functions, whose range is a finite subset of $[0, \infty)$. Note that we explicitly exclude $\infty$ from the values of a simple function.
 
 If $\alpha_1, \ldots, \alpha_n$ are the distinct values of a simple function $s$, and if we set $A_i=\left\{x: s(x)=\alpha_i\right\}$, then clearly
+
 $$
 \begin{equation}
 s=\sum_{i=1}^n \alpha_i \chi_{A_i},
 \end{equation}
 $$
+
 where $\chi_{A_i}$ is the characteristic function of $A_i$, as defined in Sec. $1.9(d)$.
 
 It is also clear that $s$ is measurable if and only if each of the sets $A_i$ is measurable.

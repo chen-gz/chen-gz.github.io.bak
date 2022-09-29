@@ -110,26 +110,206 @@ We now come to the interesting part of the theory. One of its most remarkable fe
 ### 1.26 Lebesgue's Monotone Convergence Theorem
 
 Let $\left\{f_n\right\}$ be a sequence of measurable functions on $X$, and suppose that
+
 (a) $0 \leq f_1(x) \leq f_2(x) \leq \cdots \leq \infty$ for every $x \in X$,
 (b) $f_n(x) \rightarrow f(x)$ as $n \rightarrow \infty$, for every $x \in X$.
+
 Then $f$ is measurable, and
+
 $$
+\begin{equation}
 \int_X f_n d \mu \rightarrow \int_X f d \mu \quad \text { as } n \rightarrow \infty .
+\end{equation}
 $$
-PROOF Since $\int f_n \leq \int f_{n+1}$, there exists an $\alpha \in[0, \infty]$ such that
+
+**Proof** Since $\int f_n \leq \int f_{n+1}$, there exists an $\alpha \in[0, \infty]$ such that
+
 $$
+\begin{equation}
 \int_X f_n d \mu \rightarrow \alpha \text { as } n \rightarrow \infty \text {. }
+\end{equation}
 $$
+
 By Theorem $1.14, f$ is measurable. Since $f_n \leq f$, we have $\int f_n \leq \int f$ for every $n$, so (1) implies
+
 $$
+\begin{equation}
 \alpha \leq \int_X f d \mu .
+\end{equation}
 $$
+
 Let $s$ be any simple measurable function such that $0 \leq s \leq f$, let $c$ be a constant, $0<c<1$, and define
+
 $$
+\begin{equation}
 E_n=\left\{x: f_n(x) \geq c s(x)\right\} \quad(n=1,2,3, \ldots) .
+\end{equation}
 $$
+
 Each $E_n$ is measurable, $E_1 \subset E_2 \subset E_3 \subset \cdots$, and $X=\bigcup E_n$. To see this equality, consider some $x \in X$. If $f(x)=0$, then $x \in E_1 ;$ if $f(x)>0$, then $c s(x)<f(x)$, since $c<1$; hence $x \in E_n$ for some $n$. Also
+
 $$
+\begin{equation}
 \int_X f_n d \mu \geq \int_{E_n} f_n d \mu \geq c \int_{E_n} s d \mu \quad(n=1,2,3, \ldots) .
+\end{equation}
 $$
+
+Let $n \rightarrow \infty$, applying Proposition $1.25$ and Theorem $1.19(d)$ to the last integral in (4). The result is
+
+$$
+\begin{equation}
+\alpha \geq c \int_X s d \mu .
+\end{equation}
+$$
+
+Since (5) holds for every $c<1$, we have
+
+$$
+\begin{equation}
+\alpha \geq \int_X s d \mu
+\end{equation}
+$$
+
+for every simple measurable $s$ satisfying $0 \leq s \leq f$, so that
+
+$$
+\begin{equation}
+\alpha \geq \int_x f d \mu .
+\end{equation}
+$$
+
+The theorem follows from (1), (2), and (7).
+
+### 1.27 Theorem
+
+If $f_n: X \rightarrow[0, \infty]$ is measurable, for $n=1,2,3, \ldots$, and
+
+$$
+\begin{equation}
+f(x)=\sum_{n=1}^{\infty} f_n(x) \quad(x \in X),
+\end{equation}
+$$
+
+then
+
+$$
+\begin{equation}
+\int_X f d \mu=\sum_{n=1}^{\infty} \int_X f_n d \mu
+\end{equation}
+$$
+
+**Proof** First, there are sequences $\left\{s_i^{\prime}\right\},\left\{s_i^{\prime \prime}\right\}$ of simple measurable functions such that $s_i^{\prime} \rightarrow f_1$ and $s_i^{\prime \prime} \rightarrow f_2$, as in Theorem 1.17. If $s_i=s_i^{\prime}+s_i^{\prime \prime}$, then $s_i \rightarrow f_1+f_2$, and the monotone convergence theorem, combined with Proposition $1.25$, shows that
+
+$$
+\begin{equation}
+\int_X\left(f_1+f_2\right) d \mu=\int_X f_1 d \mu+\int_X f_2 d \mu .
+\end{equation}
+$$
+
+Next, put $g_N=f_1+\cdots+f_N$. The sequence $\left\{g_N\right\}$ converges monotonically to $f$, and if we apply induction to (3) we see that
+
+$$
+\begin{equation}
+\int_X g_N d \mu=\sum_{n=1}^N \int_X f_n d \mu .
+\end{equation}
+$$
+
+Applying the monotone convergence theorem once more, we obtain (2), and the proof is complete. $\blacksquare$
+
+If we let $\mu$ be the counting measure on a countable set, Theorem $1.27$ is a statement about double series of nonnegative real numbers (which can of course be proved by more elementary means):
+
+**Corollary** If $a_{i j} \geq 0$ for $i$ and $j=1,2,3, \ldots$, then
+
+$$
+\sum_{i=1}^{\infty} \sum_{j=1}^{\infty} a_{i j}=\sum_{j=1}^{\infty} \sum_{i=1}^{\infty} a_{i j} .
+$$
+
+### 1.28 Fatou's Lemma
+
+If $f_n: X \rightarrow[0, \infty]$ is measurable, for each positive integer $n$, then
+
+$$
+\begin{equation}
+\int_X\left(\liminf _{n \rightarrow \infty} f_n\right) d \mu \leq \liminf _{n \rightarrow \infty} \int_X f_n d \mu .
+\end{equation}
+$$
+
+Strict inequality can occur in (1); see Exercise 8.
+
+**Proof** Put
+$$
+\begin{equation}
+g_k(x)=\inf _{i \geq k} f_i(x) \quad(k=1,2,3, \ldots ; x \in X) .
+\end{equation}
+$$
+
+Then $g_k \leq f_k$, so that
+
+$$
+\begin{equation}
+\int_X g_k d \mu \leq \int_X f_k d \mu \quad(k=1,2,3, \ldots) .
+\end{equation}
+$$
+
+Also, $0 \leq g_1 \leq g_2 \leq \cdots$, each $g_k$ is measurable, by Theorem 1.14, and $g_k(x) \rightarrow \lim \inf f_n(x)$ as $k \rightarrow \infty$, by Definition 1.13. The monotone convergence theorem shows therefore that the left side of (3) tends to the left side of (1), as $k \rightarrow \infty$. Hence (1) follows from (3). $\blacksquare$
+
+
+### 1.29 Theorem
+
+Suppose $f: X \rightarrow[0, \infty]$ is measurable, and
+
+$$
+\begin{equation}
+\varphi(E)=\int_E f d \mu \quad(E \in \mathfrak{M}) .
+\end{equation}
+$$
+
+Then $\varphi$ is a measure on $\mathfrak{M}$, and
+
+$$
+\begin{equation}
+\int_X g d \varphi=\int_X g f d \mu
+\end{equation}
+$$
+
+for every measurable $g$ on $X$ with range in $[0, \infty]$.
+Proof Let $E_1, E_2, E_3, \ldots$ be disjoint members of $\mathfrak{M}$ whose union is $E$. Observe that
+
+$$
+\begin{equation}
+\chi_{E} f=\sum_{j=1}^{\infty} \chi_{E_j} f
+\end{equation}
+$$
+
+and that
+
+$$
+\begin{equation}
+\varphi(E)=\int_X \chi_E f d \mu, \quad \varphi\left(E_j\right)=\int_X \chi_{E_j} f d \mu .
+\end{equation}
+$$
+
+It now follows from Theorem $1.27$ that
+
+$$
+\begin{equation}
+\varphi(E)=\sum_{j=1}^{\infty} \varphi\left(E_j\right) .
+\end{equation}
+$$
+
+Since $\varphi(\varnothing)=0,(5)$ proves that $\varphi$ is a measure.
+
+Next, (1) shows that (2) holds whenever $g=\chi_E$ for some $E \in \mathfrak{M}$. Hence (2) holds for every simple measurable function $g$, and the general case follows from the monotone convergence theorem.
+
+**Remark** The second assertion of Theorem $1.29$ is sometimes written in the form
+
+$$
+\begin{equation}
+d \varphi=f d \mu .
+\end{equation}
+$$
+
+We assign no independent meaning to the symbols $d \varphi$ and $d \mu ;(6)$ merely means that (2) holds for every measurable $g \geq 0$.
+
+Theorem 1.29 has a very important converse, the Radon-Nikodym theorem, which will be proved in Chap. 6.
 

@@ -27,7 +27,7 @@ $ax \equiv 1\ (mod m) \Rightarrow ax + my = 1$
 
 
 python
-```python
+``` python
 def ext_euclid(a, b):
     b == 0:
     return 1, 0, a

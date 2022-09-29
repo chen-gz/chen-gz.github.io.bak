@@ -4,7 +4,9 @@ date: 2022-09-17
 ---
 
 
-1.1 Some sets can be described by listing their members. Thus $\left\{x_1, \ldots, x_n\right\}$ is the set whose members are $x_1, \ldots, x_n$; and $\{x\}$ is the set whose only member is $x$. More often, sets are described by properties. We write
+### 1.1
+
+Some sets can be described by listing their members. Thus $\left\{x_1, \ldots, x_n\right\}$ is the set whose members are $x_1, \ldots, x_n$; and $\{x\}$ is the set whose only member is $x$. More often, sets are described by properties. We write
 $$
 \{x: P\}
 $$
