@@ -1,5 +1,5 @@
 ---
-title: 5 Arithmetic in [0, $\infty$]
+title: 5 Arithmetic in [0, ∞]
 date: 2022-09-23
 ---
 
