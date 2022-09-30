@@ -1,0 +1,22 @@
+# To contribute improvements to CI/CD templates, please follow the Development guide at:
+# https://docs.gitlab.com/ee/development/cicd/templates.html
+# This specific template is located at:
+# https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Pages/Hugo.gitlab-ci.yml
+
+---
+# All available Hugo versions are listed here:
+# https://gitlab.com/pages/hugo/container_registry
+image: registry.gitlab.com/guangzong/blog
+
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+
+pages:
+  script:
+    - hugo
+  artifacts:
+    paths:
+      - public
+  only:
+    variables:
+      - $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
