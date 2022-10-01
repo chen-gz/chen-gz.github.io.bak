@@ -11,8 +11,8 @@ enableGitInfo=true
 [params]
   avatar = 'https://github.com/chen-gz/chen-gz/blob/main/mine_square.jpg?raw=truehttps://raw.githubusercontent.com/chen-gz/chen-gz/blob/main/mine_square.jpg'
 
-[markup]
-	defaultMarkdownHandler = "pandoc"
+# [markup]
+#   defaultMarkdownHandler = "pandoc"
 
 [security.exec]
   allow = ['^dart-sass-embedded$', '^go$', '^npx$', '^postcss$', '^pandoc$']
