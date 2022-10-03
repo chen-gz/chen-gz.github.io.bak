@@ -2,6 +2,7 @@
 title: 2 METRIC SPACES
 date: 2022-08-20
 ---
+
 * youtube [part1](https://youtu.be/SZTJCJcPwDk) [part2](https://youtu.be/3FNNbVYKLFQ) [part3](https://youtu.be/cxhZsJYeW3g)
 * bilibili [part1](https://www.bilibili.com/video/BV1Rg411e7XQ/) [part2](https://www.bilibili.com/video/BV1se411T7EU/) [part3](https://www.bilibili.com/video/BV1vd4y1q7nT/)
 * note part1 [pdf](https://github.com/chen-gz/bed2/blob/5cd2019dbdfb1fc5788215c3111a9073b24a2225/8%20PART1%202022-08-22-Note-15-20.pdf) [xopp](https://github.com/chen-gz/bed2/blob/5cd2019dbdfb1fc5788215c3111a9073b24a2225/8%20PART1%202022-08-22-Note-15-20.xopp)

@@ -1,5 +1,5 @@
 ---
-title: optimal control HW1
+title: Optimal Control HW1
 date: 2022-09-27
 ---
 
