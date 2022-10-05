@@ -21,7 +21,6 @@ $$
 
 Since $t_1, t_2 > 0$, so we can solve (2) problem instead (1).
 
-
 $$
 \begin{equation}
 \begin{aligned}
