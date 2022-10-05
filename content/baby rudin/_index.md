@@ -1,6 +1,5 @@
 ---
-title: rudin
+title: baby rudin
 categories: [analysis]
-# layout: terms
 ---
 

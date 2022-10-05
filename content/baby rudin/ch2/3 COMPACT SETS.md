@@ -5,8 +5,7 @@ date: 2022-08-20
 
 * youtube [part1](https://youtu.be/0R9aWv13_3s) [part2](https://youtu.be/vcqBJ7NyEcw)
 * bilibili [part1](https://youtu.be/vcqBJ7NyEcw) [part2](https://www.bilibili.com/video/BV1xV4y1N7Ux/)
-* note part 1 [pdf](https://github.com/chen-gz/bed2/blob/68f1cae06b3da67ac917f985c510978b7b23aa5f/9%20compact%20%20part1_note.pdf)
-[xopp] (https://github.com/chen-gz/bed2/blob/68f1cae06b3da67ac917f985c510978b7b23aa5f/9%20compact%20%20part1_note%20.xopp)
+* note part 1 [pdf](https://github.com/chen-gz/bed2/blob/68f1cae06b3da67ac917f985c510978b7b23aa5f/9%20compact%20%20part1_note.pdf)   [xopp](https://github.com/chen-gz/bed2/blob/68f1cae06b3da67ac917f985c510978b7b23aa5f/9%20compact%20%20part1_note%20.xopp)
 part 2[pdf](https://github.com/chen-gz/bed2/blob/68f1cae06b3da67ac917f985c510978b7b23aa5f/9%20compact%20part2_note.pdf) [xopp](https://github.com/chen-gz/bed2/blob/68f1cae06b3da67ac917f985c510978b7b23aa5f/9%20compact%20%20part2_note.xopp)
 
 **2.31 Definition** By an open cover of a set $E$ in a metric space $X$ we mean a collection $\left\{G_{\alpha}\right\}$ of open subsets of $X$ such that $E \subset U_{\alpha} G_{\alpha}$.
