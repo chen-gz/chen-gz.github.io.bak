@@ -45,7 +45,8 @@ Suppose we are start from `0`, the next four element is `0 | 1 = 1, 1 | 2 = 3, 3
 
 ## Implementation[^2]
 
-```C++
+<details> <summary>show detail</summary>
+``` cpp
 using namespace std;
  
 template <typename T>
@@ -76,6 +77,7 @@ class fenwick {
 };
  
 ```
+</details>
 
 
 
