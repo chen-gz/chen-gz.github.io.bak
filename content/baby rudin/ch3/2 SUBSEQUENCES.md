@@ -3,6 +3,11 @@ title: 2 SUBSEQUENCES
 date: 2022-09-04
 ---
 
+* [youtube](https://youtu.be/VvedKg8r0kI)
+* [bilibili](https://www.bilibili.com/video/BV1j8411t7cq/)
+* note [pdf](https://github.com/chen-gz/bed2/blob/b590a02f3a9e146a3f1e04f18fd66732c27014ff/13%20SUBSEQUENCES%20part1_note.pdf) 
+[xopp](https://github.com/chen-gz/bed2/blob/b590a02f3a9e146a3f1e04f18fd66732c27014ff/13%20SUBSEQUENCES%20part1_note.xopp)
+
 **3.5 Definition** Given a sequence $\left\{p_{n}\right\}$, consider a sequence $\left\{n_{k}\right\}$ of positive integers, such that $n_{1}<n_{2}<n_{3}<\cdots$. Then the sequence $\left\{p_{n i}\right\}$ is called a subsequence of $\left\{p_{n}\right\}$. If $\left\{p_{n_{i}}\right\}$ converges, its limit is called a subsequential limit of $\left\{p_{n}\right\}$.
 
 It is clear that $\left\{p_{n}\right\}$ converges to $p$ if and only if every subsequence of $\left\{p_{n}\right\}$ converges to $p$. We leave the details of the proof to the reader.

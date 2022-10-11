@@ -3,6 +3,10 @@ title: 4 UPPER AND LOWER LIMITS
 date: 2022-09-06
 ---
 
+* [youtube](https://youtu.be/GBvvrxia0dE)
+* [bilibili](https://www.bilibili.com/video/BV1nW4y1e7NE/)
+* note [pdf](https://github.com/chen-gz/bed2/blob/b590a02f3a9e146a3f1e04f18fd66732c27014ff/15%20UPPER%20AND%20LOWER%20LIMITS.pdf) [xopp](https://github.com/chen-gz/bed2/blob/b590a02f3a9e146a3f1e04f18fd66732c27014ff/15%20UPPER%20AND%20LOWER%20LIMITS.xopp)
+
 **3.15 Definition** Let $\left\{s_{n}\right\}$ be a sequence of real numbers with the following property: For every real $M$ there is an integer $N$ such that $n \geq N$ implies $s_{n} \geq M$. We then write
 $$
 s_{n} \rightarrow+\infty .

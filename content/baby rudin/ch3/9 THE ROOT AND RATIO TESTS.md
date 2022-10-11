@@ -3,6 +3,9 @@ title: 9 THE ROOT AND RATIO TESTS
 date: 2022-07-17
 ---
 
+* [youtube](https://youtu.be/215H8wzDV7M)
+* [bili](https://www.bilibili.com/video/BV16e4y1J7N2/)
+
 **3.33 Theorem** (Root Test) Given $\Sigma a_{n}$, put $\alpha=\limsup _{n \rightarrow \infty} \sqrt[n]{\left|a_{n}\right|}$. Then
 (a) if $\alpha<1, \Sigma a_{n}$ converges;
 (b) if $\alpha>1, \Sigma a_{n}$ diverges;

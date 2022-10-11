@@ -3,6 +3,10 @@ title: 7 SERIES OF NONNEGATIVE TERMS
 date: 2022-07-16
 ---
 
+* [youtube](https://youtu.be/mbrGFENRcXg)
+* [bilibili](https://www.bilibili.com/video/BV1nG4y1W7kb/)
+* note [pdf](https://github.com/chen-gz/bed2/blob/b590a02f3a9e146a3f1e04f18fd66732c27014ff/18%20SERIES%20OF%20NONNEGATIVE%20TERMS.pdf) [xopp](https://github.com/chen-gz/bed2/blob/b590a02f3a9e146a3f1e04f18fd66732c27014ff/18%20SERIES%20OF%20NONNEGATIVE%20TERMS.xopp)
+
 The simplest of all is perhaps the geometric series.
 
 **3.26 Theorem** If $0 \leq x<1$, then

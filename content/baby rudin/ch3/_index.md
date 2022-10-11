@@ -1,4 +1,3 @@
 ---
-title: 3 Numeriacal Sequences and Series
-
+title: chapter 3 Numeriacal Sequences and Series
 ---

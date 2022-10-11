@@ -3,6 +3,10 @@ title: 10 POWER SERIES
 date: 2022-07-17
 ---
 
+* [youtube](https://youtu.be/-PMAQ6BcBOU)
+* [bili](https://www.bilibili.com/video/BV16e4y1J7N2/)
+* note [pdf](https://github.com/chen-gz/bed2/blob/b590a02f3a9e146a3f1e04f18fd66732c27014ff/21%20POWER%20SERIES.pdf)  [xopp](https://github.com/chen-gz/bed2/blob/b590a02f3a9e146a3f1e04f18fd66732c27014ff/21%20POWER%20SERIES.xopp)
+
 **3.38 Definition** Given a sequence $\left\{c_{n}\right\}$ of complex numbers, the series
 
 $$

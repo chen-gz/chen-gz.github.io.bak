@@ -3,6 +3,10 @@ title: 6 SERIES
 date: 2022-07-16
 ---
 
+* [youtube](https://youtu.be/hm5qB3MuqY8)
+* [bilibili](https://www.bilibili.com/video/BV1Sg411a7oP/)
+* note [pdf](https://github.com/chen-gz/bed2/blob/b590a02f3a9e146a3f1e04f18fd66732c27014ff/17%20SERIES.pdf) [xopp](https://github.com/chen-gz/bed2/blob/b590a02f3a9e146a3f1e04f18fd66732c27014ff/17%20SERIES.xopp)
+
 In the remainder of this chapter, all sequences and series under consideration will be complex-valued, unless the contrary is explicitly stated. Extensions of some of the theorems which follow, to series with terms in $R^{k}$, are mentioned in Exercise $15 .$
 
 **3.21 Definition** Given a sequence $\left\{a_{n}\right\}$, we use the notation

@@ -3,6 +3,14 @@ title: 1 CONVERGENT SEQUENCES
 date: 2022-09-03
 ---
 
+* youtube [part1](https://youtu.be/02vC8Y0U1rI) [part2](https://youtu.be/kydMB7-KWok) 
+* bilibili [part1](https://www.bilibili.com/video/BV1514y1a7GH/)
+[part2](https://www.bilibili.com/video/BV1oG4y1p7Wz/)
+* note [pdf 1](https://github.com/chen-gz/bed2/blob/b590a02f3a9e146a3f1e04f18fd66732c27014ff/12%20CONVERGENT%20SEQUENCES%20part1_note.pdf)
+[xopp 1](https://github.com/chen-gz/bed2/blob/b590a02f3a9e146a3f1e04f18fd66732c27014ff/12%20CONVERGENT%20SEQUENCES%20%20part1_note.xopp)
+[pdf 2](https://github.com/chen-gz/bed2/blob/b590a02f3a9e146a3f1e04f18fd66732c27014ff/12%20CONVERGENT%20SEQUENCES%20%20part2_note.pdf)
+[xopp 2](https://github.com/chen-gz/bed2/blob/b590a02f3a9e146a3f1e04f18fd66732c27014ff/12%20CONVERGENT%20SEQUENCES%20part2_note.xopp)
+
 **3.1 Definition** A sequence $\left\{p_{n}\right\}$ in a metric space $X$ is said to converge if there is a point $p \in X$ with the following property: For every $\varepsilon>0$ there is an integer $N$ such that $n \geq N$ implies that $d\left(p_{n}, p\right)<\varepsilon$. (Here $d$ denotes the distance in $X$.)
 
 In this case we also say that $\left\{p_{n}\right\}$ converges to $p$, or that $p$ is the limit of $\left\{p_{n}\right\}$ [see Theorem 3.2(b)], and we write $p_{n} \rightarrow p$, or

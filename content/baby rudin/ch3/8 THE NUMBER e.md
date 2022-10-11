@@ -3,6 +3,10 @@ title: 8 THE NUMBER e
 date: 2022-07-16
 ---
 
+* [youtube](https://youtu.be/G7IFz0nlmgo)
+* [bili](https://www.bilibili.com/video/BV1m8411s7At/)
+* note [pdf](https://github.com/chen-gz/bed2/blob/b590a02f3a9e146a3f1e04f18fd66732c27014ff/19%20THE%20NUMBER%20e.pdf) [xopp](https://github.com/chen-gz/bed2/blob/b590a02f3a9e146a3f1e04f18fd66732c27014ff/19%20THE%20NUMBER%20e.xopp)
+
 **3.30 Definition** $e=\sum_{n=0}^{\infty} \frac{1}{n !}$
 Here $n !=1 \cdot 2 \cdot 3 \cdots n$ if $n \geq 1$, and $0 !=1$
 

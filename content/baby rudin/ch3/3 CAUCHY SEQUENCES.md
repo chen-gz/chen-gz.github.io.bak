@@ -3,6 +3,10 @@ title: 3 CAUCHY SEQUENCES
 date: 2022-09-06
 ---
 
+* [youtube](https://youtu.be/iAbgvKO-k3o)
+* [bilibili](https://www.bilibili.com/video/BV1sG411J7NU/)
+* note [pdf](https://github.com/chen-gz/bed2/blob/b590a02f3a9e146a3f1e04f18fd66732c27014ff/14%20CAUCHY%20SEQUENCES%20part1_note.pdf) [xopp](https://github.com/chen-gz/bed2/blob/b590a02f3a9e146a3f1e04f18fd66732c27014ff/14%20CAUCHY%20SEQUENCES%20part1_note.xopp)
+
 **3.8 Definition** A sequence $\left\{p_{n}\right\}$ in a metric space $X$ is said to be a Cauchy sequence if for every $\varepsilon>0$ there is an integer $N$ such that $d\left(p_{n}, p_{m}\right)<\varepsilon$ if $n \geq N$ and $m \geq N$.
 
 In our discussion of Cauchy sequences, as well as in other situations which will arise later, the following geometric concept will be useful.

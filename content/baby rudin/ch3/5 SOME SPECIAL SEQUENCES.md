@@ -3,6 +3,9 @@ title: 5 SOME SPECIAL SEQUENCES
 date: 2022-09-11
 ---
 
+* [youtube](https://youtu.be/eCyjDlXL1Ks)
+* [bilibili](https://www.bilibili.com/video/BV1Rt4y1F7Ec/)
+* note [pdf](https://github.com/chen-gz/bed2/blob/b590a02f3a9e146a3f1e04f18fd66732c27014ff/16%20SOME%20SPECIAL%20SEQUENCES.pdf) [xopp](https://github.com/chen-gz/bed2/blob/b590a02f3a9e146a3f1e04f18fd66732c27014ff/16%20SOME%20SPECIAL%20SEQUENCES.xopp)
 
 
 We shall now compute the limits of some sequences which occur frequently. The proofs will all be based on the following remark: If $0 \leq x_{n} \leq s_{n}$ for $n \geq N$, where $N$ is some fixed number, and if $s_{n} \rightarrow 0$, then $x_{n} \rightarrow 0$.
