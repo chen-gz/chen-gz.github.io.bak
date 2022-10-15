@@ -1,0 +1,460 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>hw2</title><meta name="generator" content="MATLAB 9.12"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2022-10-12"><meta name="DC.source" content="hw2.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; }
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+span.typesection { color:#A0522D }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><h1></h1><!--introduction--><!--/introduction--><pre class="codeinput"><span class="comment">%Problem 1, Consider a scalar plant, x_{k+1}  = 0.5 x_{k} + 2 u_{k} with cost J = 1/2 sum_{k=0}^{N-1}, N = 5. Find the optimal control to drive the system from x_0 = 0 to x_5 = 5;</span>
+
+A = 0.5;
+B = 2;
+r_n = 5;
+R = 1;
+x_0 = 0;
+N= 5;
+G = 0;
+i_out = zeros(N,1);
+u_out = zeros(N,1);
+<span class="keyword">for</span> i = 0:N-1
+    G = G + A^(N-i-1)*B*(R^-1)*B' *(A')^(N-i-1);
+<span class="keyword">end</span>
+
+<span class="keyword">for</span> i = 0:4
+    u = R^-1 * B' * (A')^(N-i-1) * G^-1 *(r_n - A^N * x_0);
+    i_out(i+1) = i;
+    u_out(i+1) = u;
+<span class="keyword">end</span>
+disp(<span class="string">"i "</span>);
+disp(i_out');
+disp(<span class="string">"u "</span>);
+disp(u_out');
+</pre><pre class="codeoutput">i 
+     0     1     2     3     4
+
+u 
+    0.1173    0.2346    0.4692    0.9384    1.8768
+
+</pre><p>problem 2: Newton's law is given by x_dot = Ax + Bu = [0 1; 0 0] x = [0;1] u and the state is x = [y; dy/dt] with y being the position and u the force per unit mass input. Discretize the system using MATLAB fucntion c2d. Use sample period of T=0.5 sec. Select weighting matrics Q = I, R = I, S_N = 100 * I with I being identity matrix.</p><pre class="codeinput"><span class="comment">% a) Solve the Riccati difference equation to find the optimal Riccati solution. Use N = 10 sampples, so that final time is 5 sec. Plot the diagonal elements s_11 and s22 vs. time.</span>
+
+sys = ss([0 1; 0 0], [0; 1], [1 0], 0);
+
+
+opt = c2dOptions(<span class="string">'Method'</span>,<span class="string">'tustin'</span>,<span class="string">'FractDelayApproxOrder'</span>,3);
+sysd = c2d(sys,0.5)
+
+<span class="comment">% get A and B from sysd</span>
+
+<span class="comment">% solve Riccati difference equation</span>
+I = eye(2);
+A = sysd.A;
+B = sysd.B;
+Q = I;
+R = 1;
+s11 = zeros([11,1]);
+s22 = zeros([11,1]);
+N = 10;
+
+S = zeros([2,2,N+1]);
+S(:,:, N+1) = 100 * I; <span class="comment">% set for S_N</span>
+k = zeros([2,1,N+1]);
+s11(11) = 100;
+s22(11) = 100;
+
+<span class="keyword">for</span> k = N:-1:1 <span class="comment">% start from N-1 to N</span>
+    S(:, :, k) = A' * (inv(S(:,:,k+1)) + B*inv(R)*B')^(-1) * A + Q;
+    K(:,:,k) = (B' * S(:,:,k+1) * B + R)^(-1) * B' * S(:,:,k+1) * A;
+    s11(k) = S(1,1,k);
+    s22(k) = S(2,2,k);
+<span class="keyword">end</span>
+
+u = zeros([1, 1, N+1]);
+x = zeros([2, 1, N+1]);
+<span class="comment">% u (1) = u_0 actually</span>
+x(:,:,1) = [10; 10];
+
+disp(<span class="string">'S: '</span>);
+disp(squeeze(S));
+disp(<span class="string">'K: '</span>);
+disp(squeeze(K));
+
+<span class="keyword">for</span> k = 1:N
+    u(:,:,k) = -K(:,:,k) * x(:,:,k);
+    x(:,:,k+1) = A * x(:,:,k) + B * u(:,:,k);
+<span class="keyword">end</span>
+
+disp(<span class="string">"u: "</span>);
+disp(squeeze(u)');
+
+
+plot(s11); hold <span class="string">on</span>; plot(s22); hold <span class="string">off</span>;
+disp(<span class="string">'s11: '</span>)
+disp(s11')
+disp(<span class="string">'s22: '</span>)
+disp(s22')
+
+x1 = squeeze(x(1,1,:));
+disp(<span class="string">'x1: '</span>); disp(x1');
+
+x2 = squeeze(x(2,1,:));
+disp(<span class="string">'x2: '</span>); disp(x1');
+
+u_k = squeeze(u(1,1,:));
+disp(<span class="string">'u_k: '</span>); disp(u_k');
+
+
+t = 0:0.5:5;
+subplot(2,2,1);
+plot(t, s11, <span class="string">'.'</span>, <span class="string">'markersize'</span>, 16);
+hold <span class="string">on</span>;
+plot(t, s22, <span class="string">'.'</span>, <span class="string">'markersize'</span>, 16);
+title(<span class="string">'S_{11} and S_{22}'</span>);
+subplot(2,2,2);
+plot(t, x1, <span class="string">'.'</span>, <span class="string">'markersize'</span>, 16);
+title(<span class="string">'x_1'</span>);
+subplot(2,2,3);
+plot(t, x2, <span class="string">'.'</span>, <span class="string">'markersize'</span>, 16);
+title(<span class="string">'x_2'</span>);
+subplot(2,2,4);
+plot(t, u_k, <span class="string">'.'</span>, <span class="string">'markersize'</span>, 16);
+title(<span class="string">'u_k'</span>);
+shg
+</pre><pre class="codeoutput">
+sysd =
+ 
+  A = 
+        x1   x2
+   x1    1  0.5
+   x2    0    1
+ 
+  B = 
+          u1
+   x1  0.125
+   x2    0.5
+ 
+  C = 
+       x1  x2
+   y1   1   0
+ 
+  D = 
+       u1
+   y1   0
+ 
+Sample time: 0.5 seconds
+Discrete-time state-space model.
+
+S: 
+
+(:,:,1) =
+
+    4.0368    2.0646
+    2.0646    4.1499
+
+
+(:,:,2) =
+
+    4.0435    2.0741
+    2.0741    4.1632
+
+
+(:,:,3) =
+
+    4.0678    2.1030
+    2.1030    4.1976
+
+
+(:,:,4) =
+
+    4.1417    2.1798
+    2.1798    4.2775
+
+
+(:,:,5) =
+
+    4.3448    2.3651
+    2.3651    4.4464
+
+
+(:,:,6) =
+
+    4.8755    2.7858
+    2.7858    4.7800
+
+
+(:,:,7) =
+
+    6.2840    3.7313
+    3.7313    5.4147
+
+
+(:,:,8) =
+
+   10.4679    5.9858
+    5.9858    6.6293
+
+
+(:,:,9) =
+
+   26.4338   12.1443
+   12.1443    9.0036
+
+
+(:,:,10) =
+
+   95.3311   24.4898
+   24.4898   11.2041
+
+
+(:,:,11) =
+
+   100     0
+     0   100
+
+K: 
+  Columns 1 through 7
+
+    0.6527    0.6566    0.6680    0.6972    0.7644    0.9085    1.2052
+    1.3169    1.3223    1.3359    1.3663    1.4276    1.5418    1.7409
+
+  Columns 8 through 10
+
+    1.8094    2.8929    0.4535
+    2.0664    2.4838    2.0408
+
+u: 
+  Columns 1 through 7
+
+  -19.6958   -8.4336   -2.2920    0.6764    1.8188    2.0119    1.7964
+
+  Columns 8 through 11
+
+    1.4914    1.2829    1.2860         0
+
+s11: 
+  Columns 1 through 7
+
+    4.0368    4.0435    4.0678    4.1417    4.3448    4.8755    6.2840
+
+  Columns 8 through 11
+
+   10.4679   26.4338   95.3311  100.0000
+
+s22: 
+  Columns 1 through 7
+
+    4.1499    4.1632    4.1976    4.2775    4.4464    4.7800    5.4147
+
+  Columns 8 through 11
+
+    6.6293    9.0036   11.2041  100.0000
+
+x1: 
+  Columns 1 through 7
+
+   10.0000   12.5380   11.5599    9.2410    6.7202    4.5113    2.7813
+
+  Columns 8 through 11
+
+    1.5272    0.6841    0.1878    0.0126
+
+x2: 
+  Columns 1 through 7
+
+   10.0000   12.5380   11.5599    9.2410    6.7202    4.5113    2.7813
+
+  Columns 8 through 11
+
+    1.5272    0.6841    0.1878    0.0126
+
+u_k: 
+  Columns 1 through 7
+
+  -19.6958   -8.4336   -2.2920    0.6764    1.8188    2.0119    1.7964
+
+  Columns 8 through 11
+
+    1.4914    1.2829    1.2860         0
+
+</pre><img vspace="5" hspace="5" src="hw2_01.png" alt=""> <p class="footer"><br><a href="https://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2022a</a><br></p></div><!--
+##### SOURCE BEGIN #####
+
+%%
+
+%Problem 1, Consider a scalar plant, x_{k+1}  = 0.5 x_{k} + 2 u_{k} with cost J = 1/2 sum_{k=0}^{N-1}, N = 5. Find the optimal control to drive the system from x_0 = 0 to x_5 = 5;
+
+A = 0.5;
+B = 2;
+r_n = 5;
+R = 1;
+x_0 = 0;
+N= 5;
+G = 0;
+i_out = zeros(N,1);
+u_out = zeros(N,1);
+for i = 0:N-1
+    G = G + A^(N-i-1)*B*(R^-1)*B' *(A')^(N-i-1);
+end
+
+for i = 0:4
+    u = R^-1 * B' * (A')^(N-i-1) * G^-1 *(r_n - A^N * x_0);
+    i_out(i+1) = i;
+    u_out(i+1) = u;
+end
+disp("i ");
+disp(i_out');
+disp("u ");
+disp(u_out');
+
+%%
+% problem 2: Newton's law is given by x_dot = Ax + Bu = [0 1; 0 0] x = [0;1] u and the state is x = [y; dy/dt] with y being the position and u the force per unit mass input. Discretize the system using MATLAB fucntion c2d. Use sample period of T=0.5 sec. Select weighting matrics Q = I, R = I, S_N = 100 * I with I being identity matrix.
+
+% a) Solve the Riccati difference equation to find the optimal Riccati solution. Use N = 10 sampples, so that final time is 5 sec. Plot the diagonal elements s_11 and s22 vs. time.
+
+sys = ss([0 1; 0 0], [0; 1], [1 0], 0);
+
+
+opt = c2dOptions('Method','tustin','FractDelayApproxOrder',3);
+sysd = c2d(sys,0.5)
+
+% get A and B from sysd
+
+% solve Riccati difference equation
+I = eye(2);
+A = sysd.A;
+B = sysd.B;
+Q = I;
+R = 1;
+s11 = zeros([11,1]);
+s22 = zeros([11,1]);
+N = 10;
+
+S = zeros([2,2,N+1]);
+S(:,:, N+1) = 100 * I; % set for S_N
+k = zeros([2,1,N+1]);
+s11(11) = 100;
+s22(11) = 100;
+
+for k = N:-1:1 % start from N-1 to N
+    S(:, :, k) = A' * (inv(S(:,:,k+1)) + B*inv(R)*B')^(-1) * A + Q;
+    K(:,:,k) = (B' * S(:,:,k+1) * B + R)^(-1) * B' * S(:,:,k+1) * A;
+    s11(k) = S(1,1,k);
+    s22(k) = S(2,2,k);
+end
+
+u = zeros([1, 1, N+1]);
+x = zeros([2, 1, N+1]);
+% u (1) = u_0 actually
+x(:,:,1) = [10; 10];
+
+disp('S: '); 
+disp(squeeze(S));
+disp('K: '); 
+disp(squeeze(K));
+
+for k = 1:N
+    u(:,:,k) = -K(:,:,k) * x(:,:,k);
+    x(:,:,k+1) = A * x(:,:,k) + B * u(:,:,k);
+end
+
+disp("u: "); 
+disp(squeeze(u)');
+
+
+plot(s11); hold on; plot(s22); hold off;
+disp('s11: ')
+disp(s11')
+disp('s22: ')
+disp(s22')
+
+x1 = squeeze(x(1,1,:));
+disp('x1: '); disp(x1');
+
+x2 = squeeze(x(2,1,:));
+disp('x2: '); disp(x1');
+
+u_k = squeeze(u(1,1,:));
+disp('u_k: '); disp(u_k');
+
+
+t = 0:0.5:5;
+subplot(2,2,1);
+plot(t, s11, '.', 'markersize', 16);
+hold on;
+plot(t, s22, '.', 'markersize', 16);
+title('S_{11} and S_{22}');
+subplot(2,2,2);
+plot(t, x1, '.', 'markersize', 16);
+title('x_1');
+subplot(2,2,3);
+plot(t, x2, '.', 'markersize', 16);
+title('x_2');
+subplot(2,2,4);
+plot(t, u_k, '.', 'markersize', 16);
+title('u_k');
+shg
+
+
+##### SOURCE END #####
+--></body></html>
