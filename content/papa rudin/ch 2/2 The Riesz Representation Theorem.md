@@ -26,6 +26,7 @@ $$
 $$
 
 holds for every open set $E$, and for every $E \in \mathfrak{M}$ with $\mu(E)<\infty$.
+
 (e) If $E \in \mathfrak{M}, A \subset E$, and $\mu(E)=0$, then $A \in \mathfrak{M}$.
 
 For the sake of clarity, let us be more explicit about the meaning of the word "positive" in the hypothesis: $\Lambda$ is assumed to be a linear functional on the complex vector space $C_c(X)$, with the additional property that $\Lambda f$ is a nonnegative real number for every $f$ whose range consists of nonnegative real numbers. Briefly, if $f(X) \subset[0, \infty)$ then $\Lambda f \in[0, \infty)$.
