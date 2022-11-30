@@ -1,4 +1,3 @@
-
 ---
 title: Trigonometric Series
 date: 2022-11-07
