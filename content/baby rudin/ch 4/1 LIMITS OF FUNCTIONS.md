@@ -12,9 +12,11 @@ $$
 d_{Y}(f(x), q)<\varepsilon
 $$
 for all points $x \in E$ for which
+
 $$
 0<d_{X}(x, p)<\delta .
 $$
+
 The symbols $d_{X}$ and $d_{Y}$ refer to the distances in $X$ and $Y$, respectively.
 If $X$ and/or $Y$ are replaced by the real line, the complex plane, or by some euclidean space $R^{k}$, the distances $d_{X}, d_{Y}$ are of course replaced by absolute values, or by norms of differences (see Sec. 2.16).
 
