@@ -98,3 +98,49 @@ f(z)=\int_T f d \mu_z \quad(f \in A) .
 $$
 (This also holds for $z \in T$, but is then trivial: $\mu_z$ is simply the unit mass concentrated at the point $z$.)
 
+We now fix $z \in U$ and write $z=r e^{i \theta}, 0 \leq r<1, \theta$ real.
+If $u_n(w)=w^n$, then $u_n \in A$ for $n=0,1,2, \ldots$; hence ( 2 ) shows that
+$$
+r^n e^{i n \theta}=\int_T u_n d \mu_z \quad(n=0,1,2, \ldots)
+$$
+Since $u_{-n}=\bar{u}_n$ on $T,(3)$ leads to
+$$
+\int_T u_n d \mu_z=r^{|n|} e^{i n \theta} \quad(n=0, \pm 1, \pm 2, \ldots) .
+$$
+This suggests that we look at the real function
+$$
+P_r(\theta-t)=\sum_{n=-\infty}^{\infty} r^{|n|} e^{i n(\theta-t)} \quad(t \text { real })
+$$
+since
+$$
+\frac{1}{2 \pi} \int_{-\pi}^\pi P_r(\theta-t) e^{i n t} d t=r^{|n|} e^{i n \theta} \quad(n=0, \pm 1, \pm 2, \ldots)
+$$
+Note that the series (5) is dominated by the convergent geometric series $\sum r^{|n|}$, so that it is legitimate to insert the series into the integral (6) and to integrate term by term, which gives (6). Comparison of (4) and (6) gives
+$$
+\int_T f d \mu_z=\frac{1}{2 \pi} \int_{-\pi}^\pi f\left(e^{i t}\right) P_r(\theta-t) d t
+$$
+for $f=u_n$, hence for every trigonometric polynomial $f$, and Theorem $4.25$ now implies that (7) holds for every $f \in C(T)$. [This shows that $\mu_z$ was uniquely determined by (2). Why?]
+In particular, (7) holds if $f \in A$, and then (2) gives the representation
+$$
+f(z)=\frac{1}{2 \pi} \int_{-\pi}^\pi f\left(e^{i t}\right) P_r(\theta-t) d t \quad(f \in A) .
+$$
+The series (5) can be summed explicitly, since it is the real part of
+$$
+1+2 \sum_1^{\infty}\left(z e^{-i t}\right)^n=\frac{e^{i t}+z}{e^{i t}-z}=\frac{1-r^2+2 i r \sin (\theta-t)}{\left|1-z e^{-i t}\right|^2}
+$$
+Thus
+$$
+P_r(\theta-t)=\frac{1-r^2}{1-2 r \cos (\theta-t)+r^2} .
+$$
+This is the so-called "Poisson kernel." Note that $P_r(\theta-t) \geq 0$ if $0 \leq r<1$. We now summarize what we have proved:
+
+5.25 Theorem Suppose $A$ is a vector space of continuous complex functions on the closed unit disc $\bar{U}$. If $A$ contains all polynomials, and if
+$$
+\sup _{z \in U}|f(z)|=\sup _{z \in T}|f(z)|
+$$
+for every $f \in A$ (where $T$ is the unit circle, the boundary of $U$ ), then the Poisson integral representation
+$$
+f(z)=\frac{1}{2 \pi} \int_{-\pi}^\pi \frac{1-r^2}{1-2 r \cos (\theta-t)+r^2} f\left(e^{i t}\right) d t \quad\left(z=r e^{i \theta}\right)
+$$
+is valid for every $f \in A$ and every $z \in U$.
+
