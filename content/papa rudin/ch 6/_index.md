@@ -1,0 +1,4 @@
+---
+title: chapter 5 EXAMPLES OF BANACH SPACE TECHNIQUES
+date: 2022-12-11
+---
