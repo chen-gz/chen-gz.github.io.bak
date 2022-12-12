@@ -3,7 +3,10 @@ title: The Hahn-Banach Theorem
 date: 2022-11-19
 ---
 
-### 5.16 Theorem If $M$ is a subspace of a normed linear space $X$ and if $f$ is a bounded linear functional on $M$, then $f$ can be extended to a bounded linear functional $F$ on $X$ so that $\|F\|=\|f\|$.
+### 5.16 Theorem
+
+
+If $M$ is a subspace of a normed linear space $X$ and if $f$ is a bounded linear functional on $M$, then $f$ can be extended to a bounded linear functional $F$ on $X$ so that $\|F\|=\|f\|$.
 
 Note that $M$ need not be closed.
 

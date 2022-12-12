@@ -1,9 +1,11 @@
 ---
-title: Fourier Coefficients of $L^1$-functions
+title: Fourier Coefficients of L¹-functions
 date: 2022-11-19
 ---
 
-### 5.14 As in Sec. 4.26, we associate to every $f \in L^1(T)$ a function $\hat{f}$ on $Z$ defined by
+### 5.14 
+
+As in Sec. 4.26, we associate to every $f \in L^1(T)$ a function $\hat{f}$ on $Z$ defined by
 $$
 \hat{f}(n)=\frac{1}{2 \pi} \int_{-\pi}^\pi f(t) e^{-i n t} d t \quad(n \in Z) .
 $$
