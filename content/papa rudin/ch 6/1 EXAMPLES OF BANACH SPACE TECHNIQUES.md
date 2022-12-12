@@ -81,3 +81,28 @@ $$
 \frac{1}{2 \pi} \int_{-\pi}^\pi \cos ^{+}(\alpha-\theta) d \theta=\frac{1}{\pi}
 $$
 for every $\alpha$.
+
+### 6.4 Theorem
+
+If $\mu$ is a complex measure on $X$, then
+$$
+|\mu|(X)<\infty .
+$$
+Proof Suppose first that some set $E \in \mathfrak{M}$ has $|\mu|(E)=\infty$. Put $t=\pi(1+|\mu(E)|)$. Since $|\mu|(E)>t$, there is a partition $\left\{E_i\right\}$ of $E$ such that
+$$
+\sum_{i=1}^N\left|\mu\left(E_i\right)\right|>t
+$$
+for some $N$. Apply Lemma 6.3, with $z_i=\mu\left(E_i\right)$, to conclude that there is a set $A \subset E$ (a union of some of the sets $\left.E_i\right)$ for which
+$$
+|\mu(A)|>t / \pi>1 \text {. }
+$$
+Setting $B=E-A$, it follows that
+$$
+|\mu(B)|=|\mu(E)-\mu(A)| \geq|\mu(A)|-|\mu(E)|>\frac{t}{\pi}-|\mu(E)|=1 .
+$$
+We have thus split $E$ into disjoint sets $A$ and $B$ with $|\mu(A)|>1$ and $|\mu(B)|>1$. Evidently, at least one of $|\mu|(A)$ and $|\mu|(B)$ is $\infty$, by Theorem 6.2. Now if $|\mu|(X)=\infty$, split $X$ into $A_1, B_1$, as above, with $\left|\mu\left(A_1\right)\right|>1$, $|\mu|\left(B_1\right)=\infty$. Split $B_1$ into $A_2, B_2$, with $\left|\mu\left(A_2\right)\right|>1,|\mu|\left(B_2\right)=\infty$. Continuing in this way, we get a countably infinite disjoint collection $\left\{A_i\right\}$, with $\left|\mu\left(A_i\right)\right|>1$ for each $i$. The countable additivity of $\mu$ implies that
+$$
+\mu\left(\bigcup_i A_i\right)=\sum_i \mu\left(A_i\right) .
+$$
+But this series cannot converge, since $\mu\left(A_i\right)$ does not tend to 0 as $i \rightarrow \infty$. This contradiction shows that $|\mu|(X)<\infty$.
+
