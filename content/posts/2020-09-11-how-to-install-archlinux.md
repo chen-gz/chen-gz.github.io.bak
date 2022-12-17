@@ -162,6 +162,10 @@ install grub and generator grub configure
 grub-install --target=x86_64-efi --efi-directory=/boot/EFI --recheck
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
+If grub command not working, you should try [arch forum](https://bbs.archlinux.org/viewtopic.php?id=252598)
+```
+grub-install --target=x86_64-efi --bootloader-id=GRUB --efi-directory=/boot/efi --no-nvram --removable
+```
 
 ### set root password and add user
 
