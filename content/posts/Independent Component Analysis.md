@@ -2,7 +2,7 @@
 title:  Independent Component Analysis
 categories: [ML]
 author: guangzong
-date: 2021-12-17
+date: 2022-12-17
 tags: [ML]
 math: true
 ---
@@ -231,7 +231,6 @@ The processure of FastICA
 #### FastICA for serveral unit
 
 The one-unit algorithm of the preceding subsection estimaes just one of the independent components, or one projection pursuit derection.
-
 
 
 
