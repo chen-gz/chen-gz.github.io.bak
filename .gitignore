@@ -3,3 +3,4 @@ config.toml
 *.lock
 resources/
 public/
+.Rproj.user

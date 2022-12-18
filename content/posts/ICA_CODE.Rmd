@@ -1,0 +1,192 @@
+---
+title: ICA Experiment
+date: 2022-12-18
+---
+
+The explanation of ICA is [Independent Component Analysis]()
+
+## Central limit theorem
+
+
+The distribution of sum of independent random variables tends toward a Gaussian distribution, under certain condition.
+
+It specific certain condition, we here restrict to Independent and identically distributed(i.i.d.) condition. 
+
+So the experience here we will sum up two iid random variable and show there distribution.
+
+### Uniform distribution
+
+```{r}
+# set.seed(1)
+n_sample = 10000
+n_vector = 3
+x1 = runif(n_sample)
+rvs = runif(n_sample * n_vector)
+dim(rvs) = c(n_sample, n_vector)
+sum_rvs = apply(rvs, 1, mean)
+mean = 0.5
+sd = sqrt(1/12)/sqrt(n_vector)
+p0 = hist(x1, xlab = 'x', freq=FALSE, density = 20, nclass = 40, prob = TRUE)
+p1 = hist(sum_rvs, xlab = 'x', freq=FALSE, density = 20, nclass = 40, prob = TRUE)
+gaussian = rnorm(n_sample, mean=mean, sd= sd)
+p2 = hist(gaussian, xlab = 'x', freq=FALSE, density = 20, nclass = 80, prob = TRUE)
+plot(p1, col=rgb(0,0,1,1/5), xlim=c(0,1), freq = FALSE)
+plot(p2, col=rgb(1,0,0,1/5), xlim=c(0,1), freq = FALSE, add = T)  # second
+# rvs = append(rvs, runif(n_sample))
+
+
+```
+### Exponential Distribution
+
+```{r}
+n_sample = 10000
+n_vector = 20
+lambda = 1
+x1 = rexp(n_sample, lambda)
+rvs = rexp(n_sample * n_vector, lambda)
+dim(rvs) = c(n_sample, n_vector)
+sum_rvs = apply(rvs, 1, mean)
+mean = 1/lambda
+sd = 1/lambda/sqrt(n_vector)
+mean = mean
+p0 = hist(x1, xlab = 'x', freq=FALSE, density = 20, nclass = 80, prob = TRUE)
+p1 = hist(sum_rvs, xlab = 'x', density = 20, nclass = 80, prob = TRUE)
+gaussian = rnorm(n_sample, mean=mean, sd= sd)
+p2 = hist(gaussian, xlab = 'x', density = 20, nclass = 80, prob = TRUE)
+plot(p1, col=rgb(0,0,1,1/5), xlim=c(-2,2))
+plot(p2, col=rgb(1,0,0,1/5), xlim=c(-2,2), add = T)  # second
+
+
+```
+
+
+
+### Non Gaussian is indepence
+
+Previous experient shows the central limit theorem. The distribution of sum of independent random variables tends toward a Gaussian distribution, under certain condition.
+
+So the ICA is maximize the nongaussian of the input signal. 
+
+#### Measure of nongaussian
+
+We using following equation to measure the 
+
+$$
+\begin{align} 
+J(y) \propto[E\{G(y)\}-E\{G(v)\}]^2 \\
+G_1(u)=\frac{1}{a_1} \log \cosh a_1 u, \quad G_2(u)=-\exp \left(-u^2 / 2\right) \\
+g_1(u)=\tanh \left(a_1 u\right) \\ 
+g_2(u)=u \exp \left(-u^2 / 2\right)
+\end{align}
+$$
+
+define $g_1$, $g_2$, $g_1'$ and $g_2'$
+```{r}
+a1 = 1;
+g1 <- function(u) {
+  return (tanh(a1 * u))
+}
+g1_prime <- function(u) {
+  return (a1 * 1-tanh(a1 * u)^2)
+}
+g2 <- function(u){
+  return (u * exp(-u*u/2))
+}
+g2_prime <- function(u) {
+  return (exp(u^2/2) + u^2*exp(u^2/2))
+}
+
+```
+
+Generate observe signal x(t) from siganl s(t)
+Here we define $s_1(t) = sin(t), s_2(t) = t - [t]$ where [t] is the maximun integer less than $t$.
+
+```{r}
+t = seq(0, 50, 0.001)
+
+# generate s1
+s1 = sin(t)
+plot(t, s1)
+```
+
+Generate s2
+```{r}
+s2_func <- function(t1) {
+  t1= t1 / 10
+  tmp = t1 - floor(t1)
+  if (tmp <= 0.8) {
+    return(tmp)
+  }
+  else {
+    return (0.8 * (1-tmp)/0.2)
+  }
+}
+# s2 = t - floor(t)
+# s2= s2_func(t)
+s2 = unlist((lapply(t, s2_func)))
+plot(t, s2)
+```
+Generate $x_1$ and $x_2$
+```{r}
+A = c(1, 0.1, 0.01, 1)
+dim(A) = c(2,2)
+x1 = A[1,1] * s1 + A[1,2] * s2
+x2 = A[2,1] * s1 + A[2,2] * s2
+X = c(x1,x2)
+dim(X) = c(length(t),2)
+X = t(X)
+
+# plot x1 and x2
+plot(t, X[1,])
+plot(t, X[2,])
+```
+
+
+Preprocess
+```{r}
+# Remove mean
+n = length(t)
+X = X - apply(X, 1, mean)
+
+# Whiten
+C = 1/n * (X %*% t(X))
+r = eigen(C)
+E = r$vectors
+D = diag(r$values)
+rsqrt_D = diag(1/r$values)
+x_tilda = E %*% rsqrt_D %*%t(E) %*% X
+
+x = x_tilda
+
+```
+
+Run one unit ICA
+```{r}
+
+w = rnorm(2)
+dim(w) = c(2,1)
+
+for (i in 1:50) {
+  w_tmp = 1/n * (x %*% t(g1(t(w) %*% x))) - mean(g1_prime(t(w) %*% x)) * w
+  w = w_tmp / norm(w_tmp, type="2")
+}
+
+s1_bar = t(w) %*% x
+plot(t, s1_bar)
+
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
