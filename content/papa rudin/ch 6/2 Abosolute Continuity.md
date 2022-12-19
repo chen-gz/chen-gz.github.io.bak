@@ -1,5 +1,5 @@
 ---
-title: "Total Variation"
+title: "Abosolute Continuity"
 date: "2022-12-11"
 editor_options: 
   markdown: 
