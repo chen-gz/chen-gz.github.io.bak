@@ -93,7 +93,7 @@ g2 <- function(u){
   return (u * exp(-u*u/2))
 }
 g2_prime <- function(u) {
-  return (exp(u^2/2) + u^2*exp(u^2/2))
+  return (exp(-u^2/2) - u^2*exp(-u^2/2))
 }
 
 ```
@@ -128,7 +128,7 @@ plot(t, s2)
 ```
 Generate $x_1$ and $x_2$
 ```{r}
-A = c(1, 0.1, 0.01, 1)
+A = c(1, 0.3, 0.5, 1)
 dim(A) = c(2,2)
 x1 = A[1,1] * s1 + A[1,2] * s2
 x2 = A[2,1] * s1 + A[2,2] * s2
@@ -166,8 +166,8 @@ Run one unit ICA
 w = rnorm(2)
 dim(w) = c(2,1)
 
-for (i in 1:50) {
-  w_tmp = 1/n * (x %*% t(g1(t(w) %*% x))) - mean(g1_prime(t(w) %*% x)) * w
+for (i in 1:100) {
+  w_tmp = 1/n * (x %*% t(g2(t(w) %*% x))) - mean(g2_prime(t(w) %*% x)) * w
   w = w_tmp / norm(w_tmp, type="2")
 }
 
