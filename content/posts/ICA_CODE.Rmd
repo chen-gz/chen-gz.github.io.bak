@@ -1,6 +1,6 @@
 ---
-title: ICA Experiment
-date: 2022-12-18
+title: "ICA Experiment"
+date: "2022-12-18"
 ---
 
 The explanation of ICA is [Independent Component Analysis]()
