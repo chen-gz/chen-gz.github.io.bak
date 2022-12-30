@@ -1,6 +1,7 @@
 ---
 title: "ICA Experiment"
 date: "2022-12-18"
+author: Guangzong Chen
 ---
 
 The explanation of ICA is [Independent Component Analysis]()
