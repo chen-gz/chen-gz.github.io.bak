@@ -39,7 +39,7 @@ jobs:
           wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_Linux-64bit.deb \
           && sudo dpkg -i ${{ runner.temp }}/hugo.deb
       - name: Install r package
-        run: R -e "install.packages('blogdown',repos='http://cran.rstudio.com')"
+        run: sudo R -e "install.packages('blogdown',repos='http://cran.rstudio.com')"
       - name: Checkout
         uses: actions/checkout@v3
         with:
