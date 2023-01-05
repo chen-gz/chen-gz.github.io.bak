@@ -5,8 +5,7 @@ name: default
 
 steps:
 - name: deploy
-  image: archlinux
+  image: ubuntu
   commands:
     - echo "hello world"
-    - R -e "blogdown::build_site(build_rmd = TRUE)"
 
