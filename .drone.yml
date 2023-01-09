@@ -4,12 +4,15 @@ name: default
 
 
 steps:
-- name: deploy
+- name: bulid
   image: guangzong/rhugo
   commands:
     - git submodule update --init --recursive
-    - R -e "blogdown::build_site()"
-    - echo "hello world"
-  files:
-    - public/*
+    - R -e -q "blogdown::build_site()"
+- name: gitea_release
+  image: plugins/gitea-release
+  settings:
+    api_key: 403b827a0b571f54fb429d80c1e10d209daf3e0e
+    base_url: https://gitea.zongpitt.com
+    file: public/*
 
