@@ -13,7 +13,7 @@ steps:
     - git submodule update --init --recursive
       #- R -q -e "blogdown::build_site()"
       # - pwd
-    - echo $SSH_KEY
+    - echo "$SSH_KEY"
     - cd ..
     - echo $SSH_KEY > ~/.ssh/id_rsa
     - chmod 400 ~/.ssh/id_rsa
