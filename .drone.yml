@@ -23,6 +23,7 @@ steps:
     - git checkout gh-page 2>/dev/null || git checkout -b gh-page
     - rm -rf *
     - mv ../src/public/* ./
+    - echo "zongpitt.com" > CNAME
     - git add .
     - git commit -m "update by drone"
     - git push -u origin gh-page
