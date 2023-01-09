@@ -1,6 +1,0 @@
-*.DS_Store
-config.toml
-*.lock
-resources/
-public/
-.Rproj.user
