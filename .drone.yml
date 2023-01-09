@@ -14,7 +14,6 @@ steps:
       #- R -q -e "blogdown::build_site()"
       # - pwd
     - echo "$SSH_KEY" > $HOME/.ssh/id_rsa
-    - chmod 600 $HOME/.ssh/known_hosts
     - chmod 600 $HOME/.ssh/id_rsa
     - ssh-keyscan -H git@your.gitserver.com > ~/.ssh/known_hosts 2> /dev/null
     - cd ..
