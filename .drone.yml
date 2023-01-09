@@ -9,10 +9,3 @@ steps:
   commands:
     - git submodule update --init --recursive
     - R -q -e "blogdown::build_site()"
-- name: gitea_release
-  image: plugins/gitea-release
-  settings:
-    api_key: 403b827a0b571f54fb429d80c1e10d209daf3e0e
-    base_url: https://gitea.zongpitt.com
-    file: public/*
-
