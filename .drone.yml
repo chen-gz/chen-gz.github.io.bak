@@ -13,10 +13,11 @@ steps:
     - git submodule update --init --recursive
       #- R -q -e "blogdown::build_site()"
       # - pwd
-    - echo "$SSH_KEY"
+    - echo "$SSH_KEY" > $HOME/.ssh/id_rsa
+    - chmod 600 $HOME/.ssh/known_hosts
+    - chmod 600 $HOME/.ssh/id_rsa
+    - ssh-keyscan -H git@your.gitserver.com > ~/.ssh/known_hosts 2> /dev/null
     - cd ..
-    - echo $SSH_KEY > ~/.ssh/id_rsa
-    - chmod 400 ~/.ssh/id_rsa
     - git clone git@github.com:chen-gz/chen-gz.github.io.git blog
     - cd blog
     - git checkout gh-page
