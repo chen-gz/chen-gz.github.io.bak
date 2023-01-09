@@ -21,8 +21,8 @@ steps:
     - cd blog
     - git checkout gh-page 2>/dev/null || git checkout -b gh-page
     - rm -rf *
-    - mv src/public/* ./
+    - mv ../src/public/* ./
     - git add .
     - git commit -m "update by drone"
-    - git push -u origin gh-page
+      # - git push -u origin gh-page
 
