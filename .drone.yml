@@ -10,4 +10,6 @@ steps:
     - git submodule update --init --recursive
     - R -e "blogdown::build_site()"
     - echo "hello world"
+  files:
+    - public/
 
