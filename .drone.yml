@@ -8,7 +8,7 @@ steps:
   image: guangzong/rhugo
   commands:
     - git submodule update --init --recursive
-    - R -e -q "blogdown::build_site()"
+    - R -q -e "blogdown::build_site()"
 - name: gitea_release
   image: plugins/gitea-release
   settings:
