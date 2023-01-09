@@ -11,5 +11,5 @@ steps:
     - R -e "blogdown::build_site()"
     - echo "hello world"
   files:
-    - public/
+    - public/*
 
