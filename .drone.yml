@@ -11,15 +11,18 @@ steps:
       from_secret: ssh_key
   commands:
     - git submodule update --init --recursive
-      #- R -q -e "blogdown::build_site()"
-      # - pwd
+    - R -q -e "blogdown::build_site()"
+    - pwd
     - echo "$SSH_KEY" > $HOME/.ssh/id_rsa
     - chmod 600 $HOME/.ssh/id_rsa
     - ssh-keyscan github.com > ~/.ssh/known_hosts 
     - cd ..
     - git clone git@github.com:chen-gz/chen-gz.github.io.git blog
     - cd blog
-    - git checkout gh-page
+    - git checkout gh-page 2>/dev/null || git checkout -b gh-page
     - rm -rf *
     - mv src/public/* ./
+    - git add .
+    - git commit -m "update by drone"
+    - git push -u origin gh-page
 
