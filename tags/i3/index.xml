@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>I3 on Guangzong Blog</title>
+    <link>https://zongpitt.com/tags/i3/</link>
+    <description>Recent content in I3 on Guangzong Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 08 Oct 2020 10:12:00 -0400</lastBuildDate><atom:link href="https://zongpitt.com/tags/i3/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Setup i3</title>
+      <link>https://zongpitt.com/posts/2020-10-08-setup-i3/</link>
+      <pubDate>Thu, 08 Oct 2020 10:12:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-10-08-setup-i3/</guid>
+      <description>i3 pacman -Syu i3-gap xorg-xint we are using startx to start i3. So change /etc/X11/xinit/xinitrc uncomment last four lines and add follwing lines
+export GTK_IM_MODULE=fcitx export QT_IM_MODULE=fcitx export XMODIFIERS=@im=fcitx exec i3 Before we start i3, we need some configuration. Otherwise we can no do anything aferter i3 been started.
+The configuration file for i3 is here. Follwing command can be use to set up configuration.
+mkdir -p ~/.config/i3 wget https://gist.githubusercontent.com/chen-gz/83eade557baf20a4021af321d973d8fe/raw/d0f0fdcfa03f32f9497d08689dad14c7fcbf54ec/i3_config -o ~/.</description>
+    </item>
+    
+  </channel>
+</rss>

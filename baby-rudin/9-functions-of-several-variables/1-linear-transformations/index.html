@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css"
+        class="dark-mode-native-dark-original" />
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+     
+    <link rel="stylesheet" href="https://zongpitt.com/sass/main.06935202011a97ba473ebeeb0cb6788daa9fb5a9fff471a4e85850293d1c5ac4.css" />
+    <title>
+          Guangzong Blog | 1 LINEAR TRANSFORMATIONS.md
+    </title>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.bundle.min.js"></script>
+    <script src=" https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.js"></script>
+
+    <script
+        src="https://cdn.jsdelivr.net/combine/npm/magnific-popup@1/dist/jquery.magnific-popup.min.js,npm/lozad/dist/lozad.min.js,npm/clipboard@2/dist/clipboard.min.js"></script>
+    <script type="text/javascript" src="/js/commons/back-to-top.js"></script>
+    
+    
+    
+    <script type="text/javascript" src="/js/commons/topbar-switch.js"></script>
+    <script type="text/javascript" src="/js/commons/sidebar.js"></script>
+    <script type="text/javascript" src="/js/utils/category-collapse.js"></script>
+    <script type="text/javascript" src="/js/utils/checkbox.js"></script>
+    <script type="text/javascript" src="/js/utils/clipboard.js"></script>
+    <script type="text/javascript" src="/js/utils/img-extra.js"></script>
+    <script type="text/javascript" src="/js/utils/pageviews.js"></script>
+    
+    <script type="text/javascript" src="/js/utils/timeago.js"></script>
+    
+    
+</head>
+<body data-spy="scroll" data-target="#toc" data-topbar-visible="true" class="d-flex"><div id="sidebar" class="d-flex flex-column align-items-end">
+    <div class="profile-wrapper text-center">
+
+        <div id="avatar">
+            <a href="/" alt="avatar" class="mx-auto"> <img src=https://github.com/chen-gz/chen-gz/blob/main/mine_square.jpg?raw&#61;truehttps://raw.githubusercontent.com/chen-gz/chen-gz/blob/main/mine_square.jpg alt="avatar"
+                    onerror="this.style.display='none'"> </a>
+        </div>
+
+        <div class="site-title mt-3"> <a href="/">Guangzong</a> </div>
+        <div class="site-subtitle font-italic">Welcome to my blog</div>
+    </div>
+
+    <ul>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/">
+                <span>
+                    Home
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/archive/">
+                <span>
+                    Archive
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/tags/">
+                <span>
+                    Tags
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/about/">
+                <span>
+                    About
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/categories/">
+                <span>
+                    Categories
+                </span>
+            </a>
+        </li>
+        
+    </ul>
+
+    <div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center align-items-center">
+        <button class="mode-toggle btn" aria-label="Switch Mode"> 
+            <i class="fas fa-adjust"></i> 
+        </button>
+
+        <span class="icon-border"></span>
+        <a href="https://github.com/chen-gz" aria-label="github" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i>
+        </a>
+
+        <a href=" javascript:location.href = 'mailto:' + ['chen-gz','outlook.com'].join('@')" aria-label="email">
+            <i class="fas fa-envelope"></i>
+        </a>
+
+        <a href="/feed.xml" aria-label="rss"> <i class="fas fa-rss"></i> </a>
+    </div>
+
+    
+    
+</div>
+<div id="all-wrapper" class="d-flex flex-column"><div id="topbar-wrapper">
+    <div id="topbar" class="d-flex">
+        
+        <span id="breadcrumb" class="d-flex">
+              
+               
+            
+            
+            <div><a href='https://zongpitt.com/'>Home</a></div>
+              
+              
+            
+            <div><a href="https://zongpitt.com/baby-rudin">baby-rudin</a></div>
+               
+              
+            
+            <div><a href="https://zongpitt.com/baby-rudin/9-functions-of-several-variables">9-functions-of-several-variables</a></div>
+               
+                 
+                
+        </span>
+        <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i>
+        <div id="topbar-title">Guangzong</div>
+        <i id="search-trigger" class="fas fa-search fa-fw"></i>
+        <span id="search-wrapper" class="align-items-center">
+            <i class="fas fa-search fa-fw"></i>
+            <input class="form-control" id="search-input" type="search" aria-label="search" autocomplete="off"
+                placeholder="Search..." />
+            <i class="fa fa-times-circle fa-fw" id="search-cleaner"></i>
+        </span>
+    </div>
+</div>
+<div id="main-wrapper" class="d-flex mt-3">
+            <div id="core-wrapper" class="d-flex flex-column">
+                <div id="main" class="d-flex flex-column">
+                    
+<div class="post pl-1 pr-1 pl-md-2 pr-md-2">
+    
+    <div id="post-content">
+        <h1 style="text-align: center;">1 LINEAR TRANSFORMATIONS.md</h1>
+        <br>
+        
+        <p>We begin this chapter with a discussion of sets of vectors in
+euclidean <span class="math inline">\(n\)</span>-space <span
+class="math inline">\(R^{n}\)</span>. The algebraic facts presented here
+extend without change to finite-dimensional vector spaces over any field
+of scalars. However, for our purposes it is quite sufficient to stay
+within the familiar framework provided by the euclidean spaces.</p>
+<p><strong>9.1 Definitions</strong></p>
+<ol type="a">
+<li>A nonempty set <span class="math inline">\(X \subset R^{n}\)</span>
+is a vector space if <span class="math inline">\(\mathbf{x}+\mathbf{y}
+\in X\)</span> and <span class="math inline">\(c \mathbf{x} \in
+X\)</span> for all <span class="math inline">\(\mathbf{x} \in X,
+\mathbf{y} \in X\)</span>, and for all scalars <span
+class="math inline">\(c\)</span>.</li>
+<li>If <span class="math inline">\(\mathbf{x}_{1}, \ldots,
+\mathbf{x}_{k} \in R^{n}\)</span> and <span class="math inline">\(c_{1},
+\ldots, c_{k}\)</span> are scalars, the vector</li>
+</ol>
+<p><span class="math display">\[
+c_{1} \mathbf{x}_{1}+\cdots+c_{k} \mathbf{x}_{k}
+\]</span></p>
+<p>is called a linear combination of <span
+class="math inline">\(\mathbf{x}_{1}, \ldots, \mathbf{x}_{k}\)</span>.
+If <span class="math inline">\(S \subset R^{n}\)</span> and if <span
+class="math inline">\(E\)</span> is the set of all linear combinations
+of elements of <span class="math inline">\(S\)</span>, we say that <span
+class="math inline">\(S\)</span> spans <span
+class="math inline">\(E\)</span>, or that <span
+class="math inline">\(E\)</span> is the span of <span
+class="math inline">\(S\)</span>.</p>
+<p>Observe that every span is a vector space.</p>
+<ol start="3" type="a">
+<li>A set consisting of vectors <span
+class="math inline">\(\mathbf{x}_{1}, \ldots, \mathbf{x}_{k}\)</span>
+(we shall use the notation <span
+class="math inline">\(\left\{\mathbf{x}_{1}, \ldots,
+\mathbf{x}_{k}\right\}\)</span> for such a set) is said to be
+independent if the relation <span class="math inline">\(c_{1}
+\mathbf{x}_{1}+\cdots+c_{k} \mathbf{x}_{k}=\mathbf{0}\)</span> implies
+that <span class="math inline">\(c_{1}=\cdots=c_{k}=0\)</span>.
+Otherwise <span class="math inline">\(\left\{\mathbf{x}_{1}, \ldots,
+\mathbf{x}_{k}\right\}\)</span> is said to be dependent. Observe that no
+independent set contains the null vector.</li>
+<li>If a vector space <span class="math inline">\(X\)</span> contains an
+independent set of <span class="math inline">\(r\)</span> vectors but
+contains no independent set of <span class="math inline">\(r+1\)</span>
+vectors, we say that <span class="math inline">\(X\)</span> has
+dimension <span class="math inline">\(r\)</span>, and write: <span
+class="math inline">\(\operatorname{dim} X=r\)</span>.</li>
+</ol>
+<p>The set consisting of <span class="math inline">\(\mathbf{0}\)</span>
+alone is a vector space; its dimension is 0 . (e) An independent subset
+of a vector space <span class="math inline">\(X\)</span> which spans
+<span class="math inline">\(X\)</span> is called a basis of <span
+class="math inline">\(X\)</span>.</p>
+<p>Observe that if <span class="math inline">\(B=\left\{\mathbf{x}_{1},
+\ldots, \mathbf{x}_{r}\right\}\)</span> is a basis of <span
+class="math inline">\(X\)</span>, then every <span
+class="math inline">\(\mathbf{x} \in X\)</span> has a unique
+representation of the form <span class="math inline">\(\mathbf{x}=\Sigma
+c_{j} \mathbf{x}_{j}\)</span>. Such a representation exists since <span
+class="math inline">\(B\)</span> spans <span
+class="math inline">\(X\)</span>, and it is unique since <span
+class="math inline">\(B\)</span> is independent. The numbers <span
+class="math inline">\(c_{1}, \ldots, c_{r}\)</span> are called the
+coordinates of <span class="math inline">\(\mathbf{x}\)</span> with
+respect to the basis <span class="math inline">\(B\)</span>.</p>
+<p>The most familiar example of a basis is the set <span
+class="math inline">\(\left\{\mathbf{e}_{1}, \ldots,
+\mathbf{e}_{n}\right\}\)</span>, where <span
+class="math inline">\(\mathbf{e}_{j}\)</span> is the vector in <span
+class="math inline">\(R^{n}\)</span> whose <span
+class="math inline">\(j\)</span> th coordinate is 1 and whose other
+coordinates are all 0. If <span class="math inline">\(\mathbf{x} \in
+R^{n}, \mathbf{x}=\left(x_{1}, \ldots, x_{n}\right)\)</span>, then <span
+class="math inline">\(\mathbf{x}=\Sigma x_{j} \mathbf{e}_{j}\)</span>.
+We shall call <span class="math display">\[
+\left\{\mathbf{e}_{1}, \ldots, \mathbf{e}_{n}\right\}
+\]</span> the standard basis of <span
+class="math inline">\(R^{n}\)</span>.</p>
+<p><strong>9.2 Theorem</strong> Let <span
+class="math inline">\(r\)</span> be a positive integer. If a vector
+space <span class="math inline">\(X\)</span> is spanned by a set of
+<span class="math inline">\(r\)</span> vectors, then <span
+class="math inline">\(\operatorname{dim} X \leq r\)</span>.</p>
+<p><strong>Proof</strong> If this is false, there is a vector space
+<span class="math inline">\(X\)</span> which contains an independent set
+<span class="math inline">\(Q=\left\{\mathbf{y}_{1}, \ldots,
+\mathbf{y}_{r+1}\right\}\)</span> and which is spanned by a set <span
+class="math inline">\(S_{0}\)</span> consisting of <span
+class="math inline">\(r\)</span> vectors.</p>
+<p>Suppose <span class="math inline">\(0 \leq i&lt;r\)</span>, and
+suppose a set <span class="math inline">\(S_{i}\)</span> has been
+constructed which spans <span class="math inline">\(X\)</span> and which
+consists of all <span class="math inline">\(\mathbf{y}_{j}\)</span> with
+<span class="math inline">\(1 \leq j \leq i\)</span> plus a certain
+collection of <span class="math inline">\(r-i\)</span> members of <span
+class="math inline">\(S_{0}\)</span>, say <span
+class="math inline">\(\mathbf{x}_{1}, \ldots, \mathbf{x}_{r-i}\)</span>.
+(In other words, <span class="math inline">\(S_{i}\)</span> is obtained
+from <span class="math inline">\(S_{0}\)</span> by replacing <span
+class="math inline">\(i\)</span> of its elements by members of <span
+class="math inline">\(Q\)</span>, without altering the span.) Since
+<span class="math inline">\(S_{i}\)</span> spans <span
+class="math inline">\(X, \mathbf{y}_{i+1}\)</span> is in the span of
+<span class="math inline">\(S_{i}\)</span>; hence there are scalars
+<span class="math inline">\(a_{1}, \ldots, a_{i+1}, b_{1}, \ldots,
+b_{r-i}\)</span>, with <span class="math inline">\(a_{i+1}=1\)</span>,
+such that</p>
+<p><span class="math display">\[
+\sum_{j=1}^{i+1} a_{j} \mathbf{y}_{j}+\sum_{k=1}^{r-i} b_{k}
+\mathbf{x}_{k}=\mathbf{0} .
+\]</span></p>
+<p>If all <span class="math inline">\(b_{k}\)</span> ’s were 0 , the
+independence of <span class="math inline">\(Q\)</span> would force all
+<span class="math inline">\(a_{j}\)</span> ’s to be 0 , a contradiction.
+It follows that some <span class="math inline">\(\mathbf{x}_{k} \in
+S_{i}\)</span> is a linear combination of the other members of <span
+class="math inline">\(T_{i}=S_{i}
+\cup\left\{\mathbf{y}_{i+1}\right\}\)</span>. Remove this <span
+class="math inline">\(\mathbf{x}_{k}\)</span> from <span
+class="math inline">\(T_{i}\)</span> and call the remaining set <span
+class="math inline">\(S_{i+1}\)</span>. Then <span
+class="math inline">\(S_{i+1}\)</span> spans the same set as <span
+class="math inline">\(T_{i}\)</span>, namely <span
+class="math inline">\(X\)</span>, so that <span
+class="math inline">\(S_{i+1}\)</span> has the properties postulated for
+<span class="math inline">\(S_{i}\)</span> with <span
+class="math inline">\(i+1\)</span> in place of <span
+class="math inline">\(i\)</span>.</p>
+<p>Starting with <span class="math inline">\(S_{0}\)</span>, we thus
+construct sets <span class="math inline">\(S_{1}, \ldots,
+S_{r}\)</span>. The last of these consists of <span
+class="math inline">\(\mathbf{y}_{1}, \ldots, \mathbf{y}_{r}\)</span>,
+and our construction shows that it spans <span
+class="math inline">\(X\)</span>. But <span
+class="math inline">\(Q\)</span> is independent; hence <span
+class="math inline">\(\mathbf{y}_{r+1}\)</span> is not in the span of
+<span class="math inline">\(S_{r}\)</span>. This contradiction
+establishes the theorem.</p>
+<p><strong>Corollary</strong> <span
+class="math inline">\(\operatorname{dim} R^{n}=n\)</span>.</p>
+<p><strong>Proof</strong> Since <span
+class="math inline">\(\left\{\mathbf{e}_{1}, \ldots,
+\mathbf{e}_{n}\right\}\)</span> spans <span
+class="math inline">\(R^{n}\)</span>, the theorem shows that <span
+class="math inline">\(\operatorname{dim} R^{n} \leq n\)</span>. Since
+<span class="math inline">\(\left\{\mathbf{e}_{1}, \ldots,
+\mathbf{e}_{n}\right\}\)</span> is independent, <span
+class="math inline">\(\operatorname{dim} R^{n} \geq n\)</span>.</p>
+<p><strong>9.3 Theorem</strong> Suppose <span
+class="math inline">\(X\)</span> is a vector space, and <span
+class="math inline">\(\operatorname{dim} X=n\)</span>. (a) A set <span
+class="math inline">\(E\)</span> of <span
+class="math inline">\(n\)</span> vectors in <span
+class="math inline">\(X\)</span> spans <span
+class="math inline">\(X\)</span> if and only if <span
+class="math inline">\(E\)</span> is independent. (b) <span
+class="math inline">\(X\)</span> has a basis, and every basis consists
+of <span class="math inline">\(n\)</span> vectors. (c) If <span
+class="math inline">\(1 \leq r \leq n\)</span> and <span
+class="math inline">\(\left\{\mathbf{y}_{1}, \ldots,
+\mathbf{y}_{r}\right\}\)</span> is an independent set in <span
+class="math inline">\(X\)</span>, then <span
+class="math inline">\(X\)</span> has <span
+class="math inline">\(a\)</span> basis containing <span
+class="math inline">\(\left\{\mathbf{y}_{1}, \ldots,
+\mathbf{y}_{r}\right\}\)</span>.</p>
+<p><strong>Proof</strong> Suppose <span
+class="math inline">\(E=\left\{\mathbf{x}_{1}, \ldots,
+\mathbf{x}_{n}\right\}\)</span>. Since <span
+class="math inline">\(\operatorname{dim} X=n\)</span>, the set <span
+class="math inline">\(\left\{\mathbf{x}_{1}, \ldots, \mathbf{x}_{n},
+\mathbf{y}\right\}\)</span> is dependent, for every <span
+class="math inline">\(\mathbf{y} \in X\)</span>. If <span
+class="math inline">\(E\)</span> is independent, it follows that <span
+class="math inline">\(\mathbf{y}\)</span> is in the span of <span
+class="math inline">\(E\)</span>; hence <span
+class="math inline">\(E\)</span> spans <span
+class="math inline">\(X\)</span>. Conversely, if <span
+class="math inline">\(E\)</span> is dependent, one of its members can be
+removed without changing the span of <span
+class="math inline">\(E\)</span>. Hence <span
+class="math inline">\(E\)</span> cannot span <span
+class="math inline">\(X\)</span>, by Theorem 9.2. This proves <span
+class="math inline">\((a)\)</span>.</p>
+<p>Since <span class="math inline">\(\operatorname{dim} X=n, X\)</span>
+contains an independent set of <span class="math inline">\(n\)</span>
+vectors, and (a) shows that every such set is a basis of <span
+class="math inline">\(X ;(b)\)</span> now follows from <span
+class="math inline">\(9.1(d)\)</span> and 9.2.</p>
+<p>To prove <span class="math inline">\((c)\)</span>, let <span
+class="math inline">\(\left\{\mathbf{x}_{1}, \ldots,
+\mathbf{x}_{n}\right\}\)</span> be a basis of <span
+class="math inline">\(X\)</span>. The set</p>
+<p><span class="math display">\[
+S=\left\{\mathbf{y}_{1}, \ldots, \mathbf{y}_{r}, \mathbf{x}_{1}, \ldots,
+\mathbf{x}_{n}\right\}
+\]</span></p>
+<p>spans <span class="math inline">\(X\)</span> and is dependent, since
+it contains more than <span class="math inline">\(n\)</span> vectors.
+The argument used in the proof of Theorem <span
+class="math inline">\(9.2\)</span> shows that one of the <span
+class="math inline">\(\mathbf{x}_{i}\)</span> ’s is a linear combination
+of the other members of <span class="math inline">\(S\)</span>. If we
+remove this <span class="math inline">\(\mathbf{x}_{i}\)</span> from
+<span class="math inline">\(S\)</span>, the remaining set still spans
+<span class="math inline">\(X\)</span>. This process can be repeated
+<span class="math inline">\(r\)</span> times and leads to a basis of
+<span class="math inline">\(X\)</span> which contains <span
+class="math inline">\(\left\{\mathbf{y}_{1}, \ldots,
+\mathbf{y}_{r}\right\}\)</span>, by <span
+class="math inline">\((a)\)</span>.</p>
+<p><strong>9.4 Definitions</strong> A mapping <span
+class="math inline">\(A\)</span> of a vector space <span
+class="math inline">\(X\)</span> into a vector space <span
+class="math inline">\(Y\)</span> is said to be a linear transformation
+if</p>
+<p><span class="math display">\[
+A\left(\mathbf{x}_{1}+\mathbf{x}_{2}\right)=A \mathbf{x}_{1}+A
+\mathbf{x}_{2}, \quad A(c \mathrm{x})=c A \mathbf{x}
+\]</span></p>
+<p>for all <span class="math inline">\(\mathbf{x}, \mathbf{x}_{1},
+\mathbf{x}_{2} \in X\)</span> and all scalars <span
+class="math inline">\(c\)</span>. Note that one often writes <span
+class="math inline">\(A \mathbf{x}\)</span> instead of <span
+class="math inline">\(A(\mathbf{x})\)</span> if <span
+class="math inline">\(A\)</span> is linear.</p>
+<p>Observe that <span class="math inline">\(A 0=0\)</span> if <span
+class="math inline">\(A\)</span> is linear. Observe also that a linear
+transformation <span class="math inline">\(A\)</span> of <span
+class="math inline">\(X\)</span> into <span
+class="math inline">\(Y\)</span> is completely determined by its action
+on any basis: If</p>
+<p><span class="math inline">\(\left\{\mathbf{x}_{1}, \ldots,
+\mathbf{x}_{n}\right\}\)</span> is a basis of <span
+class="math inline">\(X\)</span>, then every <span
+class="math inline">\(\mathbf{x} \in X\)</span> has a unique
+representation of the form</p>
+<p><span class="math display">\[
+\mathbf{x}=\sum_{i=1}^{n} c_{i} \mathbf{x}_{i},
+\]</span></p>
+<p>and the linearity of <span class="math inline">\(A\)</span> allows us
+to compute <span class="math inline">\(A \mathbf{x}\)</span> from the
+vectors <span class="math inline">\(A \mathbf{x}_{1}, \ldots, A
+\mathbf{x}_{n}\)</span> and the coordinates <span
+class="math inline">\(c_{1}, \ldots, c_{n}\)</span> by the formula</p>
+<p><span class="math display">\[
+A \mathbf{x}=\sum_{i=1}^{n} c_{i} A \mathbf{x}_{i} .
+\]</span></p>
+<p>Linear transformations of <span class="math inline">\(X\)</span> into
+<span class="math inline">\(X\)</span> are often called linear operators
+on <span class="math inline">\(X\)</span>. If <span
+class="math inline">\(A\)</span> is a linear operator on <span
+class="math inline">\(X\)</span> which (i) is one-to-one and (ii) maps
+<span class="math inline">\(X\)</span> onto <span
+class="math inline">\(X\)</span>, we say that <span
+class="math inline">\(A\)</span> is invertible. In this case we can
+define an operator <span class="math inline">\(A^{-1}\)</span> on <span
+class="math inline">\(X\)</span> by requiring that <span
+class="math inline">\(A^{-1}(A \mathbf{x})=\mathbf{x}\)</span> for all
+<span class="math inline">\(\mathbf{x} \in X\)</span>. It is trivial to
+verify that we then also have <span class="math inline">\(A\left(A^{-1}
+\mathbf{x}\right)=\mathbf{x}\)</span>, for all <span
+class="math inline">\(\mathbf{x} \in X\)</span>, and that <span
+class="math inline">\(A^{-1}\)</span> is linear.</p>
+<p>An important fact about linear operators on finite-dimensional vector
+spaces is that each of the above conditions (i) and (ii) implies the
+other:</p>
+<p>9.5 Theorem <span class="math inline">\(A\)</span> linear operator
+<span class="math inline">\(A\)</span> on a finite-dimensional vector
+space <span class="math inline">\(X\)</span> is one-to-one if and only
+if the range of <span class="math inline">\(A\)</span> is all of <span
+class="math inline">\(X\)</span>.</p>
+<p>Proof Let <span class="math inline">\(\left\{\mathbf{x}_{1}, \ldots,
+\mathbf{x}_{n}\right\}\)</span> be a basis of <span
+class="math inline">\(X\)</span>. The linearity of <span
+class="math inline">\(A\)</span> shows that its range <span
+class="math inline">\(\mathscr{R}(A)\)</span> is the span of the set
+<span class="math inline">\(Q=\left\{A \mathbf{x}_{1}, \ldots, A
+\mathbf{x}_{n}\right\}\)</span>. We therefore infer from Theorem 9.3(a)
+that <span class="math inline">\(\mathscr{R}(A)=X\)</span> if and only
+if <span class="math inline">\(Q\)</span> is independent. We have to
+prove that this happens if and only if <span
+class="math inline">\(A\)</span> is one-to-one.</p>
+<p>Suppose <span class="math inline">\(A\)</span> is one-to-one and
+<span class="math inline">\(\Sigma c_{i} A \mathbf{x}_{i}=0\)</span>.
+Then <span class="math inline">\(A\left(\Sigma c_{i}
+\mathbf{x}_{i}\right)=\mathbf{0}\)</span>, hence <span
+class="math inline">\(\Sigma c_{i} \mathbf{x}_{i}=\mathbf{0}\)</span>,
+hence <span class="math inline">\(c_{1}=\cdots=c_{n}=0\)</span>, and we
+conclude that <span class="math inline">\(Q\)</span> is independent.
+Conversely, suppose <span class="math inline">\(Q\)</span> is
+independent and <span class="math inline">\(A\left(\Sigma c_{i}
+\mathbf{x}_{i}\right)=0\)</span>. Then <span
+class="math inline">\(\Sigma c_{i} A \mathbf{x}_{i}=\mathbf{0}\)</span>,
+hence <span class="math inline">\(c_{1}=\cdots=c_{n}=0\)</span>, and we
+conclude: <span class="math inline">\(A \mathbf{x}=\mathbf{0}\)</span>
+only if <span class="math inline">\(\mathbf{x}=0\)</span>. If now <span
+class="math inline">\(A \mathbf{x}=A \mathbf{y}\)</span>, then <span
+class="math inline">\(A(\mathbf{x}-\mathbf{y})=A \mathbf{x}-A
+\mathbf{y}=\mathbf{0}\)</span>, so that <span
+class="math inline">\(\mathbf{x}-\mathbf{y}=\mathbf{0}\)</span>, and
+this says that <span class="math inline">\(A\)</span> is one-to-one.</p>
+<p><strong>9.6 Definitions</strong> (a) Let <span
+class="math inline">\(L(X, Y)\)</span> be the set of all linear
+transformations of the vector space <span
+class="math inline">\(X\)</span> into the vector space <span
+class="math inline">\(Y\)</span>. Instead of <span
+class="math inline">\(L(X, X)\)</span>, we shall simply write <span
+class="math inline">\(L(X)\)</span>. If <span
+class="math inline">\(A_{1}, A_{2} \in L(X, Y)\)</span> and if <span
+class="math inline">\(c_{1}, c_{2}\)</span> are scalars, define <span
+class="math inline">\(c_{1} A_{1}+c_{2} A_{2}\)</span> by</p>
+<p><span class="math display">\[
+\left(c_{1} A_{1}+c_{2} A_{2}\right) \mathbf{x}=c_{1} A_{1}
+\mathbf{x}+c_{2} A_{2} \mathbf{x} \quad(\mathbf{x} \in X) \text {. }
+\]</span></p>
+<p>It is then clear that <span class="math inline">\(c_{1} A_{1}+c_{2}
+A_{2} \in L(X, Y)\)</span>. (b) If <span class="math inline">\(X, Y,
+Z\)</span> are vector spaces, and if <span class="math inline">\(A \in
+L(X, Y)\)</span> and <span class="math inline">\(B \in L(Y, Z)\)</span>,
+we define their product <span class="math inline">\(B A\)</span> to be
+the composition of <span class="math inline">\(A\)</span> and <span
+class="math inline">\(B\)</span> :</p>
+<p><span class="math display">\[
+(B A) \mathbf{x}=B(A \mathbf{x}) \quad(\mathbf{x} \in X) \text {. }
+\]</span></p>
+<p>Then <span class="math inline">\(B A \in L(X, Z)\)</span>.</p>
+<p>Note that <span class="math inline">\(B A\)</span> need not be the
+same as <span class="math inline">\(A B\)</span>, even if <span
+class="math inline">\(X=Y=Z\)</span>. (c) For <span
+class="math inline">\(A \in L\left(R^{n}, R^{m}\right)\)</span>, define
+the norm <span class="math inline">\(\|A\|\)</span> of <span
+class="math inline">\(A\)</span> to be the sup of all numbers <span
+class="math inline">\(|A \mathbf{x}|\)</span>, where <span
+class="math inline">\(\mathbf{x}\)</span> ranges over all vectors in
+<span class="math inline">\(R^{n}\)</span> with <span
+class="math inline">\(|\mathbf{x}| \leq 1\)</span>. Observe that the
+inequality</p>
+<p><span class="math display">\[
+|A \mathbf{x}| \leq\|A\||\mathbf{x}|
+\]</span></p>
+<p>holds for all <span class="math inline">\(\mathbf{x} \in
+R^{n}\)</span>. Also, if <span class="math inline">\(\lambda\)</span> is
+such that <span class="math inline">\(|A \mathbf{x}| \leq
+\lambda|\mathbf{x}|\)</span> for all <span
+class="math inline">\(\mathbf{x} \in R^{n}\)</span>, then <span
+class="math inline">\(\|A\| \leq \lambda\)</span>.</p>
+<p><strong>9.7 Theorem</strong> (a) If <span class="math inline">\(A \in
+L\left(R^{n}, R^{m}\right)\)</span>, then <span
+class="math inline">\(\|A\|&lt;\infty\)</span> and <span
+class="math inline">\(A\)</span> is a uniformly continuous mapping of
+<span class="math inline">\(R^{n}\)</span> into <span
+class="math inline">\(R^{m}\)</span>.</p>
+<ol start="2" type="a">
+<li>If <span class="math inline">\(A, B \in L\left(R^{n},
+R^{m}\right)\)</span> and <span class="math inline">\(c\)</span> is a
+scalar, then</li>
+</ol>
+<p><span class="math display">\[
+\|A+B\| \leq\|A\|+\|B\|, \quad\|c A\|=|c|\|A\| \text {. }
+\]</span></p>
+<p>With the distance between <span class="math inline">\(A\)</span> and
+<span class="math inline">\(B\)</span> defined as <span
+class="math inline">\(\|A-B\|, L\left(R^{n}, R^{m}\right)\)</span> is a
+metric space. (c) If <span class="math inline">\(A \in L\left(R^{n},
+R^{m}\right)\)</span> and <span class="math inline">\(B \in
+L\left(R^{m}, R^{k}\right)\)</span>, then</p>
+<p><span class="math display">\[
+\|B A\| \leq\|B\|\|A\| \text {. }
+\]</span></p>
+<p><strong>Proof</strong> (a) Let <span
+class="math inline">\(\left\{\mathbf{e}_{1}, \ldots,
+\mathbf{e}_{n}\right\}\)</span> be the standard basis in <span
+class="math inline">\(R^{n}\)</span> and suppose <span
+class="math inline">\(\mathbf{x}=\Sigma c_{i} \mathbf{e}_{i}\)</span>,
+<span class="math inline">\(|\mathbf{x}| \leq 1\)</span>, so that <span
+class="math inline">\(\left|c_{i}\right| \leq 1\)</span> for <span
+class="math inline">\(i=1, \ldots, n\)</span>. Then <span
+class="math display">\[
+|A \mathbf{x}|=\left|\sum c_{i} A \mathbf{e}_{i}\right| \leq
+\sum\left|c_{i}\right|\left|A \mathbf{e}_{i}\right| \leq \sum\left|A
+\mathbf{e}_{i}\right|
+\]</span></p>
+<p>so that</p>
+<p><span class="math display">\[
+\|A\| \leq \sum_{i=1}^{n}\left|A \mathbf{e}_{i}\right|&lt;\infty .
+\]</span></p>
+<p>Since <span class="math inline">\(|A \mathbf{x}-A \mathbf{y}|
+\leq\|A\||\mathbf{x}-\mathbf{y}|\)</span> if <span
+class="math inline">\(\mathbf{x}, \mathbf{y} \in R^{n}\)</span>, we see
+that <span class="math inline">\(A\)</span> is uniformly continuous. (b)
+The inequality in <span class="math inline">\((b)\)</span> follows
+from</p>
+<p><span class="math display">\[
+|(A+B) \mathbf{x}|=|A \mathbf{x}+B \mathbf{x}| \leq|A \mathbf{x}|+|B
+\mathbf{x}| \leq(\|A\|+\|B\|)|\mathbf{x}| .
+\]</span></p>
+<p>The second part of <span class="math inline">\((b)\)</span> is proved
+in the same manner. If</p>
+<p><span class="math display">\[
+A, B, C \in L\left(R^{n}, R^{m}\right)
+\]</span></p>
+<p>we have the triangle inequality</p>
+<p><span class="math display">\[
+\|A-C\|=\|(A-B)+(B-C)\| \leq\|A-B\|+\|B-C\|
+\]</span></p>
+<p>and it is easily verified that <span
+class="math inline">\(\|A-B\|\)</span> has the other properties of a
+metric (Definition 2.15). (c) Finally, (c) follows from</p>
+<p><span class="math display">\[
+|(B A) \mathbf{x}|=|B(A \mathbf{x})| \leq\|B\||A \mathbf{x}|
+\leq\|B\|\|A\||\mathbf{x}|
+\]</span></p>
+<p>Since we now have metrics in the spaces <span
+class="math inline">\(L\left(R^{n}, R^{m}\right)\)</span>, the concepts
+of open set, continuity, etc., make sense for these spaces. Our next
+theorem utilizes these concepts.</p>
+<p><strong>9.8 Theorem</strong> Let <span
+class="math inline">\(\Omega\)</span> be the set of all invertible
+linear operators on <span class="math inline">\(R^{n}\)</span>. (a) If
+<span class="math inline">\(A \in \Omega, B \in
+L\left(R^{n}\right)\)</span>, and <span class="math display">\[
+\|B-A\| \cdot\left\|A^{-1}\right\|&lt;1,
+\]</span> then <span class="math inline">\(B \in \Omega\)</span>. (b)
+<span class="math inline">\(\Omega\)</span> is an open subset of <span
+class="math inline">\(L\left(R^{n}\right)\)</span>, and the mapping
+<span class="math inline">\(A \rightarrow A^{-1}\)</span> is continuous
+on <span class="math inline">\(\Omega\)</span>. (This mapping is also
+obviously a <span class="math inline">\(1-1\)</span> mapping of <span
+class="math inline">\(\Omega\)</span> onto <span
+class="math inline">\(\Omega\)</span>, which is its own inverse.)</p>
+<p><strong>Proof</strong></p>
+<ol type="a">
+<li>Put <span class="math inline">\(\left\|A^{-1}\right\|=1 /
+\alpha\)</span>, put <span class="math inline">\(\|B-A\|=\beta\)</span>.
+Then <span class="math inline">\(\beta&lt;\alpha\)</span>. For every
+<span class="math inline">\(\mathbf{x} \in R^{n}\)</span>, <span
+class="math display">\[
+\begin{aligned}
+\alpha|\mathbf{x}| &amp;=\alpha\left|A^{-1} A \mathbf{x}\right| \leq
+\alpha\left\|A^{-1}\right\| \cdot|A \mathbf{x}| \\
+&amp;=|A \mathbf{x}| \leq|(A-B) \mathbf{x}|+|B \mathbf{x}| \leq
+\beta|\mathbf{x}|+|B \mathbf{x}|,
+\end{aligned}
+\]</span> so that <span class="math display">\[
+(\alpha-\beta)|\mathbf{x}| \leq|B \mathbf{x}| \quad\left(\mathbf{x} \in
+R^{n}\right) .
+\]</span> Since <span
+class="math inline">\(\alpha-\beta&gt;0,(1)\)</span> shows that <span
+class="math inline">\(B \mathbf{x} \neq 0\)</span> if <span
+class="math inline">\(\mathbf{x} \neq 0\)</span>. Hence <span
+class="math inline">\(B\)</span> is <span
+class="math inline">\(1-1\)</span>. By Theorem 9.5, <span
+class="math inline">\(B \in \Omega\)</span>. This holds for all <span
+class="math inline">\(B\)</span> with <span
+class="math inline">\(\|B-A\|&lt;\alpha\)</span>. Thus we have <span
+class="math inline">\((a)\)</span> and the fact that <span
+class="math inline">\(\Omega\)</span> is open.</li>
+<li>Next, replace <span class="math inline">\(\mathbf{x}\)</span> by
+<span class="math inline">\(B^{-1} \mathbf{y}\)</span> in (1). The
+resulting inequality <span class="math display">\[
+(\alpha-\beta)\left|B^{-1} \mathbf{y}\right| \leq\left|B B^{-1}
+\mathbf{y}\right|=|\mathbf{y}| \quad\left(\mathrm{y} \in R^{n}\right)
+\]</span> shows that <span class="math inline">\(\left\|B^{-1}\right\|
+\leq(\alpha-\beta)^{-1}\)</span>. The identity <span
+class="math display">\[
+B^{-1}-A^{-1}=B^{-1}(A-B) A^{-1} \text {, }
+\]</span> combined with Theorem 9.7(c), implies therefore that <span
+class="math display">\[
+\left\|B^{-1}-A^{-1}\right\|
+\leq\left\|B^{-1}\right\|\|A-B\|\left\|A^{-1}\right\| \leq
+\frac{\beta}{\alpha(\alpha-\beta)} .
+\]</span> This establishes the continuity assertion made in <span
+class="math inline">\((b)\)</span>, since <span
+class="math inline">\(\beta \rightarrow 0\)</span> as <span
+class="math inline">\(B \rightarrow A\)</span>.</li>
+</ol>
+<p><strong>9.9 Matrices</strong> Suppose <span
+class="math inline">\(\left\{\mathbf{x}_{1}, \ldots,
+\mathbf{x}_{n}\right\}\)</span> and <span
+class="math inline">\(\left\{\mathbf{y}_{1}, \ldots,
+\mathbf{y}_{m}\right\}\)</span> are bases of vector spaces <span
+class="math inline">\(X\)</span> and <span
+class="math inline">\(Y\)</span>, respectively. Then every <span
+class="math inline">\(A \in L(X, Y)\)</span> determines a set of numbers
+<span class="math inline">\(a_{i j}\)</span> such that <span
+class="math display">\[
+A \mathbf{x}_{j}=\sum_{i=1}^{m} a_{i j} \mathbf{y}_{i} \quad(1 \leq j
+\leq n)
+\]</span> It is convenient to visualize these numbers in a rectangular
+array of <span class="math inline">\(m\)</span> rows and <span
+class="math inline">\(n\)</span> columns, called an <span
+class="math inline">\(m\)</span> by <span
+class="math inline">\(n\)</span> matrix:</p>
+<p>Observe that the coordinates <span class="math inline">\(a_{\imath
+j}\)</span> of the vector <span class="math inline">\(A
+\mathbf{x}_{j}\)</span> (with respect to the basis <span
+class="math inline">\(\left\{\mathbf{y}_{1}, \ldots,
+\mathbf{y}_{m}\right\}\)</span> ) appear in the <span
+class="math inline">\(j\)</span> th column of <span
+class="math inline">\([A]\)</span>. The vectors <span
+class="math inline">\(A \mathbf{x}_{j}\)</span> are therefore sometimes
+called the column vectors of <span class="math inline">\([A]\)</span>.
+With this terminology, the range of <span
+class="math inline">\(A\)</span> is spanned by the column vectors of
+<span class="math inline">\([A]\)</span>. If <span
+class="math inline">\(\mathbf{x}=\Sigma c_{j} \mathbf{x}_{j}\)</span>,
+the linearity of <span class="math inline">\(A\)</span>, combined with
+(3), shows that <span class="math display">\[
+A \mathbf{x}=\sum_{i=1}^{m}\left(\sum_{j=1}^{n} a_{i j} c_{j}\right)
+\mathbf{y}_{i}
+\]</span> Thus the coordinates of <span class="math inline">\(A
+\mathbf{x}\)</span> are <span class="math inline">\(\Sigma_{j} a_{i j}
+c_{j}\)</span>. Note that in (3) the summation ranges over the first
+subscript of <span class="math inline">\(a_{i j}\)</span>, but that we
+sum over the second subscript when computing coordinates.</p>
+<p>Suppose next that an <span class="math inline">\(m\)</span> by <span
+class="math inline">\(n\)</span> matrix is given, with real entries
+<span class="math inline">\(a_{i j}\)</span>. If <span
+class="math inline">\(A\)</span> is then defined by (4), it is clear
+that <span class="math inline">\(A \in L(X, Y)\)</span> and that <span
+class="math inline">\([A]\)</span> is the given matrix. Thus there is a
+natural 1-1 correspondence between <span class="math inline">\(L(X,
+Y)\)</span> and the set of all real <span
+class="math inline">\(m\)</span> by <span
+class="math inline">\(n\)</span> matrices. We emphasize, though, that
+<span class="math inline">\([A]\)</span> depends not only on <span
+class="math inline">\(A\)</span> but also on the choice of bases in
+<span class="math inline">\(X\)</span> and <span
+class="math inline">\(Y\)</span>. The same <span
+class="math inline">\(A\)</span> may give rise to many different
+matrices if we change bases, and vice versa. We shall not pursue this
+observation any further, since we shall usually work with fixed bases.
+(Some remarks on this may be found in Sec. 9.37.)</p>
+<p>If <span class="math inline">\(Z\)</span> is a third vector space,
+with basis <span class="math inline">\(\left\{z_{1}, \ldots,
+z_{p}\right\}\)</span>, if <span class="math inline">\(A\)</span> is
+given by (3), and if</p>
+<p><span class="math display">\[
+B \mathbf{y}_{i}=\sum_{k} b_{k i} \mathbf{z}_{k}, \quad(B A)
+\mathbf{x}_{j}=\sum_{k} c_{k j} \mathbf{z}_{k} \text {, }
+\]</span></p>
+<p>then <span class="math inline">\(A \in L(X, Y), B \in L(Y, Z), B A
+\in L(X, Z)\)</span>, and since</p>
+<p><span class="math display">\[
+\begin{aligned}
+B\left(A \mathbf{x}_{j}\right) &amp;=B \sum_{i} a_{i j}
+\mathbf{y}_{i}=\sum_{i} a_{i j} B \mathbf{y}_{i} \\
+&amp;=\sum a_{i j} \sum_{k} b_{k i}
+\mathbf{z}_{k}=\sum_{k}\left(\sum_{i} b_{k i} a_{i j}\right)
+\mathbf{z}_{k}
+\end{aligned}
+\]</span></p>
+<p>the independence of <span class="math inline">\(\left\{z_{1}, \ldots,
+\mathbf{z}_{p}\right\}\)</span> implies that</p>
+<p><span class="math display">\[
+c_{k j}=\sum_{i} b_{k i} a_{i j} \quad(1 \leq k \leq p, 1 \leq j \leq n)
+.
+\]</span></p>
+<p>This shows how to compute the <span class="math inline">\(p\)</span>
+by <span class="math inline">\(n\)</span> matrix <span
+class="math inline">\([B A]\)</span> from <span
+class="math inline">\([B]\)</span> and <span
+class="math inline">\([A]\)</span>. If we define the product <span
+class="math inline">\([B][A]\)</span> to be <span
+class="math inline">\([B A]\)</span>, then (5) describes the usual rule
+of matrix multiplication.</p>
+<p>Finally, suppose <span class="math inline">\(\left\{\mathbf{x}_{1},
+\ldots, \mathbf{x}_{n}\right\}\)</span> and <span
+class="math inline">\(\left\{\mathbf{y}_{1}, \ldots,
+\mathbf{y}_{m}\right\}\)</span> are standard bases of <span
+class="math inline">\(R^{n}\)</span> and <span
+class="math inline">\(R^{m}\)</span>, and <span
+class="math inline">\(A\)</span> is given by (4). The Schwarz inequality
+shows that</p>
+<p><span class="math display">\[
+|A \mathbf{x}|^{2}=\sum_{i}\left(\sum_{j} a_{i j} c_{j}\right)^{2} \leq
+\sum_{i}\left(\sum_{j} a_{i j}^{2} \cdot \sum_{j}
+c_{j}^{2}\right)=\sum_{i, j} a_{i j}^{2}|\mathbf{x}|^{2}
+\]</span></p>
+<p>Thus</p>
+<p><span class="math display">\[
+\|A\| \leq\left\{\sum_{i, j} a_{i j}^{2}\right\}^{1 / 2} .
+\]</span></p>
+<p>If we apply (6) to <span class="math inline">\(B-A\)</span> in place
+of <span class="math inline">\(A\)</span>, where <span
+class="math inline">\(A, B \in L\left(R^{n}, R^{m}\right)\)</span>, we
+see that if the matrix elements <span class="math inline">\(a_{i
+j}\)</span> are continuous functions of a parameter, then the same is
+true of <span class="math inline">\(A\)</span>. More precisely:</p>
+<p>If <span class="math inline">\(S\)</span> is a metric space, if <span
+class="math inline">\(a_{11}, \ldots, a_{m n}\)</span> are real
+continuous functions on <span class="math inline">\(S\)</span>, and if,
+for each <span class="math inline">\(p \in S, A_{p}\)</span> is the
+linear transformation of <span class="math inline">\(R^{n}\)</span> into
+<span class="math inline">\(R^{m}\)</span> whose matrix has entries
+<span class="math inline">\(a_{i j}(p)\)</span>, then the mapping <span
+class="math inline">\(p \rightarrow A_{p}\)</span> is a continuous
+mapping of <span class="math inline">\(S\)</span> into <span
+class="math inline">\(L\left(R^{n}, R^{m}\right)\)</span>.</p>
+
+    </div>
+    
+</div>
+</div>
+
+                <div id="footer-wrapper">
+                    <footer class="footer"><footer class="row pl-3 pr-3">
+    <div class="col-12 d-flex justify-content-between align-items-center text-muted pl-0 pr-0">
+        <div class="footer-left">
+            <p class="mb-0"> © 2022 <a href="https://github.com/chen-gz">guangzong</a>. <span data-toggle="tooltip"
+                    data-placement="top"
+                    title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author.">All
+                    rights reserved.</span></p>
+        </div>
+        <div class="footer-right">
+            <p class="mb-0"> Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">hugo</a>
+                with <a href="https://github.com/chen-gz/hugo_zong" target="_blank" rel="noopener">zong</a>
+                theme.</p>
+        </div>
+    </div>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script> MathJax = {
+            tex: {
+                tags: 'ams',
+            }
+        };</script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</footer>
+</footer>
+                </div>
+            </div>
+            <div id="panel-wrapper" class="d-flex flex-column"><div id="toc-wrapper" class="mb-5 pl-2">
+    <span>Contents</span>
+    <nav id="toc" data-toggle="toc">
+        
+        
+        
+    </nav>
+</div>
+
+<div id="access-lastmod" class="pb-4 pl-2">
+    <div class="panel-heading">Recently Updated</div>
+    <ul class="post-content pl-3 pb-1 ml-1 mt-2">
+          
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/1-total-variation/">Total Variation</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-7/1-derivatives-of-measures/">Derivatives of Measures</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/3-consequences-of-the-radon-nikodym-theorem/">Consequences of the Radon-Nikodym Theorem</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/4-bounded-linear-functionals-on-lp/">Bounded linear functional on Lp</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/2-abosolute-continuity/">Abosolute Continuity</a></li>
+        
+    </ul>
+</div>
+
+<div id="access-tags" class="pl-2">
+    <div class="panel-heading">Trending Tags</div>
+    <div class="d-flex flex-wrap mt-3 mb-1 mr-3">
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/algorithm/">Algorithm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/android/">Android</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c/">C</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c-language/">c language</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/caddy/">Caddy</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cadence/">Cadence</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cdc/">CDC</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/classification/">classification</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/compress/">Compress</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/conf/">Conf</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/double-column/">Double Column</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/errno13/">Errno13</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/fish/">fish</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gan/">GAN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/git/">Git</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gtk/">Gtk</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/html/">Html</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/i3/">I3</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/idea/">Idea</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/java/">Java</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/latex/">Latex</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lda/">LDA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linear-programming/">Linear Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linux/">Linux</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lr/">LR</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/math/">Math</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mathematics/">Mathematics</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matlab/">Matlab</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matplot/">matplot</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/memory/">Memory</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mermaid/">Mermaid</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/misc/">Misc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/ml/">ML</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mosfet/">Mosfet</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/network/">Network</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/nn/">NN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pandoc/">Pandoc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pca/">PCA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/probability/">Probability</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/productive/">Productive</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/program/">Program</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/programming/">Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/python/">Python</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/qt/">Qt</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/random-variable/">Random Variable</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rcnn/">RCNN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rust/">Rust</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/security/">Security</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/software/">Software</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/std/">Std</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/svd/">Svd</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/tool/">Tool</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/usb/">USB</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vim/">Vim</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpn/">Vpn</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpnc/">Vpnc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/xterm/">xterm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/zsh/">Zsh</a>
+        
+    </div>
+</div>
+</div><div id="search-result-wrapper" class="d-flex justify-content-center unloaded">
+    <div class="col-12 col-sm-11 post-content">
+        <div id="search-hints"></div>
+        <div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3 col-12"></div>
+    </div>
+</div>
+
+<script src="/js/fuse.min.js"></script>
+<script src="/js/fastsearch.js"></script>
+
+
+</div>
+        <div id="mask"></div>
+        <a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button"
+            style="display: none">
+            <i class="fas fa-angle-up"></i>
+        </a>
+    </div>
+    
+</body>
+
+</html>

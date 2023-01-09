@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css"
+        class="dark-mode-native-dark-original" />
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+     
+    <link rel="stylesheet" href="https://zongpitt.com/sass/main.06935202011a97ba473ebeeb0cb6788daa9fb5a9fff471a4e85850293d1c5ac4.css" />
+    <title>
+          Guangzong Blog | 3 COMPACT SETS
+    </title>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.bundle.min.js"></script>
+    <script src=" https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.js"></script>
+
+    <script
+        src="https://cdn.jsdelivr.net/combine/npm/magnific-popup@1/dist/jquery.magnific-popup.min.js,npm/lozad/dist/lozad.min.js,npm/clipboard@2/dist/clipboard.min.js"></script>
+    <script type="text/javascript" src="/js/commons/back-to-top.js"></script>
+    
+    
+    
+    <script type="text/javascript" src="/js/commons/topbar-switch.js"></script>
+    <script type="text/javascript" src="/js/commons/sidebar.js"></script>
+    <script type="text/javascript" src="/js/utils/category-collapse.js"></script>
+    <script type="text/javascript" src="/js/utils/checkbox.js"></script>
+    <script type="text/javascript" src="/js/utils/clipboard.js"></script>
+    <script type="text/javascript" src="/js/utils/img-extra.js"></script>
+    <script type="text/javascript" src="/js/utils/pageviews.js"></script>
+    
+    <script type="text/javascript" src="/js/utils/timeago.js"></script>
+    
+    
+</head>
+<body data-spy="scroll" data-target="#toc" data-topbar-visible="true" class="d-flex"><div id="sidebar" class="d-flex flex-column align-items-end">
+    <div class="profile-wrapper text-center">
+
+        <div id="avatar">
+            <a href="/" alt="avatar" class="mx-auto"> <img src=https://github.com/chen-gz/chen-gz/blob/main/mine_square.jpg?raw&#61;truehttps://raw.githubusercontent.com/chen-gz/chen-gz/blob/main/mine_square.jpg alt="avatar"
+                    onerror="this.style.display='none'"> </a>
+        </div>
+
+        <div class="site-title mt-3"> <a href="/">Guangzong</a> </div>
+        <div class="site-subtitle font-italic">Welcome to my blog</div>
+    </div>
+
+    <ul>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/">
+                <span>
+                    Home
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/archive/">
+                <span>
+                    Archive
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/tags/">
+                <span>
+                    Tags
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/about/">
+                <span>
+                    About
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/categories/">
+                <span>
+                    Categories
+                </span>
+            </a>
+        </li>
+        
+    </ul>
+
+    <div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center align-items-center">
+        <button class="mode-toggle btn" aria-label="Switch Mode"> 
+            <i class="fas fa-adjust"></i> 
+        </button>
+
+        <span class="icon-border"></span>
+        <a href="https://github.com/chen-gz" aria-label="github" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i>
+        </a>
+
+        <a href=" javascript:location.href = 'mailto:' + ['chen-gz','outlook.com'].join('@')" aria-label="email">
+            <i class="fas fa-envelope"></i>
+        </a>
+
+        <a href="/feed.xml" aria-label="rss"> <i class="fas fa-rss"></i> </a>
+    </div>
+
+    
+    
+</div>
+<div id="all-wrapper" class="d-flex flex-column"><div id="topbar-wrapper">
+    <div id="topbar" class="d-flex">
+        
+        <span id="breadcrumb" class="d-flex">
+              
+               
+            
+            
+            <div><a href='https://zongpitt.com/'>Home</a></div>
+              
+              
+            
+            <div><a href="https://zongpitt.com/baby-rudin">baby-rudin</a></div>
+               
+              
+            
+            <div><a href="https://zongpitt.com/baby-rudin/ch2">ch2</a></div>
+               
+                 
+                
+        </span>
+        <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i>
+        <div id="topbar-title">Guangzong</div>
+        <i id="search-trigger" class="fas fa-search fa-fw"></i>
+        <span id="search-wrapper" class="align-items-center">
+            <i class="fas fa-search fa-fw"></i>
+            <input class="form-control" id="search-input" type="search" aria-label="search" autocomplete="off"
+                placeholder="Search..." />
+            <i class="fa fa-times-circle fa-fw" id="search-cleaner"></i>
+        </span>
+    </div>
+</div>
+<div id="main-wrapper" class="d-flex mt-3">
+            <div id="core-wrapper" class="d-flex flex-column">
+                <div id="main" class="d-flex flex-column">
+                    
+<div class="post pl-1 pr-1 pl-md-2 pr-md-2">
+    
+    <div id="post-content">
+        <h1 style="text-align: center;">3 COMPACT SETS</h1>
+        <br>
+        
+        <ul>
+<li>youtube <a href="https://youtu.be/0R9aWv13_3s">part1</a> <a
+href="https://youtu.be/vcqBJ7NyEcw">part2</a></li>
+<li>bilibili <a href="https://youtu.be/vcqBJ7NyEcw">part1</a> <a
+href="https://www.bilibili.com/video/BV1xV4y1N7Ux/">part2</a></li>
+<li>note part 1 <a
+href="https://github.com/chen-gz/bed2/blob/68f1cae06b3da67ac917f985c510978b7b23aa5f/9%20compact%20%20part1_note.pdf">pdf</a>
+<a
+href="https://github.com/chen-gz/bed2/blob/68f1cae06b3da67ac917f985c510978b7b23aa5f/9%20compact%20%20part1_note%20.xopp">xopp</a>
+part 2<a
+href="https://github.com/chen-gz/bed2/blob/68f1cae06b3da67ac917f985c510978b7b23aa5f/9%20compact%20part2_note.pdf">pdf</a>
+<a
+href="https://github.com/chen-gz/bed2/blob/68f1cae06b3da67ac917f985c510978b7b23aa5f/9%20compact%20%20part2_note.xopp">xopp</a></li>
+</ul>
+<p><strong>2.31 Definition</strong> By an open cover of a set <span
+class="math inline">\(E\)</span> in a metric space <span
+class="math inline">\(X\)</span> we mean a collection <span
+class="math inline">\(\left\{G_{\alpha}\right\}\)</span> of open subsets
+of <span class="math inline">\(X\)</span> such that <span
+class="math inline">\(E \subset U_{\alpha} G_{\alpha}\)</span>.</p>
+<p><strong>2.32 Definition</strong> A subset <span
+class="math inline">\(K\)</span> of a metric space <span
+class="math inline">\(X\)</span> is said to be compact if every open
+cover of <span class="math inline">\(K\)</span> contains a finite
+subcover.</p>
+<p>More explicitly, the requirement is that if <span
+class="math inline">\(\left\{G_{\alpha}\right\}\)</span> is an open
+cover of <span class="math inline">\(K\)</span>, then there are finitely
+many indices <span class="math inline">\(\alpha_{1}, \ldots,
+\alpha_{n}\)</span> such that</p>
+<p><span class="math display">\[
+K \subset G_{\alpha_{1}} \cup \cdots \cup G_{\alpha_{n}} .
+\]</span></p>
+<p>The notion of compactness is of great importance in analysis,
+especially in connection with continuity (Chap. 4).</p>
+<p>It is clear that every finite set is compact. The existence of a
+large class of infinite compact sets in <span
+class="math inline">\(R^{k}\)</span> will follow from Theorem <span
+class="math inline">\(2.41\)</span>.</p>
+<p>We observed earlier (in Sec. 2.29) that if <span
+class="math inline">\(E \subset Y \subset X\)</span>, then <span
+class="math inline">\(E\)</span> may be open relative to <span
+class="math inline">\(Y\)</span> without being open relative to <span
+class="math inline">\(X\)</span>. The property of being open thus
+depends on the space in which <span class="math inline">\(E\)</span> is
+embedded. The same is true of the property of being closed.</p>
+<p>Compactness, however, behaves better, as we shall now see. To
+formulate the next theorem, let us say, temporarily, that <span
+class="math inline">\(K\)</span> is compact relative to <span
+class="math inline">\(X\)</span> if the requirements of Definition <span
+class="math inline">\(2.32\)</span> are met.</p>
+<p><strong>2.33 Theorem</strong> Suppose <span class="math inline">\(K
+\subset Y \subset X\)</span>. Then <span
+class="math inline">\(K\)</span> is compact relative to <span
+class="math inline">\(X\)</span> if and only if <span
+class="math inline">\(K\)</span> is compact relative to <span
+class="math inline">\(Y\)</span>.</p>
+<p>By virtue of this theorem we are able, in many situations, to regard
+compact sets as metric spaces in their own right, without paying any
+attention to any embedding space. In particular, although it makes
+little sense to talk of open spaces, or of closed spaces (every metric
+space <span class="math inline">\(X\)</span> is an open subset of
+itself, and is a closed subset of itself), it does make sense to talk of
+compact metric spaces.</p>
+<p><strong>Proof</strong> Suppose <span class="math inline">\(K\)</span>
+is compact relative to <span class="math inline">\(X\)</span>, and let
+<span class="math inline">\(\left\{V_{\alpha}\right\}\)</span> be a
+collection of sets, open relative to <span
+class="math inline">\(Y\)</span>, such that <span
+class="math inline">\(K \subset \bigcup_{\alpha} V_{\alpha}\)</span>. By
+theorem <span class="math inline">\(2.30\)</span>, there are sets <span
+class="math inline">\(G_{\alpha}\)</span>, open relative to <span
+class="math inline">\(X\)</span>, such that <span
+class="math inline">\(V_{\alpha}=\mathrm{Y} \cap G_{\alpha}\)</span>,
+for all <span class="math inline">\(\alpha\)</span>; and since <span
+class="math inline">\(K\)</span> is compact relative to <span
+class="math inline">\(X\)</span>, we have <span class="math display">\[
+K \subset G_{\alpha_{1}} \cup \cdots \cup G_{\alpha_{n}}
+\]</span></p>
+<p>for some choice of finitely many indices <span
+class="math inline">\(\alpha_{1}, \ldots, \alpha_{n}\)</span>. Since
+<span class="math inline">\(K \subset Y,(22)\)</span> implies</p>
+<p><span class="math display">\[
+K \subset V_{\alpha_{1}} \cup \cdots \cup V_{\alpha_{n}} .
+\]</span></p>
+<p>This proves that <span class="math inline">\(K\)</span> is compact
+relative to <span class="math inline">\(Y\)</span>.</p>
+<p>Conversely, suppose <span class="math inline">\(K\)</span> is compact
+relative to <span class="math inline">\(Y\)</span>, let <span
+class="math inline">\(\left\{G_{\alpha}\right\}\)</span> be a collection
+of open subsets of <span class="math inline">\(X\)</span> which covers
+<span class="math inline">\(K\)</span>, and put <span
+class="math inline">\(V_{\alpha}=Y \cap G_{\alpha}\)</span>. Then (23)
+will hold for some choice of <span class="math inline">\(\alpha_{1},
+\ldots, \alpha_{n}\)</span>; and since <span
+class="math inline">\(V_{\alpha} \subset G_{\alpha}\)</span>, (23)
+implies (22).</p>
+<p>This completes the proof.</p>
+<p><strong>2.34 Theorem</strong> Compact subsets of metric spaces are
+closed.</p>
+<p>Proof Let <span class="math inline">\(K\)</span> be a compact subset
+of a metric space <span class="math inline">\(X\)</span>. We shall prove
+that the complement of <span class="math inline">\(K\)</span> is an open
+subset of <span class="math inline">\(X\)</span>.</p>
+<p>Suppose <span class="math inline">\(p \in X, p \notin K\)</span>. If
+<span class="math inline">\(q \in K\)</span>, let <span
+class="math inline">\(V_{q}\)</span> and <span
+class="math inline">\(W_{q}\)</span> be neighborhoods of <span
+class="math inline">\(p\)</span> and <span
+class="math inline">\(q\)</span>, respectively, of radius less than
+<span class="math inline">\(\frac{1}{2} d(p, q)\)</span> [see Definition
+<span class="math inline">\(2.18(a)\)</span> ]. Since <span
+class="math inline">\(K\)</span> is compact, there are finitely many
+points <span class="math inline">\(q_{1}, \ldots, q_{n}\)</span> in
+<span class="math inline">\(K\)</span> such that</p>
+<p><span class="math display">\[
+K \subset W_{q_{1}} \cup \cdots \cup W_{q_{n}}=W .
+\]</span></p>
+<p>If <span class="math inline">\(V=V_{q_{1}} \cap \cdots \cap
+V_{q_{n}}\)</span>, then <span class="math inline">\(V\)</span> is a
+neighborhood of <span class="math inline">\(p\)</span> which does not
+intersect <span class="math inline">\(W\)</span>. Hence <span
+class="math inline">\(V \subset K^{c}\)</span>, so that <span
+class="math inline">\(p\)</span> is an interior point of <span
+class="math inline">\(K^{c}\)</span>. The theorem follows.</p>
+<p><strong>2.35 Theorem</strong> Closed subsets of compact sets are
+compact.</p>
+<p>Proof Suppose <span class="math inline">\(F \subset K \subset X,
+F\)</span> is closed (relative to <span class="math inline">\(X\)</span>
+), and <span class="math inline">\(K\)</span> is compact. Let <span
+class="math inline">\(\left\{V_{\alpha}\right\}\)</span> be an open
+cover of <span class="math inline">\(F\)</span>. If <span
+class="math inline">\(F^{c}\)</span> is adjoined to <span
+class="math inline">\(\left\{V_{\alpha}\right\}\)</span>, we obtain an
+open cover <span class="math inline">\(\Omega\)</span> of <span
+class="math inline">\(K\)</span>. Since <span
+class="math inline">\(K\)</span> is compact, there is a finite
+subcollection <span class="math inline">\(\Phi\)</span> of <span
+class="math inline">\(\Omega\)</span> which covers <span
+class="math inline">\(K\)</span>, and hence <span
+class="math inline">\(F\)</span>. If <span
+class="math inline">\(F^{c}\)</span> is a member of <span
+class="math inline">\(\Phi\)</span>, we may remove it from <span
+class="math inline">\(\Phi\)</span> and still retain an open cover of
+<span class="math inline">\(F\)</span>. We have thus shown that a finite
+subcollection of <span
+class="math inline">\(\left\{V_{\alpha}\right\}\)</span> covers <span
+class="math inline">\(F\)</span>.</p>
+<p>Corollary If <span class="math inline">\(F\)</span> is closed and
+<span class="math inline">\(K\)</span> is compact, then <span
+class="math inline">\(F \cap K\)</span> is compact.</p>
+<p>Proof Theorems <span class="math inline">\(2.24(b)\)</span> and <span
+class="math inline">\(2.34\)</span> show that <span
+class="math inline">\(F \cap K\)</span> is closed; since <span
+class="math inline">\(F \cap K \subset K\)</span>, Theorem <span
+class="math inline">\(2.35\)</span> shows that <span
+class="math inline">\(F \cap K\)</span> is compact.</p>
+<p><strong>2.36 Theorem</strong> If <span
+class="math inline">\(\left\{K_{\alpha}\right\}\)</span> is a collection
+of compact subsets of a metric space <span
+class="math inline">\(X\)</span> such that the intersection of every
+finite subcollection of <span
+class="math inline">\(\left\{K_{\alpha}\right\}\)</span> is nonempty,
+then <span class="math inline">\(\cap K_{\alpha}\)</span> is
+nonempty.</p>
+<p>Proof Fix a member <span class="math inline">\(K_{1}\)</span> of
+<span class="math inline">\(\left\{K_{\alpha}\right\}\)</span> and put
+<span class="math inline">\(G_{\alpha}=K_{\alpha}^{c}\)</span>. Assume
+that no point of <span class="math inline">\(K_{1}\)</span> belongs to
+every <span class="math inline">\(K_{\alpha}\)</span>. Then the sets
+<span class="math inline">\(G_{\alpha}\)</span> form an open cover of
+<span class="math inline">\(K_{1}\)</span>; and since <span
+class="math inline">\(K_{1}\)</span> is compact, there are finitely many
+indices <span class="math inline">\(\alpha_{1}, \ldots,
+\alpha_{n}\)</span> such that <span class="math inline">\(K_{1} \subset
+G_{a_{1}} \cup \cdots \cup G_{a_{n}}\)</span>. But this means that</p>
+<p><span class="math display">\[
+K_{1} \cap K_{\alpha_{1}} \cap \cdots \cap K_{\alpha_{n}}
+\]</span></p>
+<p>is empty, in contradiction to our hypothesis.</p>
+<p><strong>Corollary</strong> If <span
+class="math inline">\(\left\{K_{n}\right\}\)</span> is a sequence of
+nonempty compact sets such that <span class="math inline">\(K_{n}
+\supset K_{n+1}\)</span> <span class="math inline">\((n=1,2,3,
+\ldots)\)</span>, then <span class="math inline">\(\bigcap_{1}^{\infty}
+K_{n}\)</span> is not empty.</p>
+<p><strong>2.37 Theorem</strong> If <span
+class="math inline">\(E\)</span> is an infinite subset of a compact set
+<span class="math inline">\(K\)</span>, then <span
+class="math inline">\(E\)</span> has a limit point in <span
+class="math inline">\(K\)</span>.</p>
+<p>Proof If no point of <span class="math inline">\(K\)</span> were a
+limit point of <span class="math inline">\(E\)</span>, then each <span
+class="math inline">\(q \in K\)</span> would have a neighborhood <span
+class="math inline">\(V_{q}\)</span> which contains at most one point of
+<span class="math inline">\(E\)</span> (namely, <span
+class="math inline">\(q\)</span>, if <span class="math inline">\(q \in
+E\)</span> ). It is clear that no finite subcollection of <span
+class="math inline">\(\left\{V_{q}\right\}\)</span> can cover <span
+class="math inline">\(E\)</span>; and the same is true of <span
+class="math inline">\(K\)</span>, since <span class="math inline">\(E
+\subset K\)</span>. This contradicts the compactness of <span
+class="math inline">\(K\)</span>.</p>
+<p><strong>2.38 Theorem</strong> If <span
+class="math inline">\(\left\{I_{n}\right\}\)</span> is a sequence of
+intervals in <span class="math inline">\(R^{1}\)</span>, such that <span
+class="math inline">\(I_{n} \supset I_{n+1}\)</span> <span
+class="math inline">\((n=1,2,3, \ldots)\)</span>, then <span
+class="math inline">\(\bigcap_{1}^{\infty} I_{n}\)</span> is not
+empty.</p>
+<p>Proof If <span class="math inline">\(I_{n}=\left[a_{n},
+b_{n}\right]\)</span>, let <span class="math inline">\(E\)</span> be the
+set of all <span class="math inline">\(a_{n}\)</span>. Then <span
+class="math inline">\(E\)</span> is nonempty and bounded above (by <span
+class="math inline">\(b_{1}\)</span> ). Let <span
+class="math inline">\(x\)</span> be the sup of <span
+class="math inline">\(E\)</span>. If <span
+class="math inline">\(m\)</span> and <span
+class="math inline">\(n\)</span> are positive integers, then</p>
+<p><span class="math display">\[
+a_{n} \leq a_{m+n} \leq b_{m+n} \leq b_{m},
+\]</span></p>
+<p>so that <span class="math inline">\(x \leq b_{m}\)</span> for each
+<span class="math inline">\(m\)</span>. Since it is obvious that <span
+class="math inline">\(a_{m} \leq x\)</span>, we see that <span
+class="math inline">\(x \in I_{m}\)</span> for <span
+class="math inline">\(m=1,2,3, \ldots\)</span></p>
+<p><strong>2.39 Theorem</strong> Let <span
+class="math inline">\(k\)</span> be a positive integer. If <span
+class="math inline">\(\left\{I_{n}\right\}\)</span> is a sequence of
+<span class="math inline">\(k\)</span>-cells such that <span
+class="math inline">\(I_{n} \supset I_{n+1}(n=1,2,3, \ldots)\)</span>,
+then <span class="math inline">\(\bigcap_{1}^{\infty} I_{n}\)</span> is
+not empty.</p>
+<p>Proof Let <span class="math inline">\(I_{n}\)</span> consist of all
+points <span class="math inline">\(\mathrm{x}=\left(x_{1}, \ldots,
+x_{k}\right)\)</span> such that</p>
+<p><span class="math display">\[
+a_{n, j} \leq x_{j} \leq b_{n, j} \quad(1 \leq j \leq k ; n=1,2,3,
+\ldots) \text {, }
+\]</span></p>
+<p>and put <span class="math inline">\(I_{n, j}=\left[a_{n, j}, b_{n,
+j}\right]\)</span>. For each <span class="math inline">\(j\)</span>, the
+sequence <span class="math inline">\(\left\{I_{n, j}\right\}\)</span>
+satisfies the hypotheses of Theorem <span
+class="math inline">\(2.38\)</span>. Hence there are real numbers <span
+class="math inline">\(x_{j}^{*}(1 \leq j \leq k)\)</span> such that</p>
+<p><span class="math display">\[
+a_{n, j} \leq x_{j}^{*} \leq b_{n, j} \quad(1 \leq j \leq k ; n=1,2,3,
+\ldots) \text {. }
+\]</span></p>
+<p>Setting <span class="math inline">\(\mathbf{x}^{*}=\left(x_{1}^{*},
+\ldots, x_{k}^{*}\right)\)</span>, we see that <span
+class="math inline">\(\mathrm{x}^{*} \in I_{n}\)</span> for <span
+class="math inline">\(n=1,2,3, \ldots\)</span> The theorem follows.</p>
+<p><strong>2.40 Theorem</strong> Every <span
+class="math inline">\(k\)</span>-cell is compact.</p>
+<p>Proof Let <span class="math inline">\(I\)</span> be a <span
+class="math inline">\(k\)</span>-cell, consisting of all points <span
+class="math inline">\(\mathrm{x}=\left(x_{1}, \ldots,
+x_{k}\right)\)</span> such that <span class="math inline">\(a_{j} \leq
+x_{j} \leq b_{j}(1 \leq j \leq k)\)</span>. Put</p>
+<p><span class="math display">\[
+\delta=\left\{\sum_{1}^{k}\left(b_{j}-a_{j}\right)^{2}\right\}^{1 / 2} .
+\]</span></p>
+<p>Then <span class="math inline">\(|\mathbf{x}-\mathbf{y}| \leq
+\delta\)</span>, if <span class="math inline">\(\mathbf{x} \in I,
+\mathbf{y} \in I\)</span>.</p>
+<p>Suppose, to get a contradiction, that there exists an open cover
+<span class="math inline">\(\left\{G_{\alpha}\right\}\)</span> of <span
+class="math inline">\(I\)</span> which contains no finite subcover of
+<span class="math inline">\(I\)</span>. Put <span
+class="math inline">\(c_{j}=\left(a_{j}+b_{j}\right) / 2\)</span>. The
+intervals <span class="math inline">\(\left[a_{j}, c_{j}\right]\)</span>
+and <span class="math inline">\(\left[c_{j}, b_{j}\right]\)</span> then
+determine <span class="math inline">\(2^{k} k\)</span>-cells <span
+class="math inline">\(Q_{i}\)</span> whose union is <span
+class="math inline">\(I\)</span>. At least one of these sets <span
+class="math inline">\(Q_{i}\)</span>, call it <span
+class="math inline">\(I_{1}\)</span>, cannot be covered by any finite
+subcollection of <span
+class="math inline">\(\left\{G_{\alpha}\right\}\)</span> (otherwise
+<span class="math inline">\(I\)</span> could be so covered). We next
+subdivide <span class="math inline">\(I_{1}\)</span> and continue the
+process. We obtain a sequence <span
+class="math inline">\(\left\{I_{n}\right\}\)</span> with the following
+properties:</p>
+<ol type="a">
+<li><p><span class="math inline">\(I \supset I_{1} \supset I_{2} \supset
+I_{3} \supset \cdots\)</span>;</p></li>
+<li><p><span class="math inline">\(I_{n}\)</span> is not covered by any
+finite subcollection of <span
+class="math inline">\(\left\{G_{\alpha}\right\}\)</span>;</p></li>
+<li><p>if <span class="math inline">\(\mathbf{x} \in I_{n}\)</span> and
+<span class="math inline">\(\mathbf{y} \in I_{n}\)</span>, then <span
+class="math inline">\(|\mathbf{x}-\mathbf{y}| \leq 2^{-n}
+\delta\)</span>.</p></li>
+</ol>
+<p>By <span class="math inline">\((a)\)</span> and Theorem <span
+class="math inline">\(2.39\)</span>, there is a point <span
+class="math inline">\(\mathrm{x}^{*}\)</span> which lies in every <span
+class="math inline">\(I_{n}\)</span>. For some <span
+class="math inline">\(\alpha, \mathbf{x}^{*} \in G_{\alpha}\)</span>.
+Since <span class="math inline">\(G_{\alpha}\)</span> is open, there
+exists <span class="math inline">\(r&gt;0\)</span> such that <span
+class="math inline">\(\left|\mathbf{y}-\mathbf{x}^{*}\right|&lt;r\)</span>
+implies that <span class="math inline">\(\mathbf{y} \in
+G_{\alpha}\)</span>. If <span class="math inline">\(n\)</span> is so
+large that <span class="math inline">\(2^{-n} \delta&lt;r\)</span>
+(there is such an <span class="math inline">\(n\)</span>, for otherwise
+<span class="math inline">\(2^{n} \leq \delta / r\)</span> for all
+positive integers <span class="math inline">\(n\)</span>, which is
+absurd since <span class="math inline">\(R\)</span> is archimedean),
+then (c) implies that <span class="math inline">\(I_{n} \subset
+G_{\alpha}\)</span>, which contradicts <span
+class="math inline">\((b)\)</span>.</p>
+<p>This completes the proof.</p>
+<p>The equivalence of <span class="math inline">\((a)\)</span> and <span
+class="math inline">\((b)\)</span> in the next theorem is known as the
+HeineBorel theorem.</p>
+<p><strong>2.41 Theorem</strong> If a set <span
+class="math inline">\(E\)</span> in <span
+class="math inline">\(R^{k}\)</span> has one of the following three
+properties, then it has the other two:</p>
+<ol type="a">
+<li><p>E is closed and bounded.</p></li>
+<li><p>E is compact.</p></li>
+<li><p>Every infinite subset of <span class="math inline">\(E\)</span>
+has a limit point in <span class="math inline">\(E\)</span>.</p></li>
+</ol>
+<p><strong>Proof</strong> If (a) holds, then <span
+class="math inline">\(E \subset I\)</span> for some <span
+class="math inline">\(k\)</span>-cell <span
+class="math inline">\(I\)</span>, and <span
+class="math inline">\((b)\)</span> follows from Theorems <span
+class="math inline">\(2.40\)</span> and 2.35. Theorem <span
+class="math inline">\(2.37\)</span> shows that <span
+class="math inline">\((b)\)</span> implies <span
+class="math inline">\((c)\)</span>. It remains to be shown that <span
+class="math inline">\((c)\)</span> implies <span
+class="math inline">\((a)\)</span>.</p>
+<p>If <span class="math inline">\(E\)</span> is not bounded, then <span
+class="math inline">\(E\)</span> contains points <span
+class="math inline">\(\mathbf{x}_{n}\)</span> with</p>
+<p><span class="math display">\[
+\left|\mathbf{x}_{n}\right|&gt;n \quad(n=1,2,3, \ldots) \text {. }
+\]</span></p>
+<p>The set <span class="math inline">\(S\)</span> consisting of these
+points <span class="math inline">\(\mathbf{x}_{n}\)</span> is infinite
+and clearly has no limit point in <span
+class="math inline">\(R^{k}\)</span>, hence has none in <span
+class="math inline">\(E\)</span>. Thus (c) implies that <span
+class="math inline">\(E\)</span> is bounded.</p>
+<p>If <span class="math inline">\(E\)</span> is not closed, then there
+is a point <span class="math inline">\(\mathbf{x}_{0} \in R^{k}\)</span>
+which is a limit point of <span class="math inline">\(E\)</span> but not
+a point of <span class="math inline">\(E\)</span>. For <span
+class="math inline">\(n=1,2,3, \ldots\)</span>, there are points <span
+class="math inline">\(\mathbf{x}_{n} \in E\)</span> such that <span
+class="math inline">\(\left|\mathbf{x}_{n}-\mathbf{x}_{0}\right|&lt;1 /
+n\)</span>. Let <span class="math inline">\(S\)</span> be the set of
+these points <span class="math inline">\(\mathbf{x}_{n}\)</span>. Then
+<span class="math inline">\(S\)</span> is infinite (otherwise <span
+class="math inline">\(\left|\mathbf{x}_{n}-\mathbf{x}_{0}\right|\)</span>
+would have a constant positive value, for infinitely many <span
+class="math inline">\(n\)</span> ), <span
+class="math inline">\(S\)</span> has <span
+class="math inline">\(\mathbf{x}_{0}\)</span> as a limit point, and
+<span class="math inline">\(S\)</span> has no other limit point in <span
+class="math inline">\(R^{k}\)</span>. For if <span
+class="math inline">\(\mathbf{y} \in R^{k}, \mathbf{y} \neq
+\mathbf{x}_{0}\)</span>, then</p>
+<p><span class="math display">\[
+\begin{aligned}
+\left|\mathbf{x}_{n}-\mathbf{y}\right| &amp;
+\geq\left|\mathbf{x}_{0}-\mathbf{y}\right|-\left|\mathbf{x}_{n}-\mathbf{x}_{0}\right|
+\\
+&amp; \geq\left|\mathbf{x}_{0}-\mathbf{y}\right|-\frac{1}{n} \geq
+\frac{1}{2}\left|\mathbf{x}_{0}-\mathbf{y}\right|
+\end{aligned}
+\]</span></p>
+<p>for all but finitely many <span class="math inline">\(n\)</span>;
+this shows that <span class="math inline">\(y\)</span> is not a limit
+point of <span class="math inline">\(S\)</span> (Theorem 2.20).</p>
+<p>Thus <span class="math inline">\(S\)</span> has no limit point in
+<span class="math inline">\(E\)</span>; hence <span
+class="math inline">\(E\)</span> must be closed if <span
+class="math inline">\((c)\)</span> holds.</p>
+<p>We should remark, at this point, that <span
+class="math inline">\((b)\)</span> and <span
+class="math inline">\((c)\)</span> are equivalent in any metric space
+(Exercise 26) but that <span class="math inline">\((a)\)</span> does
+not, in general, imply <span class="math inline">\((b)\)</span> and
+<span class="math inline">\((c)\)</span>. Examples are furnished by
+Exercise 16 and by the space <span
+class="math inline">\(\mathscr{L}^{2}\)</span>, which is discussed in
+Chap. <span class="math inline">\(11 .\)</span></p>
+<p><strong>2.42 Theorem</strong> (Weierstrass) Every bounded infinite
+subset of <span class="math inline">\(R^{k}\)</span> has a limit point
+in <span class="math inline">\(R^{k}\)</span>.</p>
+<p>Proof Being bounded, the set <span class="math inline">\(E\)</span>
+in question is a subset of a <span class="math inline">\(k\)</span>-cell
+<span class="math inline">\(I \subset R^{k}\)</span>. By Theorem <span
+class="math inline">\(2.40, I\)</span> is compact, and so <span
+class="math inline">\(E\)</span> has a limit point in <span
+class="math inline">\(I\)</span>, by Theorem 2.37.</p>
+
+    </div>
+    
+</div>
+</div>
+
+                <div id="footer-wrapper">
+                    <footer class="footer"><footer class="row pl-3 pr-3">
+    <div class="col-12 d-flex justify-content-between align-items-center text-muted pl-0 pr-0">
+        <div class="footer-left">
+            <p class="mb-0"> © 2022 <a href="https://github.com/chen-gz">guangzong</a>. <span data-toggle="tooltip"
+                    data-placement="top"
+                    title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author.">All
+                    rights reserved.</span></p>
+        </div>
+        <div class="footer-right">
+            <p class="mb-0"> Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">hugo</a>
+                with <a href="https://github.com/chen-gz/hugo_zong" target="_blank" rel="noopener">zong</a>
+                theme.</p>
+        </div>
+    </div>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script> MathJax = {
+            tex: {
+                tags: 'ams',
+            }
+        };</script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</footer>
+</footer>
+                </div>
+            </div>
+            <div id="panel-wrapper" class="d-flex flex-column"><div id="toc-wrapper" class="mb-5 pl-2">
+    <span>Contents</span>
+    <nav id="toc" data-toggle="toc">
+        
+        
+        
+    </nav>
+</div>
+
+<div id="access-lastmod" class="pb-4 pl-2">
+    <div class="panel-heading">Recently Updated</div>
+    <ul class="post-content pl-3 pb-1 ml-1 mt-2">
+          
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/1-total-variation/">Total Variation</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-7/1-derivatives-of-measures/">Derivatives of Measures</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/3-consequences-of-the-radon-nikodym-theorem/">Consequences of the Radon-Nikodym Theorem</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/4-bounded-linear-functionals-on-lp/">Bounded linear functional on Lp</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/2-abosolute-continuity/">Abosolute Continuity</a></li>
+        
+    </ul>
+</div>
+
+<div id="access-tags" class="pl-2">
+    <div class="panel-heading">Trending Tags</div>
+    <div class="d-flex flex-wrap mt-3 mb-1 mr-3">
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/algorithm/">Algorithm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/android/">Android</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c/">C</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c-language/">c language</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/caddy/">Caddy</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cadence/">Cadence</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cdc/">CDC</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/classification/">classification</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/compress/">Compress</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/conf/">Conf</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/double-column/">Double Column</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/errno13/">Errno13</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/fish/">fish</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gan/">GAN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/git/">Git</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gtk/">Gtk</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/html/">Html</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/i3/">I3</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/idea/">Idea</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/java/">Java</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/latex/">Latex</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lda/">LDA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linear-programming/">Linear Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linux/">Linux</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lr/">LR</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/math/">Math</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mathematics/">Mathematics</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matlab/">Matlab</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matplot/">matplot</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/memory/">Memory</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mermaid/">Mermaid</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/misc/">Misc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/ml/">ML</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mosfet/">Mosfet</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/network/">Network</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/nn/">NN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pandoc/">Pandoc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pca/">PCA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/probability/">Probability</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/productive/">Productive</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/program/">Program</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/programming/">Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/python/">Python</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/qt/">Qt</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/random-variable/">Random Variable</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rcnn/">RCNN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rust/">Rust</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/security/">Security</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/software/">Software</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/std/">Std</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/svd/">Svd</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/tool/">Tool</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/usb/">USB</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vim/">Vim</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpn/">Vpn</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpnc/">Vpnc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/xterm/">xterm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/zsh/">Zsh</a>
+        
+    </div>
+</div>
+</div><div id="search-result-wrapper" class="d-flex justify-content-center unloaded">
+    <div class="col-12 col-sm-11 post-content">
+        <div id="search-hints"></div>
+        <div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3 col-12"></div>
+    </div>
+</div>
+
+<script src="/js/fuse.min.js"></script>
+<script src="/js/fastsearch.js"></script>
+
+
+</div>
+        <div id="mask"></div>
+        <a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button"
+            style="display: none">
+            <i class="fas fa-angle-up"></i>
+        </a>
+    </div>
+    
+</body>
+
+</html>

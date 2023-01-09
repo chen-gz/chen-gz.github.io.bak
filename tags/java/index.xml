@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Java on Guangzong Blog</title>
+    <link>https://zongpitt.com/tags/java/</link>
+    <description>Recent content in Java on Guangzong Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 24 Feb 2021 12:00:00 -0500</lastBuildDate><atom:link href="https://zongpitt.com/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Android Permission</title>
+      <link>https://zongpitt.com/posts/2021-02-24-android-permission/</link>
+      <pubDate>Wed, 24 Feb 2021 12:00:00 -0500</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-02-24-android-permission/</guid>
+      <description>the content is from following link
+https://www.geeksforgeeks.org/android-how-to-request-permissions-in-android-application/
+package org.geeksforgeeks.requestPermission; import android.Manifest; import android.content.pm.PackageManager; import android.support.annotation.NonNull; import android.support.v4.app.ActivityCompat; import android.support.v4.content.ContextCompat; import android.support.v7.app.AppCompatActivity; import android.os.Bundle; import android.view.View; import android.widget.Button; import android.widget.Toast; public class MainActivity extends AppCompatActivity { // Defining Buttons private Button storage, camera; // Defining Permission codes. // We can give any value // but unique for each permission. private static final int CAMERA_PERMISSION_CODE = 100; private static final int STORAGE_PERMISSION_CODE = 101; @Override protected void onCreate(Bundle savedInstanceState) { super.</description>
+    </item>
+    
+    <item>
+      <title>Java Date and Time</title>
+      <link>https://zongpitt.com/posts/2021-02-22-java-date-and-time/</link>
+      <pubDate>Mon, 22 Feb 2021 20:14:00 -0500</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-02-22-java-date-and-time/</guid>
+      <description>java get time from system
+import java.time.format.DateTimeFormatter; import java.time.LocalDateTime; public class CurrentDateTimeExample1 { public static void main(String[] args) { DateTimeFormatter dtf = DateTimeFormatter.ofPattern(&amp;quot;yyyy/MM/dd HH:mm:ss&amp;quot;); LocalDateTime now = LocalDateTime.now(); System.out.println(dtf.format(now)); } } </description>
+    </item>
+    
+    <item>
+      <title>Java file</title>
+      <link>https://zongpitt.com/posts/2021-02-22-java-file/</link>
+      <pubDate>Mon, 22 Feb 2021 18:54:00 -0500</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-02-22-java-file/</guid>
+      <description>Test file file exist by exists() method
+File tempFile = new File(&amp;quot;c:/temp/temp.txt&amp;quot;); boolean exists = tempFile.exists(); java read file by Scanner (code from w3school)
+import java.io.File; // Import the File class import java.io.FileNotFoundException; // Import this class to handle errors import java.util.Scanner; // Import the Scanner class to read text files public class ReadFile { public static void main(String[] args) { try { File myObj = new File(&amp;quot;filename.txt&amp;quot;); Scanner myReader = new Scanner(myObj); while (myReader.</description>
+    </item>
+    
+  </channel>
+</rss>

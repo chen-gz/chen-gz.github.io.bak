@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>5 Differentiation on Guangzong Blog</title>
+    <link>https://zongpitt.com/baby-rudin/5-differentiation/</link>
+    <description>Recent content in 5 Differentiation on Guangzong Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://zongpitt.com/baby-rudin/5-differentiation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DERIVATIVES OF HIGHER ORDER</title>
+      <link>https://zongpitt.com/baby-rudin/5-differentiation/5-derivatives-of-higher-order/</link>
+      <pubDate>Thu, 28 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/5-differentiation/5-derivatives-of-higher-order/</guid>
+      <description>5.14 Definition If \(f\) has a derivative \(f^{\prime}\) on an interval, and if \(f^{\prime}\) is itself differentiable, we denote the derivative of \(f^{\prime}\) by \(f^{\prime \prime}\) and call \(f^{\prime \prime}\) the second derivative of \(f\). Continuing in this manner, we obtain functions \[ f, f^{\prime}, f^{\prime \prime}, f^{(3)}, \ldots, f^{(n)}, \]
+each of which is the derivative of the preceding one. \(f^{(n)}\) is called the \(n\)th derivative, or the derivative of order \(n\), of \(f\).</description>
+    </item>
+    
+    <item>
+      <title>DIFFERENTIATION OF VECTOR-VALUED FUNCTIONS</title>
+      <link>https://zongpitt.com/baby-rudin/5-differentiation/7-differentiation-of-vector-valued-functions/</link>
+      <pubDate>Thu, 28 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/5-differentiation/7-differentiation-of-vector-valued-functions/</guid>
+      <description>5.16 Remarks Definition \(5.1\) applies without any change to complex functions \(f\) defined on \([a, b]\), and Theorems \(5.2\) and \(5.3\), as well as their proofs, remain valid. If \(f_{1}\) and \(f_{2}\) are the real and imaginary parts of \(f\), that is, if \[ f(t)=f_{1}(t)+i f_{2}(t) \]
+for \(a \leq t \leq b\), where \(f_{1}(t)\) and \(f_{2}(t)\) are real, then we clearly have
+\[ f^{\prime}(x)=f_{1}^{\prime}(x)+i f_{2}^{\prime}(x) \]
+also, \(f\) is differentiable at \(x\) if and only if both \(f_{1}\) and \(f_{2}\) are differentiable at \(x\).</description>
+    </item>
+    
+    <item>
+      <title>L&#39;HOSPITAL&#39;S RULE</title>
+      <link>https://zongpitt.com/baby-rudin/5-differentiation/4-lhospitals-rule/</link>
+      <pubDate>Thu, 28 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/5-differentiation/4-lhospitals-rule/</guid>
+      <description>The following theorem is frequently useful in the evaluation of limits.
+5.13 Theorem Suppose \(f\) and \(g\) are real and differentiable in \((a, b)\), and \(g^{\prime}(x) \neq 0\) for all \(x \in(a, b)\), where \(-\infty \leq a&amp;lt;b \leq+\infty\). Suppose \[ \frac{f^{\prime}(x)}{g^{\prime}(x)} \rightarrow A \text { as } x \rightarrow a \text {. } \]
+If
+\[ f(x) \rightarrow 0 \text { and } g(x) \rightarrow 0 \text { as } x \rightarrow a, \]</description>
+    </item>
+    
+    <item>
+      <title>TAYLOR&#39;S THEOREM</title>
+      <link>https://zongpitt.com/baby-rudin/5-differentiation/6-taylors-theorem/</link>
+      <pubDate>Thu, 28 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/5-differentiation/6-taylors-theorem/</guid>
+      <description>5.15 Theorem Suppose \(f\) is a real function on \([a, b], n\) is a positive integer, \(f^{(n-1)}\) is continuous on \([a, b], f^{(n)}(t)\) exists for every \(t \in(a, b)\). Let \(\alpha, \beta\) be distinct points of \([a, b]\), and define \[ P(t)=\sum_{k=0}^{n-1} \frac{f^{(k)}(\alpha)}{k !}(t-\alpha)^{k} . \]
+Then there exists a point \(x\) between \(\alpha\) and \(\beta\) such that
+\[ f(\beta)=P(\beta)+\frac{f^{(n)}(x)}{n !}(\beta-\alpha)^{n} . \]
+For \(n=1\), this is just the mean value theorem.</description>
+    </item>
+    
+    <item>
+      <title>THE CONTINUITY OF DERIVATIVES</title>
+      <link>https://zongpitt.com/baby-rudin/5-differentiation/3-the-continuity-of-derivatives/</link>
+      <pubDate>Thu, 28 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/5-differentiation/3-the-continuity-of-derivatives/</guid>
+      <description>We have already seen [Example 5.6(b)] that a function \(f\) may have a derivative \(f^{\prime}\) which exists at every point, but is discontinuous at some point. However, not every function is a derivative. In particular, derivatives which exist at every point of an interval have one important property in common with functions which are continuous on an interval: Intermediate values are assumed (compare Theorem 4.23). The precise statement follows.
+5.12 Theorem Suppose \(f\) is a real differentiable function on \([a, b]\) and suppose \(f^{\prime}(a)&amp;lt;\lambda&amp;lt;f^{\prime}(b)\).</description>
+    </item>
+    
+    <item>
+      <title>MEAN VALUE THEOREMS</title>
+      <link>https://zongpitt.com/baby-rudin/5-differentiation/2-mean-value-theorems/</link>
+      <pubDate>Wed, 27 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/5-differentiation/2-mean-value-theorems/</guid>
+      <description>5.7 Definition Let \(f\) be a real function defined on a metric space \(X\). We say that \(f\) has a local maximum at a point \(p \in X\) if there exists \(\delta&amp;gt;0\) such that \(f(q) \leq\) \(f(p)\) for all \(q \in X\) with \(d(p, q)&amp;lt;\delta\).
+Local minima are defined likewise.
+Our next theorem is the basis of many applications of differentiation.
+\(5.8\) Theorem Let \(f\) be defined on \([a, b]\); if \(f\) has a local maximum at a point \(x \in(a, b)\), and if \(f^{\prime}(x)\) exists, then \(f^{\prime}(x)=0\).</description>
+    </item>
+    
+    <item>
+      <title>DIFFERENTIATION</title>
+      <link>https://zongpitt.com/baby-rudin/5-differentiation/0-intro/</link>
+      <pubDate>Tue, 26 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/5-differentiation/0-intro/</guid>
+      <description>In this chapter we shall (except in the final section) confine our attention to real functions defined on intervals or segments. This is not just a matter of convenience, since genuine differences appear when we pass from real functions to vector-valued ones. Differentiation of functions defined on \(R^{k}\) will be discussed in Chap. \(9 .\)</description>
+    </item>
+    
+    <item>
+      <title>THE DERIVATIVE OF A REAL FUNCTION</title>
+      <link>https://zongpitt.com/baby-rudin/5-differentiation/1-the-derivative-of-a-real-function/</link>
+      <pubDate>Tue, 26 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/5-differentiation/1-the-derivative-of-a-real-function/</guid>
+      <description>5.1 Definition Let \(f\) be defined (and real-valued) on \([a, b]\). For any \(x \in[a, b]\) form the quotient \[ \phi(t)=\frac{f(t)-f(x)}{t-x} \quad(a&amp;lt;t&amp;lt;b, t \neq x), \]
+and define
+\[ f^{\prime}(x)=\lim _{t \rightarrow x} \phi(t), \]
+provided this limit exists in accordance with Definition 4.1.
+We thus associate with the function \(f\) a function \(f^{\prime}\) whose domain is the set of points \(x\) at which the limit (2) exists; \(f^{\prime}\) is called the derivative of \(f\).</description>
+    </item>
+    
+  </channel>
+</rss>

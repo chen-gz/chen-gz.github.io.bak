@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css"
+        class="dark-mode-native-dark-original" />
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+     
+    <link rel="stylesheet" href="https://zongpitt.com/sass/main.06935202011a97ba473ebeeb0cb6788daa9fb5a9fff471a4e85850293d1c5ac4.css" />
+    <title>
+          Guangzong Blog | Derivatives of Measures
+    </title>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.bundle.min.js"></script>
+    <script src=" https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.js"></script>
+
+    <script
+        src="https://cdn.jsdelivr.net/combine/npm/magnific-popup@1/dist/jquery.magnific-popup.min.js,npm/lozad/dist/lozad.min.js,npm/clipboard@2/dist/clipboard.min.js"></script>
+    <script type="text/javascript" src="/js/commons/back-to-top.js"></script>
+    
+    
+    
+    <script type="text/javascript" src="/js/commons/topbar-switch.js"></script>
+    <script type="text/javascript" src="/js/commons/sidebar.js"></script>
+    <script type="text/javascript" src="/js/utils/category-collapse.js"></script>
+    <script type="text/javascript" src="/js/utils/checkbox.js"></script>
+    <script type="text/javascript" src="/js/utils/clipboard.js"></script>
+    <script type="text/javascript" src="/js/utils/img-extra.js"></script>
+    <script type="text/javascript" src="/js/utils/pageviews.js"></script>
+    
+    <script type="text/javascript" src="/js/utils/timeago.js"></script>
+    
+    
+</head>
+<body data-spy="scroll" data-target="#toc" data-topbar-visible="true" class="d-flex"><div id="sidebar" class="d-flex flex-column align-items-end">
+    <div class="profile-wrapper text-center">
+
+        <div id="avatar">
+            <a href="/" alt="avatar" class="mx-auto"> <img src=https://github.com/chen-gz/chen-gz/blob/main/mine_square.jpg?raw&#61;truehttps://raw.githubusercontent.com/chen-gz/chen-gz/blob/main/mine_square.jpg alt="avatar"
+                    onerror="this.style.display='none'"> </a>
+        </div>
+
+        <div class="site-title mt-3"> <a href="/">Guangzong</a> </div>
+        <div class="site-subtitle font-italic">Welcome to my blog</div>
+    </div>
+
+    <ul>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/">
+                <span>
+                    Home
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/archive/">
+                <span>
+                    Archive
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/tags/">
+                <span>
+                    Tags
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/about/">
+                <span>
+                    About
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/categories/">
+                <span>
+                    Categories
+                </span>
+            </a>
+        </li>
+        
+    </ul>
+
+    <div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center align-items-center">
+        <button class="mode-toggle btn" aria-label="Switch Mode"> 
+            <i class="fas fa-adjust"></i> 
+        </button>
+
+        <span class="icon-border"></span>
+        <a href="https://github.com/chen-gz" aria-label="github" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i>
+        </a>
+
+        <a href=" javascript:location.href = 'mailto:' + ['chen-gz','outlook.com'].join('@')" aria-label="email">
+            <i class="fas fa-envelope"></i>
+        </a>
+
+        <a href="/feed.xml" aria-label="rss"> <i class="fas fa-rss"></i> </a>
+    </div>
+
+    
+    
+</div>
+<div id="all-wrapper" class="d-flex flex-column"><div id="topbar-wrapper">
+    <div id="topbar" class="d-flex">
+        
+        <span id="breadcrumb" class="d-flex">
+              
+               
+            
+            
+            <div><a href='https://zongpitt.com/'>Home</a></div>
+              
+              
+            
+            <div><a href="https://zongpitt.com/papa-rudin">papa-rudin</a></div>
+               
+              
+            
+            <div><a href="https://zongpitt.com/papa-rudin/ch-7">ch-7</a></div>
+               
+                 
+                
+        </span>
+        <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i>
+        <div id="topbar-title">Guangzong</div>
+        <i id="search-trigger" class="fas fa-search fa-fw"></i>
+        <span id="search-wrapper" class="align-items-center">
+            <i class="fas fa-search fa-fw"></i>
+            <input class="form-control" id="search-input" type="search" aria-label="search" autocomplete="off"
+                placeholder="Search..." />
+            <i class="fa fa-times-circle fa-fw" id="search-cleaner"></i>
+        </span>
+    </div>
+</div>
+<div id="main-wrapper" class="d-flex mt-3">
+            <div id="core-wrapper" class="d-flex flex-column">
+                <div id="main" class="d-flex flex-column">
+                    
+<div class="post pl-1 pr-1 pl-md-2 pr-md-2">
+    
+    <div id="post-content">
+        <h1 style="text-align: center;">Derivatives of Measures</h1>
+        <br>
+        
+        <p>We begin with a simple, theorem whose main purpose is to motivate the
+definitions that follow.</p>
+<h3 id="theorem">7.1 Theorem</h3>
+<p>Suppose <span class="math inline">\(\mu\)</span> is a complex Borel
+measure on <span class="math inline">\(R^1\)</span> and</p>
+<p><span class="math display">\[
+f(x)=\mu((-\infty, x)) \quad\left(x \in R^1\right) .
+\]</span></p>
+<p>If <span class="math inline">\(x \in R^1\)</span> and <span
+class="math inline">\(A\)</span> is a complex number, each of the
+following two statements implies the other:</p>
+<ol type="a">
+<li><span class="math inline">\(f\)</span> is differentiable at <span
+class="math inline">\(x\)</span> and <span
+class="math inline">\(f^{\prime}(x)=A\)</span>.</li>
+<li>To every <span class="math inline">\(\epsilon&gt;0\)</span>
+corresponds a <span class="math inline">\(\delta&gt;0\)</span> such
+that</li>
+</ol>
+<p><span class="math display">\[
+\left|\frac{\mu(I)}{m(I)}-A\right|&lt;\epsilon
+\]</span></p>
+<p>for every open segment I that contains <span
+class="math inline">\(x\)</span> and whose length is less than <span
+class="math inline">\(\delta\)</span>. Here <span
+class="math inline">\(m\)</span> denotes Lebesgue measure on <span
+class="math inline">\(R^1\)</span>.</p>
+<h3 id="definitions">7.2 Definitions</h3>
+<p>Theorem <span class="math inline">\(7.1\)</span> suggests that one
+might define the derivative of <span class="math inline">\(\mu\)</span>
+at <span class="math inline">\(x\)</span> to be the limit of the
+quotients <span class="math inline">\(\mu(I) / m(I)\)</span>, as the
+segments <span class="math inline">\(I\)</span> shrink to <span
+class="math inline">\(x\)</span>, and that an analogous definition might
+be appropriate in several variables, i.e., in <span
+class="math inline">\(R^k\)</span> rather than in <span
+class="math inline">\(R^1\)</span>.</p>
+<p>Accordingly, let us fix a dimension <span
+class="math inline">\(k\)</span>, denote the open ball with center <span
+class="math inline">\(x \in R^k\)</span> and radius <span
+class="math inline">\(r&gt;0\)</span> by</p>
+<p><span class="math display">\[
+B(x, r)=\left\{y \in R^k:|y-x|&lt;r\right\}
+\]</span></p>
+<p>(the absolute value indicates the euclidean metric, as in Sec. 2.19),
+associate to any complex Borel measure <span
+class="math inline">\(\mu\)</span> on <span
+class="math inline">\(R^k\)</span> the quotients</p>
+<p><span class="math display">\[
+\left(Q_r \mu\right)(x)=\frac{\mu(B(x, r))}{m(B(x, r))},
+\]</span></p>
+<p>where <span class="math inline">\(m=m_k\)</span> is Lebesgue measure
+on <span class="math inline">\(R^k\)</span>, and define the symmetric
+derivative of <span class="math inline">\(\mu\)</span> at <span
+class="math inline">\(x\)</span> to be</p>
+<p><span class="math display">\[
+(D \mu)(x)=\lim _{r \rightarrow 0}\left(Q_r \mu\right)(x)
+\]</span></p>
+<p>at those points <span class="math inline">\(x \in R^k\)</span> at
+which this limit exists.</p>
+<p>We shall study <span class="math inline">\(D \mu\)</span> by means of
+the maximal function <span class="math inline">\(M \mu\)</span>. For
+<span class="math inline">\(\mu \geq 0\)</span>, this is defined by</p>
+<p><span class="math display">\[
+(M \mu)(x)=\sup _{0&lt;r&lt;\infty}\left(Q_r \mu\right)(x),
+\]</span></p>
+<p>and the maximal function of a complex Borel measure <span
+class="math inline">\(\mu\)</span> is, by definition, that of its total
+variation <span class="math inline">\(|\mu|\)</span>.</p>
+<p>The functions <span class="math inline">\(M \mu: R^k \rightarrow[0,
+\infty]\)</span> are lower semicontinuous, hence measurable.</p>
+<p>To see this, assume <span class="math inline">\(\mu \geq 0\)</span>,
+pick <span class="math inline">\(\lambda&gt;0\)</span>, let <span
+class="math inline">\(E=\{M \mu&gt;\lambda\}\)</span>, and fix <span
+class="math inline">\(x \in E\)</span>. Then there is an <span
+class="math inline">\(r&gt;0\)</span> such that</p>
+<p><span class="math display">\[
+\mu(B(x, r))=\operatorname{tm}(B(x, r))
+\]</span></p>
+<p>for some <span class="math inline">\(t&gt;\lambda\)</span>, and there
+is a <span class="math inline">\(\delta&gt;0\)</span> that satisfies</p>
+<p><span class="math display">\[
+(r+\delta)^k&lt;r^k t / \lambda
+\]</span></p>
+<p>If <span class="math inline">\(|y-x|&lt;\delta\)</span>, then <span
+class="math inline">\(B(y, r+\delta) \supset B(x, r)\)</span>, and
+therefore</p>
+<p><span class="math display">\[
+\mu(B(y, r+\delta)) \geq \operatorname{tm}(B(x, r))=t[r /(r+\delta)]^k
+m(B(y, r+\delta))&gt;\lambda m(B(y, r+\delta)) \text {. }
+\]</span></p>
+<p>Thus <span class="math inline">\(B(x, \delta) \subset E\)</span>.
+This proves that <span class="math inline">\(E\)</span> is open.</p>
+<p>Our first objective is the “maximal theorem” 7.4. The following
+covering lemma will be used in its proof.</p>
+<h3 id="lemma">7.3 Lemma</h3>
+<p>If <span class="math inline">\(W\)</span> is the union of a finite
+collection of balls <span class="math inline">\(B\left(x_i, r_i\right),
+1 \leq i \leq N\)</span>, then there is a set <span
+class="math inline">\(S \subset\{1, \ldots, N\}\)</span> so that</p>
+<ol type="a">
+<li>the balls <span class="math inline">\(B\left(x_i,
+r_i\right)\)</span> with <span class="math inline">\(i \in S\)</span>
+are disjoint,</li>
+<li><span class="math inline">\(W \subset \bigcup_{i \in S} B\left(x_i,
+3 r_i\right)\)</span>, and</li>
+<li><span class="math inline">\(m(W) \leq 3^k \sum_{i \in S}
+m\left(B\left(x_i, r_i\right)\right)\)</span></li>
+</ol>
+<p>Proof Order the balls <span class="math inline">\(B_i=B\left(x_i,
+r_i\right)\)</span> so that <span class="math inline">\(r_1 \geq r_2
+\geq \cdots \geq r_N\)</span>. Put <span
+class="math inline">\(i_1=1\)</span>. Discard all <span
+class="math inline">\(B_j\)</span> that intersect <span
+class="math inline">\(B_{i_1}\)</span>. Let <span
+class="math inline">\(B_{i_2}\)</span> be the first of the remaining
+<span class="math inline">\(B_j\)</span>, if there are any. Discard all
+<span class="math inline">\(B_j\)</span> with <span
+class="math inline">\(j&gt;i_2\)</span> that intersect <span
+class="math inline">\(B_{i_2}\)</span>, let <span
+class="math inline">\(B_{i_3}\)</span> be the first of the remaining
+ones, and so on, as long as possible. This process stops after a finite
+number of steps and gives <span class="math inline">\(S=\left\{i_1, i_2,
+\ldots\right\}\)</span>.</p>
+<p>It is clear that <span class="math inline">\((a)\)</span> holds.
+Every discarded <span class="math inline">\(B_j\)</span> is a subset of
+<span class="math inline">\(B\left(x_i, 3 r_i\right)\)</span> for some
+<span class="math inline">\(i \in S\)</span>, for if <span
+class="math inline">\(r^{\prime} \leq r\)</span> and <span
+class="math inline">\(B\left(x^{\prime}, r^{\prime}\right)\)</span>
+intersects <span class="math inline">\(B(x, r)\)</span>, then <span
+class="math inline">\(B\left(x^{\prime}, r^{\prime}\right) \subset B(x,
+3 r)\)</span>. This proves <span class="math inline">\((b)\)</span>, and
+<span class="math inline">\((c)\)</span> follows from <span
+class="math inline">\((b)\)</span> because in <span
+class="math inline">\(R^k\)</span>.</p>
+<p><span class="math display">\[
+m(B(x, 3 r))=3^k m(B(x, r))
+\]</span></p>
+<p>The following theorem says, roughly speaking, that the maximal
+function of a measure cannot be large on a large set.</p>
+<h3 id="theorem-1">7.4 Theorem</h3>
+<p>If <span class="math inline">\(\mu\)</span> is a complex Borel
+measure on <span class="math inline">\(R^k\)</span> and <span
+class="math inline">\(\lambda\)</span> is a positive number, then</p>
+<p><span class="math display">\[
+m\{M \mu&gt;\lambda\} \leq 3^k \lambda^{-1}\|\mu\| .
+\]</span></p>
+<p>Here <span
+class="math inline">\(\|\mu\|=|\mu|\left(R^k\right)\)</span>, and the
+left side of (1) is an abbreviation for the more cumbersome
+expression</p>
+<p><span class="math display">\[
+m\left(\left\{x \in R^k:(M \mu)(x)&gt;\lambda\right\}\right) .
+\]</span></p>
+<p>We shall often simplify notation in this way.</p>
+<p>Proof Fix <span class="math inline">\(\mu\)</span> and <span
+class="math inline">\(\lambda\)</span>. Let <span
+class="math inline">\(K\)</span> be a compact subset of the open set
+<span class="math inline">\(\{M \mu&gt;\lambda\}\)</span>. Each <span
+class="math inline">\(x \in K\)</span> is the center of an open ball
+<span class="math inline">\(B\)</span> for which</p>
+<p><span class="math display">\[
+|\mu|(B)&gt;\lambda m(B) .
+\]</span></p>
+<p>Some finite collection of these <span
+class="math inline">\(B\)</span> ’s covers <span
+class="math inline">\(K\)</span>, and Lemma <span
+class="math inline">\(7.3\)</span> gives us a disjoint subcollection,
+say <span class="math inline">\(\left\{B_1, \ldots,
+B_n\right\}\)</span>, that satisfies</p>
+<p><span class="math display">\[
+m(K) \leq 3^k \sum_1^n m\left(B_i\right) \leq 3^k \lambda^{-1}
+\sum_1^n|\mu|\left(B_i\right) \leq 3^k \lambda^{-1}\|\mu\| .
+\]</span></p>
+<p>The disjointness of <span class="math inline">\(\left\{B_1, \ldots,
+B_n\right\}\)</span> was used in the last inequality. Now (1) follows by
+taking the supremum over all compact <span class="math inline">\(K
+\subset\{M \mu&gt;\lambda\}\)</span>.</p>
+<h3 id="weak">7.5 Weak</h3>
+<p><span class="math inline">\(L^1\)</span> If <span
+class="math inline">\(f \in L^1\left(R^k\right)\)</span> and <span
+class="math inline">\(\lambda&gt;0\)</span>, then</p>
+<p><span class="math display">\[
+m\{|f|&gt;\lambda\} \leq \lambda^{-1}\|f\|_1
+\]</span></p>
+<p>because, putting <span
+class="math inline">\(E=\{|f|&gt;\lambda\}\)</span>, we have</p>
+<p><span class="math display">\[
+\lambda m(E) \leq \int_E|f| d m \leq \int_{R^k}|f| d m=\|f\|_1 .
+\]</span></p>
+<p>Accordingly, any measurable function <span
+class="math inline">\(f\)</span> for which</p>
+<p><span class="math display">\[
+\lambda \cdot m\{|f|&gt;\lambda\}
+\]</span></p>
+<p>is a bounded function of <span class="math inline">\(\lambda\)</span>
+on <span class="math inline">\((0, \infty)\)</span> is said to belong to
+weak <span class="math inline">\(L^1\)</span>. Thus weak <span
+class="math inline">\(L^1\)</span> contains <span
+class="math inline">\(L^1\)</span>. That it is actually larger is shown
+most simply by the function <span class="math inline">\(1 / x\)</span>
+on <span class="math inline">\((0,1)\)</span>.</p>
+<p>We associate to each <span class="math inline">\(f \in
+L^1\left(R^k\right)\)</span> its maximal function <span
+class="math inline">\(M f: R^k \rightarrow[0, \infty]\)</span>, by
+setting</p>
+<p><span class="math display">\[
+(M f)(x)=\sup _{0&lt;r&lt;\infty} \frac{1}{m\left(B_r\right)} \int_{B(x,
+r)}|f| d m .
+\]</span></p>
+<p>[We wrote <span class="math inline">\(B_r\)</span> in place of <span
+class="math inline">\(B(x, r)\)</span> because <span
+class="math inline">\(m(B(x, r))\)</span> depends only on the radius
+<span class="math inline">\(r\)</span>.] If we identify <span
+class="math inline">\(f\)</span> with the measure <span
+class="math inline">\(\mu\)</span> given by <span
+class="math inline">\(d \mu=f d m\)</span>, we see that (4) agrees with
+the previously defined <span class="math inline">\(M \mu\)</span>.
+Theorem <span class="math inline">\(7.4\)</span> states therefore that
+the “maximal operator” <span class="math inline">\(M\)</span> sends
+<span class="math inline">\(L^1\)</span> to weak <span
+class="math inline">\(L^1\)</span>, with a bound (namely <span
+class="math inline">\(3^k\)</span> ) that depends only on the space
+<span class="math inline">\(R^k\)</span> :</p>
+<p>For every <span class="math inline">\(f \in
+L^1\left(R^k\right)\)</span> and every <span
+class="math inline">\(\lambda&gt;0\)</span></p>
+<p><span class="math display">\[
+m\{M f&gt;\lambda\} \leq 3^k \lambda^{-1}\|f\|_1
+\]</span></p>
+<h3 id="lebesgue-points">7.6 Lebesgue points</h3>
+<p>If <span class="math inline">\(f \in L^1\left(R^k\right)\)</span>,
+any <span class="math inline">\(x \in R^k\)</span> for which it is true
+that</p>
+<p><span class="math display">\[
+\lim _{r \rightarrow 0} \frac{1}{m\left(B_r\right)} \int_{B(x,
+r)}|f(y)-f(x)| d m(y)=0
+\]</span></p>
+<p>is called a Lebesgue point of <span
+class="math inline">\(f\)</span>.</p>
+<p>For example, (1) holds if <span class="math inline">\(f\)</span> is
+continuous at the point <span class="math inline">\(x\)</span>. In
+general, (1) means that the averages of <span
+class="math inline">\(|f-f(x)|\)</span> are small on small balls
+centered at <span class="math inline">\(x\)</span>. The Lebesgue points
+of <span class="math inline">\(f\)</span> are thus points where <span
+class="math inline">\(f\)</span> does not oscillate too much, in an
+average sense.</p>
+<p>It is probably far from obvious that every <span
+class="math inline">\(f \in L^1\)</span> has Lebesgue points. But the
+following remarkable theorem shows that they always exist. (See also
+Exercise 23.)</p>
+<h3 id="theorem-2">7.7 Theorem</h3>
+<p>If <span class="math inline">\(f \in L^1\left(R^k\right)\)</span>,
+then almost every <span class="math inline">\(x \in R^k\)</span> is a
+Lebesgue point of <span class="math inline">\(f\)</span>.</p>
+
+    </div>
+    
+</div>
+</div>
+
+                <div id="footer-wrapper">
+                    <footer class="footer"><footer class="row pl-3 pr-3">
+    <div class="col-12 d-flex justify-content-between align-items-center text-muted pl-0 pr-0">
+        <div class="footer-left">
+            <p class="mb-0"> © 2022 <a href="https://github.com/chen-gz">guangzong</a>. <span data-toggle="tooltip"
+                    data-placement="top"
+                    title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author.">All
+                    rights reserved.</span></p>
+        </div>
+        <div class="footer-right">
+            <p class="mb-0"> Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">hugo</a>
+                with <a href="https://github.com/chen-gz/hugo_zong" target="_blank" rel="noopener">zong</a>
+                theme.</p>
+        </div>
+    </div>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script> MathJax = {
+            tex: {
+                tags: 'ams',
+            }
+        };</script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</footer>
+</footer>
+                </div>
+            </div>
+            <div id="panel-wrapper" class="d-flex flex-column"><div id="toc-wrapper" class="mb-5 pl-2">
+    <span>Contents</span>
+    <nav id="toc" data-toggle="toc">
+        
+        
+        
+    </nav>
+</div>
+
+<div id="access-lastmod" class="pb-4 pl-2">
+    <div class="panel-heading">Recently Updated</div>
+    <ul class="post-content pl-3 pb-1 ml-1 mt-2">
+          
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/1-total-variation/">Total Variation</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-7/1-derivatives-of-measures/">Derivatives of Measures</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/3-consequences-of-the-radon-nikodym-theorem/">Consequences of the Radon-Nikodym Theorem</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/4-bounded-linear-functionals-on-lp/">Bounded linear functional on Lp</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/2-abosolute-continuity/">Abosolute Continuity</a></li>
+        
+    </ul>
+</div>
+
+<div id="access-tags" class="pl-2">
+    <div class="panel-heading">Trending Tags</div>
+    <div class="d-flex flex-wrap mt-3 mb-1 mr-3">
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/algorithm/">Algorithm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/android/">Android</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c/">C</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c-language/">c language</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/caddy/">Caddy</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cadence/">Cadence</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cdc/">CDC</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/classification/">classification</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/compress/">Compress</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/conf/">Conf</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/double-column/">Double Column</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/errno13/">Errno13</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/fish/">fish</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gan/">GAN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/git/">Git</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gtk/">Gtk</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/html/">Html</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/i3/">I3</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/idea/">Idea</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/java/">Java</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/latex/">Latex</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lda/">LDA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linear-programming/">Linear Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linux/">Linux</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lr/">LR</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/math/">Math</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mathematics/">Mathematics</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matlab/">Matlab</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matplot/">matplot</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/memory/">Memory</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mermaid/">Mermaid</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/misc/">Misc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/ml/">ML</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mosfet/">Mosfet</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/network/">Network</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/nn/">NN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pandoc/">Pandoc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pca/">PCA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/probability/">Probability</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/productive/">Productive</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/program/">Program</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/programming/">Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/python/">Python</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/qt/">Qt</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/random-variable/">Random Variable</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rcnn/">RCNN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rust/">Rust</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/security/">Security</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/software/">Software</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/std/">Std</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/svd/">Svd</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/tool/">Tool</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/usb/">USB</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vim/">Vim</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpn/">Vpn</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpnc/">Vpnc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/xterm/">xterm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/zsh/">Zsh</a>
+        
+    </div>
+</div>
+</div><div id="search-result-wrapper" class="d-flex justify-content-center unloaded">
+    <div class="col-12 col-sm-11 post-content">
+        <div id="search-hints"></div>
+        <div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3 col-12"></div>
+    </div>
+</div>
+
+<script src="/js/fuse.min.js"></script>
+<script src="/js/fastsearch.js"></script>
+
+
+</div>
+        <div id="mask"></div>
+        <a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button"
+            style="display: none">
+            <i class="fas fa-angle-up"></i>
+        </a>
+    </div>
+    
+</body>
+
+</html>

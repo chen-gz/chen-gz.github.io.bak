@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>chapter 2 Basic Topology on Guangzong Blog</title>
+    <link>https://zongpitt.com/baby-rudin/ch2/</link>
+    <description>Recent content in chapter 2 Basic Topology on Guangzong Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://zongpitt.com/baby-rudin/ch2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>4 PERFECT SETS</title>
+      <link>https://zongpitt.com/baby-rudin/ch2/4-perfect-sets/</link>
+      <pubDate>Tue, 30 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/ch2/4-perfect-sets/</guid>
+      <description>youtube bilibili note pdf xopp 2.43 Theorem Let \(P\) be a nonempty perfect set in \(R^{k}\). Then \(P\) is uncountable.
+Proof Since \(P\) has limit points, \(P\) must be infinite. Suppose \(P\) is countable, and denote the points of \(P\) by \(\mathbf{x}_{1}, \mathbf{x}_{2}, \mathbf{x}_{3}, \ldots\) We shall construct a sequence \(\left\{V_{n}\right\}\) of neighborhoods, as follows.
+Let \(V_{1}\) be any neighborhood of \(\mathbf{x}_{1}\). If \(V_{1}\) consists of all \(\mathbf{y} \in R^{k}\) such that \(\left|\mathbf{y}-\mathbf{x}_{1}\right|&amp;lt;r\), the closure \(\bar{V}_{1}\) of \(V_{1}\) is the set of all \(\mathbf{y} \in R^{k}\) such that \(\left|\mathbf{y}-\mathbf{x}_{1}\right| \leq r\).</description>
+    </item>
+    
+    <item>
+      <title>5 CONNECTED SETS</title>
+      <link>https://zongpitt.com/baby-rudin/ch2/5-connected-sets/</link>
+      <pubDate>Tue, 30 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/ch2/5-connected-sets/</guid>
+      <description>youtube bilibi note pdf xopp 2.45 Definition Two subsets \(A\) and \(B\) of a metric space \(X\) are said to be separated if both \(A \cap \bar{B}\) and \(\bar{A} \cap B\) are empty, i.e., if no point of \(A\) lies in the closure of \(B\) and no point of \(B\) lies in the closure of \(A\).
+\(A\) set \(E \subset X\) is said to be connected if \(E\) is not a union of two nonempty separated sets.</description>
+    </item>
+    
+    <item>
+      <title>1 FINITE, COUNTABLE, AND UNCOUNTABLE SETS</title>
+      <link>https://zongpitt.com/baby-rudin/ch2/1-finite-countable-and-uncountable-sets/</link>
+      <pubDate>Sat, 20 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/ch2/1-finite-countable-and-uncountable-sets/</guid>
+      <description>youtube bilibili note pdf xopp We begin this section with a definition of the function concept.
+2.1 Definition Consider two sets \(A\) and \(B\), whose elements may be any objects whatsoever, and suppose that with each element \(x\) of \(A\) there is associated, in some manner, an element of \(B\), which we denote by \(f(x)\). Then \(f\) is said to be a function from \(A\) to \(B\) (or a mapping of \(A\) into \(B\) ).</description>
+    </item>
+    
+    <item>
+      <title>2 METRIC SPACES</title>
+      <link>https://zongpitt.com/baby-rudin/ch2/2-metric-spaces/</link>
+      <pubDate>Sat, 20 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/ch2/2-metric-spaces/</guid>
+      <description>youtube part1 part2 part3 bilibili part1 part2 part3 note part1 pdf xopp note part2 pdf xopp note part3 pdf oxpp 2.15 Definition A set \(X\), whose elements we shall call points, is said to be a metric space if with any two points \(p\) and \(q\) of \(X\) there is associated a real number \(d(p, q)\), called the distance from \(p\) to \(q\), such that
+\(d(p, q)&amp;gt;0\) if \(p \neq q ; d(p, p)=0\);</description>
+    </item>
+    
+    <item>
+      <title>3 COMPACT SETS</title>
+      <link>https://zongpitt.com/baby-rudin/ch2/3-compact-sets/</link>
+      <pubDate>Sat, 20 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/ch2/3-compact-sets/</guid>
+      <description>youtube part1 part2 bilibili part1 part2 note part 1 pdf xopp part 2pdf xopp 2.31 Definition By an open cover of a set \(E\) in a metric space \(X\) we mean a collection \(\left\{G_{\alpha}\right\}\) of open subsets of \(X\) such that \(E \subset U_{\alpha} G_{\alpha}\).
+2.32 Definition A subset \(K\) of a metric space \(X\) is said to be compact if every open cover of \(K\) contains a finite subcover.</description>
+    </item>
+    
+  </channel>
+</rss>

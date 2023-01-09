@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Math on Guangzong Blog</title>
+    <link>https://zongpitt.com/categories/math/</link>
+    <description>Recent content in Math on Guangzong Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 21 Jul 2021 11:36:00 -0400</lastBuildDate><atom:link href="https://zongpitt.com/categories/math/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Manifolds</title>
+      <link>https://zongpitt.com/posts/2021-07-21-real-analysis-manifolds/</link>
+      <pubDate>Wed, 21 Jul 2021 11:36:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-07-21-real-analysis-manifolds/</guid>
+      <description>manifold: By an \(n\)-dimensional manifold we mean a connected Hausdorff space \(M\) such that each point has a neighborhood which is homeomorphic to a ball in \(R^n\)​. We sometimes express this by saying that a manifold is a connected Hausdorff space which is locally Euclidean. (real analysis)
+Hausdorff space: In topology and related branches of mathematics, a Hausdorff space, separated space or T2 space is a topological space where for any two distinct points there exist neighbourhoods of each which are disjoint from each other.</description>
+    </item>
+    
+    <item>
+      <title>Singular value decomposition 5</title>
+      <link>https://zongpitt.com/posts/2021-06-17-svd5/</link>
+      <pubDate>Thu, 17 Jun 2021 17:18:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-06-17-svd5/</guid>
+      <description>The singular value decomposition for a matrix A writes A as a product (hanger)(stretcher)(aligner).
+It’s an amazing and useful fact that every m x n matrix has a singular value decomposition.
+The following theorem goes two-thirds of the way to proving this fact:
+Two-thirds Theorem For an \(m \times n\) matrix \(\mathrm{A}: \mathbb{R}^{\mathrm{n}} \rightarrow \mathbb{R}^{\mathbb{m}}\) and any orthonormal basis \(\left\{\vec{a}_{1}, \vec{a}_{2}, \ldots, \vec{a}_{n}\right\}\) of \(\mathbb{R}^{n}\), define \(s_{i}=\left\|\hat{a} \vec{a}_{i}\right\|\) and \(\vec{h}_{i}=\left\{\begin{array}{cc}\overrightarrow{0} &amp;amp; \text { if } s_{i}=0 \\ \frac{1}{s_{i}} A \vec{a}_{i} &amp;amp; \text { if } s_{i} \neq 0\end{array}\right.</description>
+    </item>
+    
+    <item>
+      <title>Singular value decomposition 4</title>
+      <link>https://zongpitt.com/posts/2021-06-04-svd4/</link>
+      <pubDate>Fri, 04 Jun 2021 17:18:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-06-04-svd4/</guid>
+      <description>Projections Hitting with one matrix and then another Here’s a perpframe \(p_{1}=\left(\begin{array}{c}\cos (s) \\ \sin (s)\end{array}\right)\) and \(p_{2}=\left(\begin{array}{r}-\sin (s) \\ \cos (s)\end{array}\right)\) specified by angle \(s=\frac{\pi}{3}\).
+Plot an ellipse with a minor axis of \(0.5\) in the direction of \(\mathbf{p}_{1}\) and major axis of \(1.2\) in the direction of \(\mathbf{p}_{2}\).
+Answer: You know how to plot the unit circle:
+ParametricPlot \(\left[\left(\begin{array}{l}\operatorname{Cos}[t] \\ \operatorname{Sin}[t]\end{array}\right),\{\mathrm{t}, 0,2 \pi\}\right]\)
+You know how to use an xy-stretcher to stretch the circle into an ellipse with the desired axes lengths:</description>
+    </item>
+    
+    <item>
+      <title>Singular value decomposition 3</title>
+      <link>https://zongpitt.com/posts/2021-06-04-svd3/</link>
+      <pubDate>Fri, 04 Jun 2021 10:56:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-06-04-svd3/</guid>
+      <description>Coordinates From standard coordinates to perpframe coordinates. Here’s a perpframe together with the point \(P=\{1, \frac{1}{2}\}\).
+Use a matrix hit to find numbers a and \(\mathrm{b}\) so that \(P=a v_{1}+b v_{2}\).
+(The numbers a and b are the perpframe coordinates of the point P.)
+Why does that work?
+Answer: Here’s what you get when you hit everything in the plot above with the aligner matrix:
+The location of the rotated point aligner.</description>
+    </item>
+    
+    <item>
+      <title>Singular value decomposition 1</title>
+      <link>https://zongpitt.com/posts/2021-04-21-svd1/</link>
+      <pubDate>Sat, 08 May 2021 22:00:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-04-21-svd1/</guid>
+      <description>The reason I copy this information from website is to archive this information. The original website is no longer valid. I don’t want this really good tutorial of SVD disappeared.
+Introduction The Singular Value Decomposition (SVD) is a topic rarely reached in undergraduate linear algebra courses and often skipped over in graduate courses.
+Consequently relatively few mathematicians are familiar with what M.I.T. Professor Gilbert Strang calls “absolutely a high point of linear algebra.</description>
+    </item>
+    
+    <item>
+      <title>Singular value decomposition 2</title>
+      <link>https://zongpitt.com/posts/2021-05-08-svd2/</link>
+      <pubDate>Sat, 08 May 2021 22:00:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-05-08-svd2/</guid>
+      <description>Stretchers Look at the action of \((\begin{array}{ll}3 &amp;amp; 0 \\\ 0 &amp;amp; 2\end{array})\).
+when you look at taht action you can see why it’s natural to call a diagonal matrix a “stretcher” matrix.
+The diagonal matrix \(\left(\begin{array}{ll}a &amp;amp; 0 \\\ 0 &amp;amp; b\end{array}\right)\) stretches in the \(x\) direction by a factor of “a” and in the y direction by a factor of “b”.
+You can verify this by hand using the column way to multiply a matrix times a vector: \[ \left(\begin{array}{ll} a &amp;amp; 0 \\\ 0 &amp;amp; b \end{array}\right)\left(\begin{array}{l} x \\\ y \end{array}\right)=x\left(\begin{array}{l} a \\\ 0 \end{array}\right)+y\left(\begin{array}{l} 0 \\\ b \end{array}\right)=\left(\begin{array}{l} a x \\\ b y \end{array}\right) \]</description>
+    </item>
+    
+    <item>
+      <title>linear function</title>
+      <link>https://zongpitt.com/posts/2021-02-20-linear-function/</link>
+      <pubDate>Sat, 20 Feb 2021 21:56:00 -0500</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-02-20-linear-function/</guid>
+      <description>This post is a notation for myself.
+line function
+\[ ax + by + c = 0 \]
+vector (a,b) is normal vector for this line, c is the bias for this line.
+and more we can regard it as a plane.
+\[ ax + by + cz = d \] where z = 1 and d = 0.
+vector (a, b, c) is normal vector for the plane.
+we can calculate distance between point and line easily by following equation.</description>
+    </item>
+    
+    <item>
+      <title>梦中梦的发生可能性</title>
+      <link>https://zongpitt.com/posts/2020-11-16-%E6%A2%A6%E4%B8%AD%E6%A2%A6%E7%9A%84%E5%8F%91%E7%94%9F%E5%8F%AF%E8%83%BD%E6%80%A7/</link>
+      <pubDate>Mon, 16 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-11-16-%E6%A2%A6%E4%B8%AD%E6%A2%A6%E7%9A%84%E5%8F%91%E7%94%9F%E5%8F%AF%E8%83%BD%E6%80%A7/</guid>
+      <description>梦中梦发生时，脑子在想什么？ 陈光宗在上optimization课时，我在睡午觉（第二顿饭后都觉难道不就是午觉吗？）。在我快醒来的时间里，发生了梦中梦。
+在梦中梦里，我大概在经历什么危险的事，整个人的状态都很不安，我挣扎着想要起来，但是怎样都睁不开眼，眼皮好像有千斤重。一旦我挣扎着睁眼又没有成功，就会有很严重的耳鸣，让我感觉脑袋都要炸了。梦里强烈的耳鸣也不是第一次了，而这是在我生病后才新出现的状况。好不容易从梦中梦里醒来了，但是还是困得不得了，随时都会再次睡下。这时，在梦里，陈光宗来了，在我床边坐了一会就准备离开。我慌了，好不容易来了个能叫醒我的人，就这么走了我可怎么办。于是我抓住他的手，想让他叫醒我。奈何陈光宗悟性有限，没能理解我的意思，还是靠我自己挣扎着才醒来的。虽然是在梦里醒来，但是周围环境和现实里基本一致，我也没觉得有什么区别，黑漆漆的一片。到这里，梦就真的醒了，我在一片黑暗中，看见陈光宗推门而入，把灯打开了，啪的一声，很快啊。
+靠着记忆的连贯性，我确定自己是完全醒了，而不是另一层套娃梦。那么问题来了，梦中梦的我想要醒来时，为什么那么艰难？这种体验陈光宗也有过。梦中梦的机制会不会和神经网络一样，是嵌套着的？还有，梦中梦的我醒来时，为什么不会意识到自己还在梦里？现实中醒来后，为什么我可以立刻意识到我醒了？区别在哪？体验感更真实吗？如果每次睡觉醒来后第一件事就是确认自己记忆的连贯性，有没有可能意识到自己还在梦里？
+盗梦空间里，区分现实和梦的关键道具是陀螺。如果我们也这么做，可以分辨梦和现实吗？</description>
+    </item>
+    
+    <item>
+      <title>Kalman Filter 卡尔曼滤波</title>
+      <link>https://zongpitt.com/posts/2020-11-12-kalman-filter/</link>
+      <pubDate>Thu, 12 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-11-12-kalman-filter/</guid>
+      <description>参考资料 kalman-filter 前言 卡尔曼滤波器是一个非常神奇的滤波器。卡尔曼滤波器就是一个状态估计器，与状态观测器的最大区别不大。 可以认为卡尔曼滤波器就是一个变系数的状态估计器。这里的系数成为卡尔曼增益。以纪念卡尔曼在1960年发表的文章中所作出的突出贡献。
+卡尔曼滤波器是在最小均方根误差意义下对状态变量的最优估计。在不同的参考资料中会给出不同的推导。
+本人看过两个不同的推导。 先对这两种方法的思路给出简单的描述 1. 直接给出均方根的表达式，然后对卡尔曼增益求导，这样就可以得到均方根取得极值时，最优的卡尔曼增益。 2. 使用函数逼近的想法，因为在过去时刻测量的数据具有无关性，因此使用新息的线性组合来表示状态变量，为了达到均方根最小的目的，就是选择合适系数，在这个想法的基础上，把公式变成递推公式就得到了卡尔曼滤波的公式。
+结论 在这里先直接的给出卡尔曼滤波公式。 这里的模型是最简单的状态空间模型 \[\begin{equation} \pmb{x}_{n} = \pmb{A}\pmb{x}_{n-1} + \pmb{\omega}_{n-1} \\\ \pmb{y}_{n} = \pmb{B}\pmb{x}_{n} + \pmb{v}_{n} \end{equation}\]{n} + {n} \end{equation} 其中\(\pmb{A}\)是\(\pmb{x}_{n-1}\)到\(\pmb{x}_n\)的过渡矩阵,\(\pmb{B}_n\)是测量矩阵。动态噪声\(\pmb{\omega}\)和测量噪声\(\pmb{v}\)满足均值为0的高斯分布，且相互独立。 \[\begin{equation} \begin{aligned} Q_{\omega} &amp;amp;=E\left[w_{k} w_{k}^{T}\right] \\\ Q_{v} &amp;amp;=E\left[v_{k} v_{k}^{T}\right] \end{aligned} \end{equation}\]\end{equation}
+卡尔曼滤波方程如下
+卡尔曼增益 \[\begin{equation} K_{k}=P_{k|k-1} B^T (B P_{k|k-1} B^T+Q_v)^{-1} \end{equation}\] 滤波方程 \[\begin{equation} \hat{x}_{k|k}=\hat{x}_{k|k-1}+K_{k} (y_{k}-B \hat{x}_{k|k-1}) \end{equation}\] 预测误差协方差矩阵 \[\begin{equation} P_{k|k}=(I-K_{k} B) P_{k|k-1} \end{equation}\] 预报方程 \[\begin{equation} \begin{array}{c} \hat{x}_{k+1|k}=A \hat{x}_{k|k} \\\ P_{k+1|k}=A P_{k|k} A^T +Q_{\omega} \end{array} \end{equation}\]\end{equation} 初始条件 1.</description>
+    </item>
+    
+    <item>
+      <title>凸规划的一些想法</title>
+      <link>https://zongpitt.com/posts/2020-11-08-%E5%85%B3%E4%BA%8E%E5%87%B8%E8%A7%84%E5%88%92%E7%9A%84%E6%83%B3%E6%B3%95/</link>
+      <pubDate>Sun, 08 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-11-08-%E5%85%B3%E4%BA%8E%E5%87%B8%E8%A7%84%E5%88%92%E7%9A%84%E6%83%B3%E6%B3%95/</guid>
+      <description>凸规划是指在凸函数上的寻找最小值或者最大值。
+一元函数的最值和极值 凸规划的基本想法来源于使用函数导数求函数极值。在一元函数中我们通过通过寻找导数值为0的点来寻找极大值和极小值。 \[ \frac{df(x)}{dx} = 0 \] 导数值为0的点可以确定为极值，但无法确定是极大值还是极小值。 因此通过二阶导数正负来确定是哪一种。 \[ \text{在极大值处有 } \frac{d^2f(x)}{dx^2} &amp;lt; 0 \\ \text{在极小值处有 }\frac{d^2f(x)}{dx^2} &amp;gt; 0 \\ \text{驻点 非极值点} \frac{d^2f(x)}{dx^2} = 0 \] 在凸函数上，极值将退化为最值。
+关于一元函数的极值可以理解为：函数f(x)在x方向上的变化量为0的点为极值点（可能是驻点）。
+多元函数的最值和极值 多元函数的极值和最值可以理解为一元函数的推广：多元函数的极值点在所有方向的上的变化量都为0.。在函数连续可微的情况下，这个条件可以退化成为：在基向量方向上，函数的变化量为0；
+例如，二元函数 \(f(x,y)\) 有一点\((x_0, y_0)\) 在方向\((0,1)\)和方向\((1,0)\)上的变化量为都0，可以推出函数\(f(x,y)\)在点\((x_0, y_0)\)上的所有方向变化量都为0。
+表达式为 \[ \frac{df(\mathbf{x})}{d\mathbf{x^T}} = 0 \]
+\[ \left[\begin{array}{c} \frac{\partial f}{\partial x_{1}} \\ \frac{\partial f}{\partial x_{2}} \\ \vdots \\ \frac{\partial f}{\partial x_{n}} \end{array}\right]=0 \]
+这就是所谓的一阶必要条件(first order necessary condition)。
+和一元函数类似，如果函数\(f(x,y)\) 有一点\((x_0,y_0)\)的hessian矩阵是positive defined（正定的），该点为极小值点；反之，为极大值点。此为二阶必要条件。如果既不是正定也不是负定，那该点为驻点。
+draft 凸规划得定理大多数可以有一元函数得全导数扩展。</description>
+    </item>
+    
+    <item>
+      <title>constrain optimization</title>
+      <link>https://zongpitt.com/posts/2020-10-24-first-order-necessary-conditions-constain/</link>
+      <pubDate>Sat, 07 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-10-24-first-order-necessary-conditions-constain/</guid>
+      <description>TANGENT PLANE Definition. A point \(x^{*}\) satisfying the constraint \(\mathbf{h}\left(\mathbf{x}^{*}\right)=\mathbf{0}\) is said to be a regular point of the constraint if the gradient vectors \(\nabla h_{1}\left(\mathbf{x}^{*}\right), \nabla h_{2}\left(\mathbf{x}^{*}\right), \ldots, \nabla h_{m}\left(\mathbf{x}^{*}\right)\) are linearly independent.
+Theorem. At a regular point \(\mathbf{x}^{*}\) of the surface \(S\) defined by \(\mathbf{h}(x)=0\) the tangent plane is equal to \[ M=\left\{y: \nabla h\left(x^{*}\right) y=0\right\} \]
+FIRST-ORDER NECESSARY CONDITIONS (EQUALITY CONSTRAINTS) Lemma. Let \(\mathbf{x}^{*}\) be a regular point of the constraints \(\mathbf{h}(\boldsymbol{x})=\boldsymbol{0}\) and a local extreme point ( \(a\) minimum or maximum) of \(f\) subject to these constraints.</description>
+    </item>
+    
+    <item>
+      <title>Conjugate Direction Method</title>
+      <link>https://zongpitt.com/posts/2020-11-02-conjugate-direction-method/</link>
+      <pubDate>Mon, 02 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-11-02-conjugate-direction-method/</guid>
+      <description>CONJUGATE DIRECTIONS Definition. Given a symmetric matrix \(\mathbf{Q}\), two vectors \(\mathbf{d}_{1}\) and \(\mathbf{d}_{2}\) are said to be \(\mathbf{Q}\) -orthogonal, or conjugate with respect to \(\mathbf{Q},\) if \(\mathbf{d}_{1}^{T} \mathbf{Q} \mathbf{d}_{2}=0 .\)
+Proposition. If \(\mathbf{Q}\) is positive definite and the set of nonzero vectors \(\mathrm{d}_{0}, \mathrm{d}_{1}, \mathrm{d}_{2}, \ldots, \mathrm{d}_{k}\) are \(\mathbf{Q}\)-orthogonal, then these vectors are linearly independent.
+Conjugate Direction Theorem Let \(\left\{\mathbf{d}_{i}\right\}_{i=0}^{n-1}\) be a set of nonzero \(\mathbf{Q}\) -orthogonal vectors. For any \(\mathbf{x}_{0} \in E^{n}\) the sequence \(\left\{\mathbf{x}_{\mathbf{k}}\right\}\) generated according to \[ \begin{equation} \mathbf{x}_{k+1}=\mathbf{x}_{k}+\alpha_{k} \mathbf{d}_{k}, k \geqslant 0 \end{equation} \] with \[ \begin{equation} \alpha_{k}=-\frac{\mathbf{g}_{k}^{T} \mathbf{d}_{k}}{\mathbf{d}_{k}^{T} \mathbf{Q} \mathbf{d}_{\mathbf{k}}} \end{equation} \] and \[ \mathrm{g}_{k}=\mathbf{Q} \mathbf{x}_{k}-\mathbf{b} \] converges to the unique solution, \(\mathbf{x}^{*},\) of \(\mathbf{Q} \mathbf{x}=\mathbf{b}\) after \(n\) steps, that is, \(\mathbf{x}_{n}=\mathbf{x}^{*}\)</description>
+    </item>
+    
+    <item>
+      <title>Convex And Concave Functions</title>
+      <link>https://zongpitt.com/posts/2020-10-24-convex-and-concave-function/</link>
+      <pubDate>Sat, 24 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-10-24-convex-and-concave-function/</guid>
+      <description>Convex definition Definition. A function \(f\) defined on a convex set \(\Omega\) is said to be convex if, for every \(\mathbf{x}_{1}, \mathbf{x}_{2} \in\) \(\Omega\) and every \(\alpha, 0 \leqslant \alpha \leqslant 1,\) there holds
+\[ \begin{equation} f\left(\alpha \mathbf{x}_{1}+(1-\alpha) \mathbf{x}_{2}\right) \leqslant \alpha f\left(\mathbf{x}_{1}\right)+(1-\alpha) f\left(\mathbf{x}_{2}\right) \end{equation} \]
+If, for every \(\alpha, 0&amp;lt;\alpha&amp;lt;1,\) and \(\mathbf{x}_{1} \neq \mathbf{x}_{2},\) there holds
+\[ \begin{equation} f\left(\alpha \mathbf{x}_{1}+(1-\alpha) \mathbf{x}_{2}\right)&amp;lt;\alpha f\left(\mathbf{x}_{1}\right)+(1-\alpha) f\left(\mathbf{x}_{2}\right) \end{equation} \]
+then \(f\) is said to be strictly convex.</description>
+    </item>
+    
+    <item>
+      <title>First Order necessary condition</title>
+      <link>https://zongpitt.com/posts/2020-10-24-first-order-necessary-conditions/</link>
+      <pubDate>Sat, 24 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-10-24-first-order-necessary-conditions/</guid>
+      <description>Proposition 1. (First-order necessary conditions). Let \(\Omega\) be a subset of \(E^{n}\) and let \(f \in C^{1}\) be a function on \(\Omega\). If \(\mathbf{x}^{*}\) is a relative minimum point of \(f\) over \(\Omega,\) then for any \(\mathbf{d} \in E^{n}\) that is a feasible direction at \(\mathbf{x}^{*}\), we have \(\nabla f\left(\mathbf{x}^{*}\right) \mathbf{d} \geqslant 0 .\)
+Corollary. (Unconstrained case). Let \(\Omega\) be a subset of \(E^{n},\) and let \(f \in C^{1}\) be function on \(\Omega\).</description>
+    </item>
+    
+    <item>
+      <title>Second Order necessary condition</title>
+      <link>https://zongpitt.com/posts/2020-10-24-second-order-necessary-conditions/</link>
+      <pubDate>Sat, 24 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-10-24-second-order-necessary-conditions/</guid>
+      <description>Proposition 1. (Second-order necessary conditions). Let \(\Omega\) be a subset of \(E^{n}\) and let \(f \in C^{2}\) be a function on \(\Omega\). If \(\mathbf{x}^{*}\) is a relative minimum point of \(f\) over \(\Omega,\) then for any \(\mathbf{d} \in E^{n}\) that is a feasible direction at \(\mathbf{x}^{*}\) we have
+\(\nabla f\left(\mathbf{x}^{*}\right) \mathbf{d} \geqslant 0\) if \(\nabla f\left(\mathbf{x}^{*}\right) \mathbf{d}=0,\) then \(\mathbf{d}^{T} \nabla^{2} f\left(\mathbf{x}^{*}\right) \mathbf{d} \geqslant 0\) Proposition 2. (Second-order necessary conditions-unconstrained case). Let \(\mathbf{x}^{*}\) be an interior point of the set \(\Omega,\) and suppose \(\mathbf{x}^{*}\) is a relative minimum point over \(\Omega\) of the function \(f \in C^{2} .</description>
+    </item>
+    
+    <item>
+      <title>Fourier Transform</title>
+      <link>https://zongpitt.com/posts/2020-08-30-fourier-transform/</link>
+      <pubDate>Sun, 30 Aug 2020 11:51:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-08-30-fourier-transform/</guid>
+      <description>Reference mathworld Fourier Transform Willard Miller - Fourier Transform)(The pdf from website) Paul Heckbert - Fourier Transforms and the Fast Fourier Transform (FFT) Algorithm Fourier Series Concept The Fourier transform is a generalization of the complex Fourier series in the limit as \(L \to \infty\). Replace the discrete \(A_n\) with the continuous \(F(k)dk\) while letting \(n/L\to k\). Then change the sum to an integral, and the equations become
+\[ f(x)= \int_{-\infty}^\infty F(k) e^{2\pi ikx}dk \\ F(k)=\int_{-\infty}^\infty f(x)e^{-2\pi ikx}dx \]</description>
+    </item>
+    
+    <item>
+      <title>Discrete Fourier Transform</title>
+      <link>https://zongpitt.com/posts/2020-08-30-discrete-fourier-transfrom/</link>
+      <pubDate>Sun, 30 Aug 2020 11:49:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-08-30-discrete-fourier-transfrom/</guid>
+      <description>Reference mathworld Discrete Fourier Transform Paul Heckbert - Fourier Transforms and the Fast Fourier Transform (FFT) Algorithm Fourier Series Fourier Transform Concept When a signal is discrete and periodic, we don’t need the continuous Fourier transform. Instead we use the discrete Fourier transform, or DFT. Suppose our signal is a n for \(n =0 . . . N − 1\), and \(a_n = a_n+ jN\) for all \(n\) and \(j\). The discrete Fourier transform of \(a\)</description>
+    </item>
+    
+    <item>
+      <title>Fourier Seriers</title>
+      <link>https://zongpitt.com/posts/2020-08-30-fourier-series/</link>
+      <pubDate>Sun, 30 Aug 2020 11:47:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-08-30-fourier-series/</guid>
+      <description>Reference mathworld Fourier Series Willard Miller - Fourier Series (The pdf from website) Concept Any set of functions that form a complete orthogonal system have a corresponding generalized Fourier series analogous to the Fourier series. For example, using orthogonality of the roots of a Bessel function of the first kind gives a so-called Fourier-Bessel series.
+Fourier orthogonal function system:
+\[ 1,cosx,sinx,...,coskx,sinkx,\dots. \]
+these functions that form a complete orthogonal system over \([-\pi,\pi]\) in \(L^2[-\pi,\pi]\) space.</description>
+    </item>
+    
+    <item>
+      <title>A linear Programming Standard Form Problem</title>
+      <link>https://zongpitt.com/posts/2020-08-29-a-linear-programming-standard-form-problem/</link>
+      <pubDate>Sat, 29 Aug 2020 17:43:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-08-29-a-linear-programming-standard-form-problem/</guid>
+      <description>Problem from “Linear and Nonlinear Programing” problem 2.9
+Linear programming Standard Form The standard from of linear programming is
+\[ \begin{equation} \begin{array}{cl} \operatorname{minimize} &amp;amp; \mathbf{c}_{1}^{T} \mathbf{x}\\ \text { subject to } &amp;amp; \mathbf{Ax} = \mathbf{b} \\ &amp;amp; \mathbf{x} \geq 0 \end{array} \end{equation} \]
+Description of Problem A class of piecewise linear functions can be represented as \(f(x)=\) Maximum \((\mathbf{c}_{1}^{T} \mathbf{x}+ d_{1}, \mathbf{c}_{2}^{T} \mathbf{x}+d_{2}, \ldots, \mathbf{c}_{p}^{T} \mathbf{x}+d_{p}).\) For such a function \(f\), consider the problem</description>
+    </item>
+    
+    <item>
+      <title>Type of Continuous Random Variable</title>
+      <link>https://zongpitt.com/posts/2019-10-03-type-of-continuous-random-variable/</link>
+      <pubDate>Thu, 03 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2019-10-03-type-of-continuous-random-variable/</guid>
+      <description>&lt;h2 id=&#34;exponential-random-variable&#34;&gt;Exponential Random Variable&lt;/h2&gt;
+&lt;p&gt;Continuous version of the discrete geometric RV. Models the
+inter-arrival time for the Poisson process.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Type of Discrete Random Variable</title>
+      <link>https://zongpitt.com/posts/2019-10-03-type-of-discrete-random-variable/</link>
+      <pubDate>Thu, 03 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2019-10-03-type-of-discrete-random-variable/</guid>
+      <description>&lt;h2 id=&#34;uniform-random-variable&#34;&gt;Uniform Random Variable&lt;/h2&gt;
+&lt;p&gt;For each &lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt; in &lt;span
+class=&#34;math inline&#34;&gt;\(S_{X},\)&lt;/span&gt; we have &lt;span
+class=&#34;math inline&#34;&gt;\(p_{X}(k)=\frac{1}{M}\)&lt;/span&gt;.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css"
+        class="dark-mode-native-dark-original" />
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+     
+    <link rel="stylesheet" href="https://zongpitt.com/sass/main.06935202011a97ba473ebeeb0cb6788daa9fb5a9fff471a4e85850293d1c5ac4.css" />
+    <title>
+          Guangzong Blog | Bounded linear functional on Lp
+    </title>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.bundle.min.js"></script>
+    <script src=" https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.js"></script>
+
+    <script
+        src="https://cdn.jsdelivr.net/combine/npm/magnific-popup@1/dist/jquery.magnific-popup.min.js,npm/lozad/dist/lozad.min.js,npm/clipboard@2/dist/clipboard.min.js"></script>
+    <script type="text/javascript" src="/js/commons/back-to-top.js"></script>
+    
+    
+    
+    <script type="text/javascript" src="/js/commons/topbar-switch.js"></script>
+    <script type="text/javascript" src="/js/commons/sidebar.js"></script>
+    <script type="text/javascript" src="/js/utils/category-collapse.js"></script>
+    <script type="text/javascript" src="/js/utils/checkbox.js"></script>
+    <script type="text/javascript" src="/js/utils/clipboard.js"></script>
+    <script type="text/javascript" src="/js/utils/img-extra.js"></script>
+    <script type="text/javascript" src="/js/utils/pageviews.js"></script>
+    
+    <script type="text/javascript" src="/js/utils/timeago.js"></script>
+    
+    
+</head>
+<body data-spy="scroll" data-target="#toc" data-topbar-visible="true" class="d-flex"><div id="sidebar" class="d-flex flex-column align-items-end">
+    <div class="profile-wrapper text-center">
+
+        <div id="avatar">
+            <a href="/" alt="avatar" class="mx-auto"> <img src=https://github.com/chen-gz/chen-gz/blob/main/mine_square.jpg?raw&#61;truehttps://raw.githubusercontent.com/chen-gz/chen-gz/blob/main/mine_square.jpg alt="avatar"
+                    onerror="this.style.display='none'"> </a>
+        </div>
+
+        <div class="site-title mt-3"> <a href="/">Guangzong</a> </div>
+        <div class="site-subtitle font-italic">Welcome to my blog</div>
+    </div>
+
+    <ul>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/">
+                <span>
+                    Home
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/archive/">
+                <span>
+                    Archive
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/tags/">
+                <span>
+                    Tags
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/about/">
+                <span>
+                    About
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/categories/">
+                <span>
+                    Categories
+                </span>
+            </a>
+        </li>
+        
+    </ul>
+
+    <div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center align-items-center">
+        <button class="mode-toggle btn" aria-label="Switch Mode"> 
+            <i class="fas fa-adjust"></i> 
+        </button>
+
+        <span class="icon-border"></span>
+        <a href="https://github.com/chen-gz" aria-label="github" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i>
+        </a>
+
+        <a href=" javascript:location.href = 'mailto:' + ['chen-gz','outlook.com'].join('@')" aria-label="email">
+            <i class="fas fa-envelope"></i>
+        </a>
+
+        <a href="/feed.xml" aria-label="rss"> <i class="fas fa-rss"></i> </a>
+    </div>
+
+    
+    
+</div>
+<div id="all-wrapper" class="d-flex flex-column"><div id="topbar-wrapper">
+    <div id="topbar" class="d-flex">
+        
+        <span id="breadcrumb" class="d-flex">
+              
+               
+            
+            
+            <div><a href='https://zongpitt.com/'>Home</a></div>
+              
+              
+            
+            <div><a href="https://zongpitt.com/papa-rudin">papa-rudin</a></div>
+               
+              
+            
+            <div><a href="https://zongpitt.com/papa-rudin/ch-6">ch-6</a></div>
+               
+                 
+                
+        </span>
+        <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i>
+        <div id="topbar-title">Guangzong</div>
+        <i id="search-trigger" class="fas fa-search fa-fw"></i>
+        <span id="search-wrapper" class="align-items-center">
+            <i class="fas fa-search fa-fw"></i>
+            <input class="form-control" id="search-input" type="search" aria-label="search" autocomplete="off"
+                placeholder="Search..." />
+            <i class="fa fa-times-circle fa-fw" id="search-cleaner"></i>
+        </span>
+    </div>
+</div>
+<div id="main-wrapper" class="d-flex mt-3">
+            <div id="core-wrapper" class="d-flex flex-column">
+                <div id="main" class="d-flex flex-column">
+                    
+<div class="post pl-1 pr-1 pl-md-2 pr-md-2">
+    
+    <div id="post-content">
+        <h1 style="text-align: center;">Bounded linear functional on Lp</h1>
+        <br>
+        
+        <h3 id="section">6.15</h3>
+<p>Let <span class="math inline">\(\mu\)</span> be a positive measure,
+suppose <span class="math inline">\(1 \leq p \leq \infty\)</span>, and
+let <span class="math inline">\(q\)</span> be the exponent conjugate to
+<span class="math inline">\(p\)</span>. The Hölder inequality (Theorem
+3.8) shows that if <span class="math inline">\(g \in L^q(\mu)\)</span>
+and if <span class="math inline">\(\Phi_g\)</span> is defined by</p>
+<p><span class="math display">\[
+\Phi_g(f)=\int_X f g d \mu,
+\]</span></p>
+<p>then <span class="math inline">\(\Phi_g\)</span> is a bounded linear
+functional on <span class="math inline">\(L^p(\mu)\)</span>, of norm at
+most <span class="math inline">\(\|g\|_q\)</span>. The question
+naturally arises whether all bounded linear functionals on <span
+class="math inline">\(L^p(\mu)\)</span> have this form, and whether the
+representation is unique.</p>
+<p>For <span class="math inline">\(p=\infty\)</span>, Exercise 13 shows
+that the answer is negative: <span class="math inline">\(L^1(m)\)</span>
+does not furnish all bounded linear functionals on <span
+class="math inline">\(L^{\infty}(m)\)</span>. For <span
+class="math inline">\(1&lt;p&lt;\infty\)</span>, the answer is
+affirmative. It is also affirmative for <span
+class="math inline">\(p=1\)</span>, provided certain measure-theoretic
+pathologies are excluded. For <span
+class="math inline">\(\sigma\)</span>-finite measure spaces, no
+difficulties arise, and we shall confine ourselves to this case.</p>
+<p>then <span class="math inline">\(\Phi_g\)</span> is a bounded linear
+functional on <span class="math inline">\(L^p(\mu)\)</span>, of norm at
+most <span class="math inline">\(\|g\|_q\)</span>. The question
+naturally arises whether all bounded linear functionals on <span
+class="math inline">\(L^p(\mu)\)</span> have this form, and whether the
+representation is unique.</p>
+<p>For <span class="math inline">\(p=\infty\)</span>, Exercise 13 shows
+that the answer is negative: <span class="math inline">\(L^1(m)\)</span>
+does not furnish all bounded linear functionals on <span
+class="math inline">\(L^{\infty}(m)\)</span>. For <span
+class="math inline">\(1&lt;p&lt;\infty\)</span>, the answer is
+affirmative. It is also affirmative for <span
+class="math inline">\(p=1\)</span>, provided certain measure-theoretic
+pathologies are excluded. For <span
+class="math inline">\(\sigma\)</span>-finite measure spaces, no
+difficulties arise, and we shall confine ourselves to this case.</p>
+<h3 id="theorem">6.16 Theorem</h3>
+<p>Suppose <span class="math inline">\(1 \leq p&lt;\infty, \mu\)</span>
+is a <span class="math inline">\(\sigma\)</span>-finite positive measure
+on <span class="math inline">\(X\)</span>, and <span
+class="math inline">\(\Phi\)</span> is a bounded linear functional on
+<span class="math inline">\(L^p(\mu)\)</span>. Then there is a unique
+<span class="math inline">\(g \in L^q(\mu)\)</span>, where <span
+class="math inline">\(q\)</span> is the exponent conjugate to <span
+class="math inline">\(p\)</span>, such that</p>
+<p><span class="math display">\[
+\Phi(f)=\int_X f g d \mu \quad\left(f \in L^p(\mu)\right) .
+\]</span></p>
+<p>Moreover, if <span class="math inline">\(\Phi\)</span> and <span
+class="math inline">\(g\)</span> are related as in (1), we have</p>
+<p><span class="math display">\[
+\|\boldsymbol{\Phi}\|=\|g\|_{\boldsymbol{q}} .
+\]</span></p>
+<p>In other words, <span class="math inline">\(L^q(\mu)\)</span> is
+isometrically isomorphic to the dual space of <span
+class="math inline">\(L^p(\mu)\)</span>, under the stated
+conditions.</p>
+<p>Proof The uniqueness of <span class="math inline">\(g\)</span> is
+clear, for if <span class="math inline">\(g\)</span> and <span
+class="math inline">\(g^{\prime}\)</span> satisfy (1), then the integral
+of <span class="math inline">\(g-g^{\prime}\)</span> over any measurable
+set <span class="math inline">\(E\)</span> of finite measure is 0 (as we
+see by taking <span class="math inline">\(\chi_E\)</span> for <span
+class="math inline">\(f\)</span> ), and the <span
+class="math inline">\(\sigma\)</span>-finiteness of <span
+class="math inline">\(\mu\)</span> implies therefore that <span
+class="math inline">\(g-g^{\prime}=0\)</span> a.e. Next, if (1) holds,
+Hölder’s inequality implies</p>
+<p><span class="math display">\[
+\|\Phi\| \leq\|g\|_q .
+\]</span></p>
+<p>So it remains to prove that <span class="math inline">\(g\)</span>
+exists and that equality holds in (3). If <span
+class="math inline">\(\|\Phi\|=0\)</span>, (1) and (2) hold with <span
+class="math inline">\(g=0\)</span>. So assume <span
+class="math inline">\(\|\Phi\|&gt;0\)</span>. We first consider the case
+<span class="math inline">\(\mu(X)&lt;\infty\)</span>. For any
+measurable set <span class="math inline">\(E \subset X\)</span>,
+define</p>
+<p><span class="math display">\[
+\lambda(E)=\Phi\left(\chi_E\right)
+\]</span></p>
+<p>Since <span class="math inline">\(\Phi\)</span> is linear, and since
+<span class="math inline">\(\chi_{A \cup B}=\chi_A+\chi_B\)</span> if
+<span class="math inline">\(A\)</span> and <span
+class="math inline">\(B\)</span> are disjoint, we see that <span
+class="math inline">\(\lambda\)</span> is additive. To prove countable
+additivity, suppose <span class="math inline">\(E\)</span> is the union
+of countably many disjoint measurable sets <span
+class="math inline">\(E_i\)</span>, put <span
+class="math inline">\(A_k=E_1 \cup \cdots \cup E_k\)</span>, and note
+that</p>
+<p><span class="math display">\[
+\left\|\chi_E-\chi_{A_k}\right\|_p=\left[\mu\left(E-A_k\right)\right]^{1
+/ p} \rightarrow 0 \quad(k \rightarrow \infty) ;
+\]</span></p>
+<p>the continuity of <span class="math inline">\(\Phi\)</span> shows now
+that <span class="math inline">\(\lambda\left(A_k\right) \rightarrow
+\lambda(E)\)</span>. So <span class="math inline">\(\lambda\)</span> is
+a complex measure. [In (4) the assumption <span
+class="math inline">\(p&lt;\infty\)</span> was used.] It is clear that
+<span class="math inline">\(\lambda(E)=0\)</span> if <span
+class="math inline">\(\mu(E)=0\)</span>,</p>
+<p>since then <span
+class="math inline">\(\left\|\chi_E\right\|_p=0\)</span>. Thus <span
+class="math inline">\(\lambda \ll \mu\)</span>, and the Radon-Nikodym
+theorem ensures the existence of a function <span
+class="math inline">\(g \in L^1(\mu)\)</span> such that, for every
+measurable <span class="math inline">\(E \subset X\)</span>,</p>
+<p><span class="math display">\[
+\Phi\left(\chi_E\right)=\int_E g d \mu=\int_X \chi_E g d \mu .
+\]</span></p>
+<p>By linearity it follows that</p>
+<p><span class="math display">\[
+\Phi(f)=\int_{\boldsymbol{X}} f g d \mu
+\]</span></p>
+<p>holds for every simple measurable <span
+class="math inline">\(f\)</span>, and so also for every <span
+class="math inline">\(f \in L^{\infty}(\mu)\)</span>, since every <span
+class="math inline">\(f \in L^{\infty}(\mu)\)</span> is a uniform limit
+of simple functions <span class="math inline">\(f_i\)</span>. Note that
+the uniform convergence of <span class="math inline">\(f_i\)</span> to
+<span class="math inline">\(f\)</span> implies <span
+class="math inline">\(\left\|f_i-f\right\|_p \rightarrow 0\)</span>,
+hence <span class="math inline">\(\Phi\left(f_i\right) \rightarrow
+\Phi(f)\)</span>, as <span class="math inline">\(i \rightarrow
+\infty\)</span>.</p>
+<p>We want to conclude that <span class="math inline">\(g \in
+L^q(\mu)\)</span> and that (2) holds; it is best to split the argument
+into two cases.</p>
+<p>CASE <span class="math inline">\(1 p=1\)</span>. Here (5) shows
+that</p>
+<p><span class="math display">\[
+\left|\int_E g d \mu\right| \leq\|\Phi\|
+\cdot\left\|\chi_E\right\|_1=\|\Phi\| \cdot \mu(E)
+\]</span></p>
+<p>for every <span class="math inline">\(E \in \mathfrak{M}\)</span>. By
+Theorem <span class="math inline">\(1.40,|g(x)| \leq\|\Phi\|\)</span>
+a.e., so that <span class="math inline">\(\|g\|_{\infty}
+\leq\|\Phi\|\)</span>.</p>
+<p>CASE <span class="math inline">\(21&lt;p&lt;\infty\)</span>. There is
+a measurable function <span
+class="math inline">\(\alpha,|\alpha|=1\)</span>, such that <span
+class="math inline">\(\alpha g=|g|\)</span> [Proposition <span
+class="math inline">\(1.9(e)\)</span> ]. Let <span
+class="math inline">\(E_n=\{x:|g(x)| \leq n\}\)</span>, and define <span
+class="math inline">\(f=\)</span> <span
+class="math inline">\(\chi_{E_n}|g|^{q-1} \alpha\)</span>. Then <span
+class="math inline">\(|f|^p=|g|^q\)</span> on <span
+class="math inline">\(E_n, f \in L^{\infty}(\mu)\)</span>, and (6)
+gives</p>
+<p><span class="math display">\[
+\int_{E_n}|g|^q d \mu=\int_X f g d \mu=\Phi(f)
+\leq\|\Phi\|\left\{\int_{E_n}|g|^q\right\}^{1 / p},
+\]</span></p>
+<p>so that</p>
+<p><span class="math display">\[
+\int_X \chi_{E_n}|g|^q d \mu \leq\|\Phi\|^q \quad(n=1,2,3, \ldots) .
+\]</span></p>
+<p>If we apply the monotone convergence theorem to (7), we obtain <span
+class="math inline">\(\|g\|_q \leq\|\Phi\|\)</span>.</p>
+<p>Thus (2) holds and <span class="math inline">\(g \in
+L^q(\mu)\)</span>. It follows that both sides of (6) are continuous
+functions on <span class="math inline">\(L^p(\mu)\)</span>. They
+coincide on the dense subset <span
+class="math inline">\(L^{\infty}(\mu)\)</span> of <span
+class="math inline">\(L^p(\mu)\)</span>; hence they coincide on all of
+<span class="math inline">\(L^p(\mu)\)</span>, and this completes the
+proof if <span class="math inline">\(\mu(X)&lt;\infty\)</span>.</p>
+<p>If <span class="math inline">\(\mu(X)=\infty\)</span> but <span
+class="math inline">\(\mu\)</span> is <span
+class="math inline">\(\sigma\)</span>-finite, choose <span
+class="math inline">\(w \in L^1(\mu)\)</span> as in Lemma 6.9. Then
+<span class="math inline">\(d \tilde{\mu}=w d \mu\)</span> defines a
+finite measure on <span class="math inline">\(\mathfrak{M}\)</span>,
+and</p>
+<p><span class="math display">\[
+F \rightarrow w^{1 / p} F
+\]</span></p>
+<p>is a linear isometry of <span
+class="math inline">\(L^p(\tilde{\mu})\)</span> onto <span
+class="math inline">\(L^p(\mu)\)</span>, because <span
+class="math inline">\(w(x)&gt;0\)</span> for every <span
+class="math inline">\(x \in X\)</span>. Hence</p>
+<p><span class="math display">\[
+\Psi(F)=\Phi\left(w^{1 / p} F\right)
+\]</span></p>
+<p>defines a bounded linear functional <span
+class="math inline">\(\Psi\)</span> on <span
+class="math inline">\(L^p(\tilde{\mu})\)</span>, with <span
+class="math inline">\(\|\Psi\|=\|\Phi\|\)</span>.</p>
+<p>The first part of the proof shows now that there exists <span
+class="math inline">\(G \in L^q(\tilde{\mu})\)</span> such that</p>
+<p><span class="math display">\[
+\Psi(F)=\int_X F G d \tilde{\mu} \quad\left(F \in
+L^p(\tilde{\mu})\right) .
+\]</span></p>
+<p>Put <span class="math inline">\(g=w^{1 / q} G\)</span>. (If <span
+class="math inline">\(p=1, g=G\)</span>.) Then</p>
+<p><span class="math display">\[
+\int_X|g|^q d \mu=\int_X|G|^q d \tilde{\mu}=\|\Psi\|^q=\|\Phi\|^q
+\]</span></p>
+<p>if <span class="math inline">\(p&gt;1\)</span>, whereas <span
+class="math inline">\(\|g\|_{\infty}=\|G\|_{\infty}=\|\Psi\|=\|\Phi\|\)</span>
+if <span class="math inline">\(p=1\)</span>. Thus (2) holds, and since
+<span class="math inline">\(G d \tilde{\mu}=w^{1 / p} g d \mu\)</span>,
+we finally get</p>
+<p><span class="math display">\[
+\Phi(f)=\Psi\left(w^{-1 / p} f\right)=\int_X w^{-1 / p} f G d
+\tilde{\mu}=\int_X f g d \mu
+\]</span></p>
+<p>for every <span class="math inline">\(f \in L^p(\mu)\)</span>.</p>
+<h3 id="remark">6.17 Remark</h3>
+<p>We have already encountered the special case <span
+class="math inline">\(p=q=2\)</span> of Theorem 6.16. In fact, the proof
+of the general case was based on this special case, for we used the
+knowledge of the bounded linear functionals on <span
+class="math inline">\(L^2(\mu)\)</span> in the proof of the
+Radon-Nikodym theorem, and the latter was the key to the proof of
+Theorem 6.16. The special case <span class="math inline">\(p=2\)</span>,
+in turn, depended on the completeness of <span
+class="math inline">\(L^2(\mu)\)</span>, on the fact that <span
+class="math inline">\(L^2(\mu)\)</span> is therefore a Hilbert space,
+and on the fact that the bounded linear functionals on a Hilbert space
+are given by inner products. We now turn to the complex version of
+Theorem 2.14.</p>
+
+    </div>
+    
+</div>
+</div>
+
+                <div id="footer-wrapper">
+                    <footer class="footer"><footer class="row pl-3 pr-3">
+    <div class="col-12 d-flex justify-content-between align-items-center text-muted pl-0 pr-0">
+        <div class="footer-left">
+            <p class="mb-0"> © 2022 <a href="https://github.com/chen-gz">guangzong</a>. <span data-toggle="tooltip"
+                    data-placement="top"
+                    title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author.">All
+                    rights reserved.</span></p>
+        </div>
+        <div class="footer-right">
+            <p class="mb-0"> Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">hugo</a>
+                with <a href="https://github.com/chen-gz/hugo_zong" target="_blank" rel="noopener">zong</a>
+                theme.</p>
+        </div>
+    </div>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script> MathJax = {
+            tex: {
+                tags: 'ams',
+            }
+        };</script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</footer>
+</footer>
+                </div>
+            </div>
+            <div id="panel-wrapper" class="d-flex flex-column"><div id="toc-wrapper" class="mb-5 pl-2">
+    <span>Contents</span>
+    <nav id="toc" data-toggle="toc">
+        
+        
+        
+    </nav>
+</div>
+
+<div id="access-lastmod" class="pb-4 pl-2">
+    <div class="panel-heading">Recently Updated</div>
+    <ul class="post-content pl-3 pb-1 ml-1 mt-2">
+          
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/1-total-variation/">Total Variation</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-7/1-derivatives-of-measures/">Derivatives of Measures</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/3-consequences-of-the-radon-nikodym-theorem/">Consequences of the Radon-Nikodym Theorem</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/4-bounded-linear-functionals-on-lp/">Bounded linear functional on Lp</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/2-abosolute-continuity/">Abosolute Continuity</a></li>
+        
+    </ul>
+</div>
+
+<div id="access-tags" class="pl-2">
+    <div class="panel-heading">Trending Tags</div>
+    <div class="d-flex flex-wrap mt-3 mb-1 mr-3">
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/algorithm/">Algorithm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/android/">Android</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c/">C</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c-language/">c language</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/caddy/">Caddy</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cadence/">Cadence</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cdc/">CDC</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/classification/">classification</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/compress/">Compress</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/conf/">Conf</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/double-column/">Double Column</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/errno13/">Errno13</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/fish/">fish</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gan/">GAN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/git/">Git</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gtk/">Gtk</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/html/">Html</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/i3/">I3</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/idea/">Idea</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/java/">Java</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/latex/">Latex</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lda/">LDA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linear-programming/">Linear Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linux/">Linux</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lr/">LR</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/math/">Math</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mathematics/">Mathematics</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matlab/">Matlab</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matplot/">matplot</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/memory/">Memory</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mermaid/">Mermaid</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/misc/">Misc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/ml/">ML</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mosfet/">Mosfet</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/network/">Network</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/nn/">NN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pandoc/">Pandoc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pca/">PCA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/probability/">Probability</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/productive/">Productive</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/program/">Program</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/programming/">Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/python/">Python</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/qt/">Qt</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/random-variable/">Random Variable</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rcnn/">RCNN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rust/">Rust</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/security/">Security</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/software/">Software</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/std/">Std</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/svd/">Svd</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/tool/">Tool</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/usb/">USB</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vim/">Vim</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpn/">Vpn</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpnc/">Vpnc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/xterm/">xterm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/zsh/">Zsh</a>
+        
+    </div>
+</div>
+</div><div id="search-result-wrapper" class="d-flex justify-content-center unloaded">
+    <div class="col-12 col-sm-11 post-content">
+        <div id="search-hints"></div>
+        <div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3 col-12"></div>
+    </div>
+</div>
+
+<script src="/js/fuse.min.js"></script>
+<script src="/js/fastsearch.js"></script>
+
+
+</div>
+        <div id="mask"></div>
+        <a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button"
+            style="display: none">
+            <i class="fas fa-angle-up"></i>
+        </a>
+    </div>
+    
+</body>
+
+</html>

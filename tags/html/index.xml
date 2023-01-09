@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Html on Guangzong Blog</title>
+    <link>https://zongpitt.com/tags/html/</link>
+    <description>Recent content in Html on Guangzong Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 24 Feb 2021 22:17:00 -0500</lastBuildDate><atom:link href="https://zongpitt.com/tags/html/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Html redirecting</title>
+      <link>https://zongpitt.com/posts/2021-02-24-html-redirecting/</link>
+      <pubDate>Wed, 24 Feb 2021 22:17:00 -0500</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-02-24-html-redirecting/</guid>
+      <description>&amp;lt;html&amp;gt;&amp;lt;head&amp;gt;&amp;lt;title&amp;gt;redirecting&amp;gt;&amp;lt;/title&amp;gt;&amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;script language=&amp;#39;javascript&amp;#39;&amp;gt;document.location = &amp;#39;https://giogio.club&amp;#39;&amp;lt;/script&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; </description>
+    </item>
+    
+    <item>
+      <title>Include Other HTML File by iframe</title>
+      <link>https://zongpitt.com/posts/2021-02-16-iframe-include-html/</link>
+      <pubDate>Tue, 16 Feb 2021 14:00:52 -0500</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-02-16-iframe-include-html/</guid>
+      <description>iframe can use include other html.
+&amp;lt;iframe src=&amp;quot;souce_path&amp;quot; width=&amp;quot;100%&amp;quot; height=&amp;quot;700px&amp;quot;&amp;gt;&amp;lt;/iframe&amp;gt; </description>
+    </item>
+    
+  </channel>
+</rss>

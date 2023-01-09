@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>fish on Guangzong Blog</title>
+    <link>https://zongpitt.com/tags/fish/</link>
+    <description>Recent content in fish on Guangzong Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 26 Feb 2021 09:45:00 -0500</lastBuildDate><atom:link href="https://zongpitt.com/tags/fish/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fish Add Path</title>
+      <link>https://zongpitt.com/posts/2021-02-26-fish-add-path/</link>
+      <pubDate>Fri, 26 Feb 2021 09:45:00 -0500</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-02-26-fish-add-path/</guid>
+      <description>set -x PATH $PATH /home/zong/.gem/ruby/2.7.0/bin </description>
+    </item>
+    
+  </channel>
+</rss>

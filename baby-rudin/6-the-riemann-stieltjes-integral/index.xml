@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>6 The Riemann-Stieltjes Integral on Guangzong Blog</title>
+    <link>https://zongpitt.com/baby-rudin/6-the-riemann-stieltjes-integral/</link>
+    <description>Recent content in 6 The Riemann-Stieltjes Integral on Guangzong Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://zongpitt.com/baby-rudin/6-the-riemann-stieltjes-integral/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DEFINITION AND EXISTENCE OF THE INTEGRAL</title>
+      <link>https://zongpitt.com/baby-rudin/6-the-riemann-stieltjes-integral/1-definition-and-existence-of-the-integral/</link>
+      <pubDate>Fri, 29 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/6-the-riemann-stieltjes-integral/1-definition-and-existence-of-the-integral/</guid>
+      <description>6.1 Definition Let \([a, b]\) be a given interval. By a partition \(P\) of \([a, b]\) we mean a finite set of points \(x_{0}, x_{1}, \ldots, x_{n}\), where
+\[ a=x_{0} \leq x_{1} \leq \cdots \leq x_{n-1} \leq x_{n}=b . \]
+We write
+\[ \Delta x_{i}=x_{i}-x_{i-1} \quad(i=1, \ldots, n) \]
+Now suppose \(f\) is a bounded real function defined on \([a, b]\). Corresponding to each partition \(P\) of \([a, b]\) we put</description>
+    </item>
+    
+    <item>
+      <title>THE RIEMANN-STIELTJES INTEGRAL</title>
+      <link>https://zongpitt.com/baby-rudin/6-the-riemann-stieltjes-integral/0-intro/</link>
+      <pubDate>Fri, 29 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/6-the-riemann-stieltjes-integral/0-intro/</guid>
+      <description>The present chapter is based on a definition of the Riemann integral which depends very explicitly on the order structure of the real line. Accordingly, we begin by discussing integration of real-valued functions on intervals. Extensions to complex- and vector-valued functions on intervals follow in later sections. Integration over sets other than intervals is discussed in Chaps. 10 and \(11 .\)</description>
+    </item>
+    
+    <item>
+      <title>INTEGRATION AND DIFFERENTIATION</title>
+      <link>https://zongpitt.com/baby-rudin/6-the-riemann-stieltjes-integral/3-integration-and-differentiation/</link>
+      <pubDate>Thu, 30 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/6-the-riemann-stieltjes-integral/3-integration-and-differentiation/</guid>
+      <description>We still confine ourselves to real functions in this section. We shall show that integration and differentiation are, in a certain sense, inverse operations.
+6.20 Theorem Let \(f \in \mathscr{R}\) on \([a, b]\). For \(a \leq x \leq b\), put \[ F(x)=\int_{a}^{x} f(t) d t . \]
+Then \(F\) is continuous on \([a, b]\); furthermore, if \(f\) is continuous at a point \(x_{0}\) of \([a, b]\), then \(F\) is differentiable at \(x_{0}\), and</description>
+    </item>
+    
+    <item>
+      <title>INTEGRATION OF VECTOR-VALUED FUNCTIONS</title>
+      <link>https://zongpitt.com/baby-rudin/6-the-riemann-stieltjes-integral/4-integration-of-vector-valued-functions/</link>
+      <pubDate>Thu, 30 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/6-the-riemann-stieltjes-integral/4-integration-of-vector-valued-functions/</guid>
+      <description>6.23 Definition Let \(f_{1}, \ldots, f_{k}\) be real functions on \([a, b]\), and let \(f=\left(f_{1}, \ldots, f_{k}\right)\) be the corresponding mapping of \([a, b]\) into \(R^{k}\). If \(\alpha\) increases monotonically on \([a, b]\), to say that \(f \in \mathscr{R}(\alpha)\) means that \(f_{j} \in \mathscr{R}(\alpha)\) for \(j=1, \ldots, k\). If this is the case, we define \[ \int_{a}^{b} \mathrm{f} d \alpha=\left(\int_{a}^{b} f_{1} d \alpha, \ldots, \int_{a}^{b} f_{k} d \alpha\right) . \]</description>
+    </item>
+    
+    <item>
+      <title>PROPERTIES OF THE INTEGRAL</title>
+      <link>https://zongpitt.com/baby-rudin/6-the-riemann-stieltjes-integral/2-properties-of-the-integral/</link>
+      <pubDate>Thu, 30 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/6-the-riemann-stieltjes-integral/2-properties-of-the-integral/</guid>
+      <description>6.12 Theorem
+If \(f_{1} \in \mathscr{R}(\alpha)\) and \(f_{2} \in \mathscr{R}(\alpha)\) on \([a, b]\), then \[ f_{1}+f_{2} \in \mathscr{R}(\alpha), \]
+\(c f \in \mathscr{R}(\alpha)\) for every constant \(c\), and
+\[ \begin{gathered} \int_{a}^{b}\left(f_{1}+f_{2}\right) d \alpha=\int_{a}^{b} f_{1} d \alpha+\int_{a}^{b} f_{2} d \alpha, \\ \int_{a}^{b} c f d \alpha=c \int_{a}^{b} f d \alpha . \end{gathered} \]
+If \(f_{1}(x) \leq f_{2}(x)\) on \([a, b]\), then \[ \int_{a}^{b} f_{1} d \alpha \leq \int_{a}^{b} f_{2} d \alpha .</description>
+    </item>
+    
+    <item>
+      <title>RECTIFIABLE CURVES</title>
+      <link>https://zongpitt.com/baby-rudin/6-the-riemann-stieltjes-integral/5-rectifiable-curves/</link>
+      <pubDate>Thu, 30 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/6-the-riemann-stieltjes-integral/5-rectifiable-curves/</guid>
+      <description>We conclude this chapter with a topic of geometric interest which provides an application of some of the preceding theory. The case \(k=2\) (i.e., the case of plane curves) is of considerable importance in the study of analytic functions of a complex variable.
+6.26 Definition A continuous mapping \(\gamma\) of an interval \([a, b]\) into \(R^{k}\) is called a curve in \(R^{k}\). To emphasize the parameter interval \([a, b]\), we may also say that \(\gamma\) is a curve on \([a, b]\).</description>
+    </item>
+    
+  </channel>
+</rss>

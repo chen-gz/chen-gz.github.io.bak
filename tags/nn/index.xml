@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>NN on Guangzong Blog</title>
+    <link>https://zongpitt.com/tags/nn/</link>
+    <description>Recent content in NN on Guangzong Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 24 Feb 2021 15:17:00 -0500</lastBuildDate><atom:link href="https://zongpitt.com/tags/nn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Neural Network Random Initialization</title>
+      <link>https://zongpitt.com/posts/2021-02-24-neural-network-random-initialization/</link>
+      <pubDate>Wed, 24 Feb 2021 15:17:00 -0500</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-02-24-neural-network-random-initialization/</guid>
+      <description>The neural network should initialization with very small and random value.
+There are two reason.
+if initialization with same value, the same layer neural will have some value no matter how much iteration. because of sigmoid function, it is not sensitive when value is large. So neural should be initialized with small value. </description>
+    </item>
+    
+  </channel>
+</rss>

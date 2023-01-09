@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vpnc on Guangzong Blog</title>
+    <link>https://zongpitt.com/tags/vpnc/</link>
+    <description>Recent content in Vpnc on Guangzong Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 06 Oct 2020 17:58:00 -0400</lastBuildDate><atom:link href="https://zongpitt.com/tags/vpnc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Setup VPNC</title>
+      <link>https://zongpitt.com/posts/2020-10-06-setup-vpnc/</link>
+      <pubDate>Tue, 06 Oct 2020 17:58:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-10-06-setup-vpnc/</guid>
+      <description>Install pacman -Syu vpnc Configuration copy follwing configuration to /etc/vpnc/&amp;lt;name&amp;gt;.conf
+IPSec gateway vpn.pitt.edu IPSec ID sam_users IPSec secret ooL6ohho Xauth username guc25 </description>
+    </item>
+    
+  </channel>
+</rss>

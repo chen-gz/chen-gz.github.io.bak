@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vim on Guangzong Blog</title>
+    <link>https://zongpitt.com/tags/vim/</link>
+    <description>Recent content in Vim on Guangzong Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 26 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://zongpitt.com/tags/vim/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vim Skill</title>
+      <link>https://zongpitt.com/posts/2020-10-26-vim-skill/</link>
+      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-10-26-vim-skill/</guid>
+      <description>vim skill vimgrep is same as vim.
+search a string in current folder :vim /&amp;lt;pattern&amp;gt;/gj * search a string in current folder and all subfolder :vim /&amp;lt;pattern&amp;gt;/gj ** search a string in current folder and all subfolder only search in source file :vim /&amp;lt;pattern&amp;gt;/gj */**.c open file with line number vim +&amp;lt;line_number&amp;gt; &amp;lt;filename&amp;gt; remove space at the end of line %s/\s\+$//g 可以删除行尾多余的空格和tab符号。
+%s/ *$//g /和*中间有空格，只能删除行尾空格，对于tab不能删除</description>
+    </item>
+    
+    <item>
+      <title>Git Configuration</title>
+      <link>https://zongpitt.com/posts/2020-10-10-git-configuration/</link>
+      <pubDate>Sat, 10 Oct 2020 23:49:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-10-10-git-configuration/</guid>
+      <description>Because I am using nvim as git different tool, following configuration is required.
+[user] email = guangzong@pitt.edu name = Guangzong Chen [merge] tool = vimdiff [mergetool] keepBackup = false [mergetool &amp;quot;vimdiff&amp;quot;] cmd = nvim -d $LOCAL $REMOTE $MERGED -c &amp;#39;$wincmd w&amp;#39; -c &amp;#39;wincmd J&amp;#39; [diff] tool = vimdiff [difftool] keepBackup = false [difftool &amp;quot;vimdiff&amp;quot;] cmd = nvim -d $LOCAL $REMOTE -c &amp;#39;$wincmd w&amp;#39; </description>
+    </item>
+    
+    <item>
+      <title>Vim Configuration</title>
+      <link>https://zongpitt.com/posts/2020-10-10-vim-configuration/</link>
+      <pubDate>Thu, 08 Oct 2020 23:54:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-10-10-vim-configuration/</guid>
+      <description>install neovim install neovim and python-pynvim. Install python-pynvim in order to support python
+basic settings show line number
+set number show invisible number
+set list set listchars=tab:&amp;gt;- share system clipboard. in Archlinux package xclip is required
+set clipboard=unnamedplus convert tab to space
+set expandtab spell check
+set spell spelllang=en_us plug-in plug-in manager vim-plug
+I am using neovim, so following command used to install vim-plug.
+sh -c &amp;#39;curl -fLo &amp;quot;${XDG_DATA_HOME:-$HOME/.local/share}&amp;quot;/nvim/site/autoload/plug.vim --create-dirs \ https://raw.</description>
+    </item>
+    
+    <item>
+      <title>Vim Configuration</title>
+      <link>https://zongpitt.com/posts/misc/vim-configuration/</link>
+      <pubDate>Thu, 08 Oct 2020 23:54:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/misc/vim-configuration/</guid>
+      <description>install neovim install neovim and python-pynvim. Install python-pynvim in order to support python
+vim-shortcut default collection and have the same dicimal keycode. Becareful.
+ZZ save and quit Z = &amp;lt;S-z&amp;gt; za toggle fold :windo diffthis to show the differnt between two buffer. :windo diffoff turn off the differnt view. </description>
+    </item>
+    
+  </channel>
+</rss>

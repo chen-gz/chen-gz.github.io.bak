@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css"
+        class="dark-mode-native-dark-original" />
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+     
+    <link rel="stylesheet" href="https://zongpitt.com/sass/main.06935202011a97ba473ebeeb0cb6788daa9fb5a9fff471a4e85850293d1c5ac4.css" />
+    <title>
+          Guangzong Blog | 5 FOURIER SERIES.md
+    </title>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.bundle.min.js"></script>
+    <script src=" https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.js"></script>
+
+    <script
+        src="https://cdn.jsdelivr.net/combine/npm/magnific-popup@1/dist/jquery.magnific-popup.min.js,npm/lozad/dist/lozad.min.js,npm/clipboard@2/dist/clipboard.min.js"></script>
+    <script type="text/javascript" src="/js/commons/back-to-top.js"></script>
+    
+    
+    
+    <script type="text/javascript" src="/js/commons/topbar-switch.js"></script>
+    <script type="text/javascript" src="/js/commons/sidebar.js"></script>
+    <script type="text/javascript" src="/js/utils/category-collapse.js"></script>
+    <script type="text/javascript" src="/js/utils/checkbox.js"></script>
+    <script type="text/javascript" src="/js/utils/clipboard.js"></script>
+    <script type="text/javascript" src="/js/utils/img-extra.js"></script>
+    <script type="text/javascript" src="/js/utils/pageviews.js"></script>
+    
+    <script type="text/javascript" src="/js/utils/timeago.js"></script>
+    
+    
+</head>
+<body data-spy="scroll" data-target="#toc" data-topbar-visible="true" class="d-flex"><div id="sidebar" class="d-flex flex-column align-items-end">
+    <div class="profile-wrapper text-center">
+
+        <div id="avatar">
+            <a href="/" alt="avatar" class="mx-auto"> <img src=https://github.com/chen-gz/chen-gz/blob/main/mine_square.jpg?raw&#61;truehttps://raw.githubusercontent.com/chen-gz/chen-gz/blob/main/mine_square.jpg alt="avatar"
+                    onerror="this.style.display='none'"> </a>
+        </div>
+
+        <div class="site-title mt-3"> <a href="/">Guangzong</a> </div>
+        <div class="site-subtitle font-italic">Welcome to my blog</div>
+    </div>
+
+    <ul>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/">
+                <span>
+                    Home
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/archive/">
+                <span>
+                    Archive
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/tags/">
+                <span>
+                    Tags
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/about/">
+                <span>
+                    About
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/categories/">
+                <span>
+                    Categories
+                </span>
+            </a>
+        </li>
+        
+    </ul>
+
+    <div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center align-items-center">
+        <button class="mode-toggle btn" aria-label="Switch Mode"> 
+            <i class="fas fa-adjust"></i> 
+        </button>
+
+        <span class="icon-border"></span>
+        <a href="https://github.com/chen-gz" aria-label="github" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i>
+        </a>
+
+        <a href=" javascript:location.href = 'mailto:' + ['chen-gz','outlook.com'].join('@')" aria-label="email">
+            <i class="fas fa-envelope"></i>
+        </a>
+
+        <a href="/feed.xml" aria-label="rss"> <i class="fas fa-rss"></i> </a>
+    </div>
+
+    
+    
+</div>
+<div id="all-wrapper" class="d-flex flex-column"><div id="topbar-wrapper">
+    <div id="topbar" class="d-flex">
+        
+        <span id="breadcrumb" class="d-flex">
+              
+               
+            
+            
+            <div><a href='https://zongpitt.com/'>Home</a></div>
+              
+              
+            
+            <div><a href="https://zongpitt.com/baby-rudin">baby-rudin</a></div>
+               
+              
+            
+            <div><a href="https://zongpitt.com/baby-rudin/8-some-special-function">8-some-special-function</a></div>
+               
+                 
+                
+        </span>
+        <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i>
+        <div id="topbar-title">Guangzong</div>
+        <i id="search-trigger" class="fas fa-search fa-fw"></i>
+        <span id="search-wrapper" class="align-items-center">
+            <i class="fas fa-search fa-fw"></i>
+            <input class="form-control" id="search-input" type="search" aria-label="search" autocomplete="off"
+                placeholder="Search..." />
+            <i class="fa fa-times-circle fa-fw" id="search-cleaner"></i>
+        </span>
+    </div>
+</div>
+<div id="main-wrapper" class="d-flex mt-3">
+            <div id="core-wrapper" class="d-flex flex-column">
+                <div id="main" class="d-flex flex-column">
+                    
+<div class="post pl-1 pr-1 pl-md-2 pr-md-2">
+    
+    <div id="post-content">
+        <h1 style="text-align: center;">5 FOURIER SERIES.md</h1>
+        <br>
+        
+        <p><strong>8.9 Definition</strong> A trigonometric polynomial is a
+finite sum of the form</p>
+<p><span class="math display">\[
+f(x)=a_{0}+\sum_{n=1}^{N}\left(a_{n} \cos n x+b_{n} \sin n x\right)
+\quad(x \text { real), }
+\]</span></p>
+<p>where <span class="math inline">\(a_{0}, \ldots, a_{N}, b_{1},
+\ldots, b_{N}\)</span> are complex numbers. On account of the identities
+(46), (59) can also be written in the form</p>
+<p><span class="math display">\[
+f(x)=\sum_{-N}^{N} c_{n} e^{i n x} \quad(x \text { real }),
+\]</span></p>
+<p>which is more convenient for most purposes. It is clear that every
+trigonometric polynomial is periodic, with period <span
+class="math inline">\(2 \pi\)</span>.</p>
+<p>If <span class="math inline">\(n\)</span> is a nonzero integer, <span
+class="math inline">\(e^{i n x}\)</span> is the derivative of <span
+class="math inline">\(e^{i n x} / i n\)</span>, which also has period
+<span class="math inline">\(2 \pi\)</span>. Hence</p>
+<p><span class="math display">\[
+\frac{1}{2 \pi} \int_{-\pi}^{\pi} e^{i n x} d x= \begin{cases}1 &amp;
+(\text { if } n=0) \\ 0 &amp; \text { (if } n=\pm 1, \pm 2,
+\ldots)\end{cases}
+\]</span></p>
+<p>Let us multiply (60) by <span class="math inline">\(e^{-i m
+x}\)</span>, where <span class="math inline">\(m\)</span> is an integer;
+if we integrate the product, (61) shows that</p>
+<p><span class="math display">\[
+c_{m}=\frac{1}{2 \pi} \int_{-\pi}^{\pi} f(x) e^{-i m x} d x
+\]</span></p>
+<p>for <span class="math inline">\(|m| \leq N\)</span>. If <span
+class="math inline">\(|m|&gt;N\)</span>, the integral in (62) is 0 . The
+following observation can be read off from (60) and (62): The
+trigonometric polynomial <span class="math inline">\(f\)</span>, given
+by (60), is real if and only if <span
+class="math inline">\(c_{-n}=\bar{c}_{n}\)</span> for <span
+class="math inline">\(n=0, \ldots, N\)</span>.</p>
+<p>In agreement with (60), we define a trigonometric series to be a
+series of the form</p>
+<p><span class="math display">\[
+\sum_{-\infty}^{\infty} c_{n} e^{i n x} \quad(x \text { real }) \text {;
+}
+\]</span></p>
+<p>the <span class="math inline">\(N\)</span> th partial sum of (63) is
+defined to be the right side of (60). If <span
+class="math inline">\(f\)</span> is an integrable function on <span
+class="math inline">\([-\pi, \pi]\)</span>, the numbers <span
+class="math inline">\(c_{m}\)</span> defined by (62) for all integers
+<span class="math inline">\(m\)</span> are called the Fourier
+coefficients of <span class="math inline">\(f\)</span>, and the series
+(63) formed with these coefficients is called the Fourier series of
+<span class="math inline">\(f\)</span>.</p>
+<p>The natural question which now arises is whether the Fourier series
+of <span class="math inline">\(f\)</span> converges to <span
+class="math inline">\(f\)</span>, or, more generally, whether <span
+class="math inline">\(f\)</span> is determined by its Fourier series.
+That is to say, if we know the Fourier coefficients of a function, can
+we find the function, and if so, how?</p>
+<p>The study of such series, and, in particular, the problem of
+representing a given function by a trigonometric series, originated in
+physical problems such as the theory of oscillations and the theory of
+heat conduction (Fourier’s “Théorie analytique de la chaleur” was
+published in 1822). The many difficult and delicate problems which arose
+during this study caused a thorough revision and reformulation of the
+whole theory of functions of a real variable. Among many prominent
+names, those of Riemann, Cantor, and Lebesgue are intimately connected
+with this field, which nowadays, with all its generalizations and
+ramifications, may well be said to occupy a central position in the
+whole of analysis.</p>
+<p>We shall be content to derive some basic theorems which are easily
+accessible by the methods developed in the preceding chapters. For more
+thorough investigations, the Lebesgue integral is a natural and
+indispensable tool.</p>
+<p>We shall first study more general systems of functions which share a
+property analogous to (61).</p>
+<p><strong>8.10 Definition</strong> Let <span
+class="math inline">\(\left\{\phi_{n}\right\}(n=1,2,3, \ldots)\)</span>
+be a sequence of complex functions on <span class="math inline">\([a,
+b]\)</span>, such that</p>
+<p><span class="math display">\[
+\int_{a}^{b} \phi_{n}(x) \overline{\phi_{m}(x)} d x=0 \quad(n \neq m)
+\]</span></p>
+<p>Then <span class="math inline">\(\left\{\phi_{n}\right\}\)</span> is
+said to be an orthogonal system of functions on <span
+class="math inline">\([a, b]\)</span>. If, in addition,</p>
+<p><span class="math display">\[
+\int_{a}^{b}\left|\phi_{n}(x)\right|^{2} d x=1
+\]</span></p>
+<p>for all <span
+class="math inline">\(n,\left\{\phi_{n}\right\}\)</span> is said to be
+orthonormal. For example, the functions <span class="math inline">\((2
+\pi)^{-\frac{1}{2}} e^{i n x}\)</span> form an orthonormal system on
+<span class="math inline">\([-\pi, \pi]\)</span>. So do the real
+functions</p>
+<p><span class="math display">\[
+\frac{1}{\sqrt{2 \pi}}, \frac{\cos x}{\sqrt{\pi}}, \frac{\sin
+x}{\sqrt{\pi}}, \frac{\cos 2 x}{\sqrt{\pi}}, \frac{\sin 2
+x}{\sqrt{\pi}}, \cdots .
+\]</span></p>
+<p>If <span class="math inline">\(\left\{\phi_{n}\right\}\)</span> is
+orthonormal on <span class="math inline">\([a, b]\)</span> and if</p>
+<p><span class="math display">\[
+c_{n}=\int_{a}^{b} f(t) \overline{\phi_{n}(t)} d t \quad(n=1,2,3,
+\ldots),
+\]</span></p>
+<p>we call <span class="math inline">\(c_{n}\)</span> the <span
+class="math inline">\(n\)</span>th Fourier coefficient of <span
+class="math inline">\(f\)</span> relative to <span
+class="math inline">\(\left\{\phi_{n}\right\}\)</span>. We write</p>
+<p><span class="math display">\[
+f(x) \sim \sum_{1}^{\infty} c_{n} \phi_{n}(x)
+\]</span></p>
+<p>and call this series the Fourier series of <span
+class="math inline">\(f\)</span> (relative to <span
+class="math inline">\(\left\{\phi_{n}\right\}\)</span> ).</p>
+<p>Note that the symbol <span class="math inline">\(\sim\)</span> used
+in (67) implies nothing about the convergence of the series; it merely
+says that the coefficients are given by (66).</p>
+<p>The following theorems show that the partial sums of the Fourier
+series of <span class="math inline">\(f\)</span> have a certain minimum
+property. We shall assume here and in the rest of this chapter that
+<span class="math inline">\(f \in \mathscr{R}\)</span>, although this
+hypothesis can be weakened.</p>
+<p>8.11 Theorem Let <span
+class="math inline">\(\left\{\phi_{n}\right\}\)</span> be orthonormal on
+<span class="math inline">\([a, b]\)</span>. Let</p>
+<p><span class="math display">\[
+s_{n}(x)=\sum_{m=1}^{n} c_{m} \phi_{m}(x)
+\]</span></p>
+<p>be the nth partial sum of the Fourier series of <span
+class="math inline">\(f\)</span>, and suppose</p>
+<p><span class="math display">\[
+t_{n}(x)=\sum_{m=1}^{n} \gamma_{m} \phi_{m}(x) .
+\]</span></p>
+<p>Then</p>
+<p><span class="math display">\[
+\int_{a}^{b}\left|f-s_{n}\right|^{2} d x \leq
+\int_{a}^{b}\left|f-t_{n}\right|^{2} d x,
+\]</span></p>
+<p>and equality holds if and only if</p>
+<p><span class="math display">\[
+\gamma_{m}=c_{m} \quad(m=1, \ldots, n) .
+\]</span></p>
+<p>That is to say, among all functions <span
+class="math inline">\(t_{n}\)</span>, <span
+class="math inline">\(s_{n}\)</span> gives the best possible mean square
+approximation to <span class="math inline">\(f\)</span>.</p>
+<p><strong>Proof</strong> Let <span class="math inline">\(\int\)</span>
+denote the integral over <span class="math inline">\([a, b],
+\Sigma\)</span> the sum from 1 to <span
+class="math inline">\(n\)</span>. Then</p>
+<p><span class="math display">\[
+\int f \bar{t}_{n}=\int f \sum \bar{\gamma}_{m} \bar{\phi}_{m}=\sum
+c_{m} \bar{\gamma}_{m}
+\]</span></p>
+<p>by the definition of <span
+class="math inline">\(\left\{c_{m}\right\}\)</span>,</p>
+<p><span class="math display">\[
+\int\left|t_{n}\right|^{2}=\int t_{n} \bar{t}_{n}=\int \sum \gamma_{m}
+\phi_{m} \sum \bar{\gamma}_{k}
+\bar{\phi}_{k}=\sum\left|\gamma_{m}\right|^{2}
+\]</span></p>
+<p>since <span class="math inline">\(\left\{\phi_{m}\right\}\)</span> is
+orthonormal, and so</p>
+<p><span class="math display">\[
+\begin{aligned}
+\int\left|f-t_{n}\right|^{2} &amp;=\int|f|^{2}-\int f \bar{t}_{n}-\int f
+t_{n}+\int\left|t_{n}\right|^{2} \\
+&amp;=\int|f|^{2}-\sum c_{m} \bar{\gamma}_{m}-\sum \bar{c}_{m}
+\gamma_{m}+\sum \gamma_{m} \bar{\gamma}_{m} \\
+&amp;=\int|f|^{2}-\sum\left|c_{m}\right|^{2}+\sum\left|\gamma_{m}-c_{m}\right|^{2}
+\end{aligned}
+\]</span></p>
+<p>which is evidently minimized if and only if <span
+class="math inline">\(\gamma_{m}=c_{m}\)</span>. Putting <span
+class="math inline">\(\gamma_{m}=c_{m}\)</span> in this calculation, we
+obtain</p>
+<p><span class="math display">\[
+\begin{aligned}
+&amp;\int_{a}^{b}\left|s_{n}(x)\right|^{2} d
+x=\sum_{1}^{n}\left|c_{m}\right|^{2} \leq \int_{a}^{b}|f(x)|^{2} d x, \\
+&amp;\text { since } \int\left|f-t_{n}\right|^{2} \geq 0
+\end{aligned}
+\]</span></p>
+<p><strong>8.12 Theorem</strong> If <span
+class="math inline">\(\left\{\phi_{n}\right\}\)</span> is orthonormal on
+<span class="math inline">\([a, b]\)</span>, and if</p>
+<p><span class="math display">\[
+f(x) \sim \sum_{n=1}^{\infty} c_{n} \phi_{n}(x)
+\]</span></p>
+<p>then</p>
+<p><span class="math display">\[
+\sum_{n=1}^{\infty}\left|c_{n}\right|^{2} \leq \int_{a}^{b}|f(x)|^{2} d
+x
+\]</span></p>
+<p>In particular,</p>
+<p><span class="math display">\[
+\lim _{n \rightarrow \infty} c_{n}=0 .
+\]</span></p>
+<p><strong>Proof</strong> Letting <span class="math inline">\(n
+\rightarrow \infty\)</span> in (72), we obtain (73), the so-called
+“Bessel inequality.”</p>
+<p><strong>8.13 Trigonometric series</strong> From now on we shall deal
+only with the trigonometric system. We shall consider functions <span
+class="math inline">\(f\)</span> that have period <span
+class="math inline">\(2 \pi\)</span> and that are Riemann-integrable on
+<span class="math inline">\([-\pi, \pi]\)</span> (and hence on every
+bounded interval). The Fourier series of <span
+class="math inline">\(f\)</span> is then the series (63) whose
+coefficients <span class="math inline">\(c_{n}\)</span> are given by the
+integrals <span class="math inline">\((62)\)</span>, and</p>
+<p><span class="math display">\[
+s_{N}(x)=s_{N}(f ; x)=\sum_{-N}^{N} c_{n} e^{i n x}
+\]</span></p>
+<p>is the <span class="math inline">\(N\)</span> th partial sum of the
+Fourier series of <span class="math inline">\(f\)</span>. The inequality
+(72) now takes the form</p>
+<ol start="76" type="1">
+<li><span class="math inline">\(\frac{1}{2 \pi}
+\int_{-\pi}^{\pi}\left|s_{N}(x)\right|^{2} d
+x=\sum_{-N}^{N}\left|c_{n}\right|^{2} \leq \frac{1}{2 \pi}
+\int_{-\pi}^{\pi}|f(x)|^{2} d x\)</span>.</li>
+</ol>
+<p>In order to obtain an expression for <span
+class="math inline">\(s_{N}\)</span> that is more manageable than (75)
+we introduce the Dirichlet kernel</p>
+<p><span class="math display">\[
+D_{N}(x)=\sum_{n=-N}^{N} e^{i n x}=\frac{\sin \left(N+\frac{1}{2}\right)
+x}{\sin (x / 2)} .
+\]</span></p>
+<p>The first of these equalities is the definition of <span
+class="math inline">\(D_{N}(x)\)</span>. The second follows if both
+sides of the identity</p>
+<p><span class="math display">\[
+\left(e^{i x}-1\right) D_{N}(x)=e^{i(N+1) x}-e^{-i N x}
+\]</span></p>
+<p>are multiplied by <span class="math inline">\(e^{-i x / 2}\)</span>.
+By (62) and (75), we have</p>
+<p><span class="math display">\[
+\begin{aligned}
+s_{N}(f ; x) &amp;=\sum_{-N}^{N} \frac{1}{2 \pi} \int_{-\pi}^{\pi} f(t)
+e^{-i n t} d t e^{i n x} \\
+&amp;=\frac{1}{2 \pi} \int_{-\pi}^{\pi} f(t) \sum_{-N}^{N} e^{i n(x-t)}
+d t
+\end{aligned}
+\]</span></p>
+<p>so that</p>
+<p><span class="math display">\[
+s_{N}(f ; x)=\frac{1}{2 \pi} \int_{-\pi}^{\pi} f(t) D_{N}(x-t) d
+t=\frac{1}{2 \pi} \int_{-\pi}^{\pi} f(x-t) D_{N}(t) d t
+\]</span></p>
+<p>The periodicity of all functions involved shows that it is immaterial
+over which interval we integrate, as long as its length is <span
+class="math inline">\(2 \pi\)</span>. This shows that the two integrals
+in (78) are equal.</p>
+<p>We shall prove just one theorem about the pointwise convergence of
+Fourier series.</p>
+<p>8.14 Theorem If, for some <span class="math inline">\(x\)</span>,
+there are constants <span class="math inline">\(\delta&gt;0\)</span> and
+<span class="math inline">\(M&lt;\infty\)</span> such that</p>
+<p><span class="math display">\[
+|f(x+t)-f(x)| \leq M|t|
+\]</span></p>
+<p>for all <span class="math inline">\(t \in(-\delta, \delta)\)</span>,
+then</p>
+<p><span class="math display">\[
+\lim _{N \rightarrow \infty} s_{N}(f ; x)=f(x)
+\]</span></p>
+<p>Proof Define</p>
+<p><span class="math display">\[
+g(t)=\frac{f(x-t)-f(x)}{\sin (t / 2)}
+\]</span></p>
+<p>for <span class="math inline">\(0&lt;|t| \leq \pi\)</span>, and put
+<span class="math inline">\(g(0)=0\)</span>. By the definition (77),</p>
+<p><span class="math display">\[
+\frac{1}{2 \pi} \int_{-\pi}^{\pi} D_{N}(x) d x=1 .
+\]</span></p>
+<p>Hence (78) shows that</p>
+<p><span class="math display">\[
+\begin{aligned}
+s_{N}(f ; x) &amp;-f(x)=\frac{1}{2 \pi} \int_{-\pi}^{\pi} g(t) \sin
+\left(N+\frac{1}{2}\right) t d t \\
+&amp;=\frac{1}{2 \pi} \int_{-\pi}^{\pi}\left[g(t) \cos
+\frac{t}{2}\right] \sin N t d t+\frac{1}{2 \pi}
+\int_{-\pi}^{\pi}\left[g(t) \sin \frac{t}{2}\right] \cos N t d t
+\end{aligned}
+\]</span></p>
+<p>By (79) and (81), <span class="math inline">\(g(t) \cos (t /
+2)\)</span> and <span class="math inline">\(g(t) \sin (t / 2)\)</span>
+are bounded. The last two integrals thus tend to 0 as <span
+class="math inline">\(N \rightarrow \infty\)</span>, by (74). This
+proves <span class="math inline">\((80)\)</span>.</p>
+<p>Corollary If <span class="math inline">\(f(x)=0\)</span> for all
+<span class="math inline">\(x\)</span> in some segment <span
+class="math inline">\(J\)</span>, then <span class="math inline">\(\lim
+s_{N}(f ; x)=0\)</span> for every <span class="math inline">\(x \in
+J\)</span>. Here is another formulation of this corollary: If <span
+class="math inline">\(f(t)=g(t)\)</span> for all <span
+class="math inline">\(t\)</span> in some neighborhood of <span
+class="math inline">\(x\)</span>, then</p>
+<p><span class="math display">\[
+s_{N}(f ; x)-s_{N}(g ; x)=s_{N}(f-g ; x) \rightarrow 0 \text { as } N
+\rightarrow \infty .
+\]</span></p>
+<p>This is usually called the localization theorem. It shows that the
+behavior of the sequence <span class="math inline">\(\left\{s_{N}(f ;
+x)\right\}\)</span>, as far as convergence is concerned, depends only on
+the values of <span class="math inline">\(f\)</span> in some
+(arbitrarily small) neighborhood of <span
+class="math inline">\(x\)</span>. Two Fourier series may thus have the
+same behavior in one interval, but may behave in entirely different ways
+in some other interval. We have here a very striking contrast between
+Fourier series and power series (Theorem 8.5).</p>
+<p>We conclude with two other approximation theorems.</p>
+<p><strong>8.15 Theorem</strong> If <span
+class="math inline">\(f\)</span> is continuous (with period <span
+class="math inline">\(2 \pi\)</span> ) and if <span
+class="math inline">\(\varepsilon&gt;0\)</span>, then there is a
+trigonometric polynomial <span class="math inline">\(P\)</span> such
+that</p>
+<p><span class="math display">\[
+|P(x)-f(x)|&lt;\varepsilon
+\]</span></p>
+<p>for all real <span class="math inline">\(x\)</span>.</p>
+<p><strong>Proof</strong> If we identify <span
+class="math inline">\(x\)</span> and <span class="math inline">\(x+2
+\pi\)</span>, we may regard the <span class="math inline">\(2
+\pi\)</span>-periodic functions on <span
+class="math inline">\(R^{1}\)</span> as functions on the unit circle
+<span class="math inline">\(T\)</span>, by means of the mapping <span
+class="math inline">\(x \rightarrow e^{i x}\)</span>. The trigonometric
+polynomials, i.e., the functions of the form (60), form a self-adjoint
+algebra <span class="math inline">\(\mathscr{A}\)</span>, which
+separates points on <span class="math inline">\(T\)</span>, and which
+vanishes at no point of <span class="math inline">\(T\)</span>. Since
+<span class="math inline">\(T\)</span> is compact, Theorem <span
+class="math inline">\(7.33\)</span> tells us that <span
+class="math inline">\(\mathscr{A}\)</span> is dense in <span
+class="math inline">\(\mathscr{C}(T)\)</span>. This is exactly what the
+theorem asserts.</p>
+<p>A more precise form of this theorem appears in Exercise <span
+class="math inline">\(15 .\)</span></p>
+<p><strong>8.16 Parseval’s theorem</strong> Suppose <span
+class="math inline">\(f\)</span> and <span
+class="math inline">\(g\)</span> are Riemann-integrable functions with
+period <span class="math inline">\(2 \pi\)</span>, and</p>
+<p><span class="math display">\[
+f(x) \sim \sum_{-\infty}^{\infty} c_{n} e^{i n x}, \quad g(x) \sim
+\sum_{-\infty}^{\infty} \gamma_{n} e^{i n x}
+\]</span></p>
+<p>Then</p>
+<p><span class="math display">\[
+\begin{aligned}
+\lim _{N \rightarrow \infty} \frac{1}{2 \pi}
+\int_{-\pi}^{\pi}\left|f(x)-s_{N}(f ; x)\right|^{2} d x &amp;=0 \\
+\frac{1}{2 \pi} \int_{-\pi}^{\pi} f(x) \overline{g(x)} d x
+&amp;=\sum_{-\infty}^{\infty} c_{n} \bar{\gamma}_{n} \\
+\frac{1}{2 \pi} \int_{-\pi}^{\pi}|f(x)|^{2} d x
+&amp;=\sum_{-\infty}^{\infty}\left|c_{n}\right|^{2}
+\end{aligned}
+\]</span></p>
+<p><strong>Proof</strong> Let us use the notation</p>
+<p><span class="math display">\[
+\|h\|_{2}=\left\{\frac{1}{2 \pi} \int_{-\pi}^{\pi}|h(x)|^{2} d
+x\right\}^{1 / 2}
+\]</span></p>
+<p>Let <span class="math inline">\(\varepsilon&gt;0\)</span> be given.
+Since <span class="math inline">\(f \in \mathscr{R}\)</span> and <span
+class="math inline">\(f(\pi)=f(-\pi)\)</span>, the construction
+described in Exercise 12 of Chap. 6 yields a continuous <span
+class="math inline">\(2 \pi\)</span>-periodic function <span
+class="math inline">\(h\)</span> with</p>
+<p><span class="math display">\[
+\|f-h\|_{2}&lt;\varepsilon .
+\]</span></p>
+<p>By Theorem <span class="math inline">\(8.15\)</span>, there is a
+trigonometric polynomial <span class="math inline">\(P\)</span> such
+that <span class="math inline">\(|h(x)-P(x)|&lt;\varepsilon\)</span> for
+all <span class="math inline">\(x\)</span>. Hence <span
+class="math inline">\(\|h-P\|_{2}&lt;\varepsilon\)</span>. If <span
+class="math inline">\(P\)</span> has degree <span
+class="math inline">\(N_{0}\)</span>, Theorem <span
+class="math inline">\(8.11\)</span> shows that</p>
+<p><span class="math display">\[
+\left\|h-s_{N}(h)\right\|_{2} \leq\|h-P\|_{2}&lt;\varepsilon
+\]</span></p>
+<p>for all <span class="math inline">\(N \geq N_{0}\)</span>. By <span
+class="math inline">\((72)\)</span>, with <span
+class="math inline">\(h-f\)</span> in place of <span
+class="math inline">\(f\)</span>,</p>
+<p><span class="math display">\[
+\left\|s_{N}(h)-s_{N}(f)\right\|_{2}=\left\|s_{N}(h-f)\right\|_{2}
+\leq\|h-f\|_{2}&lt;\varepsilon .
+\]</span></p>
+<p>Now the triangle inequality (Exercise 11, Chap. 6), combined with
+<span class="math inline">\((87),(88)\)</span>, and <span
+class="math inline">\((89)\)</span>, shows that</p>
+<p><span class="math display">\[
+\left\|f-s_{N}(f)\right\|_{2}&lt;3 \varepsilon \quad\left(N \geq
+N_{0}\right)
+\]</span></p>
+<p>This proves (83). Next,</p>
+<p><span class="math display">\[
+\frac{1}{2 \pi} \int_{-\pi}^{\pi} s_{N}(f) \bar{g} d x=\sum_{-N}^{N}
+c_{n} \frac{1}{2 \pi} \int_{-\pi}^{\pi} e^{i n x} \overline{g(x)} d
+x=\sum_{-N}^{N} c_{n} \bar{\gamma}_{n}
+\]</span></p>
+<p>and the Schwarz inequality shows that</p>
+<p><span class="math display">\[
+\left|\int f \bar{g}-\int s_{N}(f) \bar{g}\right| \leq
+\int\left|f-s_{N}(f) \| g\right| \leq\left\{\int\left|f-s_{N}\right|^{2}
+\int|g|^{2}\right\}^{1 / 2}
+\]</span></p>
+<p>which tends to 0 , as <span class="math inline">\(N \rightarrow
+\infty\)</span>, by (83). Comparison of (91) and (92) gives (84).
+Finally, (85) is the special case <span
+class="math inline">\(g=f\)</span> of (84). A more general version of
+Theorem <span class="math inline">\(8.16\)</span> appears in Chap. <span
+class="math inline">\(11 .\)</span></p>
+
+    </div>
+    
+</div>
+</div>
+
+                <div id="footer-wrapper">
+                    <footer class="footer"><footer class="row pl-3 pr-3">
+    <div class="col-12 d-flex justify-content-between align-items-center text-muted pl-0 pr-0">
+        <div class="footer-left">
+            <p class="mb-0"> © 2022 <a href="https://github.com/chen-gz">guangzong</a>. <span data-toggle="tooltip"
+                    data-placement="top"
+                    title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author.">All
+                    rights reserved.</span></p>
+        </div>
+        <div class="footer-right">
+            <p class="mb-0"> Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">hugo</a>
+                with <a href="https://github.com/chen-gz/hugo_zong" target="_blank" rel="noopener">zong</a>
+                theme.</p>
+        </div>
+    </div>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script> MathJax = {
+            tex: {
+                tags: 'ams',
+            }
+        };</script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</footer>
+</footer>
+                </div>
+            </div>
+            <div id="panel-wrapper" class="d-flex flex-column"><div id="toc-wrapper" class="mb-5 pl-2">
+    <span>Contents</span>
+    <nav id="toc" data-toggle="toc">
+        
+        
+        
+    </nav>
+</div>
+
+<div id="access-lastmod" class="pb-4 pl-2">
+    <div class="panel-heading">Recently Updated</div>
+    <ul class="post-content pl-3 pb-1 ml-1 mt-2">
+          
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/1-total-variation/">Total Variation</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-7/1-derivatives-of-measures/">Derivatives of Measures</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/3-consequences-of-the-radon-nikodym-theorem/">Consequences of the Radon-Nikodym Theorem</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/4-bounded-linear-functionals-on-lp/">Bounded linear functional on Lp</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/2-abosolute-continuity/">Abosolute Continuity</a></li>
+        
+    </ul>
+</div>
+
+<div id="access-tags" class="pl-2">
+    <div class="panel-heading">Trending Tags</div>
+    <div class="d-flex flex-wrap mt-3 mb-1 mr-3">
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/algorithm/">Algorithm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/android/">Android</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c/">C</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c-language/">c language</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/caddy/">Caddy</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cadence/">Cadence</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cdc/">CDC</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/classification/">classification</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/compress/">Compress</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/conf/">Conf</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/double-column/">Double Column</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/errno13/">Errno13</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/fish/">fish</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gan/">GAN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/git/">Git</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gtk/">Gtk</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/html/">Html</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/i3/">I3</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/idea/">Idea</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/java/">Java</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/latex/">Latex</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lda/">LDA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linear-programming/">Linear Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linux/">Linux</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lr/">LR</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/math/">Math</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mathematics/">Mathematics</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matlab/">Matlab</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matplot/">matplot</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/memory/">Memory</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mermaid/">Mermaid</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/misc/">Misc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/ml/">ML</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mosfet/">Mosfet</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/network/">Network</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/nn/">NN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pandoc/">Pandoc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pca/">PCA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/probability/">Probability</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/productive/">Productive</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/program/">Program</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/programming/">Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/python/">Python</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/qt/">Qt</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/random-variable/">Random Variable</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rcnn/">RCNN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rust/">Rust</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/security/">Security</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/software/">Software</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/std/">Std</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/svd/">Svd</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/tool/">Tool</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/usb/">USB</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vim/">Vim</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpn/">Vpn</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpnc/">Vpnc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/xterm/">xterm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/zsh/">Zsh</a>
+        
+    </div>
+</div>
+</div><div id="search-result-wrapper" class="d-flex justify-content-center unloaded">
+    <div class="col-12 col-sm-11 post-content">
+        <div id="search-hints"></div>
+        <div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3 col-12"></div>
+    </div>
+</div>
+
+<script src="/js/fuse.min.js"></script>
+<script src="/js/fastsearch.js"></script>
+
+
+</div>
+        <div id="mask"></div>
+        <a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button"
+            style="display: none">
+            <i class="fas fa-angle-up"></i>
+        </a>
+    </div>
+    
+</body>
+
+</html>

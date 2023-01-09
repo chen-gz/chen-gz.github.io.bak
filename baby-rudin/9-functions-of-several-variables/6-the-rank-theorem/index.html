@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css"
+        class="dark-mode-native-dark-original" />
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+     
+    <link rel="stylesheet" href="https://zongpitt.com/sass/main.06935202011a97ba473ebeeb0cb6788daa9fb5a9fff471a4e85850293d1c5ac4.css" />
+    <title>
+          Guangzong Blog | 6 THE RANK THEOREM
+    </title>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.bundle.min.js"></script>
+    <script src=" https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.js"></script>
+
+    <script
+        src="https://cdn.jsdelivr.net/combine/npm/magnific-popup@1/dist/jquery.magnific-popup.min.js,npm/lozad/dist/lozad.min.js,npm/clipboard@2/dist/clipboard.min.js"></script>
+    <script type="text/javascript" src="/js/commons/back-to-top.js"></script>
+    
+    
+    
+    <script type="text/javascript" src="/js/commons/topbar-switch.js"></script>
+    <script type="text/javascript" src="/js/commons/sidebar.js"></script>
+    <script type="text/javascript" src="/js/utils/category-collapse.js"></script>
+    <script type="text/javascript" src="/js/utils/checkbox.js"></script>
+    <script type="text/javascript" src="/js/utils/clipboard.js"></script>
+    <script type="text/javascript" src="/js/utils/img-extra.js"></script>
+    <script type="text/javascript" src="/js/utils/pageviews.js"></script>
+    
+    <script type="text/javascript" src="/js/utils/timeago.js"></script>
+    
+    
+</head>
+<body data-spy="scroll" data-target="#toc" data-topbar-visible="true" class="d-flex"><div id="sidebar" class="d-flex flex-column align-items-end">
+    <div class="profile-wrapper text-center">
+
+        <div id="avatar">
+            <a href="/" alt="avatar" class="mx-auto"> <img src=https://github.com/chen-gz/chen-gz/blob/main/mine_square.jpg?raw&#61;truehttps://raw.githubusercontent.com/chen-gz/chen-gz/blob/main/mine_square.jpg alt="avatar"
+                    onerror="this.style.display='none'"> </a>
+        </div>
+
+        <div class="site-title mt-3"> <a href="/">Guangzong</a> </div>
+        <div class="site-subtitle font-italic">Welcome to my blog</div>
+    </div>
+
+    <ul>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/">
+                <span>
+                    Home
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/archive/">
+                <span>
+                    Archive
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/tags/">
+                <span>
+                    Tags
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/about/">
+                <span>
+                    About
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/categories/">
+                <span>
+                    Categories
+                </span>
+            </a>
+        </li>
+        
+    </ul>
+
+    <div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center align-items-center">
+        <button class="mode-toggle btn" aria-label="Switch Mode"> 
+            <i class="fas fa-adjust"></i> 
+        </button>
+
+        <span class="icon-border"></span>
+        <a href="https://github.com/chen-gz" aria-label="github" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i>
+        </a>
+
+        <a href=" javascript:location.href = 'mailto:' + ['chen-gz','outlook.com'].join('@')" aria-label="email">
+            <i class="fas fa-envelope"></i>
+        </a>
+
+        <a href="/feed.xml" aria-label="rss"> <i class="fas fa-rss"></i> </a>
+    </div>
+
+    
+    
+</div>
+<div id="all-wrapper" class="d-flex flex-column"><div id="topbar-wrapper">
+    <div id="topbar" class="d-flex">
+        
+        <span id="breadcrumb" class="d-flex">
+              
+               
+            
+            
+            <div><a href='https://zongpitt.com/'>Home</a></div>
+              
+              
+            
+            <div><a href="https://zongpitt.com/baby-rudin">baby-rudin</a></div>
+               
+              
+            
+            <div><a href="https://zongpitt.com/baby-rudin/9-functions-of-several-variables">9-functions-of-several-variables</a></div>
+               
+                 
+                
+        </span>
+        <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i>
+        <div id="topbar-title">Guangzong</div>
+        <i id="search-trigger" class="fas fa-search fa-fw"></i>
+        <span id="search-wrapper" class="align-items-center">
+            <i class="fas fa-search fa-fw"></i>
+            <input class="form-control" id="search-input" type="search" aria-label="search" autocomplete="off"
+                placeholder="Search..." />
+            <i class="fa fa-times-circle fa-fw" id="search-cleaner"></i>
+        </span>
+    </div>
+</div>
+<div id="main-wrapper" class="d-flex mt-3">
+            <div id="core-wrapper" class="d-flex flex-column">
+                <div id="main" class="d-flex flex-column">
+                    
+<div class="post pl-1 pr-1 pl-md-2 pr-md-2">
+    
+    <div id="post-content">
+        <h1 style="text-align: center;">6 THE RANK THEOREM</h1>
+        <br>
+        
+        <p>Although this theorem is not as important as the inverse function
+theorem or the implicit function theorem, we include it as another
+interesting illustration of the general principle that the local
+behavior of a continuously differentiable mapping <span
+class="math inline">\(\mathbf{F}\)</span> near a point <span
+class="math inline">\(\mathbf{x}\)</span> is similar to that of the
+linear transformation <span
+class="math inline">\(\mathbf{F}^{\prime}(\mathbf{x})\)</span>.</p>
+<p>Before stating it, we need a few more facts about linear
+transformations.</p>
+<p><strong>9.30 Definitions</strong> Suppose <span
+class="math inline">\(X\)</span> and <span
+class="math inline">\(Y\)</span> are vector spaces, and <span
+class="math inline">\(A \in L(X, Y)\)</span>, as in Definition 9.6. The
+null space of <span class="math inline">\(A, \mathscr{N}(A)\)</span>, is
+the set of all <span class="math inline">\(\mathbf{x} \in X\)</span> at
+which <span class="math inline">\(A \mathbf{x}=\mathbf{0}\)</span>. It
+is clear that <span class="math inline">\(\mathcal{N}(A)\)</span> is a
+vector space in <span class="math inline">\(X\)</span>.</p>
+<p>Likewise, the range of <span class="math inline">\(A,
+\mathscr{R}(A)\)</span>, is a vector space in <span
+class="math inline">\(Y\)</span>.</p>
+<p>The <span class="math inline">\(\operatorname{rank}\)</span> of <span
+class="math inline">\(A\)</span> is defined to be the dimension of <span
+class="math inline">\(\mathscr{R}(A)\)</span>.</p>
+<p>For example, the invertible elements of <span
+class="math inline">\(L\left(R^{n}\right)\)</span> are precisely those
+whose rank is <span class="math inline">\(n\)</span>. This follows from
+Theorem 9.5.</p>
+<p>If <span class="math inline">\(A \in L(X, Y)\)</span> and <span
+class="math inline">\(A\)</span> has <span
+class="math inline">\(\operatorname{rank} 0\)</span>, then <span
+class="math inline">\(A \mathbf{x}=0\)</span> for all <span
+class="math inline">\(x \in A\)</span>, hence <span
+class="math inline">\(\mathscr{N}(A)=X\)</span>. In this connection, see
+Exercise <span class="math inline">\(25 .\)</span></p>
+<p><strong>9.31 Projections</strong> Let <span
+class="math inline">\(X\)</span> be a vector space. An operator <span
+class="math inline">\(P \in L(X)\)</span> is said to be a projection in
+<span class="math inline">\(X\)</span> if <span
+class="math inline">\(P^{2}=P\)</span>.</p>
+<p>More explicitly, the requirement is that <span
+class="math inline">\(P(P \mathbf{x})=P \mathbf{x}\)</span> for every
+<span class="math inline">\(\mathbf{x} \in X\)</span>. In other words,
+<span class="math inline">\(P\)</span> fixes every vector in its range
+<span class="math inline">\(\mathscr{R}(P)\)</span>.</p>
+<p>Here are some elementary properties of projections:</p>
+<ol type="a">
+<li>If <span class="math inline">\(P\)</span> is a projection in <span
+class="math inline">\(X\)</span>, then every <span
+class="math inline">\(\mathbf{x} \in X\)</span> has a unique
+representation of the form</li>
+</ol>
+<p><span class="math display">\[
+\mathbf{x}=\mathbf{x}_{1}+\mathbf{x}_{2}
+\]</span></p>
+<p>where <span class="math inline">\(\mathbf{x}_{1} \in \mathscr{R}(P),
+\mathbf{x}_{2} \in \mathscr{N}(P)\)</span>.</p>
+<p>To obtain the representation, put <span
+class="math inline">\(\mathbf{x}_{1}=P \mathbf{x},
+\mathbf{x}_{2}=\mathbf{x}-\mathbf{x}_{1}\)</span>. Then <span
+class="math inline">\(P \mathbf{x}_{2}=P \mathbf{x}-P \mathbf{x}_{1}=P
+\mathbf{x}-P^{2} \mathbf{x}=0\)</span>. As regards the uniqueness, apply
+<span class="math inline">\(P\)</span> to the equation <span
+class="math inline">\(\mathbf{x}=\mathbf{x}_{1}+\mathbf{x}_{2}\)</span>.
+Since <span class="math inline">\(\mathbf{x}_{1} \in \mathscr{R}(P), P
+\mathbf{x}_{1}=\mathbf{x}_{1}\)</span>; since <span
+class="math inline">\(P \mathbf{x}_{2}=\mathbf{0}\)</span>, it follows
+that <span class="math inline">\(\mathbf{x}_{1}=P
+\mathbf{x}\)</span>.</p>
+<ol start="2" type="a">
+<li>If <span class="math inline">\(X\)</span> is a finite-dimensional
+vector space and if <span class="math inline">\(X_{1}\)</span> is a
+vector space in <span class="math inline">\(X\)</span>, then there is a
+projection <span class="math inline">\(P\)</span> in <span
+class="math inline">\(X\)</span> with <span
+class="math inline">\(\mathscr{R}(P)=X_{1}\)</span>. If <span
+class="math inline">\(X_{1}\)</span> contains only 0 , this is trivial:
+put <span class="math inline">\(P \mathbf{x}=\mathbf{0}\)</span> for all
+<span class="math inline">\(\mathbf{x} \in X\)</span>.</li>
+</ol>
+<p>Assume <span class="math inline">\(\operatorname{dim}
+X_{1}=k&gt;0\)</span>. By Theorem 9.3, <span
+class="math inline">\(X\)</span> has then a basis <span
+class="math inline">\(\left\{\mathbf{u}_{1}, \ldots,
+\mathbf{u}_{n}\right\}\)</span> such that <span
+class="math inline">\(\left\{\mathbf{u}_{1}, \ldots,
+\mathbf{u}_{k}\right\}\)</span> is a basis of <span
+class="math inline">\(X_{1}\)</span>. Define</p>
+<p><span class="math display">\[
+P\left(c_{1} \mathbf{u}_{1}+\cdots+c_{n} \mathbf{u}_{n}\right)=c_{1}
+\mathbf{u}_{1}+\cdots+c_{k} \mathbf{u}_{k}
+\]</span></p>
+<p>for arbitrary scalars <span class="math inline">\(c_{1}, \ldots,
+c_{n}\)</span>.</p>
+<p>Then <span class="math inline">\(P \mathbf{x}=\mathbf{x}\)</span> for
+every <span class="math inline">\(\mathbf{x} \in X_{1}\)</span>, and
+<span class="math inline">\(X_{1}=\mathscr{R}(P)\)</span>.</p>
+<p>Note that <span class="math inline">\(\left\{\mathbf{u}_{k+1},
+\ldots, \mathbf{u}_{n}\right\}\)</span> is a basis of <span
+class="math inline">\(\mathcal{N}(P)\)</span>. Note also that there are
+infinitely many projections in <span class="math inline">\(X\)</span>,
+with range <span class="math inline">\(X_{1}\)</span>, if <span
+class="math inline">\(0&lt;\operatorname{dim}
+X_{1}&lt;\operatorname{dim} X\)</span>.</p>
+<p><strong>9.32 Theorem</strong> Suppose <span class="math inline">\(m,
+n, r\)</span> are nonnegative integers, <span class="math inline">\(m
+\geq r, n \geq r, \mathbf{F}\)</span> is a <span
+class="math inline">\(\mathscr{C}^{\prime}\)</span>-mapping of an open
+set <span class="math inline">\(E \subset R^{n}\)</span> into <span
+class="math inline">\(R^{m}\)</span>, and <span
+class="math inline">\(\mathbf{F}^{\prime}(\mathbf{x})\)</span> has rank
+<span class="math inline">\(r\)</span> for every <span
+class="math inline">\(\mathbf{x} \in E\)</span>.</p>
+<p>Fix <span class="math inline">\(\mathbf{a} \in E\)</span>, put <span
+class="math inline">\(A=\mathbf{F}^{\prime}(\mathbf{a})\)</span>, let
+<span class="math inline">\(Y_{1}\)</span> be the range of <span
+class="math inline">\(A\)</span>, and let <span
+class="math inline">\(P\)</span> be a projection in <span
+class="math inline">\(R^{m}\)</span> whose range is <span
+class="math inline">\(Y_{1}\)</span>. Let <span
+class="math inline">\(Y_{2}\)</span> be the null space of <span
+class="math inline">\(P\)</span>.</p>
+<p>Then there are open sets <span class="math inline">\(U\)</span> and
+<span class="math inline">\(V\)</span> in <span
+class="math inline">\(R^{n}\)</span>, with <span
+class="math inline">\(\mathbf{a} \in U, U \subset E\)</span>, and there
+is a 1-1 <span
+class="math inline">\(\mathscr{C}^{\prime}\)</span>-mapping <span
+class="math inline">\(\mathbf{H}\)</span> of <span
+class="math inline">\(V\)</span> onto <span
+class="math inline">\(U\)</span> (whose inverse is also of class <span
+class="math inline">\(\mathscr{C}^{\prime}\)</span> ) such that</p>
+<p><span class="math display">\[
+\mathbf{F}(\mathbf{H}(\mathbf{x}))=A \mathbf{x}+\varphi(A \mathbf{x})
+\quad(\mathbf{x} \in V)
+\]</span></p>
+<p>where <span class="math inline">\(\varphi\)</span> is <span
+class="math inline">\(a \mathscr{C}^{\prime}\)</span>-mapping of the
+open set <span class="math inline">\(A(V) \subset Y_{1}\)</span> into
+<span class="math inline">\(Y_{2}\)</span>.</p>
+<p>After the proof we shall give a more geometric description of the
+information that (66) contains.</p>
+<p>Proof If <span class="math inline">\(r=0\)</span>, Theorem <span
+class="math inline">\(9.19\)</span> shows that <span
+class="math inline">\(\mathbf{F}(\mathbf{x})\)</span> is constant in a
+neighborhood <span class="math inline">\(U\)</span> of a, and (66) holds
+trivially, with <span class="math inline">\(V=U,
+\mathbf{H}(\mathbf{x})=\mathbf{x},
+\varphi(0)=\mathbf{F}(\mathbf{a})\)</span>.</p>
+<p>From now on we assume <span class="math inline">\(r&gt;0\)</span>.
+Since <span class="math inline">\(\operatorname{dim} Y_{1}=r,
+Y_{1}\)</span> has a basis <span
+class="math inline">\(\left\{\mathbf{y}_{1}, \ldots,
+\mathbf{y}_{r}\right\}\)</span>. Choose <span
+class="math inline">\(\mathbf{z}_{i} \in R^{n}\)</span> so that <span
+class="math inline">\(A \mathbf{z}_{i}=\mathbf{y}_{i}(1 \leq i \leq
+r)\)</span>, and define a linear mapping <span
+class="math inline">\(S\)</span> of <span
+class="math inline">\(Y_{1}\)</span> into <span
+class="math inline">\(R^{n}\)</span> by setting</p>
+<p><span class="math display">\[
+S\left(c_{1} \mathbf{y}_{1}+\cdots+c_{r} \mathbf{y}_{r}\right)=c_{1}
+\mathbf{z}_{1}+\cdots+c_{r} \mathbf{z}_{r}
+\]</span></p>
+<p>for all scalars <span class="math inline">\(c_{1}, \ldots,
+c_{r}\)</span>.</p>
+<p>Then <span class="math inline">\(A S \mathbf{y}_{i}=A
+\mathbf{z}_{i}=\mathbf{y}_{i}\)</span> for <span class="math inline">\(1
+\leq i \leq r\)</span>. Thus</p>
+<p><span class="math display">\[
+A S \mathbf{y}=\mathrm{y} \quad\left(\mathrm{y} \in Y_{1}\right) \text
+{. }
+\]</span></p>
+<p>Define a mapping <span class="math inline">\(\mathbf{G}\)</span> of
+<span class="math inline">\(E\)</span> into <span
+class="math inline">\(R^{n}\)</span> by setting</p>
+<p><span class="math display">\[
+\mathbf{G}(\mathbf{x})=\mathbf{x}+S P[\mathbf{F}(\mathbf{x})-A
+\mathbf{x}] \quad(\mathbf{x} \in E) .
+\]</span></p>
+<p>Since <span
+class="math inline">\(\mathbf{F}^{\prime}(\mathbf{a})=A\)</span>,
+differentiation of (69) shows that <span
+class="math inline">\(\mathbf{G}^{\prime}(\mathbf{a})=I\)</span>, the
+identity operator on <span class="math inline">\(R^{n}\)</span>. By the
+inverse function theorem, there are open sets <span
+class="math inline">\(U\)</span> and <span
+class="math inline">\(V\)</span> in <span
+class="math inline">\(R^{n}\)</span>, with <span
+class="math inline">\(\mathbf{a} \in U\)</span>, such that <span
+class="math inline">\(\mathbf{G}\)</span> is a 1-1 mapping of <span
+class="math inline">\(U\)</span> onto <span
+class="math inline">\(V\)</span> whose inverse <span
+class="math inline">\(\mathbf{H}\)</span> is also of class <span
+class="math inline">\(\mathscr{C}^{\prime}\)</span>. Moreover, by
+shrinking <span class="math inline">\(U\)</span> and <span
+class="math inline">\(V\)</span>, if necessary, we can arrange it so
+that <span class="math inline">\(V\)</span> is convex and <span
+class="math inline">\(\mathbf{H}^{\prime}(\mathbf{x})\)</span> is
+invertible for every <span class="math inline">\(\mathbf{x} \in
+V\)</span>. Note that <span class="math inline">\(A S P A=A\)</span>,
+since <span class="math inline">\(P A=A\)</span> and (68) holds.
+Therefore (69) gives</p>
+<p><span class="math display">\[
+A \mathbf{G}(\mathbf{x})=P \mathbf{F}(\mathbf{x}) \quad(\mathbf{x} \in
+E) .
+\]</span></p>
+<p>In particular, (70) holds for <span class="math inline">\(\mathbf{x}
+\in U\)</span>. If we replace <span
+class="math inline">\(\mathbf{x}\)</span> by <span
+class="math inline">\(\mathbf{H}(\mathbf{x})\)</span>, we obtain</p>
+<p><span class="math display">\[
+P \mathbf{F}(\mathbf{H}(\mathbf{x}))=A \mathbf{x} \quad(\mathrm{x} \in
+V) .
+\]</span></p>
+<p>Define</p>
+<p><span class="math display">\[
+\psi(\mathbf{x})=\mathbf{F}(\mathbf{H}(\mathbf{x}))-A \mathbf{x}
+\quad(\mathbf{x} \in V)
+\]</span></p>
+<p>Since <span class="math inline">\(P A=A\)</span>, (71) implies that
+<span class="math inline">\(P \psi(\mathbf{x})=0\)</span> for all <span
+class="math inline">\(\mathbf{x} \in V\)</span>. Thus <span
+class="math inline">\(\psi\)</span> is a <span
+class="math inline">\(\mathscr{C}^{\prime}\)</span>-mapping of <span
+class="math inline">\(V\)</span> into <span
+class="math inline">\(Y_{2}\)</span>.</p>
+<p>Since <span class="math inline">\(V\)</span> is open, it is clear
+that <span class="math inline">\(A(V)\)</span> is an open subset of its
+range <span class="math inline">\(\mathscr{R}(A)=Y_{1}\)</span></p>
+<p>To complete the proof, i.e., to go from (72) to (66), we have to show
+that there is a <span
+class="math inline">\(\mathscr{C}^{\prime}\)</span>-mapping <span
+class="math inline">\(\varphi\)</span> of <span
+class="math inline">\(A(V)\)</span> into <span
+class="math inline">\(Y_{2}\)</span> which satisfies</p>
+<p><span class="math display">\[
+\varphi(A \mathbf{x})=\psi(\mathbf{x}) \quad(\mathbf{x} \in V) .
+\]</span></p>
+<p>As a step toward (73), we will first prove that</p>
+<p><span class="math display">\[
+\psi\left(\mathbf{x}_{1}\right)=\psi\left(\mathbf{x}_{2}\right)
+\]</span></p>
+<p>if <span class="math inline">\(\mathbf{x}_{1} \in V, \mathbf{x}_{2}
+\in V, A \mathbf{x}_{1}=A \mathbf{x}_{2}\)</span>.</p>
+<p>Put <span
+class="math inline">\(\Phi(\mathbf{x})=\mathbf{F}(\mathbf{H}(\mathbf{x}))\)</span>,
+for <span class="math inline">\(\mathbf{x} \in V\)</span>. Since <span
+class="math inline">\(\mathbf{H}^{\prime}(\mathbf{x})\)</span> has rank
+<span class="math inline">\(n\)</span> for every <span
+class="math inline">\(\mathbf{x} \in V\)</span>, and <span
+class="math inline">\(\mathbf{F}^{\prime}(\mathbf{x})\)</span> has rank
+<span class="math inline">\(r\)</span> for every <span
+class="math inline">\(\mathbf{x} \in U\)</span>, it follows that</p>
+<p><span class="math display">\[
+\operatorname{rank} \Phi^{\prime}(\mathbf{x})=\operatorname{rank}
+\mathbf{F}^{\prime}(\mathbf{H}(\mathbf{x}))
+\mathbf{H}^{\prime}(\mathbf{x})=r \quad(\mathbf{x} \in V) .
+\]</span></p>
+<p>Fix <span class="math inline">\(\mathbf{x} \in V\)</span>. Let <span
+class="math inline">\(M\)</span> be the range of <span
+class="math inline">\(\Phi^{\prime}(\mathbf{x})\)</span>. Then <span
+class="math inline">\(M \subset R^{m}, \operatorname{dim} M=r\)</span>.
+By (71),</p>
+<p><span class="math display">\[
+P \Phi^{\prime}(\mathbf{x})=A .
+\]</span></p>
+<p>Thus <span class="math inline">\(P\)</span> maps <span
+class="math inline">\(M\)</span> onto <span
+class="math inline">\(\mathscr{R}(A)=Y_{1}\)</span>. Since <span
+class="math inline">\(M\)</span> and <span
+class="math inline">\(Y_{1}\)</span> have the same dimension, it follows
+that <span class="math inline">\(P\)</span> (restricted to <span
+class="math inline">\(M\)</span> ) is 1-1.</p>
+<p>Suppose now that <span class="math inline">\(A
+\mathbf{h}=\mathbf{0}\)</span>. Then <span class="math inline">\(P
+\Phi^{\prime}(\mathbf{x}) \mathbf{h}=\mathbf{0}\)</span>, by (76). But
+<span class="math inline">\(\Phi^{\prime}(\mathbf{x}) \mathbf{h} \in
+M\)</span>, and <span class="math inline">\(P\)</span> is 1-1 on <span
+class="math inline">\(M\)</span>. Hence <span
+class="math inline">\(\Phi^{\prime}(\mathbf{x})
+\mathbf{h}=\mathbf{0}\)</span>. A look at (72) shows now that we have
+proved the following:</p>
+<p>If <span class="math inline">\(\mathbf{x} \in V\)</span> and <span
+class="math inline">\(A \mathbf{h}=\mathbf{0}\)</span>, then <span
+class="math inline">\(\psi^{\prime}(\mathbf{x})
+\mathbf{h}=\mathbf{0}\)</span>.</p>
+<p>We can now prove (74). Suppose <span
+class="math inline">\(\mathbf{x}_{1} \in V, \mathbf{x}_{2} \in V, A
+\mathbf{x}_{1}=A \mathbf{x}_{2}\)</span>. Put <span
+class="math inline">\(\mathbf{h}=\mathbf{x}_{2}-\mathbf{x}_{1}\)</span>
+and define</p>
+<p><span class="math display">\[
+\mathbf{g}(t)=\psi\left(\mathbf{x}_{1}+t \mathbf{h}\right) \quad(0 \leq
+t \leq 1)
+\]</span></p>
+<p>The convexity of <span class="math inline">\(V\)</span> shows that
+<span class="math inline">\(\mathbf{x}_{1}+t \mathbf{h} \in V\)</span>
+for these <span class="math inline">\(t\)</span>. Hence</p>
+<p><span class="math display">\[
+\mathbf{g}^{\prime}(t)=\psi^{\prime}\left(\mathbf{x}_{1}+t
+\mathbf{h}\right) h=0 \quad(0 \leq t \leq 1),
+\]</span></p>
+<p>so that <span
+class="math inline">\(\mathbf{g}(1)=\mathbf{g}(0)\)</span>. But <span
+class="math inline">\(\mathbf{g}(1)=\psi\left(\mathbf{x}_{2}\right)\)</span>
+and <span
+class="math inline">\(\mathbf{g}(0)=\psi\left(\mathbf{x}_{1}\right)\)</span>.
+This proves (74).</p>
+<p>By (74), <span class="math inline">\(\psi(\mathbf{x})\)</span>
+depends only on <span class="math inline">\(A \mathbf{x}\)</span>, for
+<span class="math inline">\(\mathbf{x} \in V\)</span>. Hence (73)
+defines <span class="math inline">\(\varphi\)</span> unambiguously in
+<span class="math inline">\(A(V)\)</span>. It only remains to be proved
+that <span class="math inline">\(\varphi \in
+\mathscr{C}^{\prime}\)</span>.</p>
+<p>Fix <span class="math inline">\(\mathbf{y}_{0} \in A(V)\)</span>, fix
+<span class="math inline">\(\mathbf{x}_{0} \in V\)</span> so that <span
+class="math inline">\(A \mathbf{x}_{0}=\mathbf{y}_{0}\)</span>. Since
+<span class="math inline">\(V\)</span> is open, <span
+class="math inline">\(\mathbf{y}_{0}\)</span> has a neighborhood <span
+class="math inline">\(W\)</span> in <span
+class="math inline">\(Y_{1}\)</span> such that the vector</p>
+<p><span class="math display">\[
+\mathbf{x}=\mathbf{x}_{0}+S\left(\mathbf{y}-\mathbf{y}_{0}\right)
+\]</span></p>
+<p>lies in <span class="math inline">\(V\)</span> for all <span
+class="math inline">\(\mathbf{y} \in W\)</span>. By (68),</p>
+<p><span class="math display">\[
+A \mathrm{x}=A \mathrm{x}_{0}+\mathrm{y}-\mathrm{y}_{0}=\mathrm{y}
+\]</span></p>
+<p>Thus (73) and (79) give</p>
+<p><span class="math display">\[
+\varphi(\mathbf{y})=\psi\left(\mathbf{x}_{0}-S \mathbf{y}_{0}+S
+\mathbf{y}\right) \quad(\mathbf{y} \in W) .
+\]</span></p>
+<p>This formula shows that <span class="math inline">\(\varphi \in
+\mathscr{C}^{\prime}\)</span> in <span class="math inline">\(W\)</span>,
+hence in <span class="math inline">\(A(V)\)</span>, since <span
+class="math inline">\(\mathbf{y}_{0}\)</span> was chosen arbitrarily in
+<span class="math inline">\(A(V)\)</span>.</p>
+<p>The proof is now complete.</p>
+<p>Here is what the theorem tells us about the geometry of the mapping
+<span class="math inline">\(\mathbf{F}\)</span>.</p>
+<p>If <span class="math inline">\(\mathbf{y} \in \mathbf{F}(U)\)</span>
+then <span
+class="math inline">\(\mathbf{y}=\mathbf{F}(\mathbf{H}(\mathbf{x}))\)</span>
+for some <span class="math inline">\(\mathbf{x} \in V\)</span>, and (66)
+shows that <span class="math inline">\(P \mathbf{y}=A
+\mathbf{x}\)</span>. Therefore</p>
+<p><span class="math display">\[
+\mathbf{y}=P \mathbf{y}+\varphi(P \mathbf{y}) \quad(\mathbf{y} \in
+\mathbf{F}(U))
+\]</span></p>
+<p>This shows that <span class="math inline">\(y\)</span> is determined
+by its projection <span class="math inline">\(P \mathbf{y}\)</span>, and
+that <span class="math inline">\(P\)</span>, restricted to <span
+class="math inline">\(\mathbf{F}(U)\)</span>, is a 1-1 mapping of <span
+class="math inline">\(\mathbf{F}(U)\)</span> onto <span
+class="math inline">\(A(V)\)</span>. Thus <span
+class="math inline">\(\mathbf{F}(U)\)</span> is an ” <span
+class="math inline">\(r\)</span>-dimensional surface” with precisely one
+point “over” each point of <span class="math inline">\(A(V)\)</span>. We
+may also regard <span class="math inline">\(F(U)\)</span> as the graph
+of <span class="math inline">\(\varphi\)</span>.</p>
+<p>If <span
+class="math inline">\(\Phi(\mathbf{x})=\mathbf{F}(\mathbf{H}(\mathbf{x}))\)</span>,
+as in the proof, then (66) shows that the level sets of <span
+class="math inline">\(\Phi\)</span> (these are the sets on which <span
+class="math inline">\(\Phi\)</span> attains a given value) are precisely
+the level sets of <span class="math inline">\(A\)</span> in <span
+class="math inline">\(V\)</span>. These are “flat” since they are
+intersections with <span class="math inline">\(V\)</span> of translates
+of the vector space <span class="math inline">\(\mathcal{N}(A)\)</span>.
+Note that <span class="math inline">\(\operatorname{dim}
+\mathcal{N}(A)=n-r\)</span> (Exercise 25).</p>
+<p>The level sets of <span class="math inline">\(\mathbf{F}\)</span> in
+<span class="math inline">\(U\)</span> are the images under <span
+class="math inline">\(\mathbf{H}\)</span> of the flat level sets of
+<span class="math inline">\(\Phi\)</span> in <span
+class="math inline">\(V\)</span>. They are thus ” <span
+class="math inline">\((n-r)\)</span>-dimensional surfaces” in <span
+class="math inline">\(U\)</span>.</p>
+
+    </div>
+    
+</div>
+</div>
+
+                <div id="footer-wrapper">
+                    <footer class="footer"><footer class="row pl-3 pr-3">
+    <div class="col-12 d-flex justify-content-between align-items-center text-muted pl-0 pr-0">
+        <div class="footer-left">
+            <p class="mb-0"> © 2022 <a href="https://github.com/chen-gz">guangzong</a>. <span data-toggle="tooltip"
+                    data-placement="top"
+                    title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author.">All
+                    rights reserved.</span></p>
+        </div>
+        <div class="footer-right">
+            <p class="mb-0"> Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">hugo</a>
+                with <a href="https://github.com/chen-gz/hugo_zong" target="_blank" rel="noopener">zong</a>
+                theme.</p>
+        </div>
+    </div>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script> MathJax = {
+            tex: {
+                tags: 'ams',
+            }
+        };</script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</footer>
+</footer>
+                </div>
+            </div>
+            <div id="panel-wrapper" class="d-flex flex-column"><div id="toc-wrapper" class="mb-5 pl-2">
+    <span>Contents</span>
+    <nav id="toc" data-toggle="toc">
+        
+        
+        
+    </nav>
+</div>
+
+<div id="access-lastmod" class="pb-4 pl-2">
+    <div class="panel-heading">Recently Updated</div>
+    <ul class="post-content pl-3 pb-1 ml-1 mt-2">
+          
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/1-total-variation/">Total Variation</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-7/1-derivatives-of-measures/">Derivatives of Measures</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/3-consequences-of-the-radon-nikodym-theorem/">Consequences of the Radon-Nikodym Theorem</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/4-bounded-linear-functionals-on-lp/">Bounded linear functional on Lp</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/2-abosolute-continuity/">Abosolute Continuity</a></li>
+        
+    </ul>
+</div>
+
+<div id="access-tags" class="pl-2">
+    <div class="panel-heading">Trending Tags</div>
+    <div class="d-flex flex-wrap mt-3 mb-1 mr-3">
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/algorithm/">Algorithm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/android/">Android</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c/">C</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c-language/">c language</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/caddy/">Caddy</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cadence/">Cadence</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cdc/">CDC</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/classification/">classification</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/compress/">Compress</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/conf/">Conf</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/double-column/">Double Column</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/errno13/">Errno13</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/fish/">fish</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gan/">GAN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/git/">Git</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gtk/">Gtk</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/html/">Html</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/i3/">I3</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/idea/">Idea</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/java/">Java</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/latex/">Latex</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lda/">LDA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linear-programming/">Linear Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linux/">Linux</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lr/">LR</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/math/">Math</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mathematics/">Mathematics</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matlab/">Matlab</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matplot/">matplot</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/memory/">Memory</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mermaid/">Mermaid</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/misc/">Misc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/ml/">ML</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mosfet/">Mosfet</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/network/">Network</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/nn/">NN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pandoc/">Pandoc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pca/">PCA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/probability/">Probability</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/productive/">Productive</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/program/">Program</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/programming/">Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/python/">Python</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/qt/">Qt</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/random-variable/">Random Variable</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rcnn/">RCNN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rust/">Rust</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/security/">Security</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/software/">Software</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/std/">Std</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/svd/">Svd</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/tool/">Tool</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/usb/">USB</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vim/">Vim</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpn/">Vpn</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpnc/">Vpnc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/xterm/">xterm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/zsh/">Zsh</a>
+        
+    </div>
+</div>
+</div><div id="search-result-wrapper" class="d-flex justify-content-center unloaded">
+    <div class="col-12 col-sm-11 post-content">
+        <div id="search-hints"></div>
+        <div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3 col-12"></div>
+    </div>
+</div>
+
+<script src="/js/fuse.min.js"></script>
+<script src="/js/fastsearch.js"></script>
+
+
+</div>
+        <div id="mask"></div>
+        <a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button"
+            style="display: none">
+            <i class="fas fa-angle-up"></i>
+        </a>
+    </div>
+    
+</body>
+
+</html>

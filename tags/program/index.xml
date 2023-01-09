@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Program on Guangzong Blog</title>
+    <link>https://zongpitt.com/tags/program/</link>
+    <description>Recent content in Program on Guangzong Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 03 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://zongpitt.com/tags/program/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JavaFX in IDEA</title>
+      <link>https://zongpitt.com/posts/2021-01-03-javafx-in-idea/</link>
+      <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-01-03-javafx-in-idea/</guid>
+      <description>for JavaFx in idea we need add VM option
+link https://openjfx.io/openjfx-docs/</description>
+    </item>
+    
+  </channel>
+</rss>

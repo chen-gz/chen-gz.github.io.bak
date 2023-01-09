@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mathematics on Guangzong Blog</title>
+    <link>https://zongpitt.com/tags/mathematics/</link>
+    <description>Recent content in Mathematics on Guangzong Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 11 Oct 2020 20:20:00 -0400</lastBuildDate><atom:link href="https://zongpitt.com/tags/mathematics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mathematica Install</title>
+      <link>https://zongpitt.com/posts/2020-10-11-mathematica-install/</link>
+      <pubDate>Sun, 11 Oct 2020 20:20:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-10-11-mathematica-install/</guid>
+      <description>We don’t need using root to execute the file.
+Install Location Create an folder in /opt/ and change owner to normal user
+mkdir Mathematica chown zong:users mathematica provide following position for Mathematica
+/opt/Mathematica/11.3 create directory type y
+it will start installing
+Start Script in order to start Mathematica and change nothing in our system.
+Create a folder bin under Mathematica folder.
+cd /opt/Mathematica/11.3 mkdir bin chown zong:users bin type following command in Mathematica install terminal</description>
+    </item>
+    
+  </channel>
+</rss>

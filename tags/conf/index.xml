@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Conf on Guangzong Blog</title>
+    <link>https://zongpitt.com/tags/conf/</link>
+    <description>Recent content in Conf on Guangzong Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 08 Oct 2020 23:54:00 -0400</lastBuildDate><atom:link href="https://zongpitt.com/tags/conf/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Setup ZSH</title>
+      <link>https://zongpitt.com/posts/2020-10-08-setup-zsh/</link>
+      <pubDate>Thu, 08 Oct 2020 23:54:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-10-08-setup-zsh/</guid>
+      <description>install zsh and plugins in order to keep system clear and I don’t need too much functions. So I only using the package which already in archlinux package.
+pacman -Syu zsh zhs-syntax-highlighting zsh-theme-powerlevel10k` pacman -Syu zsh-autosuggestings After these we need zshrc to configure zsh.
+Following command to get my zsh configuration
+wget guanngzong.xyz ./assets/linux/conf/zsh for zsh-theme-powerlevel10k theme, we just using following command to start configuration</description>
+    </item>
+    
+    <item>
+      <title>Vim Configuration</title>
+      <link>https://zongpitt.com/posts/2020-10-10-vim-configuration/</link>
+      <pubDate>Thu, 08 Oct 2020 23:54:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-10-10-vim-configuration/</guid>
+      <description>install neovim install neovim and python-pynvim. Install python-pynvim in order to support python
+basic settings show line number
+set number show invisible number
+set list set listchars=tab:&amp;gt;- share system clipboard. in Archlinux package xclip is required
+set clipboard=unnamedplus convert tab to space
+set expandtab spell check
+set spell spelllang=en_us plug-in plug-in manager vim-plug
+I am using neovim, so following command used to install vim-plug.
+sh -c &amp;#39;curl -fLo &amp;quot;${XDG_DATA_HOME:-$HOME/.local/share}&amp;quot;/nvim/site/autoload/plug.vim --create-dirs \ https://raw.</description>
+    </item>
+    
+  </channel>
+</rss>

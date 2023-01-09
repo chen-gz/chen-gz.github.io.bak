@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on Guangzong Blog</title>
+    <link>https://zongpitt.com/tags/python/</link>
+    <description>Recent content in Python on Guangzong Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 29 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://zongpitt.com/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python Permission Denied</title>
+      <link>https://zongpitt.com/posts/2020-10-29-python-errno13-permission-denied/</link>
+      <pubDate>Thu, 29 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-10-29-python-errno13-permission-denied/</guid>
+      <description>This may happen in windows although you have permission.
+The way to solve the problem is change properity of file in windows.
+file-&amp;gt;properties-&amp;gt;General
+uncheck Hidden and archived</description>
+    </item>
+    
+  </channel>
+</rss>

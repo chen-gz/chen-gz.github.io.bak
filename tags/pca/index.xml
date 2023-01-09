@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PCA on Guangzong Blog</title>
+    <link>https://zongpitt.com/tags/pca/</link>
+    <description>Recent content in PCA on Guangzong Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 26 Feb 2021 13:50:00 -0500</lastBuildDate><atom:link href="https://zongpitt.com/tags/pca/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Principal component analysis</title>
+      <link>https://zongpitt.com/posts/2021-02-26-principal-component-analysis/</link>
+      <pubDate>Fri, 26 Feb 2021 13:50:00 -0500</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-02-26-principal-component-analysis/</guid>
+      <description>excellent material from Andrew Ng
+https://github.com/chen-gz/picBed/blob/master/PCA.pdf
+I add intuition here.
+The intuition of PCA for me comes from linear algebra’s base. (Orthogonal unit vector) form a vector space. All vectors can form from these vectors. Some bases only provide little information, so they can be ignored.
+PCA will keep the features with maximum variance.
+Procedure Normalization the data There are \(N\) samples, each sample is \(x^i \in \mathbb{R}^n\).
+Calculate mean value.</description>
+    </item>
+    
+  </channel>
+</rss>

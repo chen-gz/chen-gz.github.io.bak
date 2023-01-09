@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css"
+        class="dark-mode-native-dark-original" />
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+     
+    <link rel="stylesheet" href="https://zongpitt.com/sass/main.06935202011a97ba473ebeeb0cb6788daa9fb5a9fff471a4e85850293d1c5ac4.css" />
+    <title>
+          Guangzong Blog | Wasserstein GAN 2
+    </title>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.bundle.min.js"></script>
+    <script src=" https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.js"></script>
+
+    <script
+        src="https://cdn.jsdelivr.net/combine/npm/magnific-popup@1/dist/jquery.magnific-popup.min.js,npm/lozad/dist/lozad.min.js,npm/clipboard@2/dist/clipboard.min.js"></script>
+    <script type="text/javascript" src="/js/commons/back-to-top.js"></script>
+    
+    
+    
+    <script type="text/javascript" src="/js/commons/topbar-switch.js"></script>
+    <script type="text/javascript" src="/js/commons/sidebar.js"></script>
+    <script type="text/javascript" src="/js/utils/category-collapse.js"></script>
+    <script type="text/javascript" src="/js/utils/checkbox.js"></script>
+    <script type="text/javascript" src="/js/utils/clipboard.js"></script>
+    <script type="text/javascript" src="/js/utils/img-extra.js"></script>
+    <script type="text/javascript" src="/js/utils/pageviews.js"></script>
+    
+    <script type="text/javascript" src="/js/utils/timeago.js"></script>
+    
+    
+</head>
+<body data-spy="scroll" data-target="#toc" data-topbar-visible="true" class="d-flex"><div id="sidebar" class="d-flex flex-column align-items-end">
+    <div class="profile-wrapper text-center">
+
+        <div id="avatar">
+            <a href="/" alt="avatar" class="mx-auto"> <img src=https://github.com/chen-gz/chen-gz/blob/main/mine_square.jpg?raw&#61;truehttps://raw.githubusercontent.com/chen-gz/chen-gz/blob/main/mine_square.jpg alt="avatar"
+                    onerror="this.style.display='none'"> </a>
+        </div>
+
+        <div class="site-title mt-3"> <a href="/">Guangzong</a> </div>
+        <div class="site-subtitle font-italic">Welcome to my blog</div>
+    </div>
+
+    <ul>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/">
+                <span>
+                    Home
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/archive/">
+                <span>
+                    Archive
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/tags/">
+                <span>
+                    Tags
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/about/">
+                <span>
+                    About
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/categories/">
+                <span>
+                    Categories
+                </span>
+            </a>
+        </li>
+        
+    </ul>
+
+    <div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center align-items-center">
+        <button class="mode-toggle btn" aria-label="Switch Mode"> 
+            <i class="fas fa-adjust"></i> 
+        </button>
+
+        <span class="icon-border"></span>
+        <a href="https://github.com/chen-gz" aria-label="github" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i>
+        </a>
+
+        <a href=" javascript:location.href = 'mailto:' + ['chen-gz','outlook.com'].join('@')" aria-label="email">
+            <i class="fas fa-envelope"></i>
+        </a>
+
+        <a href="/feed.xml" aria-label="rss"> <i class="fas fa-rss"></i> </a>
+    </div>
+
+    
+    
+</div>
+<div id="all-wrapper" class="d-flex flex-column"><div id="topbar-wrapper">
+    <div id="topbar" class="d-flex">
+        
+        <span id="breadcrumb" class="d-flex">
+              
+               
+            
+            
+            <div><a href='https://zongpitt.com/'>Home</a></div>
+              
+              
+            
+            <div><a href="https://zongpitt.com/posts">posts</a></div>
+               
+                 
+                
+        </span>
+        <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i>
+        <div id="topbar-title">Guangzong</div>
+        <i id="search-trigger" class="fas fa-search fa-fw"></i>
+        <span id="search-wrapper" class="align-items-center">
+            <i class="fas fa-search fa-fw"></i>
+            <input class="form-control" id="search-input" type="search" aria-label="search" autocomplete="off"
+                placeholder="Search..." />
+            <i class="fa fa-times-circle fa-fw" id="search-cleaner"></i>
+        </span>
+    </div>
+</div>
+<div id="main-wrapper" class="d-flex mt-3">
+            <div id="core-wrapper" class="d-flex flex-column">
+                <div id="main" class="d-flex flex-column">
+                    
+<div class="post pl-1 pr-1 pl-md-2 pr-md-2">
+    
+    <div id="post-content">
+        <h1 style="text-align: center;">Wasserstein GAN 2</h1>
+        <br>
+        
+        <p>There are two paper to introduce Wasserstein GAN. <a
+href="https://arxiv.org/abs/1701.04862">Towards Principled Methods for
+Training Generative Adversarial Networks</a> and <a
+href="https://arxiv.org/abs/1701.07875">Wasserstein GAN</a>.</p>
+<h3 id="different-distances">Different Distances</h3>
+<ul>
+<li>The Total Variation (TV) distance <span class="math display">\[
+\delta\left(\mathbb{P}_{r}, \mathbb{P}_{g}\right)=\sup _{A \in
+\Sigma}\left|\mathbb{P}_{r}(A)-\mathbb{P}_{g}(A)\right|
+\]</span></li>
+<li>The Kullback-Leibler (KL) divergence</li>
+</ul>
+<p><span class="math display">\[
+K L\left(\mathbb{P}_{r} \| \mathbb{P}_{g}\right)=\int \log
+\left(\frac{P_{r}(x)}{P_{g}(x)}\right) P_{r}(x) d \mu(x)
+\]</span></p>
+<p>where both <span class="math inline">\(\mathbb{P}_{r}\)</span> and
+<span class="math inline">\(\mathbb{P}_{g}\)</span> are assumed to be
+absolutely continuous, and therefore admit densities, with respect to a
+same measure <span class="math inline">\(\mu\)</span> defined on <span
+class="math inline">\(\mathcal{X} \stackrel{2}{ }^{2}\)</span> The KL
+divergence is famously assymetric and possibly infinite when there are
+points such that <span class="math inline">\(P_{g}(x)=0\)</span> and
+<span class="math inline">\(P_{r}(x)&gt;0\)</span></p>
+<ul>
+<li>The Jensen-Shannon (JS) divergence</li>
+</ul>
+<p><span class="math display">\[
+J S\left(\mathbb{P}_{r}, \mathbb{P}_{g}\right)=K L\left(\mathbb{P}_{r}
+\| \mathbb{P}_{m}\right)+K L\left(\mathbb{P}_{g} \|
+\mathbb{P}_{m}\right)
+\]</span> where <span class="math inline">\(\mathbb{P}_{m}\)</span> is
+the mixture <span
+class="math inline">\(\left(\mathbb{P}_{r}+\mathbb{P}_{g}\right) / 2
+.\)</span> This divergence is symmetrical and always defined because we
+can choose <span class="math inline">\(\mu=\mathbb{P}_{m}\)</span>.</p>
+<ul>
+<li>The Earth-Mover (EM) distance or Wasserstein-1</li>
+</ul>
+<p><span class="math display">\[
+W\left(\mathbb{P}_{r}, \mathbb{P}_{g}\right)=\inf _{\gamma \in
+\Pi\left(\mathbb{P}_{r}, \mathbb{P}_{g}\right)} \mathbb{E}_{(x, y) \sim
+\gamma}[\|x-y\|]
+\]</span></p>
+<p>where <span class="math inline">\(\Pi\left(\mathbb{P}_{r},
+\mathbb{P}_{g}\right)\)</span> denotes the set of all joint
+distributions <span class="math inline">\(\gamma(x, y)\)</span> whose
+marginals are respectively <span
+class="math inline">\(\mathbb{P}_{r}\)</span> and <span
+class="math inline">\(\mathbb{P}_{g}\)</span>. Intuitively, <span
+class="math inline">\(\gamma(x, y)\)</span> indicates how much “mass”
+must be transported from <span class="math inline">\(x\)</span> to <span
+class="math inline">\(y\)</span> in order to transform the distributions
+<span class="math inline">\(\mathbb{P}_{r}\)</span> into the
+distribution <span class="math inline">\(\mathbb{P}_{g} .\)</span> The
+EM distance then is the “cost” of the optimal transport plan.</p>
+<p>The GAN paper give an example for these distance. I just provide the
+result. When <span class="math inline">\(P_r\)</span> and <span
+class="math inline">\(P_g\)</span> does not perfect align. The distance
+show as follow.</p>
+<ul>
+<li><p><span class="math display">\[J S\left(\mathbb{P}_{0},
+\mathbb{P}_{\theta}\right)= \begin{cases}\log 2 &amp; \text { if }
+\theta \neq 0 \\ 0 &amp; \text { if } \theta=0\end{cases}
+\]</span></p></li>
+<li><p><span class="math display">\[ W\left(\mathbb{P}_{0},
+\mathbb{P}_{\theta}\right)=|\theta|\]</span></p></li>
+<li><p><span class="math display">\[K L\left(\mathbb{P}_{\theta} \|
+\mathbb{P}_{0}\right)=K L\left(\mathbb{P}_{0} \|
+\mathbb{P}_{\theta}\right)= \begin{cases}+\infty &amp; \text { if }
+\theta \neq 0 \\ 0 &amp; \text { if }
+\theta=0\end{cases}\]</span></p></li>
+<li><p><span class="math display">\[  \text { and }
+\delta\left(\mathbb{P}_{0}, \mathbb{P}_{\theta}\right)= \begin{cases}1
+&amp; \text { if } \theta \neq 0 \\ 0 &amp; \text { if }
+\theta=0\end{cases}  \]</span></p></li>
+</ul>
+<h4 id="assumption-1">Assumption 1</h4>
+<p>Let <span class="math inline">\(g: \mathcal{Z} \times \mathbb{R}^{d}
+\rightarrow \mathcal{X}\)</span> be locally Lipschitz between finite
+dimensional vector spaces. We will denote <span
+class="math inline">\(g_{\theta}(z)\)</span> it’s evaluation on
+coordinates <span class="math inline">\((z, \theta) .\)</span> We say
+that <span class="math inline">\(g\)</span> satisfies assumption 1 for a
+certain probability distribution <span class="math inline">\(p\)</span>
+over <span class="math inline">\(\mathcal{Z}\)</span> if there are local
+Lipschitz constants <span class="math inline">\(L(\theta, z)\)</span>
+such that <span class="math display">\[
+\mathbb{E}_{z \sim p}[L(\theta, z)]&lt;+\infty
+\]</span></p>
+<h4 id="theorem-1.">Theorem 1.</h4>
+<p>Let <span class="math inline">\(\mathbb{P}_{r}\)</span> be a fixed
+distribution over <span class="math inline">\(\mathcal{X} .\)</span> Let
+<span class="math inline">\(Z\)</span> be a random variable (e.g
+Gaussian) over another space <span class="math inline">\(\mathcal{Z}
+.\)</span> Let <span class="math inline">\(g: \mathcal{Z} \times
+\mathbb{R}^{d} \rightarrow \mathcal{X}\)</span> be a function, that will
+be denoted <span class="math inline">\(g_{\theta}(z)\)</span> with <span
+class="math inline">\(z\)</span> the first coordinate and <span
+class="math inline">\(\theta\)</span> the second. Let <span
+class="math inline">\(\mathbb{P}_{\theta}\)</span> denote the
+distribution of <span class="math inline">\(g_{\theta}(Z) .\)</span>
+Then, 1. If <span class="math inline">\(g\)</span> is continuous in
+<span class="math inline">\(\theta\)</span>, so is <span
+class="math inline">\(W\left(\mathbb{P}_{r},
+\mathbb{P}_{\theta}\right)\)</span>. 2. If <span
+class="math inline">\(g\)</span> is locally Lipschitz and satisfies
+regularity assumption 1, then <span
+class="math inline">\(W\left(\mathbb{P}_{r},
+\mathbb{P}_{\theta}\right)\)</span> is continuous everywhere, and
+differentiable almost everywhere. 3. Statements 1-2 are false for the
+Jensen-Shannon divergence <span class="math inline">\(J
+S\left(\mathbb{P}_{r}, \mathbb{P}_{\theta}\right)\)</span> and all the
+KLs.</p>
+<p>This theorem shows Earth-Mover distance is continue but <span
+class="math inline">\(JS\)</span>, <span
+class="math inline">\(KL\)</span> are not.</p>
+<h4 id="corollary-1.">Corollary 1.</h4>
+<p>Let <span class="math inline">\(g_{\theta}\)</span> be any
+feedforward neural network <span class="math inline">\(p(z)\)</span> a
+prior over <span class="math inline">\(z\)</span> such that <span
+class="math inline">\(\mathbb{E}_{z \sim p(z)}[\|z\|]&lt;\infty\)</span>
+(e.g. Gaussian, uniform, etc.). Then assumption 1 is satisfied and
+therefore <span class="math inline">\(W\left(\mathbb{P}_{r},
+\mathbb{P}_{\theta}\right)\)</span> is continuous everywhere and
+differentiable almost everywhere.</p>
+<h4 id="theorem-2.">Theorem 2.</h4>
+<p>Theorem 2. Let <span class="math inline">\(\mathbb{P}\)</span> be a
+distribution on a compact space <span
+class="math inline">\(\mathcal{X}\)</span> and <span
+class="math inline">\(\left(\mathbb{P}_{n}\right)_{n \in
+\mathbb{N}}\)</span> be a sequence of distributions on <span
+class="math inline">\(\mathcal{X} .\)</span> Then, considering all
+limits as <span class="math inline">\(n \rightarrow \infty\)</span>, 1.
+The following statements are equivalent - <span
+class="math inline">\(\delta\left(\mathbb{P}_{n}, \mathbb{P}\right)
+\rightarrow 0\)</span> with <span class="math inline">\(\delta\)</span>
+the total variation distance. - <span class="math inline">\(J
+S\left(\mathbb{P}_{n}, \mathbb{P}\right) \rightarrow 0\)</span> with JS
+the Jensen-Shannon divergence. 2. The following statements are
+equivalent - <span class="math inline">\(W\left(\mathbb{P}_{n},
+\mathbb{P}\right) \rightarrow 0\)</span> - <span
+class="math inline">\(\mathbb{P}_{n} \stackrel{\mathcal{D}}{\rightarrow}
+\mathbb{P}\)</span> where <span
+class="math inline">\(\stackrel{\mathcal{D}}{\rightarrow}\)</span>
+represents convergence in distribution for random variables. 3. <span
+class="math inline">\(K L\left(\mathbb{P}_{n} \| \mathbb{P}\right)
+\rightarrow 0\)</span> or <span class="math inline">\(K
+L\left(\mathbb{P} \| \mathbb{P}_{n}\right) \rightarrow 0\)</span> imply
+the statements in (1). 4. The statements in (1) imply the statements in
+(2).</p>
+<h2 id="wasserstein-gan">Wasserstein GAN</h2>
+<p>Because use definition of Earth mover distance is highly
+intractable.</p>
+<p>Kantorovich-Rubinstein duality tell us that <span
+class="math display">\[
+W\left(\mathbb{P}_{r}, \mathbb{P}_{\theta}\right)=\sup _{\|f\|_{L} \leq
+1} \mathbb{E}_{x \sim \mathbb{P}_{r}}[f(x)]-\mathbb{E}_{x \sim
+\mathbb{P}_{\theta}}[f(x)]
+\]</span> where the supremum is over all the 1-Lipschitz functions <span
+class="math inline">\(f: \mathcal{X} \rightarrow \mathbb{R}\)</span>.
+Note that if we replace <span class="math inline">\(\|f\|_{L} \leq
+1\)</span> for <span class="math inline">\(\|f\|_{L} \leq K\)</span>
+(consider <span class="math inline">\(K\)</span> -Lipschitz for some
+constant <span class="math inline">\(\left.K\right)\)</span>, then we
+end up with <span class="math inline">\(K \cdot W\left(\mathbb{P}_{r},
+\mathbb{P}_{g}\right)\)</span>.</p>
+<p>In original paper proposed using clip to ensure the 1-Lipschitz
+condition. The issue cause by this setting is describe in the paper.
+Another paper propose using gradient penalty to ensure 1-Lipschitz. It
+will give better result than weight clip. Adam will not work in weigh
+clip setting. RMSprop is used in this algorithm. WGAN-GP solve this
+issue.</p>
+<h4 id="theorem-3">Theorem 3</h4>
+<p>Theorem 3. Let <span class="math inline">\(\mathbb{P}_{r}\)</span> be
+any distribution. Let <span
+class="math inline">\(\mathbb{P}_{\theta}\)</span> be the distribution
+of <span class="math inline">\(g_{\theta}(Z)\)</span> with <span
+class="math inline">\(Z\)</span> a random variable with density <span
+class="math inline">\(p\)</span> and <span
+class="math inline">\(g_{\theta}\)</span> a function satisfying
+assumption 1. Then, there is a solution <span class="math inline">\(f:
+\mathcal{X} \rightarrow \mathbb{R}\)</span> to the problem <span
+class="math display">\[
+\max _{\|f\|_{L} \leq 1} \mathbb{E}_{x \sim
+\mathbb{P}_{r}}[f(x)]-\mathbb{E}_{x \sim \mathbb{P}_{\theta}}[f(x)]
+\]</span> and we have <span class="math display">\[
+\nabla_{\theta} W\left(\mathbb{P}_{r},
+\mathbb{P}_{\theta}\right)=-\mathbb{E}_{z \sim
+p(z)}\left[\nabla_{\theta} f\left(g_{\theta}(z)\right)\right]
+\]</span> when both terms are well-defined.</p>
+<h2 id="algorithm">Algorithm</h2>
+<p><img
+src="https://raw.githubusercontent.com/chen-gz/picBed/master/20210718190440.png" /></p>
+
+    </div>
+    
+</div>
+</div>
+
+                <div id="footer-wrapper">
+                    <footer class="footer"><footer class="row pl-3 pr-3">
+    <div class="col-12 d-flex justify-content-between align-items-center text-muted pl-0 pr-0">
+        <div class="footer-left">
+            <p class="mb-0"> © 2022 <a href="https://github.com/chen-gz">guangzong</a>. <span data-toggle="tooltip"
+                    data-placement="top"
+                    title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author.">All
+                    rights reserved.</span></p>
+        </div>
+        <div class="footer-right">
+            <p class="mb-0"> Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">hugo</a>
+                with <a href="https://github.com/chen-gz/hugo_zong" target="_blank" rel="noopener">zong</a>
+                theme.</p>
+        </div>
+    </div>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script> MathJax = {
+            tex: {
+                tags: 'ams',
+            }
+        };</script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</footer>
+</footer>
+                </div>
+            </div>
+            <div id="panel-wrapper" class="d-flex flex-column"><div id="toc-wrapper" class="mb-5 pl-2">
+    <span>Contents</span>
+    <nav id="toc" data-toggle="toc">
+        
+        
+        
+    </nav>
+</div>
+
+<div id="access-lastmod" class="pb-4 pl-2">
+    <div class="panel-heading">Recently Updated</div>
+    <ul class="post-content pl-3 pb-1 ml-1 mt-2">
+          
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/1-total-variation/">Total Variation</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-7/1-derivatives-of-measures/">Derivatives of Measures</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/3-consequences-of-the-radon-nikodym-theorem/">Consequences of the Radon-Nikodym Theorem</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/4-bounded-linear-functionals-on-lp/">Bounded linear functional on Lp</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/2-abosolute-continuity/">Abosolute Continuity</a></li>
+        
+    </ul>
+</div>
+
+<div id="access-tags" class="pl-2">
+    <div class="panel-heading">Trending Tags</div>
+    <div class="d-flex flex-wrap mt-3 mb-1 mr-3">
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/algorithm/">Algorithm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/android/">Android</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c/">C</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c-language/">c language</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/caddy/">Caddy</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cadence/">Cadence</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cdc/">CDC</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/classification/">classification</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/compress/">Compress</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/conf/">Conf</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/double-column/">Double Column</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/errno13/">Errno13</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/fish/">fish</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gan/">GAN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/git/">Git</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gtk/">Gtk</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/html/">Html</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/i3/">I3</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/idea/">Idea</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/java/">Java</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/latex/">Latex</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lda/">LDA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linear-programming/">Linear Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linux/">Linux</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lr/">LR</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/math/">Math</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mathematics/">Mathematics</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matlab/">Matlab</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matplot/">matplot</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/memory/">Memory</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mermaid/">Mermaid</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/misc/">Misc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/ml/">ML</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mosfet/">Mosfet</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/network/">Network</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/nn/">NN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pandoc/">Pandoc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pca/">PCA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/probability/">Probability</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/productive/">Productive</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/program/">Program</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/programming/">Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/python/">Python</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/qt/">Qt</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/random-variable/">Random Variable</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rcnn/">RCNN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rust/">Rust</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/security/">Security</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/software/">Software</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/std/">Std</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/svd/">Svd</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/tool/">Tool</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/usb/">USB</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vim/">Vim</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpn/">Vpn</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpnc/">Vpnc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/xterm/">xterm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/zsh/">Zsh</a>
+        
+    </div>
+</div>
+</div><div id="search-result-wrapper" class="d-flex justify-content-center unloaded">
+    <div class="col-12 col-sm-11 post-content">
+        <div id="search-hints"></div>
+        <div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3 col-12"></div>
+    </div>
+</div>
+
+<script src="/js/fuse.min.js"></script>
+<script src="/js/fastsearch.js"></script>
+
+
+</div>
+        <div id="mask"></div>
+        <a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button"
+            style="display: none">
+            <i class="fas fa-angle-up"></i>
+        </a>
+    </div>
+    
+</body>
+
+</html>

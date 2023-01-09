@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css"
+        class="dark-mode-native-dark-original" />
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+     
+    <link rel="stylesheet" href="https://zongpitt.com/sass/main.06935202011a97ba473ebeeb0cb6788daa9fb5a9fff471a4e85850293d1c5ac4.css" />
+    <title>
+          Guangzong Blog | 7 THE STONE-WEIERSTRASS THEOREM
+    </title>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.bundle.min.js"></script>
+    <script src=" https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.js"></script>
+
+    <script
+        src="https://cdn.jsdelivr.net/combine/npm/magnific-popup@1/dist/jquery.magnific-popup.min.js,npm/lozad/dist/lozad.min.js,npm/clipboard@2/dist/clipboard.min.js"></script>
+    <script type="text/javascript" src="/js/commons/back-to-top.js"></script>
+    
+    
+    
+    <script type="text/javascript" src="/js/commons/topbar-switch.js"></script>
+    <script type="text/javascript" src="/js/commons/sidebar.js"></script>
+    <script type="text/javascript" src="/js/utils/category-collapse.js"></script>
+    <script type="text/javascript" src="/js/utils/checkbox.js"></script>
+    <script type="text/javascript" src="/js/utils/clipboard.js"></script>
+    <script type="text/javascript" src="/js/utils/img-extra.js"></script>
+    <script type="text/javascript" src="/js/utils/pageviews.js"></script>
+    
+    <script type="text/javascript" src="/js/utils/timeago.js"></script>
+    
+    
+</head>
+<body data-spy="scroll" data-target="#toc" data-topbar-visible="true" class="d-flex"><div id="sidebar" class="d-flex flex-column align-items-end">
+    <div class="profile-wrapper text-center">
+
+        <div id="avatar">
+            <a href="/" alt="avatar" class="mx-auto"> <img src=https://github.com/chen-gz/chen-gz/blob/main/mine_square.jpg?raw&#61;truehttps://raw.githubusercontent.com/chen-gz/chen-gz/blob/main/mine_square.jpg alt="avatar"
+                    onerror="this.style.display='none'"> </a>
+        </div>
+
+        <div class="site-title mt-3"> <a href="/">Guangzong</a> </div>
+        <div class="site-subtitle font-italic">Welcome to my blog</div>
+    </div>
+
+    <ul>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/">
+                <span>
+                    Home
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/archive/">
+                <span>
+                    Archive
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/tags/">
+                <span>
+                    Tags
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/about/">
+                <span>
+                    About
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/categories/">
+                <span>
+                    Categories
+                </span>
+            </a>
+        </li>
+        
+    </ul>
+
+    <div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center align-items-center">
+        <button class="mode-toggle btn" aria-label="Switch Mode"> 
+            <i class="fas fa-adjust"></i> 
+        </button>
+
+        <span class="icon-border"></span>
+        <a href="https://github.com/chen-gz" aria-label="github" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i>
+        </a>
+
+        <a href=" javascript:location.href = 'mailto:' + ['chen-gz','outlook.com'].join('@')" aria-label="email">
+            <i class="fas fa-envelope"></i>
+        </a>
+
+        <a href="/feed.xml" aria-label="rss"> <i class="fas fa-rss"></i> </a>
+    </div>
+
+    
+    
+</div>
+<div id="all-wrapper" class="d-flex flex-column"><div id="topbar-wrapper">
+    <div id="topbar" class="d-flex">
+        
+        <span id="breadcrumb" class="d-flex">
+              
+               
+            
+            
+            <div><a href='https://zongpitt.com/'>Home</a></div>
+              
+              
+            
+            <div><a href="https://zongpitt.com/baby-rudin">baby-rudin</a></div>
+               
+              
+            
+            <div><a href="https://zongpitt.com/baby-rudin/7-sequences-and-series-of-functions">7-sequences-and-series-of-functions</a></div>
+               
+                 
+                
+        </span>
+        <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i>
+        <div id="topbar-title">Guangzong</div>
+        <i id="search-trigger" class="fas fa-search fa-fw"></i>
+        <span id="search-wrapper" class="align-items-center">
+            <i class="fas fa-search fa-fw"></i>
+            <input class="form-control" id="search-input" type="search" aria-label="search" autocomplete="off"
+                placeholder="Search..." />
+            <i class="fa fa-times-circle fa-fw" id="search-cleaner"></i>
+        </span>
+    </div>
+</div>
+<div id="main-wrapper" class="d-flex mt-3">
+            <div id="core-wrapper" class="d-flex flex-column">
+                <div id="main" class="d-flex flex-column">
+                    
+<div class="post pl-1 pr-1 pl-md-2 pr-md-2">
+    
+    <div id="post-content">
+        <h1 style="text-align: center;">7 THE STONE-WEIERSTRASS THEOREM</h1>
+        <br>
+        
+        <p><strong>7.26 Theorem</strong> <em>If <span
+class="math inline">\(f\)</span> is a continuous complex function on
+<span class="math inline">\([a, b]\)</span>, there exists a sequence of
+polynomials <span class="math inline">\(P_{n}\)</span> such that <span
+class="math display">\[
+\lim _{n \rightarrow \infty} P_{n}(x)=f(x)
+\]</span> uniformly on <span class="math inline">\([a, b]\)</span>. If
+<span class="math inline">\(f\)</span> is real, the <span
+class="math inline">\(P_{n}\)</span> may be taken real.</em></p>
+<p>This is the form in which the theorem was originally discovered by
+Weierstrass.</p>
+<p><strong>Proof</strong> We may assume, without loss of generality,
+that <span class="math inline">\([a, b]=[0,1]\)</span>. We may also
+assume that <span class="math inline">\(f(0)=f(1)=0\)</span>. For if the
+theorem is proved for this case, consider</p>
+<p><span class="math display">\[
+g(x)=f(x)-f(0)-x[f(1)-f(0)] \quad(0 \leq x \leq 1) .
+\]</span></p>
+<p>Here <span class="math inline">\(g(0)=g(1)=0\)</span>, and if <span
+class="math inline">\(g\)</span> can be obtained as the limit of a
+uniformly convergent sequence of polynomials, it is clear that the same
+is true for <span class="math inline">\(f\)</span>, since <span
+class="math inline">\(f-g\)</span> is a polynomial.</p>
+<p>Furthermore, we define <span class="math inline">\(f(x)\)</span> to
+be zero for <span class="math inline">\(x\)</span> outside <span
+class="math inline">\([0,1]\)</span>. Then <span
+class="math inline">\(f\)</span> is uniformly continuous on the whole
+line.</p>
+<p>We put</p>
+<p><span class="math display">\[
+Q_{n}(x)=c_{n}\left(1-x^{2}\right)^{n} \quad(n=1,2,3, \ldots),
+\]</span></p>
+<p>where <span class="math inline">\(c_{n}\)</span> is chosen so
+that</p>
+<p><span class="math display">\[
+\int_{-1}^{1} Q_{n}(x) d x=1 \quad(n=1,2,3, \ldots) .
+\]</span></p>
+<p>We need some information about the order of magnitude of <span
+class="math inline">\(c_{n}\)</span>. Since</p>
+<p><span class="math display">\[
+\begin{aligned}
+\int_{-1}^{1}\left(1-x^{2}\right)^{n} d x=2
+\int_{0}^{1}\left(1-x^{2}\right)^{n} d x &amp; \geq 2 \int_{0}^{1 /
+\sqrt{n}}\left(1-x^{2}\right)^{n} d x \\
+&amp; \geq 2 \int_{0}^{1 / \sqrt{n}}\left(1-n x^{2}\right) d x \\
+&amp;=\frac{4}{3 \sqrt{n}} \\
+&amp;&gt;\frac{1}{\sqrt{n}}
+\end{aligned}
+\]</span></p>
+<p>it follows from (48) that</p>
+<p><span class="math display">\[
+c_{n}&lt;\sqrt{n} .
+\]</span></p>
+<p>The inequality <span class="math inline">\(\left(1-x^{2}\right)^{n}
+\geq 1-n x^{2}\)</span> which we used above is easily shown to be true
+by considering the function</p>
+<p><span class="math display">\[
+\left(1-x^{2}\right)^{n}-1+n x^{2}
+\]</span></p>
+<p>which is zero at <span class="math inline">\(x=0\)</span> and whose
+derivative is positive in <span class="math inline">\((0,1)\)</span>.
+For any <span class="math inline">\(\delta&gt;0\)</span>, (49)
+implies</p>
+<p><span class="math display">\[
+Q_{n}(x) \leq \sqrt{n}\left(1-\delta^{2}\right)^{n} \quad(\delta \leq|x|
+\leq 1)
+\]</span></p>
+<p>so that <span class="math inline">\(Q_{n} \rightarrow 0\)</span>
+uniformly in <span class="math inline">\(\delta \leq|x| \leq 1\)</span>.
+Now set</p>
+<p><span class="math display">\[
+P_{n}(x)=\int_{-1}^{1} f(x+t) Q_{n}(t) d t \quad(0 \leq x \leq 1) .
+\]</span></p>
+<p>Our assumptions about <span class="math inline">\(f\)</span> show, by
+a simple change of variable, that</p>
+<p><span class="math display">\[
+P_{n}(x)=\int_{-x}^{1-x} f(x+t) Q_{n}(t) d t=\int_{0}^{1} f(t)
+Q_{n}(t-x) d t,
+\]</span></p>
+<p>and the last integral is clearly a polynomial in <span
+class="math inline">\(x\)</span>. Thus <span
+class="math inline">\(\left\{P_{n}\right\}\)</span> is a sequence of
+polynomials, which are real if <span class="math inline">\(f\)</span> is
+real. Given <span class="math inline">\(\varepsilon&gt;0\)</span>, we
+choose <span class="math inline">\(\delta&gt;0\)</span> such that <span
+class="math inline">\(|y-x|&lt;\delta\)</span> implies</p>
+<p><span class="math display">\[
+|f(y)-f(x)|&lt;\frac{\varepsilon}{2} .
+\]</span></p>
+<p>Let <span class="math inline">\(M=\sup |f(x)|\)</span>. Using (48),
+(50), and the fact that <span class="math inline">\(Q_{n}(x) \geq
+0\)</span>, we see that for <span class="math inline">\(0 \leq x \leq
+1\)</span>,</p>
+<p><span class="math display">\[
+\begin{aligned}
+\left|P_{n}(x)-f(x)\right| &amp;=\left|\int_{-1}^{1}[f(x+t)-f(x)]
+Q_{n}(t) d t\right| \\
+&amp; \leq \int_{-1}^{1}|f(x+t)-f(x)| Q_{n}(t) d t \\
+&amp; \leq 2 M \int_{-1}^{-\delta} Q_{n}(t) d t+\frac{\varepsilon}{2}
+\int_{-\delta}^{\delta} Q_{n}(t) d t+2 M \int_{\delta}^{1} Q_{n}(t) d t
+\\
+&amp; \leq 4 M
+\sqrt{n}\left(1-\delta^{2}\right)^{n}+\frac{\varepsilon}{2} \\
+&amp;&lt;\varepsilon
+\end{aligned}
+\]</span></p>
+<p>for all large enough <span class="math inline">\(n\)</span>, which
+proves the theorem. It is instructive to sketch the graphs of <span
+class="math inline">\(Q_{n}\)</span> for a few values of <span
+class="math inline">\(n\)</span>; also, note that we needed uniform
+continuity of <span class="math inline">\(f\)</span> to deduce uniform
+convergence of <span
+class="math inline">\(\left\{P_{n}\right\}\)</span></p>
+<p>In the proof of Theorem <span class="math inline">\(7.32\)</span> we
+shall not need the full strength of Theorem 7.26, but only the following
+special case, which we state as a corollary.</p>
+<p><strong>7.27 Corollary</strong> <em>For every interval <span
+class="math inline">\([-a, a]\)</span> there is a sequence of real
+polynomials <span class="math inline">\(P_{n}\)</span> such that <span
+class="math inline">\(P_{n}(0)=0\)</span> and such that <span
+class="math display">\[
+\lim _{n \rightarrow \infty} P_{n}(x)=|x|
+\]</span></em></p>
+<p>uniformly on <span class="math inline">\([-a, a]\)</span>. Proof By
+Theorem <span class="math inline">\(7.26\)</span>, there exists a
+sequence <span class="math inline">\(\left\{P_{n}^{*}\right\}\)</span>
+of real polynomials which converges to <span
+class="math inline">\(|x|\)</span> uniformly on <span
+class="math inline">\([-a, a]\)</span>. In particular, <span
+class="math inline">\(P_{n}^{*}(0) \rightarrow 0\)</span> as <span
+class="math inline">\(n \rightarrow \infty\)</span>. The polynomials
+<span class="math display">\[
+P_{n}(x)=P_{n}^{*}(x)-P_{n}^{*}(0) \quad(n=1,2,3, \ldots)
+\]</span> have desired properties. We shall now isolate those properties
+of the polynomials which make the Weierstrass theorem possible.</p>
+<p><strong>7.28 Definition</strong> A family <span
+class="math inline">\(\mathscr{A}\)</span> of complex functions defined
+on a set <span class="math inline">\(E\)</span> is said to be an algebra
+if (i) <span class="math inline">\(f+g \in \mathscr{A}\)</span>, (ii)
+<span class="math inline">\(f g \in \mathscr{A}\)</span>, and (iii)
+<span class="math inline">\(c f \in \mathscr{A}\)</span> for all <span
+class="math inline">\(f \in \mathscr{A}, g \in \mathscr{A}\)</span> and
+for all complex constants <span class="math inline">\(c\)</span>, that
+is, if <span class="math inline">\(\mathscr{A}\)</span> is closed under
+addition, multiplication, and scalar multiplication. We shall also have
+to consider algebras of real functions; in this case, (iii) is of course
+only required to hold for all real <span
+class="math inline">\(c\)</span>.</p>
+<p>If <span class="math inline">\(\mathscr{A}\)</span> has the property
+that <span class="math inline">\(f \in \mathscr{A}\)</span> whenever
+<span class="math inline">\(f_{n} \in \mathscr{A}(n=1,2,3,
+\ldots)\)</span> and <span class="math inline">\(f_{n} \rightarrow
+f\)</span> uniformly on <span class="math inline">\(E\)</span>, then
+<span class="math inline">\(\mathscr{A}\)</span> is said to be uniformly
+closed.</p>
+<p>Let <span class="math inline">\(\mathscr{B}\)</span> be the set of
+all functions which are limits of uniformly convergent sequences of
+members of <span class="math inline">\(\mathscr{A}\)</span>. Then <span
+class="math inline">\(\mathscr{B}\)</span> is called the uniform closure
+of <span class="math inline">\(\mathscr{A}\)</span>. (See Definition
+7.14.)</p>
+<p>For example, the set of all polynomials is an algebra, and the
+Weierstrass theorem may be stated by saying that the set of continuous
+functions on <span class="math inline">\([a, b]\)</span> is the uniform
+closure of the set of polynomials on <span class="math inline">\([a,
+b]\)</span>.</p>
+<p><strong><span class="math inline">\(7.29\)</span> Theorem</strong>
+<em>Let <span class="math inline">\(\mathscr{B}\)</span> be the uniform
+closure of an algebra <span class="math inline">\(\mathscr{A}\)</span>
+of bounded functions. Then <span
+class="math inline">\(\mathscr{B}\)</span> is a uniformly closed
+algebra.</em></p>
+<p><strong>Proof</strong> If <span class="math inline">\(f \in
+\mathscr{B}\)</span> and <span class="math inline">\(g \in
+\mathscr{B}\)</span>, there exist uniformly convergent sequences <span
+class="math inline">\(\left\{f_{n}\right\},\left\{g_{n}\right\}\)</span>
+such that <span class="math inline">\(f_{n} \rightarrow f, g_{n}
+\rightarrow g\)</span> and <span class="math inline">\(f_{n} \in
+\mathscr{A}, g_{n} \in \mathscr{A}\)</span>. Since we are dealing with
+bounded functions, it is easy to show that <span class="math display">\[
+f_{n}+g_{n} \rightarrow f+g, \quad f_{n} g_{n} \rightarrow f g, \quad c
+f_{n} \rightarrow c f,
+\]</span> where <span class="math inline">\(c\)</span> is any constant,
+the convergence being uniform in each case. Hence <span
+class="math inline">\(f+g \in \mathscr{B}, f g \in \mathscr{B}\)</span>,
+and <span class="math inline">\(c f \in \mathscr{B}\)</span>, so that
+<span class="math inline">\(\mathscr{B}\)</span> is an algebra. By
+Theorem <span class="math inline">\(2.27, \mathscr{B}\)</span> is
+(uniformly) closed.</p>
+<p><strong>7.30 Definition</strong> Let <span
+class="math inline">\(\mathscr{A}\)</span> be a family of functions on a
+set <span class="math inline">\(E\)</span>. Then <span
+class="math inline">\(\mathscr{A}\)</span> is said to separate points on
+<span class="math inline">\(E\)</span> if to every pair of distinct
+points <span class="math inline">\(x_{1}, x_{2} \in E\)</span> there
+corresponds a function <span class="math inline">\(f \in
+\mathscr{A}\)</span> such that <span
+class="math inline">\(f\left(x_{1}\right) \neq
+f\left(x_{2}\right)\)</span>.</p>
+<p>If to each <span class="math inline">\(x \in E\)</span> there
+corresponds a function <span class="math inline">\(g \in
+\mathscr{A}\)</span> such that <span class="math inline">\(g(x) \neq
+0\)</span>, we say that <span class="math inline">\(\mathscr{A}\)</span>
+vanishes at no point of <span class="math inline">\(E\)</span>.</p>
+<p>The algebra of all polynomials in one variable clearly has these
+properties on <span class="math inline">\(R^{1}\)</span>. An example of
+an algebra which does not separate points is the set of all even
+polynomials, say on <span class="math inline">\([-1,1]\)</span>, since
+<span class="math inline">\(f(-x)=f(x)\)</span> for every even function
+<span class="math inline">\(f\)</span>. The following theorem will
+illustrate these concepts further.</p>
+<p><strong>7.31 Theorem</strong> <em>Suppose <span
+class="math inline">\(A\)</span> is an algebra of functions on a set
+<span class="math inline">\(E, \mathscr{A}\)</span> separates points on
+<span class="math inline">\(E\)</span>, and <span
+class="math inline">\(\mathscr{A}\)</span> vanishes at no point of <span
+class="math inline">\(E\)</span>. Suppose <span
+class="math inline">\(x_{1}, x_{2}\)</span> are distinct points of <span
+class="math inline">\(E\)</span>, and <span class="math inline">\(c_{1},
+c_{2}\)</span> are constants (real if <span
+class="math inline">\(\mathscr{A}\)</span> is a real algebra). Then
+<span class="math inline">\(\mathscr{A}\)</span> contains a function
+<span class="math inline">\(f\)</span> such that <span
+class="math display">\[
+f\left(x_{1}\right)=c_{1}, \quad f\left(x_{2}\right)=c_{2} .
+\]</span></em></p>
+<p><strong>Proof</strong> The assumptions show that <span
+class="math inline">\(A\)</span> contains functions <span
+class="math inline">\(g, h\)</span>, and <span
+class="math inline">\(k\)</span> such that</p>
+<p><span class="math display">\[
+g\left(x_{1}\right) \neq g\left(x_{2}\right), \quad h\left(x_{1}\right)
+\neq 0, \quad k\left(x_{2}\right) \neq 0 .
+\]</span></p>
+<p>Put</p>
+<p><span class="math display">\[
+u=g k-g\left(x_{1}\right) k, \quad v=g h-g\left(x_{2}\right) h .
+\]</span></p>
+<p>Then <span class="math inline">\(u \in \mathscr{A}, v \in
+\mathscr{A}, u\left(x_{1}\right)=v\left(x_{2}\right)=0,
+u\left(x_{2}\right) \neq 0\)</span>, and <span
+class="math inline">\(v\left(x_{1}\right) \neq 0\)</span>. Therefore</p>
+<p><span class="math display">\[
+f=\frac{c_{1} v}{v\left(x_{1}\right)}+\frac{c_{2}
+u}{u\left(x_{2}\right)}
+\]</span></p>
+<p>has the desired properties.</p>
+<p>We now have all the material needed for Stone’s generalization of the
+Weierstrass theorem.</p>
+<p><strong>7.32 Theorem</strong> Let <span
+class="math inline">\(A\)</span> be an algebra of real continuous
+functions on a compact set <span class="math inline">\(K\)</span>. If
+separates points on <span class="math inline">\(K\)</span> and if <span
+class="math inline">\(\mathscr{A}\)</span> vanishes at no point of <span
+class="math inline">\(K\)</span>, then the uniform closure <span
+class="math inline">\(\mathscr{B}\)</span> of <span
+class="math inline">\(\mathscr{A}\)</span> consists of all real
+continuous functions on <span class="math inline">\(K\)</span>.</p>
+<p>We shall divide the proof into four steps.</p>
+<p>STEP 1 <em>If <span class="math inline">\(f \in \mathscr{B}\)</span>,
+then <span class="math inline">\(|f| \in \mathscr{B} .\)</span></em></p>
+<p><strong>Proof</strong> Let</p>
+<p><span class="math display">\[
+a=\sup |f(x)| \quad(x \in K)
+\]</span></p>
+<p>and let <span class="math inline">\(\varepsilon&gt;0\)</span> be
+given. By Corollary <span class="math inline">\(7.27\)</span> there
+exist real numbers <span class="math inline">\(c_{1}, \ldots,
+c_{n}\)</span> such that</p>
+<p><span class="math display">\[
+\left|\sum_{i=1}^{n} c_{i} y^{i}-\right| y||&lt;\varepsilon \quad(-a
+\leq y \leq a) .
+\]</span></p>
+<p>Since <span class="math inline">\(\mathscr{B}\)</span> is an algebra,
+the function</p>
+<p><span class="math display">\[
+g=\sum_{i=1}^{n} c_{i} f^{i}
+\]</span></p>
+<p>is a member of <span class="math inline">\(\mathscr{B}\)</span>. By
+(52) and (53), we have</p>
+<p><span class="math display">\[
+|g(x)-| f(x)||&lt;\varepsilon \quad(x \in K) .
+\]</span></p>
+<p>Since <span class="math inline">\(\mathscr{B}\)</span> is uniformly
+closed, this shows that <span class="math inline">\(|f| \in
+\mathscr{B}\)</span>.</p>
+<p>STEP 2 <em>If <span class="math inline">\(f \in \mathscr{B}\)</span>
+and <span class="math inline">\(g \in \mathscr{B}\)</span>, then <span
+class="math inline">\(\max (f, g) \in \mathscr{B}\)</span> and <span
+class="math inline">\(\min (f, g) \in \mathscr{B}\)</span>.</em></p>
+<p>By <span class="math inline">\(\max (f, g)\)</span> we mean the
+function <span class="math inline">\(h\)</span> defined by</p>
+<p><span class="math display">\[
+h(x)= \begin{cases}f(x) &amp; \text { if } f(x) \geq g(x), \\ g(x) &amp;
+\text { if } f(x)&lt;g(x),\end{cases}
+\]</span></p>
+<p>and <span class="math inline">\(\min (f, g)\)</span> is defined
+likewise.</p>
+<p><strong>Proof</strong> Step 2 follows from step 1 and the
+identities</p>
+<p><span class="math display">\[
+\begin{aligned}
+&amp;\max (f, g)=\frac{f+g}{2}+\frac{|f-g|}{2} \\
+&amp;\min (f, g)=\frac{f+g}{2}-\frac{|f-g|}{2}
+\end{aligned}
+\]</span></p>
+<p>By iteration, the result can of course be extended to any finite set
+of functions: If <span class="math inline">\(f_{1}, \ldots, f_{n} \in
+\mathscr{B}\)</span>, then <span class="math inline">\(\max \left(f_{1},
+\ldots, f_{n}\right) \in \mathscr{B}\)</span>, and</p>
+<p><span class="math display">\[
+\min \left(f_{1}, \ldots, f_{n}\right) \in \mathscr{B} .
+\]</span></p>
+<p>STEP 3 <em>Given a real function <span
+class="math inline">\(f\)</span>, continuous on <span
+class="math inline">\(K\)</span>, a point <span class="math inline">\(x
+\in K\)</span>, and <span
+class="math inline">\(\varepsilon&gt;0\)</span>, there exists a function
+<span class="math inline">\(g_{x} \in \mathscr{B}\)</span> such that
+<span class="math inline">\(g_{x}(x)=f(x)\)</span> and <span
+class="math display">\[
+g_{x}(t)&gt;f(t)-\varepsilon \quad(t \in K) .
+\]</span></em></p>
+<p><strong>Proof</strong> Since <span class="math inline">\(\mathscr{A}
+\subset \mathscr{B}\)</span> and <span
+class="math inline">\(\mathscr{A}\)</span> satisfies the hypotheses of
+Theorem <span class="math inline">\(7.31\)</span> so does <span
+class="math inline">\(\mathscr{B}\)</span>. Hence, for every <span
+class="math inline">\(y \in K\)</span>, we can find a function <span
+class="math inline">\(h_{y} \in \mathscr{B}\)</span> such that</p>
+<p><span class="math display">\[
+h_{y}(x)=f(x), \quad h_{y}(y)=f(y) .
+\]</span></p>
+<p>By the continuity of <span class="math inline">\(h_{y}\)</span> there
+exists an open set <span class="math inline">\(J_{y}\)</span>,
+containing <span class="math inline">\(y\)</span>, such that</p>
+<p><span class="math display">\[
+h_{y}(t)&gt;f(t)-\varepsilon \quad\left(t \in J_{y}\right) .
+\]</span></p>
+<p>Since <span class="math inline">\(K\)</span> is compact, there is a
+finite set of points <span class="math inline">\(y_{1}, \ldots,
+y_{n}\)</span> such that</p>
+<p><span class="math display">\[
+K \subset J_{y_{1}} \cup \cdots \cup J_{y_{n}} .
+\]</span></p>
+<p>Put</p>
+<p><span class="math display">\[
+g_{x}=\max \left(h_{y_{1}}, \ldots, h_{y_{n}}\right) .
+\]</span></p>
+<p>By step <span class="math inline">\(2, g_{x} \in
+\mathscr{8}\)</span>, and the relations (55) to (57) show that <span
+class="math inline">\(g_{x}\)</span> has the other required
+properties.</p>
+<p><em>STEP 4 Given a real function <span
+class="math inline">\(f\)</span>, continuous on <span
+class="math inline">\(K\)</span>, and <span
+class="math inline">\(\varepsilon&gt;0\)</span>, there exists a function
+<span class="math inline">\(h \in \mathscr{B}\)</span> such that <span
+class="math display">\[
+|h(x)-f(x)|&lt;\varepsilon \quad(x \in K) .
+\]</span></em></p>
+<p>Since <span class="math inline">\(\mathscr{B}\)</span> is uniformly
+closed, this statement is equivalent to the conclusion of the
+theorem.</p>
+<p><strong>Proof</strong> Let us consider the functions <span
+class="math inline">\(g_{x}\)</span>, for each <span
+class="math inline">\(x \in K\)</span>, constructed in step 3. By the
+continuity of <span class="math inline">\(g_{x}\)</span>, there exist
+open sets <span class="math inline">\(V_{x}\)</span> containing <span
+class="math inline">\(x\)</span>, such that</p>
+<p><span class="math display">\[
+g_{x}(t)&lt;f(t)+\varepsilon \quad\left(t \in V_{x}\right) .
+\]</span></p>
+<p>Since <span class="math inline">\(K\)</span> is compact, there exists
+a finite set of points <span class="math inline">\(x_{1}, \ldots,
+x_{m}\)</span> such that (60)</p>
+<p><span class="math display">\[
+K \subset V_{x_{1}} \cup \cdots \cup V_{x_{m}} .
+\]</span></p>
+<p>Put</p>
+<p><span class="math display">\[
+h=\min \left(g_{x_{1}}, \ldots, g_{x_{m}}\right) .
+\]</span></p>
+<p>By step 2, <span class="math inline">\(h \in \mathscr{B}\)</span>,
+and (54) implies</p>
+<p><span class="math display">\[
+h(t)&gt;f(t)-\varepsilon \quad(t \in K),
+\]</span></p>
+<p>whereas (59) and (60) imply</p>
+<p><span class="math display">\[
+h(t)&lt;f(t)+\varepsilon \quad(t \in K) .
+\]</span></p>
+<p>Finally, (58) follows from (61) and (62).</p>
+<p>Theorem <span class="math inline">\(7.32\)</span> does not hold for
+complex algebras. A counterexample is given in Exercise 21. However, the
+conclusion of the theorem does hold, even for complex algebras, if an
+extra condition is imposed on <span
+class="math inline">\(\mathscr{A}\)</span>, namely, that <span
+class="math inline">\(\mathscr{A}\)</span> be self-adjoint. This means
+that for every <span class="math inline">\(f \in \mathscr{A}\)</span>
+its complex conjugate <span class="math inline">\(f\)</span> must also
+belong to <span class="math inline">\(\mathscr{A} ; f\)</span> is
+defined by <span
+class="math inline">\(f(x)=\overline{f(x)}\)</span>.</p>
+<p><strong>7.33 Theorem</strong> Suppose <span
+class="math inline">\(\mathscr{A}\)</span> is a self-adjoint algebra of
+complex continuous functions on a compact set <span
+class="math inline">\(K, \mathscr{A}\)</span> separates points on <span
+class="math inline">\(K\)</span>, and <span
+class="math inline">\(\mathscr{A}\)</span> vanishes at no point of <span
+class="math inline">\(K\)</span>. Then the uniform closure <span
+class="math inline">\(\mathscr{B}\)</span> of <span
+class="math inline">\(\mathscr{A}\)</span> consists of all complex
+continuous functions on <span class="math inline">\(K\)</span>. In other
+words, <span class="math inline">\(\mathscr{A}\)</span> is dense <span
+class="math inline">\(\mathscr{C}(K)\)</span>.</p>
+<p><strong>Proof</strong> Let <span
+class="math inline">\(\mathscr{A}_{R}\)</span> be the set of all real
+functions on <span class="math inline">\(K\)</span> which belong to
+<span class="math inline">\(\mathscr{A}\)</span>.</p>
+<p>If <span class="math inline">\(f \in \mathscr{A}\)</span> and <span
+class="math inline">\(f=u+i v\)</span>, with <span
+class="math inline">\(u, v\)</span> real, then <span
+class="math inline">\(2 u=f+\bar{f}\)</span>, and since <span
+class="math inline">\(\mathscr{A}\)</span> is self-adjoint, we see that
+<span class="math inline">\(u \in \mathscr{A}_{R}\)</span>. If <span
+class="math inline">\(x_{1} \neq x_{2}\)</span>, there exists <span
+class="math inline">\(f \in \mathscr{A}\)</span> such that <span
+class="math inline">\(f\left(x_{1}\right)=1,
+f\left(x_{2}\right)=0\)</span>; hence <span
+class="math inline">\(0=u\left(x_{2}\right) \neq
+u\left(x_{1}\right)=1\)</span>, which shows that <span
+class="math inline">\(\mathscr{A}_{R}\)</span> separates points on <span
+class="math inline">\(K\)</span>. If <span class="math inline">\(x \in
+K\)</span>, then <span class="math inline">\(g(x) \neq 0\)</span> for
+some <span class="math inline">\(g \in \mathscr{A}\)</span>, and there
+is a complex number <span class="math inline">\(\lambda\)</span> such
+that <span class="math inline">\(\lambda g(x)&gt;0\)</span>; if <span
+class="math inline">\(f=\lambda g, f=u+i v\)</span>, it follows that
+<span class="math inline">\(u(x)&gt;0\)</span>; hence <span
+class="math inline">\(\mathscr{A}_{R}\)</span> vanishes at no point of
+<span class="math inline">\(K\)</span>.</p>
+<p>Thus <span class="math inline">\(\mathscr{A}_{R}\)</span> satisfies
+the hypotheses of Theorem 7.32. It follows that every real continuous
+function on <span class="math inline">\(K\)</span> lies in the uniform
+closure of <span class="math inline">\(\mathscr{A}_{R}\)</span>, hence
+lies in <span class="math inline">\(\mathscr{B}\)</span>. If <span
+class="math inline">\(f\)</span> is a complex continuous function on
+<span class="math inline">\(K, f=u+i v\)</span>, then <span
+class="math inline">\(u \in \mathscr{B}, v \in \mathscr{B}\)</span>,
+hence <span class="math inline">\(f \in \mathscr{B}\)</span>. This
+completes the proof.</p>
+
+    </div>
+    
+</div>
+</div>
+
+                <div id="footer-wrapper">
+                    <footer class="footer"><footer class="row pl-3 pr-3">
+    <div class="col-12 d-flex justify-content-between align-items-center text-muted pl-0 pr-0">
+        <div class="footer-left">
+            <p class="mb-0"> © 2022 <a href="https://github.com/chen-gz">guangzong</a>. <span data-toggle="tooltip"
+                    data-placement="top"
+                    title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author.">All
+                    rights reserved.</span></p>
+        </div>
+        <div class="footer-right">
+            <p class="mb-0"> Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">hugo</a>
+                with <a href="https://github.com/chen-gz/hugo_zong" target="_blank" rel="noopener">zong</a>
+                theme.</p>
+        </div>
+    </div>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script> MathJax = {
+            tex: {
+                tags: 'ams',
+            }
+        };</script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</footer>
+</footer>
+                </div>
+            </div>
+            <div id="panel-wrapper" class="d-flex flex-column"><div id="toc-wrapper" class="mb-5 pl-2">
+    <span>Contents</span>
+    <nav id="toc" data-toggle="toc">
+        
+        
+        
+    </nav>
+</div>
+
+<div id="access-lastmod" class="pb-4 pl-2">
+    <div class="panel-heading">Recently Updated</div>
+    <ul class="post-content pl-3 pb-1 ml-1 mt-2">
+          
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/1-total-variation/">Total Variation</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-7/1-derivatives-of-measures/">Derivatives of Measures</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/3-consequences-of-the-radon-nikodym-theorem/">Consequences of the Radon-Nikodym Theorem</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/4-bounded-linear-functionals-on-lp/">Bounded linear functional on Lp</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/2-abosolute-continuity/">Abosolute Continuity</a></li>
+        
+    </ul>
+</div>
+
+<div id="access-tags" class="pl-2">
+    <div class="panel-heading">Trending Tags</div>
+    <div class="d-flex flex-wrap mt-3 mb-1 mr-3">
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/algorithm/">Algorithm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/android/">Android</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c/">C</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c-language/">c language</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/caddy/">Caddy</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cadence/">Cadence</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cdc/">CDC</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/classification/">classification</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/compress/">Compress</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/conf/">Conf</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/double-column/">Double Column</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/errno13/">Errno13</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/fish/">fish</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gan/">GAN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/git/">Git</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gtk/">Gtk</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/html/">Html</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/i3/">I3</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/idea/">Idea</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/java/">Java</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/latex/">Latex</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lda/">LDA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linear-programming/">Linear Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linux/">Linux</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lr/">LR</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/math/">Math</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mathematics/">Mathematics</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matlab/">Matlab</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matplot/">matplot</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/memory/">Memory</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mermaid/">Mermaid</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/misc/">Misc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/ml/">ML</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mosfet/">Mosfet</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/network/">Network</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/nn/">NN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pandoc/">Pandoc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pca/">PCA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/probability/">Probability</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/productive/">Productive</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/program/">Program</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/programming/">Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/python/">Python</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/qt/">Qt</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/random-variable/">Random Variable</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rcnn/">RCNN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rust/">Rust</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/security/">Security</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/software/">Software</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/std/">Std</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/svd/">Svd</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/tool/">Tool</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/usb/">USB</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vim/">Vim</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpn/">Vpn</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpnc/">Vpnc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/xterm/">xterm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/zsh/">Zsh</a>
+        
+    </div>
+</div>
+</div><div id="search-result-wrapper" class="d-flex justify-content-center unloaded">
+    <div class="col-12 col-sm-11 post-content">
+        <div id="search-hints"></div>
+        <div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3 col-12"></div>
+    </div>
+</div>
+
+<script src="/js/fuse.min.js"></script>
+<script src="/js/fastsearch.js"></script>
+
+
+</div>
+        <div id="mask"></div>
+        <a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button"
+            style="display: none">
+            <i class="fas fa-angle-up"></i>
+        </a>
+    </div>
+    
+</body>
+
+</html>

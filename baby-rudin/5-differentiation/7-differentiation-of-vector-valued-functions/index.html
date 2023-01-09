@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css"
+        class="dark-mode-native-dark-original" />
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+     
+    <link rel="stylesheet" href="https://zongpitt.com/sass/main.06935202011a97ba473ebeeb0cb6788daa9fb5a9fff471a4e85850293d1c5ac4.css" />
+    <title>
+          Guangzong Blog | DIFFERENTIATION OF VECTOR-VALUED FUNCTIONS
+    </title>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.bundle.min.js"></script>
+    <script src=" https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.js"></script>
+
+    <script
+        src="https://cdn.jsdelivr.net/combine/npm/magnific-popup@1/dist/jquery.magnific-popup.min.js,npm/lozad/dist/lozad.min.js,npm/clipboard@2/dist/clipboard.min.js"></script>
+    <script type="text/javascript" src="/js/commons/back-to-top.js"></script>
+    
+    
+    
+    <script type="text/javascript" src="/js/commons/topbar-switch.js"></script>
+    <script type="text/javascript" src="/js/commons/sidebar.js"></script>
+    <script type="text/javascript" src="/js/utils/category-collapse.js"></script>
+    <script type="text/javascript" src="/js/utils/checkbox.js"></script>
+    <script type="text/javascript" src="/js/utils/clipboard.js"></script>
+    <script type="text/javascript" src="/js/utils/img-extra.js"></script>
+    <script type="text/javascript" src="/js/utils/pageviews.js"></script>
+    
+    <script type="text/javascript" src="/js/utils/timeago.js"></script>
+    
+    
+</head>
+<body data-spy="scroll" data-target="#toc" data-topbar-visible="true" class="d-flex"><div id="sidebar" class="d-flex flex-column align-items-end">
+    <div class="profile-wrapper text-center">
+
+        <div id="avatar">
+            <a href="/" alt="avatar" class="mx-auto"> <img src=https://github.com/chen-gz/chen-gz/blob/main/mine_square.jpg?raw&#61;truehttps://raw.githubusercontent.com/chen-gz/chen-gz/blob/main/mine_square.jpg alt="avatar"
+                    onerror="this.style.display='none'"> </a>
+        </div>
+
+        <div class="site-title mt-3"> <a href="/">Guangzong</a> </div>
+        <div class="site-subtitle font-italic">Welcome to my blog</div>
+    </div>
+
+    <ul>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/">
+                <span>
+                    Home
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/archive/">
+                <span>
+                    Archive
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/tags/">
+                <span>
+                    Tags
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/about/">
+                <span>
+                    About
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/categories/">
+                <span>
+                    Categories
+                </span>
+            </a>
+        </li>
+        
+    </ul>
+
+    <div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center align-items-center">
+        <button class="mode-toggle btn" aria-label="Switch Mode"> 
+            <i class="fas fa-adjust"></i> 
+        </button>
+
+        <span class="icon-border"></span>
+        <a href="https://github.com/chen-gz" aria-label="github" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i>
+        </a>
+
+        <a href=" javascript:location.href = 'mailto:' + ['chen-gz','outlook.com'].join('@')" aria-label="email">
+            <i class="fas fa-envelope"></i>
+        </a>
+
+        <a href="/feed.xml" aria-label="rss"> <i class="fas fa-rss"></i> </a>
+    </div>
+
+    
+    
+</div>
+<div id="all-wrapper" class="d-flex flex-column"><div id="topbar-wrapper">
+    <div id="topbar" class="d-flex">
+        
+        <span id="breadcrumb" class="d-flex">
+              
+               
+            
+            
+            <div><a href='https://zongpitt.com/'>Home</a></div>
+              
+              
+            
+            <div><a href="https://zongpitt.com/baby-rudin">baby-rudin</a></div>
+               
+              
+            
+            <div><a href="https://zongpitt.com/baby-rudin/5-differentiation">5-differentiation</a></div>
+               
+                 
+                
+        </span>
+        <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i>
+        <div id="topbar-title">Guangzong</div>
+        <i id="search-trigger" class="fas fa-search fa-fw"></i>
+        <span id="search-wrapper" class="align-items-center">
+            <i class="fas fa-search fa-fw"></i>
+            <input class="form-control" id="search-input" type="search" aria-label="search" autocomplete="off"
+                placeholder="Search..." />
+            <i class="fa fa-times-circle fa-fw" id="search-cleaner"></i>
+        </span>
+    </div>
+</div>
+<div id="main-wrapper" class="d-flex mt-3">
+            <div id="core-wrapper" class="d-flex flex-column">
+                <div id="main" class="d-flex flex-column">
+                    
+<div class="post pl-1 pr-1 pl-md-2 pr-md-2">
+    
+    <div id="post-content">
+        <h1 style="text-align: center;">DIFFERENTIATION OF VECTOR-VALUED FUNCTIONS</h1>
+        <br>
+        
+        <p><strong>5.16 Remarks</strong> Definition <span
+class="math inline">\(5.1\)</span> applies without any change to complex
+functions <span class="math inline">\(f\)</span> defined on <span
+class="math inline">\([a, b]\)</span>, and Theorems <span
+class="math inline">\(5.2\)</span> and <span
+class="math inline">\(5.3\)</span>, as well as their proofs, remain
+valid. If <span class="math inline">\(f_{1}\)</span> and <span
+class="math inline">\(f_{2}\)</span> are the real and imaginary parts of
+<span class="math inline">\(f\)</span>, that is, if <span
+class="math display">\[
+f(t)=f_{1}(t)+i f_{2}(t)
+\]</span></p>
+<p>for <span class="math inline">\(a \leq t \leq b\)</span>, where <span
+class="math inline">\(f_{1}(t)\)</span> and <span
+class="math inline">\(f_{2}(t)\)</span> are real, then we clearly
+have</p>
+<p><span class="math display">\[
+f^{\prime}(x)=f_{1}^{\prime}(x)+i f_{2}^{\prime}(x)
+\]</span></p>
+<p>also, <span class="math inline">\(f\)</span> is differentiable at
+<span class="math inline">\(x\)</span> if and only if both <span
+class="math inline">\(f_{1}\)</span> and <span
+class="math inline">\(f_{2}\)</span> are differentiable at <span
+class="math inline">\(x\)</span>. Passing to vector-valued functions in
+general, i.e., to functions <span
+class="math inline">\(\mathbf{f}\)</span> which map <span
+class="math inline">\([a, b]\)</span> into some <span
+class="math inline">\(R^{k}\)</span>, we may still apply Definition
+<span class="math inline">\(5.1\)</span> to define <span
+class="math inline">\(\mathrm{f}^{\prime}(x)\)</span>. The term <span
+class="math inline">\(\phi(t)\)</span> in (1) is now, for each <span
+class="math inline">\(t\)</span>, a point in <span
+class="math inline">\(R^{k}\)</span>, and the limit in (2) is taken with
+respect to the norm of <span class="math inline">\(R^{k}\)</span>. In
+other words, <span class="math inline">\(f^{\prime}(x)\)</span> is that
+point of <span class="math inline">\(R^{k}\)</span> (if there is one)
+for which</p>
+<p><span class="math display">\[
+\lim _{t \rightarrow
+x}\left|\frac{f(t)-f(x)}{t-x}-f^{\prime}(x)\right|=0,
+\]</span></p>
+<p>and <span class="math inline">\(\mathrm{f}^{\prime}\)</span> is again
+a function with values in <span
+class="math inline">\(R^{k}\)</span>.</p>
+<p>If <span class="math inline">\(f_{1}, \ldots, f_{k}\)</span> are the
+components of <span class="math inline">\(f\)</span>, as defined in
+Theorem <span class="math inline">\(4.10\)</span>, then</p>
+<p><span class="math display">\[
+\mathbf{f}^{\prime}=\left(f_{1}^{\prime}, \ldots, f_{k}^{\prime}\right),
+\]</span></p>
+<p>and <span class="math inline">\(f\)</span> is differentiable at a
+point <span class="math inline">\(x\)</span> if and only if each of the
+functions <span class="math inline">\(f_{1}, \ldots, f_{k}\)</span> is
+differentiable at <span class="math inline">\(x\)</span>.</p>
+<p>Theorem <span class="math inline">\(5.2\)</span> is true in this
+context as well, and so is Theorem 5.3(a) and (b), if <span
+class="math inline">\(f g\)</span> is replaced by the inner product
+<span class="math inline">\(f \cdot g\)</span> (see Definition 4.3).</p>
+<p>When we turn to the mean value theorem, however, and to one of its
+consequences, namely, L’Hospital’s rule, the situation changes. The next
+two examples will show that each of these results fails to be true for
+complex-valued functions.</p>
+<p><strong>5.17 Example</strong> Define, for real <span
+class="math inline">\(x\)</span>, <span class="math display">\[
+f(x)=e^{i x}=\cos x+i \sin x .
+\]</span></p>
+<p>(The last expression may be taken as the definition of the complex
+exponential <span class="math inline">\(e^{i x}\)</span>; see Chap. 8
+for a full discussion of these functions.) Then</p>
+<p><span class="math display">\[
+f(2 \pi)-f(0)=1-1=0
+\]</span></p>
+<p>but</p>
+<p><span class="math display">\[
+f^{\prime}(x)=i e^{i x}
+\]</span></p>
+<p>so that <span
+class="math inline">\(\left|f^{\prime}(x)\right|=1\)</span> for all real
+<span class="math inline">\(x\)</span>.</p>
+<p>Thus Theorem <span class="math inline">\(5.10\)</span> fails to hold
+in this case.</p>
+<p><strong>5.18 Example</strong> On the segment <span
+class="math inline">\((0,1)\)</span>, define <span
+class="math inline">\(f(x)=x\)</span> and <span class="math display">\[
+g(x)=x+x^{2} e^{i / x^{2}} .
+\]</span></p>
+<p>Since <span class="math inline">\(\left|e^{i t}\right|=1\)</span> for
+all real <span class="math inline">\(t\)</span>, we see that</p>
+<p><span class="math display">\[
+\lim _{x \rightarrow 0} \frac{f(x)}{g(x)}=1 .
+\]</span></p>
+<p>Next,</p>
+<p><span class="math display">\[
+g^{\prime}(x)=1+\left\{2 x-\frac{2 i}{x}\right\} e^{i / x^{2}}
+\quad(0&lt;x&lt;1)
+\]</span></p>
+<p>so that</p>
+<p><span class="math display">\[
+\left|g^{\prime}(x)\right| \geq\left|2 x-\frac{2 i}{x}\right|-1 \geq
+\frac{2}{x}-1
+\]</span></p>
+<p>Hence</p>
+<p><span class="math display">\[
+\left|\frac{f^{\prime}(x)}{g^{\prime}(x)}\right|=\frac{1}{\left|g^{\prime}(x)\right|}
+\leq \frac{x}{2-x}
+\]</span></p>
+<p>and so</p>
+<p><span class="math display">\[
+\lim _{x \rightarrow 0} \frac{f^{\prime}(x)}{g^{\prime}(x)}=0 .
+\]</span></p>
+<p>By (36) and (40), L’Hospital’s rule fails in this case. Note also
+that <span class="math inline">\(g^{\prime}(x) \neq 0\)</span> on <span
+class="math inline">\((0,1)\)</span>, by (38).</p>
+<p>However, there is a consequence of the mean value theorem which, for
+purposes of applications, is almost as useful as Theorem 5.10, and which
+remains true for vector-valued functions: From Theorem <span
+class="math inline">\(5.10\)</span> it follows that</p>
+<p><span class="math display">\[
+|f(b)-f(a)| \leq(b-a) \sup _{a&lt;x&lt;b}\left|f^{\prime}(x)\right| .
+\]</span></p>
+<p><strong>5.19 Theorem</strong> Suppose <span
+class="math inline">\(\mathrm{f}\)</span> is a continuous mapping of
+<span class="math inline">\([a, b]\)</span> into <span
+class="math inline">\(R^{k}\)</span> and <span
+class="math inline">\(\mathrm{f}\)</span> is differentiable in <span
+class="math inline">\((a, b)\)</span>. Then there exists <span
+class="math inline">\(x \in(a, b)\)</span> such that <span
+class="math display">\[
+|\mathbf{f}(b)-\mathbf{f}(a)|
+\leq(b-a)\left|\mathbf{f}^{\prime}(x)\right| .
+\]</span></p>
+<p>Proof <span class="math inline">\(^{1} \quad\)</span> Put <span
+class="math inline">\(\mathbf{z}=\mathbf{f}(b)-\mathbf{f}(a)\)</span>,
+and define</p>
+<p><span class="math display">\[
+\varphi(t)=\mathbf{z} \cdot \mathbf{f}(t) \quad(a \leq t \leq b) .
+\]</span></p>
+<p>Then <span class="math inline">\(\varphi\)</span> is a real-valued
+continuous function on <span class="math inline">\([a, b]\)</span> which
+is differentiable in <span class="math inline">\((a, b)\)</span>. The
+mean value theorem shows therefore that</p>
+<p><span class="math display">\[
+\varphi(b)-\varphi(a)=(b-a) \varphi^{\prime}(x)=(b-a) \mathbf{z} \cdot
+\mathbf{f}^{\prime}(x)
+\]</span></p>
+<p>for some <span class="math inline">\(x \in(a, b)\)</span>. On the
+other hand, <span class="math display">\[
+\varphi(b)-\varphi(a)=\mathbf{z} \cdot \mathbf{f}(b)-\mathbf{z} \cdot
+\mathbf{f}(a)=\mathbf{z} \cdot \mathbf{z}=|\mathbf{z}|^{2} .
+\]</span></p>
+<p>The Schwarz inequality now gives</p>
+<p><span class="math display">\[
+|\mathbf{z}|^{2}=(b-a)\left|\mathbf{z} \cdot
+\mathbf{f}^{\prime}(x)\right|
+\leq(b-a)|\mathbf{z}|\left|\mathbf{f}^{\prime}(x)\right| \text {. }
+\]</span></p>
+<p>Hence <span class="math inline">\(|\mathbf{z}|
+\leq(b-a)\left|\mathbf{f}^{\prime}(x)\right|\)</span>, which is the
+desired conclusion.</p>
+
+    </div>
+    
+</div>
+</div>
+
+                <div id="footer-wrapper">
+                    <footer class="footer"><footer class="row pl-3 pr-3">
+    <div class="col-12 d-flex justify-content-between align-items-center text-muted pl-0 pr-0">
+        <div class="footer-left">
+            <p class="mb-0"> © 2022 <a href="https://github.com/chen-gz">guangzong</a>. <span data-toggle="tooltip"
+                    data-placement="top"
+                    title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author.">All
+                    rights reserved.</span></p>
+        </div>
+        <div class="footer-right">
+            <p class="mb-0"> Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">hugo</a>
+                with <a href="https://github.com/chen-gz/hugo_zong" target="_blank" rel="noopener">zong</a>
+                theme.</p>
+        </div>
+    </div>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script> MathJax = {
+            tex: {
+                tags: 'ams',
+            }
+        };</script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</footer>
+</footer>
+                </div>
+            </div>
+            <div id="panel-wrapper" class="d-flex flex-column"><div id="toc-wrapper" class="mb-5 pl-2">
+    <span>Contents</span>
+    <nav id="toc" data-toggle="toc">
+        
+        
+        
+    </nav>
+</div>
+
+<div id="access-lastmod" class="pb-4 pl-2">
+    <div class="panel-heading">Recently Updated</div>
+    <ul class="post-content pl-3 pb-1 ml-1 mt-2">
+          
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/1-total-variation/">Total Variation</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-7/1-derivatives-of-measures/">Derivatives of Measures</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/3-consequences-of-the-radon-nikodym-theorem/">Consequences of the Radon-Nikodym Theorem</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/4-bounded-linear-functionals-on-lp/">Bounded linear functional on Lp</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/2-abosolute-continuity/">Abosolute Continuity</a></li>
+        
+    </ul>
+</div>
+
+<div id="access-tags" class="pl-2">
+    <div class="panel-heading">Trending Tags</div>
+    <div class="d-flex flex-wrap mt-3 mb-1 mr-3">
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/algorithm/">Algorithm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/android/">Android</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c/">C</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c-language/">c language</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/caddy/">Caddy</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cadence/">Cadence</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cdc/">CDC</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/classification/">classification</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/compress/">Compress</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/conf/">Conf</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/double-column/">Double Column</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/errno13/">Errno13</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/fish/">fish</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gan/">GAN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/git/">Git</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gtk/">Gtk</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/html/">Html</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/i3/">I3</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/idea/">Idea</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/java/">Java</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/latex/">Latex</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lda/">LDA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linear-programming/">Linear Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linux/">Linux</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lr/">LR</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/math/">Math</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mathematics/">Mathematics</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matlab/">Matlab</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matplot/">matplot</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/memory/">Memory</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mermaid/">Mermaid</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/misc/">Misc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/ml/">ML</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mosfet/">Mosfet</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/network/">Network</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/nn/">NN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pandoc/">Pandoc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pca/">PCA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/probability/">Probability</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/productive/">Productive</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/program/">Program</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/programming/">Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/python/">Python</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/qt/">Qt</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/random-variable/">Random Variable</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rcnn/">RCNN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rust/">Rust</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/security/">Security</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/software/">Software</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/std/">Std</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/svd/">Svd</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/tool/">Tool</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/usb/">USB</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vim/">Vim</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpn/">Vpn</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpnc/">Vpnc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/xterm/">xterm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/zsh/">Zsh</a>
+        
+    </div>
+</div>
+</div><div id="search-result-wrapper" class="d-flex justify-content-center unloaded">
+    <div class="col-12 col-sm-11 post-content">
+        <div id="search-hints"></div>
+        <div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3 col-12"></div>
+    </div>
+</div>
+
+<script src="/js/fuse.min.js"></script>
+<script src="/js/fastsearch.js"></script>
+
+
+</div>
+        <div id="mask"></div>
+        <a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button"
+            style="display: none">
+            <i class="fas fa-angle-up"></i>
+        </a>
+    </div>
+    
+</body>
+
+</html>

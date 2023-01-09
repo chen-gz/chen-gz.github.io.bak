@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>11 The Lebesgue Theory on Guangzong Blog</title>
+    <link>https://zongpitt.com/baby-rudin/11-the-lebesgue-theory/</link>
+    <description>Recent content in 11 The Lebesgue Theory on Guangzong Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://zongpitt.com/baby-rudin/11-the-lebesgue-theory/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Measure Space</title>
+      <link>https://zongpitt.com/baby-rudin/11-the-lebesgue-theory/3/</link>
+      <pubDate>Fri, 23 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/11-the-lebesgue-theory/3/</guid>
+      <description>11.12 Definition Suppose \(X\) is a set, not necessarily a subset of a euclidean space, or indeed of any metric space. \(X\) is said to be a measure space if there exists a \(\sigma\)-ring \(\mathfrak{M}\) of subsets of \(X\) (which are called measurable sets) and a nonnegative countably additive set function \(\mu\) (which is called a measure), defined on \(\mathfrak{M}\).
+If, in addition, \(X \in \mathfrak{M}\), then \(X\) is said to be a measurable space.</description>
+    </item>
+    
+    <item>
+      <title>1 SET FUNCTIONS</title>
+      <link>https://zongpitt.com/baby-rudin/11-the-lebesgue-theory/1-set-functions/</link>
+      <pubDate>Thu, 18 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/11-the-lebesgue-theory/1-set-functions/</guid>
+      <description>If \(A\) and \(B\) are any two sets, we write \(A-B\) for the set of all elements \(x\) such that \(x \in A, x \notin B\). The notation \(A-B\) does not imply that \(B \subset A\). We denote the empty set by 0 , and say that \(A\) and \(B\) are disjoint if \(A \cap B=0\).
+11.1 Definition A family \(\mathscr{R}\) of sets is called a ring if \(A \in \mathscr{R}\) and \(B \in \mathscr{R}\) implies}</description>
+    </item>
+    
+    <item>
+      <title>0 INTRO</title>
+      <link>https://zongpitt.com/baby-rudin/11-the-lebesgue-theory/0-intro/</link>
+      <pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/11-the-lebesgue-theory/0-intro/</guid>
+      <description>It is the purpose of this chapter to present the fundamental concepts of the Lebesgue theory of measure and integration and to prove some of the crucial theorems in a rather general setting, without obscuring the main lines of the development by a mass of comparatively trivial detail. Therefore proofs are only sketched in some cases, and some of the easier propositions are stated without proof. However, the reader who has become familiar with the techniques used in the preceding chapters will certainly find no difficulty in supplying the missing steps.</description>
+    </item>
+    
+    <item>
+      <title>2 CONSTRUCTION OF THE LEBESGUE MEASURE</title>
+      <link>https://zongpitt.com/baby-rudin/11-the-lebesgue-theory/2-construction-of-the-lebesgue-measure/</link>
+      <pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/11-the-lebesgue-theory/2-construction-of-the-lebesgue-measure/</guid>
+      <description>11.4 Definition Let \(R^{p}\) denote \(p\)-dimensional euclidean space. By an interval in \(R^{p}\) we mean the set of points \(\mathrm{x}=\left(x_{1}, \ldots, x_{p}\right)\) such that \[ a_{i} \leq x_{i} \leq b_{i} \quad(i=1, \ldots, p) \]
+or the set of points which is characterized by (10) with any or all of the \(\leq\) signs replaced by \(&amp;lt;\). The possibility that \(a_{i}=b_{i}\) for any value of \(i\) is not ruled out; in particular, the empty set is included among the intervals.</description>
+    </item>
+    
+  </channel>
+</rss>

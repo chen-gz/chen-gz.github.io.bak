@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css"
+        class="dark-mode-native-dark-original" />
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+     
+    <link rel="stylesheet" href="https://zongpitt.com/sass/main.06935202011a97ba473ebeeb0cb6788daa9fb5a9fff471a4e85850293d1c5ac4.css" />
+    <title>
+          Guangzong Blog | 6 EQUICONTINUOUS FAMILIES OF FUNCTIONS
+    </title>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.bundle.min.js"></script>
+    <script src=" https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.js"></script>
+
+    <script
+        src="https://cdn.jsdelivr.net/combine/npm/magnific-popup@1/dist/jquery.magnific-popup.min.js,npm/lozad/dist/lozad.min.js,npm/clipboard@2/dist/clipboard.min.js"></script>
+    <script type="text/javascript" src="/js/commons/back-to-top.js"></script>
+    
+    
+    
+    <script type="text/javascript" src="/js/commons/topbar-switch.js"></script>
+    <script type="text/javascript" src="/js/commons/sidebar.js"></script>
+    <script type="text/javascript" src="/js/utils/category-collapse.js"></script>
+    <script type="text/javascript" src="/js/utils/checkbox.js"></script>
+    <script type="text/javascript" src="/js/utils/clipboard.js"></script>
+    <script type="text/javascript" src="/js/utils/img-extra.js"></script>
+    <script type="text/javascript" src="/js/utils/pageviews.js"></script>
+    
+    <script type="text/javascript" src="/js/utils/timeago.js"></script>
+    
+    
+</head>
+<body data-spy="scroll" data-target="#toc" data-topbar-visible="true" class="d-flex"><div id="sidebar" class="d-flex flex-column align-items-end">
+    <div class="profile-wrapper text-center">
+
+        <div id="avatar">
+            <a href="/" alt="avatar" class="mx-auto"> <img src=https://github.com/chen-gz/chen-gz/blob/main/mine_square.jpg?raw&#61;truehttps://raw.githubusercontent.com/chen-gz/chen-gz/blob/main/mine_square.jpg alt="avatar"
+                    onerror="this.style.display='none'"> </a>
+        </div>
+
+        <div class="site-title mt-3"> <a href="/">Guangzong</a> </div>
+        <div class="site-subtitle font-italic">Welcome to my blog</div>
+    </div>
+
+    <ul>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/">
+                <span>
+                    Home
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/archive/">
+                <span>
+                    Archive
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/tags/">
+                <span>
+                    Tags
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/about/">
+                <span>
+                    About
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/categories/">
+                <span>
+                    Categories
+                </span>
+            </a>
+        </li>
+        
+    </ul>
+
+    <div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center align-items-center">
+        <button class="mode-toggle btn" aria-label="Switch Mode"> 
+            <i class="fas fa-adjust"></i> 
+        </button>
+
+        <span class="icon-border"></span>
+        <a href="https://github.com/chen-gz" aria-label="github" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i>
+        </a>
+
+        <a href=" javascript:location.href = 'mailto:' + ['chen-gz','outlook.com'].join('@')" aria-label="email">
+            <i class="fas fa-envelope"></i>
+        </a>
+
+        <a href="/feed.xml" aria-label="rss"> <i class="fas fa-rss"></i> </a>
+    </div>
+
+    
+    
+</div>
+<div id="all-wrapper" class="d-flex flex-column"><div id="topbar-wrapper">
+    <div id="topbar" class="d-flex">
+        
+        <span id="breadcrumb" class="d-flex">
+              
+               
+            
+            
+            <div><a href='https://zongpitt.com/'>Home</a></div>
+              
+              
+            
+            <div><a href="https://zongpitt.com/baby-rudin">baby-rudin</a></div>
+               
+              
+            
+            <div><a href="https://zongpitt.com/baby-rudin/7-sequences-and-series-of-functions">7-sequences-and-series-of-functions</a></div>
+               
+                 
+                
+        </span>
+        <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i>
+        <div id="topbar-title">Guangzong</div>
+        <i id="search-trigger" class="fas fa-search fa-fw"></i>
+        <span id="search-wrapper" class="align-items-center">
+            <i class="fas fa-search fa-fw"></i>
+            <input class="form-control" id="search-input" type="search" aria-label="search" autocomplete="off"
+                placeholder="Search..." />
+            <i class="fa fa-times-circle fa-fw" id="search-cleaner"></i>
+        </span>
+    </div>
+</div>
+<div id="main-wrapper" class="d-flex mt-3">
+            <div id="core-wrapper" class="d-flex flex-column">
+                <div id="main" class="d-flex flex-column">
+                    
+<div class="post pl-1 pr-1 pl-md-2 pr-md-2">
+    
+    <div id="post-content">
+        <h1 style="text-align: center;">6 EQUICONTINUOUS FAMILIES OF FUNCTIONS</h1>
+        <br>
+        
+        <p>In Theorem <span class="math inline">\(3.6\)</span> we saw that every
+bounded sequence of complex numbers contains a convergent subsequence,
+and the question arises whether something similar is true for sequences
+of functions. To make the question more precise, we shall define two
+kinds of boundedness.</p>
+<p><strong>7.19 Definition</strong> Let <span
+class="math inline">\(\left\{f_{n}\right\}\)</span> be a sequence of
+functions defined on a set <span class="math inline">\(E\)</span>.</p>
+<p>We say that <span class="math inline">\(\left\{f_{n}\right\}\)</span>
+is <em>pointwise bounded</em> on <span class="math inline">\(E\)</span>
+if the sequence <span
+class="math inline">\(\left\{f_{n}(x)\right\}\)</span> is bounded for
+every <span class="math inline">\(x \in E\)</span>, that is, if there
+exists a finite-valued function <span
+class="math inline">\(\phi\)</span> defined on <span
+class="math inline">\(E\)</span> such that</p>
+<p><span class="math display">\[
+\left|f_{n}(x)\right|&lt;\phi(x) \quad(x \in E, n=1,2,3, \ldots) \text
+{. }
+\]</span></p>
+<p>We say that <span class="math inline">\(\left\{f_{n}\right\}\)</span>
+is <em>uniformly bounded</em> on <span class="math inline">\(E\)</span>
+if there exists a number <span class="math inline">\(M\)</span> such
+that</p>
+<p><span class="math display">\[
+\left|f_{n}(x)\right|&lt;M \quad(x \in E, n=1,2,3, \ldots) \text {. }
+\]</span></p>
+<p>Now if <span class="math inline">\(\left\{f_{n}\right\}\)</span> is
+pointwise bounded on <span class="math inline">\(E\)</span> and <span
+class="math inline">\(E_{1}\)</span> is a <strong>countable
+subset</strong> of <span class="math inline">\(E\)</span>, it is always
+possible to find a subsequence <span
+class="math inline">\(\left\{f_{n_{k}}\right\}\)</span> such that <span
+class="math inline">\(\left\{f_{n_{k}}(x)\right\}\)</span> converges for
+every <span class="math inline">\(x \in E_{1}\)</span>. This can be done
+by the diagonal process which is used in the proof of Theorem 7.23.</p>
+<p>However, even if <span
+class="math inline">\(\left\{f_{n}\right\}\)</span> is a uniformly
+bounded sequence of continuous functions on a <strong>compact
+set</strong> <span class="math inline">\(E\)</span>, there need not
+exist a subsequence which converges pointwise on <span
+class="math inline">\(E\)</span>. In the following example, this would
+be quite troublesome to prove with the equipment which we have at hand
+so far, but the proof is quite simple if we appeal to a theorem from
+Chap. <span class="math inline">\(11 .\)</span></p>
+<p><strong>7.20 Example</strong> Let</p>
+<p><span class="math display">\[
+f_{n}(x)=\sin n x \quad(0 \leq x \leq 2 \pi, n=1,2,3, \ldots) .
+\]</span></p>
+<p>Suppose there exists a sequence <span
+class="math inline">\(\left\{n_{k}\right\}\)</span> such that <span
+class="math inline">\(\left\{\sin n_{k} x\right\}\)</span> converges,
+for every <span class="math inline">\(x \in[0,2 \pi]\)</span>. In that
+case we must have</p>
+<p><span class="math display">\[
+\lim _{k \rightarrow \infty}\left(\sin n_{k} x-\sin n_{k+1} x\right)=0
+\quad(0 \leq x \leq 2 \pi) ;
+\]</span></p>
+<p>hence</p>
+<p><span class="math display">\[
+\lim _{k \rightarrow \infty}\left(\sin n_{k} x-\sin n_{k+1}
+x\right)^{2}=0 \quad(0 \leq x \leq 2 \pi) .
+\]</span></p>
+<p>By Lebesgue’s theorem concerning integration of boundedly convergent
+sequences (Theorem 11.32), (40) implies</p>
+<p><span class="math display">\[
+\lim _{k \rightarrow \infty} \int_{0}^{2 \pi}\left(\sin n_{k} x-\sin
+n_{k+1} x\right)^{2} d x=0 .
+\]</span></p>
+<p>But a simple calculation shows that</p>
+<p><span class="math display">\[
+\int_{0}^{2 \pi}\left(\sin n_{k} x-\sin n_{k+1} x\right)^{2} d x=2 \pi
+\]</span></p>
+<p>which contradicts (41). Another question is whether every convergent
+sequence contains a uniformly convergent subsequence. Our next example
+will show that this need not be so, even if the sequence is uniformly
+bounded on a compact set. (Example <span
+class="math inline">\(7.6\)</span> shows that a sequence of bounded
+functions may converge without being uniformly bounded; but it is
+trivial to see that uniform convergence of a sequence of bounded
+functions implies uniform boundedness.)</p>
+<p><strong>7.21 Example</strong> Let</p>
+<p><span class="math display">\[
+f_{n}(x)=\frac{x^{2}}{x^{2}+(1-n x)^{2}} \quad(0 \leq x \leq 1, n=1,2,3,
+\ldots) \text {. }
+\]</span></p>
+<p>Then <span class="math inline">\(\left|f_{n}(x)\right| \leq
+1\)</span>, so that <span
+class="math inline">\(\left\{f_{n}\right\}\)</span> is uniformly bounded
+on <span class="math inline">\([0,1]\)</span>. Also</p>
+<p><span class="math display">\[
+\lim _{n \rightarrow \infty} f_{n}(x)=0 \quad(0 \leq x \leq 1),
+\]</span></p>
+<p>but</p>
+<p><span class="math display">\[
+f_{n}\left(\frac{1}{n}\right)=1 \quad(n=1,2,3, \ldots),
+\]</span></p>
+<p>so that no subsequence can converge uniformly on <span
+class="math inline">\([0,1]\)</span>.</p>
+<p>The concept which is needed in this connection is that of
+equicontinuity; it is given in the following definition.</p>
+<p><strong>7.22 Definition</strong> A family <span
+class="math inline">\(\mathscr{F}\)</span> of complex functions <span
+class="math inline">\(f\)</span> defined on a set <span
+class="math inline">\(E\)</span> in a metric space <span
+class="math inline">\(X\)</span> is said to be <em>equicontinuous</em>
+on <span class="math inline">\(E\)</span> if for every <span
+class="math inline">\(\varepsilon&gt;0\)</span> there exists a <span
+class="math inline">\(\delta&gt;0\)</span> such that</p>
+<p><span class="math display">\[
+|f(x)-f(y)|&lt;\varepsilon
+\]</span></p>
+<p>whenever <span class="math inline">\(d(x, y)&lt;\delta, x \in E, y
+\in E\)</span>, and <span class="math inline">\(f \in
+\mathscr{F}\)</span>. Here <span class="math inline">\(d\)</span>
+denotes the metric of <span class="math inline">\(X\)</span>. (compare
+to 4.18)</p>
+<p>It is clear that every member of an equicontinuous family is
+uniformly continuous.</p>
+<p>The sequence of Example <span class="math inline">\(7.21\)</span> is
+not equicontinuous.</p>
+<p>Theorems <span class="math inline">\(7.24\)</span> and <span
+class="math inline">\(7.25\)</span> will show that there is a very close
+relation between equicontinuity, on the one hand, and uniform
+convergence of sequences of continuous functions, on the other. But
+first we describe a selection process which has nothing to do with
+continuity.</p>
+<p><strong>7.23 Theorem</strong> <em>If <span
+class="math inline">\(\left\{f_{n}\right\}\)</span> is a pointwise
+bounded sequence of complex functions on a countable set <span
+class="math inline">\(E\)</span>, then <span
+class="math inline">\(\left\{f_{n}\right\}\)</span> has a subsequence
+<span class="math inline">\(\left\{f_{n_{k}}\right\}\)</span> such that
+<span class="math inline">\(\left\{f_{n_{k}}(x)\right\}\)</span>
+converges for every <span class="math inline">\(x \in
+E\)</span>.</em></p>
+<p><strong>Proof</strong> Let <span
+class="math inline">\(\left\{x_{i}\right\}, i=1,2,3, \ldots\)</span>, be
+the points of <span class="math inline">\(E\)</span>, arranged in a
+sequence. Since <span
+class="math inline">\(\left\{f_{n}\left(x_{1}\right)\right\}\)</span> is
+bounded, there exists a subsequence, which we shall denote by <span
+class="math inline">\(\left\{f_{1, k}\right\}\)</span>, such that <span
+class="math inline">\(\left\{f_{1, k}\left(x_{1}\right)\right\}\)</span>
+converges as <span class="math inline">\(k \rightarrow
+\infty\)</span>.</p>
+<p>Let us now consider sequences <span class="math inline">\(S_{1},
+S_{2}, S_{3}, \ldots\)</span>, which we represent by the array</p>
+<p><span class="math display">\[
+\begin{array}{cccccc}
+S_{1}: &amp; f_{1,1} &amp; f_{1,2} &amp; f_{1,3} &amp; f_{1,4} &amp;
+\ldots \\
+S_{2}: &amp; f_{2,1} &amp; f_{2,2} &amp; f_{2,3} &amp; f_{2,4} &amp;
+\ldots \\
+S_{3}: &amp; f_{3,1} &amp; f_{3,2} &amp; f_{3,3} &amp; f_{3,4} &amp;
+\cdots \\
+\ldots &amp; \ldots &amp; \ldots &amp; \ldots &amp; \ldots
+\end{array}
+\]</span></p>
+<p>and which have the following properties:</p>
+<ol type="a">
+<li><p><span class="math inline">\(S_{n}\)</span> is a subsequence of
+<span class="math inline">\(S_{n-1}\)</span>, for <span
+class="math inline">\(n=2,3,4, \ldots\)</span></p></li>
+<li><p><span class="math inline">\(\left\{f_{n,
+k}\left(x_{n}\right)\right\}\)</span> converges, as <span
+class="math inline">\(k \rightarrow \infty\)</span> (the boundedness of
+<span
+class="math inline">\(\left\{f_{n}\left(x_{n}\right)\right\}\)</span>
+makes it possible to choose <span class="math inline">\(S_{n}\)</span>
+in this way);</p></li>
+<li><p>The order in which the functions appear is the same in each
+sequence; i.e., if one function precedes another in <span
+class="math inline">\(S_{1}\)</span>, they are in the same relation in
+every <span class="math inline">\(S_{n}\)</span>, until one or the other
+is deleted. Hence, when going from one row in the above array to the
+next below, functions may move to the left but never to the
+right.</p></li>
+</ol>
+<p>We now go down the diagonal of the array; i.e., we consider the
+sequence</p>
+<p><span class="math display">\[
+S: f_{1,1} \quad f_{2,2} \quad f_{3,3} \quad f_{4,4} \cdots .
+\]</span></p>
+<p>By <span class="math inline">\((c)\)</span>, the sequence <span
+class="math inline">\(S\)</span> (except possibly its first <span
+class="math inline">\(n-1\)</span> terms) is a subsequence of <span
+class="math inline">\(S_{n}\)</span>, for <span
+class="math inline">\(n=1,2,3, \ldots\)</span>. Hence <span
+class="math inline">\((b)\)</span> implies that <span
+class="math inline">\(\left\{f_{n, n}\left(x_{i}\right)\right\}\)</span>
+converges, as <span class="math inline">\(n \rightarrow \infty\)</span>,
+for every <span class="math inline">\(x_{i} \in E\)</span>.</p>
+<p><strong>7.24 Theorem</strong> <em>If <span
+class="math inline">\(K\)</span> is a compact metric space, if <span
+class="math inline">\(f_{n} \in \mathscr{C}(K)\)</span> for <span
+class="math inline">\(n=1,2,3, \ldots\)</span>, and if <span
+class="math inline">\(\left\{f_{n}\right\}\)</span> converges uniformly
+on <span class="math inline">\(K\)</span>, then <span
+class="math inline">\(\left\{f_{n}\right\}\)</span> is equicontinuous on
+<span class="math inline">\(K\)</span>.</em></p>
+<p><strong>Proof</strong> Let <span
+class="math inline">\(\varepsilon&gt;0\)</span> be given. Since <span
+class="math inline">\(\left\{f_{n}\right\}\)</span> converges uniformly,
+there is an integer <span class="math inline">\(N\)</span> such that</p>
+<p><span class="math display">\[
+\left\|f_{n}-f_{N}\right\|&lt;\varepsilon \quad(n&gt;N) .
+\]</span></p>
+<p>(See Definition 7.14.) Since continuous functions are uniformly
+continuous on compact sets, there is a <span
+class="math inline">\(\delta&gt;0\)</span> such that</p>
+<p><span class="math display">\[
+\left|f_{i}(x)-f_{i}(y)\right|&lt;\varepsilon
+\]</span></p>
+<p>if <span class="math inline">\(1 \leq i \leq N\)</span> and <span
+class="math inline">\(d(x, y)&lt;\delta\)</span>.</p>
+<p>If <span class="math inline">\(n&gt;N\)</span> and <span
+class="math inline">\(d(x, y)&lt;\delta\)</span>, it follows that</p>
+<p><span class="math display">\[
+\left|f_{n}(x)-f_{n}(y)\right|
+\leq\left|f_{n}(x)-f_{N}(x)\right|+\left|f_{N}(x)-f_{N}(y)\right|+\left|f_{N}(y)-f_{n}(y)\right|&lt;3
+\varepsilon \text {. }
+\]</span></p>
+<p>In conjunction with (43), this proves the theorem.</p>
+<p><strong>7.25 Theorem</strong> <em>If <span
+class="math inline">\(K\)</span> is compact, if <span
+class="math inline">\(f_{n} \in \mathscr{C}(K)\)</span> for <span
+class="math inline">\(n=1,2,3, \ldots\)</span>, and if <span
+class="math inline">\(\left\{f_{n}\right\}\)</span> is pointwise bounded
+and equicontinuous on <span class="math inline">\(K\)</span>, then <br>
+(a) <span class="math inline">\(\left\{f_{n}\right\}\)</span> is
+uniformly bounded on <span class="math inline">\(K\)</span>,<br> (b)
+<span class="math inline">\(\left\{f_{n}\right\}\)</span> contains a
+uniformly convergent subsequence.</em></p>
+<p><strong>Proof</strong></p>
+<ol type="a">
+<li>Let <span class="math inline">\(\varepsilon&gt;0\)</span> be given
+and choose <span class="math inline">\(\delta&gt;0\)</span>, in
+accordance with Definition 7.22, so that</li>
+</ol>
+<p><span class="math display">\[
+\left|f_{n}(x)-f_{n}(y)\right|&lt;\varepsilon
+\]</span></p>
+<p>for all <span class="math inline">\(n\)</span>, provided that <span
+class="math inline">\(d(x, y)&lt;\delta\)</span>.</p>
+<p>Since <span class="math inline">\(K\)</span> is compact, there are
+finitely many points <span class="math inline">\(p_{1}, \ldots,
+p_{r}\)</span> in <span class="math inline">\(K\)</span> such that to
+every <span class="math inline">\(x \in K\)</span> corresponds at least
+one <span class="math inline">\(p_{i}\)</span> with <span
+class="math inline">\(d\left(x, p_{i}\right)&lt;\delta\)</span>. Since
+<span class="math inline">\(\left\{f_{n}\right\}\)</span> is pointwise
+bounded, there exist <span
+class="math inline">\(M_{i}&lt;\infty\)</span> such that <span
+class="math inline">\(\left|f_{n}\left(p_{i}\right)\right|&lt;M_{i}\)</span>
+for all <span class="math inline">\(n\)</span>. If <span
+class="math inline">\(M=\max \left(M_{1}, \ldots, M_{r}\right)\)</span>,
+then <span
+class="math inline">\(\left|f_{n}(x)\right|&lt;M+\varepsilon\)</span>
+for every <span class="math inline">\(x \in K\)</span>. This proves
+<span class="math inline">\((a)\)</span>.</p>
+<ol start="2" type="a">
+<li>Let <span class="math inline">\(E\)</span> be a countable dense
+subset of <span class="math inline">\(K\)</span>. (For the existence of
+such a set <span class="math inline">\(E\)</span>, see Exercise 25,
+Chap. 2.) Theorem <span class="math inline">\(7.23\)</span> shows that
+<span class="math inline">\(\left\{f_{n}\right\}\)</span> has a
+subsequence <span
+class="math inline">\(\left\{f_{n_{i}}\right\}\)</span> such that <span
+class="math inline">\(\left\{f_{n_{i}}(x)\right\}\)</span> converges for
+every <span class="math inline">\(x \in E\)</span>.</li>
+</ol>
+<p>Put <span class="math inline">\(f_{n_{i}}=g_{i}\)</span>, to simplify
+the notation. We shall prove that <span
+class="math inline">\(\left\{g_{i}\right\}\)</span> converges uniformly
+on <span class="math inline">\(K\)</span>.</p>
+<p>Let <span class="math inline">\(\varepsilon&gt;0\)</span>, and pick
+<span class="math inline">\(\delta&gt;0\)</span> as in the beginning of
+this proof. Let <span class="math inline">\(V(x, \delta)\)</span> be the
+set of all <span class="math inline">\(y \in K\)</span> with <span
+class="math inline">\(d(x, y)&lt;\delta\)</span>. Since <span
+class="math inline">\(E\)</span> is dense in <span
+class="math inline">\(K\)</span>, and <span
+class="math inline">\(K\)</span> is compact, there are finitely many
+points <span class="math inline">\(x_{1}, \ldots, x_{m}\)</span> in
+<span class="math inline">\(E\)</span> such that</p>
+<p><span class="math display">\[
+K \subset V\left(x_{1}, \delta\right) \cup \cdots \cup V\left(x_{m},
+\delta\right) .
+\]</span></p>
+<p>Since <span class="math inline">\(\left\{g_{i}(x)\right\}\)</span>
+converges for every <span class="math inline">\(x \in E\)</span>, there
+is an integer <span class="math inline">\(N\)</span> such that</p>
+<p><span class="math display">\[
+\left|g_{l}\left(x_{s}\right)-g_{j}\left(x_{s}\right)\right|&lt;\varepsilon
+\]</span></p>
+<p>whenever <span class="math inline">\(i \geq N, j \geq N, 1 \leq s
+\leq m\)</span>.</p>
+<p>If <span class="math inline">\(x \in K\)</span>, (45) shows that
+<span class="math inline">\(x \in V\left(x_{s}, \delta\right)\)</span>
+for some <span class="math inline">\(s\)</span>, so that</p>
+<p><span class="math display">\[
+\left|g_{i}(x)-g_{i}\left(x_{\mathrm{s}}\right)\right|&lt;\varepsilon
+\]</span></p>
+<p>for every <span class="math inline">\(i\)</span>. If <span
+class="math inline">\(i \geq N\)</span> and <span
+class="math inline">\(j \geq N\)</span>, it follows from (46) that</p>
+<p><span class="math display">\[
+\begin{aligned}
+\left|g_{i}(x)-g_{j}(x)\right| &amp;
+\leq\left|g_{i}(x)-g_{i}\left(x_{s}\right)\right|+\left|g_{i}\left(x_{s}\right)-g_{j}\left(x_{s}\right)\right|+\left|g_{j}\left(x_{s}\right)-g_{j}(x)\right|
+\\
+&amp;&lt;3 \varepsilon .
+\end{aligned}
+\]</span></p>
+<p>This completes the proof.</p>
+
+    </div>
+    
+</div>
+</div>
+
+                <div id="footer-wrapper">
+                    <footer class="footer"><footer class="row pl-3 pr-3">
+    <div class="col-12 d-flex justify-content-between align-items-center text-muted pl-0 pr-0">
+        <div class="footer-left">
+            <p class="mb-0"> © 2022 <a href="https://github.com/chen-gz">guangzong</a>. <span data-toggle="tooltip"
+                    data-placement="top"
+                    title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author.">All
+                    rights reserved.</span></p>
+        </div>
+        <div class="footer-right">
+            <p class="mb-0"> Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">hugo</a>
+                with <a href="https://github.com/chen-gz/hugo_zong" target="_blank" rel="noopener">zong</a>
+                theme.</p>
+        </div>
+    </div>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script> MathJax = {
+            tex: {
+                tags: 'ams',
+            }
+        };</script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</footer>
+</footer>
+                </div>
+            </div>
+            <div id="panel-wrapper" class="d-flex flex-column"><div id="toc-wrapper" class="mb-5 pl-2">
+    <span>Contents</span>
+    <nav id="toc" data-toggle="toc">
+        
+        
+        
+    </nav>
+</div>
+
+<div id="access-lastmod" class="pb-4 pl-2">
+    <div class="panel-heading">Recently Updated</div>
+    <ul class="post-content pl-3 pb-1 ml-1 mt-2">
+          
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/1-total-variation/">Total Variation</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-7/1-derivatives-of-measures/">Derivatives of Measures</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/3-consequences-of-the-radon-nikodym-theorem/">Consequences of the Radon-Nikodym Theorem</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/4-bounded-linear-functionals-on-lp/">Bounded linear functional on Lp</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/2-abosolute-continuity/">Abosolute Continuity</a></li>
+        
+    </ul>
+</div>
+
+<div id="access-tags" class="pl-2">
+    <div class="panel-heading">Trending Tags</div>
+    <div class="d-flex flex-wrap mt-3 mb-1 mr-3">
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/algorithm/">Algorithm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/android/">Android</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c/">C</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c-language/">c language</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/caddy/">Caddy</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cadence/">Cadence</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cdc/">CDC</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/classification/">classification</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/compress/">Compress</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/conf/">Conf</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/double-column/">Double Column</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/errno13/">Errno13</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/fish/">fish</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gan/">GAN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/git/">Git</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gtk/">Gtk</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/html/">Html</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/i3/">I3</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/idea/">Idea</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/java/">Java</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/latex/">Latex</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lda/">LDA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linear-programming/">Linear Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linux/">Linux</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lr/">LR</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/math/">Math</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mathematics/">Mathematics</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matlab/">Matlab</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matplot/">matplot</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/memory/">Memory</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mermaid/">Mermaid</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/misc/">Misc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/ml/">ML</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mosfet/">Mosfet</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/network/">Network</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/nn/">NN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pandoc/">Pandoc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pca/">PCA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/probability/">Probability</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/productive/">Productive</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/program/">Program</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/programming/">Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/python/">Python</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/qt/">Qt</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/random-variable/">Random Variable</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rcnn/">RCNN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rust/">Rust</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/security/">Security</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/software/">Software</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/std/">Std</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/svd/">Svd</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/tool/">Tool</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/usb/">USB</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vim/">Vim</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpn/">Vpn</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpnc/">Vpnc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/xterm/">xterm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/zsh/">Zsh</a>
+        
+    </div>
+</div>
+</div><div id="search-result-wrapper" class="d-flex justify-content-center unloaded">
+    <div class="col-12 col-sm-11 post-content">
+        <div id="search-hints"></div>
+        <div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3 col-12"></div>
+    </div>
+</div>
+
+<script src="/js/fuse.min.js"></script>
+<script src="/js/fastsearch.js"></script>
+
+
+</div>
+        <div id="mask"></div>
+        <a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button"
+            style="display: none">
+            <i class="fas fa-angle-up"></i>
+        </a>
+    </div>
+    
+</body>
+
+</html>

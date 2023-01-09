@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css"
+        class="dark-mode-native-dark-original" />
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+     
+    <link rel="stylesheet" href="https://zongpitt.com/sass/main.06935202011a97ba473ebeeb0cb6788daa9fb5a9fff471a4e85850293d1c5ac4.css" />
+    <title>
+          Guangzong Blog | 2 METRIC SPACES
+    </title>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.bundle.min.js"></script>
+    <script src=" https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.js"></script>
+
+    <script
+        src="https://cdn.jsdelivr.net/combine/npm/magnific-popup@1/dist/jquery.magnific-popup.min.js,npm/lozad/dist/lozad.min.js,npm/clipboard@2/dist/clipboard.min.js"></script>
+    <script type="text/javascript" src="/js/commons/back-to-top.js"></script>
+    
+    
+    
+    <script type="text/javascript" src="/js/commons/topbar-switch.js"></script>
+    <script type="text/javascript" src="/js/commons/sidebar.js"></script>
+    <script type="text/javascript" src="/js/utils/category-collapse.js"></script>
+    <script type="text/javascript" src="/js/utils/checkbox.js"></script>
+    <script type="text/javascript" src="/js/utils/clipboard.js"></script>
+    <script type="text/javascript" src="/js/utils/img-extra.js"></script>
+    <script type="text/javascript" src="/js/utils/pageviews.js"></script>
+    
+    <script type="text/javascript" src="/js/utils/timeago.js"></script>
+    
+    
+</head>
+<body data-spy="scroll" data-target="#toc" data-topbar-visible="true" class="d-flex"><div id="sidebar" class="d-flex flex-column align-items-end">
+    <div class="profile-wrapper text-center">
+
+        <div id="avatar">
+            <a href="/" alt="avatar" class="mx-auto"> <img src=https://github.com/chen-gz/chen-gz/blob/main/mine_square.jpg?raw&#61;truehttps://raw.githubusercontent.com/chen-gz/chen-gz/blob/main/mine_square.jpg alt="avatar"
+                    onerror="this.style.display='none'"> </a>
+        </div>
+
+        <div class="site-title mt-3"> <a href="/">Guangzong</a> </div>
+        <div class="site-subtitle font-italic">Welcome to my blog</div>
+    </div>
+
+    <ul>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/">
+                <span>
+                    Home
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/archive/">
+                <span>
+                    Archive
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/tags/">
+                <span>
+                    Tags
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/about/">
+                <span>
+                    About
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/categories/">
+                <span>
+                    Categories
+                </span>
+            </a>
+        </li>
+        
+    </ul>
+
+    <div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center align-items-center">
+        <button class="mode-toggle btn" aria-label="Switch Mode"> 
+            <i class="fas fa-adjust"></i> 
+        </button>
+
+        <span class="icon-border"></span>
+        <a href="https://github.com/chen-gz" aria-label="github" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i>
+        </a>
+
+        <a href=" javascript:location.href = 'mailto:' + ['chen-gz','outlook.com'].join('@')" aria-label="email">
+            <i class="fas fa-envelope"></i>
+        </a>
+
+        <a href="/feed.xml" aria-label="rss"> <i class="fas fa-rss"></i> </a>
+    </div>
+
+    
+    
+</div>
+<div id="all-wrapper" class="d-flex flex-column"><div id="topbar-wrapper">
+    <div id="topbar" class="d-flex">
+        
+        <span id="breadcrumb" class="d-flex">
+              
+               
+            
+            
+            <div><a href='https://zongpitt.com/'>Home</a></div>
+              
+              
+            
+            <div><a href="https://zongpitt.com/baby-rudin">baby-rudin</a></div>
+               
+              
+            
+            <div><a href="https://zongpitt.com/baby-rudin/ch2">ch2</a></div>
+               
+                 
+                
+        </span>
+        <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i>
+        <div id="topbar-title">Guangzong</div>
+        <i id="search-trigger" class="fas fa-search fa-fw"></i>
+        <span id="search-wrapper" class="align-items-center">
+            <i class="fas fa-search fa-fw"></i>
+            <input class="form-control" id="search-input" type="search" aria-label="search" autocomplete="off"
+                placeholder="Search..." />
+            <i class="fa fa-times-circle fa-fw" id="search-cleaner"></i>
+        </span>
+    </div>
+</div>
+<div id="main-wrapper" class="d-flex mt-3">
+            <div id="core-wrapper" class="d-flex flex-column">
+                <div id="main" class="d-flex flex-column">
+                    
+<div class="post pl-1 pr-1 pl-md-2 pr-md-2">
+    
+    <div id="post-content">
+        <h1 style="text-align: center;">2 METRIC SPACES</h1>
+        <br>
+        
+        <ul>
+<li>youtube <a href="https://youtu.be/SZTJCJcPwDk">part1</a> <a
+href="https://youtu.be/3FNNbVYKLFQ">part2</a> <a
+href="https://youtu.be/cxhZsJYeW3g">part3</a></li>
+<li>bilibili <a
+href="https://www.bilibili.com/video/BV1Rg411e7XQ/">part1</a> <a
+href="https://www.bilibili.com/video/BV1se411T7EU/">part2</a> <a
+href="https://www.bilibili.com/video/BV1vd4y1q7nT/">part3</a></li>
+<li>note part1 <a
+href="https://github.com/chen-gz/bed2/blob/5cd2019dbdfb1fc5788215c3111a9073b24a2225/8%20PART1%202022-08-22-Note-15-20.pdf">pdf</a>
+<a
+href="https://github.com/chen-gz/bed2/blob/5cd2019dbdfb1fc5788215c3111a9073b24a2225/8%20PART1%202022-08-22-Note-15-20.xopp">xopp</a></li>
+<li>note part2 <a
+href="https://github.com/chen-gz/bed2/blob/5cd2019dbdfb1fc5788215c3111a9073b24a2225/8%20PART2%202022-08-23-Note-16-01.pdf">pdf</a>
+<a
+href="https://github.com/chen-gz/bed2/blob/5cd2019dbdfb1fc5788215c3111a9073b24a2225/8%20PART2%202022-08-23-Note-16-01.xopp">xopp</a></li>
+<li>note part3 <a
+href="https://github.com/chen-gz/bed2/blob/5cd2019dbdfb1fc5788215c3111a9073b24a2225/8%20PART3%202022-08-23-Note-22-07.pdf">pdf</a>
+<a
+href="https://github.com/chen-gz/bed2/blob/5cd2019dbdfb1fc5788215c3111a9073b24a2225/8%20PART3%202022-08-23-Note-22-07.xopp">oxpp</a></li>
+</ul>
+<p><strong>2.15 Definition</strong> A set <span
+class="math inline">\(X\)</span>, whose elements we shall call points,
+is said to be a metric space if with any two points <span
+class="math inline">\(p\)</span> and <span
+class="math inline">\(q\)</span> of <span
+class="math inline">\(X\)</span> there is associated a real number <span
+class="math inline">\(d(p, q)\)</span>, called the distance from <span
+class="math inline">\(p\)</span> to <span
+class="math inline">\(q\)</span>, such that</p>
+<ol type="a">
+<li><p><span class="math inline">\(d(p, q)&gt;0\)</span> if <span
+class="math inline">\(p \neq q ; d(p, p)=0\)</span>;</p></li>
+<li><p><span class="math inline">\(d(p, q)=d(q, p)\)</span>;</p></li>
+<li><p><span class="math inline">\(d(p, q) \leq d(p, r)+d(r,
+q)\)</span>, for any <span class="math inline">\(r \in
+X\)</span>.</p></li>
+</ol>
+<p>Any function with these three properties is called a distance
+function, or a metric.</p>
+<p><strong>2.16 Examples</strong></p>
+<p>The most important examples of metric spaces, from our standpoint,
+are the euclidean spaces <span class="math inline">\(R^{k}\)</span>,
+especially <span class="math inline">\(R^{1}\)</span> (the real line)
+and <span class="math inline">\(R^{2}\)</span> (the complex plane); the
+distance in <span class="math inline">\(R^{k}\)</span> is defined by</p>
+<p><span class="math display">\[
+d(\mathbf{x}, \mathbf{y})=|\mathbf{x}-\mathbf{y}| \quad\left(\mathbf{x},
+\mathbf{y} \in R^{k}\right) .
+\]</span></p>
+<p>By Theorem 1.37, the conditions of Definition <span
+class="math inline">\(2.15\)</span> are satisfied by (19).</p>
+<p>It is important to observe that every subset <span
+class="math inline">\(Y\)</span> of a metric space <span
+class="math inline">\(X\)</span> is a metric space in its own right,
+with the same distance function. For it is clear that if conditions
+<span class="math inline">\((a)\)</span> to <span
+class="math inline">\((c)\)</span> of Definition <span
+class="math inline">\(2.15\)</span> hold for <span
+class="math inline">\(p, q, r \in X\)</span>, they also hold if we
+restrict <span class="math inline">\(p, q, r\)</span> to lie in <span
+class="math inline">\(Y\)</span>.</p>
+<p>Thus every subset of a euclidean space is a metric space. Other
+examples are the spaces <span
+class="math inline">\(\mathscr{C}(K)\)</span> and <span
+class="math inline">\(\mathscr{L}^{2}(\mu)\)</span>, which are discussed
+in Chaps. 7 and 11 , respectively.</p>
+<p><strong>2.17 Definition</strong> By the segment <span
+class="math inline">\((a, b)\)</span> we mean the set of all real
+numbers <span class="math inline">\(x\)</span> such that <span
+class="math inline">\(a&lt;x&lt;b\)</span>.</p>
+<p>By the interval <span class="math inline">\([a, b]\)</span> we mean
+the set of all real numbers <span class="math inline">\(x\)</span> such
+that <span class="math inline">\(a \leq x \leq b\)</span>.</p>
+<p>Occasionally we shall also encounter “half-open intervals” <span
+class="math inline">\([a, b)\)</span> and <span
+class="math inline">\((a, b]\)</span>; the first consists of all <span
+class="math inline">\(x\)</span> such that <span class="math inline">\(a
+\leq x&lt;b\)</span>, the second of all <span
+class="math inline">\(x\)</span> such that <span
+class="math inline">\(a&lt;x \leq b\)</span></p>
+<p>If <span class="math inline">\(a_{i}&lt;b_{i}\)</span> for <span
+class="math inline">\(i=1, \ldots, k\)</span>, the set of all points
+<span class="math inline">\(\mathbf{x}=\left(x_{1}, \ldots,
+x_{k}\right)\)</span> in <span class="math inline">\(R^{k}\)</span>
+whose coordinates satisfy the inequalities <span
+class="math inline">\(a_{i} \leq x_{i} \leq b_{i}(1 \leq i \leq
+k)\)</span> is called a <span class="math inline">\(k\)</span>-cell.
+Thus a 1 -cell is an interval, a 2-cell is a rectangle, etc.</p>
+<p>If <span class="math inline">\(\mathbf{x} \in R^{k}\)</span> and
+<span class="math inline">\(r&gt;0\)</span>, the open (or closed) ball
+<span class="math inline">\(B\)</span> with center at <span
+class="math inline">\(\mathbf{x}\)</span> and radius <span
+class="math inline">\(r\)</span> is defined to be the set of all <span
+class="math inline">\(\mathbf{y} \in R^{k}\)</span> such that <span
+class="math inline">\(|\mathbf{y}-\mathbf{x}|&lt;r(\)</span> or <span
+class="math inline">\(|\mathbf{y}-\mathbf{x}| \leq r\)</span> ).</p>
+<p>We call a set <span class="math inline">\(E \subset R^{k}\)</span>
+convex if</p>
+<p><span class="math display">\[
+\lambda \mathbf{x}+(1-\lambda) \mathbf{y} \in E
+\]</span></p>
+<p>whenever <span class="math inline">\(\mathbf{x} \in E, \mathbf{y} \in
+E\)</span>, and <span
+class="math inline">\(0&lt;\lambda&lt;1\)</span>.</p>
+<p>For example, balls are convex. For if <span
+class="math inline">\(|\mathbf{y}-\mathbf{x}|&lt;r,|\mathbf{z}-\mathbf{x}|&lt;r\)</span>,
+and <span class="math inline">\(0&lt;\lambda&lt;1\)</span>, we have</p>
+<p><span class="math display">\[
+\begin{aligned}
+|\lambda \mathbf{y}+(1-\lambda) \mathbf{z}-\mathbf{x}|
+&amp;=|\lambda(\mathbf{y}-\mathbf{x})+(1-\lambda)(\mathbf{z}-\mathbf{x})|
+\\
+&amp; \leq
+\lambda|\mathbf{y}-\mathbf{x}|+(1-\lambda)|\mathbf{z}-\mathbf{x}|&lt;\lambda
+r+(1-\lambda) r \\
+&amp;=r .
+\end{aligned}
+\]</span></p>
+<p>The same proof applies to closed balls. It is also easy to see that
+<span class="math inline">\(k\)</span>-cells are convex.</p>
+<p><strong>2.18 Definition</strong> Let <span
+class="math inline">\(X\)</span> be a metric space. All points and sets
+mentioned below are understood to be elements and subsets of <span
+class="math inline">\(X\)</span>.</p>
+<ol type="a">
+<li><p>A neighborhood of <span class="math inline">\(p\)</span> is a set
+<span class="math inline">\(N_{r}(p)\)</span> consisting of all <span
+class="math inline">\(q\)</span> such that <span
+class="math inline">\(d(p, q)&lt;r\)</span>, for some <span
+class="math inline">\(r&gt;0\)</span>. The number <span
+class="math inline">\(r\)</span> is called the radius of <span
+class="math inline">\(N_{r}(p)\)</span>.</p></li>
+<li><p>A point <span class="math inline">\(p\)</span> is a limit point
+of the set <span class="math inline">\(E\)</span> if every neighborhood
+of <span class="math inline">\(p\)</span> contains a point <span
+class="math inline">\(q \neq p\)</span> such that <span
+class="math inline">\(q \in E\)</span>.</p></li>
+<li><p>If <span class="math inline">\(p \in E\)</span> and <span
+class="math inline">\(p\)</span> is not a limit point of <span
+class="math inline">\(E\)</span>, then <span
+class="math inline">\(p\)</span> is called an isolated point of <span
+class="math inline">\(E\)</span>.</p></li>
+<li><p><span class="math inline">\(E\)</span> is closed if every limit
+point of <span class="math inline">\(E\)</span> is a point of <span
+class="math inline">\(E\)</span>.</p></li>
+<li><p>A point <span class="math inline">\(p\)</span> is an interior
+point of <span class="math inline">\(E\)</span> if there is a
+neighborhood <span class="math inline">\(N\)</span> of <span
+class="math inline">\(p\)</span> such that <span class="math inline">\(N
+\subset E\)</span>.</p></li>
+<li><p><span class="math inline">\(E\)</span> is open if every point of
+<span class="math inline">\(E\)</span> is an interior point of <span
+class="math inline">\(E\)</span>.</p></li>
+<li><p>The complement of <span class="math inline">\(E\)</span> (denoted
+by <span class="math inline">\(E^{c}\)</span> ) is the set of all points
+<span class="math inline">\(p \in X\)</span> such that <span
+class="math inline">\(p \notin E\)</span>.</p></li>
+<li><p><span class="math inline">\(E\)</span> is perfect if <span
+class="math inline">\(E\)</span> is closed and if every point of <span
+class="math inline">\(E\)</span> is a limit point of <span
+class="math inline">\(E\)</span>.</p></li>
+<li><p><span class="math inline">\(E\)</span> is bounded if there is a
+real number <span class="math inline">\(M\)</span> and a point <span
+class="math inline">\(q \in X\)</span> such that <span
+class="math inline">\(d(p, q)&lt;M\)</span> for all <span
+class="math inline">\(p \in E\)</span>.</p></li>
+<li><p><span class="math inline">\(E\)</span> is dense in <span
+class="math inline">\(X\)</span> if every point of <span
+class="math inline">\(X\)</span> is a limit point of <span
+class="math inline">\(E\)</span>, or a point of <span
+class="math inline">\(E\)</span> (or both).</p></li>
+</ol>
+<p>Let us note that in <span class="math inline">\(R^{1}\)</span>
+neighborhoods are segments, whereas in <span
+class="math inline">\(R^{2}\)</span> neighborhoods are interiors of
+circles.</p>
+<p><strong>2.19 Theorem</strong> Every neighborhood is an open set.</p>
+<p>Proof Consider a neighborhood <span
+class="math inline">\(E=N_{r}(p)\)</span>, and let <span
+class="math inline">\(q\)</span> be any point of <span
+class="math inline">\(E\)</span>. Then there is a positive real number
+<span class="math inline">\(h\)</span> such that</p>
+<p><span class="math display">\[
+d(p, q)=r-h .
+\]</span></p>
+<p>For all points <span class="math inline">\(s\)</span> such that <span
+class="math inline">\(d(q, s)&lt;h\)</span>, we have then</p>
+<p><span class="math display">\[
+d(p, s) \leq d(p, q)+d(q, s)&lt;r-h+h=r,
+\]</span></p>
+<p>so that <span class="math inline">\(s \in E\)</span>. Thus <span
+class="math inline">\(q\)</span> is an interior point of <span
+class="math inline">\(E\)</span>.</p>
+<p><strong>2.20 Theorem</strong> If <span
+class="math inline">\(p\)</span> is a limit point of a set <span
+class="math inline">\(E\)</span>, then every neighborhood of <span
+class="math inline">\(p\)</span> contains infinitely many points of
+<span class="math inline">\(E\)</span>.</p>
+<p>Proof Suppose there is a neighborhood <span
+class="math inline">\(N\)</span> of <span
+class="math inline">\(p\)</span> which contains only a finite number of
+points of <span class="math inline">\(E\)</span>. Let <span
+class="math inline">\(q_{1}, \ldots, q_{n}\)</span> be those points of
+<span class="math inline">\(N \cap E\)</span>, which are distinct from
+<span class="math inline">\(p\)</span>, and put</p>
+<p><span class="math display">\[
+r=\min _{1 \leq m \leq n} d\left(p, q_{m}\right)
+\]</span></p>
+<p>[we use this notation to denote the smallest of the numbers <span
+class="math inline">\(d\left(p, q_{1}\right), \ldots\)</span>, <span
+class="math inline">\(\left.d\left(p, q_{n}\right)\right]\)</span>. The
+minimum of a finite set of positive numbers is clearly positive, so that
+<span class="math inline">\(r&gt;0\)</span>.</p>
+<p>The neighborhood <span class="math inline">\(N_{r}(p)\)</span>
+contains no point <span class="math inline">\(q\)</span> of <span
+class="math inline">\(E\)</span> such that <span class="math inline">\(q
+\neq p\)</span>, so that <span class="math inline">\(p\)</span> is not a
+limit point of <span class="math inline">\(E\)</span>. This
+contradiction establishes the theorem.</p>
+<p><strong>2.21 Examples</strong> Let us consider the following subsets
+of <span class="math inline">\(R^{2}\)</span> :</p>
+<ol type="a">
+<li><p>The set of all complex <span class="math inline">\(z\)</span>
+such that <span class="math inline">\(|z|&lt;1\)</span>.</p></li>
+<li><p>The set of all complex <span class="math inline">\(z\)</span>
+such that <span class="math inline">\(|z| \leq 1\)</span>.</p></li>
+<li><p>A nonempty finite set.</p></li>
+<li><p>The set of all integers.</p></li>
+<li><p>The set consisting of the numbers <span class="math inline">\(1 /
+n(n=1,2,3, \ldots)\)</span>. Let us note that this set <span
+class="math inline">\(E\)</span> has a limit point (namely, <span
+class="math inline">\(z=0\)</span> ) but that no point of <span
+class="math inline">\(E\)</span> is a limit point of <span
+class="math inline">\(E\)</span>; we wish to stress the difference
+between having a limit point and containing one.</p></li>
+</ol>
+<p>( <span class="math inline">\(f\)</span> ) The set of all complex
+numbers (that is, <span class="math inline">\(R^{2}\)</span> ).</p>
+<ol start="7" type="a">
+<li>The segment <span class="math inline">\((a, b)\)</span>.</li>
+</ol>
+<p>Let us note that <span class="math inline">\((d),(e),(g)\)</span> can
+be regarded also as subsets of <span
+class="math inline">\(R^{1}\)</span>.</p>
+<p>Some properties of these sets are tabulated below:</p>
+<p><span class="math inline">\(\begin{array}{cccc}\text { Closed } &amp;
+\text { Open } &amp; \text { Perfect } &amp; \text { Bounded } \\ \text
+{ No } &amp; \text { Yes } &amp; \text { No } &amp; \text { Yes } \\
+\text { Yes } &amp; \text { No } &amp; \text { Yes } &amp; \text { Yes }
+\\ \text { Yes } &amp; \text { No } &amp; \text { No } &amp; \text { Yes
+} \\ \text { Yes } &amp; \text { No } &amp; \text { No } &amp; \text {
+No } \\ \text { No } &amp; \text { No } &amp; \text { No } &amp; \text {
+Yes } \\ \text { Yes } &amp; \text { Yes } &amp; \text { Yes } &amp;
+\text { No } \\ \text { No } &amp; &amp; \text { No } &amp; \text { Yes
+}\end{array}\)</span></p>
+<p>In <span class="math inline">\((g)\)</span>, we left the second entry
+blank. The reason is that the segment <span class="math inline">\((a,
+b)\)</span> is not open if we regard it as a subset of <span
+class="math inline">\(R^{2}\)</span>, but it is an open subset of <span
+class="math inline">\(R^{1}\)</span>.</p>
+<p><strong>2.22 Theorem</strong> Let <span
+class="math inline">\(\left\{E_{\alpha}\right\}\)</span> be a (finite or
+infinite) collection of sets <span
+class="math inline">\(E_{\alpha}\)</span>. Then</p>
+<p><span class="math display">\[
+\left(\bigcup_{a}
+E_{\alpha}\right)^{c}=\bigcap_{\alpha}\left(E_{\alpha}^{c}\right) .
+\]</span></p>
+<p>Proof Let <span class="math inline">\(A\)</span> and <span
+class="math inline">\(B\)</span> be the left and right members of (20).
+If <span class="math inline">\(x \in A\)</span>, then <span
+class="math inline">\(x \notin U_{\alpha} E_{\alpha}\)</span>, hence
+<span class="math inline">\(x \notin E_{\alpha}\)</span> for any <span
+class="math inline">\(\alpha\)</span>, hence <span
+class="math inline">\(x \in E_{\alpha}^{c}\)</span> for every <span
+class="math inline">\(\alpha\)</span>, so that <span
+class="math inline">\(x \in \cap E_{\alpha}^{c}\)</span>. Thus <span
+class="math inline">\(A \subset B\)</span>. Conversely, if <span
+class="math inline">\(x \in B\)</span>, then <span
+class="math inline">\(x \in E_{\alpha}^{c}\)</span> for every <span
+class="math inline">\(\alpha\)</span>, hence <span
+class="math inline">\(x \notin E_{\alpha}\)</span> for any <span
+class="math inline">\(\alpha\)</span>, hence <span
+class="math inline">\(x \notin \cup_{\alpha} E_{\alpha}\)</span>, so
+that <span class="math inline">\(x \in\left(\bigcup_{\alpha}
+E_{\alpha}\right)^{c}\)</span>. Thus <span class="math inline">\(B
+\subset A\)</span>.</p>
+<p>It follows that <span class="math inline">\(A=B\)</span>.</p>
+<p><strong>2.23 Theorem</strong> A set <span
+class="math inline">\(E\)</span> is open if and only if its complement
+is closed.</p>
+<p>Proof First, suppose <span class="math inline">\(E^{c}\)</span> is
+closed. Choose <span class="math inline">\(x \in E\)</span>. Then <span
+class="math inline">\(x \notin E^{c}\)</span>, and <span
+class="math inline">\(x\)</span> is not a limit point of <span
+class="math inline">\(E^{c}\)</span>. Hence there exists a neighborhood
+<span class="math inline">\(N\)</span> of <span
+class="math inline">\(x\)</span> such that <span
+class="math inline">\(E^{c} \cap N\)</span> is empty, that is, <span
+class="math inline">\(N \subset E\)</span>. Thus <span
+class="math inline">\(x\)</span> is an interior point of <span
+class="math inline">\(E\)</span>, and <span
+class="math inline">\(E\)</span> is open.</p>
+<p>Next, suppose <span class="math inline">\(E\)</span> is open. Let
+<span class="math inline">\(x\)</span> be a limit point of <span
+class="math inline">\(E^{c}\)</span>. Then every neighborhood of <span
+class="math inline">\(x\)</span> contains a point of <span
+class="math inline">\(E^{c}\)</span>, so that <span
+class="math inline">\(x\)</span> is not an interior point of <span
+class="math inline">\(E\)</span>. Since <span
+class="math inline">\(E\)</span> is open, this means that <span
+class="math inline">\(x \in E^{c}\)</span>. It follows that <span
+class="math inline">\(E^{c}\)</span> is closed.</p>
+<p>Corollary <span class="math inline">\(A\)</span> set <span
+class="math inline">\(F\)</span> is closed if and only if its complement
+is open.</p>
+<p><strong>2.24 Theorem</strong></p>
+<ol type="a">
+<li><p>For any collection <span
+class="math inline">\(\left\{G_{\alpha}\right\}\)</span> of open sets,
+<span class="math inline">\(\bigcup_{\alpha} G_{\alpha}\)</span> is
+open.</p></li>
+<li><p>For any collection <span
+class="math inline">\(\left\{F_{\alpha}\right\}\)</span> of closed sets,
+<span class="math inline">\(\bigcap_{\alpha} F_{\alpha}\)</span> is
+closed.</p></li>
+<li><p>For any finite collection <span class="math inline">\(G_{1},
+\ldots, G_{n}\)</span> of open sets, <span
+class="math inline">\(\bigcap_{i=1}^{n} G_{i}\)</span> is open.</p></li>
+<li><p>For any finite collection <span class="math inline">\(F_{1},
+\ldots, F_{n}\)</span> of closed sets, <span
+class="math inline">\(\bigcup_{i=1}^{n} F_{l}\)</span> is
+closed.</p></li>
+</ol>
+<p>Proof Put <span class="math inline">\(G=\bigcup_{\alpha}
+G_{\alpha}\)</span>. If <span class="math inline">\(x \in G\)</span>,
+then <span class="math inline">\(x \in G_{\alpha}\)</span> for some
+<span class="math inline">\(\alpha\)</span>. Since <span
+class="math inline">\(x\)</span> is an interior point of <span
+class="math inline">\(G_{\alpha}, x\)</span> is also an interior point
+of <span class="math inline">\(G\)</span>, and <span
+class="math inline">\(G\)</span> is open. This proves <span
+class="math inline">\((a)\)</span>.</p>
+<p>By Theorem 2.22,</p>
+<p><span class="math display">\[
+\left(\bigcap_{\alpha}
+F_{\alpha}\right)^{c}=\bigcup_{\alpha}\left(F_{a}^{c}\right) \text {, }
+\]</span></p>
+<p>and <span class="math inline">\(F_{a}^{c}\)</span> is open, by
+Theorem 2.23. Hence (a) implies that (21) is open so that <span
+class="math inline">\(\bigcap_{a} F_{\alpha}\)</span> is closed.</p>
+<p>Next, put <span class="math inline">\(H=\bigcap_{i=1}^{n}
+G_{i}\)</span>. For any <span class="math inline">\(x \in H\)</span>,
+there exist neighborhoods <span class="math inline">\(N_{l}\)</span> of
+<span class="math inline">\(x\)</span>, with radii <span
+class="math inline">\(r_{i}\)</span>, such that <span
+class="math inline">\(N_{l} \subset G_{i}(i=1, \ldots, n)\)</span>.
+Put</p>
+<p><span class="math display">\[
+r=\min \left(r_{1}, \ldots, r_{n}\right),
+\]</span></p>
+<p>and let <span class="math inline">\(N\)</span> be the neighborhood of
+<span class="math inline">\(x\)</span> of radius <span
+class="math inline">\(r\)</span>. Then <span class="math inline">\(N
+\subset G_{i}\)</span> for <span class="math inline">\(i=1\)</span>,
+<span class="math inline">\(\ldots, n\)</span>, so that <span
+class="math inline">\(N \subset H\)</span>, and <span
+class="math inline">\(H\)</span> is open.</p>
+<p>By taking complements, <span class="math inline">\((d)\)</span>
+follows from <span class="math inline">\((c)\)</span> :</p>
+<p><span class="math display">\[
+\left(\bigcup_{l=1}^{n}
+F_{l}\right)^{c}=\bigcap_{i=1}^{n}\left(F_{l}^{c}\right) .
+\]</span></p>
+<p><strong>2.25 Examples</strong> In parts <span
+class="math inline">\((c)\)</span> and <span
+class="math inline">\((d)\)</span> of the preceding theorem, the
+finiteness of the collections is essential. For let <span
+class="math inline">\(G_{n}\)</span> be the segment <span
+class="math inline">\(\left(-\frac{1}{n}, \frac{1}{n}\right)(n=1,2,3,
+\ldots)\)</span>. Then <span class="math inline">\(G_{n}\)</span> is an
+open subset of <span class="math inline">\(R^{1}\)</span>. Put <span
+class="math inline">\(G=\bigcap_{n=1}^{\infty} G_{n}\)</span>. Then
+<span class="math inline">\(G\)</span> consists of a single point
+(namely, <span class="math inline">\(x=0\)</span> ) and is therefore not
+an open subset of <span class="math inline">\(R^{1}\)</span>.</p>
+<p>Thus the intersection of an infinite collection of open sets need not
+be open. Similarly, the union of an infinite collection of closed sets
+need not be closed.</p>
+<p><strong>2.26 Definition</strong> If <span
+class="math inline">\(X\)</span> is a metric space, if <span
+class="math inline">\(E \subset X\)</span>, and if <span
+class="math inline">\(E^{\prime}\)</span> denotes the set of all limit
+points of <span class="math inline">\(E\)</span> in <span
+class="math inline">\(X\)</span>, then the closure of <span
+class="math inline">\(E\)</span> is the set <span
+class="math inline">\(E=E \cup E^{\prime}\)</span>.</p>
+<p><strong>2.27 Theorem</strong> If <span
+class="math inline">\(X\)</span> is a metric space and <span
+class="math inline">\(E \subset X\)</span>, then</p>
+<ol type="a">
+<li><p>E is closed,</p></li>
+<li><p><span class="math inline">\(E=E\)</span> if and only if <span
+class="math inline">\(E\)</span> is closed,</p></li>
+<li><p><span class="math inline">\(\bar{E} \subset F\)</span> for every
+closed set <span class="math inline">\(F \subset X\)</span> such that
+<span class="math inline">\(E \subset F\)</span>.</p></li>
+</ol>
+<p>By <span class="math inline">\((a)\)</span> and (c), <span
+class="math inline">\(\bar{E}\)</span> is the smallest closed subset of
+<span class="math inline">\(X\)</span> that contains <span
+class="math inline">\(E\)</span>.</p>
+<p>Proof</p>
+<ol type="a">
+<li><p>If <span class="math inline">\(p \in X\)</span> and <span
+class="math inline">\(p \notin E\)</span> then <span
+class="math inline">\(p\)</span> is neither a point of <span
+class="math inline">\(E\)</span> nor a limit point of <span
+class="math inline">\(E\)</span>. Hence <span
+class="math inline">\(p\)</span> has a neighborhood which does not
+intersect <span class="math inline">\(E\)</span>. The complement of
+<span class="math inline">\(\bar{E}\)</span> is therefore open. Hence
+<span class="math inline">\(E\)</span> is closed.</p></li>
+<li><p>If <span class="math inline">\(E=E\)</span>, (a) implies that
+<span class="math inline">\(E\)</span> is closed. If <span
+class="math inline">\(E\)</span> is closed, then <span
+class="math inline">\(E^{\prime} \subset E\)</span></p></li>
+</ol>
+<p>[by Definitions <span class="math inline">\(2.18(d)\)</span> and
+2.26], hence <span class="math inline">\(E=E\)</span>.</p>
+<ol start="3" type="a">
+<li>If <span class="math inline">\(F\)</span> is closed and <span
+class="math inline">\(F \supset E\)</span>, then <span
+class="math inline">\(F \supset F^{\prime}\)</span>, hence <span
+class="math inline">\(F \supset E^{\prime}\)</span>. Thus <span
+class="math inline">\(F \supset E\)</span>.</li>
+</ol>
+<p><strong>2.28 Theorem</strong> Let <span
+class="math inline">\(E\)</span> be a nonempty set of real numbers which
+is bounded above. Let <span class="math inline">\(y=\sup E\)</span>.
+Then <span class="math inline">\(y \in E\)</span>. Hence <span
+class="math inline">\(y \in E\)</span> if <span
+class="math inline">\(E\)</span> is closed.</p>
+<p>Compare this with the examples in Sec. 1.9.</p>
+<p>Proof If <span class="math inline">\(y \in E\)</span> then <span
+class="math inline">\(y \in E\)</span>. Assume <span
+class="math inline">\(y \notin E\)</span>. For every <span
+class="math inline">\(h&gt;0\)</span> there exists then a point <span
+class="math inline">\(x \in E\)</span> such that <span
+class="math inline">\(y-h&lt;x&lt;y\)</span>, for otherwise <span
+class="math inline">\(y-h\)</span> would be an upper bound of <span
+class="math inline">\(E\)</span>. Thus <span
+class="math inline">\(y\)</span> is a limit point of <span
+class="math inline">\(E\)</span>. Hence <span class="math inline">\(y
+\in E\)</span>.</p>
+<p><strong>2.29 Remark</strong> Suppose <span class="math inline">\(E
+\subset Y \subset X\)</span>, where <span
+class="math inline">\(X\)</span> is a metric space. To say that <span
+class="math inline">\(E\)</span> is an open subset of <span
+class="math inline">\(X\)</span> means that to each point <span
+class="math inline">\(p \in E\)</span> there is associated a positive
+number <span class="math inline">\(r\)</span> such that the conditions
+<span class="math inline">\(d(p, q)&lt;r, q \in X\)</span> imply that
+<span class="math inline">\(q \in E\)</span>. But we have already
+observed (Sec. 2.16) that <span class="math inline">\(Y\)</span> is also
+a metric space, so that our definitions may equally well be made within
+<span class="math inline">\(Y\)</span>. To be quite explicit, let us say
+that <span class="math inline">\(E\)</span> is open relative to <span
+class="math inline">\(Y\)</span> if to each <span
+class="math inline">\(p \in E\)</span> there is associated an <span
+class="math inline">\(r&gt;0\)</span> such that <span
+class="math inline">\(q \in E\)</span> whenever <span
+class="math inline">\(d(p, q)&lt;r\)</span> and <span
+class="math inline">\(q \in Y\)</span>. Example <span
+class="math inline">\(2.21(g)\)</span> showed that a set may be open
+relative to <span class="math inline">\(Y\)</span> without being an open
+subset of <span class="math inline">\(X\)</span>. However, there is a
+simple relation between these concepts, which we now state.</p>
+<p><strong>2.30 Theorem</strong> Suppose <span class="math inline">\(Y
+\subset X\)</span>. A subset <span class="math inline">\(E\)</span> of
+<span class="math inline">\(Y\)</span> is open relative to <span
+class="math inline">\(Y\)</span> if and only if <span
+class="math inline">\(E=Y \cap G\)</span> for some open subset <span
+class="math inline">\(G\)</span> of <span
+class="math inline">\(X\)</span>.</p>
+<p>Proof Suppose <span class="math inline">\(E\)</span> is open relative
+to <span class="math inline">\(Y\)</span>. To each <span
+class="math inline">\(p \in E\)</span> there is a positive number <span
+class="math inline">\(r_{p}\)</span> such that the conditions <span
+class="math inline">\(d(p, q)&lt;r_{p}, q \in Y\)</span> imply that
+<span class="math inline">\(q \in E\)</span>. Let <span
+class="math inline">\(V_{p}\)</span> be the set of all <span
+class="math inline">\(q \in X\)</span> such that <span
+class="math inline">\(d(p, q)&lt;r_{p}\)</span>, and define</p>
+<p><span class="math display">\[
+G=\bigcup_{p \in E} V_{p} .
+\]</span></p>
+<p>Then <span class="math inline">\(G\)</span> is an open subset of
+<span class="math inline">\(X\)</span>, by Theorems <span
+class="math inline">\(2.19\)</span> and <span
+class="math inline">\(2.24\)</span>.</p>
+<p>Since <span class="math inline">\(p \in V_{p}\)</span> for all <span
+class="math inline">\(p \in E\)</span>, it is clear that <span
+class="math inline">\(E \subset G \cap Y\)</span>.</p>
+<p>By our choice of <span class="math inline">\(V_{p}\)</span>, we have
+<span class="math inline">\(V_{p} \cap Y \subset E\)</span> for every
+<span class="math inline">\(p \in E\)</span>, so that <span
+class="math inline">\(G \cap Y \subset E\)</span>. Thus <span
+class="math inline">\(E=G \cap Y\)</span>, and one half of the theorem
+is proved.</p>
+<p>Conversely, if <span class="math inline">\(G\)</span> is open in
+<span class="math inline">\(X\)</span> and <span
+class="math inline">\(E=G \cap Y\)</span>, every <span
+class="math inline">\(p \in E\)</span> has a neighborhood <span
+class="math inline">\(V_{p} \subset G\)</span>. Then <span
+class="math inline">\(V_{p} \cap Y \subset E\)</span>, so that <span
+class="math inline">\(E\)</span> is open relative to <span
+class="math inline">\(Y\)</span>.</p>
+
+    </div>
+    
+</div>
+</div>
+
+                <div id="footer-wrapper">
+                    <footer class="footer"><footer class="row pl-3 pr-3">
+    <div class="col-12 d-flex justify-content-between align-items-center text-muted pl-0 pr-0">
+        <div class="footer-left">
+            <p class="mb-0"> © 2022 <a href="https://github.com/chen-gz">guangzong</a>. <span data-toggle="tooltip"
+                    data-placement="top"
+                    title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author.">All
+                    rights reserved.</span></p>
+        </div>
+        <div class="footer-right">
+            <p class="mb-0"> Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">hugo</a>
+                with <a href="https://github.com/chen-gz/hugo_zong" target="_blank" rel="noopener">zong</a>
+                theme.</p>
+        </div>
+    </div>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script> MathJax = {
+            tex: {
+                tags: 'ams',
+            }
+        };</script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</footer>
+</footer>
+                </div>
+            </div>
+            <div id="panel-wrapper" class="d-flex flex-column"><div id="toc-wrapper" class="mb-5 pl-2">
+    <span>Contents</span>
+    <nav id="toc" data-toggle="toc">
+        
+        
+        
+    </nav>
+</div>
+
+<div id="access-lastmod" class="pb-4 pl-2">
+    <div class="panel-heading">Recently Updated</div>
+    <ul class="post-content pl-3 pb-1 ml-1 mt-2">
+          
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/1-total-variation/">Total Variation</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-7/1-derivatives-of-measures/">Derivatives of Measures</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/3-consequences-of-the-radon-nikodym-theorem/">Consequences of the Radon-Nikodym Theorem</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/4-bounded-linear-functionals-on-lp/">Bounded linear functional on Lp</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/2-abosolute-continuity/">Abosolute Continuity</a></li>
+        
+    </ul>
+</div>
+
+<div id="access-tags" class="pl-2">
+    <div class="panel-heading">Trending Tags</div>
+    <div class="d-flex flex-wrap mt-3 mb-1 mr-3">
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/algorithm/">Algorithm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/android/">Android</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c/">C</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c-language/">c language</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/caddy/">Caddy</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cadence/">Cadence</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cdc/">CDC</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/classification/">classification</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/compress/">Compress</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/conf/">Conf</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/double-column/">Double Column</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/errno13/">Errno13</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/fish/">fish</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gan/">GAN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/git/">Git</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gtk/">Gtk</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/html/">Html</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/i3/">I3</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/idea/">Idea</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/java/">Java</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/latex/">Latex</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lda/">LDA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linear-programming/">Linear Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linux/">Linux</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lr/">LR</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/math/">Math</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mathematics/">Mathematics</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matlab/">Matlab</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matplot/">matplot</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/memory/">Memory</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mermaid/">Mermaid</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/misc/">Misc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/ml/">ML</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mosfet/">Mosfet</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/network/">Network</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/nn/">NN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pandoc/">Pandoc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pca/">PCA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/probability/">Probability</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/productive/">Productive</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/program/">Program</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/programming/">Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/python/">Python</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/qt/">Qt</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/random-variable/">Random Variable</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rcnn/">RCNN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rust/">Rust</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/security/">Security</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/software/">Software</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/std/">Std</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/svd/">Svd</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/tool/">Tool</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/usb/">USB</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vim/">Vim</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpn/">Vpn</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpnc/">Vpnc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/xterm/">xterm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/zsh/">Zsh</a>
+        
+    </div>
+</div>
+</div><div id="search-result-wrapper" class="d-flex justify-content-center unloaded">
+    <div class="col-12 col-sm-11 post-content">
+        <div id="search-hints"></div>
+        <div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3 col-12"></div>
+    </div>
+</div>
+
+<script src="/js/fuse.min.js"></script>
+<script src="/js/fastsearch.js"></script>
+
+
+</div>
+        <div id="mask"></div>
+        <a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button"
+            style="display: none">
+            <i class="fas fa-angle-up"></i>
+        </a>
+    </div>
+    
+</body>
+
+</html>

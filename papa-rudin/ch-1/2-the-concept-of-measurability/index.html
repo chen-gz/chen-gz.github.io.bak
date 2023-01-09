@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css"
+        class="dark-mode-native-dark-original" />
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+     
+    <link rel="stylesheet" href="https://zongpitt.com/sass/main.06935202011a97ba473ebeeb0cb6788daa9fb5a9fff471a4e85850293d1c5ac4.css" />
+    <title>
+          Guangzong Blog | 2 The Concept of Measurability
+    </title>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.bundle.min.js"></script>
+    <script src=" https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.js"></script>
+
+    <script
+        src="https://cdn.jsdelivr.net/combine/npm/magnific-popup@1/dist/jquery.magnific-popup.min.js,npm/lozad/dist/lozad.min.js,npm/clipboard@2/dist/clipboard.min.js"></script>
+    <script type="text/javascript" src="/js/commons/back-to-top.js"></script>
+    
+    
+    
+    <script type="text/javascript" src="/js/commons/topbar-switch.js"></script>
+    <script type="text/javascript" src="/js/commons/sidebar.js"></script>
+    <script type="text/javascript" src="/js/utils/category-collapse.js"></script>
+    <script type="text/javascript" src="/js/utils/checkbox.js"></script>
+    <script type="text/javascript" src="/js/utils/clipboard.js"></script>
+    <script type="text/javascript" src="/js/utils/img-extra.js"></script>
+    <script type="text/javascript" src="/js/utils/pageviews.js"></script>
+    
+    <script type="text/javascript" src="/js/utils/timeago.js"></script>
+    
+    
+</head>
+<body data-spy="scroll" data-target="#toc" data-topbar-visible="true" class="d-flex"><div id="sidebar" class="d-flex flex-column align-items-end">
+    <div class="profile-wrapper text-center">
+
+        <div id="avatar">
+            <a href="/" alt="avatar" class="mx-auto"> <img src=https://github.com/chen-gz/chen-gz/blob/main/mine_square.jpg?raw&#61;truehttps://raw.githubusercontent.com/chen-gz/chen-gz/blob/main/mine_square.jpg alt="avatar"
+                    onerror="this.style.display='none'"> </a>
+        </div>
+
+        <div class="site-title mt-3"> <a href="/">Guangzong</a> </div>
+        <div class="site-subtitle font-italic">Welcome to my blog</div>
+    </div>
+
+    <ul>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/">
+                <span>
+                    Home
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/archive/">
+                <span>
+                    Archive
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/tags/">
+                <span>
+                    Tags
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/about/">
+                <span>
+                    About
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/categories/">
+                <span>
+                    Categories
+                </span>
+            </a>
+        </li>
+        
+    </ul>
+
+    <div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center align-items-center">
+        <button class="mode-toggle btn" aria-label="Switch Mode"> 
+            <i class="fas fa-adjust"></i> 
+        </button>
+
+        <span class="icon-border"></span>
+        <a href="https://github.com/chen-gz" aria-label="github" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i>
+        </a>
+
+        <a href=" javascript:location.href = 'mailto:' + ['chen-gz','outlook.com'].join('@')" aria-label="email">
+            <i class="fas fa-envelope"></i>
+        </a>
+
+        <a href="/feed.xml" aria-label="rss"> <i class="fas fa-rss"></i> </a>
+    </div>
+
+    
+    
+</div>
+<div id="all-wrapper" class="d-flex flex-column"><div id="topbar-wrapper">
+    <div id="topbar" class="d-flex">
+        
+        <span id="breadcrumb" class="d-flex">
+              
+               
+            
+            
+            <div><a href='https://zongpitt.com/'>Home</a></div>
+              
+              
+            
+            <div><a href="https://zongpitt.com/papa-rudin">papa-rudin</a></div>
+               
+              
+            
+            <div><a href="https://zongpitt.com/papa-rudin/ch-1">ch-1</a></div>
+               
+                 
+                
+        </span>
+        <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i>
+        <div id="topbar-title">Guangzong</div>
+        <i id="search-trigger" class="fas fa-search fa-fw"></i>
+        <span id="search-wrapper" class="align-items-center">
+            <i class="fas fa-search fa-fw"></i>
+            <input class="form-control" id="search-input" type="search" aria-label="search" autocomplete="off"
+                placeholder="Search..." />
+            <i class="fa fa-times-circle fa-fw" id="search-cleaner"></i>
+        </span>
+    </div>
+</div>
+<div id="main-wrapper" class="d-flex mt-3">
+            <div id="core-wrapper" class="d-flex flex-column">
+                <div id="main" class="d-flex flex-column">
+                    
+<div class="post pl-1 pr-1 pl-md-2 pr-md-2">
+    
+    <div id="post-content">
+        <h1 style="text-align: center;">2 The Concept of Measurability</h1>
+        <br>
+        
+        <p>The class of measurable functions plays a fundamental role in
+integration theory. It has some basic properties in common with another
+most important class of functions, namely, the continuous ones. It is
+helpful to keep these similarities in mind. Our presentation is
+therefore organized in such a way that the analogies between the
+concepts <strong>topological space</strong>, open set, and
+<strong>continuous function</strong>, on the one hand, and
+<strong>measurable space</strong>, <strong>measurable set</strong>, and
+<strong>measurable function</strong>, on the other, are strongly
+emphasized. It seems that the relations between these concepts emerge
+most clearly when the setting is quite abstract, and this (rather than a
+desire for mere generality) motivates our approach to the subject.</p>
+<h3 id="definition">1.2 Definition</h3>
+<ol type="a">
+<li>A collection <span class="math inline">\(\tau\)</span> of subsets of
+a set <span class="math inline">\(X\)</span> is said to be a
+<strong>topology</strong> in <span class="math inline">\(X\)</span> if
+<span class="math inline">\(\tau\)</span> has the following three
+properties:</li>
+</ol>
+<ol type="1">
+<li><p><span class="math inline">\(\varnothing \in \tau\)</span> and
+<span class="math inline">\(X \in \tau\)</span>.</p></li>
+<li><p>If <span class="math inline">\(V_i \in \tau\)</span> for <span
+class="math inline">\(i=1, \ldots, n\)</span>, then <span
+class="math inline">\(V_1 \cap V_2 \cap \cdots \cap V_n \in
+\tau\)</span>.</p></li>
+<li><p>If <span class="math inline">\(\left\{V_\alpha\right\}\)</span>
+is an arbitrary collection of members of <span
+class="math inline">\(\tau\)</span> (finite, countable, or uncountable),
+then <span class="math inline">\(\bigcup_\alpha V_\alpha \in
+\tau\)</span>.</p></li>
+</ol>
+<ol start="2" type="a">
+<li><p>If <span class="math inline">\(\tau\)</span> is a topology in
+<span class="math inline">\(X\)</span>, then <span
+class="math inline">\(X\)</span> is called a <strong>topological
+space,</strong> and the members of <span
+class="math inline">\(\tau\)</span> are called the <strong>open
+sets</strong> in <span class="math inline">\(X\)</span>.</p></li>
+<li><p>If <span class="math inline">\(X\)</span> and <span
+class="math inline">\(Y\)</span> are topological spaces and if <span
+class="math inline">\(f\)</span> is a mapping of <span
+class="math inline">\(X\)</span> into <span
+class="math inline">\(Y\)</span>, then <span
+class="math inline">\(f\)</span> is said to be
+<strong>continuous</strong> provided that <span
+class="math inline">\(f^{-1}(V)\)</span> is an open set in <span
+class="math inline">\(X\)</span> for every open set <span
+class="math inline">\(V\)</span> in <span
+class="math inline">\(Y\)</span>.</p></li>
+</ol>
+<h3 id="definition-1">1.3 Definition</h3>
+<ol type="a">
+<li><p>A collection <span class="math inline">\(\mathfrak{M}\)</span> of
+subsets of a set <span class="math inline">\(X\)</span> is said to be a
+<strong><span class="math inline">\(\sigma\)</span>-algebra</strong> in
+<span class="math inline">\(X\)</span> if <span
+class="math inline">\(\mathfrak{M}\)</span> has the following
+properties:</p>
+<ol type="i">
+<li><span class="math inline">\(X \in \mathfrak{M}\)</span>.</li>
+<li>If <span class="math inline">\(A \in \mathfrak{M}\)</span>, then
+<span class="math inline">\(A^c \in \mathfrak{M}\)</span>, where <span
+class="math inline">\(A^c\)</span> is the complement of <span
+class="math inline">\(A\)</span> relative to <span
+class="math inline">\(X\)</span>.</li>
+<li>If <span class="math inline">\(A=\bigcup_{n=1}^{\infty} A_n\)</span>
+and if <span class="math inline">\(A_n \in \mathfrak{M}\)</span> for
+<span class="math inline">\(n=1,2,3, \ldots\)</span>, then <span
+class="math inline">\(A \in \mathfrak{M}\)</span>.</li>
+</ol></li>
+<li><p>If <span class="math inline">\(\mathfrak{M}\)</span> is a <span
+class="math inline">\(\sigma\)</span>-algebra in <span
+class="math inline">\(X\)</span>, then <span
+class="math inline">\(X\)</span> is called a <strong>measurable
+space</strong>, and the members of <span
+class="math inline">\(\mathfrak{M}\)</span> are called the
+<strong>measurable sets</strong> in <span
+class="math inline">\(X\)</span>.</p></li>
+<li><p>If <span class="math inline">\(X\)</span> is a <em>measurable
+space</em>, <span class="math inline">\(Y\)</span> is a <em>topological
+space</em>, and <span class="math inline">\(f\)</span> is a mapping of
+<span class="math inline">\(X\)</span> into <span
+class="math inline">\(Y\)</span>, then <span
+class="math inline">\(f\)</span> is said to be
+<strong>measurable</strong> provided that <span
+class="math inline">\(f^{-1}(V)\)</span> is a measurable set in <span
+class="math inline">\(X\)</span> for every open set <span
+class="math inline">\(V\)</span> in <span
+class="math inline">\(Y\)</span>.</p></li>
+</ol>
+<p>It would perhaps be more satisfactory to apply the term “measurable
+space” to the ordered pair <span class="math inline">\((X,
+\mathfrak{M})\)</span>, rather than to <span
+class="math inline">\(X\)</span>. After all, <span
+class="math inline">\(X\)</span> is a set, and <span
+class="math inline">\(X\)</span> has not been changed in any way by the
+fact that we now also have a <span
+class="math inline">\(\sigma\)</span>-algebra of its subsets in mind.
+Similarly, a topological space is an ordered pair <span
+class="math inline">\((X, \tau) .\)</span> But if this sort of thing
+were systematically done in all mathematics, the terminology would
+become awfully cumbersome. We shall discuss this again at somewhat
+greater length in Sec. 1.21.</p>
+<h3 id="comments-on-definition-1.2">1.4 Comments on Definition 1.2</h3>
+<p>The most familiar topological spaces are the <strong>metric
+spaces</strong>. We shall assume some familiarity with metric spaces but
+shall give the basic definitions, for the sake of completeness.</p>
+<p>A <strong>metric space</strong> is a set <span
+class="math inline">\(X\)</span> in which a <strong>distance
+function</strong> (or metric) <span class="math inline">\(\rho\)</span>
+is defined, with the following properties:</p>
+<ol type="a">
+<li><span class="math inline">\(0 \leq \rho(x, y)&lt;\infty\)</span> for
+all <span class="math inline">\(x\)</span> and <span
+class="math inline">\(y \in X\)</span>.</li>
+<li><span class="math inline">\(\rho(x, y)=0\)</span> if and only if
+<span class="math inline">\(x=y\)</span>.</li>
+<li><span class="math inline">\(\rho(x, y)=\rho(y, x)\)</span> for all
+<span class="math inline">\(x\)</span> and <span class="math inline">\(y
+\in X\)</span>.</li>
+<li><span class="math inline">\(\rho(x, y) \leq \rho(x, z)+\rho(z,
+y)\)</span> for all <span class="math inline">\(x, y\)</span>, and <span
+class="math inline">\(z \in X\)</span>.</li>
+</ol>
+<p>Property <span class="math inline">\((d)\)</span> is called the
+<strong>triangle inequality.</strong></p>
+<p>If <span class="math inline">\(x \in X\)</span> and <span
+class="math inline">\(r \geq 0\)</span>, the <strong>open ball</strong>
+with center at <span class="math inline">\(x\)</span> and radius <span
+class="math inline">\(r\)</span> is the set <span
+class="math inline">\(\{y \in X: \rho(x, y)&lt;r\}\)</span>.</p>
+<p><em>If <span class="math inline">\(X\)</span> is a metric space and
+if <span class="math inline">\(\tau\)</span> is the collection of all
+sets <span class="math inline">\(E \subset X\)</span> which are
+arbitrary unions of open balls, then <span
+class="math inline">\(\tau\)</span> is a topology in <span
+class="math inline">\(X\)</span>.</em> This is not hard to verify; the
+intersection property depends on the fact that if <span
+class="math inline">\(x \in B_1 \cap B_2\)</span>, where <span
+class="math inline">\(B_1\)</span> and <span
+class="math inline">\(B_2\)</span> are open balls, then <span
+class="math inline">\(x\)</span> is the center of an open ball <span
+class="math inline">\(B \subset B_1 \cap B_2\)</span>. We leave this as
+an exercise.</p>
+<p>For instance, in the real line <span
+class="math inline">\(R^1\)</span> a set is open if and only if it is a
+union of open segments <span class="math inline">\((a, b)\)</span>. In
+the plane <span class="math inline">\(R^2\)</span>, the open sets are
+those which are unions of open circular discs.</p>
+<p>Another topological space, which we shall encounter frequently, is
+the extended real line <span class="math inline">\([-\infty,
+\infty]\)</span>; its topology is defined by declaring the following
+sets to be open: <span class="math inline">\((a, b),[-\infty, a),(a,
+\infty]\)</span>, and any union of segments of this type. The definition
+of continuity given in Sec. <span class="math inline">\(1.2(c)\)</span>
+is a global one. Frequently it is desirable to define continuity
+locally: A mapping <span class="math inline">\(f\)</span> of <span
+class="math inline">\(X\)</span> into <span
+class="math inline">\(Y\)</span> is said to be <strong>continuous at the
+point <span class="math inline">\(x_0 \in X\)</span></strong> if to
+every neighborhood <span class="math inline">\(V\)</span> of <span
+class="math inline">\(f\left(x_0\right)\)</span> there corresponds a
+neighborhood <span class="math inline">\(W\)</span> of <span
+class="math inline">\(x_0\)</span> such that <span
+class="math inline">\(f(W) \subset V\)</span>.</p>
+<p>(A <strong>neighborhood</strong> of a point <span
+class="math inline">\(x\)</span> is, by definition, an open set which
+contains <span class="math inline">\(x\)</span>.)</p>
+<p>When <span class="math inline">\(X\)</span> and <span
+class="math inline">\(Y\)</span> are metric spaces, this local
+definition is of course the same as the usual epsilon-delta definition,
+and is equivalent to the requirement that <span
+class="math inline">\(\lim f\left(x_n\right)=f\left(x_0\right)\)</span>
+in <span class="math inline">\(Y\)</span> whenever <span
+class="math inline">\(\lim x_n=x_0\)</span> in <span
+class="math inline">\(X\)</span>.</p>
+<p>The following easy proposition relates the local and global
+definitions of continuity in the expected manner:</p>
+<h3 id="proposition">1.5 Proposition</h3>
+<p>Let <span class="math inline">\(X\)</span> and <span
+class="math inline">\(Y\)</span> be topological spaces. A mapping <span
+class="math inline">\(f\)</span> of <span
+class="math inline">\(X\)</span> into <span
+class="math inline">\(Y\)</span> is continuous if and only if <span
+class="math inline">\(f\)</span> is continuous at every point of <span
+class="math inline">\(X\)</span>.</p>
+<p><strong>Proof</strong> If <span class="math inline">\(f\)</span> is
+continuous and <span class="math inline">\(x_0 \in X\)</span>, then
+<span class="math inline">\(f^{-1}(V)\)</span> is a neighborhood of
+<span class="math inline">\(x_0\)</span>, for every neighborhood <span
+class="math inline">\(V\)</span> of <span
+class="math inline">\(f\left(x_0\right)\)</span>. Since <span
+class="math inline">\(f\left(f^{-1}(V)\right) \subset V\)</span>, it
+follows that <span class="math inline">\(f\)</span> is continuous at
+<span class="math inline">\(x_0\)</span>.</p>
+<p>If <span class="math inline">\(f\)</span> is continuous at every
+point of <span class="math inline">\(X\)</span> and if <span
+class="math inline">\(V\)</span> is open in <span
+class="math inline">\(Y\)</span>, every point <span
+class="math inline">\(x \in f^{-1}(V)\)</span> has a neighborhood <span
+class="math inline">\(W_x\)</span> such that <span
+class="math inline">\(f\left(W_x\right) \subset V\)</span>. Therefore
+<span class="math inline">\(W_x \subset\)</span> <span
+class="math inline">\(f^{-1}(V)\)</span>. It follows that <span
+class="math inline">\(f^{-1}(V)\)</span> is the union of the open sets
+<span class="math inline">\(W_x\)</span>, so <span
+class="math inline">\(f^{-1}(V)\)</span> is itself open. Thus <span
+class="math inline">\(f\)</span> is continuous. <span
+class="math inline">\(\blacksquare\)</span></p>
+<h3 id="comments-on-definition-1.3">1.6 Comments on Definition 1.3</h3>
+<p>Let <span class="math inline">\(\mathfrak{M}\)</span> be a <span
+class="math inline">\(\sigma\)</span>-algebra in a set <span
+class="math inline">\(X\)</span>. Referring to Properties (i) to (iii)
+of Definition 1.3(a), we immediately derive the following facts.</p>
+<ol type="a">
+<li><p>Since <span class="math inline">\(\varnothing=X^c\)</span>, (i)
+and (ii) imply that <span class="math inline">\(\varnothing \in
+\mathfrak{M}\)</span>.</p></li>
+<li><p>Taking <span
+class="math inline">\(A_{n+1}=A_{n+2}=\cdots=\varnothing\)</span> in
+(iii), we see that <span class="math inline">\(A_1 \cup A_2 \cup \cdots
+\cup A_n\)</span> <span class="math inline">\(\in \mathfrak{M}\)</span>
+if <span class="math inline">\(A_i \in \mathfrak{M}\)</span> for <span
+class="math inline">\(i=1, \ldots, n\)</span>.</p></li>
+<li><p>Since <span class="math display">\[
+\bigcap_{n=1}^{\infty} A_n=\left(\bigcup_{n=1}^{\infty} A_n^c\right)^c
+\]</span> <span class="math inline">\(\mathfrak{M}\)</span> is closed
+under the formation of countable (and also finite)
+intersections.</p></li>
+<li><p>Since <span class="math inline">\(A-B=B^c \cap A\)</span>, we
+have <span class="math inline">\(A-B \in \mathfrak{M}\)</span> if <span
+class="math inline">\(A \in \mathfrak{M}\)</span> and <span
+class="math inline">\(B \in \mathfrak{M}\)</span>. The prefix <span
+class="math inline">\(\sigma\)</span> refers to the fact that (iii) is
+required to hold for all <strong>countable</strong> unions of members of
+<span class="math inline">\(\mathfrak{M}\)</span>. If (iii) is required
+for finite unions only, then <span
+class="math inline">\(\mathfrak{M}\)</span> is called an
+<strong>algebra</strong> of sets.</p></li>
+</ol>
+<h3 id="theorem">1.7 Theorem</h3>
+<p>Let <span class="math inline">\(Y\)</span> and <span
+class="math inline">\(Z\)</span> be <strong>topological spaces</strong>,
+and let <span class="math inline">\(g: Y \rightarrow Z\)</span> be
+<strong>continuous</strong>.</p>
+<ol type="a">
+<li>If <span class="math inline">\(X\)</span> is a <strong>topological
+space</strong>, if <span class="math inline">\(f: X \rightarrow
+Y\)</span> is <strong>continuous</strong>, and if <span
+class="math inline">\(h=g \circ f\)</span>, then <span
+class="math inline">\(h: X \rightarrow Z\)</span> is
+<strong>continuous</strong>.</li>
+<li>If <span class="math inline">\(X\)</span> is a <strong>measurable
+space</strong>, if <span class="math inline">\(f: X \rightarrow
+Y\)</span> is <strong>measurable</strong>, and if <span
+class="math inline">\(h=g \circ f\)</span>, then <span
+class="math inline">\(h: X \rightarrow Z\)</span> is
+<strong>measurable</strong>.</li>
+</ol>
+<p>Stated informally, continuous functions of continuous functions are
+continuous; continuous functions of measurable functions are
+measurable.</p>
+<p><strong>Proof</strong> If <span class="math inline">\(V\)</span> is
+open in <span class="math inline">\(Z\)</span>, then <span
+class="math inline">\(g^{-1}(V)\)</span> is open in <span
+class="math inline">\(Y\)</span>, and <span class="math display">\[
+h^{-1}(V)=f^{-1}\left(g^{-1}(V)\right)
+\]</span> If <span class="math inline">\(f\)</span> is continuous, it
+follows that <span class="math inline">\(h^{-1}(V)\)</span> is open,
+proving <span class="math inline">\((a)\)</span>. If <span
+class="math inline">\(f\)</span> is measurable, it follows that <span
+class="math inline">\(h^{-1}(V)\)</span> is measurable, proving <span
+class="math inline">\((b)\)</span>. <span
+class="math inline">\(\blacksquare\)</span></p>
+<h3 id="theorem-1">1.8 Theorem</h3>
+<p>Let <span class="math inline">\(u\)</span> and <span
+class="math inline">\(v\)</span> be real measurable functions on a
+measurable space <span class="math inline">\(X\)</span>, let <span
+class="math inline">\(\Phi\)</span> be a continuous mapping of the plane
+into a topological space <span class="math inline">\(Y\)</span>, and
+define <span class="math display">\[
+h(x)=\Phi(u(x), v(x))
+\]</span> for <span class="math inline">\(x \in X\)</span>. Then <span
+class="math inline">\(h: X \rightarrow Y\)</span> is measurable.</p>
+<p><strong>Proof</strong> Put <span class="math inline">\(f(x)=(u(x),
+v(x))\)</span>. Then <span class="math inline">\(f\)</span> maps <span
+class="math inline">\(X\)</span> into the plane. Since <span
+class="math inline">\(h=\Phi \circ f\)</span>, Theorem <span
+class="math inline">\(1.7\)</span> shows that it is enough to prove the
+measurability of <span class="math inline">\(f\)</span>.</p>
+<p>If <span class="math inline">\(R\)</span> is any open rectangle in
+the plane, with sides parallel to the axes, then <span
+class="math inline">\(R\)</span> is the cartesian product of two
+segments <span class="math inline">\(I_1\)</span> and <span
+class="math inline">\(I_2\)</span>, and <span class="math display">\[
+f^{-1}(R)=u^{-1}\left(I_1\right) \cap v^{-1}\left(I_2\right),
+\]</span> which is measurable, by our assumption on <span
+class="math inline">\(u\)</span> and <span
+class="math inline">\(v\)</span>. Every open set <span
+class="math inline">\(V\)</span> in the plane is a countable union of
+such rectangles <span class="math inline">\(R_i\)</span>, and since
+<span class="math display">\[
+f^{-1}(V)=f^{-1}\left(\bigcup_{i=1}^{\infty}
+R_i\right)=\bigcup_{i=1}^{\infty} f^{-1}\left(R_i\right)
+\]</span> <span class="math inline">\(f^{-1}(V)\)</span> is measurable.
+<span class="math inline">\(\blacksquare\)</span></p>
+<h3 id="section">1.9</h3>
+<p>Let <span class="math inline">\(X\)</span> be a measurable space. The
+following propositions are corollaries of Theorems <span
+class="math inline">\(1.7\)</span> and <span
+class="math inline">\(1.8\)</span> : (a) If <span
+class="math inline">\(f=u+i v\)</span>, where <span
+class="math inline">\(u\)</span> and <span
+class="math inline">\(v\)</span> are real measurable functions on <span
+class="math inline">\(X\)</span>, then <span
+class="math inline">\(f\)</span> is a complex measurable function on
+<span class="math inline">\(X\)</span>.</p>
+<p>This follows from Theorem 1.8, with <span
+class="math inline">\(\Phi(z)=z\)</span>.</p>
+<ol start="2" type="a">
+<li>If <span class="math inline">\(f=u+i v\)</span> is a complex
+measurable function on <span class="math inline">\(X\)</span>, then
+<span class="math inline">\(u, v\)</span>, and <span
+class="math inline">\(|f|\)</span> are real measurable functions on
+<span class="math inline">\(X\)</span>.</li>
+</ol>
+<p>This follows from Theorem 1.7, with <span
+class="math inline">\(g(z)=\operatorname{Re}(z),
+\operatorname{Im}(z)\)</span>, and <span
+class="math inline">\(|z|\)</span>.</p>
+<ol start="3" type="a">
+<li>If <span class="math inline">\(f\)</span> and <span
+class="math inline">\(g\)</span> are complex measurable functions on
+<span class="math inline">\(X\)</span>, then so are <span
+class="math inline">\(f+g\)</span> and <span class="math inline">\(f
+g\)</span>.</li>
+</ol>
+<p>For real <span class="math inline">\(f\)</span> and <span
+class="math inline">\(g\)</span> this follqws from Theorem 1.8, with
+<span class="math display">\[
+\Phi(s, t)=s+t
+\]</span> and <span class="math inline">\(\Phi(s, t)=s t\)</span>. The
+complex case then follows from <span class="math inline">\((a)\)</span>
+and <span class="math inline">\((b)\)</span>.</p>
+<ol start="4" type="a">
+<li>If <span class="math inline">\(E\)</span> is a measurable set in
+<span class="math inline">\(X\)</span> and if <span
+class="math display">\[
+\chi_E(x)= \begin{cases}1 &amp; \text { if } x \in E \\ 0 &amp; \text {
+if } x \notin E\end{cases}
+\]</span> then <span class="math inline">\(\chi_E\)</span> is a
+measurable function.</li>
+</ol>
+<p>This is obvious. We call <span class="math inline">\(\chi_E\)</span>
+the characteristic function of the set <span
+class="math inline">\(E\)</span>. The letter <span
+class="math inline">\(\chi\)</span> will be reserved for characteristic
+functions throughout this book.</p>
+<ol start="5" type="a">
+<li>If <span class="math inline">\(f\)</span> is a complex measurable
+function on <span class="math inline">\(X\)</span>, there is a complex
+measurable function <span class="math inline">\(\alpha\)</span> on <span
+class="math inline">\(X\)</span> such that <span
+class="math inline">\(|\alpha|=1\)</span> and <span
+class="math inline">\(f=\alpha|f|\)</span>.</li>
+</ol>
+<p><strong>Proof</strong> Let <span class="math inline">\(E=\{x:
+f(x)=0\}\)</span>, let <span class="math inline">\(Y\)</span> be the
+complex plane with the origin removed, define <span
+class="math inline">\(\varphi(z)=z /|z|\)</span> for <span
+class="math inline">\(z \in Y\)</span>, and put <span
+class="math display">\[
+\alpha(x)=\varphi\left(f(x)+\chi_E(x)\right) \quad(x \in X) .
+\]</span> If <span class="math inline">\(x \in E, \alpha(x)=1\)</span>;
+if <span class="math inline">\(x \notin E, \alpha(x)=f(x)
+/|f(x)|\)</span>. Since <span class="math inline">\(\varphi\)</span> is
+continuous on <span class="math inline">\(Y\)</span> and since <span
+class="math inline">\(E\)</span> is measurable (why?), the measurability
+of <span class="math inline">\(\alpha\)</span> follows from <span
+class="math inline">\((c),(d)\)</span>, and Theorem 1.7.</p>
+<p>We now show that <span class="math inline">\(\sigma\)</span>-algebras
+exist in great profusion.</p>
+<h3 id="theorem-2">1.10 Theorem</h3>
+<p>If <span class="math inline">\(\mathscr{F}\)</span> is any collection
+of subsets of <span class="math inline">\(X\)</span>, there exists a
+smallest <span class="math inline">\(\sigma\)</span>-algebra <span
+class="math inline">\(\mathfrak{M}^*\)</span> in <span
+class="math inline">\(X\)</span> such that <span
+class="math inline">\(\mathscr{F} \subset \mathfrak{M}^*\)</span>.</p>
+<p>This <span class="math inline">\(\mathfrak{M}^*\)</span> is sometimes
+called the <strong><span class="math inline">\(\sigma\)</span>-algebra
+generated</strong> by <span
+class="math inline">\(\mathscr{F}\)</span>.</p>
+<p><strong>Proof</strong> Let <span
+class="math inline">\(\Omega\)</span> be the family of all <span
+class="math inline">\(\sigma\)</span>-algebras <span
+class="math inline">\(\mathfrak{M}\)</span> in <span
+class="math inline">\(X\)</span> which contain <span
+class="math inline">\(\mathscr{F}\)</span>. Since the collection of all
+subsets of <span class="math inline">\(X\)</span> is such a <span
+class="math inline">\(\sigma\)</span>-algebra, <span
+class="math inline">\(\Omega\)</span> is not empty. Let <span
+class="math inline">\(\mathfrak{M}^*\)</span> be the intersection of all
+<span class="math inline">\(\mathfrak{M} \in \Omega\)</span>. It is
+clear that <span class="math inline">\(\mathscr{F} \subset
+\mathfrak{M}^*\)</span> and that <span
+class="math inline">\(\mathfrak{M}^*\)</span> lies in every <span
+class="math inline">\(\sigma\)</span>-algebra in <span
+class="math inline">\(X\)</span> which contains <span
+class="math inline">\(\mathscr{F}\)</span>. To complete the proof, we
+have to show that <span class="math inline">\(\mathfrak{M}^*\)</span> is
+itself a <span class="math inline">\(\sigma\)</span>-algebra.</p>
+<p>If <span class="math inline">\(A_n \in \mathfrak{M}^*\)</span> for
+<span class="math inline">\(n=1,2,3, \ldots\)</span>, and if <span
+class="math inline">\(\mathfrak{M} \in \Omega\)</span>, then <span
+class="math inline">\(A_n \in \mathfrak{M}\)</span>, so <span
+class="math inline">\(\bigcup A_n \in \mathfrak{M}\)</span>, since <span
+class="math inline">\(\mathfrak{M}\)</span> is a <span
+class="math inline">\(\sigma\)</span>-algebra. Since <span
+class="math inline">\(\bigcup A_n \in \mathfrak{M}\)</span> for every
+<span class="math inline">\(\mathfrak{M} \in \Omega\)</span>, we
+conclude that <span class="math inline">\(\bigcup A_n \in
+\mathfrak{M}^*\)</span>. The other two defining properties of a <span
+class="math inline">\(\sigma\)</span>-algebra are verified in the same
+manner. <span class="math inline">\(\blacksquare\)</span></p>
+<h3 id="borel-sets">1.11 Borel Sets</h3>
+<p>Let <span class="math inline">\(X\)</span> be a topological space. By
+Theorem 1.10, there exists a smallest <span
+class="math inline">\(\sigma\)</span>-algebra <span
+class="math inline">\(\mathscr{B}\)</span> in <span
+class="math inline">\(X\)</span> such that every open set in <span
+class="math inline">\(X\)</span> belongs to <span
+class="math inline">\(\mathscr{B}\)</span>. The members of <span
+class="math inline">\(\mathscr{B}\)</span> are called the <strong>Borel
+sets</strong> of <span class="math inline">\(X\)</span>.</p>
+<p>In particular, closed sets are Borel sets (being, by definition, the
+complements of open sets), and so are all countable unions of closed
+sets and all countable intersections of open sets. These last two are
+called <span class="math inline">\(F_\sigma\)</span> ’s and <span
+class="math inline">\(G_\delta\)</span> ’s, respectively, and play a
+considerable role. The notation is due to Hausdorff. The letters <span
+class="math inline">\(F\)</span> and <span
+class="math inline">\(G\)</span> were used for closed and open sets,
+respectively, and <span class="math inline">\(\sigma\)</span> refers to
+union (<em>Summe</em>), <span class="math inline">\(\delta\)</span> to
+intersection (<em>Durchschnitt</em>). For example, every half-open
+interval <span class="math inline">\([a, b)\)</span> is a <span
+class="math inline">\(G_\delta\)</span> and an <span
+class="math inline">\(F_\sigma\)</span> in <span
+class="math inline">\(R^1\)</span>.</p>
+<p>Since <span class="math inline">\(\mathscr{B}\)</span> is a <span
+class="math inline">\(\sigma\)</span>-algebra, we may now regard <span
+class="math inline">\(X\)</span> as a measurable space, with the Borel
+sets playing the role of the measurable sets; more concisely, we
+consider the measurable space <span class="math inline">\((X,
+\mathscr{B})\)</span>. If <span class="math inline">\(f: X \rightarrow
+Y\)</span> is a continuous mapping of <span
+class="math inline">\(X\)</span>, where <span
+class="math inline">\(Y\)</span> is any topological space, then it is
+evident from the definitions that <span class="math inline">\(f^{-1}(V)
+\in \mathscr{B}\)</span> for every open set <span
+class="math inline">\(V\)</span> in <span
+class="math inline">\(Y\)</span>. In other words, <strong>every
+continuous mapping</strong> of <span class="math inline">\(X\)</span> is
+<strong>Borel measurable</strong>.</p>
+<p>Borel measurable mappings are often called <strong>Borel
+mappings</strong>, or <strong>Borel functions</strong>.</p>
+<h3 id="theorem-3">1.12 Theorem</h3>
+<p>Suppose <span class="math inline">\(\mathfrak{M}\)</span> is a <span
+class="math inline">\(\sigma\)</span>-algebra in <span
+class="math inline">\(X\)</span>, and <span
+class="math inline">\(Y\)</span> is a topological space. Let <span
+class="math inline">\(f\)</span> map <span
+class="math inline">\(X\)</span> into <span
+class="math inline">\(Y\)</span>.</p>
+<ol type="a">
+<li><p>If <span class="math inline">\(\Omega\)</span> is the collection
+of all sets <span class="math inline">\(E \subset Y\)</span> such that
+<span class="math inline">\(f^{-1}(E) \in \mathfrak{M}\)</span>, then
+<span class="math inline">\(\Omega\)</span> is a <span
+class="math inline">\(\sigma\)</span>-algebra in <span
+class="math inline">\(Y\)</span>.</p></li>
+<li><p>If is measurable and <span class="math inline">\(E\)</span> is a
+Borel set in <span class="math inline">\(Y\)</span>, then <span
+class="math inline">\(f^{-1}(E) \in \mathfrak{M}\)</span>.</p></li>
+<li><p>If <span class="math inline">\(Y=[-\infty, \infty]\)</span> and
+<span class="math inline">\(f^{-1}((\alpha, \infty]) \in
+\mathfrak{M}\)</span> for every real <span
+class="math inline">\(\alpha\)</span>, then <span
+class="math inline">\(f\)</span> is measurable.</p></li>
+<li><p>If <span class="math inline">\(f\)</span> is measurable, if <span
+class="math inline">\(Z\)</span> is a topological space, if <span
+class="math inline">\(g: Y \rightarrow Z\)</span> is a Borel mapping,
+and if <span class="math inline">\(h=g \circ f\)</span>, then <span
+class="math inline">\(h: X \rightarrow Z\)</span> is
+measurable.</p></li>
+</ol>
+<p>Part <span class="math inline">\((c)\)</span> is a frequently used
+criterion for the measurability of real-valued functions. (See also
+Exercise 3.) Note that <span class="math inline">\((d)\)</span>
+generalizes Theorem 1.7(b).</p>
+<p><strong>Proof</strong> (a) follows from the relations <span
+class="math display">\[
+\begin{aligned}
+f^{-1}(Y) &amp;=X, \\
+f^{-1}(Y-A) &amp;=X-f^{-1}(A), \\
+\text { and } \quad f^{-1}\left(A_1 \cup A_2 \cup \cdots\right)
+&amp;=f^{-1}\left(A_1\right) \cup f^{-1}\left(A_2\right) \cup \cdots .
+\end{aligned}
+\]</span> To prove <span class="math inline">\((b)\)</span>, let <span
+class="math inline">\(\Omega\)</span> be as in <span
+class="math inline">\((a)\)</span>; the measurability of <span
+class="math inline">\(f\)</span> implies that <span
+class="math inline">\(\Omega\)</span> contains all open sets in <span
+class="math inline">\(Y\)</span>, and since <span
+class="math inline">\(\Omega\)</span> is a <span
+class="math inline">\(\sigma\)</span>-algebra, <span
+class="math inline">\(\Omega\)</span> contains all Borel sets in <span
+class="math inline">\(Y\)</span>.</p>
+<p>To prove <span class="math inline">\((c)\)</span>, let <span
+class="math inline">\(\Omega\)</span> be the collection of all <span
+class="math inline">\(E \subset[-\infty, \infty]\)</span> such that
+<span class="math inline">\(f^{-1}(E) \in \mathfrak{M}\)</span>. Choose
+a real number <span class="math inline">\(\alpha\)</span>, and choose
+<span class="math inline">\(\alpha_n&lt;\alpha\)</span> so that <span
+class="math inline">\(\alpha_n \rightarrow \alpha\)</span> as <span
+class="math inline">\(n \rightarrow \infty\)</span>. Since <span
+class="math inline">\(\left(\alpha_n, \infty\right] \in \Omega\)</span>
+for each <span class="math inline">\(n\)</span>, since <span
+class="math display">\[
+[-\infty, \alpha)=\bigcup_{n=1}^{\infty}\left[-\infty,
+\alpha_n\right]=\bigcup_{n=1}^{\infty}\left(\alpha_n, \infty\right]^c,
+\]</span> and since <span class="math inline">\((a)\)</span> shows that
+<span class="math inline">\(\Omega\)</span> is a <span
+class="math inline">\(\sigma\)</span>-algebra, we see that <span
+class="math inline">\([-\infty, \alpha) \in \Omega\)</span>. The same is
+then true of <span class="math display">\[
+(\alpha, \beta)=[-\infty, \beta) \cap(\alpha, \infty] .
+\]</span> Since every open set in <span class="math inline">\([-\infty,
+\infty]\)</span> is a countable union of segments of the above types,
+<span class="math inline">\(\Omega\)</span> contains every open set.
+Thus <span class="math inline">\(f\)</span> is measurable.</p>
+<p>To prove <span class="math inline">\((d)\)</span>, let <span
+class="math inline">\(V \subset Z\)</span> be open. Then <span
+class="math inline">\(g^{-1}(V)\)</span> is a Borel set of <span
+class="math inline">\(Y\)</span>, and since <span
+class="math display">\[
+h^{-1}(V)=f^{-1}\left(g^{-1}(V)\right)
+\]</span> (b) shows that <span class="math inline">\(h^{-1}(V) \in
+\mathfrak{M}\)</span>. <span
+class="math inline">\(\blacksquare\)</span></p>
+<h3 id="definition-2">1.13 Definition</h3>
+<p>Let <span class="math inline">\(\left\{a_n\right\}\)</span> be a
+sequence in <span class="math inline">\([-\infty, \infty]\)</span>, and
+put <span class="math display">\[
+\begin{equation}
+b_k=\sup \left\{a_k, a_{k+1}, a_{k+2}, \ldots\right\} \quad(k=1,2,3,
+\ldots)
+\end{equation}
+\]</span> and <span class="math display">\[
+\beta=\inf \left\{b_1, b_2, b_3, \ldots\right\} .
+\]</span> We call <span class="math inline">\(\beta\)</span> the upper
+limit of <span class="math inline">\(\left\{a_n\right\}\)</span>, and
+write <span class="math display">\[
+\beta=\limsup _{n \rightarrow \infty} a_n .
+\]</span> The following properties are easily verified: First, <span
+class="math inline">\(b_1 \geq b_2 \geq b_3 \geq \cdots\)</span>, so
+that <span class="math inline">\(b_k \rightarrow \beta\)</span> as <span
+class="math inline">\(k \rightarrow \infty\)</span>; secondly, there is
+a subsequence <span
+class="math inline">\(\left\{a_{n_i}\right\}\)</span> of <span
+class="math inline">\(\left\{a_n\right\}\)</span> such that <span
+class="math inline">\(a_{n_i} \rightarrow \beta\)</span> as <span
+class="math inline">\(i \rightarrow \infty\)</span>, and <span
+class="math inline">\(\beta\)</span> is the largest number with this
+property.</p>
+<p>The lower limit is defined analogously: simply interchange sup and
+inf in (1) and (2). Note that <span class="math display">\[
+\liminf _{n \rightarrow \infty} a_n=-\limsup _{n \rightarrow
+\infty}\left(-a_n\right)
+\]</span> If <span class="math inline">\(\left\{a_n\right\}\)</span>
+converges, then evidently <span class="math display">\[
+\limsup _{n \rightarrow \infty} a_n=\liminf _{n \rightarrow \infty}
+a_n=\lim _{n \rightarrow \infty} a_n .
+\]</span> Suppose <span
+class="math inline">\(\left\{f_n\right\}\)</span> is a sequence of
+extended-real functions on a set <span class="math inline">\(X\)</span>.
+Then <span class="math inline">\(\sup f_n\)</span> and <span
+class="math inline">\(\lim \sup f_n\)</span> are the functions defined
+on <span class="math inline">\(X\)</span> by <span
+class="math display">\[
+\begin{gathered}
+\left(\sup _n f_n\right)(x)=\sup _n\left(f_n(x)\right), \\
+\left(\limsup _{n \rightarrow \infty} f_n\right)(x)=\limsup _{n
+\rightarrow \infty}\left(f_n(x)\right) .
+\end{gathered}
+\]</span> If <span class="math display">\[
+f(x)=\lim _{n \rightarrow \infty} f_n(x),
+\]</span> the limit being assumed to exist at every <span
+class="math inline">\(x \in X\)</span>, then we call <span
+class="math inline">\(f\)</span> the pointwise limit of the sequence
+<span class="math inline">\(\left\{f_n\right\}\)</span>.</p>
+<h3 id="theorem-4">1.14 Theorem</h3>
+<p>If <span class="math inline">\(f_n: X \rightarrow[-\infty,
+\infty]\)</span> is measurable, for <span class="math inline">\(n=1,2,3,
+\ldots\)</span>, and <span class="math inline">\(g=\sup _{n \geq 1} f_n,
+\quad h=\lim _{n \rightarrow \infty} \sup _n\)</span>, then <span
+class="math inline">\(g\)</span> and <span
+class="math inline">\(h\)</span> are measurable. Proof <span
+class="math inline">\(g^{-1}((\alpha, \infty])=\bigcup_{n=1}^{\infty}
+f_n^{-1}((\alpha, \infty])\)</span>. Hence Theorem 1.12(c) implies that
+<span class="math inline">\(g\)</span> is measurable. The same result
+holds of course with inf in place of sup, and since <span
+class="math display">\[
+h=\inf _{k \geq 1}\left\{\sup _{i \geq k} f_i\right\},
+\]</span> it follows that <span class="math inline">\(h\)</span> is
+measurable. <span class="math inline">\(\blacksquare\)</span></p>
+<p><strong>Corollaries</strong> (a) The limit of every pointwise
+convergent sequence of complex measurable functions is measurable.</p>
+<ol start="2" type="a">
+<li>If <span class="math inline">\(f\)</span> and <span
+class="math inline">\(g\)</span> are measurable (with range in <span
+class="math inline">\([-\infty, \infty]\)</span> ), then so are <span
+class="math inline">\(\max \{f, g\}\)</span> and <span
+class="math inline">\(\min \{f, g\}\)</span>. In particular, this is
+true of the functions <span class="math display">\[
+f^{+}=\max \{f, 0\} \quad \text { and } f^{-}=-\min \{f, 0\} .
+\]</span></li>
+</ol>
+<h3 id="section-1">1.15</h3>
+<p>The above functions <span class="math inline">\(f^{+}\)</span>and
+<span class="math inline">\(f^{-}\)</span>are called the
+<strong>positive and negative</strong> parts of <span
+class="math inline">\(f\)</span>. We have <span
+class="math inline">\(|f|=f^{+}+f^{-}\)</span>and <span
+class="math inline">\(f=f^{+}-f^{-}\)</span>, a standard representation
+of <span class="math inline">\(f\)</span> as a difference of two
+nonnegative functions, with a certain minimality property:</p>
+<p><strong>Proposition</strong> If <span class="math inline">\(f=g-h, g
+\geq 0\)</span>, and <span class="math inline">\(h \geq 0\)</span>, then
+<span class="math inline">\(f^{+} \leq g\)</span> and <span
+class="math inline">\(f^{-} \leq h\)</span>.</p>
+<p><strong>Proof</strong> <span class="math inline">\(f \leq g\)</span>
+and <span class="math inline">\(0 \leq g\)</span> clearly implies <span
+class="math inline">\(\max \{f, 0\} \leq g\)</span>.</p>
+
+    </div>
+    
+</div>
+</div>
+
+                <div id="footer-wrapper">
+                    <footer class="footer"><footer class="row pl-3 pr-3">
+    <div class="col-12 d-flex justify-content-between align-items-center text-muted pl-0 pr-0">
+        <div class="footer-left">
+            <p class="mb-0"> © 2022 <a href="https://github.com/chen-gz">guangzong</a>. <span data-toggle="tooltip"
+                    data-placement="top"
+                    title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author.">All
+                    rights reserved.</span></p>
+        </div>
+        <div class="footer-right">
+            <p class="mb-0"> Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">hugo</a>
+                with <a href="https://github.com/chen-gz/hugo_zong" target="_blank" rel="noopener">zong</a>
+                theme.</p>
+        </div>
+    </div>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script> MathJax = {
+            tex: {
+                tags: 'ams',
+            }
+        };</script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</footer>
+</footer>
+                </div>
+            </div>
+            <div id="panel-wrapper" class="d-flex flex-column"><div id="toc-wrapper" class="mb-5 pl-2">
+    <span>Contents</span>
+    <nav id="toc" data-toggle="toc">
+        
+        
+        
+    </nav>
+</div>
+
+<div id="access-lastmod" class="pb-4 pl-2">
+    <div class="panel-heading">Recently Updated</div>
+    <ul class="post-content pl-3 pb-1 ml-1 mt-2">
+          
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/1-total-variation/">Total Variation</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-7/1-derivatives-of-measures/">Derivatives of Measures</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/3-consequences-of-the-radon-nikodym-theorem/">Consequences of the Radon-Nikodym Theorem</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/4-bounded-linear-functionals-on-lp/">Bounded linear functional on Lp</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/2-abosolute-continuity/">Abosolute Continuity</a></li>
+        
+    </ul>
+</div>
+
+<div id="access-tags" class="pl-2">
+    <div class="panel-heading">Trending Tags</div>
+    <div class="d-flex flex-wrap mt-3 mb-1 mr-3">
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/algorithm/">Algorithm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/android/">Android</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c/">C</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c-language/">c language</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/caddy/">Caddy</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cadence/">Cadence</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cdc/">CDC</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/classification/">classification</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/compress/">Compress</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/conf/">Conf</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/double-column/">Double Column</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/errno13/">Errno13</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/fish/">fish</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gan/">GAN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/git/">Git</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gtk/">Gtk</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/html/">Html</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/i3/">I3</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/idea/">Idea</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/java/">Java</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/latex/">Latex</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lda/">LDA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linear-programming/">Linear Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linux/">Linux</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lr/">LR</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/math/">Math</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mathematics/">Mathematics</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matlab/">Matlab</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matplot/">matplot</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/memory/">Memory</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mermaid/">Mermaid</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/misc/">Misc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/ml/">ML</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mosfet/">Mosfet</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/network/">Network</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/nn/">NN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pandoc/">Pandoc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pca/">PCA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/probability/">Probability</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/productive/">Productive</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/program/">Program</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/programming/">Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/python/">Python</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/qt/">Qt</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/random-variable/">Random Variable</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rcnn/">RCNN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rust/">Rust</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/security/">Security</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/software/">Software</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/std/">Std</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/svd/">Svd</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/tool/">Tool</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/usb/">USB</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vim/">Vim</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpn/">Vpn</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpnc/">Vpnc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/xterm/">xterm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/zsh/">Zsh</a>
+        
+    </div>
+</div>
+</div><div id="search-result-wrapper" class="d-flex justify-content-center unloaded">
+    <div class="col-12 col-sm-11 post-content">
+        <div id="search-hints"></div>
+        <div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3 col-12"></div>
+    </div>
+</div>
+
+<script src="/js/fuse.min.js"></script>
+<script src="/js/fastsearch.js"></script>
+
+
+</div>
+        <div id="mask"></div>
+        <a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button"
+            style="display: none">
+            <i class="fas fa-angle-up"></i>
+        </a>
+    </div>
+    
+</body>
+
+</html>

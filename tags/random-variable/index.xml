@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Random Variable on Guangzong Blog</title>
+    <link>https://zongpitt.com/tags/random-variable/</link>
+    <description>Recent content in Random Variable on Guangzong Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 03 Oct 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://zongpitt.com/tags/random-variable/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Type of Continuous Random Variable</title>
+      <link>https://zongpitt.com/posts/2019-10-03-type-of-continuous-random-variable/</link>
+      <pubDate>Thu, 03 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2019-10-03-type-of-continuous-random-variable/</guid>
+      <description>&lt;h2 id=&#34;exponential-random-variable&#34;&gt;Exponential Random Variable&lt;/h2&gt;
+&lt;p&gt;Continuous version of the discrete geometric RV. Models the
+inter-arrival time for the Poisson process.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Type of Discrete Random Variable</title>
+      <link>https://zongpitt.com/posts/2019-10-03-type-of-discrete-random-variable/</link>
+      <pubDate>Thu, 03 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2019-10-03-type-of-discrete-random-variable/</guid>
+      <description>&lt;h2 id=&#34;uniform-random-variable&#34;&gt;Uniform Random Variable&lt;/h2&gt;
+&lt;p&gt;For each &lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt; in &lt;span
+class=&#34;math inline&#34;&gt;\(S_{X},\)&lt;/span&gt; we have &lt;span
+class=&#34;math inline&#34;&gt;\(p_{X}(k)=\frac{1}{M}\)&lt;/span&gt;.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

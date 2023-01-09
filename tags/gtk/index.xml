@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gtk on Guangzong Blog</title>
+    <link>https://zongpitt.com/tags/gtk/</link>
+    <description>Recent content in Gtk on Guangzong Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 28 Aug 2020 18:30:00 -0400</lastBuildDate><atom:link href="https://zongpitt.com/tags/gtk/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using RUST and GTK In Windows</title>
+      <link>https://zongpitt.com/posts/2020-08-28-using-rust-and-gtk-in-windows/</link>
+      <pubDate>Fri, 28 Aug 2020 18:30:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-08-28-using-rust-and-gtk-in-windows/</guid>
+      <description>Purpose The reason I writing this post is because none of documente give right process to bulid gtk in Windows. I spent a lot to build and simple gtk problem in Windows.
+Two Useful Link https://github.com/rust-lang/rustup/issues/846 https://www.reddit.com/r/rust/comments/86kmhu/compiling_rust_windows_gtk_stepbystep/ Installation And Build Project step to step using rust and gtk in Windows
+Install rust using default setting. Rust Downlaod Link. Go to http://www.msys2.org/ and install msys (x86_64). Downlaod Link Run these commands inside MSYS (not Windows cmd!</description>
+    </item>
+    
+  </channel>
+</rss>

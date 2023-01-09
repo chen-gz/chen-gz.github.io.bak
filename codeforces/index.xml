@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>codeforces on Guangzong Blog</title>
+    <link>https://zongpitt.com/codeforces/</link>
+    <description>Recent content in codeforces on Guangzong Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://zongpitt.com/codeforces/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Codeforces Round 770 E</title>
+      <link>https://zongpitt.com/codeforces/770/770_e/</link>
+      <pubDate>Wed, 24 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/codeforces/770/770_e/</guid>
+      <description>The tutorial is very clear. Here is the implementation.
+145489728
+#include &amp;lt;iostream&amp;gt; #include &amp;lt;string&amp;gt; #include &amp;lt;vector&amp;gt; #include &amp;lt;map&amp;gt; #include &amp;lt;set&amp;gt; #include &amp;lt;queue&amp;gt; using namespace std; vector&amp;lt;string&amp;gt; ans; // store the answer vector&amp;lt;vector&amp;lt;int&amp;gt;&amp;gt; a; // store the input // idx[i][j] is a queue, the content of the queue is the index of j in the i-th array. vector&amp;lt;map&amp;lt;int, queue&amp;lt;int&amp;gt;&amp;gt;&amp;gt; idx; // index of the number in each array // child[i] store the child of the i-th array.</description>
+    </item>
+    
+    <item>
+      <title>825 C2. Good Subarrays (Hard Version)</title>
+      <link>https://zongpitt.com/codeforces/825-div2/c2/</link>
+      <pubDate>Thu, 05 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/codeforces/825-div2/c2/</guid>
+      <description>Problem link https://codeforces.com/contest/1736/problem/C2
+Problem Desciption This is the hard version of this problem. In this version, we have queries. Note that we do not have multiple test cases in this version. You can make hacks only if both versions of the problem are solved.
+An array \(b\) of length \(m\) is good if for all \(i\) the \(i\)-th element is greater than or equal to \(i\). In other words, \(b\) is good if and only if \(b_i \geq i\) for all \(i\) \((1 \leq i \leq m)\) You are given an array \(a\) consisting of \(n\) positive integers, and you are asked \(q\) queries.</description>
+    </item>
+    
+  </channel>
+</rss>

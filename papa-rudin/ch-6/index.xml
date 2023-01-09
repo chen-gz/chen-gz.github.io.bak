@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>chapter 5 Complex measure on Guangzong Blog</title>
+    <link>https://zongpitt.com/papa-rudin/ch-6/</link>
+    <description>Recent content in chapter 5 Complex measure on Guangzong Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 11 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://zongpitt.com/papa-rudin/ch-6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bounded linear functional on Lp</title>
+      <link>https://zongpitt.com/papa-rudin/ch-6/4-bounded-linear-functionals-on-lp/</link>
+      <pubDate>Tue, 20 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/papa-rudin/ch-6/4-bounded-linear-functionals-on-lp/</guid>
+      <description>6.15 Let \(\mu\) be a positive measure, suppose \(1 \leq p \leq \infty\), and let \(q\) be the exponent conjugate to \(p\). The Hölder inequality (Theorem 3.8) shows that if \(g \in L^q(\mu)\) and if \(\Phi_g\) is defined by
+\[ \Phi_g(f)=\int_X f g d \mu, \]
+then \(\Phi_g\) is a bounded linear functional on \(L^p(\mu)\), of norm at most \(\|g\|_q\). The question naturally arises whether all bounded linear functionals on \(L^p(\mu)\) have this form, and whether the representation is unique.</description>
+    </item>
+    
+    <item>
+      <title>Consequences of the Radon-Nikodym Theorem</title>
+      <link>https://zongpitt.com/papa-rudin/ch-6/3-consequences-of-the-radon-nikodym-theorem/</link>
+      <pubDate>Tue, 20 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/papa-rudin/ch-6/3-consequences-of-the-radon-nikodym-theorem/</guid>
+      <description>6.12 Theorem Let \(\mu\) be a complex measure on a \(\sigma\)-algebra \(\mathfrak{M}\) in \(X\). Then there is a measurable function \(h\) such that \(|h(x)|=1\) for all \(x \in X\) and such that \[ d \mu=h d|\mu| . \]
+By analogy with the representation of a complex number as the product of ts absolute value and a number of absolute value 1, Eq. (1) is sometimes referred o as the polar representation (or polar decomposition) of \(\mu\).</description>
+    </item>
+    
+    <item>
+      <title>Abosolute Continuity</title>
+      <link>https://zongpitt.com/papa-rudin/ch-6/2-abosolute-continuity/</link>
+      <pubDate>Mon, 19 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/papa-rudin/ch-6/2-abosolute-continuity/</guid>
+      <description>6.7 Definitions Let \(\mu\) be a positive measure on a \(\sigma\)-algebra \(\mathfrak{M}\), and let \(\lambda\) be an arbitrary measure on \(\mathfrak{M} ; \lambda\) may be positive or complex. (Recall that a complex measure has its range in the complex plane, but that our usage of the term “positive measure” includes \(\infty\) as an admissible value. Thus the positive measures do not form a subclass of the complex ones.)
+We say that \(\lambda\) is absolutely continuous with respect to \(\mu\), and write</description>
+    </item>
+    
+    <item>
+      <title>Total Variation</title>
+      <link>https://zongpitt.com/papa-rudin/ch-6/1-total-variation/</link>
+      <pubDate>Sun, 11 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/papa-rudin/ch-6/1-total-variation/</guid>
+      <description>6.1 Introduction Let \(\mathfrak{M}\) be a \(\sigma\)-algebra in a set \(X\). Call a countable collection \(\left\{E_i\right\}\) of members of \(\mathfrak{M}\) a partition of \(E\) if \(E_i \cap E_j=\varnothing\) whenever \(i \neq j\), and if \(E=\) \(\bigcup E_i\). A complex measure \(\mu\) on \(\mathfrak{M}\) is then a complex function on \(\mathfrak{M}\) such that \[ \mu(E)=\sum_{i=1}^{\infty} \mu\left(E_i\right) \quad(E \in \mathfrak{M}) \] for every partition \(\left\{E_i\right\}\) of \(E\).
+Observe that the convergence of the series in (1) is now part of the requirement (unlike for positive measures, where the series could either converge or diverge to \(\infty\) ).</description>
+    </item>
+    
+  </channel>
+</rss>

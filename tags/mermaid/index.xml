@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mermaid on Guangzong Blog</title>
+    <link>https://zongpitt.com/tags/mermaid/</link>
+    <description>Recent content in Mermaid on Guangzong Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 28 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://zongpitt.com/tags/mermaid/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mermaid</title>
+      <link>https://zongpitt.com/posts/2020-10-28-mermaid/</link>
+      <pubDate>Wed, 28 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-10-28-mermaid/</guid>
+      <description>mermaid is a very good tool to draw simple diagram.
+official site
+most example can be found in the official website.
+The most simple example of flowchat.
+graph TD; A--&amp;gt;B; A--&amp;gt;C; B--&amp;gt;D; C--&amp;gt;D; graph LR A[Square Rect] -- Link text --&amp;gt; B((Circle)) A --&amp;gt; C(Round Rect) B --&amp;gt; D{Rhombus} C --&amp;gt; D </description>
+    </item>
+    
+  </channel>
+</rss>

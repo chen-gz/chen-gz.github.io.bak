@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css"
+        class="dark-mode-native-dark-original" />
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+     
+    <link rel="stylesheet" href="https://zongpitt.com/sass/main.06935202011a97ba473ebeeb0cb6788daa9fb5a9fff471a4e85850293d1c5ac4.css" />
+    <title>
+          Guangzong Blog | 4 Lebesgue Measure
+    </title>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.bundle.min.js"></script>
+    <script src=" https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.js"></script>
+
+    <script
+        src="https://cdn.jsdelivr.net/combine/npm/magnific-popup@1/dist/jquery.magnific-popup.min.js,npm/lozad/dist/lozad.min.js,npm/clipboard@2/dist/clipboard.min.js"></script>
+    <script type="text/javascript" src="/js/commons/back-to-top.js"></script>
+    
+    
+    
+    <script type="text/javascript" src="/js/commons/topbar-switch.js"></script>
+    <script type="text/javascript" src="/js/commons/sidebar.js"></script>
+    <script type="text/javascript" src="/js/utils/category-collapse.js"></script>
+    <script type="text/javascript" src="/js/utils/checkbox.js"></script>
+    <script type="text/javascript" src="/js/utils/clipboard.js"></script>
+    <script type="text/javascript" src="/js/utils/img-extra.js"></script>
+    <script type="text/javascript" src="/js/utils/pageviews.js"></script>
+    
+    <script type="text/javascript" src="/js/utils/timeago.js"></script>
+    
+    
+</head>
+<body data-spy="scroll" data-target="#toc" data-topbar-visible="true" class="d-flex"><div id="sidebar" class="d-flex flex-column align-items-end">
+    <div class="profile-wrapper text-center">
+
+        <div id="avatar">
+            <a href="/" alt="avatar" class="mx-auto"> <img src=https://github.com/chen-gz/chen-gz/blob/main/mine_square.jpg?raw&#61;truehttps://raw.githubusercontent.com/chen-gz/chen-gz/blob/main/mine_square.jpg alt="avatar"
+                    onerror="this.style.display='none'"> </a>
+        </div>
+
+        <div class="site-title mt-3"> <a href="/">Guangzong</a> </div>
+        <div class="site-subtitle font-italic">Welcome to my blog</div>
+    </div>
+
+    <ul>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/">
+                <span>
+                    Home
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/archive/">
+                <span>
+                    Archive
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/tags/">
+                <span>
+                    Tags
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/about/">
+                <span>
+                    About
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/categories/">
+                <span>
+                    Categories
+                </span>
+            </a>
+        </li>
+        
+    </ul>
+
+    <div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center align-items-center">
+        <button class="mode-toggle btn" aria-label="Switch Mode"> 
+            <i class="fas fa-adjust"></i> 
+        </button>
+
+        <span class="icon-border"></span>
+        <a href="https://github.com/chen-gz" aria-label="github" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i>
+        </a>
+
+        <a href=" javascript:location.href = 'mailto:' + ['chen-gz','outlook.com'].join('@')" aria-label="email">
+            <i class="fas fa-envelope"></i>
+        </a>
+
+        <a href="/feed.xml" aria-label="rss"> <i class="fas fa-rss"></i> </a>
+    </div>
+
+    
+    
+</div>
+<div id="all-wrapper" class="d-flex flex-column"><div id="topbar-wrapper">
+    <div id="topbar" class="d-flex">
+        
+        <span id="breadcrumb" class="d-flex">
+              
+               
+            
+            
+            <div><a href='https://zongpitt.com/'>Home</a></div>
+              
+              
+            
+            <div><a href="https://zongpitt.com/papa-rudin">papa-rudin</a></div>
+               
+              
+            
+            <div><a href="https://zongpitt.com/papa-rudin/ch-2">ch-2</a></div>
+               
+                 
+                
+        </span>
+        <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i>
+        <div id="topbar-title">Guangzong</div>
+        <i id="search-trigger" class="fas fa-search fa-fw"></i>
+        <span id="search-wrapper" class="align-items-center">
+            <i class="fas fa-search fa-fw"></i>
+            <input class="form-control" id="search-input" type="search" aria-label="search" autocomplete="off"
+                placeholder="Search..." />
+            <i class="fa fa-times-circle fa-fw" id="search-cleaner"></i>
+        </span>
+    </div>
+</div>
+<div id="main-wrapper" class="d-flex mt-3">
+            <div id="core-wrapper" class="d-flex flex-column">
+                <div id="main" class="d-flex flex-column">
+                    
+<div class="post pl-1 pr-1 pl-md-2 pr-md-2">
+    
+    <div id="post-content">
+        <h1 style="text-align: center;">4 Lebesgue Measure</h1>
+        <br>
+        
+        <h3 id="euclidean-spaces">2.19 Euclidean Spaces</h3>
+<p>Euclidean <span class="math inline">\(k\)</span>-dimensional space
+<span class="math inline">\(R^k\)</span> is the set of all points <span
+class="math inline">\(x=(ξ_1, \ldots, ξ_k)\)</span> whose coordinates
+<span class="math inline">\(ξ_i\)</span> are real numbers, with the
+following algebraic and topological structure:</p>
+<p>If <span class="math inline">\(x=\left( ξ_1, \ldots, ξ_k\right),
+y=\left( \eta_1, \ldots, \eta_k\right)\)</span>, and <span
+class="math inline">\(\alpha\)</span> is a real number, <span
+class="math inline">\(x+y\)</span> and <span
+class="math inline">\(\alpha x\)</span> are defined by <span
+class="math display">\[
+x+y=\left(ξ_1+\eta_1, \ldots, ξ_k+\eta_k\right), \quad \alpha
+x=\left(\alpha ξ_1, \ldots, \alpha ξ_k\right) .
+\]</span> This makes <span class="math inline">\(R^k\)</span> into a
+real vector space. If <span class="math inline">\(x \cdot y=\sum ξ_i
+\eta_i\)</span> and <span class="math inline">\(|x|=(x \cdot x)^{1 /
+2}\)</span>, the Schwarz inequality <span class="math inline">\(|x \cdot
+y| \leq|x||y|\)</span> leads to the triangle inequality <span
+class="math display">\[
+|x-y| \leq|x-z|+|z-y| ;
+\]</span> hence we obtain a metric by setting <span
+class="math inline">\(\rho(x, y)=|x-y|\)</span>. We assume that these
+facts are familiar and shall prove them in greater generality in Chap.
+4.</p>
+<p>If <span class="math inline">\(E \subset R^k\)</span> and <span
+class="math inline">\(x \in R^k\)</span>, the <strong>translate</strong>
+of <span class="math inline">\(E\)</span> by <span
+class="math inline">\(x\)</span> is the set <span
+class="math display">\[
+E+x=\{y+x: y \in E\}
+\]</span> A set of the form <span class="math display">\[
+W=\left\{x: \alpha_i&lt;\xi_i&lt;\beta_i, 1 \leq i \leq k\right\},
+\]</span> or any set obtained by replacing any or all of the <span
+class="math inline">\(&lt;\)</span> signs in (4) by <span
+class="math inline">\(\leq\)</span>, is called a <strong><span
+class="math inline">\(k\)</span>-cell</strong>; its volume is defined to
+be <span class="math display">\[
+\operatorname{vol}(W)=\prod_{i=1}^k\left(\beta_i-\alpha_i\right)
+\]</span> If <span class="math inline">\(a \in R^k\)</span> and <span
+class="math inline">\(\delta&gt;0\)</span>, we shall call the set <span
+class="math display">\[
+Q(a ; \delta)=\left\{x: \alpha_i \leq \xi_i&lt;\alpha_i+\delta, 1 \leq i
+\leq k\right\}
+\]</span> the <strong><span class="math inline">\(\delta\)</span>-box
+with corner at <span class="math inline">\(a\)</span></strong>. Here
+<span class="math inline">\(a=\left(\alpha_1, \ldots,
+\alpha_k\right)\)</span>.</p>
+<p>For <span class="math inline">\(n=1,2,3, \ldots\)</span>, we let
+<span class="math inline">\(P_n\)</span> be the set of all <span
+class="math inline">\(x \in R^k\)</span> whose coordinates are integer
+multiples of <span class="math inline">\(2^{-n}\)</span>, and we let
+<span class="math inline">\(\Omega_n\)</span> be the collection of all
+<span class="math inline">\(2^{-n}\)</span> boxes with corners at points
+of <span class="math inline">\(P_n\)</span>. We shall need the following
+four properties of <span
+class="math inline">\(\left\{\Omega_n\right\}\)</span>. The first three
+are obvious by inspection.</p>
+<ol type="a">
+<li>If <span class="math inline">\(n\)</span> is fixed, each <span
+class="math inline">\(x \in R^k\)</span> lies in one and only one member
+of <span class="math inline">\(\Omega_n\)</span>.</li>
+<li>If <span class="math inline">\(Q^{\prime} \in \Omega_n, Q^{\prime
+\prime} \in \Omega_r\)</span>, and <span
+class="math inline">\(r&lt;n\)</span>, then either <span
+class="math inline">\(Q^{\prime} \subset Q^{\prime \prime}\)</span> or
+<span class="math inline">\(Q^{\prime} \cap Q^{\prime
+\prime}=\varnothing\)</span>.</li>
+<li>If <span class="math inline">\(Q \in \Omega_r\)</span>, then <span
+class="math inline">\(\mathrm{vol}(Q)=2^{-r k}\)</span>; and if <span
+class="math inline">\(n&gt;r\)</span>, the set <span
+class="math inline">\(P_n\)</span> has exactly <span
+class="math inline">\(2^{(n-r) k}\)</span> points in <span
+class="math inline">\(Q\)</span>.</li>
+<li>Every nonempty open set in <span class="math inline">\(R^k\)</span>
+is a countable union of disjoint boxes belonging to <span
+class="math inline">\(\Omega_1 \cup \Omega_2 \cup \Omega_3 \cup
+\cdots\)</span>.</li>
+</ol>
+<p><strong>Proof</strong> of <span class="math inline">\((d)\)</span> If
+<span class="math inline">\(V\)</span> is open, every <span
+class="math inline">\(x \in V\)</span> lies in an open ball which lies
+in <span class="math inline">\(V\)</span>; hence <span
+class="math inline">\(x \in Q \subset V\)</span> for some <span
+class="math inline">\(Q\)</span> belonging to some <span
+class="math inline">\(\Omega_n\)</span>. In other words, <span
+class="math inline">\(V\)</span> is the union of all boxes which lie in
+<span class="math inline">\(V\)</span> and which belong to some <span
+class="math inline">\(\Omega_n\)</span>. From this collection of boxes,
+select those which belong to <span
+class="math inline">\(\Omega_1\)</span>, and remove those in <span
+class="math inline">\(\Omega_2\)</span>, <span
+class="math inline">\(\Omega_3, \ldots\)</span> which lie in any of the
+selected boxes. From the remaining collection, select those boxes of
+<span class="math inline">\(\Omega_2\)</span> which lie in <span
+class="math inline">\(V\)</span>, and remove those in <span
+class="math inline">\(\Omega_3, \Omega_4, \ldots\)</span> which lie in
+any of the selected boxes. If we proceed in this way, <span
+class="math inline">\((a)\)</span> and (b) show that <span
+class="math inline">\((d)\)</span> holds.</p>
+<h3 id="theorem">2.20 Theorem</h3>
+<p>There exists a positive complete measure <span
+class="math inline">\(m\)</span> defined on a <span
+class="math inline">\(\sigma\)</span> algebra <span
+class="math inline">\(\mathfrak{M}\)</span> in <span
+class="math inline">\(R^k\)</span>, with the following properties:</p>
+<ol type="a">
+<li><span class="math inline">\(m(W)=\operatorname{vol}(W)\)</span> for
+every <span class="math inline">\(k\)</span>-cell <span
+class="math inline">\(W\)</span>.</li>
+<li><span class="math inline">\(\mathfrak{M}\)</span> contains all Borel
+sets in <span class="math inline">\(R^k\)</span>; more precisely, <span
+class="math inline">\(E \in \mathfrak{M}\)</span> if and only if there
+are sets <span class="math inline">\(A\)</span> and <span
+class="math inline">\(B \subset R^k\)</span> such that <span
+class="math inline">\(A \subset E \subset B, A\)</span> is an <span
+class="math inline">\(F_\sigma, B\)</span> is a <span
+class="math inline">\(G_\delta\)</span>, and <span
+class="math inline">\(m(B-A)=0\)</span>. Also, <span
+class="math inline">\(m\)</span> is regular.</li>
+<li><span class="math inline">\(m\)</span> is translation-invariant,
+i.e.,</li>
+</ol>
+<p><span class="math display">\[
+m(E+x)=m(E)
+\]</span></p>
+<p>for every <span class="math inline">\(E \in \mathfrak{M}\)</span> and
+every <span class="math inline">\(x \in R^k\)</span>.</p>
+<ol start="4" type="a">
+<li>If <span class="math inline">\(\mu\)</span> is any positive
+translation-invariant Borel measure on <span
+class="math inline">\(R^k\)</span> such that <span
+class="math inline">\(\mu(K)&lt;\infty\)</span> for every compact set
+<span class="math inline">\(K\)</span>, then there is a constant <span
+class="math inline">\(c\)</span> such that <span
+class="math inline">\(\mu(E)=c m(E)\)</span> for all Borel sets <span
+class="math inline">\(E \subset R^k\)</span>.</li>
+<li>To every linear transformation <span
+class="math inline">\(T\)</span> of <span
+class="math inline">\(R^k\)</span> into <span
+class="math inline">\(R^k\)</span> corresponds a real number <span
+class="math inline">\(\Delta(T)\)</span> such that <span
+class="math display">\[
+m(T(E))=\Delta(T) m(E)
+\]</span> for every <span class="math inline">\(E \in
+\mathfrak{M}\)</span>. In particular, <span
+class="math inline">\(m(T(E))=m(E)\)</span> when <span
+class="math inline">\(T\)</span> is a rotation.</li>
+</ol>
+<p>The members of <span class="math inline">\(\mathfrak{M}\)</span> are
+the Lebesgue measurable sets in <span class="math inline">\(R^k ;
+m\)</span> is the Lebesgue measure on <span
+class="math inline">\(R^k\)</span>. When clarity requires it, we shall
+write <span class="math inline">\(m_k\)</span> in place of <span
+class="math inline">\(m\)</span>.</p>
+<p><strong>Proof</strong> If <span class="math inline">\(f\)</span> is
+any complex function on <span class="math inline">\(R^k\)</span>, with
+compact support, define</p>
+<p><span class="math display">\[
+\begin{equation}
+\Lambda_n f=2^{-n k} \sum_{x \in P_n} f(x) \quad(n=1,2,3, \ldots),
+\end{equation}
+\]</span></p>
+<p>where <span class="math inline">\(P_n\)</span> is as in Sec. <span
+class="math inline">\(2.19\)</span>.</p>
+<p>Now suppose <span class="math inline">\(f \in C_c\left(R^k\right),
+f\)</span> is real, <span class="math inline">\(W\)</span> is an open
+<span class="math inline">\(k\)</span>-cell which contains the support
+of <span class="math inline">\(f\)</span>, and <span
+class="math inline">\(\epsilon&gt;0\)</span>. The uniform continuity of
+<span class="math inline">\(f([26]\)</span>, Theorem 4.19) shows that
+there is an integer <span class="math inline">\(N\)</span> and that
+there are functions <span class="math inline">\(g\)</span> and <span
+class="math inline">\(h\)</span> with support in <span
+class="math inline">\(W\)</span>, such that (i) <span
+class="math inline">\(g\)</span> and <span
+class="math inline">\(h\)</span> are constant on each box belonging to
+<span class="math inline">\(\Omega_N\)</span>, (ii) <span
+class="math inline">\(g \leq f \leq h\)</span>, and (iii) <span
+class="math inline">\(h-g&lt;\epsilon\)</span>. If <span
+class="math inline">\(n&gt;N\)</span>, Property <span
+class="math inline">\(2.19(c)\)</span> shows that</p>
+<p><span class="math display">\[
+\begin{equation}
+\Lambda_N g=\Lambda_n g \leq \Lambda_n f \leq \Lambda_n h=\Lambda_N h .
+\end{equation}
+\]</span></p>
+<p>Thus the upper and lower limits of <span
+class="math inline">\(\left\{\Lambda_n f\right\}\)</span> differ by at
+most <span class="math inline">\(\epsilon\)</span> vol <span
+class="math inline">\((W)\)</span>, and since <span
+class="math inline">\(\epsilon\)</span> was arbitrary, we have proved
+the existence of</p>
+<p><span class="math display">\[
+\begin{equation}
+\Lambda f=\lim _{n \rightarrow \infty} \Lambda_n f \quad\left(f \in
+C_c\left(R^k\right)\right) .
+\end{equation}
+\]</span></p>
+<p>It is immediate that <span class="math inline">\(\Lambda\)</span> is
+a positive linear functional on <span
+class="math inline">\(C_c\left(R^k\right)\)</span>. (In fact, <span
+class="math inline">\(\Lambda f\)</span> is precisely the Riemann
+integral of <span class="math inline">\(f\)</span> over <span
+class="math inline">\(R^k\)</span>. We went through the preceding
+construction in order not to have to rely on any theorems about Riemann
+integrals in several variables.)</p>
+<p><span class="math inline">\(W e\)</span> define <span
+class="math inline">\(m\)</span> and <span
+class="math inline">\(\mathfrak{M}\)</span> to be the measure and <span
+class="math inline">\(\sigma\)</span>-algebra associated with this <span
+class="math inline">\(\Lambda\)</span> as in Theorem <span
+class="math inline">\(2.14\)</span>.</p>
+<p>Since Theorem <span class="math inline">\(2.14\)</span> gives us a
+complete measure and since <span class="math inline">\(R^k\)</span> is
+<span class="math inline">\(\sigma\)</span> compact, Theorem <span
+class="math inline">\(2.17\)</span> implies assertion <span
+class="math inline">\((b)\)</span> of Theorem <span
+class="math inline">\(2.20\)</span>.</p>
+<p>To prove <span class="math inline">\((a)\)</span>, let <span
+class="math inline">\(W\)</span> be the open cell <span
+class="math inline">\(2.19(4)\)</span>, let <span
+class="math inline">\(E_r\)</span> be the union of those boxes belonging
+to <span class="math inline">\(\Omega_r\)</span> whose closures lie in
+<span class="math inline">\(W\)</span>, choose <span
+class="math inline">\(f_r\)</span> so that <span
+class="math inline">\(\bar{E}_r \prec\)</span> <span
+class="math inline">\(f_r \prec W\)</span>, and put <span
+class="math inline">\(g_r=\max \left\{f_1, \ldots, f_r\right\}\)</span>.
+Our construction of <span class="math inline">\(\Lambda\)</span> shows
+that</p>
+<p><span class="math display">\[
+\begin{equation}
+\operatorname{vol}\left(E_r\right) \leq \Lambda f_r \leq \Lambda g_r
+\leq \operatorname{vol} W .
+\end{equation}
+\]</span></p>
+<p>As <span class="math inline">\(r \rightarrow \infty,
+\operatorname{vol}\left(E_r\right) \rightarrow
+\operatorname{vol}(W)\)</span>, and</p>
+<p><span class="math display">\[
+\begin{equation}
+\Lambda g_r=\int g_r d m \rightarrow m(W)
+\end{equation}
+\]</span></p>
+<p>by the monotone convergence theorem, since <span
+class="math inline">\(g_r(x) \rightarrow \chi_W(x)\)</span> for all
+<span class="math inline">\(x \in R^k\)</span>. Thus <span
+class="math inline">\(m(W)=\operatorname{vol}(W)\)</span> for every open
+cell <span class="math inline">\(W\)</span>, and since every <span
+class="math inline">\(k\)</span>-cell is the intersection of a
+decreasing sequence of open <span
+class="math inline">\(k\)</span>-cells, we obtain <span
+class="math inline">\((a)\)</span>.</p>
+<p>The proofs of <span class="math inline">\((c),(d)\)</span>, and <span
+class="math inline">\((e)\)</span> will use the following observation:
+If <span class="math inline">\(\lambda\)</span> is a positive Borel
+measure on <span class="math inline">\(R^k\)</span> and <span
+class="math inline">\(\lambda(E)=m(E)\)</span> for all boxes <span
+class="math inline">\(E\)</span>, then the same equality holds for all
+open sets <span class="math inline">\(E\)</span>, by property <span
+class="math inline">\(2.19(d)\)</span>, and therefore for all Borel sets
+<span class="math inline">\(E\)</span>, since <span
+class="math inline">\(\lambda\)</span> and <span
+class="math inline">\(m\)</span> are regular (Theorem 2.18).</p>
+<p>To prove <span class="math inline">\((c)\)</span>, fix <span
+class="math inline">\(x \in R^k\)</span> and define <span
+class="math inline">\(\lambda(E)=m(E+x)\)</span>. It is clear that <span
+class="math inline">\(\lambda\)</span> is then a measure; by <span
+class="math inline">\((a), \lambda(E)=m(E)\)</span> for all boxes, hence
+<span class="math inline">\(m(E+x)=m(E)\)</span> for all Borel sets
+<span class="math inline">\(E\)</span>. The same equality holds for
+every <span class="math inline">\(E \in \mathfrak{M}\)</span>, because
+of <span class="math inline">\((b)\)</span>.</p>
+<p>Suppose next that <span class="math inline">\(\mu\)</span> satisfies
+the hypotheses of <span class="math inline">\((d)\)</span>. Let <span
+class="math inline">\(Q_0\)</span> be a 1-box, put <span
+class="math inline">\(c=\mu\left(Q_0\right)\)</span>. Since <span
+class="math inline">\(Q_0\)</span> is the union of <span
+class="math inline">\(2^{n k}\)</span> disjoint <span
+class="math inline">\(2^{-n}\)</span> boxes that are translates of each
+other, we have</p>
+<p><span class="math display">\[
+2^{n k} \mu(Q)=\mu\left(Q_0\right)=c m\left(Q_0\right)=c \cdot 2^{n k}
+m(Q)
+\]</span></p>
+<p>for every <span class="math inline">\(2^{-n}\)</span>-box <span
+class="math inline">\(Q\)</span>. Property <span
+class="math inline">\(2.19(d)\)</span> implies now that <span
+class="math inline">\(\mu(E)=c m(E)\)</span> for all open sets <span
+class="math inline">\(E \subset R^k\)</span>. This proves <span
+class="math inline">\((d)\)</span>.</p>
+<p>To prove (e), let <span class="math inline">\(T: R^k \rightarrow
+R^k\)</span> be linear. If the range of <span
+class="math inline">\(T\)</span> is a subspace <span
+class="math inline">\(Y\)</span> of lower dimension, then <span
+class="math inline">\(m(Y)=0\)</span> and the desired conclusion holds
+with <span class="math inline">\(\Delta(T)=0\)</span>. In the other
+case, elementary linear algebra tells us that <span
+class="math inline">\(T\)</span> is a one-to-one map of <span
+class="math inline">\(R^k\)</span> onto <span
+class="math inline">\(R^k\)</span> whose inverse is also linear. Thus
+<span class="math inline">\(T\)</span> is a homeomorphism of <span
+class="math inline">\(R^k\)</span> onto <span
+class="math inline">\(R^k\)</span>, so that <span
+class="math inline">\(T(E)\)</span> is a Borel set for every Borel set
+<span class="math inline">\(E\)</span>, and we can therefore define a
+positive Borel measure <span class="math inline">\(\mu\)</span> on <span
+class="math inline">\(R^k\)</span> by</p>
+<p><span class="math display">\[
+\begin{equation}
+\mu(E)=m(T(E)) .
+\end{equation}
+\]</span></p>
+<p>The linearity of <span class="math inline">\(T\)</span>, combined
+with the translation-invariance of <span
+class="math inline">\(m\)</span>, gives</p>
+<p><span class="math display">\[
+\begin{equation}
+\mu(E+x)=m(T(E+x))=m(T(E)+T x)=m(T(E))=\mu(E) .
+\end{equation}
+\]</span></p>
+<p>Thus <span class="math inline">\(\mu\)</span> is
+translation-invariant, and the first assertion of <span
+class="math inline">\((e)\)</span> follows from (d), first for Borel
+sets <span class="math inline">\(E\)</span>, then for all <span
+class="math inline">\(E \in \mathfrak{M}\)</span> by <span
+class="math inline">\((b)\)</span>.</p>
+<p>To find <span class="math inline">\(\Delta(T)\)</span>, we merely
+need to know <span class="math inline">\(m(T(E)) / m(E)\)</span> for one
+set <span class="math inline">\(E\)</span> with <span
+class="math inline">\(0&lt;m(E)&lt;\infty\)</span>. If <span
+class="math inline">\(T\)</span> is a rotation, let <span
+class="math inline">\(E\)</span> be the unit ball of <span
+class="math inline">\(R^k\)</span>; then <span
+class="math inline">\(T(E)=E\)</span>, and <span
+class="math inline">\(\Delta(T)=1\)</span>.</p>
+<h3 id="remarks">2.21 Remarks</h3>
+<p>If <span class="math inline">\(m\)</span> is the Lebesgue measure on
+<span class="math inline">\(R^k\)</span>, it is customary to write <span
+class="math inline">\(L^1\left(R^k\right)\)</span> in place of <span
+class="math inline">\(L^1(m)\)</span>. If <span
+class="math inline">\(E\)</span> is a Lebesgue measurable subset of
+<span class="math inline">\(R^k\)</span>, and if <span
+class="math inline">\(m\)</span> is restricted to the measurable subsets
+of <span class="math inline">\(E\)</span>, a new measure space is
+obtained in an obvious fashion. The phrase ” <span
+class="math inline">\(f \in L^1\)</span> on <span
+class="math inline">\(E\)</span> ” or ” <span class="math inline">\(f
+\in L^1(E)\)</span> ” is used to indicate that <span
+class="math inline">\(f\)</span> is integrable on this measure
+space.</p>
+<p>If <span class="math inline">\(k=1\)</span>, if <span
+class="math inline">\(I\)</span> is any of the sets <span
+class="math inline">\((a, b),(a, b],[a, b),[a, b]\)</span>, and if <span
+class="math inline">\(f \in L^1(I)\)</span>, it is customary to
+write</p>
+<p><span class="math display">\[
+\int_a^b f(x) d x \text { in place of } \int_I f d m \text {. }
+\]</span></p>
+<p>Since the Lebesgue measure of any single point is 0 , it makes no
+difference over which of these four sets the integral is extended.</p>
+<p>Everything learned about integration in elementary Calculus courses
+is still useful in the present context, for if <span
+class="math inline">\(f\)</span> is a continuous complex function on
+<span class="math inline">\([a, b]\)</span>, then the Riemann integral
+of <span class="math inline">\(f\)</span> and the Lebesgue integral of
+<span class="math inline">\(f\)</span> over <span
+class="math inline">\([a, b]\)</span> coincide. This is obvious from our
+construction if <span class="math inline">\(f(a)=f(b)=0\)</span> and if
+<span class="math inline">\(f(x)\)</span> is defined to be 0 for <span
+class="math inline">\(x&lt;a\)</span> and for <span
+class="math inline">\(x&gt;b\)</span>. The general case follows without
+difficulty. Actually the same thing is true for every Riemann integrable
+<span class="math inline">\(f\)</span> on <span
+class="math inline">\([a, b]\)</span>. Since we shall have no occasion
+to discuss Riemann integrable functions in the sequel, we omit the proof
+and refer to Theorem <span class="math inline">\(11.33\)</span> of
+[26].</p>
+<p>Two natural questions may have occurred to some readers by now: Is
+every Lebesgue measurable set a Borel set? Is every subset of <span
+class="math inline">\(R^k\)</span> Lebesgue measurable? The answer is
+negative in both cases, even when <span
+class="math inline">\(k=1\)</span>.</p>
+<p>The first question can be settled by a cardinality argument which we
+sketch briefly. Let <span class="math inline">\(c\)</span> be the
+cardinality of the continuum (the real line or, equivalently, the
+collection of all sets of integers). We know that <span
+class="math inline">\(R^k\)</span> has a countable base (open balls with
+rational radii and with centers in some countable dense subset of <span
+class="math inline">\(R^k\)</span> ), and that <span
+class="math inline">\(\mathscr{B}_k\)</span> (the collection of all
+Borel sets of <span class="math inline">\(\left.R^k\right)\)</span> is
+the <span class="math inline">\(\sigma\)</span>-algebra generated by
+this base. It follows from this (we omit the proof) that <span
+class="math inline">\(\mathscr{B}_k\)</span> has cardinality <span
+class="math inline">\(c\)</span>. On the other hand, there exist Cantor
+sets <span class="math inline">\(E \subset R^1\)</span> with <span
+class="math inline">\(m(E)=0\)</span>. (Exercise 5.) The completeness of
+<span class="math inline">\(m\)</span> implies that each of the <span
+class="math inline">\(2^c\)</span> subsets of <span
+class="math inline">\(E\)</span> is Lebesgue measurable. Since <span
+class="math inline">\(2^c&gt;c\)</span>, most subsets of <span
+class="math inline">\(E\)</span> are not Borel sets.</p>
+<p>The following theorem answers the second question.</p>
+<h3 id="theorem-1">2.22 Theorem</h3>
+<p>If <span class="math inline">\(A \subset R^1\)</span> and every
+subset of <span class="math inline">\(A\)</span> is Lebesgue measurable
+then <span class="math inline">\(m(A)=0\)</span></p>
+<p><strong>Corollary</strong> Every set of positive measure has
+nonmeasurable subsets.</p>
+<p>Proof We shall use the fact that <span
+class="math inline">\(R^1\)</span> is a group, relative to addition. Let
+<span class="math inline">\(Q\)</span> be the subgroup that consists of
+the rational numbers, and let <span class="math inline">\(E\)</span> be
+a set that contains exactly one point from each coset of <span
+class="math inline">\(Q\)</span> in <span
+class="math inline">\(R^1\)</span>. (The assertion that</p>
+<p>there is such a set is a direct application of the axiom of choice.)
+Then <span class="math inline">\(E\)</span> has the following two
+properties.</p>
+<ol type="a">
+<li><span class="math inline">\((E+r) \cap(E+s)=\varnothing\)</span> if
+<span class="math inline">\(r \in Q, s \in Q, r \neq s\)</span>.</li>
+<li>Every <span class="math inline">\(x \in R^1\)</span> lies in <span
+class="math inline">\(E+r\)</span> for some <span
+class="math inline">\(r \in Q\)</span>. To prove (a), suppose <span
+class="math inline">\(x \in(E+r) \cap(E+s)\)</span>. Then <span
+class="math inline">\(x=y+r=z+s\)</span> for some <span
+class="math inline">\(y \in E, z \in E, y \neq z\)</span>. But <span
+class="math inline">\(y-z=s-r \in Q\)</span>, so that <span
+class="math inline">\(y\)</span> and <span
+class="math inline">\(z\)</span> lie in the same coset of <span
+class="math inline">\(Q\)</span>, a contradiction.</li>
+</ol>
+<p>To prove (b), let <span class="math inline">\(y\)</span> be the point
+of <span class="math inline">\(E\)</span> that lies in the same coset as
+<span class="math inline">\(x\)</span>, put <span
+class="math inline">\(r=x-y\)</span>.</p>
+<p>Fix <span class="math inline">\(t \in Q\)</span>, for the moment, and
+put <span class="math inline">\(A_t=A \cap(E+t)\)</span>. By hypothesis,
+<span class="math inline">\(A_t\)</span> is measurable. Let <span
+class="math inline">\(K \subset A_t\)</span> be compact, let <span
+class="math inline">\(H\)</span> be the union of the translates <span
+class="math inline">\(K+r\)</span>, where <span
+class="math inline">\(r\)</span> ranges over <span
+class="math inline">\(Q \cap[0,1]\)</span>. Then <span
+class="math inline">\(H\)</span> is bounded, hence <span
+class="math inline">\(m(H)&lt;\infty\)</span>. Since <span
+class="math inline">\(K \subset E+t,(a)\)</span> shows that the sets
+<span class="math inline">\(K+r\)</span> are pairwise disjoint. Thus
+<span class="math inline">\(m(H)=\sum_r m(K+r)\)</span>. But <span
+class="math inline">\(m(K+r)=m(K)\)</span>. It follows that <span
+class="math inline">\(m(K)=0\)</span>. This holds for every compact
+<span class="math inline">\(K \subset A_t\)</span>. Hence <span
+class="math inline">\(m\left(A_t\right)=0\)</span>.</p>
+<p>Finally, <span class="math inline">\((b)\)</span> shows that <span
+class="math inline">\(A=\bigcup A_t\)</span>, where <span
+class="math inline">\(t\)</span> ranges over <span
+class="math inline">\(Q\)</span>. Since <span
+class="math inline">\(Q\)</span> is countable, we conclude that <span
+class="math inline">\(m(A)=0\)</span>.</p>
+<h3 id="determinants">2.23 Determinants</h3>
+<p>The scale factors <span class="math inline">\(\Delta(T)\)</span> that
+occur in Theorem <span class="math inline">\(2.20(e)\)</span> can be
+interpreted algebraically by means of determinants.</p>
+<p>Let <span class="math inline">\(\left\{e_1, \ldots,
+e_k\right\}\)</span> be the standard basis for <span
+class="math inline">\(R^k:\)</span> the <span
+class="math inline">\(i\)</span> th coordinate of <span
+class="math inline">\(e_j\)</span> is 1 if <span
+class="math inline">\(i=j, 0\)</span> if <span class="math inline">\(i
+\neq j\)</span>. If <span class="math inline">\(T: R^k \rightarrow
+R^k\)</span> is linear and</p>
+<p><span class="math display">\[
+T e_j=\sum_{i=1}^k \alpha_{i j} e_i \quad(1 \leq j \leq k)
+\]</span></p>
+<p>then det <span class="math inline">\(T\)</span> is, by definition,
+the determinant of the matrix <span class="math inline">\([T]\)</span>
+that has <span class="math inline">\(\alpha_{i j}\)</span> in row <span
+class="math inline">\(i\)</span> and column <span
+class="math inline">\(j\)</span>.</p>
+<p>We claim that</p>
+<p><span class="math display">\[
+\Delta(T)=|\operatorname{det} T|
+\]</span></p>
+<p>If <span class="math inline">\(T=T_1 T_2\)</span>, it is clear that
+<span class="math inline">\(\Delta(T)=\Delta\left(T_1\right)
+\Delta\left(T_2\right)\)</span>. The multiplication theorem for
+determinants shows therefore that if (2) holds for <span
+class="math inline">\(T_1\)</span> and <span
+class="math inline">\(T_2\)</span>, then (2) also holds for <span
+class="math inline">\(T\)</span>. Since every linear operator on <span
+class="math inline">\(R^k\)</span> is a product of finitely many linear
+operators of the following three types, it suffices to establish (2) for
+each of these:</p>
+<ol type="I">
+<li><span class="math inline">\(\left\{T e_1, \ldots, T
+e_k\right\}\)</span> is a permutation of <span
+class="math inline">\(\left\{e_1, \ldots, e_k\right\}\)</span>.</li>
+<li><span class="math inline">\(T e_1=\alpha e_1, T e_i=e_i\)</span> for
+<span class="math inline">\(i=2, \ldots, k\)</span>.</li>
+<li><span class="math inline">\(T e_1=e_1+e_2, T e_i=e_i\)</span> for
+<span class="math inline">\(i=2, \ldots, k\)</span>.</li>
+</ol>
+<p>Let <span class="math inline">\(Q\)</span> be the cube consisting of
+all <span class="math inline">\(x=\left(\xi_1, \ldots,
+\xi_k\right)\)</span> with <span class="math inline">\(0 \leq
+\xi_i&lt;1\)</span> for <span class="math inline">\(i=1, \ldots,
+k\)</span>.</p>
+<p>If <span class="math inline">\(T\)</span> is of type (I), then <span
+class="math inline">\([T]\)</span> has exactly one 1 in each row and
+each column and has 0 in all other places. So det <span
+class="math inline">\(T=\pm 1\)</span>. Also, <span
+class="math inline">\(T(Q)=Q\)</span>. So <span
+class="math inline">\(\Delta(T)=1=|\operatorname{det} T|\)</span></p>
+<p>If <span class="math inline">\(T\)</span> is of type (II), then
+clearly <span class="math inline">\(\Delta(T)=|\alpha|=\mid\)</span> det
+<span class="math inline">\(T \mid\)</span>.</p>
+<p>If <span class="math inline">\(T\)</span> is of type (III), then det
+<span class="math inline">\(T=1\)</span> and <span
+class="math inline">\(T(Q)\)</span> is the set of all points <span
+class="math inline">\(\sum \xi_i e_i\)</span> whose coordinates
+satisfy</p>
+<p><span class="math display">\[
+\xi_1 \leq \xi_2&lt;\xi_1+1, \quad 0 \leq \xi_i&lt;1 \quad \text { if }
+\quad i \neq 2 .
+\]</span></p>
+<p>If <span class="math inline">\(S_1\)</span> is the set of points in
+<span class="math inline">\(T(Q)\)</span> that have <span
+class="math inline">\(\xi_2&lt;1\)</span> and if <span
+class="math inline">\(S_2\)</span> is the rest of <span
+class="math inline">\(T(Q)\)</span>, then</p>
+<p><span class="math display">\[
+S_1 \cup\left(S_2-e_2\right)=Q,
+\]</span></p>
+<p>and <span class="math inline">\(S_1 \cap\left(S_2-e_2\right)\)</span>
+is empty. Hence <span class="math inline">\(\Delta(T)=m\left(S_1 \cup
+S_2\right)=m\left(S_1\right)+m\left(S_2-e_2\right)=\)</span> <span
+class="math inline">\(m(Q)=1\)</span>, so that we again have <span
+class="math inline">\(\Delta(T)=\mid\)</span> det <span
+class="math inline">\(T \mid\)</span>.</p>
+
+    </div>
+    
+</div>
+</div>
+
+                <div id="footer-wrapper">
+                    <footer class="footer"><footer class="row pl-3 pr-3">
+    <div class="col-12 d-flex justify-content-between align-items-center text-muted pl-0 pr-0">
+        <div class="footer-left">
+            <p class="mb-0"> © 2022 <a href="https://github.com/chen-gz">guangzong</a>. <span data-toggle="tooltip"
+                    data-placement="top"
+                    title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author.">All
+                    rights reserved.</span></p>
+        </div>
+        <div class="footer-right">
+            <p class="mb-0"> Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">hugo</a>
+                with <a href="https://github.com/chen-gz/hugo_zong" target="_blank" rel="noopener">zong</a>
+                theme.</p>
+        </div>
+    </div>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script> MathJax = {
+            tex: {
+                tags: 'ams',
+            }
+        };</script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</footer>
+</footer>
+                </div>
+            </div>
+            <div id="panel-wrapper" class="d-flex flex-column"><div id="toc-wrapper" class="mb-5 pl-2">
+    <span>Contents</span>
+    <nav id="toc" data-toggle="toc">
+        
+        
+        
+    </nav>
+</div>
+
+<div id="access-lastmod" class="pb-4 pl-2">
+    <div class="panel-heading">Recently Updated</div>
+    <ul class="post-content pl-3 pb-1 ml-1 mt-2">
+          
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/1-total-variation/">Total Variation</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-7/1-derivatives-of-measures/">Derivatives of Measures</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/3-consequences-of-the-radon-nikodym-theorem/">Consequences of the Radon-Nikodym Theorem</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/4-bounded-linear-functionals-on-lp/">Bounded linear functional on Lp</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/2-abosolute-continuity/">Abosolute Continuity</a></li>
+        
+    </ul>
+</div>
+
+<div id="access-tags" class="pl-2">
+    <div class="panel-heading">Trending Tags</div>
+    <div class="d-flex flex-wrap mt-3 mb-1 mr-3">
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/algorithm/">Algorithm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/android/">Android</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c/">C</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c-language/">c language</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/caddy/">Caddy</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cadence/">Cadence</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cdc/">CDC</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/classification/">classification</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/compress/">Compress</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/conf/">Conf</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/double-column/">Double Column</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/errno13/">Errno13</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/fish/">fish</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gan/">GAN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/git/">Git</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gtk/">Gtk</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/html/">Html</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/i3/">I3</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/idea/">Idea</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/java/">Java</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/latex/">Latex</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lda/">LDA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linear-programming/">Linear Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linux/">Linux</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lr/">LR</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/math/">Math</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mathematics/">Mathematics</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matlab/">Matlab</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matplot/">matplot</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/memory/">Memory</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mermaid/">Mermaid</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/misc/">Misc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/ml/">ML</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mosfet/">Mosfet</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/network/">Network</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/nn/">NN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pandoc/">Pandoc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pca/">PCA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/probability/">Probability</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/productive/">Productive</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/program/">Program</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/programming/">Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/python/">Python</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/qt/">Qt</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/random-variable/">Random Variable</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rcnn/">RCNN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rust/">Rust</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/security/">Security</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/software/">Software</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/std/">Std</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/svd/">Svd</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/tool/">Tool</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/usb/">USB</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vim/">Vim</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpn/">Vpn</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpnc/">Vpnc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/xterm/">xterm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/zsh/">Zsh</a>
+        
+    </div>
+</div>
+</div><div id="search-result-wrapper" class="d-flex justify-content-center unloaded">
+    <div class="col-12 col-sm-11 post-content">
+        <div id="search-hints"></div>
+        <div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3 col-12"></div>
+    </div>
+</div>
+
+<script src="/js/fuse.min.js"></script>
+<script src="/js/fastsearch.js"></script>
+
+
+</div>
+        <div id="mask"></div>
+        <a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button"
+            style="display: none">
+            <i class="fas fa-angle-up"></i>
+        </a>
+    </div>
+    
+</body>
+
+</html>

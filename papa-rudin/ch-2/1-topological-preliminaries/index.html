@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css"
+        class="dark-mode-native-dark-original" />
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+     
+    <link rel="stylesheet" href="https://zongpitt.com/sass/main.06935202011a97ba473ebeeb0cb6788daa9fb5a9fff471a4e85850293d1c5ac4.css" />
+    <title>
+          Guangzong Blog | 1 Topological Preliminaries
+    </title>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.bundle.min.js"></script>
+    <script src=" https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.js"></script>
+
+    <script
+        src="https://cdn.jsdelivr.net/combine/npm/magnific-popup@1/dist/jquery.magnific-popup.min.js,npm/lozad/dist/lozad.min.js,npm/clipboard@2/dist/clipboard.min.js"></script>
+    <script type="text/javascript" src="/js/commons/back-to-top.js"></script>
+    
+    
+    
+    <script type="text/javascript" src="/js/commons/topbar-switch.js"></script>
+    <script type="text/javascript" src="/js/commons/sidebar.js"></script>
+    <script type="text/javascript" src="/js/utils/category-collapse.js"></script>
+    <script type="text/javascript" src="/js/utils/checkbox.js"></script>
+    <script type="text/javascript" src="/js/utils/clipboard.js"></script>
+    <script type="text/javascript" src="/js/utils/img-extra.js"></script>
+    <script type="text/javascript" src="/js/utils/pageviews.js"></script>
+    
+    <script type="text/javascript" src="/js/utils/timeago.js"></script>
+    
+    
+</head>
+<body data-spy="scroll" data-target="#toc" data-topbar-visible="true" class="d-flex"><div id="sidebar" class="d-flex flex-column align-items-end">
+    <div class="profile-wrapper text-center">
+
+        <div id="avatar">
+            <a href="/" alt="avatar" class="mx-auto"> <img src=https://github.com/chen-gz/chen-gz/blob/main/mine_square.jpg?raw&#61;truehttps://raw.githubusercontent.com/chen-gz/chen-gz/blob/main/mine_square.jpg alt="avatar"
+                    onerror="this.style.display='none'"> </a>
+        </div>
+
+        <div class="site-title mt-3"> <a href="/">Guangzong</a> </div>
+        <div class="site-subtitle font-italic">Welcome to my blog</div>
+    </div>
+
+    <ul>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/">
+                <span>
+                    Home
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/archive/">
+                <span>
+                    Archive
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/tags/">
+                <span>
+                    Tags
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/about/">
+                <span>
+                    About
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/categories/">
+                <span>
+                    Categories
+                </span>
+            </a>
+        </li>
+        
+    </ul>
+
+    <div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center align-items-center">
+        <button class="mode-toggle btn" aria-label="Switch Mode"> 
+            <i class="fas fa-adjust"></i> 
+        </button>
+
+        <span class="icon-border"></span>
+        <a href="https://github.com/chen-gz" aria-label="github" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i>
+        </a>
+
+        <a href=" javascript:location.href = 'mailto:' + ['chen-gz','outlook.com'].join('@')" aria-label="email">
+            <i class="fas fa-envelope"></i>
+        </a>
+
+        <a href="/feed.xml" aria-label="rss"> <i class="fas fa-rss"></i> </a>
+    </div>
+
+    
+    
+</div>
+<div id="all-wrapper" class="d-flex flex-column"><div id="topbar-wrapper">
+    <div id="topbar" class="d-flex">
+        
+        <span id="breadcrumb" class="d-flex">
+              
+               
+            
+            
+            <div><a href='https://zongpitt.com/'>Home</a></div>
+              
+              
+            
+            <div><a href="https://zongpitt.com/papa-rudin">papa-rudin</a></div>
+               
+              
+            
+            <div><a href="https://zongpitt.com/papa-rudin/ch-2">ch-2</a></div>
+               
+                 
+                
+        </span>
+        <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i>
+        <div id="topbar-title">Guangzong</div>
+        <i id="search-trigger" class="fas fa-search fa-fw"></i>
+        <span id="search-wrapper" class="align-items-center">
+            <i class="fas fa-search fa-fw"></i>
+            <input class="form-control" id="search-input" type="search" aria-label="search" autocomplete="off"
+                placeholder="Search..." />
+            <i class="fa fa-times-circle fa-fw" id="search-cleaner"></i>
+        </span>
+    </div>
+</div>
+<div id="main-wrapper" class="d-flex mt-3">
+            <div id="core-wrapper" class="d-flex flex-column">
+                <div id="main" class="d-flex flex-column">
+                    
+<div class="post pl-1 pr-1 pl-md-2 pr-md-2">
+    
+    <div id="post-content">
+        <h1 style="text-align: center;">1 Topological Preliminaries</h1>
+        <br>
+        
+        <h2 id="definitions">2.3 Definitions</h2>
+<p>Let <span class="math inline">\(X\)</span> be a topological space, as
+defined in Sec. <span class="math inline">\(1.2\)</span>.</p>
+<ol type="a">
+<li><p>A set <span class="math inline">\(E \subset X\)</span> is
+<strong>closed</strong> if its complement <span
+class="math inline">\(E^c\)</span> is open. (Hence <span
+class="math inline">\(\varnothing\)</span> and <span
+class="math inline">\(X\)</span> are closed, finite unions of closed
+sets are closed, and arbitrary intersections of closed sets are
+closed.)</p></li>
+<li><p>The <strong>closure</strong> <span
+class="math inline">\(\bar{E}\)</span> of a set <span
+class="math inline">\(E \subset X\)</span> is the smallest closed set in
+<span class="math inline">\(X\)</span> which contains <span
+class="math inline">\(E\)</span>. (The following argument proves the
+existence of <span class="math inline">\(\bar{E}\)</span> : The
+collection <span class="math inline">\(\Omega\)</span> of all closed
+subsets of <span class="math inline">\(X\)</span> which contain <span
+class="math inline">\(E\)</span> is not empty, since <span
+class="math inline">\(X \in \Omega\)</span>; let <span
+class="math inline">\(\bar{E}\)</span> be the intersection of all
+members of <span class="math inline">\(\Omega\)</span>.)</p></li>
+<li><p>A set <span class="math inline">\(K \subset X\)</span> is
+<strong>compact</strong> if every open cover of <span
+class="math inline">\(K\)</span> contains a finite subcover. More
+explicitly, the requirement is that if <span
+class="math inline">\(\left\{V_\alpha\right\}\)</span> is a collection
+of open sets whose union contains <span
+class="math inline">\(K\)</span>, then the union of some finite
+subcollection of <span
+class="math inline">\(\left\{V_\alpha\right\}\)</span> also contains
+<span class="math inline">\(K\)</span>. <br> In particular, if <span
+class="math inline">\(X\)</span> is itself compact, then <span
+class="math inline">\(X\)</span> is called a <strong>compact
+space</strong>.</p></li>
+<li><p>A <strong>neighborhood</strong> of a point <span
+class="math inline">\(p \in X\)</span> is any open subset of <span
+class="math inline">\(X\)</span> which contains <span
+class="math inline">\(p\)</span>. (The use of this term is not quite
+standardized; some use “neighborhood of <span
+class="math inline">\(p\)</span>” for any set which contains an open set
+containing p.)</p></li>
+<li><p><span class="math inline">\(X\)</span> is a <strong>Hausdorff
+space</strong> if the following is true: If <span
+class="math inline">\(p \in X, q \in X\)</span>, and <span
+class="math inline">\(p \neq q\)</span>, then <span
+class="math inline">\(p\)</span> has a neighborhood <span
+class="math inline">\(U\)</span> and <span
+class="math inline">\(q\)</span> has a neighborhood <span
+class="math inline">\(V\)</span> such that <span class="math inline">\(U
+\cap V=\varnothing\)</span></p></li>
+<li><p><span class="math inline">\(X\)</span> is <strong>locally
+compact</strong> if every point of <span
+class="math inline">\(X\)</span> has a neighborhood whose closure is
+compact.</p></li>
+</ol>
+<p>Obviously, every compact space is locally compact.</p>
+<p>We recall the Heine-Borel theorem: <strong>The compact subsets of a
+euclidean space <span class="math inline">\(R^n\)</span> are precisely
+those that are closed and bounded</strong> <span
+class="math inline">\(([26], \dagger\)</span> Theorem 2.41). From this
+it follows easily that <span class="math inline">\(R^n\)</span> is a
+locally compact Hausdorff space. Also, every metric space is a Hausdorff
+space.</p>
+<h2 id="theorem">2.4 theorem</h2>
+<p>Suppose <span class="math inline">\(K\)</span> is compact and <span
+class="math inline">\(F\)</span> is closed, in a topological space <span
+class="math inline">\(X\)</span>. If <span class="math inline">\(F
+\subset K\)</span>, then <span class="math inline">\(F\)</span> is
+compact.</p>
+<p><strong>PROOF</strong> If <span
+class="math inline">\(\left\{V_\alpha\right\}\)</span> is an open cover
+of <span class="math inline">\(F\)</span> and <span
+class="math inline">\(W=F^c\)</span>, then <span class="math inline">\(W
+\cup \bigcup_\alpha V_\alpha\)</span> covers <span
+class="math inline">\(X\)</span>; hence there is a finite collection
+<span class="math inline">\(\left\{V_{\alpha_i}\right\}\)</span> such
+that</p>
+<p><span class="math display">\[
+\begin{equation}
+K \subset W \cup V_{\alpha_1} \cup \cdots \cup V_{\alpha_n} .
+\end{equation}
+\]</span></p>
+<p>Then <span class="math inline">\(F \subset V_{\alpha_1} \cup \cdots
+\cup V_{\alpha_n}\)</span>.</p>
+<p><strong>Corollary</strong> If <span class="math inline">\(A \subset
+B\)</span> and if <span class="math inline">\(B\)</span> has compact
+closure, so does <span class="math inline">\(A\)</span>.</p>
+<h2 id="theorem-1">2.5 Theorem</h2>
+<p>Suppose <span class="math inline">\(X\)</span> is a Hausdorff space,
+<span class="math inline">\(K \subset X, K\)</span> is compact, and
+<span class="math inline">\(p \in K^c\)</span>. Then there are open sets
+<span class="math inline">\(U\)</span> and <span
+class="math inline">\(W\)</span> such that <span class="math inline">\(p
+\in U, K \subset W\)</span>, and <span class="math inline">\(U \cap
+W=\varnothing\)</span></p>
+<p><strong>PROOF</strong> If <span class="math inline">\(q \in
+K\)</span>, the Hausdorff separation axiom implies the existence of
+disjoint open sets <span class="math inline">\(U_q\)</span> and <span
+class="math inline">\(V_q\)</span>, such that <span
+class="math inline">\(p \in U_q\)</span> and <span
+class="math inline">\(q \in V_q\)</span>. Since <span
+class="math inline">\(K\)</span> is compact, there are points <span
+class="math inline">\(q_1, \ldots, q_n \in K\)</span> such that</p>
+<p><span class="math display">\[
+\begin{equation}
+K \subset V_{q_1} \cup \cdots \cup V_{q_n} .
+\end{equation}
+\]</span></p>
+<p>Our requirements are then satisfied by the sets</p>
+<p><span class="math display">\[
+\begin{equation}
+U=U_{q_1} \cap \cdots \cap U_{q_n} \text { and } W=V_{q_1} \cup \cdots
+\cup V_{q_n} . \quad \text { //// }
+\end{equation}
+\]</span></p>
+<p><strong>Corollaries</strong></p>
+<ol type="a">
+<li>Compact subsets of Hausdorff spaces are closed.</li>
+<li>If <span class="math inline">\(F\)</span> is closed and <span
+class="math inline">\(K\)</span> is compact in a Hausdorff space, then
+<span class="math inline">\(F \cap K\)</span> is compact.</li>
+</ol>
+<p>Corollary <span class="math inline">\((b)\)</span> follows from <span
+class="math inline">\((a)\)</span> and Theorem <span
+class="math inline">\(2.4\)</span>.</p>
+<h2 id="theorem-2">2.6 Theorem</h2>
+<p>If <span class="math inline">\(\left\{K_\alpha\right\}\)</span> is a
+collection of compact subsets of a Hausdorff space and if <span
+class="math inline">\(\bigcap_\alpha K_\alpha=\varnothing\)</span>, then
+some finite subcollection of <span
+class="math inline">\(\left\{K_\alpha\right\}\)</span> also has empty
+intersection.</p>
+<p><strong>Proof</strong> Put <span
+class="math inline">\(V_\alpha=K_\alpha^c\)</span>. Fix a member <span
+class="math inline">\(K_1\)</span> of <span
+class="math inline">\(\left\{K_\alpha\right\}\)</span>. Since no point
+of <span class="math inline">\(K_1\)</span> belongs to every <span
+class="math inline">\(K_\alpha,\left\{V_\alpha\right\}\)</span> is an
+open cover of <span class="math inline">\(K_1\)</span>. Hence <span
+class="math inline">\(K_1 \subset V_{\alpha_1} \cup \cdots \cup
+V_{\alpha_n}\)</span> for some finite collection <span
+class="math inline">\(\left\{V_{\alpha_i}\right\}\)</span>. This implies
+that</p>
+<p><span class="math display">\[
+\begin{equation}
+K_1 \cap K_{\alpha_1} \cap \cdots \cap K_{\alpha_n}=\varnothing .
+\end{equation}
+\]</span></p>
+<h2 id="theorem-3">2.7 Theorem</h2>
+<p>Suppose <span class="math inline">\(U\)</span> is open in a locally
+compact Hausdorff space <span class="math inline">\(X\)</span>, <span
+class="math inline">\(K \subset U\)</span>, and <span
+class="math inline">\(K\)</span> is compact. Then there is an open set
+<span class="math inline">\(V\)</span> with compact closure such
+that</p>
+<p><span class="math display">\[
+\begin{equation}
+K \subset V \subset \bar{V} \subset U .
+\end{equation}
+\]</span></p>
+<p>Proof Since every point of <span class="math inline">\(K\)</span> has
+a neighborhood with compact closure, and since <span
+class="math inline">\(K\)</span> is covered by the union of finitely
+many of these neighborhoods, <span class="math inline">\(K\)</span> lies
+in an open set <span class="math inline">\(G\)</span> with compact
+closure. If <span class="math inline">\(U=X\)</span>, take <span
+class="math inline">\(V=G\)</span>.</p>
+<p>Otherwise, let <span class="math inline">\(C\)</span> be the
+complement of <span class="math inline">\(U\)</span>. Theorem <span
+class="math inline">\(2.5\)</span> shows that to each <span
+class="math inline">\(p \in C\)</span> there corresponds an open set
+<span class="math inline">\(W_p\)</span> such that <span
+class="math inline">\(K \subset W_p\)</span> and <span
+class="math inline">\(p \notin \bar{W}_p\)</span>. Hence <span
+class="math inline">\(\left\{C \cap \bar{G} \cap
+\bar{W}_p\right\}\)</span>, where <span class="math inline">\(p\)</span>
+ranges over <span class="math inline">\(C\)</span>, is a collection of
+compact sets with empty intersection. By Theorem <span
+class="math inline">\(2.6\)</span> there are points <span
+class="math inline">\(p_1, \ldots, p_n \in C\)</span> such that</p>
+<p><span class="math display">\[
+\begin{equation}
+C \cap \bar{G} \cap \bar{W}_{p_1} \cap \cdots \cap
+\bar{W}_{p_n}=\varnothing .
+\end{equation}
+\]</span></p>
+<p>The set</p>
+<p><span class="math display">\[
+\begin{equation}
+V=G \cap W_{p_1} \cap \cdots \cap W_{p_n}
+\end{equation}
+\]</span></p>
+<p>then has the required properties, since</p>
+<p><span class="math display">\[
+\begin{equation}
+\bar{V} \subset \bar{G} \cap \bar{W}_{p_1} \cap \cdots \cap
+\bar{W}_{p_n} .
+\end{equation}
+\]</span></p>
+<h3 id="definition">2.8 Definition</h3>
+<p>Let <span class="math inline">\(f\)</span> be a real (or
+extended-real) function on a topological space. If</p>
+<p><span class="math display">\[
+\begin{equation}
+\{x: f(x)&gt;\alpha\}
+\end{equation}
+\]</span></p>
+<p>is open for every real <span class="math inline">\(\alpha, f\)</span>
+is said to be <strong>lower semicontinuous</strong>. If</p>
+<p><span class="math display">\[
+\begin{equation}
+\{x: f(x)&lt;\alpha\}
+\end{equation}
+\]</span></p>
+<p>is open for every real <span class="math inline">\(\alpha, f\)</span>
+is said to be <strong>upper semicontinuous</strong>.</p>
+<p>A real function is obviously continuous if and only if it is both
+upper and lower semicontinuous.</p>
+<p>The simplest examples of semicontinuity are furnished by
+characteristic functions:</p>
+<ol type="a">
+<li><p>Characteristic functions of open sets are lower
+semicontinuous.</p></li>
+<li><p>Characteristic functions of closed sets are upper
+semicontinuous.</p></li>
+</ol>
+<p>The following property is an almost immediate consequence of the
+definitions:</p>
+<ol start="3" type="a">
+<li><em>The supremum of any collection of lower semicontinuous functions
+is lower semicontinuous. The infimum of any collection of upper
+semicontinuous functions is upper semicontinuous.</em></li>
+</ol>
+<h2 id="definition-1">2.9 Definition</h2>
+<p>The <strong>support</strong> of a complex function <span
+class="math inline">\(f\)</span> on a topological space <span
+class="math inline">\(X\)</span> is the <em>closure</em> of the set</p>
+<p><span class="math display">\[
+\begin{equation}
+\{x: f(x) \neq 0\} .
+\end{equation}
+\]</span></p>
+<p>The collection of all continuous complex functions on <span
+class="math inline">\(X\)</span> whose support is compact is denoted by
+<span class="math inline">\(C_c(X)\)</span>.</p>
+<p><em>Observe that <span class="math inline">\(C_c(X)\)</span> is a
+vector space. This is due to two facts:</em></p>
+<ol type="a">
+<li><p>The support of <span class="math inline">\(f+g\)</span> lies in
+the union of the support of <span class="math inline">\(f\)</span> and
+the support of <span class="math inline">\(g\)</span>, and any finite
+union of compact sets is compact.</p></li>
+<li><p>The sum of two continuous complex functions is continuous, as are
+scalar multiples of continuous functions.</p></li>
+</ol>
+<p>(Statement and proof of Theorem <span
+class="math inline">\(1.8\)</span> hold verbatim if “measurable
+function” is replaced by “continuous function,” ” measurable space” by
+“topological space”; take <span class="math inline">\(\Phi(s,
+t)=s+t\)</span>, or <span class="math inline">\(\Phi(s, t)=s t\)</span>,
+to prove that sums and products of continuous functions are
+continuous.)</p>
+<h2 id="theorem-4">2.10 Theorem</h2>
+<p>Let <span class="math inline">\(X\)</span> and <span
+class="math inline">\(Y\)</span> be topological spaces, and let <span
+class="math inline">\(f: X \rightarrow Y\)</span> be continuous. If
+<span class="math inline">\(K\)</span> is a compact subset of <span
+class="math inline">\(X\)</span>, then <span
+class="math inline">\(f(K)\)</span> is compact.</p>
+<p><strong>Proof</strong> If <span
+class="math inline">\(\left\{V_\alpha\right\}\)</span> is an open cover
+of <span class="math inline">\(f(K)\)</span>, then <span
+class="math inline">\(\left\{f^{-1}\left(V_\alpha\right)\right\}\)</span>
+is an open cover of <span class="math inline">\(K\)</span>, hence <span
+class="math inline">\(K \subset f^{-1}\left(V_{\alpha_1}\right) \cup
+\cdots \cup f^{-1}\left(V_{\alpha_n}\right)\)</span> for some <span
+class="math inline">\(\alpha_1, \ldots, \alpha_n\)</span>, and therefore
+<span class="math inline">\(f(K) \subset V_{\alpha_1} \cup \cdots \cup
+V_{\alpha_n}\)</span>.</p>
+<p><strong>Corollary</strong> The range of any <span
+class="math inline">\(f \in C_c(X)\)</span> is a compact subset of the
+complex plane.</p>
+<p>In fact, if <span class="math inline">\(K\)</span> is the support of
+<span class="math inline">\(f \in C_c(X)\)</span>, then <span
+class="math inline">\(f(X) \subset f(K) \cup\{0\}\)</span>. If <span
+class="math inline">\(X\)</span> is not compact, then <span
+class="math inline">\(0 \in f(X)\)</span>, but 0 need not lie in <span
+class="math inline">\(f(K)\)</span>, as is seen by easy examples.</p>
+<h2 id="notation">2.11 Notation</h2>
+<p>In this chapter the following conventions will be used. The
+notation</p>
+<p><span class="math display">\[
+\begin{equation}
+K \prec f
+\end{equation}
+\]</span></p>
+<p>will mean that <span class="math inline">\(K\)</span> is a compact
+subset of <span class="math inline">\(X\)</span>, that <span
+class="math inline">\(f \in C_c(X)\)</span>, that <span
+class="math inline">\(0 \leq f(x) \leq 1\)</span> for all <span
+class="math inline">\(x \in X\)</span>, and that <span
+class="math inline">\(f(x)=1\)</span> for all <span
+class="math inline">\(x \in K\)</span>. The notation</p>
+<p><span class="math display">\[
+f \prec V
+\]</span></p>
+<p>will mean that <span class="math inline">\(V\)</span> is open, that
+<span class="math inline">\(f \in C_c(X), 0 \leq f \leq 1\)</span>, and
+that the support of <span class="math inline">\(f\)</span> lies in <span
+class="math inline">\(V\)</span>. The notation</p>
+<p><span class="math display">\[
+\begin{equation}
+K \prec f \prec V
+\end{equation}
+\]</span></p>
+<p>will be used to indicate that both (1) and (2) hold.</p>
+<h2 id="urysohns-lemma">2.12 Urysohn’s Lemma</h2>
+<p>Suppose <span class="math inline">\(X\)</span> is a locally compact
+Hausdorff space, <span class="math inline">\(V\)</span> is open in <span
+class="math inline">\(X, K \subset V\)</span>, and <span
+class="math inline">\(K\)</span> is compact. Then there exists an <span
+class="math inline">\(f \in C_c(X)\)</span>, such that</p>
+<p><span class="math display">\[
+\begin{equation}
+K \prec f \prec V .
+\end{equation}
+\]</span></p>
+<p>In terms of characteristic functions, the conclusion asserts the
+existence of a <strong>continuous function</strong> <span
+class="math inline">\(f\)</span> which satisfies the inequalities <span
+class="math inline">\(\chi_K \leq f \leq \chi_V\)</span>. Note that it
+is easy to find <strong>semicontinuous </strong> functions which do
+this; examples are <span class="math inline">\(\chi_K\)</span> and <span
+class="math inline">\(\chi_V\)</span>.</p>
+<p><strong>Proof</strong> Put <span class="math inline">\(r_1=0,
+r_2=1\)</span>, and let <span class="math inline">\(r_3, r_4, r_5,
+\ldots\)</span> be an enumeration of the rationals in <span
+class="math inline">\((0,1)\)</span>. By Theorem <span
+class="math inline">\(2.7\)</span>, we can find open sets <span
+class="math inline">\(V_0\)</span> and then <span
+class="math inline">\(V_1\)</span> such that <span
+class="math inline">\(\bar{V}_0\)</span> is compact and</p>
+<p><span class="math display">\[
+\begin{equation}
+K \subset V_1 \subset \bar{V}_1 \subset V_0 \subset \bar{V}_0 \subset V
+.
+\end{equation}
+\]</span></p>
+<p>Suppose <span class="math inline">\(n \geq 2\)</span> and <span
+class="math inline">\(V_{r_1}, \ldots, V_{r_n}\)</span> have been chosen
+in such a manner that <span class="math inline">\(r_i&lt;r_j\)</span>
+implies <span class="math inline">\(\bar{V}_{r_j} \subset
+V_{r_i}\)</span>. Then one of the numbers <span
+class="math inline">\(r_1, \ldots, r_n\)</span>, say <span
+class="math inline">\(r_i\)</span>, will be the largest one which is
+smaller than <span class="math inline">\(r_{n+1}\)</span>, and another,
+say <span class="math inline">\(r_j\)</span>, will be the smallest one
+larger than <span class="math inline">\(r_{n+1}\)</span>. Using Theorem
+<span class="math inline">\(2.7\)</span> again, we can find <span
+class="math inline">\(V_{r_{n+1}}\)</span> so that</p>
+<p><span class="math display">\[
+\begin{equation}
+\bar{V}_{r_j} \subset V_{r_{n+1}} \subset \bar{V}_{r_{n+1}} \subset
+V_{r_i} .
+\end{equation}
+\]</span></p>
+<p>Continuing, we obtain a collection <span
+class="math inline">\(\left\{V_r\right\}\)</span> of open sets, one for
+every rational <span class="math inline">\(r \in[0,1]\)</span>, with the
+following properties: <span class="math inline">\(K \subset V_1,
+\bar{V}_0 \subset V, e a c h \bar{V}_r\)</span> is compact, and</p>
+<p><span class="math display">\[
+\begin{equation}
+s&gt;r \text { implies } \bar{V}_s \subset V_r \text {. }
+\end{equation}
+\]</span></p>
+<p>Define</p>
+<p><span class="math display">\[
+\begin{equation}
+f_r(x)=\left\{\begin{array}{ll}
+r &amp; \text { if } x \in V_r, \\
+0 &amp; \text { otherwise },
+\end{array} \quad g_s(x)= \begin{cases}1 &amp; \text { if } x \in
+\bar{V}_s, \\
+s &amp; \text { otherwise }\end{cases}\right.
+\end{equation}
+\]</span></p>
+<p>and</p>
+<p><span class="math display">\[
+\begin{equation}
+f=\sup _r f_r, \quad g=\inf _s g_s
+\end{equation}
+\]</span></p>
+<p>The remarks following Definition <span
+class="math inline">\(2.8\)</span> show that <span
+class="math inline">\(f\)</span> is lower semicontinuous and that <span
+class="math inline">\(g\)</span> is upper semicontinuous. It is clear
+that <span class="math inline">\(0 \leq f \leq 1\)</span>, that <span
+class="math inline">\(f(x)=1\)</span> if <span class="math inline">\(x
+\in K\)</span>, and that <span class="math inline">\(f\)</span> has its
+support in <span class="math inline">\(\bar{V}_0\)</span>. The proof
+will be completed by showing that <span
+class="math inline">\(f=g\)</span>.</p>
+<p>The inequality <span class="math inline">\(f_r(x)&gt;g_s(x)\)</span>
+is possible only if <span class="math inline">\(r&gt;s, x \in
+V_r\)</span>, and <span class="math inline">\(x \notin
+\bar{V}_s\)</span>. But <span class="math inline">\(r&gt;s\)</span>
+implies <span class="math inline">\(V_r \subset V_s\)</span>. Hence
+<span class="math inline">\(f_r \leq g_s\)</span> for all <span
+class="math inline">\(r\)</span> and <span
+class="math inline">\(s\)</span>, so <span class="math inline">\(f \leq
+g\)</span>.</p>
+<p>Suppose <span class="math inline">\(f(x)&lt;g(x)\)</span> for some
+<span class="math inline">\(x\)</span>. Then there are rationals <span
+class="math inline">\(r\)</span> and <span
+class="math inline">\(s\)</span> such that <span
+class="math inline">\(f(x)&lt;r&lt;s&lt;g(x)\)</span>. Since <span
+class="math inline">\(f(x)&lt;r\)</span>, we have <span
+class="math inline">\(x \notin V_r\)</span>; since <span
+class="math inline">\(g(x)&gt;s\)</span>, we have <span
+class="math inline">\(x \in \bar{V}_s\)</span>. By (3), this is a
+contradiction. Hence <span class="math inline">\(f=g\)</span>.∎</p>
+<h2 id="theorem-5">2.13 Theorem</h2>
+<p>Suppose <span class="math inline">\(V_1, \ldots, V_n\)</span> are
+open subsets of a locally compact Hausdorff space <span
+class="math inline">\(X, K\)</span> is compact, and</p>
+<p><span class="math display">\[
+\begin{equation}
+K \subset V_1 \cup \cdots \cup V_n .
+\end{equation}
+\]</span></p>
+<p>Then there exist functions <span class="math inline">\(h_i \prec
+V_i(i=1, \ldots, n)\)</span> such that</p>
+<p><span class="math display">\[
+\begin{equation}
+h_1(x)+\cdots+h_n(x)=1 \quad(x \in K) .
+\end{equation}
+\]</span></p>
+<p>Because of (1), the collection <span
+class="math inline">\(\left\{h_1, \ldots, h_n\right\}\)</span> is called
+a partition of unity on <span class="math inline">\(K\)</span>,
+subordinate to the cover <span class="math inline">\(\left\{V_1, \ldots,
+V_n\right\}\)</span>.</p>
+<p><strong>Proof</strong> By Theorem 2.7, each <span
+class="math inline">\(x \in K\)</span> has a neighborhood <span
+class="math inline">\(W_x\)</span> with compact closure <span
+class="math inline">\(\bar{W}_x \subset V_i\)</span> for some <span
+class="math inline">\(i\)</span> (depending on <span
+class="math inline">\(x\)</span> ). There are points <span
+class="math inline">\(x_1, \ldots, x_m\)</span> such that <span
+class="math inline">\(W_{x_1} \cup \cdots \cup W_{x_m} \supset
+K\)</span>. If <span class="math inline">\(1 \leq i \leq n\)</span>, let
+<span class="math inline">\(H_i\)</span> be the union of those <span
+class="math inline">\(W_{x_j}\)</span> which lie in <span
+class="math inline">\(V_i\)</span>. By Urysohn’s lemma, there are
+functions <span class="math inline">\(g_i\)</span> such that <span
+class="math inline">\(H_i \prec g_i \prec V_i\)</span>. Define</p>
+<p><span class="math display">\[
+\begin{equation}
+\begin{aligned}
+&amp;h_1=g_1 \\
+&amp;h_2=\left(1-g_1\right) g_2 \\
+&amp;\cdots \ldots \ldots \\
+&amp;h_n=\left(1-g_1\right)\left(1-g_2\right)
+\cdots\left(1-g_{n-1}\right) g_n .
+\end{aligned}
+\end{equation}
+\]</span></p>
+<p>Then <span class="math inline">\(h_i \prec V_i\)</span>. It is easily
+verified, by induction, that</p>
+<p><span class="math display">\[
+\begin{equation}
+h_1+h_2+\cdots+h_n=1-\left(1-g_1\right)\left(1-g_2\right)
+\cdots\left(1-g_n\right) \text {. }
+\end{equation}
+\]</span></p>
+<p>Since <span class="math inline">\(K \subset H_1 \cup \cdots \cup
+H_n\)</span>, at least one <span class="math inline">\(g_i(x)=1\)</span>
+at each point <span class="math inline">\(x \in K\)</span>; hence (3)
+shows that (1) holds.</p>
+
+    </div>
+    
+</div>
+</div>
+
+                <div id="footer-wrapper">
+                    <footer class="footer"><footer class="row pl-3 pr-3">
+    <div class="col-12 d-flex justify-content-between align-items-center text-muted pl-0 pr-0">
+        <div class="footer-left">
+            <p class="mb-0"> © 2022 <a href="https://github.com/chen-gz">guangzong</a>. <span data-toggle="tooltip"
+                    data-placement="top"
+                    title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author.">All
+                    rights reserved.</span></p>
+        </div>
+        <div class="footer-right">
+            <p class="mb-0"> Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">hugo</a>
+                with <a href="https://github.com/chen-gz/hugo_zong" target="_blank" rel="noopener">zong</a>
+                theme.</p>
+        </div>
+    </div>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script> MathJax = {
+            tex: {
+                tags: 'ams',
+            }
+        };</script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</footer>
+</footer>
+                </div>
+            </div>
+            <div id="panel-wrapper" class="d-flex flex-column"><div id="toc-wrapper" class="mb-5 pl-2">
+    <span>Contents</span>
+    <nav id="toc" data-toggle="toc">
+        
+        
+        
+    </nav>
+</div>
+
+<div id="access-lastmod" class="pb-4 pl-2">
+    <div class="panel-heading">Recently Updated</div>
+    <ul class="post-content pl-3 pb-1 ml-1 mt-2">
+          
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/1-total-variation/">Total Variation</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-7/1-derivatives-of-measures/">Derivatives of Measures</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/3-consequences-of-the-radon-nikodym-theorem/">Consequences of the Radon-Nikodym Theorem</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/4-bounded-linear-functionals-on-lp/">Bounded linear functional on Lp</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/2-abosolute-continuity/">Abosolute Continuity</a></li>
+        
+    </ul>
+</div>
+
+<div id="access-tags" class="pl-2">
+    <div class="panel-heading">Trending Tags</div>
+    <div class="d-flex flex-wrap mt-3 mb-1 mr-3">
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/algorithm/">Algorithm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/android/">Android</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c/">C</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c-language/">c language</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/caddy/">Caddy</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cadence/">Cadence</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cdc/">CDC</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/classification/">classification</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/compress/">Compress</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/conf/">Conf</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/double-column/">Double Column</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/errno13/">Errno13</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/fish/">fish</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gan/">GAN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/git/">Git</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gtk/">Gtk</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/html/">Html</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/i3/">I3</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/idea/">Idea</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/java/">Java</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/latex/">Latex</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lda/">LDA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linear-programming/">Linear Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linux/">Linux</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lr/">LR</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/math/">Math</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mathematics/">Mathematics</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matlab/">Matlab</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matplot/">matplot</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/memory/">Memory</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mermaid/">Mermaid</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/misc/">Misc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/ml/">ML</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mosfet/">Mosfet</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/network/">Network</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/nn/">NN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pandoc/">Pandoc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pca/">PCA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/probability/">Probability</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/productive/">Productive</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/program/">Program</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/programming/">Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/python/">Python</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/qt/">Qt</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/random-variable/">Random Variable</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rcnn/">RCNN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rust/">Rust</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/security/">Security</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/software/">Software</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/std/">Std</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/svd/">Svd</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/tool/">Tool</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/usb/">USB</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vim/">Vim</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpn/">Vpn</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpnc/">Vpnc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/xterm/">xterm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/zsh/">Zsh</a>
+        
+    </div>
+</div>
+</div><div id="search-result-wrapper" class="d-flex justify-content-center unloaded">
+    <div class="col-12 col-sm-11 post-content">
+        <div id="search-hints"></div>
+        <div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3 col-12"></div>
+    </div>
+</div>
+
+<script src="/js/fuse.min.js"></script>
+<script src="/js/fastsearch.js"></script>
+
+
+</div>
+        <div id="mask"></div>
+        <a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button"
+            style="display: none">
+            <i class="fas fa-angle-up"></i>
+        </a>
+    </div>
+    
+</body>
+
+</html>

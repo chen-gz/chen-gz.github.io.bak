@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>8 SOME SPECIAL FUNCTION on Guangzong Blog</title>
+    <link>https://zongpitt.com/baby-rudin/8-some-special-function/</link>
+    <description>Recent content in 8 SOME SPECIAL FUNCTION on Guangzong Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://zongpitt.com/baby-rudin/8-some-special-function/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>6 THE GAMMA FUNCTION.md</title>
+      <link>https://zongpitt.com/baby-rudin/8-some-special-function/6-the-gamma-function/</link>
+      <pubDate>Thu, 11 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/8-some-special-function/6-the-gamma-function/</guid>
+      <description>This function is closely related to factorials and crops up in many unexpected places in analysis. Its origin, history, and development are very well described in an interesting article by P. J. Davis (Amer. Math. Monthly, vol. 66, 1959, pp. 849-869). Artin’s book (cited in the Bibliography) is another good elementary introduction.
+Our presentation will be very condensed, with only a few comments after each theorem. This section may thus be regarded as a large exercise, and as an opportunity to apply some of the material that has been presented so far.</description>
+    </item>
+    
+    <item>
+      <title>3 THE TRIGONOMETRIC FUNCTIONS</title>
+      <link>https://zongpitt.com/baby-rudin/8-some-special-function/3-the-trigonometric-functions/</link>
+      <pubDate>Wed, 10 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/8-some-special-function/3-the-trigonometric-functions/</guid>
+      <description>Let us define (46) \[C(x)=\frac{1}{2}[E(i x)+E(-i x)], \quad S(x)=\frac{1}{2 i}[E(i x)-E(-i x)]\].
+We shall show that \(C(x)\) and \(S(x)\) coincide with the functions \(\cos x\) and \(\sin x\), whose definition is usually based on geometric considerations. By \((25), E(\bar{z})=\) \(\overline{E(z)}\). Hence (46) shows that \(C(x)\) and \(S(x)\) are real for real \(x\). Also,
+\[ E(i x)=C(x)+i S(x) . \]
+Thus \(C(x)\) and \(S(x)\) are the real and imaginary parts, respectively, of \(E(i x)\), if \(x\) is real.</description>
+    </item>
+    
+    <item>
+      <title>4 THE ALGEBRAIC COMPLETENESS OF THE COMPLEX FILED</title>
+      <link>https://zongpitt.com/baby-rudin/8-some-special-function/4-the-algebraic-completeness-of-the-complex-filed/</link>
+      <pubDate>Wed, 10 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/8-some-special-function/4-the-algebraic-completeness-of-the-complex-filed/</guid>
+      <description>We are now in a position to give a simple proof of the fact that the complex field is algebraically complete, that is to say, that every nonconstant polynomial with complex coefficients has a complex root.
+\(8.8\) Theorem Suppose \(a_{0}, \ldots, a_{n}\) are complex numbers, \(n \geq 1, a_{n} \neq 0\),
+\[ P(z)=\sum_{0}^{n} a_{k} z^{k} . \]
+Then \(P(z)=0\) for some complex number \(z\).
+Proof Without loss of generality, assume \(a_{n}=1\).</description>
+    </item>
+    
+    <item>
+      <title>5 FOURIER SERIES.md</title>
+      <link>https://zongpitt.com/baby-rudin/8-some-special-function/5-fourier-series/</link>
+      <pubDate>Wed, 10 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/8-some-special-function/5-fourier-series/</guid>
+      <description>8.9 Definition A trigonometric polynomial is a finite sum of the form
+\[ f(x)=a_{0}+\sum_{n=1}^{N}\left(a_{n} \cos n x+b_{n} \sin n x\right) \quad(x \text { real), } \]
+where \(a_{0}, \ldots, a_{N}, b_{1}, \ldots, b_{N}\) are complex numbers. On account of the identities (46), (59) can also be written in the form
+\[ f(x)=\sum_{-N}^{N} c_{n} e^{i n x} \quad(x \text { real }), \]
+which is more convenient for most purposes. It is clear that every trigonometric polynomial is periodic, with period \(2 \pi\).</description>
+    </item>
+    
+    <item>
+      <title>1 POWER SERIES</title>
+      <link>https://zongpitt.com/baby-rudin/8-some-special-function/1-power-series/</link>
+      <pubDate>Sun, 07 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/8-some-special-function/1-power-series/</guid>
+      <description>In this section we shall derive some properties of functions which are represented by power series, i.e., functions of the form
+\[ f(x)=\sum_{n=0}^{\infty} c_{n} x^{n} \]
+or, more generally,
+\[ f(x)=\sum_{n=0}^{\infty} c_{n}(x-a)^{n} . \]
+These are called analytic functions. We shall restrict ourselves to real values of \(x\). Instead of circles of convergence (see Theorem 3.39) we shall therefore encounter intervals of convergence.
+If (1) converges for all \(x\) in \((-R, R)\), for some \(R&amp;gt;0(R\) may be \(+\infty)\), we say that \(f\) is expanded in a power series about the point \(x=0\).</description>
+    </item>
+    
+    <item>
+      <title>2 THE EXPONENTIAL AND LOGARITHMIC FUNCTIONS</title>
+      <link>https://zongpitt.com/baby-rudin/8-some-special-function/2-the-exponential-and-logarithmic-functions/</link>
+      <pubDate>Sun, 07 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/8-some-special-function/2-the-exponential-and-logarithmic-functions/</guid>
+      <description>We define
+\[ E(z)=\sum_{n=0}^{\infty} \frac{z^{n}}{n !} \]
+The ratio test shows that this series converges for every complex z. Applying Theorem \(3.50\) on multiplication of absolutely convergent series, we obtain
+\[ \begin{aligned} E(z) E(w) &amp;amp;=\sum_{n=0}^{\infty} \frac{z^{n}}{n !} \sum_{m=0}^{\infty} \frac{w^{m}}{m !}=\sum_{n=0}^{\infty} \sum_{k=0}^{n} \frac{z^{k} w^{n-k}}{k !(n-k) !} \\ &amp;amp;=\sum_{n=0}^{\infty} \frac{1}{n !} \sum_{k=0}^{n}\left(\begin{array}{l} n \\ k \end{array}\right) z^{k} w^{n-k}=\sum_{n=0}^{\infty} \frac{(z+w)^{n}}{n !} \end{aligned} \]
+which gives us the important addition formula
+\[ E(z+w)=E(z) E(w) \quad(z, w \text { complex }) \]</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Git on Guangzong Blog</title>
+    <link>https://zongpitt.com/tags/git/</link>
+    <description>Recent content in Git on Guangzong Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 10 Oct 2020 23:49:00 -0400</lastBuildDate><atom:link href="https://zongpitt.com/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git Configuration</title>
+      <link>https://zongpitt.com/posts/2020-10-10-git-configuration/</link>
+      <pubDate>Sat, 10 Oct 2020 23:49:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-10-10-git-configuration/</guid>
+      <description>Because I am using nvim as git different tool, following configuration is required.
+[user] email = guangzong@pitt.edu name = Guangzong Chen [merge] tool = vimdiff [mergetool] keepBackup = false [mergetool &amp;quot;vimdiff&amp;quot;] cmd = nvim -d $LOCAL $REMOTE $MERGED -c &amp;#39;$wincmd w&amp;#39; -c &amp;#39;wincmd J&amp;#39; [diff] tool = vimdiff [difftool] keepBackup = false [difftool &amp;quot;vimdiff&amp;quot;] cmd = nvim -d $LOCAL $REMOTE -c &amp;#39;$wincmd w&amp;#39; </description>
+    </item>
+    
+  </channel>
+</rss>

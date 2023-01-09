@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css"
+        class="dark-mode-native-dark-original" />
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+     
+    <link rel="stylesheet" href="https://zongpitt.com/sass/main.06935202011a97ba473ebeeb0cb6788daa9fb5a9fff471a4e85850293d1c5ac4.css" />
+    <title>
+          Guangzong Blog | 4 Elementary Properties of Measures
+    </title>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.bundle.min.js"></script>
+    <script src=" https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.js"></script>
+
+    <script
+        src="https://cdn.jsdelivr.net/combine/npm/magnific-popup@1/dist/jquery.magnific-popup.min.js,npm/lozad/dist/lozad.min.js,npm/clipboard@2/dist/clipboard.min.js"></script>
+    <script type="text/javascript" src="/js/commons/back-to-top.js"></script>
+    
+    
+    
+    <script type="text/javascript" src="/js/commons/topbar-switch.js"></script>
+    <script type="text/javascript" src="/js/commons/sidebar.js"></script>
+    <script type="text/javascript" src="/js/utils/category-collapse.js"></script>
+    <script type="text/javascript" src="/js/utils/checkbox.js"></script>
+    <script type="text/javascript" src="/js/utils/clipboard.js"></script>
+    <script type="text/javascript" src="/js/utils/img-extra.js"></script>
+    <script type="text/javascript" src="/js/utils/pageviews.js"></script>
+    
+    <script type="text/javascript" src="/js/utils/timeago.js"></script>
+    
+    
+</head>
+<body data-spy="scroll" data-target="#toc" data-topbar-visible="true" class="d-flex"><div id="sidebar" class="d-flex flex-column align-items-end">
+    <div class="profile-wrapper text-center">
+
+        <div id="avatar">
+            <a href="/" alt="avatar" class="mx-auto"> <img src=https://github.com/chen-gz/chen-gz/blob/main/mine_square.jpg?raw&#61;truehttps://raw.githubusercontent.com/chen-gz/chen-gz/blob/main/mine_square.jpg alt="avatar"
+                    onerror="this.style.display='none'"> </a>
+        </div>
+
+        <div class="site-title mt-3"> <a href="/">Guangzong</a> </div>
+        <div class="site-subtitle font-italic">Welcome to my blog</div>
+    </div>
+
+    <ul>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/">
+                <span>
+                    Home
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/archive/">
+                <span>
+                    Archive
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/tags/">
+                <span>
+                    Tags
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/about/">
+                <span>
+                    About
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/categories/">
+                <span>
+                    Categories
+                </span>
+            </a>
+        </li>
+        
+    </ul>
+
+    <div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center align-items-center">
+        <button class="mode-toggle btn" aria-label="Switch Mode"> 
+            <i class="fas fa-adjust"></i> 
+        </button>
+
+        <span class="icon-border"></span>
+        <a href="https://github.com/chen-gz" aria-label="github" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i>
+        </a>
+
+        <a href=" javascript:location.href = 'mailto:' + ['chen-gz','outlook.com'].join('@')" aria-label="email">
+            <i class="fas fa-envelope"></i>
+        </a>
+
+        <a href="/feed.xml" aria-label="rss"> <i class="fas fa-rss"></i> </a>
+    </div>
+
+    
+    
+</div>
+<div id="all-wrapper" class="d-flex flex-column"><div id="topbar-wrapper">
+    <div id="topbar" class="d-flex">
+        
+        <span id="breadcrumb" class="d-flex">
+              
+               
+            
+            
+            <div><a href='https://zongpitt.com/'>Home</a></div>
+              
+              
+            
+            <div><a href="https://zongpitt.com/papa-rudin">papa-rudin</a></div>
+               
+              
+            
+            <div><a href="https://zongpitt.com/papa-rudin/ch-1">ch-1</a></div>
+               
+                 
+                
+        </span>
+        <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i>
+        <div id="topbar-title">Guangzong</div>
+        <i id="search-trigger" class="fas fa-search fa-fw"></i>
+        <span id="search-wrapper" class="align-items-center">
+            <i class="fas fa-search fa-fw"></i>
+            <input class="form-control" id="search-input" type="search" aria-label="search" autocomplete="off"
+                placeholder="Search..." />
+            <i class="fa fa-times-circle fa-fw" id="search-cleaner"></i>
+        </span>
+    </div>
+</div>
+<div id="main-wrapper" class="d-flex mt-3">
+            <div id="core-wrapper" class="d-flex flex-column">
+                <div id="main" class="d-flex flex-column">
+                    
+<div class="post pl-1 pr-1 pl-md-2 pr-md-2">
+    
+    <div id="post-content">
+        <h1 style="text-align: center;">4 Elementary Properties of Measures</h1>
+        <br>
+        
+        <h3 id="definition">1.18 Definition</h3>
+<ol type="a">
+<li>A <strong>positive measure</strong> is a function <span
+class="math inline">\(\mu\)</span>, defined on a <span
+class="math inline">\(\sigma\)</span>-algebra <span
+class="math inline">\(\mathfrak{M}\)</span>, whose range is in <span
+class="math inline">\([0, \infty]\)</span> and which is
+<strong>countably additive</strong>. This means that if <span
+class="math inline">\(\left\{A_i\right\}\)</span> is a
+<strong>disjoint</strong> countable collection of members of <span
+class="math inline">\(\mathfrak{M}\)</span>, then</li>
+</ol>
+<p><span class="math display">\[
+\begin{equation}
+\mu\left(\bigcup_{i=1}^{\infty} A_i\right)=\sum_{i=1}^{\infty}
+\mu\left(A_i\right) .
+\end{equation}
+\]</span></p>
+<p>To avoid trivialities, we shall also assume that <span
+class="math inline">\(\mu(A)&lt;\infty\)</span> for at least one <span
+class="math inline">\(A \in \mathfrak{M}\)</span>.</p>
+<ol start="2" type="a">
+<li><p>A <strong>measure space</strong> is a measurable space which has
+a positive measure defined on the <span
+class="math inline">\(\sigma\)</span>-algebra of its measurable
+sets.</p></li>
+<li><p>A <strong>complex measure</strong> is a complex-valued countably
+additive function defined on a <span
+class="math inline">\(\sigma\)</span>-algebra.</p></li>
+</ol>
+<p>Note: What we have called a <strong>positive measure</strong> is
+frequently just called a <strong>measure</strong>; w add the word
+“positive” for emphasis. If <span
+class="math inline">\(\mu(E)=0\)</span> for every <span
+class="math inline">\(E \in \mathfrak{M}\)</span>, then <span
+class="math inline">\(\mu\)</span> is a positive measure, by our
+definition. The value <span class="math inline">\(\infty\)</span> is
+admissible for a positive measure; but when we talk of a complex
+<strong>measure</strong> <span class="math inline">\(\mu\)</span>, it is
+understood that <span class="math inline">\(\mu(E)\)</span> is a complex
+number, for every <span class="math inline">\(E \in
+\mathfrak{M}\)</span>. The real <strong>measures</strong> form a
+subclass of the complex ones, of course.</p>
+<h3 id="theorem">1.19 Theorem</h3>
+<p>Let <span class="math inline">\(\mu\)</span> be a positive measure on
+a <span class="math inline">\(\sigma\)</span>-algebra <span
+class="math inline">\(\mathfrak{M}\)</span>. Then</p>
+<ol type="a">
+<li><span class="math inline">\(\mu(\varnothing)=0\)</span>.</li>
+<li><span class="math inline">\(\mu\left(A_1 \cup \cdots \cup
+A_n\right)=\mu\left(A_1\right)+\cdots+\mu\left(A_n\right)\)</span> if
+<span class="math inline">\(A_1, \ldots, A_n\)</span> are pairwise
+disjoint members of <span
+class="math inline">\(\mathfrak{M}\)</span>.</li>
+<li><span class="math inline">\(A \subset B\)</span> implies <span
+class="math inline">\(\mu(A) \leq \mu(B)\)</span> if <span
+class="math inline">\(A \in \mathfrak{M}, B \in
+\mathfrak{M}\)</span>.</li>
+<li><span class="math inline">\(\mu\left(A_n\right) \rightarrow
+\mu(A)\)</span> as <span class="math inline">\(n \rightarrow
+\infty\)</span> if <span class="math inline">\(A=\bigcup_{n=1}^{\infty}
+A_n, A_n \in \mathfrak{M}\)</span>, and <span class="math display">\[
+A_1 \subset A_2 \subset A_3 \subset \cdots .
+\]</span></li>
+<li><span class="math inline">\(\mu\left(A_n\right) \rightarrow
+\mu(A)\)</span> as <span class="math inline">\(n \rightarrow
+\infty\)</span> if <span class="math inline">\(A=\bigcap_{n=1}^{\infty}
+A_n, A_n \in \mathfrak{M}\)</span>, <span class="math display">\[
+A_1 \supset A_2 \supset A_3 \supset \cdots \text {, }
+\]</span> and <span class="math inline">\(\mu\left(A_1\right)\)</span>
+is finite.</li>
+</ol>
+<p>As the proof will show, these properties, with the exception of <span
+class="math inline">\((c)\)</span>, also hold for complex measures;
+<span class="math inline">\((b)\)</span> is called finite additivity;
+<span class="math inline">\((c)\)</span> is called monotonicity.</p>
+<p><strong>Proof</strong></p>
+<ol type="a">
+<li>Take <span class="math inline">\(A \in \mathfrak{M}\)</span> so that
+<span class="math inline">\(\mu(A)&lt;\infty\)</span>, and take <span
+class="math inline">\(A_1=A\)</span> and <span
+class="math inline">\(A_2=A_3=\cdots=\)</span> <span
+class="math inline">\(\varnothing\)</span> in <span
+class="math inline">\(1.18(1)\)</span>.</li>
+<li>Take <span
+class="math inline">\(A_{n+1}=A_{n+2}=\cdots=\varnothing\)</span> in
+<span class="math inline">\(1.18(1)\)</span>.</li>
+<li>Since <span class="math inline">\(B=A \cup(B-A)\)</span> and <span
+class="math inline">\(A \cap(B-A)=\varnothing\)</span>, we see that (b)
+implies <span class="math inline">\(\mu(B)=\mu(A)+\mu(B-A) \geq
+\mu(A)\)</span>.</li>
+<li>Put <span class="math inline">\(B_1=A_1\)</span>, and put <span
+class="math inline">\(B_n=A_n-A_{n-1}\)</span> for <span
+class="math inline">\(n=2,3,4, \ldots\)</span> Then <span
+class="math inline">\(B_n \in \mathfrak{M}\)</span>, <span
+class="math inline">\(B_i \cap B_j=\varnothing\)</span> if <span
+class="math inline">\(i \neq j, A_n=B_1 \cup \cdots \cup B_n\)</span>,
+and <span class="math inline">\(A=\bigcup_{i=1}^{\infty} B_i\)</span>.
+Hence <span class="math display">\[
+\mu\left(A_n\right)=\sum_{i=1}^n \mu\left(B_i\right) \quad \text { and }
+\mu(A)=\sum_{i=1}^{\infty} \mu\left(B_i\right) .
+\]</span> Now <span class="math inline">\((d)\)</span> follows, by the
+definition of the sum of an infinite series.</li>
+<li>Put <span class="math inline">\(C_n=A_1-A_n\)</span>. Then <span
+class="math inline">\(C_1 \subset C_2 \subset C_3 \subset
+\cdots\)</span>, <span class="math display">\[
+\mu\left(C_n\right)=\mu\left(A_1\right)-\mu\left(A_n\right),
+\]</span> <span class="math inline">\(A_1-A=\bigcup C_n\)</span>, and so
+<span class="math inline">\((d)\)</span> shows that <span
+class="math display">\[
+\mu\left(A_1\right)-\mu(A)=\mu\left(A_1-A\right)=\lim _{n \rightarrow
+\infty} \mu\left(C_n\right)=\mu\left(A_1\right)-\lim _{n \rightarrow
+\infty} \mu\left(A_n\right) .
+\]</span> This implies <span class="math inline">\((e)\)</span>. <span
+class="math inline">\(\blacksquare\)</span></li>
+</ol>
+<h3 id="examples">1.20 Examples</h3>
+<p>The construction of interesting measure spaces requires some labor,
+as we shall see. However, a few simple-minded examples can be given
+immediately:</p>
+<ol type="a">
+<li><p>For any <span class="math inline">\(E \subset X\)</span>, where
+<span class="math inline">\(X\)</span> is any set, define <span
+class="math inline">\(\mu(E)=\infty\)</span> if <span
+class="math inline">\(E\)</span> is an infinite set, and let <span
+class="math inline">\(\mu(E)\)</span> be the number of points in <span
+class="math inline">\(E\)</span> if <span
+class="math inline">\(E\)</span> is finite. This <span
+class="math inline">\(\mu\)</span> is called the <strong>counting
+measure</strong> on <span class="math inline">\(X\)</span>.</p></li>
+<li><p>Fix <span class="math inline">\(x_0 \in X\)</span>, define <span
+class="math inline">\(\mu(E)=1\)</span> if <span
+class="math inline">\(x_0 \in E\)</span> and <span
+class="math inline">\(\mu(E)=0\)</span> if <span
+class="math inline">\(x_0 \notin E\)</span>, for any <span
+class="math inline">\(E \subset X\)</span>. This <span
+class="math inline">\(\mu\)</span> may be called the <strong>unit
+mass</strong> concentrated at <span
+class="math inline">\(x_0\)</span>.</p></li>
+<li><p>Let <span class="math inline">\(\mu\)</span> be the counting
+measure on the set <span class="math inline">\(\{1,2,3,
+\ldots\}\)</span>, let <span class="math inline">\(A_n=\{n,
+n+1\)</span>, <span class="math inline">\(n+2, \ldots\}\)</span>. Then
+<span class="math inline">\(\bigcap A_n=\varnothing\)</span> but <span
+class="math inline">\(\mu\left(A_n\right)=\infty\)</span> for <span
+class="math inline">\(n=1,2,3, \ldots\)</span> This shows that the
+hypothesis</p></li>
+</ol>
+<p><span class="math display">\[
+\begin{equation}
+\mu\left(A_1\right)&lt;\infty
+\end{equation}
+\]</span></p>
+<p>is not superfluous in Theorem <span
+class="math inline">\(1.19(e)\)</span>.</p>
+<h3 id="a-comment-on-terminology">1.21 A Comment on Terminology</h3>
+<p>One frequently sees measure spaces referred to as “ordered triples”
+<span class="math inline">\((X, \mathfrak{M}, \mu)\)</span> where <span
+class="math inline">\(X\)</span> is a set, <span
+class="math inline">\(\mathfrak{M}\)</span> is a <span
+class="math inline">\(\sigma\)</span>-algebra in <span
+class="math inline">\(X\)</span>, and <span
+class="math inline">\(\mu\)</span> is a measure defined on <span
+class="math inline">\(\mathfrak{M}\)</span>. Similarly, measurable
+spaces are “ordered pairs.” <span class="math inline">\((X,
+\mathfrak{M})\)</span>.</p>
+<p>This is logically all right, and often convenient, though somewhat
+redundant. For instance, in <span class="math inline">\((X,
+\mathfrak{M})\)</span> the set <span class="math inline">\(X\)</span> is
+merely the largest member of <span
+class="math inline">\(\mathfrak{M}\)</span>, so if we know <span
+class="math inline">\(\mathfrak{M}\)</span> we also know <span
+class="math inline">\(X\)</span>. Similarly, every measure has a <span
+class="math inline">\(\sigma\)</span>-algebra for its domain, by
+definition, so if we know a measure <span
+class="math inline">\(\mu\)</span> we also know the <span
+class="math inline">\(\sigma\)</span>-algebra <span
+class="math inline">\(\mathfrak{M}\)</span> on which <span
+class="math inline">\(\mu\)</span> is defined and we know the set <span
+class="math inline">\(X\)</span> in which <span
+class="math inline">\(\mathfrak{M}\)</span> is a <span
+class="math inline">\(\sigma\)</span>-algebra.</p>
+<p>It is therefore perfectly legitimate to use expressions like “Let
+<span class="math inline">\(\mu\)</span> be a measure”or, if we wish to
+emphasize the <span class="math inline">\(\sigma\)</span>-algebra or the
+set in question, to say “Let <span class="math inline">\(\mu\)</span> be
+a measure on <span class="math inline">\(\mathfrak{M}\)</span>” or “Let
+<span class="math inline">\(\mu\)</span> be a measure on <span
+class="math inline">\(X\)</span>.”</p>
+<p>What is logically rather meaningless but customary (and we shall
+often follow mathematical custom rather than logic) is to say “Let <span
+class="math inline">\(X\)</span> be a measure space”; the emphasis
+should not be on the set, but on the measure. Of course, when this
+wording is used, it is tacitly understood that there is a measure
+defined on some <span class="math inline">\(\sigma\)</span>-algebra in
+<span class="math inline">\(X\)</span> and that it is this measure which
+is really under discussion.</p>
+<p>Similarly, a topological space is an ordered pair <span
+class="math inline">\((X, \tau)\)</span>, where <span
+class="math inline">\(\tau\)</span> is a topology in the set <span
+class="math inline">\(X\)</span>, and the significant data are contained
+in <span class="math inline">\(\tau\)</span>, not in <span
+class="math inline">\(X\)</span>, but “the topological space <span
+class="math inline">\(X\)</span>” is what one talks about.</p>
+<p>This sort of tacit convention is used throughout mathematics. Most
+mathematical systems are sets with some class of distinguished subsets
+or some binary operations or some relations (which are required to have
+certain properties), and one can list these and then describe the system
+as an ordered pair, triple, etc., depending on what is needed. For
+instance, the real line may be described as a quadruple <span
+class="math inline">\(\left(R^1,+, \cdot,&lt;\right)\)</span>, where
+<span class="math inline">\(+, \cdot\)</span>, and <span
+class="math inline">\(&lt;\)</span> satisfy the axioms of a complete
+archimedean ordered field. But it is a safe bet that very few
+mathematicians think of the real field as an ordered quadruple.</p>
+
+    </div>
+    
+</div>
+</div>
+
+                <div id="footer-wrapper">
+                    <footer class="footer"><footer class="row pl-3 pr-3">
+    <div class="col-12 d-flex justify-content-between align-items-center text-muted pl-0 pr-0">
+        <div class="footer-left">
+            <p class="mb-0"> © 2022 <a href="https://github.com/chen-gz">guangzong</a>. <span data-toggle="tooltip"
+                    data-placement="top"
+                    title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author.">All
+                    rights reserved.</span></p>
+        </div>
+        <div class="footer-right">
+            <p class="mb-0"> Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">hugo</a>
+                with <a href="https://github.com/chen-gz/hugo_zong" target="_blank" rel="noopener">zong</a>
+                theme.</p>
+        </div>
+    </div>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script> MathJax = {
+            tex: {
+                tags: 'ams',
+            }
+        };</script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</footer>
+</footer>
+                </div>
+            </div>
+            <div id="panel-wrapper" class="d-flex flex-column"><div id="toc-wrapper" class="mb-5 pl-2">
+    <span>Contents</span>
+    <nav id="toc" data-toggle="toc">
+        
+        
+        
+    </nav>
+</div>
+
+<div id="access-lastmod" class="pb-4 pl-2">
+    <div class="panel-heading">Recently Updated</div>
+    <ul class="post-content pl-3 pb-1 ml-1 mt-2">
+          
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/1-total-variation/">Total Variation</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-7/1-derivatives-of-measures/">Derivatives of Measures</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/3-consequences-of-the-radon-nikodym-theorem/">Consequences of the Radon-Nikodym Theorem</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/4-bounded-linear-functionals-on-lp/">Bounded linear functional on Lp</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/2-abosolute-continuity/">Abosolute Continuity</a></li>
+        
+    </ul>
+</div>
+
+<div id="access-tags" class="pl-2">
+    <div class="panel-heading">Trending Tags</div>
+    <div class="d-flex flex-wrap mt-3 mb-1 mr-3">
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/algorithm/">Algorithm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/android/">Android</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c/">C</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c-language/">c language</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/caddy/">Caddy</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cadence/">Cadence</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cdc/">CDC</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/classification/">classification</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/compress/">Compress</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/conf/">Conf</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/double-column/">Double Column</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/errno13/">Errno13</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/fish/">fish</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gan/">GAN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/git/">Git</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gtk/">Gtk</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/html/">Html</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/i3/">I3</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/idea/">Idea</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/java/">Java</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/latex/">Latex</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lda/">LDA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linear-programming/">Linear Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linux/">Linux</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lr/">LR</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/math/">Math</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mathematics/">Mathematics</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matlab/">Matlab</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matplot/">matplot</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/memory/">Memory</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mermaid/">Mermaid</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/misc/">Misc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/ml/">ML</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mosfet/">Mosfet</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/network/">Network</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/nn/">NN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pandoc/">Pandoc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pca/">PCA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/probability/">Probability</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/productive/">Productive</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/program/">Program</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/programming/">Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/python/">Python</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/qt/">Qt</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/random-variable/">Random Variable</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rcnn/">RCNN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rust/">Rust</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/security/">Security</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/software/">Software</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/std/">Std</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/svd/">Svd</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/tool/">Tool</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/usb/">USB</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vim/">Vim</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpn/">Vpn</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpnc/">Vpnc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/xterm/">xterm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/zsh/">Zsh</a>
+        
+    </div>
+</div>
+</div><div id="search-result-wrapper" class="d-flex justify-content-center unloaded">
+    <div class="col-12 col-sm-11 post-content">
+        <div id="search-hints"></div>
+        <div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3 col-12"></div>
+    </div>
+</div>
+
+<script src="/js/fuse.min.js"></script>
+<script src="/js/fastsearch.js"></script>
+
+
+</div>
+        <div id="mask"></div>
+        <a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button"
+            style="display: none">
+            <i class="fas fa-angle-up"></i>
+        </a>
+    </div>
+    
+</body>
+
+</html>

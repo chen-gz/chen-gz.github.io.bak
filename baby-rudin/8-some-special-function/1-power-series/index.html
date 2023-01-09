@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css"
+        class="dark-mode-native-dark-original" />
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+     
+    <link rel="stylesheet" href="https://zongpitt.com/sass/main.06935202011a97ba473ebeeb0cb6788daa9fb5a9fff471a4e85850293d1c5ac4.css" />
+    <title>
+          Guangzong Blog | 1 POWER SERIES
+    </title>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.bundle.min.js"></script>
+    <script src=" https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.js"></script>
+
+    <script
+        src="https://cdn.jsdelivr.net/combine/npm/magnific-popup@1/dist/jquery.magnific-popup.min.js,npm/lozad/dist/lozad.min.js,npm/clipboard@2/dist/clipboard.min.js"></script>
+    <script type="text/javascript" src="/js/commons/back-to-top.js"></script>
+    
+    
+    
+    <script type="text/javascript" src="/js/commons/topbar-switch.js"></script>
+    <script type="text/javascript" src="/js/commons/sidebar.js"></script>
+    <script type="text/javascript" src="/js/utils/category-collapse.js"></script>
+    <script type="text/javascript" src="/js/utils/checkbox.js"></script>
+    <script type="text/javascript" src="/js/utils/clipboard.js"></script>
+    <script type="text/javascript" src="/js/utils/img-extra.js"></script>
+    <script type="text/javascript" src="/js/utils/pageviews.js"></script>
+    
+    <script type="text/javascript" src="/js/utils/timeago.js"></script>
+    
+    
+</head>
+<body data-spy="scroll" data-target="#toc" data-topbar-visible="true" class="d-flex"><div id="sidebar" class="d-flex flex-column align-items-end">
+    <div class="profile-wrapper text-center">
+
+        <div id="avatar">
+            <a href="/" alt="avatar" class="mx-auto"> <img src=https://github.com/chen-gz/chen-gz/blob/main/mine_square.jpg?raw&#61;truehttps://raw.githubusercontent.com/chen-gz/chen-gz/blob/main/mine_square.jpg alt="avatar"
+                    onerror="this.style.display='none'"> </a>
+        </div>
+
+        <div class="site-title mt-3"> <a href="/">Guangzong</a> </div>
+        <div class="site-subtitle font-italic">Welcome to my blog</div>
+    </div>
+
+    <ul>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/">
+                <span>
+                    Home
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/archive/">
+                <span>
+                    Archive
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/tags/">
+                <span>
+                    Tags
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/about/">
+                <span>
+                    About
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/categories/">
+                <span>
+                    Categories
+                </span>
+            </a>
+        </li>
+        
+    </ul>
+
+    <div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center align-items-center">
+        <button class="mode-toggle btn" aria-label="Switch Mode"> 
+            <i class="fas fa-adjust"></i> 
+        </button>
+
+        <span class="icon-border"></span>
+        <a href="https://github.com/chen-gz" aria-label="github" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i>
+        </a>
+
+        <a href=" javascript:location.href = 'mailto:' + ['chen-gz','outlook.com'].join('@')" aria-label="email">
+            <i class="fas fa-envelope"></i>
+        </a>
+
+        <a href="/feed.xml" aria-label="rss"> <i class="fas fa-rss"></i> </a>
+    </div>
+
+    
+    
+</div>
+<div id="all-wrapper" class="d-flex flex-column"><div id="topbar-wrapper">
+    <div id="topbar" class="d-flex">
+        
+        <span id="breadcrumb" class="d-flex">
+              
+               
+            
+            
+            <div><a href='https://zongpitt.com/'>Home</a></div>
+              
+              
+            
+            <div><a href="https://zongpitt.com/baby-rudin">baby-rudin</a></div>
+               
+              
+            
+            <div><a href="https://zongpitt.com/baby-rudin/8-some-special-function">8-some-special-function</a></div>
+               
+                 
+                
+        </span>
+        <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i>
+        <div id="topbar-title">Guangzong</div>
+        <i id="search-trigger" class="fas fa-search fa-fw"></i>
+        <span id="search-wrapper" class="align-items-center">
+            <i class="fas fa-search fa-fw"></i>
+            <input class="form-control" id="search-input" type="search" aria-label="search" autocomplete="off"
+                placeholder="Search..." />
+            <i class="fa fa-times-circle fa-fw" id="search-cleaner"></i>
+        </span>
+    </div>
+</div>
+<div id="main-wrapper" class="d-flex mt-3">
+            <div id="core-wrapper" class="d-flex flex-column">
+                <div id="main" class="d-flex flex-column">
+                    
+<div class="post pl-1 pr-1 pl-md-2 pr-md-2">
+    
+    <div id="post-content">
+        <h1 style="text-align: center;">1 POWER SERIES</h1>
+        <br>
+        
+        <p>In this section we shall derive some properties of functions which
+are represented by power series, i.e., functions of the form</p>
+<p><span class="math display">\[
+f(x)=\sum_{n=0}^{\infty} c_{n} x^{n}
+\]</span></p>
+<p>or, more generally,</p>
+<p><span class="math display">\[
+f(x)=\sum_{n=0}^{\infty} c_{n}(x-a)^{n} .
+\]</span></p>
+<p>These are called <em>analytic functions</em>. We shall restrict
+ourselves to real values of <span class="math inline">\(x\)</span>.
+Instead of circles of convergence (see Theorem 3.39) we shall therefore
+encounter intervals of convergence.</p>
+<p>If (1) converges for all <span class="math inline">\(x\)</span> in
+<span class="math inline">\((-R, R)\)</span>, for some <span
+class="math inline">\(R&gt;0(R\)</span> may be <span
+class="math inline">\(+\infty)\)</span>, we say that <span
+class="math inline">\(f\)</span> is expanded in a power series about the
+point <span class="math inline">\(x=0\)</span>. Similarly, if (2)
+converges for <span class="math inline">\(|x-a|&lt;R, f\)</span> is said
+to be expanded in a power series about the point <span
+class="math inline">\(x=a\)</span>. As a matter of convenience, we shall
+often take <span class="math inline">\(a=0\)</span> without any loss of
+generality.</p>
+<p><strong>8.1 Theorem</strong> <em>Suppose the series <span
+class="math display">\[
+\sum_{n=0}^{\infty} c_{n} x^{n}
+\]</span> converges for <span class="math inline">\(|x|&lt;R\)</span>,
+and define <span class="math display">\[
+f(x)=\sum_{n=0}^{\infty} c_{n} x^{n} \quad(|x|&lt;R) .
+\]</span> Then (3) converges uniformly on <span
+class="math inline">\([-R+\varepsilon, R-\varepsilon]\)</span>, no
+matter which <span class="math inline">\(\varepsilon&gt;0\)</span> is
+chosen. The function <span class="math inline">\(f\)</span> is
+continuous and differentiable in <span class="math inline">\((-R,
+R)\)</span>, and</em> <span class="math display">\[
+f^{\prime}(x)=\sum_{n=1}^{\infty} n c_{n} x^{n-1} \quad(|x|&lt;R) .
+\]</span></p>
+<p><strong>Proof</strong> Let <span
+class="math inline">\(\varepsilon&gt;0\)</span> be given. For <span
+class="math inline">\(|x| \leq R-\varepsilon\)</span>, we have</p>
+<p><span class="math display">\[
+\left|c_{n} x^{n}\right| \leq\left|c_{n}(R-\varepsilon)^{n}\right|
+\]</span></p>
+<p>and since</p>
+<p><span class="math display">\[
+\Sigma c_{n}(R-\varepsilon)^{n}
+\]</span></p>
+<p>converges absolutely (every power series converges absolutely in the
+interior of its interval of convergence, by the root test), Theorem
+<span class="math inline">\(7.10\)</span> shows the uniform convergence
+of <span class="math inline">\((3)\)</span> on <span
+class="math inline">\([-R+\varepsilon, R-\varepsilon]\)</span>. Since
+<span class="math inline">\(\sqrt[n]{n} \rightarrow 1\)</span> as <span
+class="math inline">\(n \rightarrow \infty\)</span>, we have</p>
+<p><span class="math display">\[
+\limsup _{n \rightarrow \infty} \sqrt[n]{n\left|c_{n}\right|}=\limsup
+_{n \rightarrow \infty} \sqrt[n]{\left|c_{n}\right|}
+\]</span></p>
+<p>so that the series (4) and (5) have the same interval of convergence.
+Since (5) is a power series, it converges uniformly in <span
+class="math inline">\([-R+\varepsilon\)</span>, <span
+class="math inline">\(R-\varepsilon\)</span> ], for every <span
+class="math inline">\(\varepsilon&gt;0\)</span>, and we can apply
+Theorem <span class="math inline">\(7.17\)</span> (for series instead of
+sequences). It follows that (5) holds if <span class="math inline">\(|x|
+\leq R-\varepsilon\)</span>.</p>
+<p>But, given any <span class="math inline">\(x\)</span> such that <span
+class="math inline">\(|x|&lt;R\)</span>, we can find an <span
+class="math inline">\(\varepsilon&gt;0\)</span> such that <span
+class="math inline">\(|x|&lt;R-\varepsilon\)</span>. This shows that (5)
+holds for <span class="math inline">\(|x|&lt;R\)</span>. Continuity of
+<span class="math inline">\(f\)</span> follows from the existence of
+<span class="math inline">\(f^{\prime}\)</span> (Theorem 5.2).</p>
+<p><strong>Corollary</strong> <em>Under the hypotheses of Theorem 8.1,
+<span class="math inline">\(f\)</span> has derivatives of all orders in
+<span class="math inline">\((-R, R)\)</span>, which are given by <span
+class="math display">\[
+f^{(k)}(x)=\sum_{n=k}^{\infty} n(n-1) \cdots(n-k+1) c_{n} x^{n-k}
+\]</span> In particular,</em> <span class="math display">\[
+f^{(k)}(0)=k ! c_{k} \quad(k=0,1,2, \ldots) \text {. }
+\]</span> (Here <span class="math inline">\(f^{(0)}\)</span> means <span
+class="math inline">\(f\)</span>, and <span
+class="math inline">\(f^{(k)}\)</span> is the <span
+class="math inline">\(k\)</span> th derivative of <span
+class="math inline">\(f\)</span>, for <span
+class="math inline">\(k=1,2,3, \ldots\)</span> ).</p>
+<p><strong>Proof</strong> Equation (6) follows if we apply Theorem <span
+class="math inline">\(8.1\)</span> successively to <span
+class="math inline">\(f\)</span>, <span
+class="math inline">\(f^{\prime}, f^{\prime \prime}, \ldots\)</span>.
+Putting <span class="math inline">\(x=0\)</span> in (6), we obtain
+(7).</p>
+<p>Formula (7) is very interesting. It shows, on the one hand, that the
+coefficients of the power series development of <span
+class="math inline">\(f\)</span> are determined by the values of <span
+class="math inline">\(f\)</span> and of its derivatives at a single
+point. On the other hand, if the coefficients are given, the values of
+the derivatives of <span class="math inline">\(f\)</span> at the center
+of the interval of convergence can be read off immediately from the
+power series.</p>
+<p>Note, however, that although a function <span
+class="math inline">\(f\)</span> may have derivatives of all orders, the
+series <span class="math inline">\(\Sigma c_{n} x^{n}\)</span>, where
+<span class="math inline">\(c_{n}\)</span> is computed by (7), need not
+converge to <span class="math inline">\(f(x)\)</span> for any <span
+class="math inline">\(x \neq 0\)</span>. In this case, <span
+class="math inline">\(f\)</span> cannot be expanded in a power series
+about <span class="math inline">\(x=0\)</span>. For if we had <span
+class="math inline">\(f(x)=\Sigma a_{n} x^{n}\)</span>, we should
+have</p>
+<p><span class="math display">\[
+n ! a_{n}=f^{(n)}(0) ;
+\]</span></p>
+<p>hence <span class="math inline">\(a_{n}=c_{n}\)</span>. An example of
+this situation is given in Exercise 1 .</p>
+<p>If the series (3) converges at an endpoint, say at <span
+class="math inline">\(x=R\)</span>, then <span
+class="math inline">\(f\)</span> is continuous not only in <span
+class="math inline">\((-R, R)\)</span>, but also at <span
+class="math inline">\(x=R\)</span>. This follows from Abel’s theorem
+(for simplicity of notation, we take <span
+class="math inline">\(R=1\)</span> ):</p>
+<p><strong>8.2 Theorem</strong> <em>Suppose <span
+class="math inline">\(\Sigma c_{n}\)</span> converges. Put</em> <span
+class="math display">\[
+f(x)=\sum_{n=0}^{\infty} c_{n} x^{n} \quad(-1&lt;x&lt;1) .
+\]</span></p>
+<p><em>Then</em></p>
+<p><span class="math display">\[
+\lim _{x \rightarrow 1} f(x)=\sum_{n=0}^{\infty} c_{n} .
+\]</span></p>
+<p><strong>Proof</strong> Let <span
+class="math inline">\(s_{n}=c_{0}+\cdots+c_{n}, s_{-1}=0\)</span>.
+Then</p>
+<p><span class="math display">\[
+\sum_{n=0}^{m} c_{n} x^{n}=\sum_{n=0}^{m}\left(s_{n}-s_{n-1}\right)
+x^{n}=(1-x) \sum_{n=0}^{m-1} s_{n} x^{n}+s_{m} x^{m}
+\]</span></p>
+<p>For <span class="math inline">\(|x|&lt;1\)</span>, we let <span
+class="math inline">\(m \rightarrow \infty\)</span> and obtain</p>
+<p><span class="math display">\[
+f(x)=(1-x) \sum_{n=0}^{\infty} s_{n} x^{n} .
+\]</span></p>
+<p>Suppose <span class="math inline">\(s=\lim _{n \rightarrow \infty}
+s_{n}\)</span>. Let <span
+class="math inline">\(\varepsilon&gt;0\)</span> be given. Choose <span
+class="math inline">\(N\)</span> so that <span
+class="math inline">\(n&gt;N\)</span> implies</p>
+<p><span class="math display">\[
+\left|s-s_{n}\right|&lt;\frac{\varepsilon}{2} .
+\]</span></p>
+<p>Then, since</p>
+<p><span class="math display">\[
+(1-x) \sum_{n=0}^{\infty} x^{n}=1 \quad(|x|&lt;1),
+\]</span></p>
+<p>we obtain from (9)</p>
+<p><span class="math display">\[
+|f(x)-s|=\left|(1-x) \sum_{n=0}^{\infty}\left(s_{n}-s\right)
+x^{n}\right| \leq(1-x)
+\sum_{n=0}^{N}\left|s_{n}-s\right||x|^{n}+\frac{\varepsilon}{2} \leq
+\varepsilon
+\]</span></p>
+<p>if <span class="math inline">\(x&gt;1-\delta\)</span>, for some
+suitably chosen <span class="math inline">\(\delta&gt;0\)</span>. This
+implies (8). As an application, let us prove Theorem 3.51, which
+asserts: If <span class="math inline">\(\Sigma a_{n}, \Sigma
+b_{n}\)</span>, <span class="math inline">\(\Sigma c_{n}\)</span>,
+converge to <span class="math inline">\(A, B, C\)</span>, and if <span
+class="math inline">\(c_{n}=a_{0} b_{n}+\cdots+a_{n} b_{0}\)</span>,
+then <span class="math inline">\(C=A B\)</span>. We let</p>
+<p><span class="math display">\[
+f(x)=\sum_{n=0}^{\infty} a_{n} x^{n}, \quad g(x)=\sum_{n=0}^{\infty}
+b_{n} x^{n}, \quad h(x)=\sum_{n=0}^{\infty} c_{n} x^{n},
+\]</span></p>
+<p>for <span class="math inline">\(0 \leq x \leq 1\)</span>. For <span
+class="math inline">\(x&lt;1\)</span>, these series converge absolutely
+and hence may be multiplied according to Definition 3.48; when the
+multiplication is carried out, we see that</p>
+<p><span class="math display">\[
+f(x) \cdot g(x)=h(x) \quad(0 \leq x&lt;1) .
+\]</span></p>
+<p>By Theorem 8.2,</p>
+<p><span class="math display">\[
+f(x) \rightarrow A, \quad g(x) \rightarrow B, \quad h(x) \rightarrow C
+\]</span></p>
+<p>as <span class="math inline">\(x \rightarrow 1\)</span>. Equations
+(10) and (11) imply <span class="math inline">\(A B=C\)</span>. We now
+require a theorem concerning an inversion in the order of summation.
+(See Exercises 2 and 3.)</p>
+<p><strong>8.3 Theorem</strong> <em>Given a double sequence <span
+class="math inline">\(\left\{a_{i j}\right\}, i=1,2,3, \ldots, j=1,2,3,
+\ldots\)</span>, suppose that <span class="math display">\[
+\sum_{j=1}^{\infty}\left|a_{i j}\right|=b_{i} \quad(i=1,2,3, \ldots)
+\]</span> and <span class="math inline">\(\Sigma b_{i}\)</span>
+converges. Then <span class="math display">\[
+\sum_{i=1}^{\infty} \sum_{j=1}^{\infty} a_{i j}=\sum_{j=1}^{\infty}
+\sum_{i=1}^{\infty} a_{i j} .
+\]</span></em></p>
+<p><strong>Proof</strong> We could establish (13) by a direct procedure
+similar to (although more involved than) the one used in Theorem 3.55.
+However, the following method seems more interesting.</p>
+<p>Let <span class="math inline">\(E\)</span> be a countable set,
+consisting of the points <span class="math inline">\(x_{0}, x_{1},
+x_{2}, \ldots\)</span>, and suppose <span class="math inline">\(x_{n}
+\rightarrow x_{0}\)</span> as <span class="math inline">\(n \rightarrow
+\infty\)</span>. Define</p>
+<p><span class="math display">\[
+\begin{aligned}
+f_{i}\left(x_{0}\right)=\sum_{j=1}^{\infty} a_{i j} &amp;(i=1,2,3,
+\ldots), \\
+f_{i}\left(x_{n}\right)=\sum_{j=1}^{n} a_{i j} &amp;(i, n=1,2,3,
+\ldots), \\
+g(x)=\sum_{i=1}^{\infty} f_{i}(x) &amp;(x \in E) .
+\end{aligned}
+\]</span></p>
+<p>Now, (14) and (15), together with (12), show that each <span
+class="math inline">\(f_{i}\)</span> is continuous at <span
+class="math inline">\(x_{0}\)</span>. Since <span
+class="math inline">\(\left|f_{i}(x)\right| \leq b_{i}\)</span> for
+<span class="math inline">\(x \in E\)</span>, (16) converges uniformly,
+so that <span class="math inline">\(g\)</span> is continuous at <span
+class="math inline">\(x_{0}\)</span> (Theorem 7.11). It follows that</p>
+<p><span class="math display">\[
+\begin{aligned}
+\sum_{i=1}^{\infty} \sum_{j=1}^{\infty} a_{i j}
+&amp;=\sum_{i=1}^{\infty}
+f_{i}\left(x_{0}\right)=g\left(x_{0}\right)=\lim _{n \rightarrow \infty}
+g\left(x_{n}\right) \\
+&amp;=\lim _{n \rightarrow \infty} \sum_{i=1}^{\infty}
+f_{i}\left(x_{n}\right)=\lim _{n \rightarrow \infty} \sum_{i=1}^{\infty}
+\sum_{j=1}^{n} a_{i j} \\
+&amp;=\lim _{n \rightarrow \infty} \sum_{j=1}^{n} \sum_{i=1}^{\infty}
+a_{i j}=\sum_{j=1}^{\infty} \sum_{i=1}^{\infty} a_{i j}
+\end{aligned}
+\]</span></p>
+<p><strong>8.4 Theorem</strong> <em>Suppose <span
+class="math display">\[
+f(x)=\sum_{n=0}^{\infty} c_{n} x^{n},
+\]</span> the series converging in <span
+class="math inline">\(|x|&lt;R\)</span>. If <span
+class="math inline">\(-R&lt;a&lt;R\)</span>, then <span
+class="math inline">\(f\)</span> can be expanded in a power series about
+the point <span class="math inline">\(x=a\)</span> which converges in
+<span class="math inline">\(|x-a|&lt;R-|a|\)</span>, and</em></p>
+<p><span class="math display">\[
+f(x)=\sum_{n=0}^{\infty} \frac{f^{(n)}(a)}{n !}(x-a)^{n}
+\quad(|x-a|&lt;R-|a|) .
+\]</span></p>
+<p>This is an extension of Theorem <span
+class="math inline">\(5.15\)</span> and is also known as Taylor’s
+theorem.</p>
+<p><strong>Proof</strong> We have <span class="math display">\[
+\begin{aligned}
+f(x) &amp;=\sum_{n=0}^{\infty} c_{n}[(x-a)+a]^{n} \\
+&amp;=\sum_{n=0}^{\infty} c_{n} \sum_{m=0}^{n}\left(\begin{array}{c}
+n \\
+m
+\end{array}\right) a^{n-m}(x-a)^{m} \\
+&amp;=\sum_{m=0}^{\infty}\left[\sum_{n=m}^{\infty}\left(\begin{array}{c}
+n \\
+m
+\end{array}\right) c_{n} a^{n-m}\right](x-a)^{m} .
+\end{aligned}
+\]</span></p>
+<p>This is the desired expansion about the point <span
+class="math inline">\(x=a\)</span>. To prove its validity, we have to
+justify the change which was made in the order of summation. Theorem
+<span class="math inline">\(8.3\)</span> shows that this is permissible
+if</p>
+<p><span class="math display">\[
+\sum_{n=0}^{\infty} \sum_{m=0}^{n}\left|c_{n}\left(\begin{array}{c}
+n \\
+m
+\end{array}\right) a^{n-m}(x-a)^{m}\right|
+\]</span></p>
+<p>converges. But (18) is the same as</p>
+<p><span class="math display">\[
+\sum_{n=0}^{\infty}\left|c_{n}\right| \cdot(|x-a|+|a|)^{n}
+\]</span></p>
+<p>and (19) converges if <span
+class="math inline">\(|x-a|+|a|&lt;R\)</span>. Finally, the form of the
+coefficients in (17) follows from (7). It should be noted that (17) may
+actually converge in a larger interval than the one given by <span
+class="math inline">\(|x-a|&lt;R-|a|\)</span>.</p>
+<p>If two power series converge to the same function in <span
+class="math inline">\((-R, R),(7)\)</span> shows that the two series
+must be identical, i.e., they must have the same coefficients. It is
+interesting that the same conclusion can be deduced from much weaker
+hypotheses:</p>
+<p><strong>8.5 Theorem</strong> <em>Suppose the series <span
+class="math inline">\(\Sigma a_{n} x^{n}\)</span> and <span
+class="math inline">\(\Sigma b_{n} x^{n}\)</span> converge in the
+segment <span class="math inline">\(S=(-R, R)\)</span>. Let <span
+class="math inline">\(E\)</span> be the set of all <span
+class="math inline">\(x \in S\)</span> at which <span
+class="math display">\[
+\sum_{n=0}^{\infty} a_{n} x^{n}=\sum_{n=0}^{\infty} b_{n} x^{n}
+\]</span> If <span class="math inline">\(E\)</span> has a limit point in
+<span class="math inline">\(S\)</span>, then <span
+class="math inline">\(a_{n}=b_{n}\)</span> for <span
+class="math inline">\(n=0,1,2, \ldots\)</span>.Hence (20) holds for all
+<span class="math inline">\(x \in S\)</span>.</em></p>
+<p><strong>Proof</strong> Put <span
+class="math inline">\(c_{n}=a_{n}-b_{n}\)</span> and</p>
+<p><span class="math display">\[
+f(x)=\sum_{n=0}^{\infty} c_{n} x^{n} \quad(x \in S) .
+\]</span></p>
+<p>Then <span class="math inline">\(f(x)=0\)</span> on <span
+class="math inline">\(E\)</span>.</p>
+<p>Let <span class="math inline">\(A\)</span> be the set of all limit
+points of <span class="math inline">\(E\)</span> in <span
+class="math inline">\(S\)</span>, and let <span
+class="math inline">\(B\)</span> consist of all other points of <span
+class="math inline">\(S\)</span>. It is clear from the definition of
+“limit point” that <span class="math inline">\(B\)</span> is open.
+Suppose we can prove that <span class="math inline">\(A\)</span> is
+open. Then <span class="math inline">\(A\)</span> and <span
+class="math inline">\(B\)</span> are disjoint open sets. Hence they are
+separated (Definition 2.45). Since <span class="math inline">\(S=A \cup
+B\)</span>, and <span class="math inline">\(S\)</span> is connected, one
+of <span class="math inline">\(A\)</span> and <span
+class="math inline">\(B\)</span> must be empty. By hypothesis, <span
+class="math inline">\(A\)</span> is not empty. Hence <span
+class="math inline">\(B\)</span> is empty, and <span
+class="math inline">\(A=S\)</span>. Since <span
+class="math inline">\(f\)</span> is continuous in <span
+class="math inline">\(S\)</span>, <span class="math inline">\(A \subset
+E\)</span>. Thus <span class="math inline">\(E=S\)</span>, and (7) shows
+that <span class="math inline">\(c_{n}=0\)</span> for <span
+class="math inline">\(n=0,1,2, \ldots\)</span>, which is the desired
+conclusion.</p>
+<p>Thus we have to prove that <span class="math inline">\(A\)</span> is
+open. If <span class="math inline">\(x_{0} \in A\)</span>, Theorem <span
+class="math inline">\(8.4\)</span> shows that</p>
+<p><span class="math display">\[
+f(x)=\sum_{n=0}^{\infty} d_{n}\left(x-x_{0}\right)^{n}
+\quad\left(\left|x-x_{0}\right|&lt;R-\left|x_{0}\right|\right) .
+\]</span></p>
+<p>We claim that <span class="math inline">\(d_{n}=0\)</span> for all
+<span class="math inline">\(n\)</span>. Otherwise, let <span
+class="math inline">\(k\)</span> be the smallest nonnegative integer
+such that <span class="math inline">\(d_{k} \neq 0\)</span>. Then</p>
+<p><span class="math display">\[
+f(x)=\left(x-x_{0}\right)^{k} g(x)
+\quad\left(\left|x-x_{0}\right|&lt;R-\left|x_{0}\right|\right),
+\]</span></p>
+<p>where</p>
+<p><span class="math display">\[
+g(x)=\sum_{m=0}^{\infty} d_{k+m}\left(x-x_{0}\right)^{m} .
+\]</span></p>
+<p>Since <span class="math inline">\(g\)</span> is continuous at <span
+class="math inline">\(x_{0}\)</span> and</p>
+<p><span class="math display">\[
+g\left(x_{0}\right)=d_{k} \neq 0,
+\]</span></p>
+<p>there exists a <span class="math inline">\(\delta&gt;0\)</span> such
+that <span class="math inline">\(g(x) \neq 0\)</span> if <span
+class="math inline">\(\left|x-x_{0}\right|&lt;\delta\)</span>. It
+follows from (23) that <span class="math inline">\(f(x) \neq 0\)</span>
+if <span
+class="math inline">\(0&lt;\left|x-x_{0}\right|&lt;\delta\)</span>. But
+this contradicts the fact that <span
+class="math inline">\(x_{0}\)</span> is a limit point of <span
+class="math inline">\(E\)</span>.</p>
+<p>Thus <span class="math inline">\(d_{n}=0\)</span> for all <span
+class="math inline">\(n\)</span>, so that <span
+class="math inline">\(f(x)=0\)</span> for all <span
+class="math inline">\(x\)</span> for which (22) holds, i.e., in a
+neighborhood of <span class="math inline">\(x_{0}\)</span>. This shows
+that <span class="math inline">\(A\)</span> is open, and completes the
+proof.</p>
+
+    </div>
+    
+</div>
+</div>
+
+                <div id="footer-wrapper">
+                    <footer class="footer"><footer class="row pl-3 pr-3">
+    <div class="col-12 d-flex justify-content-between align-items-center text-muted pl-0 pr-0">
+        <div class="footer-left">
+            <p class="mb-0"> © 2022 <a href="https://github.com/chen-gz">guangzong</a>. <span data-toggle="tooltip"
+                    data-placement="top"
+                    title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author.">All
+                    rights reserved.</span></p>
+        </div>
+        <div class="footer-right">
+            <p class="mb-0"> Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">hugo</a>
+                with <a href="https://github.com/chen-gz/hugo_zong" target="_blank" rel="noopener">zong</a>
+                theme.</p>
+        </div>
+    </div>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script> MathJax = {
+            tex: {
+                tags: 'ams',
+            }
+        };</script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</footer>
+</footer>
+                </div>
+            </div>
+            <div id="panel-wrapper" class="d-flex flex-column"><div id="toc-wrapper" class="mb-5 pl-2">
+    <span>Contents</span>
+    <nav id="toc" data-toggle="toc">
+        
+        
+        
+    </nav>
+</div>
+
+<div id="access-lastmod" class="pb-4 pl-2">
+    <div class="panel-heading">Recently Updated</div>
+    <ul class="post-content pl-3 pb-1 ml-1 mt-2">
+          
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/1-total-variation/">Total Variation</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-7/1-derivatives-of-measures/">Derivatives of Measures</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/3-consequences-of-the-radon-nikodym-theorem/">Consequences of the Radon-Nikodym Theorem</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/4-bounded-linear-functionals-on-lp/">Bounded linear functional on Lp</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/2-abosolute-continuity/">Abosolute Continuity</a></li>
+        
+    </ul>
+</div>
+
+<div id="access-tags" class="pl-2">
+    <div class="panel-heading">Trending Tags</div>
+    <div class="d-flex flex-wrap mt-3 mb-1 mr-3">
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/algorithm/">Algorithm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/android/">Android</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c/">C</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c-language/">c language</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/caddy/">Caddy</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cadence/">Cadence</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cdc/">CDC</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/classification/">classification</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/compress/">Compress</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/conf/">Conf</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/double-column/">Double Column</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/errno13/">Errno13</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/fish/">fish</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gan/">GAN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/git/">Git</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gtk/">Gtk</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/html/">Html</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/i3/">I3</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/idea/">Idea</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/java/">Java</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/latex/">Latex</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lda/">LDA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linear-programming/">Linear Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linux/">Linux</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lr/">LR</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/math/">Math</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mathematics/">Mathematics</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matlab/">Matlab</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matplot/">matplot</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/memory/">Memory</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mermaid/">Mermaid</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/misc/">Misc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/ml/">ML</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mosfet/">Mosfet</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/network/">Network</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/nn/">NN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pandoc/">Pandoc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pca/">PCA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/probability/">Probability</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/productive/">Productive</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/program/">Program</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/programming/">Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/python/">Python</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/qt/">Qt</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/random-variable/">Random Variable</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rcnn/">RCNN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rust/">Rust</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/security/">Security</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/software/">Software</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/std/">Std</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/svd/">Svd</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/tool/">Tool</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/usb/">USB</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vim/">Vim</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpn/">Vpn</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpnc/">Vpnc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/xterm/">xterm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/zsh/">Zsh</a>
+        
+    </div>
+</div>
+</div><div id="search-result-wrapper" class="d-flex justify-content-center unloaded">
+    <div class="col-12 col-sm-11 post-content">
+        <div id="search-hints"></div>
+        <div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3 col-12"></div>
+    </div>
+</div>
+
+<script src="/js/fuse.min.js"></script>
+<script src="/js/fastsearch.js"></script>
+
+
+</div>
+        <div id="mask"></div>
+        <a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button"
+            style="display: none">
+            <i class="fas fa-angle-up"></i>
+        </a>
+    </div>
+    
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>9 Functions of Several Variables on Guangzong Blog</title>
+    <link>https://zongpitt.com/baby-rudin/9-functions-of-several-variables/</link>
+    <description>Recent content in 9 Functions of Several Variables on Guangzong Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://zongpitt.com/baby-rudin/9-functions-of-several-variables/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>10 EXERICESE</title>
+      <link>https://zongpitt.com/baby-rudin/9-functions-of-several-variables/10-exericese/</link>
+      <pubDate>Thu, 25 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/9-functions-of-several-variables/10-exericese/</guid>
+      <description>If \(S\) is a nonempty subset of a vector space \(X\), prove (as asserted in Sec. 9.1) that the span of \(S\) is a vector space.
+Prove (as asserted in \(\operatorname{Sec} .\) 9.6) that \(B A\) is linear if \(A\) and \(B\) are linear transformations.
+Prove also that \(A^{-1}\) is linear and invertible.
+Assume \(A \in L(X, Y)\) and \(A \mathbf{x}=\mathbf{0}\) only when \(\mathbf{x}=0\). Prove that \(A\) is then 1-1.</description>
+    </item>
+    
+    <item>
+      <title>8 DERIVATIVES OF HIGHER ORDER</title>
+      <link>https://zongpitt.com/baby-rudin/9-functions-of-several-variables/8-derivatives-of-higher-order/</link>
+      <pubDate>Mon, 15 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/9-functions-of-several-variables/8-derivatives-of-higher-order/</guid>
+      <description>9.39 Definition Suppose \(f\) is a real function defined in an open set \(E \subset R^{n}\), with partial derivatives \(D_{1} f, \ldots, D_{n} f\). If the functions \(D_{j} f\) are themselves differentiable, then the second-order partial derivatives of \(f\) are defined by
+\[ D_{i j} f=D_{i} D_{j} f \quad(i, j=1, \ldots, n) . \]
+If all these functions \(D_{i j} f\) are continuous in \(E\), we say that \(f\) is of class \(\mathscr{B}^{\prime \prime}\) in \(E\), or that \(f \in \mathscr{C}^{\prime \prime}(E)\).</description>
+    </item>
+    
+    <item>
+      <title>9 DIFFERENTIATION OF INTEGRALS.md</title>
+      <link>https://zongpitt.com/baby-rudin/9-functions-of-several-variables/9-differentiation-of-integrals/</link>
+      <pubDate>Mon, 15 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/9-functions-of-several-variables/9-differentiation-of-integrals/</guid>
+      <description>Suppose \(\varphi\) is a function of two variables which can be integrated with respect to one and which can be differentiated with respect to the other. Under what conditions will the result be the same if these two limit processes are carried out in the opposite order? To state the question more precisely: Under what conditions on \(\varphi\) can one prove that the equation
+\[ \frac{d}{d t} \int_{a}^{b} \varphi(x, t) d x=\int_{a}^{b} \frac{\partial \varphi}{\partial t}(x, t) d x \]</description>
+    </item>
+    
+    <item>
+      <title>3 THE CONTRACTION PRINCIPLE</title>
+      <link>https://zongpitt.com/baby-rudin/9-functions-of-several-variables/3-the-contraction-principle/</link>
+      <pubDate>Sat, 13 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/9-functions-of-several-variables/3-the-contraction-principle/</guid>
+      <description>We now interrupt our discussion of differentiation to insert a fixed point theorem that is valid in arbitrary complete metric spaces. It will be used in the proof of the inverse function theorem.
+9.22 Definition Let \(X\) be a metric space, with metric \(d\). If \(\varphi\) maps \(X\) into \(X\) and if there is a number \(c&amp;lt;1\) such that
+\[ d(\varphi(x), \varphi(y)) \leq c d(x, y) \]
+for all \(x, y \in X\), then \(\varphi\) is said to be a contraction of \(X\) into \(X\).</description>
+    </item>
+    
+    <item>
+      <title>4 THE INVERSE FUNCTION THEOREM</title>
+      <link>https://zongpitt.com/baby-rudin/9-functions-of-several-variables/4-the-inverse-function-theorem/</link>
+      <pubDate>Sat, 13 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/9-functions-of-several-variables/4-the-inverse-function-theorem/</guid>
+      <description>The inverse function theorem states, roughly speaking, that a continuously differentiable mapping \(f\) is invertible in a neighborhood of any point \(\mathbf{x}\) at which the linear transformation \(\mathbf{f}^{\prime}(\mathbf{x})\) is invertible:
+9.24 Theorem Suppose \(\mathrm{f}\) is \(a \mathscr{C}^{\prime}\)-mapping of an open set \(E \subset R^{n}\) into \(R^{n}\), \(\mathbf{f}^{\prime}(\mathrm{a})\) is invertible for some \(\mathbf{a} \in E\), and \(\mathbf{b}=\mathbf{f}(\mathbf{a})\). Then
+there exist open sets \(U\) and \(V\) in \(R^{n}\) such that \(\mathbf{a} \in U, \mathbf{b} \in V\), \(\mathbf{f}\) is one-toone on \(U\), and \(\mathbf{f}(U)=V\);</description>
+    </item>
+    
+    <item>
+      <title>5 THE IMPLICIT FUNCTION THEOREM</title>
+      <link>https://zongpitt.com/baby-rudin/9-functions-of-several-variables/5-the-implicit-function-theorem/</link>
+      <pubDate>Sat, 13 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/9-functions-of-several-variables/5-the-implicit-function-theorem/</guid>
+      <description>If \(f\) is a continuously differentiable real function in the plane, then the equation \(f(x, y)=0\) can be solved for \(y\) in terms of \(x\) in a neighborhood of any point \((a, b)\) at which \(f(a, b)=0\) and \(\partial f / \partial y \neq 0\). Likewise, one can solve for \(x\) in terms of \(y\) near \((a, b)\) if \(\partial f / \partial x \neq 0\) at \((a, b)\). For a simple example which illustrates the need for assuming \(\partial f / \partial y \neq 0\), consider \(f(x, y)=x^{2}+y^{2}-1\).</description>
+    </item>
+    
+    <item>
+      <title>6 THE RANK THEOREM</title>
+      <link>https://zongpitt.com/baby-rudin/9-functions-of-several-variables/6-the-rank-theorem/</link>
+      <pubDate>Sat, 13 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/9-functions-of-several-variables/6-the-rank-theorem/</guid>
+      <description>Although this theorem is not as important as the inverse function theorem or the implicit function theorem, we include it as another interesting illustration of the general principle that the local behavior of a continuously differentiable mapping \(\mathbf{F}\) near a point \(\mathbf{x}\) is similar to that of the linear transformation \(\mathbf{F}^{\prime}(\mathbf{x})\).
+Before stating it, we need a few more facts about linear transformations.
+9.30 Definitions Suppose \(X\) and \(Y\) are vector spaces, and \(A \in L(X, Y)\), as in Definition 9.</description>
+    </item>
+    
+    <item>
+      <title>7 DETERMINANTS</title>
+      <link>https://zongpitt.com/baby-rudin/9-functions-of-several-variables/7-determinants/</link>
+      <pubDate>Sat, 13 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/9-functions-of-several-variables/7-determinants/</guid>
+      <description>Determinants are numbers associated to square matrices, and hence to the operators represented by such matrices. They are 0 if and only if the corresponding operator fails to be invertible. They can therefore be used to decide whether the hypotheses of some of the preceding theorems are satisfied. They will play an even more important role in Chap. \(10 .\)
+9.33 Definition If \(\left(j_{1}, \ldots, j_{n}\right)\) is an ordered \(n\)-tuple of integers, define</description>
+    </item>
+    
+    <item>
+      <title>2 DIFFERENTIATION</title>
+      <link>https://zongpitt.com/baby-rudin/9-functions-of-several-variables/2-differentiation/</link>
+      <pubDate>Fri, 12 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/9-functions-of-several-variables/2-differentiation/</guid>
+      <description>9.10 Preliminaries In order to arrive at a definition of the derivative of a function whose domain is \(R^{n}\) (or an open subset of \(R^{n}\) ), let us take another look at the familiar case \(n=1\), and let us see how to interpret the derivative in that case in a way which will naturally extend to \(n&amp;gt;1\).
+If \(f\) is a real function with domain \((a, b) \subset R^{1}\) and if \(x \in(a, b)\), then \(f^{\prime}(x)\) is usually defined to be the real number \[ \lim _{h \rightarrow 0} \frac{f(x+h)-f(x)}{h} \] provided, of course, that this limit exists.</description>
+    </item>
+    
+    <item>
+      <title>1 LINEAR TRANSFORMATIONS.md</title>
+      <link>https://zongpitt.com/baby-rudin/9-functions-of-several-variables/1-linear-transformations/</link>
+      <pubDate>Thu, 11 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/9-functions-of-several-variables/1-linear-transformations/</guid>
+      <description>We begin this chapter with a discussion of sets of vectors in euclidean \(n\)-space \(R^{n}\). The algebraic facts presented here extend without change to finite-dimensional vector spaces over any field of scalars. However, for our purposes it is quite sufficient to stay within the familiar framework provided by the euclidean spaces.
+9.1 Definitions
+A nonempty set \(X \subset R^{n}\) is a vector space if \(\mathbf{x}+\mathbf{y} \in X\) and \(c \mathbf{x} \in X\) for all \(\mathbf{x} \in X, \mathbf{y} \in X\), and for all scalars \(c\).</description>
+    </item>
+    
+  </channel>
+</rss>

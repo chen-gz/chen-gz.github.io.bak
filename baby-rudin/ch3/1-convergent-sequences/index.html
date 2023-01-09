@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css"
+        class="dark-mode-native-dark-original" />
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+     
+    <link rel="stylesheet" href="https://zongpitt.com/sass/main.06935202011a97ba473ebeeb0cb6788daa9fb5a9fff471a4e85850293d1c5ac4.css" />
+    <title>
+          Guangzong Blog | 1 CONVERGENT SEQUENCES
+    </title>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.bundle.min.js"></script>
+    <script src=" https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.js"></script>
+
+    <script
+        src="https://cdn.jsdelivr.net/combine/npm/magnific-popup@1/dist/jquery.magnific-popup.min.js,npm/lozad/dist/lozad.min.js,npm/clipboard@2/dist/clipboard.min.js"></script>
+    <script type="text/javascript" src="/js/commons/back-to-top.js"></script>
+    
+    
+    
+    <script type="text/javascript" src="/js/commons/topbar-switch.js"></script>
+    <script type="text/javascript" src="/js/commons/sidebar.js"></script>
+    <script type="text/javascript" src="/js/utils/category-collapse.js"></script>
+    <script type="text/javascript" src="/js/utils/checkbox.js"></script>
+    <script type="text/javascript" src="/js/utils/clipboard.js"></script>
+    <script type="text/javascript" src="/js/utils/img-extra.js"></script>
+    <script type="text/javascript" src="/js/utils/pageviews.js"></script>
+    
+    <script type="text/javascript" src="/js/utils/timeago.js"></script>
+    
+    
+</head>
+<body data-spy="scroll" data-target="#toc" data-topbar-visible="true" class="d-flex"><div id="sidebar" class="d-flex flex-column align-items-end">
+    <div class="profile-wrapper text-center">
+
+        <div id="avatar">
+            <a href="/" alt="avatar" class="mx-auto"> <img src=https://github.com/chen-gz/chen-gz/blob/main/mine_square.jpg?raw&#61;truehttps://raw.githubusercontent.com/chen-gz/chen-gz/blob/main/mine_square.jpg alt="avatar"
+                    onerror="this.style.display='none'"> </a>
+        </div>
+
+        <div class="site-title mt-3"> <a href="/">Guangzong</a> </div>
+        <div class="site-subtitle font-italic">Welcome to my blog</div>
+    </div>
+
+    <ul>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/">
+                <span>
+                    Home
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/archive/">
+                <span>
+                    Archive
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/tags/">
+                <span>
+                    Tags
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/about/">
+                <span>
+                    About
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/categories/">
+                <span>
+                    Categories
+                </span>
+            </a>
+        </li>
+        
+    </ul>
+
+    <div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center align-items-center">
+        <button class="mode-toggle btn" aria-label="Switch Mode"> 
+            <i class="fas fa-adjust"></i> 
+        </button>
+
+        <span class="icon-border"></span>
+        <a href="https://github.com/chen-gz" aria-label="github" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i>
+        </a>
+
+        <a href=" javascript:location.href = 'mailto:' + ['chen-gz','outlook.com'].join('@')" aria-label="email">
+            <i class="fas fa-envelope"></i>
+        </a>
+
+        <a href="/feed.xml" aria-label="rss"> <i class="fas fa-rss"></i> </a>
+    </div>
+
+    
+    
+</div>
+<div id="all-wrapper" class="d-flex flex-column"><div id="topbar-wrapper">
+    <div id="topbar" class="d-flex">
+        
+        <span id="breadcrumb" class="d-flex">
+              
+               
+            
+            
+            <div><a href='https://zongpitt.com/'>Home</a></div>
+              
+              
+            
+            <div><a href="https://zongpitt.com/baby-rudin">baby-rudin</a></div>
+               
+              
+            
+            <div><a href="https://zongpitt.com/baby-rudin/ch3">ch3</a></div>
+               
+                 
+                
+        </span>
+        <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i>
+        <div id="topbar-title">Guangzong</div>
+        <i id="search-trigger" class="fas fa-search fa-fw"></i>
+        <span id="search-wrapper" class="align-items-center">
+            <i class="fas fa-search fa-fw"></i>
+            <input class="form-control" id="search-input" type="search" aria-label="search" autocomplete="off"
+                placeholder="Search..." />
+            <i class="fa fa-times-circle fa-fw" id="search-cleaner"></i>
+        </span>
+    </div>
+</div>
+<div id="main-wrapper" class="d-flex mt-3">
+            <div id="core-wrapper" class="d-flex flex-column">
+                <div id="main" class="d-flex flex-column">
+                    
+<div class="post pl-1 pr-1 pl-md-2 pr-md-2">
+    
+    <div id="post-content">
+        <h1 style="text-align: center;">1 CONVERGENT SEQUENCES</h1>
+        <br>
+        
+        <ul>
+<li>youtube <a href="https://youtu.be/02vC8Y0U1rI">part1</a> <a
+href="https://youtu.be/kydMB7-KWok">part2</a></li>
+<li>bilibili <a
+href="https://www.bilibili.com/video/BV1514y1a7GH/">part1</a> <a
+href="https://www.bilibili.com/video/BV1oG4y1p7Wz/">part2</a></li>
+<li>note <a
+href="https://github.com/chen-gz/bed2/blob/b590a02f3a9e146a3f1e04f18fd66732c27014ff/12%20CONVERGENT%20SEQUENCES%20part1_note.pdf">pdf
+1</a> <a
+href="https://github.com/chen-gz/bed2/blob/b590a02f3a9e146a3f1e04f18fd66732c27014ff/12%20CONVERGENT%20SEQUENCES%20%20part1_note.xopp">xopp
+1</a> <a
+href="https://github.com/chen-gz/bed2/blob/b590a02f3a9e146a3f1e04f18fd66732c27014ff/12%20CONVERGENT%20SEQUENCES%20%20part2_note.pdf">pdf
+2</a> <a
+href="https://github.com/chen-gz/bed2/blob/b590a02f3a9e146a3f1e04f18fd66732c27014ff/12%20CONVERGENT%20SEQUENCES%20part2_note.xopp">xopp
+2</a></li>
+</ul>
+<p><strong>3.1 Definition</strong> A sequence <span
+class="math inline">\(\left\{p_{n}\right\}\)</span> in a metric space
+<span class="math inline">\(X\)</span> is said to converge if there is a
+point <span class="math inline">\(p \in X\)</span> with the following
+property: For every <span
+class="math inline">\(\varepsilon&gt;0\)</span> there is an integer
+<span class="math inline">\(N\)</span> such that <span
+class="math inline">\(n \geq N\)</span> implies that <span
+class="math inline">\(d\left(p_{n}, p\right)&lt;\varepsilon\)</span>.
+(Here <span class="math inline">\(d\)</span> denotes the distance in
+<span class="math inline">\(X\)</span>.)</p>
+<p>In this case we also say that <span
+class="math inline">\(\left\{p_{n}\right\}\)</span> converges to <span
+class="math inline">\(p\)</span>, or that <span
+class="math inline">\(p\)</span> is the limit of <span
+class="math inline">\(\left\{p_{n}\right\}\)</span> [see Theorem
+3.2(b)], and we write <span class="math inline">\(p_{n} \rightarrow
+p\)</span>, or</p>
+<p><span class="math display">\[
+\lim _{n \rightarrow \infty} p_{n}=p .
+\]</span></p>
+<p>If <span class="math inline">\(\left\{p_{n}\right\}\)</span> does not
+converge, it is said to diverge.</p>
+<p>It might be well to point out that our definition of “convergent
+sequence” depends not only on <span
+class="math inline">\(\left\{p_{n}\right\}\)</span> but also on <span
+class="math inline">\(X\)</span>; for instance, the sequence <span
+class="math inline">\(\{1 / n\}\)</span> converges in <span
+class="math inline">\(R^{1}\)</span> (to 0 ), but fails to converge in
+the set of all positive real numbers [with <span
+class="math inline">\(d(x, y)=|x-y|\)</span> ]. In cases of possible
+ambiguity, we can be more precise and specify “convergent in <span
+class="math inline">\(X\)</span>” rather than “convergent.”</p>
+<p>We recall that the set of all points <span
+class="math inline">\(p_{n}(n=1,2,3, \ldots)\)</span> is the range of
+<span class="math inline">\(\left\{p_{n}\right\}\)</span>. The range of
+a sequence may be a finite set, or it may be infinite. The sequence
+<span class="math inline">\(\left\{p_{n}\right\}\)</span> is said to be
+bounded if its range is bounded.</p>
+<p>As examples, consider the following sequences of complex numbers
+(that is, <span class="math inline">\(X=R^{2}\)</span> ):</p>
+<ol type="a">
+<li><p>If <span class="math inline">\(s_{n}=1 / n\)</span>, then <span
+class="math inline">\(\lim _{n \rightarrow \infty} s_{n}=0\)</span>; the
+range is infinite, and the sequence is bounded.</p></li>
+<li><p>If <span class="math inline">\(s_{n}=n^{2}\)</span>, the sequence
+<span class="math inline">\(\left\{s_{n}\right\}\)</span> is unbounded,
+is divergent, and has infinite range.</p></li>
+<li><p>If <span class="math inline">\(s_{n}=1+\left[(-1)^{n} /
+n\right]\)</span>, the sequence <span
+class="math inline">\(\left\{s_{n}\right\}\)</span> converges to 1 , is
+bounded, and has infinite range.</p></li>
+<li><p>If <span class="math inline">\(s_{n}=i^{n}\)</span>, the sequence
+<span class="math inline">\(\left\{s_{n}\right\}\)</span> is divergent,
+is bounded, and has finite range.</p></li>
+<li><p>If <span class="math inline">\(s_{n}=1(n=1,2,3, \ldots)\)</span>,
+then <span class="math inline">\(\left\{s_{n}\right\}\)</span> converges
+to 1 , is bounded, and has finite range.</p></li>
+</ol>
+<p>We now summarize some important properties of convergent sequences in
+metric spaces.</p>
+<p><strong>3.2 Theorem</strong> Let <span
+class="math inline">\(\left\{p_{n}\right\}\)</span> be a sequence in a
+metric space <span class="math inline">\(X\)</span>.</p>
+<ol type="a">
+<li><p><span class="math inline">\(\left\{p_{n}\right\}\)</span>
+converges to <span class="math inline">\(p \in X\)</span> if and only if
+every neighborhood of <span class="math inline">\(p\)</span> contains
+<span class="math inline">\(p_{n}\)</span> for all but finitely many
+<span class="math inline">\(n\)</span>.</p></li>
+<li><p>If <span class="math inline">\(p \in X, p^{\prime} \in
+X\)</span>, and if <span
+class="math inline">\(\left\{p_{n}\right\}\)</span> converges to <span
+class="math inline">\(p\)</span> and to <span
+class="math inline">\(p^{\prime}\)</span>, then <span
+class="math inline">\(p^{\prime}=p\)</span>.</p></li>
+<li><p>If <span class="math inline">\(\left\{p_{n}\right\}\)</span>
+converges, then <span
+class="math inline">\(\left\{p_{n}\right\}\)</span> is bounded.</p></li>
+<li><p>If <span class="math inline">\(E \subset X\)</span> and if <span
+class="math inline">\(p\)</span> is a limit point of <span
+class="math inline">\(E\)</span>, then there is a sequence <span
+class="math inline">\(\left\{p_{n}\right\}\)</span> in <span
+class="math inline">\(E\)</span> such that <span
+class="math inline">\(p=\lim _{n \rightarrow \infty}
+p_{n}\)</span>.</p></li>
+</ol>
+<p>Proof (a) Suppose <span class="math inline">\(p_{n} \rightarrow
+p\)</span> and let <span class="math inline">\(V\)</span> be a
+neighborhood of <span class="math inline">\(p\)</span>. For some <span
+class="math inline">\(\varepsilon&gt;0\)</span>, the conditions <span
+class="math inline">\(d(q, p)&lt;\varepsilon, q \in X\)</span> imply
+<span class="math inline">\(q \in V\)</span>. Corresponding to this
+<span class="math inline">\(\varepsilon\)</span>, there exists <span
+class="math inline">\(N\)</span> such that <span class="math inline">\(n
+\geq N\)</span> implies <span class="math inline">\(d\left(p_{n},
+p\right)&lt;\varepsilon\)</span>. Thus <span class="math inline">\(n
+\geq N\)</span> implies <span class="math inline">\(p_{n} \in
+V\)</span>.</p>
+<p>Conversely, suppose every neighborhood of <span
+class="math inline">\(p\)</span> contains all but finitely many of the
+<span class="math inline">\(p_{n}\)</span>. Fix <span
+class="math inline">\(\varepsilon&gt;0\)</span>, and let <span
+class="math inline">\(V\)</span> be the set of all <span
+class="math inline">\(q \in X\)</span> such that <span
+class="math inline">\(d(p, q)&lt;\varepsilon\)</span>. By assumption,
+there exists <span class="math inline">\(N\)</span> (corresponding to
+this <span class="math inline">\(V\)</span> ) such that <span
+class="math inline">\(p_{n} \in V\)</span> if <span
+class="math inline">\(n \geq N\)</span>. Thus <span
+class="math inline">\(d\left(p_{n}, p\right)&lt;\varepsilon\)</span> if
+<span class="math inline">\(n \geq N\)</span>; hence <span
+class="math inline">\(p_{n} \rightarrow p\)</span>. (b) Let <span
+class="math inline">\(\varepsilon&gt;0\)</span> be given. There exist
+integers <span class="math inline">\(N, N^{\prime}\)</span> such
+that</p>
+<p><span class="math display">\[
+\begin{aligned}
+&amp;n \geq N \quad \text { implies } \quad d\left(p_{n},
+p\right)&lt;\frac{\varepsilon}{2}, \\
+&amp;n \geq N^{\prime} \quad \text { implies } \quad d\left(p_{n},
+p^{\prime}\right)&lt;\frac{\varepsilon}{2} .
+\end{aligned}
+\]</span></p>
+<p>Hence if <span class="math inline">\(n \geq \max \left(N,
+N^{\prime}\right)\)</span>, we have</p>
+<p><span class="math display">\[
+d\left(p, p^{\prime}\right) \leq d\left(p, p_{n}\right)+d\left(p_{n},
+p^{\prime}\right)&lt;\varepsilon .
+\]</span></p>
+<p>Since <span class="math inline">\(\varepsilon\)</span> was arbitrary,
+we conclude that <span class="math inline">\(d\left(p,
+p^{\prime}\right)=0\)</span>.</p>
+<ol start="3" type="a">
+<li>Suppose <span class="math inline">\(p_{n} \rightarrow p\)</span>.
+There is an integer <span class="math inline">\(N\)</span> such that
+<span class="math inline">\(n&gt;N\)</span> implies <span
+class="math inline">\(d\left(p_{n}, p\right)&lt;1\)</span>. Put</li>
+</ol>
+<p><span class="math display">\[
+r=\max \left\{1, d\left(p_{1}, p\right), \ldots, d\left(p_{N},
+p\right)\right\} .
+\]</span></p>
+<p>Then <span class="math inline">\(d\left(p_{n}, p\right) \leq
+r\)</span> for <span class="math inline">\(n=1,2,3, \ldots\)</span></p>
+<ol start="4" type="a">
+<li>For each positive integer <span class="math inline">\(n\)</span>,
+there is a point <span class="math inline">\(p_{n} \in E\)</span> such
+that <span class="math inline">\(d\left(p_{n}, p\right)&lt;1 /
+n\)</span>. Given <span class="math inline">\(\varepsilon&gt;0\)</span>,
+choose <span class="math inline">\(N\)</span> so that <span
+class="math inline">\(N \varepsilon&gt;1\)</span>. If <span
+class="math inline">\(n&gt;N\)</span>, it follows that <span
+class="math inline">\(d\left(p_{n}, p\right)&lt;\varepsilon\)</span>.
+Hence <span class="math inline">\(p_{n} \rightarrow p\)</span>.</li>
+</ol>
+<p>This completes the proof.</p>
+<p>For sequences in <span class="math inline">\(R^{k}\)</span> we can
+study the relation between convergence, on the one hand, and the
+algebraic operations on the other. We first consider sequences of
+complex numbers.</p>
+<p><strong>3.3 Theorem</strong> Suppose <span
+class="math inline">\(\left\{s_{n}\right\},\left\{t_{n}\right\}\)</span>
+are complex sequences, and <span class="math inline">\(\lim _{n
+\rightarrow \infty} s_{n}=s\)</span>, <span class="math inline">\(\lim
+_{n \rightarrow \infty} t_{n}=t\)</span>. Then</p>
+<ol type="a">
+<li><p><span class="math inline">\(\lim _{n \rightarrow
+\infty}\left(s_{n}+t_{n}\right)=s+t\)</span></p></li>
+<li><p><span class="math inline">\(\lim _{n \rightarrow \infty} c
+s_{n}=c s, \lim _{n \rightarrow
+\infty}\left(c+s_{n}\right)=c+s\)</span>, for any number <span
+class="math inline">\(c\)</span>;</p></li>
+<li><p><span class="math inline">\(\lim _{n \rightarrow \infty} s_{n}
+t_{n}=s t\)</span></p></li>
+<li><p><span class="math inline">\(\lim _{n \rightarrow \infty}
+\frac{1}{s_{n}}=\frac{1}{s}\)</span>, provided <span
+class="math inline">\(s_{n} \neq 0(n=1,2,3, \ldots)\)</span>, and <span
+class="math inline">\(s \neq 0\)</span></p></li>
+</ol>
+<p>Proof</p>
+<ol type="a">
+<li>Given <span class="math inline">\(\varepsilon&gt;0\)</span>, there
+exist integers <span class="math inline">\(N_{1}, N_{2}\)</span> such
+that</li>
+</ol>
+<p><span class="math display">\[
+\begin{aligned}
+&amp;n \geq N_{1} \text { implies
+}\left|s_{n}-s\right|&lt;\frac{\varepsilon}{2}, \\
+&amp;n \geq N_{2} \text { implies
+}\left|t_{n}-t\right|&lt;\frac{\varepsilon}{2} .
+\end{aligned}
+\]</span></p>
+<p>If <span class="math inline">\(N=\max \left(N_{1},
+N_{2}\right)\)</span>, then <span class="math inline">\(n \geq
+N\)</span> implies</p>
+<p><span class="math display">\[
+\left|\left(s_{n}+t_{n}\right)-(s+t)\right|
+\leq\left|s_{n}-s\right|+\left|t_{n}-t\right|&lt;\varepsilon .
+\]</span></p>
+<p>This proves (a). The proof of <span
+class="math inline">\((b)\)</span> is trivial.</p>
+<ol start="3" type="a">
+<li>We use the identity</li>
+</ol>
+<p><span class="math display">\[
+s_{n} t_{n}-s
+t=\left(s_{n}-s\right)\left(t_{n}-t\right)+s\left(t_{n}-t\right)+t\left(s_{n}-s\right)
+.
+\]</span></p>
+<p>Given <span class="math inline">\(\varepsilon&gt;0\)</span>, there
+are integers <span class="math inline">\(N_{1}, N_{2}\)</span> such
+that</p>
+<p><span class="math display">\[
+\begin{array}{lll}
+n \geq N_{1} &amp; \text { implies } &amp;
+\left|s_{n}-s\right|&lt;\sqrt{\varepsilon} \\
+n \geq N_{2} &amp; \text { implies } &amp;
+\left|t_{n}-t\right|&lt;\sqrt{\varepsilon}
+\end{array}
+\]</span></p>
+<p>If we take <span class="math inline">\(N=\max \left(N_{1},
+N_{2}\right), n \geq N\)</span> implies</p>
+<p><span class="math display">\[
+\left|\left(s_{n}-s\right)\left(t_{n}-t\right)\right|&lt;\varepsilon,
+\]</span></p>
+<p>so that</p>
+<p><span class="math display">\[
+\lim _{n \rightarrow \infty}\left(s_{n}-s\right)\left(t_{n}-t\right)=0 .
+\]</span></p>
+<p>We now apply <span class="math inline">\((a)\)</span> and <span
+class="math inline">\((b)\)</span> to (1), and conclude that</p>
+<p><span class="math display">\[
+\lim _{n \rightarrow \infty}\left(s_{n} t_{n}-s t\right)=0 .
+\]</span></p>
+<ol start="4" type="a">
+<li>Choosing <span class="math inline">\(m\)</span> such that <span
+class="math inline">\(\left|s_{n}-s\right|&lt;\frac{1}{2}|s|\)</span> if
+<span class="math inline">\(n \geq m\)</span>, we see that</li>
+</ol>
+<p><span class="math display">\[
+\left|s_{n}\right|&gt;\frac{1}{2}|s| \quad(n \geq m) .
+\]</span></p>
+<p>Given <span class="math inline">\(\varepsilon&gt;0\)</span>, there is
+an integer <span class="math inline">\(N&gt;m\)</span> such that <span
+class="math inline">\(n \geq N\)</span> implies</p>
+<p><span class="math display">\[
+\left|s_{n}-s\right|&lt;\frac{1}{2}|s|^{2} \varepsilon .
+\]</span></p>
+<p>Hence, for <span class="math inline">\(n \geq N\)</span>,</p>
+<p><span class="math display">\[
+\left|\frac{1}{s_{n}}-\frac{1}{s}\right|=\left|\frac{s_{n}-s}{s_{n}
+s}\right|&lt;\frac{2}{|s|^{2}}\left|s_{n}-s\right|&lt;\varepsilon .
+\]</span></p>
+<p><strong>3.4 Theorem</strong></p>
+<ol type="a">
+<li>Suppose <span class="math inline">\(\mathbf{x}_{n} \in
+R^{k}(n=1,2,3, \ldots)\)</span> and</li>
+</ol>
+<p><span class="math display">\[
+\mathbf{x}_{n}=\left(\alpha_{1, n}, \ldots, \alpha_{k, n}\right) .
+\]</span></p>
+<p>Then <span
+class="math inline">\(\left\{\mathbf{x}_{n}\right\}\)</span> converges
+to <span class="math inline">\(\mathbf{x}=\left(\alpha_{1}, \ldots,
+\alpha_{k}\right)\)</span> if and only if</p>
+<p><span class="math display">\[
+\lim _{n \rightarrow \infty} \alpha_{j, n}=\alpha_{j} \quad(1 \leq j
+\leq k) .
+\]</span></p>
+<ol start="2" type="a">
+<li>Suppose <span
+class="math inline">\(\left\{\mathbf{x}_{n}\right\},\left\{\mathbf{y}_{n}\right\}\)</span>
+are sequences in <span
+class="math inline">\(R^{k},\left\{\beta_{n}\right\}\)</span> is a
+sequence of real numbers, and <span class="math inline">\(\mathbf{x}_{n}
+\rightarrow \mathbf{x}, \mathbf{y}_{n} \rightarrow \mathbf{y}, \beta_{n}
+\rightarrow \beta\)</span>. Then</li>
+</ol>
+<p><span class="math display">\[
+\lim _{n \rightarrow
+\infty}\left(\mathbf{x}_{n}+\mathbf{y}_{n}\right)=\mathbf{x}+\mathbf{y},
+\quad \lim _{n \rightarrow \infty} \mathbf{x}_{n} \cdot
+\mathbf{y}_{n}=\mathbf{x} \cdot \mathbf{y}, \quad \lim _{n \rightarrow
+\infty} \beta_{n} \mathbf{x}_{n}=\beta \mathbf{x} .
+\]</span></p>
+<ol type="a">
+<li>If <span class="math inline">\(\mathbf{x}_{n} \rightarrow
+\mathbf{x}\)</span>, the inequalities</li>
+</ol>
+<p><span class="math display">\[
+\left|\alpha_{j, n}-\alpha_{j}\right|
+\leq\left|\mathbf{x}_{n}-\mathbf{x}\right|,
+\]</span></p>
+<p>which follow immediately from the definition of the norm in <span
+class="math inline">\(R^{k}\)</span>, show that (2) holds.</p>
+<p>Conversely, if (2) holds, then to each <span
+class="math inline">\(\varepsilon&gt;0\)</span> there corresponds an
+integer <span class="math inline">\(N\)</span> such that <span
+class="math inline">\(n \geq N\)</span> implies</p>
+<p><span class="math display">\[
+\left|\alpha_{j, n}-\alpha_{j}\right|&lt;\frac{\varepsilon}{\sqrt{k}}
+\quad(1 \leq j \leq k) .
+\]</span></p>
+<p>Hence <span class="math inline">\(n \geq N\)</span> implies</p>
+<p><span class="math display">\[
+\left|\mathbf{x}_{n}-\mathbf{x}\right|=\left\{\sum_{j=1}^{k}\left|\alpha_{j,
+n}-\alpha_{j}\right|^{2}\right\}^{1 / 2}&lt;\varepsilon
+\]</span></p>
+<p>so that <span class="math inline">\(\mathbf{x}_{n} \rightarrow
+\mathbf{x}\)</span>. This proves <span
+class="math inline">\((a)\)</span>.</p>
+<p>Part <span class="math inline">\((b)\)</span> follows from <span
+class="math inline">\((a)\)</span> and Theorem 3.3.</p>
+
+    </div>
+    
+</div>
+</div>
+
+                <div id="footer-wrapper">
+                    <footer class="footer"><footer class="row pl-3 pr-3">
+    <div class="col-12 d-flex justify-content-between align-items-center text-muted pl-0 pr-0">
+        <div class="footer-left">
+            <p class="mb-0"> © 2022 <a href="https://github.com/chen-gz">guangzong</a>. <span data-toggle="tooltip"
+                    data-placement="top"
+                    title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author.">All
+                    rights reserved.</span></p>
+        </div>
+        <div class="footer-right">
+            <p class="mb-0"> Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">hugo</a>
+                with <a href="https://github.com/chen-gz/hugo_zong" target="_blank" rel="noopener">zong</a>
+                theme.</p>
+        </div>
+    </div>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script> MathJax = {
+            tex: {
+                tags: 'ams',
+            }
+        };</script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</footer>
+</footer>
+                </div>
+            </div>
+            <div id="panel-wrapper" class="d-flex flex-column"><div id="toc-wrapper" class="mb-5 pl-2">
+    <span>Contents</span>
+    <nav id="toc" data-toggle="toc">
+        
+        
+        
+    </nav>
+</div>
+
+<div id="access-lastmod" class="pb-4 pl-2">
+    <div class="panel-heading">Recently Updated</div>
+    <ul class="post-content pl-3 pb-1 ml-1 mt-2">
+          
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/1-total-variation/">Total Variation</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-7/1-derivatives-of-measures/">Derivatives of Measures</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/3-consequences-of-the-radon-nikodym-theorem/">Consequences of the Radon-Nikodym Theorem</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/4-bounded-linear-functionals-on-lp/">Bounded linear functional on Lp</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/2-abosolute-continuity/">Abosolute Continuity</a></li>
+        
+    </ul>
+</div>
+
+<div id="access-tags" class="pl-2">
+    <div class="panel-heading">Trending Tags</div>
+    <div class="d-flex flex-wrap mt-3 mb-1 mr-3">
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/algorithm/">Algorithm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/android/">Android</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c/">C</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c-language/">c language</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/caddy/">Caddy</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cadence/">Cadence</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cdc/">CDC</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/classification/">classification</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/compress/">Compress</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/conf/">Conf</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/double-column/">Double Column</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/errno13/">Errno13</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/fish/">fish</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gan/">GAN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/git/">Git</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gtk/">Gtk</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/html/">Html</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/i3/">I3</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/idea/">Idea</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/java/">Java</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/latex/">Latex</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lda/">LDA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linear-programming/">Linear Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linux/">Linux</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lr/">LR</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/math/">Math</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mathematics/">Mathematics</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matlab/">Matlab</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matplot/">matplot</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/memory/">Memory</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mermaid/">Mermaid</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/misc/">Misc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/ml/">ML</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mosfet/">Mosfet</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/network/">Network</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/nn/">NN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pandoc/">Pandoc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pca/">PCA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/probability/">Probability</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/productive/">Productive</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/program/">Program</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/programming/">Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/python/">Python</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/qt/">Qt</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/random-variable/">Random Variable</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rcnn/">RCNN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rust/">Rust</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/security/">Security</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/software/">Software</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/std/">Std</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/svd/">Svd</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/tool/">Tool</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/usb/">USB</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vim/">Vim</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpn/">Vpn</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpnc/">Vpnc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/xterm/">xterm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/zsh/">Zsh</a>
+        
+    </div>
+</div>
+</div><div id="search-result-wrapper" class="d-flex justify-content-center unloaded">
+    <div class="col-12 col-sm-11 post-content">
+        <div id="search-hints"></div>
+        <div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3 col-12"></div>
+    </div>
+</div>
+
+<script src="/js/fuse.min.js"></script>
+<script src="/js/fastsearch.js"></script>
+
+
+</div>
+        <div id="mask"></div>
+        <a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button"
+            style="display: none">
+            <i class="fas fa-angle-up"></i>
+        </a>
+    </div>
+    
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>c language on Guangzong Blog</title>
+    <link>https://zongpitt.com/tags/c-language/</link>
+    <description>Recent content in c language on Guangzong Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 05 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://zongpitt.com/tags/c-language/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>C language clang format config file</title>
+      <link>https://zongpitt.com/posts/misc/2021-01-05-c-language-clang-format-config-file/</link>
+      <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/misc/2021-01-05-c-language-clang-format-config-file/</guid>
+      <description>my clang format config file.
+show details --- Language: Cpp # BasedOnStyle: LLVM AccessModifierOffset: -2 AlignAfterOpenBracket: Align AlignArrayOfStructures: None AlignConsecutiveMacros: None AlignConsecutiveAssignments: None AlignConsecutiveBitFields: None AlignConsecutiveDeclarations: None AlignEscapedNewlines: Right AlignOperands: Align AlignTrailingComments: true AllowAllArgumentsOnNextLine: true AllowAllParametersOfDeclarationOnNextLine: true AllowShortEnumsOnASingleLine: true AllowShortBlocksOnASingleLine: Never AllowShortCaseLabelsOnASingleLine: false AllowShortFunctionsOnASingleLine: All AllowShortLambdasOnASingleLine: All AllowShortIfStatementsOnASingleLine: Never AllowShortLoopsOnASingleLine: false AlwaysBreakAfterDefinitionReturnType: None AlwaysBreakAfterReturnType: None AlwaysBreakBeforeMultilineStrings: false AlwaysBreakTemplateDeclarations: MultiLine AttributeMacros: - __capability BinPackArguments: true BinPackParameters: true BraceWrapping: AfterCaseLabel: false AfterClass: false AfterControlStatement: Never AfterEnum: false AfterFunction: false AfterNamespace: false AfterObjCDeclaration: false AfterStruct: false AfterUnion: false AfterExternBlock: false BeforeCatch: false BeforeElse: false BeforeLambdaBody: false BeforeWhile: false IndentBraces: false SplitEmptyFunction: true SplitEmptyRecord: true SplitEmptyNamespace: true BreakBeforeBinaryOperators: None BreakBeforeConceptDeclarations: true BreakBeforeBraces: Attach BreakBeforeInheritanceComma: false BreakInheritanceList: BeforeColon BreakBeforeTernaryOperators: true BreakConstructorInitializersBeforeComma: false BreakConstructorInitializers: BeforeColon BreakAfterJavaFieldAnnotations: false BreakStringLiterals: true ColumnLimit: 80 CommentPragmas: &amp;#39;^ IWYU pragma:&amp;#39; QualifierAlignment: Leave CompactNamespaces: false ConstructorInitializerIndentWidth: 4 ContinuationIndentWidth: 4 Cpp11BracedListStyle: true DeriveLineEnding: true DerivePointerAlignment: false DisableFormat: false EmptyLineAfterAccessModifier: Never EmptyLineBeforeAccessModifier: LogicalBlock ExperimentalAutoDetectBinPacking: false PackConstructorInitializers: BinPack BasedOnStyle: &amp;#39;&amp;#39; ConstructorInitializerAllOnOneLineOrOnePerLine: false AllowAllConstructorInitializersOnNextLine: true FixNamespaceComments: true ForEachMacros: - foreach - Q_FOREACH - BOOST_FOREACH IfMacros: - KJ_IF_MAYBE IncludeBlocks: Preserve IncludeCategories: - Regex: &amp;#39;^&amp;quot;(llvm|llvm-c|clang|clang-c)/&amp;#39; Priority: 2 SortPriority: 0 CaseSensitive: false - Regex: &amp;#39;^(&amp;lt;|&amp;quot;(gtest|gmock|isl|json)/)&amp;#39; Priority: 3 SortPriority: 0 CaseSensitive: false - Regex: &amp;#39;.</description>
+    </item>
+    
+  </channel>
+</rss>

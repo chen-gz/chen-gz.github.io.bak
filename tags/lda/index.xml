@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LDA on Guangzong Blog</title>
+    <link>https://zongpitt.com/tags/lda/</link>
+    <description>Recent content in LDA on Guangzong Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 10 Feb 2021 05:12:52 -0500</lastBuildDate><atom:link href="https://zongpitt.com/tags/lda/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linear Discriminant Analysis</title>
+      <link>https://zongpitt.com/posts/2021-02-10-linear-discriminant-analysis/</link>
+      <pubDate>Wed, 10 Feb 2021 05:12:52 -0500</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-02-10-linear-discriminant-analysis/</guid>
+      <description>my Matlab implementation
+clc; clear all; load(&amp;#39;/home/zong/Downloads/dataLDA-1/dataLDA/trainTrain.mat&amp;#39;) load(&amp;#39;/home/zong/Downloads/dataLDA-1/dataLDA/testLDA.mat&amp;#39;) % X and Y here is training data Y = Ytrain; X = Xtrain; [featrue_size, sample] = size(Xtrain); pi_0 = length(find(Y==0))/size(Y,2); pi_1 = length(find(Y==1))/size(Y,2); % mean u_0 = mean(X(:,find(Y==0)),2); u_1 = mean(X(:,find(Y==1)),2); % covariance by my code (psudo, not exactly convariance) covv = ((X(:,find(Y==0)) - u_0)*(X(:,find(Y==0)) - u_0)&amp;#39; + (X(:,find(Y==1)) - u_1)*(X(:,find(Y==1)) - u_1)&amp;#39;)/200; a = inv(covv) * (u_0 - u_1); b = -0.</description>
+    </item>
+    
+  </channel>
+</rss>

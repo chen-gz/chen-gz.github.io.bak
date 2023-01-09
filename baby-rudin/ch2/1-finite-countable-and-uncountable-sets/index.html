@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css"
+        class="dark-mode-native-dark-original" />
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+     
+    <link rel="stylesheet" href="https://zongpitt.com/sass/main.06935202011a97ba473ebeeb0cb6788daa9fb5a9fff471a4e85850293d1c5ac4.css" />
+    <title>
+          Guangzong Blog | 1 FINITE, COUNTABLE, AND UNCOUNTABLE SETS
+    </title>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.bundle.min.js"></script>
+    <script src=" https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.js"></script>
+
+    <script
+        src="https://cdn.jsdelivr.net/combine/npm/magnific-popup@1/dist/jquery.magnific-popup.min.js,npm/lozad/dist/lozad.min.js,npm/clipboard@2/dist/clipboard.min.js"></script>
+    <script type="text/javascript" src="/js/commons/back-to-top.js"></script>
+    
+    
+    
+    <script type="text/javascript" src="/js/commons/topbar-switch.js"></script>
+    <script type="text/javascript" src="/js/commons/sidebar.js"></script>
+    <script type="text/javascript" src="/js/utils/category-collapse.js"></script>
+    <script type="text/javascript" src="/js/utils/checkbox.js"></script>
+    <script type="text/javascript" src="/js/utils/clipboard.js"></script>
+    <script type="text/javascript" src="/js/utils/img-extra.js"></script>
+    <script type="text/javascript" src="/js/utils/pageviews.js"></script>
+    
+    <script type="text/javascript" src="/js/utils/timeago.js"></script>
+    
+    
+</head>
+<body data-spy="scroll" data-target="#toc" data-topbar-visible="true" class="d-flex"><div id="sidebar" class="d-flex flex-column align-items-end">
+    <div class="profile-wrapper text-center">
+
+        <div id="avatar">
+            <a href="/" alt="avatar" class="mx-auto"> <img src=https://github.com/chen-gz/chen-gz/blob/main/mine_square.jpg?raw&#61;truehttps://raw.githubusercontent.com/chen-gz/chen-gz/blob/main/mine_square.jpg alt="avatar"
+                    onerror="this.style.display='none'"> </a>
+        </div>
+
+        <div class="site-title mt-3"> <a href="/">Guangzong</a> </div>
+        <div class="site-subtitle font-italic">Welcome to my blog</div>
+    </div>
+
+    <ul>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/">
+                <span>
+                    Home
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/archive/">
+                <span>
+                    Archive
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/tags/">
+                <span>
+                    Tags
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/about/">
+                <span>
+                    About
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/categories/">
+                <span>
+                    Categories
+                </span>
+            </a>
+        </li>
+        
+    </ul>
+
+    <div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center align-items-center">
+        <button class="mode-toggle btn" aria-label="Switch Mode"> 
+            <i class="fas fa-adjust"></i> 
+        </button>
+
+        <span class="icon-border"></span>
+        <a href="https://github.com/chen-gz" aria-label="github" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i>
+        </a>
+
+        <a href=" javascript:location.href = 'mailto:' + ['chen-gz','outlook.com'].join('@')" aria-label="email">
+            <i class="fas fa-envelope"></i>
+        </a>
+
+        <a href="/feed.xml" aria-label="rss"> <i class="fas fa-rss"></i> </a>
+    </div>
+
+    
+    
+</div>
+<div id="all-wrapper" class="d-flex flex-column"><div id="topbar-wrapper">
+    <div id="topbar" class="d-flex">
+        
+        <span id="breadcrumb" class="d-flex">
+              
+               
+            
+            
+            <div><a href='https://zongpitt.com/'>Home</a></div>
+              
+              
+            
+            <div><a href="https://zongpitt.com/baby-rudin">baby-rudin</a></div>
+               
+              
+            
+            <div><a href="https://zongpitt.com/baby-rudin/ch2">ch2</a></div>
+               
+                 
+                
+        </span>
+        <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i>
+        <div id="topbar-title">Guangzong</div>
+        <i id="search-trigger" class="fas fa-search fa-fw"></i>
+        <span id="search-wrapper" class="align-items-center">
+            <i class="fas fa-search fa-fw"></i>
+            <input class="form-control" id="search-input" type="search" aria-label="search" autocomplete="off"
+                placeholder="Search..." />
+            <i class="fa fa-times-circle fa-fw" id="search-cleaner"></i>
+        </span>
+    </div>
+</div>
+<div id="main-wrapper" class="d-flex mt-3">
+            <div id="core-wrapper" class="d-flex flex-column">
+                <div id="main" class="d-flex flex-column">
+                    
+<div class="post pl-1 pr-1 pl-md-2 pr-md-2">
+    
+    <div id="post-content">
+        <h1 style="text-align: center;">1 FINITE, COUNTABLE, AND UNCOUNTABLE SETS</h1>
+        <br>
+        
+        <ul>
+<li><a href="https://youtu.be/cHxQ5KIP1IM">youtube</a></li>
+<li><a
+href="https://www.bilibili.com/video/BV1kG411J7vn/">bilibili</a></li>
+<li>note <a
+href="https://github.com/chen-gz/bed2/blob/c6ee682d6e9841152773d6504c86a5b4cd023500/7%20infite,%20countable%20note.pdf">pdf</a>
+<a
+href="https://github.com/chen-gz/bed2/blob/c6ee682d6e9841152773d6504c86a5b4cd023500/7%20infite,%20countable%20note.xopp">xopp</a></li>
+</ul>
+<p>We begin this section with a definition of the function concept.</p>
+<p><strong>2.1 Definition</strong> Consider two sets <span
+class="math inline">\(A\)</span> and <span
+class="math inline">\(B\)</span>, whose elements may be any objects
+whatsoever, and suppose that with each element <span
+class="math inline">\(x\)</span> of <span
+class="math inline">\(A\)</span> there is associated, in some manner, an
+element of <span class="math inline">\(B\)</span>, which we denote by
+<span class="math inline">\(f(x)\)</span>. Then <span
+class="math inline">\(f\)</span> is said to be a function from <span
+class="math inline">\(A\)</span> to <span
+class="math inline">\(B\)</span> (or a mapping of <span
+class="math inline">\(A\)</span> into <span
+class="math inline">\(B\)</span> ). The set <span
+class="math inline">\(A\)</span> is called the domain of <span
+class="math inline">\(f\)</span> (we also say <span
+class="math inline">\(f\)</span> is defined on <span
+class="math inline">\(A\)</span> ), and the elements <span
+class="math inline">\(f(x)\)</span> are called the values of <span
+class="math inline">\(f\)</span>. The set of all values of <span
+class="math inline">\(f\)</span> is called the range of <span
+class="math inline">\(f\)</span>.</p>
+<p><strong><span class="math inline">\(2.2\)</span> Definition</strong>
+Let <span class="math inline">\(A\)</span> and <span
+class="math inline">\(B\)</span> be two sets and let <span
+class="math inline">\(f\)</span> be a mapping of <span
+class="math inline">\(A\)</span> into <span
+class="math inline">\(B\)</span>. If <span class="math inline">\(E
+\subset A, f(E)\)</span> is defined to be the set of all elements <span
+class="math inline">\(f(x)\)</span>, for <span class="math inline">\(x
+\in E\)</span>. We call <span class="math inline">\(f(E)\)</span> the
+image of <span class="math inline">\(E\)</span> under <span
+class="math inline">\(f\)</span>. In this notation, <span
+class="math inline">\(f(A)\)</span> is the range of <span
+class="math inline">\(f\)</span>. It is clear that <span
+class="math inline">\(f(A) \subset B\)</span>. If <span
+class="math inline">\(f(A)=B\)</span>, we say that <span
+class="math inline">\(f\)</span> maps <span
+class="math inline">\(A\)</span> onto <span
+class="math inline">\(B\)</span>. (Note that, according to this usage,
+onto is more specific than into.)</p>
+<p>If <span class="math inline">\(E \subset B, f^{-1}(E)\)</span>
+denotes the set of all <span class="math inline">\(x \in A\)</span> such
+that <span class="math inline">\(f(x) \in E\)</span>. We call <span
+class="math inline">\(f^{-1}(E)\)</span> the inverse image of <span
+class="math inline">\(E\)</span> under <span
+class="math inline">\(f\)</span>. If <span class="math inline">\(y \in
+B, f^{-1}(y)\)</span> is the set of all <span class="math inline">\(x
+\in A\)</span> such that <span class="math inline">\(f(x)=y\)</span>.
+If, for each <span class="math inline">\(y \in B, f^{-1}(y)\)</span>
+consists of at most one element of <span
+class="math inline">\(A\)</span>, then <span
+class="math inline">\(f\)</span> is said to be a 1-1 (one-to-one)
+mapping of <span class="math inline">\(A\)</span> into <span
+class="math inline">\(B\)</span>. This may also be expressed as follows:
+<span class="math inline">\(f\)</span> is a 1-1 mapping of <span
+class="math inline">\(A\)</span> into <span
+class="math inline">\(B\)</span> provided that <span
+class="math inline">\(f\left(x_{1}\right) \neq
+f\left(x_{2}\right)\)</span> whenever <span class="math inline">\(x_{1}
+\neq x_{2}, x_{1} \in A, x_{2} \in A\)</span>.</p>
+<p>(The notation <span class="math inline">\(x_{1} \neq x_{2}\)</span>
+means that <span class="math inline">\(x_{1}\)</span> and <span
+class="math inline">\(x_{2}\)</span> are distinct elements; otherwise we
+write <span class="math inline">\(x_{1}=x_{2}\)</span>.)</p>
+<p><strong>2.3 Definition</strong> If there exists a 1-1 mapping of
+<span class="math inline">\(A\)</span> onto <span
+class="math inline">\(B\)</span>, we say that <span
+class="math inline">\(A\)</span> and <span
+class="math inline">\(B\)</span> can be put in 1-1 correspondence, or
+that <span class="math inline">\(A\)</span> and <span
+class="math inline">\(B\)</span> have the same cardinal number, or,
+briefly, that <span class="math inline">\(A\)</span> and <span
+class="math inline">\(B\)</span> are equivalent, and we write <span
+class="math inline">\(A \sim B\)</span>. This relation clearly has the
+following properties:</p>
+<p>It is reflexive: <span class="math inline">\(A \sim A\)</span>.</p>
+<p>It is symmetric: If <span class="math inline">\(A \sim B\)</span>,
+then <span class="math inline">\(B \sim A\)</span>.</p>
+<p>It is transitive: If <span class="math inline">\(A \sim B\)</span>
+and <span class="math inline">\(B \sim C\)</span>, then <span
+class="math inline">\(A \sim C\)</span>.</p>
+<p>Any relation with these three properties is called an equivalence
+relation.</p>
+<p><strong>2.4 Definition</strong> For any positive integer <span
+class="math inline">\(n\)</span>, let <span
+class="math inline">\(J_{n}\)</span> be the set whose elements are the
+integers <span class="math inline">\(1,2, \ldots, n\)</span>; let <span
+class="math inline">\(J\)</span> be the set consisting of all positive
+integers. For any set <span class="math inline">\(A\)</span>, we
+say:</p>
+<ol type="a">
+<li><p><span class="math inline">\(A\)</span> is finite if <span
+class="math inline">\(A \sim J_{n}\)</span> for some <span
+class="math inline">\(n\)</span> (the empty set is also considered to be
+finite).</p></li>
+<li><p><span class="math inline">\(A\)</span> is infinite if <span
+class="math inline">\(A\)</span> is not finite.</p></li>
+<li><p><span class="math inline">\(A\)</span> is countable if <span
+class="math inline">\(A \sim J\)</span>.</p></li>
+<li><p><span class="math inline">\(A\)</span> is uncountable if <span
+class="math inline">\(A\)</span> is neither finite nor
+countable.</p></li>
+<li><p><span class="math inline">\(A\)</span> is at most countable if
+<span class="math inline">\(A\)</span> is finite or countable.</p></li>
+</ol>
+<p>Countable sets are sometimes called enumerable, or denumerable.</p>
+<p>For two finite sets <span class="math inline">\(A\)</span> and <span
+class="math inline">\(B\)</span>, we evidently have <span
+class="math inline">\(A \sim B\)</span> if and only if <span
+class="math inline">\(A\)</span> and <span
+class="math inline">\(B\)</span> contain the same number of elements.
+For infinite sets, however, the idea of “having the same number of
+elements” becomes quite vague, whereas the notion of <span
+class="math inline">\(1-1\)</span> correspondence retains its
+clarity.</p>
+<p><strong>2.5 Example</strong> Let <span
+class="math inline">\(A\)</span> be the set of all integers. Then <span
+class="math inline">\(A\)</span> is countable. For, consider the
+following arrangement of the sets <span class="math inline">\(A\)</span>
+and <span class="math inline">\(J\)</span> :</p>
+<p><span class="math display">\[
+\begin{array}{ll}
+A: &amp; 0,1,-1,2,-2,3,-3, \ldots \\
+J: &amp; 1,2,3,4,5,6,7, \ldots
+\end{array}
+\]</span></p>
+<p>We can, in this example, even give an explicit formula for a function
+<span class="math inline">\(f\)</span> from <span
+class="math inline">\(J\)</span> to <span
+class="math inline">\(A\)</span> which sets up a 1-1 correspondence:</p>
+<p><span class="math display">\[
+f(n)= \begin{cases}\frac{n}{2} &amp; \text { ( } n \text { even), } \\
+-\frac{n-1}{2} &amp; \text { (n odd). }\end{cases}
+\]</span></p>
+<p><strong>2.6 Remark</strong> A finite set cannot be equivalent to one
+of its proper subsets. That this is, however, possible for infinite
+sets, is shown by Example <span class="math inline">\(2.5\)</span>, in
+which <span class="math inline">\(J\)</span> is a proper subset of <span
+class="math inline">\(A\)</span>.</p>
+<p>In fact, we could replace Definition <span
+class="math inline">\(2.4(b)\)</span> by the statement: <span
+class="math inline">\(A\)</span> is infinite if <span
+class="math inline">\(A\)</span> is equivalent to one of its proper
+subsets.</p>
+<p><strong>2.7 Definition</strong> By a sequence, we mean a function
+<span class="math inline">\(f\)</span> defined on the set <span
+class="math inline">\(J\)</span> of all positive integers. If <span
+class="math inline">\(f(n)=x_{n}\)</span>, for <span
+class="math inline">\(n \in J\)</span>, it is customary to denote the
+sequence <span class="math inline">\(f\)</span> by the symbol <span
+class="math inline">\(\left\{x_{n}\right\}\)</span>, or sometimes by
+<span class="math inline">\(x_{1}, x_{2}, x_{3}, \ldots\)</span>. The
+values of <span class="math inline">\(f\)</span>, that is, the elements
+<span class="math inline">\(x_{n}\)</span>, are called the terms of the
+sequence. If <span class="math inline">\(A\)</span> is a set and if
+<span class="math inline">\(x_{n} \in A\)</span> for all <span
+class="math inline">\(n \in J\)</span>, then <span
+class="math inline">\(\left\{x_{n}\right\}\)</span> is said to be a
+sequence in <span class="math inline">\(A\)</span>, or a sequence of
+elements of <span class="math inline">\(A\)</span>.</p>
+<p>Note that the terms <span class="math inline">\(x_{1}, x_{2}, x_{3},
+\ldots\)</span> of a sequence need not be distinct.</p>
+<p>Since every countable set is the range of a 1-1 function defined on
+<span class="math inline">\(J\)</span>, we may regard every countable
+set as the range of a sequence of distinct terms. Speaking more loosely,
+we may say that the elements of any countable set can be “arranged in a
+sequence.”</p>
+<p>Sometimes it is convenient to replace <span
+class="math inline">\(J\)</span> in this definition by the set of all
+nonnegative integers, i.e., to start with 0 rather than with 1 .</p>
+<p><strong>2.8 Theorem</strong> Every infinite subset of a countable set
+<span class="math inline">\(A\)</span> is countable.</p>
+<p>Proof Suppose <span class="math inline">\(E \subset A\)</span>, and
+<span class="math inline">\(E\)</span> is infinite. Arrange the elements
+<span class="math inline">\(x\)</span> of <span
+class="math inline">\(A\)</span> in a sequence <span
+class="math inline">\(\left\{x_{n}\right\}\)</span> of distinct
+elements. Construct a sequence <span
+class="math inline">\(\left\{n_{k}\right\}\)</span> as follows:</p>
+<p>Let <span class="math inline">\(n_{1}\)</span> be the smallest
+positive integer such that <span class="math inline">\(x_{n_{1}} \in
+E\)</span>. Having chosen <span class="math inline">\(n_{1}, \ldots,
+n_{k-1}(k=2,3,4, \ldots)\)</span>, let <span
+class="math inline">\(n_{k}\)</span> be the smallest integer greater
+than <span class="math inline">\(n_{k-1}\)</span> such that <span
+class="math inline">\(x_{n_{k}} \in E\)</span>.</p>
+<p>Putting <span class="math inline">\(f(k)=x_{n_{k}}(k=1,2,3,
+\ldots)\)</span>, we obtain a 1-1 correspondence between <span
+class="math inline">\(E\)</span> and <span
+class="math inline">\(J\)</span>.</p>
+<p>The theorem shows that, roughly speaking, countable sets represent
+the “smallest” infinity: No uncountable set can be a subset of a
+countable set.</p>
+<p><strong>2.9 Definition</strong> Let <span
+class="math inline">\(A\)</span> and <span
+class="math inline">\(\Omega\)</span> be sets, and suppose that with
+each element <span class="math inline">\(\alpha\)</span> of <span
+class="math inline">\(A\)</span> there is associated a subset of <span
+class="math inline">\(\Omega\)</span> which we denote by <span
+class="math inline">\(E_{\alpha}\)</span>. The set whose elements are
+the sets <span class="math inline">\(E_{\alpha}\)</span> will be denoted
+by <span class="math inline">\(\left\{E_{\alpha}\right\}\)</span>.
+Instead of speaking of sets of sets, we shall sometimes speak of a
+collection of sets, or a family of sets.</p>
+<p>The union of the sets <span class="math inline">\(E_{\alpha}\)</span>
+is defined to be the set <span class="math inline">\(S\)</span> such
+that <span class="math inline">\(x \in S\)</span> if and only if <span
+class="math inline">\(x \in E_{\alpha}\)</span> for at least one <span
+class="math inline">\(\alpha \in A\)</span>. We use the notation</p>
+<p><span class="math display">\[
+S=\bigcup_{\alpha \in A} E_{\alpha} .
+\]</span></p>
+<p>If <span class="math inline">\(A\)</span> consists of the integers
+<span class="math inline">\(1,2, \ldots, n\)</span>, one usually
+writes</p>
+<p><span class="math display">\[
+S=\bigcup_{m=1}^{n} E_{m}
+\]</span></p>
+<p>or</p>
+<p><span class="math display">\[
+S=E_{1} \cup E_{2} \cup \cdots \cup E_{n} .
+\]</span></p>
+<p>If <span class="math inline">\(A\)</span> is the set of all positive
+integers, the usual notation is</p>
+<p><span class="math display">\[
+S=\bigcup_{m=1}^{\infty} E_{m} .
+\]</span></p>
+<p>The symbol <span class="math inline">\(\infty\)</span> in (4) merely
+indicates that the union of a countable collection of sets is taken, and
+should not be confused with the symbols <span
+class="math inline">\(+\infty,-\infty\)</span>, introduced in Definition
+<span class="math inline">\(1.23 .\)</span></p>
+<p>The intersection of the sets <span
+class="math inline">\(E_{\alpha}\)</span> is defined to be the set <span
+class="math inline">\(P\)</span> such that <span class="math inline">\(x
+\in P\)</span> if and only if <span class="math inline">\(x \in
+E_{\alpha}\)</span> for every <span class="math inline">\(\alpha \in
+A\)</span>. We use the notation</p>
+<p><span class="math display">\[
+P=\bigcap_{\alpha \in A} E_{\alpha},
+\]</span></p>
+<p>or</p>
+<p><span class="math display">\[
+P=\bigcap_{m=1}^{n} E_{m}=E_{1} \cap E_{2} \cap \cdots \cap E_{n},
+\]</span></p>
+<p>or</p>
+<p><span class="math display">\[
+P=\bigcap_{m=1}^{\infty} E_{m},
+\]</span></p>
+<p>as for unions. If <span class="math inline">\(A \cap B\)</span> is
+not empty, we say that <span class="math inline">\(A\)</span> and <span
+class="math inline">\(B\)</span> intersect; otherwise they are
+disjoint.</p>
+<p><strong><span class="math inline">\(2.10\)</span>
+Examples</strong></p>
+<ol type="a">
+<li>Suppose <span class="math inline">\(E_{1}\)</span> consists of <span
+class="math inline">\(1,2,3\)</span> and <span
+class="math inline">\(E_{2}\)</span> consists of <span
+class="math inline">\(2,3,4\)</span>. Then <span
+class="math inline">\(E_{1} \cup E_{2}\)</span> consists of <span
+class="math inline">\(1,2,3,4\)</span>, whereas <span
+class="math inline">\(E_{1} \cap E_{2}\)</span> consists of 2,3 . (b)
+Let <span class="math inline">\(A\)</span> be the set of real numbers
+<span class="math inline">\(x\)</span> such that <span
+class="math inline">\(0&lt;x \leq 1\)</span>. For every <span
+class="math inline">\(x \in A\)</span>, let <span
+class="math inline">\(E_{x}\)</span> be the set of real numbers <span
+class="math inline">\(y\)</span> such that <span
+class="math inline">\(0&lt;y&lt;x\)</span>. Then</li>
+</ol>
+<p><span class="math display">\[
+\begin{gathered}
+E_{x} \subset E_{z} \text { if and only if } 0&lt;x \leq z \leq 1 ; \\
+\bigcup_{\substack{x \in A}} E_{x}=E_{1} ; \\
+\bigcap_{x} \text { is empty; }
+\end{gathered}
+\]</span></p>
+<ol type="i">
+<li>and (ii) are clear. To prove (iii), we note that for every <span
+class="math inline">\(y&gt;0, y \notin E_{x}\)</span> if <span
+class="math inline">\(x&lt;y\)</span>. Hence <span
+class="math inline">\(y \notin \bigcap_{x \in A} E_{x}\)</span>.</li>
+</ol>
+<p><strong>2.11 Remarks</strong> Many properties of unions and
+intersections are quite similar to those of sums and products; in fact,
+the words sum and product were sometimes used in this connection, and
+the symbols <span class="math inline">\(\Sigma\)</span> and <span
+class="math inline">\(\Pi\)</span> were written in place of <span
+class="math inline">\(\bigcup\)</span> and <span
+class="math inline">\(\bigcap\)</span>.</p>
+<p>The commutative and associative laws are trivial:</p>
+<p><span class="math display">\[
+\begin{array}{cc}
+A \cup B=B \cup A ; &amp; A \cap B=B \cap A . \\
+(A \cup B) \cup C=A \cup(B \cup C) ; &amp; (A \cap B) \cap C=A \cap(B
+\cap C) .
+\end{array}
+\]</span></p>
+<p>Thus the omission of parentheses in (3) and (6) is justified.</p>
+<p>The distributive law also holds:</p>
+<p><span class="math display">\[
+A \cap(B \cup C)=(A \cap B) \cup(A \cap C) .
+\]</span></p>
+<p>To prove this, let the left and right members of (10) be denoted by
+<span class="math inline">\(E\)</span> and <span
+class="math inline">\(F\)</span>, respectively.</p>
+<p>Suppose <span class="math inline">\(x \in E\)</span>. Then <span
+class="math inline">\(x \in A\)</span> and <span class="math inline">\(x
+\in B \cup C\)</span>, that is, <span class="math inline">\(x \in
+B\)</span> or <span class="math inline">\(x \in C\)</span> (possibly
+both). Hence <span class="math inline">\(x \in A \cap B\)</span> or
+<span class="math inline">\(x \in A \cap C\)</span>, so that <span
+class="math inline">\(x \in F\)</span>. Thus <span
+class="math inline">\(E \subset F\)</span>.</p>
+<p>Next, suppose <span class="math inline">\(x \in F\)</span>. Then
+<span class="math inline">\(x \in A \cap B\)</span> or <span
+class="math inline">\(x \in A \cap C\)</span>. That is, <span
+class="math inline">\(x \in A\)</span>, and <span
+class="math inline">\(x \in B \cup C\)</span>. Hence <span
+class="math inline">\(x \in A \cap(B \cup C)\)</span>, so that <span
+class="math inline">\(F \subset E\)</span>.</p>
+<p>It follows that <span class="math inline">\(E=F\)</span>.</p>
+<p>We list a few more relations which are easily verified:</p>
+<p><span class="math display">\[
+\begin{aligned}
+&amp;A \subset A \cup B, \\
+&amp;A \cap B \subset A .
+\end{aligned}
+\]</span></p>
+<p>If 0 denotes the empty set, then</p>
+<p><span class="math display">\[
+A \cup 0=A, \quad A \cap 0=0 .
+\]</span></p>
+<p>If <span class="math inline">\(A \subset B\)</span>, then</p>
+<p><span class="math display">\[
+A \cup B=B, \quad A \cap B=A \text {. }
+\]</span></p>
+<p><strong>2.12 Theorem</strong> Let <span
+class="math inline">\(\left\{E_{n}\right\}, n=1,2,3, \ldots\)</span>, be
+a sequence of countable sets, and put</p>
+<p>Then <span class="math inline">\(S\)</span> is countable.</p>
+<p><span class="math display">\[
+S=\bigcup_{n=1}^{\infty} E_{n} .
+\]</span></p>
+<p>Proof Let every set <span class="math inline">\(E_{n}\)</span> be
+arranged in a sequence <span class="math inline">\(\left\{x_{n
+k}\right\}, k=1,2,3, \ldots\)</span>, and consider the infinite
+array</p>
+<p><img
+src="https://cdn.mathpix.com/cropped/2022_08_20_aff89fd7afc23d2ff808g-06.jpg?height=797&amp;width=2191&amp;top_left_y=2086&amp;top_left_x=2060" /></p>
+<p>in which the elements of <span class="math inline">\(E_{n}\)</span>
+form the <span class="math inline">\(n\)</span>th row. The array
+contains all elements of <span class="math inline">\(S\)</span>. As
+indicated by the arrows, these elements can be arranged in a
+sequence</p>
+<p><span class="math display">\[
+x_{11} ; x_{21}, x_{12} ; x_{31}, x_{22}, x_{13} ; x_{41}, x_{32},
+x_{23}, x_{14} ; \ldots
+\]</span></p>
+<p>If any two of the sets <span class="math inline">\(E_{n}\)</span>
+have elements in common, these will appear more than once in (17). Hence
+there is a subset <span class="math inline">\(T\)</span> of the set of
+all positive integers such that <span class="math inline">\(S \sim
+T\)</span>, which shows that <span class="math inline">\(S\)</span> is
+at most countable (Theorem 2.8). Since <span class="math inline">\(E_{1}
+\subset S\)</span>, and <span class="math inline">\(E_{1}\)</span> is
+infinite, <span class="math inline">\(S\)</span> is infinite, and thus
+countable.</p>
+<p><strong>Corollary</strong> Suppose <span
+class="math inline">\(A\)</span> is at most countable, and, for every
+<span class="math inline">\(\alpha \in A, B_{\alpha}\)</span> is at most
+countable. Put</p>
+<p><span class="math display">\[
+T=\bigcup_{\alpha \in A} B_{\alpha} .
+\]</span></p>
+<p>Then <span class="math inline">\(T\)</span> is at most countable.</p>
+<p>For <span class="math inline">\(T\)</span> is equivalent to a subset
+of <span class="math inline">\((15)\)</span>.</p>
+<p><strong>2.13 Theorem</strong> Let <span
+class="math inline">\(A\)</span> be a countable set, and let <span
+class="math inline">\(B_{n}\)</span> be the set of all n-tuples <span
+class="math inline">\(\left(a_{1}, \ldots, a_{n}\right)\)</span>, where
+<span class="math inline">\(a_{k} \in A(k=1, \ldots, n)\)</span>, and
+the elements <span class="math inline">\(a_{1}, \ldots, a_{n}\)</span>
+need not be distinct. Then <span class="math inline">\(B_{n}\)</span> is
+countable.</p>
+<p>Proof That <span class="math inline">\(B_{1}\)</span> is countable is
+evident, since <span class="math inline">\(B_{1}=A\)</span>. Suppose
+<span class="math inline">\(B_{n-1}\)</span> is countable <span
+class="math inline">\((n=2,3,4, \ldots)\)</span>. The elements of <span
+class="math inline">\(B_{n}\)</span> are of the form</p>
+<p><span class="math display">\[
+(b, a) \quad\left(b \in B_{n-1}, a \in A\right) \text {. }
+\]</span></p>
+<p>For every fixed <span class="math inline">\(b\)</span>, the set of
+pairs <span class="math inline">\((b, a)\)</span> is equivalent to <span
+class="math inline">\(A\)</span>, and hence countable. Thus <span
+class="math inline">\(B_{n}\)</span> is the union of a countable set of
+countable sets. By Theorem <span class="math inline">\(2.12,
+B_{n}\)</span> is countable.</p>
+<p>The theorem follows by induction.</p>
+<p><strong>Corollary</strong> The set of all rational numbers is
+countable.</p>
+<p>Proof We apply Theorem <span class="math inline">\(2.13\)</span>,
+with <span class="math inline">\(n=2\)</span>, noting that every
+rational <span class="math inline">\(r\)</span> is of the form <span
+class="math inline">\(b / a\)</span>, where <span
+class="math inline">\(a\)</span> and <span
+class="math inline">\(b\)</span> are integers. The set of pairs <span
+class="math inline">\((a, b)\)</span>, and therefore the set of
+fractions <span class="math inline">\(b / a\)</span>, is countable.</p>
+<p>In fact, even the set of all algebraic numbers is countable (see
+Exercise 2<span class="math inline">\()\)</span></p>
+<p>That not all infinite sets are, however, countable, is shown by the
+next theorem.</p>
+<p><strong>2.14 Theorem</strong> Let <span
+class="math inline">\(A\)</span> be the set of all sequences whose
+elements are the digits 0 and 1. This set <span
+class="math inline">\(A\)</span> is uncountable.</p>
+<p>The elements of <span class="math inline">\(A\)</span> are sequences
+like <span class="math inline">\(1,0,0,1,0,1,1,1, \ldots\)</span></p>
+<p>Proof Let <span class="math inline">\(E\)</span> be a countable
+subset of <span class="math inline">\(A\)</span>, and let <span
+class="math inline">\(E\)</span> consist of the sequences <span
+class="math inline">\(s_{1}, s_{2}, s_{3}, \ldots\)</span> We construct
+a sequence <span class="math inline">\(s\)</span> as follows. If the
+<span class="math inline">\(n\)</span>th digit in <span
+class="math inline">\(s_{n}\)</span> is 1 , we let the <span
+class="math inline">\(n\)</span>th digit of <span
+class="math inline">\(s\)</span> be 0 , and vice versa. Then the
+sequence <span class="math inline">\(s\)</span> differs from every
+member of <span class="math inline">\(E\)</span> in at least one place;
+hence <span class="math inline">\(s \notin E\)</span>. But clearly <span
+class="math inline">\(s \in A\)</span>, so that <span
+class="math inline">\(E\)</span> is a proper subset of <span
+class="math inline">\(A\)</span>.</p>
+<p>We have shown that every countable subset of <span
+class="math inline">\(A\)</span> is a proper subset of <span
+class="math inline">\(A\)</span>. It follows that <span
+class="math inline">\(A\)</span> is uncountable (for otherwise <span
+class="math inline">\(A\)</span> would be a proper subset of <span
+class="math inline">\(A\)</span>, which is absurd).</p>
+<p>The idea of the above proof was first used by Cantor, and is called
+Cantor’s diagonal process; for, if the sequences <span
+class="math inline">\(s_{1}, s_{2}, s_{3}, \ldots\)</span> are placed in
+an array like (16), it is the elements on the diagonal which are
+involved in the construction of the new sequence.</p>
+<p>Readers who are familiar with the binary representation of the real
+numbers (base 2 instead of 10 ) will notice that Theorem <span
+class="math inline">\(2.14\)</span> implies that the set of all real
+numbers is uncountable. We shall give a second proof of this fact in
+Theorem <span class="math inline">\(2.43 .\)</span></p>
+
+    </div>
+    
+</div>
+</div>
+
+                <div id="footer-wrapper">
+                    <footer class="footer"><footer class="row pl-3 pr-3">
+    <div class="col-12 d-flex justify-content-between align-items-center text-muted pl-0 pr-0">
+        <div class="footer-left">
+            <p class="mb-0"> © 2022 <a href="https://github.com/chen-gz">guangzong</a>. <span data-toggle="tooltip"
+                    data-placement="top"
+                    title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author.">All
+                    rights reserved.</span></p>
+        </div>
+        <div class="footer-right">
+            <p class="mb-0"> Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">hugo</a>
+                with <a href="https://github.com/chen-gz/hugo_zong" target="_blank" rel="noopener">zong</a>
+                theme.</p>
+        </div>
+    </div>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script> MathJax = {
+            tex: {
+                tags: 'ams',
+            }
+        };</script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</footer>
+</footer>
+                </div>
+            </div>
+            <div id="panel-wrapper" class="d-flex flex-column"><div id="toc-wrapper" class="mb-5 pl-2">
+    <span>Contents</span>
+    <nav id="toc" data-toggle="toc">
+        
+        
+        
+    </nav>
+</div>
+
+<div id="access-lastmod" class="pb-4 pl-2">
+    <div class="panel-heading">Recently Updated</div>
+    <ul class="post-content pl-3 pb-1 ml-1 mt-2">
+          
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/1-total-variation/">Total Variation</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-7/1-derivatives-of-measures/">Derivatives of Measures</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/3-consequences-of-the-radon-nikodym-theorem/">Consequences of the Radon-Nikodym Theorem</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/4-bounded-linear-functionals-on-lp/">Bounded linear functional on Lp</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/2-abosolute-continuity/">Abosolute Continuity</a></li>
+        
+    </ul>
+</div>
+
+<div id="access-tags" class="pl-2">
+    <div class="panel-heading">Trending Tags</div>
+    <div class="d-flex flex-wrap mt-3 mb-1 mr-3">
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/algorithm/">Algorithm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/android/">Android</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c/">C</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c-language/">c language</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/caddy/">Caddy</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cadence/">Cadence</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cdc/">CDC</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/classification/">classification</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/compress/">Compress</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/conf/">Conf</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/double-column/">Double Column</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/errno13/">Errno13</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/fish/">fish</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gan/">GAN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/git/">Git</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gtk/">Gtk</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/html/">Html</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/i3/">I3</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/idea/">Idea</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/java/">Java</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/latex/">Latex</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lda/">LDA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linear-programming/">Linear Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linux/">Linux</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lr/">LR</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/math/">Math</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mathematics/">Mathematics</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matlab/">Matlab</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matplot/">matplot</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/memory/">Memory</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mermaid/">Mermaid</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/misc/">Misc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/ml/">ML</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mosfet/">Mosfet</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/network/">Network</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/nn/">NN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pandoc/">Pandoc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pca/">PCA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/probability/">Probability</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/productive/">Productive</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/program/">Program</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/programming/">Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/python/">Python</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/qt/">Qt</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/random-variable/">Random Variable</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rcnn/">RCNN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rust/">Rust</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/security/">Security</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/software/">Software</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/std/">Std</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/svd/">Svd</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/tool/">Tool</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/usb/">USB</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vim/">Vim</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpn/">Vpn</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpnc/">Vpnc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/xterm/">xterm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/zsh/">Zsh</a>
+        
+    </div>
+</div>
+</div><div id="search-result-wrapper" class="d-flex justify-content-center unloaded">
+    <div class="col-12 col-sm-11 post-content">
+        <div id="search-hints"></div>
+        <div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3 col-12"></div>
+    </div>
+</div>
+
+<script src="/js/fuse.min.js"></script>
+<script src="/js/fastsearch.js"></script>
+
+
+</div>
+        <div id="mask"></div>
+        <a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button"
+            style="display: none">
+            <i class="fas fa-angle-up"></i>
+        </a>
+    </div>
+    
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>chapter 3 $L^p$-SPACES on Guangzong Blog</title>
+    <link>https://zongpitt.com/papa-rudin/ch-3/</link>
+    <description>Recent content in chapter 3 $L^p$-SPACES on Guangzong Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://zongpitt.com/papa-rudin/ch-3/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1 Convex Functions and Inequalities</title>
+      <link>https://zongpitt.com/papa-rudin/ch-3/1-convex-functons-and-inequalities/</link>
+      <pubDate>Fri, 28 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/papa-rudin/ch-3/1-convex-functons-and-inequalities/</guid>
+      <description>Many of the most common inequalities in analysis have their origin in the notion of convexity.
+3.1 Definition A real function \(\varphi\) defined on a segment \((a, b)\), where \(-\infty \leq a&amp;lt;b \leq \infty\), is called convex if the inequality
+\[ \begin{equation} \varphi((1-\lambda) x+\lambda y) \leq(1-\lambda) \varphi(x)+\lambda \varphi(y) \end{equation} \]
+holds whenever \(a&amp;lt;x&amp;lt;b, a&amp;lt;y&amp;lt;b\), and \(0 \leq \lambda \leq 1\). Graphically, the condition is that if \(x&amp;lt;t&amp;lt;y\), then the point \((t, \varphi(t))\) should lie below or on the line connecting the points \((x, \varphi(x))\) and \((y, \varphi(y))\) in the plane.</description>
+    </item>
+    
+    <item>
+      <title>2 The $L^p$-spaces</title>
+      <link>https://zongpitt.com/papa-rudin/ch-3/2-the-lp-sapce/</link>
+      <pubDate>Fri, 28 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/papa-rudin/ch-3/2-the-lp-sapce/</guid>
+      <description>In this section, \(X\) will be an arbitrary measure space with a positive measure \(\mu\).
+3.6 Definition If \(0&amp;lt;p&amp;lt;\infty\) and if \(f\) is a complex measurable function on \(X\), define
+\[ \|f\|_p=\left\{\int_X|f|^p d \mu\right\}^{1 / p} \]
+and let \(L^p(\mu)\) consist of all \(f\) for which
+\[ \|f\|_p&amp;lt;\infty . \]
+We call \(\|f\|_p\) the \(L^p\)-norm of \(f\).
+If \(\mu\) is Lebesgue measure on \(R^k\), we write \(L^p\left(R^k\right)\) instead of \(L^p(\mu)\), as in Sec.</description>
+    </item>
+    
+    <item>
+      <title>3 Approximation by Continuous Functions</title>
+      <link>https://zongpitt.com/papa-rudin/ch-3/3-approximation-by-continuous-functions/</link>
+      <pubDate>Fri, 28 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/papa-rudin/ch-3/3-approximation-by-continuous-functions/</guid>
+      <description>So far we have considered \(L^p(\mu)\) on any measure space. Now let \(X\) be a locally compact Hausdorff space, and let \(\mu\) be a measure on a \(\sigma\)-algebra \(\mathfrak{M}\) in \(X\), with the properties stated in Theorem 2.14. For example, \(X\) might be \(R^k\), and \(\mu\) might be Lebesgue measure on \(R^k\).
+Under these circumstances, we have the following analogue of Theorem 3.13:
+3.14 Theorem For \(1 \leq p&amp;lt;\infty, C_c(X)\) is dense in \(L^p(\mu)\).</description>
+    </item>
+    
+  </channel>
+</rss>

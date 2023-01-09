@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Productive on Guangzong Blog</title>
+    <link>https://zongpitt.com/tags/productive/</link>
+    <description>Recent content in Productive on Guangzong Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 19 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://zongpitt.com/tags/productive/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Typora PicGo Setup</title>
+      <link>https://zongpitt.com/posts/2020-10-19-typora-picgo-setup/</link>
+      <pubDate>Mon, 19 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-10-19-typora-picgo-setup/</guid>
+      <description>File -&amp;gt; Preferences -&amp;gt; Image -&amp;gt; upload images
+{ &amp;quot;picBed&amp;quot;: { &amp;quot;current&amp;quot;: &amp;quot;github&amp;quot;, &amp;quot;github&amp;quot;: { &amp;quot;repo&amp;quot;: &amp;quot;chen-gz/picBed&amp;quot;, &amp;quot;branch&amp;quot;: &amp;quot;master&amp;quot;, &amp;quot;token&amp;quot;: &amp;quot;35823da939bd7717afde1449c852a25a26d73bfe&amp;quot;, &amp;quot;path&amp;quot;: &amp;quot;&amp;quot;, &amp;quot;customUrl&amp;quot;: &amp;quot;&amp;quot; } }, &amp;quot;picgoPlugins&amp;quot;: {} } </description>
+    </item>
+    
+  </channel>
+</rss>

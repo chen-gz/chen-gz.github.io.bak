@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>algorithm on Guangzong Blog</title>
+    <link>https://zongpitt.com/algorithm/</link>
+    <description>Recent content in algorithm on Guangzong Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://zongpitt.com/algorithm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Binary indexed tree (Fenwick Tree)</title>
+      <link>https://zongpitt.com/algorithm/binary-indexed-tree/</link>
+      <pubDate>Wed, 24 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/algorithm/binary-indexed-tree/</guid>
+      <description>Background A Fenwick tree or binary indexed tree is a data structure that can efficiently update elements and calculate prefix sums in a table of numbers.1
+Space and Time Complexity
+\[ \begin{array}{lll} \text { Algorithm } &amp;amp; \text { Average } &amp;amp; \text { Worst case } \\ \text { Space } &amp;amp; \mathrm{O}(n) &amp;amp; \mathrm{O}(n) \\ \text { Search } &amp;amp; \mathrm{O}(\log n) &amp;amp; \mathrm{O}(\log n) \\ \text { Insert } &amp;amp; \mathrm{O}(\log n) &amp;amp; \mathrm{O}(\log n) \\ \text { Delete } &amp;amp; \mathrm{O}(\log n) &amp;amp; \mathrm{O}(\log n) \end{array} \]</description>
+    </item>
+    
+    <item>
+      <title>Breadth-first search</title>
+      <link>https://zongpitt.com/algorithm/breadth-first-search/</link>
+      <pubDate>Wed, 24 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/algorithm/breadth-first-search/</guid>
+      <description>Background Breadth-first search (BFS) is an algorithm for searching a tree data structure for a node that satisfies a given property. It starts at the tree root and explores all nodes at the present depth prior to moving on to the nodes at the next depth level. Extra memory, usually a queue, is needed to keep track of the child nodes that were encountered but not yet explored.1
+Implementation Generally, BFS is implemented using a queue.</description>
+    </item>
+    
+    <item>
+      <title>dynamic programming</title>
+      <link>https://zongpitt.com/algorithm/dynamic-programming/</link>
+      <pubDate>Wed, 24 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/algorithm/dynamic-programming/</guid>
+      <description>Abstract Dynamic Programming is a very important topic in Computer Science, Operations research, Reinforcement learning, and so on.
+When different areas people talk about dynamic programming, they may have a different understanding of dynamic programming. This post will give a mathematical definition of dynamic programming and give some examples of programming algorithms. In the future, I will like to write some dynamic programming in control theory (optimal control) and reinforcement learning.</description>
+    </item>
+    
+    <item>
+      <title>Fast Fourier tranform</title>
+      <link>https://zongpitt.com/algorithm/fast-fourier-transform/</link>
+      <pubDate>Wed, 24 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/algorithm/fast-fourier-transform/</guid>
+      <description>A fast Fourier transform (FFT) is an algorithm that computes the discrete Fourier transform (DFT) of a sequence, or its inverse (IDFT). 1
+The last post is really good for understand and implement fft.
+The part I want to explain is for following statement in the post.
+This function works with polynomials with integer coefficients, however you can also adjust it to work with other types. Since there is some error when working with complex numbers, we need round the resulting coefficients at the end.</description>
+    </item>
+    
+    <item>
+      <title>Segment Tree</title>
+      <link>https://zongpitt.com/algorithm/segment-tree/</link>
+      <pubDate>Wed, 24 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/algorithm/segment-tree/</guid>
+      <description>Background In computer science, a segment tree, also known as a statistic tree, is a tree data structure used for storing information about intervals, or segments. It allows querying which of the stored segments contain a given point. It is, in principle, a static structure; that is, it’s a structure that cannot be modified once it’s built. A similar data structure is the interval tree.1
+Space Complexity: \(O(n\log n)\)
+Time Complexity:</description>
+    </item>
+    
+    <item>
+      <title>bitset</title>
+      <link>https://zongpitt.com/algorithm/bitset/</link>
+      <pubDate>Thu, 28 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/algorithm/bitset/</guid>
+      <description>#include &amp;lt;iostream&amp;gt; #include &amp;lt;set&amp;gt; #include &amp;lt;vector&amp;gt; #include &amp;lt;assert.h&amp;gt; #define endl &amp;quot;\n&amp;quot; using namespace std; class g_bitset { private: vector&amp;lt;unsigned long long&amp;gt; val; int max_index = 0; int max = 0; public: g_bitset() { val.resize(5010); std::fill(val.begin(), val.end(), 0ull); } // add the nth bit void add(int n) { int index = n / 64; int pos = n % 64; while (__builtin_add_overflow(val[index],(1ull &amp;lt;&amp;lt; pos), &amp;amp;val[index])) { pos = 0; index++; } if (index &amp;gt;= max_index) { max_index = index; max =(63 - __builtin_clzll(val[max_index])) + 64 * (max_index); } } void sub(int n) { int index = n / 64; int pos = n % 64; unsigned long long tmp = 0; while (__builtin_sub_overflow(val[index], (1ull &amp;lt;&amp;lt; pos), &amp;amp;val[index])) { pos = 0; index++; } if (index &amp;gt;= max_index) { while(val[index] == 0) index --; max_index = index; max =(63 - __builtin_clzll(val[max_index])) + 64 * (max_index); } } int get_max() { return max; } }; int main() { ios_base::sync_with_stdio(false); cin.</description>
+    </item>
+    
+    <item>
+      <title>Topology Sort</title>
+      <link>https://zongpitt.com/algorithm/topology-sort/</link>
+      <pubDate>Wed, 04 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/algorithm/topology-sort/</guid>
+      <description>Graph The graph has 3 member variables. edges store all edges. To retrieve an edge the index of the edge is required. So there are other member variables g to store the index of the edges. The content in g[i] are the edges index which start from node i. The member variable n is number of node. The node index in this template is [0, n-1].
+The edge have three attribution, from, to, cost.</description>
+    </item>
+    
+    <item>
+      <title>sort</title>
+      <link>https://zongpitt.com/algorithm/sort/</link>
+      <pubDate>Sun, 14 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/algorithm/sort/</guid>
+      <description>bubble sort Time Complex \(O(n^2)\).
+choose two value to compare each time.
+‘-’ present small one ‘+’ present large one
+-+****** *-+***** **-+**** ... The fellow code write using python
+a = [10, 203, 2, 5, 444, 333, 333, 666, 777] for i in range(len(a)): for j in range(i,len(a)): if(a[i] &amp;gt; a[j]): tmp = a[j] a[j] = a[i] a[i] = tmp print(a) choose sort time complexity \(O(n^2)\)， choose minumum value in the list each time.</description>
+    </item>
+    
+    <item>
+      <title>inverse gcd</title>
+      <link>https://zongpitt.com/algorithm/inverse_modulo/</link>
+      <pubDate>Mon, 18 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/algorithm/inverse_modulo/</guid>
+      <description>Background wikipedia &amp;gt; 模反元素也称为模倒数，或者模逆元。
+\(ax \equiv 1 (\mod m)\) \(x \equiv a^{-1} (\mod m)\) \(a\) 与 \(x\) 互为乘法逆元
+####扩展欧几里得算法
+欧几里得算法(GCD)
+\(ax \equiv 1\ (mod m) \Rightarrow ax + my = 1\) 求出上述方程整数解即可,如果解出\(x\)为负数,\(a(x+m) +m(y-a) = 1\)也成立,即\(x+m\)同样满足方程的解
+用欧几里得算法(辗转相除法)计算\(a,m\)的最大公因素\((a,m)= 1\)保留中间计算的过程.最后进行叠加.
+python
+def ext_euclid(a, b): b == 0: return 1, 0, a else: x, y, q = ext_euclid(b, a % b) # q = gcd(a, b) = gcd(b, a%b) print(str(x)+&amp;quot; &amp;quot;+str(y)+&amp;quot; &amp;quot;+str(q)) x, y = y, (x - (a // b) * y) return x, y, q ext_euclid(3,7) // this function will return gcd, x, y are return as reference parameter.</description>
+    </item>
+    
+    <item>
+      <title>package question</title>
+      <link>https://zongpitt.com/algorithm/package/</link>
+      <pubDate>Sun, 17 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/algorithm/package/</guid>
+      <description>问题描述 有\(m\)种物品，第\(i\)种物品有\(x_i\)个,重量为\(w_i\),背包大小为\(n\). 问有多少种装满背包的方法。
+动态规划 对于每种物体有\(x_i\)种策略 \(dp[j] = dp[j-w_i] + dp[j-2*w_i]+...\)
+cnt = [3, 2, 1, 0, 0] # 个数 w = [1, 2, 3, 4, 5] # 重量 dp = [0 for i in range(int(20))] dp[0] = 1 # dp[i] 代表背包大小为i时有多少种取法 for i in range(len(cnt)): for j in range(len(dp) - 1, w[i] - 1, -1): k = 1 while k &amp;lt;= cnt[i]: if j &amp;gt;= k * w[i]: dp[j] += dp[j - k * w[i]] k += 1 </description>
+    </item>
+    
+    <item>
+      <title>power</title>
+      <link>https://zongpitt.com/algorithm/power/</link>
+      <pubDate>Sun, 17 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/algorithm/power/</guid>
+      <description>通过二分的思想快速求幂\(x^{n}\)
+将\(n\)分解成\(2^{0},2^{1},2^{2},2^{3},...,2^{m}\)的组合(相当于将\(n\)用二进制表示)
+说明:python库函数用的是快速幂
+def mod_pow(x, n, mod): ans = 1 while n != 0: if n &amp;amp; 1 != 0: ans = (ans * x) % mod x = x*x % mod n &amp;gt;&amp;gt;= 1 return ans C++
+ll poww(ll base, ll exp, ll mod) { ll ans = 1; while (exp) { if (exp &amp;amp; 1) ans = ans * base % mod; base = base * base % mod; exp &amp;gt;&amp;gt;= 1; } return ans; } </description>
+    </item>
+    
+    <item>
+      <title>Longest Common Subsequence</title>
+      <link>https://zongpitt.com/algorithm/longest-common-subsequence/</link>
+      <pubDate>Sat, 16 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/algorithm/longest-common-subsequence/</guid>
+      <description>定义 子序列
+在数学中，某个序列的子序列是从最初序列通过去除某些元素但不破坏余下元素的相对位置（在前或在后）而形成的新序列。
+最大公共子序列(LCS)
+一个数列\(S\)，如果分别是两个或多个已知数列的子序列，且是所有符合此条件序列中最长的，则\(S\)称为已知序列的最长公共子序列。
+动态规划 \(X = {x_1,x_2,...,x_m}\)
+\(Y = {y_1,y_2,...,y_n}\)
+\(Z = {z_1,z_2,...,z_k}\)
+4 假设\(Z\)是\(X,Y\)的最大公共子序列.
+* 如果\(x_m = y_n\), 则\(z_k=x_m=y_n\),且\(Z_k-1\) 是\(X_m-1\)和\(Y_n-1\)的\(LCS\) * 如果\(x_m \not= y_n\),则\(Z\)是\(X_m-1\)和\(Y_n\)的\(LCS\)或是\(X_m\)和\(Y_n-1\)的\(LCS\)
+\(c[i][j]\)表示\(\{x_1,x_2,...,x_i\}\)和\(\{y1,y_2,...,y_j\}\)的最大公共子序列的元素个数
+\[ c[i,j]= \left \{ \begin{array}{l} 0 &amp;amp; i=0\ or\ j=0 \\ c[i-1,j-1] + 1 &amp;amp; i,j&amp;gt;0\ and\ x_i = y_j \\ max(c[i,j-1],c[i-1,j]) &amp;amp; i,j&amp;gt;0\ and\ x_i \not= y_j \\ \end{array} \right. \]
+def lcs(a, b): c = [[0 for i in range(len(a)+1)] for i in range(len(b)+1)] for i in range(len(a)+1): for j in range(len(b)+1): if i == 0 or j == 0: c[i][j] = 0 elif a[i-1] == b[j-1]: c[i][j] = c[i-1][j-1] + 1 else: c[i][j] = max(c[i-1][j], c[i][j-1]) return c[len(a)][len(b)] public static int lcs(String str1, String str2) { int len1 = str1.</description>
+    </item>
+    
+    <item>
+      <title>Greatest Common Divisor</title>
+      <link>https://zongpitt.com/algorithm/greatest-common-divisor/</link>
+      <pubDate>Fri, 15 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/algorithm/greatest-common-divisor/</guid>
+      <description>int gcd(int a, int b){ if (b == 0) return a; return gcd(b, a%b); } </description>
+    </item>
+    
+    <item>
+      <title>prime numbers</title>
+      <link>https://zongpitt.com/algorithm/primes/</link>
+      <pubDate>Fri, 15 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/algorithm/primes/</guid>
+      <description>#include &amp;lt;cstring&amp;gt; #define maxn 555555 //素数保存在prime数组 int mark[maxn], prime[maxn], res; void get_prime(int n) { //从2----n的素数 memset(mark, 0, sizeof(mark)); res = 0; for (int i = 2; i &amp;lt;= n; i++) { if (!mark[i]) mark[i] = prime[res++] = i; for (int j = 0; j &amp;lt; res &amp;amp;&amp;amp; prime[j] * i &amp;lt;= n; j++) { mark[i*prime[j]] = prime[j]; if (i%prime[j] == 0) break; } } } </description>
+    </item>
+    
+  </channel>
+</rss>

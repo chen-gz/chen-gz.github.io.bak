@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>codeforces 788 Div. 2 on Guangzong Blog</title>
+    <link>https://zongpitt.com/codeforces/788-div2/</link>
+    <description>Recent content in codeforces 788 Div. 2 on Guangzong Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://zongpitt.com/codeforces/788-div2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>788E Hemose on the Tree</title>
+      <link>https://zongpitt.com/codeforces/788-div2/e/</link>
+      <pubDate>Sat, 07 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/codeforces/788-div2/e/</guid>
+      <description>Problem link https://codeforces.com/contest/1670/problem/E
+Solution The numbers we need to assign is \([1, 2n-1]\) . there are \(2n-1\) numbers, if we take \(2^p\) out, we can divide rest of number to 2 group \([x, x+2^p]\). where \(p = log_2(n)\). Now we select random node as root and assign \(2^p\) to the root. If father greater equal than \(2^p\) we assign node as \(x\), edge as \(x + 2^p\). else we will do inversely.</description>
+    </item>
+    
+    <item>
+      <title>788F  Jee, You See?</title>
+      <link>https://zongpitt.com/codeforces/788-div2/f/</link>
+      <pubDate>Sat, 07 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/codeforces/788-div2/f/</guid>
+      <description>Problem link https://codeforces.com/contest/1670/problem/F
+This is two dimension dynamic problem. There are three constrains in the original problem. \[ \begin{align} a_1 + a_2 + \dots + a_n \geq l\\ a_1 + a_2 + \dots + a_n \leq r \\ a_1 \oplus a_2 \oplus \dots \oplus a_n = z \end{align} \] Let’s consider only second condition from the beginning.
+We going start add bits one by one to satisfy the constrain since there is a constrains related to bitwise xor.</description>
+    </item>
+    
+    <item>
+      <title>788B Dorms War</title>
+      <link>https://zongpitt.com/codeforces/788-div2/b/</link>
+      <pubDate>Fri, 06 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/codeforces/788-div2/b/</guid>
+      <description>Problem link https://codeforces.com/contest/1670/problem/B
+Solution If we do simulate the process. We will get TLE since the test case is large enough. We can find the all character can be delete before and special character. If there an special character after an special character, this special character will be delete. But even this special character is been deleted it will not affect how many times need to delete the character before this character.</description>
+    </item>
+    
+    <item>
+      <title>788C Where is the Pizza?</title>
+      <link>https://zongpitt.com/codeforces/788-div2/c/</link>
+      <pubDate>Fri, 06 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/codeforces/788-div2/c/</guid>
+      <description>Problem link https://codeforces.com/contest/1670/problem/C
+Solution For some position we don’t have any choice. It can only from array \(a\) or array \(b\). These position is numbers contains in \(d\) and related to \(d\).
+We can build a graph from \(a[i]\) to \(b[i]\) for all \(i\). Then we remove the edge for those number already appeared in \(d\). Then we find the number of disconnect component \(cnt\). For each disconnect component we have 2 choice.</description>
+    </item>
+    
+    <item>
+      <title>788D Very Suspicious</title>
+      <link>https://zongpitt.com/codeforces/788-div2/d/</link>
+      <pubDate>Fri, 06 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/codeforces/788-div2/d/</guid>
+      <description>Problem link https://codeforces.com/contest/1670/problem/D
+Solution There are 3 kinds for lines \, /, —. When we add a new line to the graph it will across with two other different type of line. Each cross will increase 2 equilateral triangles.
+#include &amp;lt;bits/stdc++.h&amp;gt; #define endl &amp;quot;\n&amp;quot; using namespace std; #define fastio cin.tie(0), cout.tie(0), ios_base::sync_with_stdio(0); int32_t main() { fastio int t; cin &amp;gt;&amp;gt; t; int cnt = 0; vector&amp;lt;int&amp;gt; v; v.push_back(0); for (int i = 0; i &amp;lt; 1e9; i++) { v.</description>
+    </item>
+    
+  </channel>
+</rss>

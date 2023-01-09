@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Optimal controls on Guangzong Blog</title>
+    <link>https://zongpitt.com/optimal-control/</link>
+    <description>Recent content in Optimal controls on Guangzong Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 12 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://zongpitt.com/optimal-control/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Optimal Control HW2</title>
+      <link>https://zongpitt.com/optimal-control/hw2/</link>
+      <pubDate>Wed, 12 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/optimal-control/hw2/</guid>
+      <description>Guangzong Chen
+Problem 1 First we use equation
+\[ G_{0, N} \equiv \sum_{i=0}^{N-1} A^{N-i-1} B R^{-1} B^{\mathrm{T}}\left(A^{\mathrm{T}}\right)^{N-i-1} \]
+get \(G_{0, N} = 5.3281\). Then we use follwing equation to get optimal control
+\[ u_k^*=-R^{-1} B^{\mathrm{T}} \lambda_{k+1}=R^{-1} B^{\mathrm{T}}\left(A^{\mathrm{T}}\right)^{N-k-1} G_{0, N}^{-1}\left(r_N-A^N x_0\right) \]
+The control value I have is \(u_0 = 0.1173\) \(u_1 = 0.2346\) \(u_2 = 0.4692\) \(u_3 = 0.9384\) \(u_4 = 1.8768\)
+Problem 2 Use c2d to discretized the system. Then we have following parameters for discrete system.</description>
+    </item>
+    
+    <item>
+      <title>Optimal Control HW1</title>
+      <link>https://zongpitt.com/optimal-control/hw1/</link>
+      <pubDate>Tue, 27 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/optimal-control/hw1/</guid>
+      <description>Problem 1 Let \(t_1 = (x_3 - x_1)^2 + (y_3 - y_1)^2\), \(t_2 = (x_3 - x_2)^2 + (y_3 - y_2)^2\), then \(d_1 = \sqrt{t_1}\), \(d_2 = \sqrt{t_2}\).
+The problem formula as follow:
+\[ \begin{equation} \begin{aligned} \min &amp;amp; d_1 \\ \textrm{s.t.} &amp;amp; \quad d_1 = d_2 \end{aligned} \end{equation} \]
+Since \(t_1, t_2 &amp;gt; 0\), so we can solve (2) problem instead (1).
+\[ \begin{equation} \begin{aligned} \min &amp;amp; \quad t_1 \\ \textrm{s.</description>
+    </item>
+    
+  </channel>
+</rss>

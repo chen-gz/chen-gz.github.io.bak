@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>4 Continuity on Guangzong Blog</title>
+    <link>https://zongpitt.com/baby-rudin/ch-4/</link>
+    <description>Recent content in 4 Continuity on Guangzong Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://zongpitt.com/baby-rudin/ch-4/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>INFINITE LIMITS AND LIMITS AT INFINITY</title>
+      <link>https://zongpitt.com/baby-rudin/ch-4/7-infinite-limits-and-limits-at-infinity/</link>
+      <pubDate>Tue, 26 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/ch-4/7-infinite-limits-and-limits-at-infinity/</guid>
+      <description>To enable us to operate in the extended real number system, we shall now enlarge the scope of Definition 4.1, by reformulating it in terms of neighborhoods.
+For any real number \(x\), we have already defined a neighborhood of \(x\) to be any segment \((x-\delta, x+\delta)\). 4.32 Definition For any real \(c\), the set of real numbers \(x\) such that \(x&amp;gt;c\) is called a neighborhood of \(+\infty\) and is written \((c,+\infty)\).</description>
+    </item>
+    
+    <item>
+      <title>DISCONTINUITIES</title>
+      <link>https://zongpitt.com/baby-rudin/ch-4/5-discontinuities/</link>
+      <pubDate>Sun, 24 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/ch-4/5-discontinuities/</guid>
+      <description>If \(x\) is a point in the domain of definition of the function \(f\) at which \(f\) is not continuous, we say that \(f\) is discontinuous at \(x\), or that \(f\) has a discontinuity at \(x\). If \(f\) is defined on an interval or on a segment, it is customary to divide discontinuities into two types. Before giving this classification, we have to define the right-hand and the left-hand limits of \(f\) at \(x\), which we denote by \(f(x+)\) and \(f(x-)\), respectively.</description>
+    </item>
+    
+    <item>
+      <title>MONOTONIC FUNCTIONS</title>
+      <link>https://zongpitt.com/baby-rudin/ch-4/6-monotonic-functions/</link>
+      <pubDate>Sun, 24 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/ch-4/6-monotonic-functions/</guid>
+      <description>We shall now study those functions which never decrease (or never increase) on a given segment.
+4.28 Definition Let \(f\) be real on \((a, b)\). Then \(f\) is said to be monotonically increasing on \((a, b)\) if \(a&amp;lt;x&amp;lt;y&amp;lt;b\) implies \(f(x) \leq f(y)\). If the last inequality is reversed, we obtain the definition of a monotonically decreasing function. The class of monotonic functions consists of both the increasing and the decreasing functions.</description>
+    </item>
+    
+    <item>
+      <title>CONTINUITY AND CONNECTEDNESS</title>
+      <link>https://zongpitt.com/baby-rudin/ch-4/4-continuity-and-connectedness/</link>
+      <pubDate>Sat, 23 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/ch-4/4-continuity-and-connectedness/</guid>
+      <description>4.22 Theorem If \(f\) is a continuous mapping of a metric space \(X\) into a metric space \(Y\), and if \(E\) is a connected subset of \(X\), then \(f(E)\) is connected.
+Proof Assume, on the contrary, that \(f(E)=A \cup B\), where \(A\) and \(B\) are nonempty separated subsets of \(Y\). Put \(G=E \cap f^{-1}(A), H=E \cap f^{-1}(B)\). Then \(E=G \cup H\), and neither \(G\) nor \(H\) is empty.
+Since \(A \subset \bar{A}\) (the closure of \(A\) ), we have \(G \subset f^{-1}(\bar{A})\); the latter set is closed, since \(f\) is continuous; hence \(\bar{G} \subset f^{-1}(\bar{A})\).</description>
+    </item>
+    
+    <item>
+      <title>CONTINUITY AND COMPACTNESS</title>
+      <link>https://zongpitt.com/baby-rudin/ch-4/3-continuity-and-compactness/</link>
+      <pubDate>Wed, 20 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/ch-4/3-continuity-and-compactness/</guid>
+      <description>4.13 Definition A mapping \(f\) of a set \(E\) into \(R^{k}\) is said to be bounded if there is a real number \(M\) such that \(|\mathrm{f}(x)| \leq M\) for all \(x \in E\).
+4.14 Theorem Suppose \(f\) is a continuous mapping of a compact metric space \(X\) into a metric space \(Y\). Then \(f(X)\) is compact.
+Proof Let \(\left\{V_{\alpha}\right\}\) be an open cover of \(f(X)\). Since \(f\) is continuous, Theorem \(4.</description>
+    </item>
+    
+    <item>
+      <title>CONTINUOUS FUNCTIONS</title>
+      <link>https://zongpitt.com/baby-rudin/ch-4/2-continuous-functions/</link>
+      <pubDate>Wed, 20 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/ch-4/2-continuous-functions/</guid>
+      <description>4.5 Definition Suppose \(X\) and \(Y\) are metric spaces, \(E \subset X, p \in E\), and \(f\) maps \(E\) into \(Y\). Then \(f\) is said to be continuous at \(p\) if for every \(\varepsilon&amp;gt;0\) there exists a \(\delta&amp;gt;0\) such that \[ d_{\mathbf{Y}}(f(x), f(p))&amp;lt;\varepsilon \] for all points \(x \in E\) for which \(d_{X}(x, p)&amp;lt;\delta\). If \(f\) is continuous at every point of \(E\), then \(f\) is said to be continuous on \(E\).</description>
+    </item>
+    
+    <item>
+      <title>CONTINUITY</title>
+      <link>https://zongpitt.com/baby-rudin/ch-4/0-intro/</link>
+      <pubDate>Mon, 18 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/ch-4/0-intro/</guid>
+      <description>The function concept and some of the related terminology were introduced in Definitions \(2.1\) and \(2.2\). Although we shall (in later chapters) be mainly interested in real and complex functions (i.e., in functions whose values are real or complex numbers) we shall also discuss vector-valued functions (i.e., functions with values in \(R^{k}\) ) and functions with values in an arbitrary metric space. The theorems we shall discuss in this general setting would not become any easier if we restricted ourselves to real functions, for instance, and it actually simplifies and clarifies the picture to discard unnecessary hypotheses and to state and prove theorems in an appropriately general context.</description>
+    </item>
+    
+    <item>
+      <title>LIMITS OF FUNCTIONS</title>
+      <link>https://zongpitt.com/baby-rudin/ch-4/1-limits-of-functions/</link>
+      <pubDate>Mon, 18 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/ch-4/1-limits-of-functions/</guid>
+      <description>4.1 Definition Let \(X\) and \(Y\) be metric spaces; suppose \(E \subset X, f\) maps \(E\) into \(Y\), and \(p\) is a limit point of \(E\). We write \(f(x) \rightarrow q\) as \(x \rightarrow p\), or \[ \lim _{x \rightarrow p} f(x)=q \] if there is a point \(q \in Y\) with the following property: For every \(\varepsilon&amp;gt;0\) there exists a \(\delta&amp;gt;0\) such that \[ d_{Y}(f(x), q)&amp;lt;\varepsilon \] for all points \(x \in E\) for which</description>
+    </item>
+    
+  </channel>
+</rss>

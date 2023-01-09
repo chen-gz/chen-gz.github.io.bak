@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css"
+        class="dark-mode-native-dark-original" />
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+     
+    <link rel="stylesheet" href="https://zongpitt.com/sass/main.06935202011a97ba473ebeeb0cb6788daa9fb5a9fff471a4e85850293d1c5ac4.css" />
+    <title>
+          Guangzong Blog | 9 VECTOR ANALYSIS
+    </title>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.bundle.min.js"></script>
+    <script src=" https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.js"></script>
+
+    <script
+        src="https://cdn.jsdelivr.net/combine/npm/magnific-popup@1/dist/jquery.magnific-popup.min.js,npm/lozad/dist/lozad.min.js,npm/clipboard@2/dist/clipboard.min.js"></script>
+    <script type="text/javascript" src="/js/commons/back-to-top.js"></script>
+    
+    
+    
+    <script type="text/javascript" src="/js/commons/topbar-switch.js"></script>
+    <script type="text/javascript" src="/js/commons/sidebar.js"></script>
+    <script type="text/javascript" src="/js/utils/category-collapse.js"></script>
+    <script type="text/javascript" src="/js/utils/checkbox.js"></script>
+    <script type="text/javascript" src="/js/utils/clipboard.js"></script>
+    <script type="text/javascript" src="/js/utils/img-extra.js"></script>
+    <script type="text/javascript" src="/js/utils/pageviews.js"></script>
+    
+    <script type="text/javascript" src="/js/utils/timeago.js"></script>
+    
+    
+</head>
+<body data-spy="scroll" data-target="#toc" data-topbar-visible="true" class="d-flex"><div id="sidebar" class="d-flex flex-column align-items-end">
+    <div class="profile-wrapper text-center">
+
+        <div id="avatar">
+            <a href="/" alt="avatar" class="mx-auto"> <img src=https://github.com/chen-gz/chen-gz/blob/main/mine_square.jpg?raw&#61;truehttps://raw.githubusercontent.com/chen-gz/chen-gz/blob/main/mine_square.jpg alt="avatar"
+                    onerror="this.style.display='none'"> </a>
+        </div>
+
+        <div class="site-title mt-3"> <a href="/">Guangzong</a> </div>
+        <div class="site-subtitle font-italic">Welcome to my blog</div>
+    </div>
+
+    <ul>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/">
+                <span>
+                    Home
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/archive/">
+                <span>
+                    Archive
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/tags/">
+                <span>
+                    Tags
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/about/">
+                <span>
+                    About
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/categories/">
+                <span>
+                    Categories
+                </span>
+            </a>
+        </li>
+        
+    </ul>
+
+    <div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center align-items-center">
+        <button class="mode-toggle btn" aria-label="Switch Mode"> 
+            <i class="fas fa-adjust"></i> 
+        </button>
+
+        <span class="icon-border"></span>
+        <a href="https://github.com/chen-gz" aria-label="github" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i>
+        </a>
+
+        <a href=" javascript:location.href = 'mailto:' + ['chen-gz','outlook.com'].join('@')" aria-label="email">
+            <i class="fas fa-envelope"></i>
+        </a>
+
+        <a href="/feed.xml" aria-label="rss"> <i class="fas fa-rss"></i> </a>
+    </div>
+
+    
+    
+</div>
+<div id="all-wrapper" class="d-flex flex-column"><div id="topbar-wrapper">
+    <div id="topbar" class="d-flex">
+        
+        <span id="breadcrumb" class="d-flex">
+              
+               
+            
+            
+            <div><a href='https://zongpitt.com/'>Home</a></div>
+              
+              
+            
+            <div><a href="https://zongpitt.com/baby-rudin">baby-rudin</a></div>
+               
+              
+            
+            <div><a href="https://zongpitt.com/baby-rudin/10-integration-of-differential-forms">10-integration-of-differential-forms</a></div>
+               
+                 
+                
+        </span>
+        <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i>
+        <div id="topbar-title">Guangzong</div>
+        <i id="search-trigger" class="fas fa-search fa-fw"></i>
+        <span id="search-wrapper" class="align-items-center">
+            <i class="fas fa-search fa-fw"></i>
+            <input class="form-control" id="search-input" type="search" aria-label="search" autocomplete="off"
+                placeholder="Search..." />
+            <i class="fa fa-times-circle fa-fw" id="search-cleaner"></i>
+        </span>
+    </div>
+</div>
+<div id="main-wrapper" class="d-flex mt-3">
+            <div id="core-wrapper" class="d-flex flex-column">
+                <div id="main" class="d-flex flex-column">
+                    
+<div class="post pl-1 pr-1 pl-md-2 pr-md-2">
+    
+    <div id="post-content">
+        <h1 style="text-align: center;">9 VECTOR ANALYSIS</h1>
+        <br>
+        
+        <p>We conclude this chapter with a few applications of the preceding
+material to theorems concerning vector analysis in <span
+class="math inline">\(R^{3}\)</span>. These are special cases of
+theorems about differential forms, but are usually stated in different
+terminology. We are thus faced with the job of translating from one
+language to another.</p>
+<p><strong>10.42 Vector fields</strong> Let <span
+class="math inline">\(F=F_{1} \mathbf{e}_{1}+F_{2} \mathbf{e}_{2}+F_{3}
+\mathbf{e}_{3}\)</span> be a continuous mapping of an open set <span
+class="math inline">\(E \subset R^{3}\)</span> into <span
+class="math inline">\(R^{3}\)</span>. Since <span
+class="math inline">\(\mathbf{F}\)</span> associates a vector to each
+point of <span class="math inline">\(E, \mathbf{F}\)</span> is sometimes
+called a vector field, especially in physics. With every such <span
+class="math inline">\(\mathbf{F}\)</span> is associated a 1-form</p>
+<p><span class="math display">\[
+\begin{equation}
+\lambda_{\mathbf{F}}=F_{1} d x+F_{2} d y+F_{3} d z
+\label{eq:124}
+\end{equation}
+\]</span></p>
+<p>and a 2 -form</p>
+<p><span class="math display">\[
+\begin{equation}
+\omega_{\mathrm{F}}=F_{1} d y \wedge d z+F_{2} d z \wedge d x+F_{3} d x
+\wedge d y .
+\label{eq:125}
+\end{equation}
+\]</span></p>
+<p>Here, and in the rest of this chapter, we use the customary notation
+<span class="math inline">\((x, y, z)\)</span> in place of <span
+class="math inline">\(\left(x_{1}, x_{2}, x_{3}\right)\)</span>.</p>
+<p>It is clear, conversely, that every 1 -form <span
+class="math inline">\(\lambda\)</span> in <span
+class="math inline">\(E\)</span> is <span
+class="math inline">\(\lambda_{\mathbf{F}}\)</span> for some vector
+field <span class="math inline">\(\mathbf{F}\)</span> in <span
+class="math inline">\(E\)</span>, and that every 2 -form <span
+class="math inline">\(\omega\)</span> is <span
+class="math inline">\(\omega_{\mathbf{F}}\)</span> for some <span
+class="math inline">\(\mathbf{F}\)</span>. In <span
+class="math inline">\(R^{3}\)</span>, the study of 1-forms and 2-forms
+is thus coextensive with the study of vector fields.</p>
+<p>If <span class="math inline">\(u \in \mathscr{C}^{\prime}(E)\)</span>
+is a real function, then its gradient</p>
+<p><span class="math display">\[
+\nabla u=\left(D_{1} u\right) \mathbf{e}_{1}+\left(D_{2} u\right)
+\mathbf{e}_{2}+\left(D_{3} u\right) \mathbf{e}_{3}
+\]</span></p>
+<p>is an example of a vector field in <span
+class="math inline">\(E\)</span>.</p>
+<p>Suppose now that <span class="math inline">\(\mathbf{F}\)</span> is a
+vector field in <span class="math inline">\(E\)</span>, of class <span
+class="math inline">\(\mathscr{C}^{\prime}\)</span>. Its <span
+class="math inline">\(\operatorname{cur} l \nabla \times
+\mathbf{F}\)</span> is the vector field defined in <span
+class="math inline">\(E\)</span> by</p>
+<p><span class="math display">\[
+\nabla \times \mathbf{F}=\left(D_{2} F_{3}-D_{3} F_{2}\right)
+\mathbf{e}_{1}+\left(D_{3} F_{1}-D_{1} F_{3}\right)
+\mathrm{e}_{2}+\left(D_{1} F_{2}-D_{2} F_{1}\right) \mathbf{e}_{3}
+\]</span></p>
+<p>and its divergence is the real function <span
+class="math inline">\(\nabla \cdot \mathbf{F}\)</span> defined in <span
+class="math inline">\(E\)</span> by</p>
+<p><span class="math display">\[
+\nabla \cdot \mathbf{F}=D_{1} F_{1}+D_{2} F_{2}+D_{3} F_{3} .
+\]</span></p>
+<p>These quantities have various physical interpretations. We refer to
+the book by <span class="math inline">\(\mathbf{O}\)</span>. D. Kellogg
+for more details.</p>
+<p>Here are some relations between gradients, curls, and
+divergences.</p>
+<hr />
+<p><strong>10.43 Theorem</strong> Suppose <span
+class="math inline">\(E\)</span> is an open set in <span
+class="math inline">\(R^{3}, u \in \mathscr{C}^{\prime
+\prime}(E)\)</span>, and <span class="math inline">\(\mathbf{G}\)</span>
+is a vector field in <span class="math inline">\(E\)</span>, of class
+<span class="math inline">\(C^{\prime \prime}\)</span>.</p>
+<ol type="a">
+<li><p>If <span class="math inline">\(\mathbf{F}=\nabla u\)</span>, then
+<span class="math inline">\(\nabla \times
+\mathbf{F}=\mathbf{0}\)</span>.</p></li>
+<li><p>If <span class="math inline">\(\mathbf{F}=\nabla \times
+\mathbf{G}\)</span>, then <span class="math inline">\(\nabla \cdot
+\mathbf{F}=0\)</span>.</p></li>
+</ol>
+<p>Furthermore, if <span class="math inline">\(E\)</span> is <span
+class="math inline">\(\mathscr{C}^{\prime \prime}\)</span>-equivalent to
+a convex set, then (a) and (b) have converses, in which we assume that
+<span class="math inline">\(\mathbf{F}\)</span> is a vector field in
+<span class="math inline">\(E\)</span>, of class <span
+class="math inline">\(\mathscr{C}^{\prime}\)</span> :</p>
+<p>(a’) If <span class="math inline">\(\nabla \times
+\mathbf{F}=\mathbf{0}\)</span>, then <span
+class="math inline">\(\mathbf{F}=\nabla u\)</span> for some <span
+class="math inline">\(u \in \mathscr{C}^{\prime \prime}(E)\)</span>.</p>
+<p>(b’) If <span class="math inline">\(\nabla \cdot
+\mathbf{F}=0\)</span>, then <span
+class="math inline">\(\mathbf{F}=\nabla \times \mathbf{G}\)</span> for
+some vector field <span class="math inline">\(\mathbf{G}\)</span> in
+<span class="math inline">\(E\)</span>, of class <span
+class="math inline">\(\mathscr{B}^{\prime \prime}\)</span></p>
+<p><strong>Proof</strong> If we compare the definitions of <span
+class="math inline">\(\nabla u, \nabla \times \mathbf{F}\)</span>, and
+<span class="math inline">\(\nabla \cdot \mathbf{F}\)</span> with the
+differential forms <span class="math inline">\(\lambda_{F}\)</span> and
+<span class="math inline">\(\omega_{F}\)</span> given by (124) and
+(125), we obtain the following four statements:</p>
+<p><span class="math display">\[
+\begin{aligned}
+&amp; \mathbf{F}=\nabla u \quad \text { if and only if } \quad
+\lambda_{\mathbf{F}}=d u \text {. } \\
+&amp; \nabla \times \mathbf{F}=\mathbf{0} \quad \text { if and only if }
+d \lambda_{\mathbf{F}}=0 \text {. } \\
+&amp; \mathbf{F}=\nabla \times \mathbf{G} \quad \text { if and only if }
+\omega_{\mathbf{F}}=d \lambda_{\mathbf{G}} \text {. } \\
+&amp; \nabla \cdot \mathbf{F}=0 \quad \text { if and only if } d
+\omega_{\mathbf{F}}=0 .
+\end{aligned}
+\]</span></p>
+<p>Now if <span class="math inline">\(F=\nabla u\)</span>, then <span
+class="math inline">\(\lambda_{F}=d u\)</span>, hence <span
+class="math inline">\(d \lambda_{F}=d^{2} u=0\)</span> (Theorem 10.20),
+which means that <span class="math inline">\(\nabla \times
+\mathbf{F}=\mathbf{0}\)</span>. Thus (a) is proved.</p>
+<p>As regards <span
+class="math inline">\(\left(a^{\prime}\right)\)</span>, the hypothesis
+amounts to saying that <span class="math inline">\(d
+\lambda_{F}=0\)</span> in <span class="math inline">\(E\)</span>. By
+Theorem <span class="math inline">\(10.40, \lambda_{F}=d u\)</span> for
+some 0 -form <span class="math inline">\(u\)</span>. Hence <span
+class="math inline">\(F=\nabla u\)</span>.</p>
+<p>The proofs of <span class="math inline">\((b)\)</span> and <span
+class="math inline">\(\left(b^{\prime}\right)\)</span> follow exactly
+the same pattern.</p>
+<hr />
+<p><strong>10.44 Volume elements</strong> The <span
+class="math inline">\(k\)</span>-form</p>
+<p><span class="math display">\[
+d x_{1} \wedge \cdots \wedge d x_{k}
+\]</span></p>
+<p>is called the volume element in <span
+class="math inline">\(R^{k}\)</span>. It is often denoted by <span
+class="math inline">\(d V\)</span> (or by <span class="math inline">\(d
+V_{k}\)</span> if it seems desirable to indicate the dimension
+explicitly), and the notation</p>
+<p><span class="math display">\[
+\begin{equation}
+\int_{\Phi} f(\mathbf{x}) d x_{1} \wedge \cdots \wedge d
+x_{k}=\int_{\Phi} f d V
+\label{eq:126}
+\end{equation}
+\]</span></p>
+<p>is used when <span class="math inline">\(\Phi\)</span> is a
+positively oriented <span class="math inline">\(k\)</span>-surface in
+<span class="math inline">\(R^{k}\)</span> and <span
+class="math inline">\(f\)</span> is a continuous function on the range
+of <span class="math inline">\(\Phi\)</span>.</p>
+<p>The reason for using this terminology is very simple: If <span
+class="math inline">\(D\)</span> is a parameter domain in <span
+class="math inline">\(R^{k}\)</span>, and if <span
+class="math inline">\(\Phi\)</span> is a 1-1 <span
+class="math inline">\(\mathscr{C}^{\prime}\)</span>-mapping of <span
+class="math inline">\(D\)</span> into <span
+class="math inline">\(R^{k}\)</span>, with positive Jacobian <span
+class="math inline">\(J_{\Phi}\)</span>, then the left side of <span
+class="math inline">\((126)\)</span> is</p>
+<p><span class="math display">\[
+\int_{D} f(\Phi(\mathbf{u})) J_{\Phi}(\mathbf{u}) d
+\mathbf{u}=\int_{\Phi(D)} f(\mathbf{x}) d \mathbf{x}
+\]</span></p>
+<p>by (35) and Theorem <span class="math inline">\(10.9 .\)</span></p>
+<p>In particular, when <span class="math inline">\(f=1,(126)\)</span>
+defines the volume of <span class="math inline">\(\Phi\)</span>. We
+already saw a special case of this in (36).</p>
+<p>The usual notation for <span class="math inline">\(d V_{2}\)</span>
+is <span class="math inline">\(d A\)</span>.</p>
+<hr />
+<p><strong>10.45 Green’s theorem</strong> Suppose <span
+class="math inline">\(E\)</span> is an open set in <span
+class="math inline">\(R^{2}, \alpha \in \mathscr{C}^{\prime}(E), \beta
+\in \mathscr{C}^{\prime}(E)\)</span>, and <span
+class="math inline">\(\Omega\)</span> is a closed subset of <span
+class="math inline">\(E\)</span>, with positively oriented boundary
+<span class="math inline">\(\partial \Omega\)</span>, as described in
+Sec. 10.31. Then</p>
+<p><span class="math display">\[
+\begin{equation}
+\int_{\partial \Omega}(\alpha d x+\beta d
+y)=\int_{\Omega}\left(\frac{\partial \beta}{\partial x}-\frac{\partial
+\alpha}{\partial y}\right) d A .
+\label{eq:127}
+\end{equation}
+\]</span></p>
+<p><span class="math display">\[
+\begin{aligned}
+&amp;\text { Proof Put } \lambda=\alpha d x+\beta d y . \text { Then }
+\\
+&amp;d \lambda=\left(D_{2} \alpha\right) d y \wedge d x+\left(D_{1}
+\beta\right) d x \wedge d y \\
+&amp;=\left(D_{1} \beta-D_{2} \alpha\right) d A,
+\end{aligned}
+\]</span></p>
+<p>and (127) is the same as</p>
+<p><span class="math display">\[
+\int_{\partial \Omega} \lambda=\int_{\Omega} d \lambda,
+\]</span></p>
+<p>which is true by Theorem <span
+class="math inline">\(10.33\)</span>.</p>
+<p>With <span class="math inline">\(\alpha(x, y)=-y\)</span> and <span
+class="math inline">\(\beta(x, y)=x,(127)\)</span> becomes</p>
+<p><span class="math display">\[
+\begin{equation}
+\frac{1}{2} \int_{\partial \Omega}(x d y-y d x)=A(\Omega),
+\label{eq:128}
+\end{equation}
+\]</span></p>
+<p>the area of <span class="math inline">\(\Omega\)</span>.</p>
+<p>With <span class="math inline">\(\alpha=0, \beta=x\)</span>, a
+similar formula is obtained. Example <span
+class="math inline">\(10.12(b)\)</span> contains a special case of
+this.</p>
+<hr />
+<p><strong>10.46 Area elements</strong> in <span
+class="math inline">\(R^{3}\)</span> Let <span
+class="math inline">\(\Phi\)</span> be a 2-surface in <span
+class="math inline">\(R^{3}\)</span>, of class <span
+class="math inline">\(\mathscr{C}^{\prime}\)</span>, with parameter
+domain <span class="math inline">\(D \subset R^{2}\)</span>. Associate
+with each point <span class="math inline">\((u, v) \in D\)</span> the
+vector</p>
+<p><span class="math display">\[
+\begin{equation}
+\mathbf{N}(u, v)=\frac{\partial(y, z)}{\partial(u, v)}
+\mathbf{e}_{1}+\frac{\partial(z, x)}{\partial(u, v)}
+\mathbf{e}_{2}+\frac{\partial(x, y)}{\partial(u, v)} \mathbf{e}_{3} .
+\label{eq:129}
+\end{equation}
+\]</span></p>
+<p>The Jacobians in (129) correspond to the equation</p>
+<p><span class="math display">\[
+\begin{equation}
+(x, y, z)=\Phi(u, v) \text {. }
+\label{eq:130}
+\end{equation}
+\]</span></p>
+<p>If <span class="math inline">\(f\)</span> is a continuous function on
+<span class="math inline">\(\Phi(D)\)</span>, the area integral of <span
+class="math inline">\(f\)</span> over <span
+class="math inline">\(\Phi\)</span> is defined to be</p>
+<p><span class="math display">\[
+\begin{equation}
+\int_{\Phi} f d A=\int_{D} f(\Phi(u, v))|\mathbf{N}(u, v)| d u d v
+\label{eq:131}
+\end{equation}
+\]</span></p>
+<p>In particular, when <span class="math inline">\(f=1\)</span> we
+obtain the area of <span class="math inline">\(\Phi\)</span>,
+namely,</p>
+<p><span class="math display">\[
+\begin{equation}
+A(\Phi)=\int_{D}|\mathbf{N}(u, v)| d u d v
+\label{eq:132}
+\end{equation}
+\]</span></p>
+<p>The following discussion will show that (131) and its special case
+(132) are reasonable definitions. It will also describe the geometric
+features of the vector <span
+class="math inline">\(\mathbf{N}\)</span>.</p>
+<p>Write <span class="math inline">\(\Phi=\varphi_{1}
+\mathbf{e}_{1}+\varphi_{2} \mathbf{e}_{2}+\varphi_{3}
+\mathbf{e}_{3}\)</span>, fix a point <span
+class="math inline">\(p_{0}=\left(u_{0}, v_{0}\right) \in D\)</span>,
+put <span
+class="math inline">\(\mathbf{N}=\mathbf{N}\left(\mathbf{p}_{0}\right)\)</span>,
+put</p>
+<p><span class="math display">\[
+\alpha_{i}=\left(D_{1} \varphi_{i}\right)\left(\mathbf{p}_{0}\right),
+\quad \beta_{i}=\left(D_{2}
+\varphi_{i}\right)\left(\mathbf{p}_{0}\right) \quad(i=1,2,3)
+\]</span></p>
+<p>and let <span class="math inline">\(T \in L\left(R^{2},
+R^{3}\right)\)</span> be the linear transformation given by</p>
+<p><span class="math display">\[
+T(u, v)=\sum_{i=1}^{3}\left(\alpha_{i} u+\beta_{i} v\right)
+\mathbf{e}_{i} .
+\]</span></p>
+<p>Note that <span
+class="math inline">\(T=\Phi^{\prime}\left(\mathbf{p}_{0}\right)\)</span>,
+in accordance with Definition 9.11.</p>
+<p>Let us now assume that the rank of <span
+class="math inline">\(T\)</span> is 2 . (If it is 1 or 0 , then <span
+class="math inline">\(\mathbf{N}=\mathbf{0}\)</span>, and the tangent
+plane mentioned below degenerates to a line or to a point.) The range of
+the affine mapping</p>
+<p><span class="math display">\[
+(u, v) \rightarrow \Phi\left(\mathbf{p}_{0}\right)+T(u, v)
+\]</span></p>
+<p>is then a plane <span class="math inline">\(\Pi\)</span>, called the
+tangent plane to <span class="math inline">\(\Phi\)</span> at <span
+class="math inline">\(\mathbf{p}_{0}\)</span>. [One would like to call
+<span class="math inline">\(\Pi\)</span> the tangent plane at <span
+class="math inline">\(\Phi\left(p_{0}\right)\)</span>, rather than at
+<span class="math inline">\(p_{0}\)</span>; if <span
+class="math inline">\(\Phi\)</span> is not one-to-one, this runs into
+difficulties.]</p>
+<p>If we use (133) in (129), we obtain</p>
+<p><span class="math display">\[
+\mathbf{N}=\left(\alpha_{2} \beta_{3}-\alpha_{3} \beta_{2}\right)
+\mathrm{e}_{1}+\left(\alpha_{3} \beta_{1}-\alpha_{1} \beta_{3}\right)
+\mathrm{e}_{2}+\left(\alpha_{1} \beta_{2}-\alpha_{2} \beta_{1}\right)
+\mathbf{e}_{3},
+\]</span></p>
+<p>and (134) shows that</p>
+<p><span class="math display">\[
+T \mathrm{e}_{1}=\sum_{i=1}^{3} \alpha_{i} \mathbf{e}_{i}, \quad T
+\mathrm{e}_{2}=\sum_{i=1}^{3} \beta_{i} \mathbf{e}_{i} .
+\]</span></p>
+<p>A straightforward computation now leads to</p>
+<p><span class="math display">\[
+\mathbf{N} \cdot\left(T \mathrm{e}_{1}\right)=0=\mathbf{N} \cdot\left(T
+\mathbf{e}_{2}\right) \text {. }
+\]</span></p>
+<p>Hence <span class="math inline">\(\mathbf{N}\)</span> is
+perpendicular to <span class="math inline">\(\Pi\)</span>. It is
+therefore called the normal to <span class="math inline">\(\Phi\)</span>
+at <span class="math inline">\(\mathbf{p}_{0}\)</span>. A second
+property of <span class="math inline">\(\mathbf{N}\)</span>, also
+verified by a direct computation based on (135) and (136), is that the
+determinant of the linear transformation of <span
+class="math inline">\(R^{3}\)</span> that takes <span
+class="math inline">\(\left\{\mathbf{e}_{1}, \mathbf{e}_{2},
+\mathbf{e}_{3}\right\}\)</span> to <span
+class="math inline">\(\left\{\mathbf{e}_{1}, T \mathbf{e}_{2},
+\mathbf{N}\right\}\)</span> is <span
+class="math inline">\(|\mathbf{N}|^{2}&gt;0\)</span> (Exercise 30). The
+3-simplex</p>
+<p><span class="math display">\[
+\left[0, T \mathrm{e}_{1}, T \mathrm{e}_{2}, \mathrm{~N}\right]
+\]</span></p>
+<p>is thus positively oriented.</p>
+<p>The third property of <span class="math inline">\(\mathbf{N}\)</span>
+that we shall use is a consequence of the first two: The above-mentioned
+determinant, whose value is <span
+class="math inline">\(|\mathbf{N}|^{2}\)</span>, is the volume of the
+parallelepiped with edges <span class="math inline">\(\left[0, T
+e_{1}\right],\left[0, T e_{2}\right],[0, N]\)</span>. By <span
+class="math inline">\((137),[0, N]\)</span> is perpendicular to the
+other two edges. The area of the parallelogram with vertices</p>
+<p><span class="math display">\[
+0, T e_{1}, T e_{2}, T\left(e_{1}+e_{2}\right)
+\]</span></p>
+<p>is therefore <span class="math inline">\(|\mathbf{N}|\)</span>.</p>
+<p>This parallelogram is the image under <span
+class="math inline">\(T\)</span> of the unit square in <span
+class="math inline">\(R^{2}\)</span>. If <span
+class="math inline">\(E\)</span> is any rectangle in <span
+class="math inline">\(R^{2}\)</span>, it follows (by the linearity of
+<span class="math inline">\(T\)</span> ) that the area of the
+parallelogram <span class="math inline">\(T(E)\)</span> is</p>
+<p><span class="math display">\[
+A(T(E))=|\mathrm{N}| A(E)=\int_{E}\left|\mathrm{~N}\left(u_{0},
+v_{0}\right)\right| d u d v .
+\]</span></p>
+<p>We conclude that (132) is correct when <span
+class="math inline">\(\Phi\)</span> is affine. To justify the definition
+(132) in the general case, divide <span class="math inline">\(D\)</span>
+into small rectangles, pick a point <span
+class="math inline">\(\left(u_{0}, v_{0}\right)\)</span> in each, and
+replace <span class="math inline">\(\Phi\)</span> in each rectangle by
+the corresponding tangent plane. The sum of the areas of the resulting
+parallelograms, obtained via (140), is then an approximation to <span
+class="math inline">\(A(\Phi)\)</span>. Finally, one can justify (131)
+from (132) by approximating <span class="math inline">\(f\)</span> by
+step functions.</p>
+<p><strong>10.47 Example</strong> Let <span
+class="math inline">\(0&lt;a&lt;b\)</span> be fixed. Let <span
+class="math inline">\(K\)</span> be the 3-cell determined by <span
+class="math inline">\(0 \leq t \leq a, \quad 0 \leq u \leq 2 \pi, \quad
+0 \leq v \leq 2 \pi\)</span></p>
+<p>The equations</p>
+<p><span class="math display">\[
+\begin{aligned}
+&amp;x=t \cos u \\
+&amp;y=(b+t \sin u) \cos v \\
+&amp;z=(b+t \sin u) \sin v
+\end{aligned}
+\]</span></p>
+<p>describe a mapping <span class="math inline">\(\Psi\)</span> of <span
+class="math inline">\(R^{3}\)</span> into <span
+class="math inline">\(R^{3}\)</span> which is <span
+class="math inline">\(1-1\)</span> in the interior of <span
+class="math inline">\(K\)</span>, such that <span
+class="math inline">\(\Psi(K)\)</span> is a solid torus. Its Jacobian
+is</p>
+<p><span class="math display">\[
+J_{\Psi}=\frac{\partial(x, y, z)}{\partial(t, u, v)}=t(b+t \sin u)
+\]</span></p>
+<p>which is positive on <span class="math inline">\(K\)</span>, except
+on the face <span class="math inline">\(t=0\)</span>. If we integrate
+<span class="math inline">\(J_{\Psi}\)</span> over <span
+class="math inline">\(K\)</span>, we obtain</p>
+<p><span class="math display">\[
+\operatorname{vol}(\Psi(K))=2 \pi^{2} a^{2} b
+\]</span></p>
+<p>as the volume of our solid torus.</p>
+<p>Now consider the 2-chain <span class="math inline">\(\Phi=\partial
+\Psi\)</span>. (See Exercise 19.) <span
+class="math inline">\(\Psi\)</span> maps the faces <span
+class="math inline">\(u=0\)</span> and <span class="math inline">\(u=2
+\pi\)</span> of <span class="math inline">\(K\)</span> onto the same
+cylindrical strip, but with opposite orientations. <span
+class="math inline">\(\Psi\)</span> maps the faces <span
+class="math inline">\(v=0\)</span> and <span class="math inline">\(v=2
+\pi\)</span> onto the same circular disc, but with opposite
+orientations. <span class="math inline">\(\Psi\)</span> maps the face
+<span class="math inline">\(t=0\)</span> onto a circle, which
+contributes 0 to the 2-chain <span class="math inline">\(\partial
+\Psi\)</span>. (The relevant Jacobians are 0.) Thus <span
+class="math inline">\(\Phi\)</span> is simply the 2-surface obtained by
+setting <span class="math inline">\(t=a\)</span> in (141), with
+parameter domain <span class="math inline">\(D\)</span> the square
+defined by <span class="math inline">\(0 \leq u \leq 2 \pi, 0 \leq v
+\leq 2 \pi\)</span>. vector</p>
+<p>According to (129) and (141), the normal to <span
+class="math inline">\(\Phi\)</span> at <span class="math inline">\((u,
+v) \in D\)</span> is thus the</p>
+<p><span class="math display">\[
+\mathbf{N}(u, v)=a(b+a \sin u) \mathbf{n}(u, v)
+\]</span></p>
+<p>where</p>
+<p><span class="math display">\[
+\mathbf{n}(u, v)=(\cos u) \mathbf{e}_{1}+(\sin u \cos v)
+\mathbf{e}_{2}+(\sin u \sin v) \mathbf{e}_{3} .
+\]</span></p>
+<p>Since <span class="math inline">\(|\mathbf{n}(u, v)|=1\)</span>, we
+have <span class="math inline">\(|\mathbf{N}(u, v)|=a(b+a \sin
+u)\)</span>, and if we integrate this over <span
+class="math inline">\(D,(131)\)</span> gives</p>
+<p><span class="math display">\[
+A(\Phi)=4 \pi^{2} a b
+\]</span></p>
+<p>as the surface area of our torus.</p>
+<p>If we think of <span class="math inline">\(\mathbf{N}=\mathbf{N}(u,
+v)\)</span> as a directed line segment, pointing from <span
+class="math inline">\(\Phi(u, v)\)</span> to <span
+class="math inline">\(\Phi(u, v)+\mathbf{N}(u, v)\)</span>, then <span
+class="math inline">\(\mathbf{N}\)</span> points outward, that is to
+say, away from <span class="math inline">\(\Psi(K)\)</span>. This is so
+because <span class="math inline">\(\mathrm{J}_{\Psi}&gt;0\)</span> when
+<span class="math inline">\(t=a\)</span>.</p>
+<p>For example, take <span class="math inline">\(u=v=\pi / 2,
+t=a\)</span>. This gives the largest value of <span
+class="math inline">\(z\)</span> on <span
+class="math inline">\(\Psi(K)\)</span>, and <span
+class="math inline">\(\mathbf{N}=a(b+a) \mathrm{e}_{3}\)</span> points
+“upward” for this choice of <span class="math inline">\((u,
+v)\)</span>.</p>
+<p><strong>10.48 Integrals of 1-forms</strong> in <span
+class="math inline">\(R^{3}\)</span> Let <span
+class="math inline">\(\gamma\)</span> be a <span
+class="math inline">\(\mathscr{C}^{\prime}\)</span>-curve in an open set
+<span class="math inline">\(E \subset R^{3}\)</span>, with parameter
+interval <span class="math inline">\([0,1]\)</span>, let <span
+class="math inline">\(\mathbf{F}\)</span> be a vector field in <span
+class="math inline">\(E\)</span>, as in Sec. <span
+class="math inline">\(10.42\)</span>, and define <span
+class="math inline">\(\lambda_{F}\)</span> by (124). The integral of
+<span class="math inline">\(\lambda_{F}\)</span> over <span
+class="math inline">\(\gamma\)</span> can be rewritten in a certain way
+which we now describe.</p>
+<p>For any <span class="math inline">\(u \in[0,1]\)</span>,</p>
+<p><span class="math display">\[
+\gamma^{\prime}(u)=\gamma_{1}^{\prime}(u)
+\mathbf{e}_{1}+\gamma_{2}^{\prime}(u)
+\mathbf{e}_{2}+\gamma_{3}^{\prime}(u) \mathbf{e}_{3}
+\]</span></p>
+<p>is called the tangent vector to <span
+class="math inline">\(\gamma\)</span> at <span
+class="math inline">\(u\)</span>. We define <span
+class="math inline">\(\mathbf{t}=\mathbf{t}(u)\)</span> to be the unit
+vector in the direction of <span
+class="math inline">\(\gamma^{\prime}(u)\)</span>. Thus</p>
+<p><span class="math display">\[
+\gamma^{\prime}(u)=\left|\gamma^{\prime}(u)\right| \mathbf{t}(u) .
+\]</span></p>
+<p>[If <span
+class="math inline">\(\gamma^{\prime}(u)=\mathbf{0}\)</span> for some
+<span class="math inline">\(u\)</span>, put <span
+class="math inline">\(\mathbf{t}(u)=\mathbf{e}_{1}\)</span>; any other
+choice would do just as well.] By (35),</p>
+<p><span class="math display">\[
+\begin{aligned}
+\int_{\gamma} \lambda_{\mathbf{F}} &amp;=\sum_{i=1}^{3} \int_{0}^{1}
+F_{i}(\gamma(u)) \gamma_{i}^{\prime}(u) d u \\
+&amp;=\int_{0}^{1} \mathbf{F}(\gamma(u)) \cdot \gamma^{\prime}(u) d u \\
+&amp;=\int_{0}^{1} \mathbf{F}(\gamma(u)) \cdot
+\mathbf{t}(u)\left|\gamma^{\prime}(u)\right| d u .
+\end{aligned}
+\]</span></p>
+<p>Theorem <span class="math inline">\(6.27\)</span> makes it reasonable
+to call <span class="math inline">\(\left|\gamma^{\prime}(u)\right| d
+u\)</span> the element of arc length along <span
+class="math inline">\(\gamma\)</span>. A customary notation for it is
+<span class="math inline">\(d s\)</span>, and (142) is rewritten in the
+form</p>
+<p><span class="math display">\[
+\int_{\gamma} \lambda_{F}=\int_{\gamma}(\mathbf{F} \cdot \mathrm{t}) d s
+.
+\]</span></p>
+<p>Since <span class="math inline">\(t\)</span> is a unit tangent vector
+to <span class="math inline">\(\gamma, \mathbf{F} \cdot t\)</span> is
+called the tangential component of <span
+class="math inline">\(\mathbf{F}\)</span> along <span
+class="math inline">\(\gamma\)</span>. The right side of (143) should be
+regarded as just an abbreviation for the last integral in (142). The
+point is that <span class="math inline">\(\mathbf{F}\)</span> is defined
+on the range of <span class="math inline">\(\gamma\)</span>, but <span
+class="math inline">\(\mathbf{t}\)</span> is defined on <span
+class="math inline">\([0,1]\)</span>; thus <span
+class="math inline">\(\mathbf{F} \cdot \mathbf{t}\)</span> has to be
+properly interpreted. Of course, when <span
+class="math inline">\(\gamma\)</span> is one-to-one, then <span
+class="math inline">\(t(u)\)</span> can be replaced by <span
+class="math inline">\(t(\gamma(u))\)</span>, and this difficulty
+disappears.</p>
+<p>10.49 Integrals of 2-forms in <span
+class="math inline">\(R^{3}\)</span> Let <span
+class="math inline">\(\Phi\)</span> be a 2-surface in an open set <span
+class="math inline">\(E \subset R^{3}\)</span>, of class <span
+class="math inline">\(\mathscr{C}^{\prime}\)</span>, with parameter
+domain <span class="math inline">\(D \subset R^{2}\)</span>. Let <span
+class="math inline">\(\mathbf{F}\)</span> be a vector field in <span
+class="math inline">\(E\)</span>, and define <span
+class="math inline">\(\omega_{\mathbf{F}}\)</span> by (125). As in the
+preceding section, we shall obtain a different representation of the
+integral of <span class="math inline">\(\omega_{F}\)</span> over <span
+class="math inline">\(\Phi\)</span>.</p>
+<p>By (35) and (129),</p>
+<p><span class="math display">\[
+\begin{aligned}
+\int_{\Phi} \omega_{\mathbf{F}} &amp;=\int_{\Phi}\left(F_{1} d y \wedge
+d z+F_{2} d z \wedge d x+F_{3} d x \wedge d y\right) \\
+&amp;=\int_{D}\left\{\left(F_{1} \circ \Phi\right) \frac{\partial(y,
+z)}{\partial(u, v)}+\left(F_{2} \circ \Phi\right) \frac{\partial(z,
+x)}{\partial(u, v)}+\left(F_{3} \circ \Phi\right) \frac{\partial(x,
+y)}{\partial(u, v)}\right\} d u d v \\
+&amp;=\int_{D} \mathbf{F}(\Phi(u, v)) \cdot \mathbf{N}(u, v) d u d v
+\end{aligned}
+\]</span></p>
+<p>Now let <span class="math inline">\(\mathbf{n}=\mathbf{n}(u,
+v)\)</span> be the unit vector in the direction of <span
+class="math inline">\(\mathbf{N}(u, v)\)</span>. [If <span
+class="math inline">\(\mathbf{N}(u, v)=\mathbf{0}\)</span> for some
+<span class="math inline">\((u, v) \in D\)</span>, take <span
+class="math inline">\(\mathbf{n}(u, v)=\mathbf{e}_{1}\)</span>.] Then
+<span class="math inline">\(\mathbf{N}=|\mathbf{N}| \mathbf{n}\)</span>,
+and therefore the last integral becomes</p>
+<p><span class="math display">\[
+\int_{D} \mathbf{F}(\Phi(u, v)) \cdot \mathbf{n}(u, v)|\mathbf{N}(u, v)|
+d u d v
+\]</span></p>
+<p>By (131), we can finally write this in the form</p>
+<p><span class="math display">\[
+\int_{\Phi} \omega_{F}=\int_{\Phi}(\mathbf{F} \cdot \mathbf{n}) d A .
+\]</span></p>
+<p>With regard to the meaning of <span class="math inline">\(\mathbf{F}
+\cdot \mathbf{n}\)</span>, the remark made at the end of Sec. <span
+class="math inline">\(10.48\)</span> applies here as well.</p>
+<p>We can now state the original form of Stokes’ theorem.</p>
+<p><strong><span class="math inline">\(10.50\)</span> Stokes’
+formula</strong> If <span class="math inline">\(\mathbf{F}\)</span> is a
+vector field of class <span
+class="math inline">\(\mathscr{C}^{\prime}\)</span> in an open set <span
+class="math inline">\(E \subset R^{3}\)</span>, and if <span
+class="math inline">\(\Phi\)</span> is a 2-surface of class <span
+class="math inline">\(\mathscr{C}^{\prime \prime}\)</span> in <span
+class="math inline">\(E\)</span>, then</p>
+<p><span class="math display">\[
+\int_{\Phi}(\nabla \times \mathbf{F}) \cdot \mathbf{n} d
+A=\int_{\partial \Phi}(\mathbf{F} \cdot \mathbf{t}) d s .
+\]</span></p>
+<p>Proof Put <span class="math inline">\(\mathbf{H}=\nabla \times
+\mathbf{F}\)</span>. Then, as in the proof of Theorem 10.43, we have</p>
+<p><span class="math display">\[
+\omega_{\mathbf{H}}=d \lambda_{\mathbf{F}} .
+\]</span></p>
+<p>Hence</p>
+<p><span class="math display">\[
+\begin{aligned}
+\int_{\Phi}(\nabla \times \mathbf{F}) \cdot \mathbf{n} d A
+&amp;=\int_{\Phi}(\mathbf{H} \cdot \mathbf{n}) d A=\int_{\Phi}
+\omega_{\mathbf{H}} \\
+&amp;=\int_{\Phi} d \lambda_{F}=\int_{\partial \Phi}
+\lambda_{F}=\int_{\partial \Phi}(\mathbf{F} \cdot \mathrm{t}) d s .
+\end{aligned}
+\]</span></p>
+<p>Here we used the definition of <span
+class="math inline">\(\mathbf{H}\)</span>, then (144) with <span
+class="math inline">\(\mathbf{H}\)</span> in place of <span
+class="math inline">\(\mathbf{F}\)</span>, then (146), then-the main
+step-Theorem 10.33, and finally (143), extended in the obvious way from
+curves to 1-chains.</p>
+<p>10.51 The divergence theorem If <span
+class="math inline">\(\mathbf{F}\)</span> is a vector field of class
+<span class="math inline">\(\mathscr{C}^{\prime}\)</span> in an open set
+<span class="math inline">\(E \subset R^{3}\)</span>, and if <span
+class="math inline">\(\Omega\)</span> is a closed subset of <span
+class="math inline">\(E\)</span> with positively oriented boundary <span
+class="math inline">\(\partial \Omega\)</span> (as described in Sec.
+10.31) then</p>
+<p><span class="math display">\[
+\int_{\Omega}(\nabla \cdot \mathbf{F}) d V=\int_{\partial
+\Omega}(\mathbf{F} \cdot \mathbf{n}) d A
+\]</span></p>
+<p>Proof By (125),</p>
+<p><span class="math display">\[
+d \omega_{\mathbf{F}}=(\nabla \cdot \mathbf{F}) d x \wedge d y \wedge d
+z=(\nabla \cdot \mathbf{F}) d V .
+\]</span></p>
+<p>Hence</p>
+<p><span class="math display">\[
+\int_{\Omega}(\nabla \cdot \mathbf{F}) d V=\int_{\Omega} d
+\omega_{\mathbf{F}}=\int_{\partial \Omega}
+\omega_{\mathbf{F}}=\int_{\partial \Omega}(\mathbf{F} \cdot \mathbf{n})
+d A,
+\]</span></p>
+<p>by Theorem <span class="math inline">\(10.33\)</span>, applied to the
+2 -form <span class="math inline">\(\omega_{F}\)</span>, and (144).</p>
+
+    </div>
+    
+</div>
+</div>
+
+                <div id="footer-wrapper">
+                    <footer class="footer"><footer class="row pl-3 pr-3">
+    <div class="col-12 d-flex justify-content-between align-items-center text-muted pl-0 pr-0">
+        <div class="footer-left">
+            <p class="mb-0"> © 2022 <a href="https://github.com/chen-gz">guangzong</a>. <span data-toggle="tooltip"
+                    data-placement="top"
+                    title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author.">All
+                    rights reserved.</span></p>
+        </div>
+        <div class="footer-right">
+            <p class="mb-0"> Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">hugo</a>
+                with <a href="https://github.com/chen-gz/hugo_zong" target="_blank" rel="noopener">zong</a>
+                theme.</p>
+        </div>
+    </div>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script> MathJax = {
+            tex: {
+                tags: 'ams',
+            }
+        };</script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</footer>
+</footer>
+                </div>
+            </div>
+            <div id="panel-wrapper" class="d-flex flex-column"><div id="toc-wrapper" class="mb-5 pl-2">
+    <span>Contents</span>
+    <nav id="toc" data-toggle="toc">
+        
+        
+        
+    </nav>
+</div>
+
+<div id="access-lastmod" class="pb-4 pl-2">
+    <div class="panel-heading">Recently Updated</div>
+    <ul class="post-content pl-3 pb-1 ml-1 mt-2">
+          
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/1-total-variation/">Total Variation</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-7/1-derivatives-of-measures/">Derivatives of Measures</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/3-consequences-of-the-radon-nikodym-theorem/">Consequences of the Radon-Nikodym Theorem</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/4-bounded-linear-functionals-on-lp/">Bounded linear functional on Lp</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/2-abosolute-continuity/">Abosolute Continuity</a></li>
+        
+    </ul>
+</div>
+
+<div id="access-tags" class="pl-2">
+    <div class="panel-heading">Trending Tags</div>
+    <div class="d-flex flex-wrap mt-3 mb-1 mr-3">
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/algorithm/">Algorithm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/android/">Android</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c/">C</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c-language/">c language</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/caddy/">Caddy</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cadence/">Cadence</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cdc/">CDC</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/classification/">classification</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/compress/">Compress</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/conf/">Conf</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/double-column/">Double Column</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/errno13/">Errno13</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/fish/">fish</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gan/">GAN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/git/">Git</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gtk/">Gtk</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/html/">Html</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/i3/">I3</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/idea/">Idea</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/java/">Java</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/latex/">Latex</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lda/">LDA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linear-programming/">Linear Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linux/">Linux</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lr/">LR</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/math/">Math</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mathematics/">Mathematics</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matlab/">Matlab</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matplot/">matplot</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/memory/">Memory</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mermaid/">Mermaid</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/misc/">Misc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/ml/">ML</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mosfet/">Mosfet</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/network/">Network</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/nn/">NN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pandoc/">Pandoc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pca/">PCA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/probability/">Probability</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/productive/">Productive</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/program/">Program</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/programming/">Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/python/">Python</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/qt/">Qt</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/random-variable/">Random Variable</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rcnn/">RCNN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rust/">Rust</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/security/">Security</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/software/">Software</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/std/">Std</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/svd/">Svd</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/tool/">Tool</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/usb/">USB</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vim/">Vim</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpn/">Vpn</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpnc/">Vpnc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/xterm/">xterm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/zsh/">Zsh</a>
+        
+    </div>
+</div>
+</div><div id="search-result-wrapper" class="d-flex justify-content-center unloaded">
+    <div class="col-12 col-sm-11 post-content">
+        <div id="search-hints"></div>
+        <div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3 col-12"></div>
+    </div>
+</div>
+
+<script src="/js/fuse.min.js"></script>
+<script src="/js/fastsearch.js"></script>
+
+
+</div>
+        <div id="mask"></div>
+        <a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button"
+            style="display: none">
+            <i class="fas fa-angle-up"></i>
+        </a>
+    </div>
+    
+</body>
+
+</html>

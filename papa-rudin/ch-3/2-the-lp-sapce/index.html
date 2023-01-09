@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css"
+        class="dark-mode-native-dark-original" />
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+     
+    <link rel="stylesheet" href="https://zongpitt.com/sass/main.06935202011a97ba473ebeeb0cb6788daa9fb5a9fff471a4e85850293d1c5ac4.css" />
+    <title>
+          Guangzong Blog | 2 The $L^p$-spaces
+    </title>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.bundle.min.js"></script>
+    <script src=" https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.js"></script>
+
+    <script
+        src="https://cdn.jsdelivr.net/combine/npm/magnific-popup@1/dist/jquery.magnific-popup.min.js,npm/lozad/dist/lozad.min.js,npm/clipboard@2/dist/clipboard.min.js"></script>
+    <script type="text/javascript" src="/js/commons/back-to-top.js"></script>
+    
+    
+    
+    <script type="text/javascript" src="/js/commons/topbar-switch.js"></script>
+    <script type="text/javascript" src="/js/commons/sidebar.js"></script>
+    <script type="text/javascript" src="/js/utils/category-collapse.js"></script>
+    <script type="text/javascript" src="/js/utils/checkbox.js"></script>
+    <script type="text/javascript" src="/js/utils/clipboard.js"></script>
+    <script type="text/javascript" src="/js/utils/img-extra.js"></script>
+    <script type="text/javascript" src="/js/utils/pageviews.js"></script>
+    
+    <script type="text/javascript" src="/js/utils/timeago.js"></script>
+    
+    
+</head>
+<body data-spy="scroll" data-target="#toc" data-topbar-visible="true" class="d-flex"><div id="sidebar" class="d-flex flex-column align-items-end">
+    <div class="profile-wrapper text-center">
+
+        <div id="avatar">
+            <a href="/" alt="avatar" class="mx-auto"> <img src=https://github.com/chen-gz/chen-gz/blob/main/mine_square.jpg?raw&#61;truehttps://raw.githubusercontent.com/chen-gz/chen-gz/blob/main/mine_square.jpg alt="avatar"
+                    onerror="this.style.display='none'"> </a>
+        </div>
+
+        <div class="site-title mt-3"> <a href="/">Guangzong</a> </div>
+        <div class="site-subtitle font-italic">Welcome to my blog</div>
+    </div>
+
+    <ul>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/">
+                <span>
+                    Home
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/archive/">
+                <span>
+                    Archive
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/tags/">
+                <span>
+                    Tags
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/about/">
+                <span>
+                    About
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/categories/">
+                <span>
+                    Categories
+                </span>
+            </a>
+        </li>
+        
+    </ul>
+
+    <div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center align-items-center">
+        <button class="mode-toggle btn" aria-label="Switch Mode"> 
+            <i class="fas fa-adjust"></i> 
+        </button>
+
+        <span class="icon-border"></span>
+        <a href="https://github.com/chen-gz" aria-label="github" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i>
+        </a>
+
+        <a href=" javascript:location.href = 'mailto:' + ['chen-gz','outlook.com'].join('@')" aria-label="email">
+            <i class="fas fa-envelope"></i>
+        </a>
+
+        <a href="/feed.xml" aria-label="rss"> <i class="fas fa-rss"></i> </a>
+    </div>
+
+    
+    
+</div>
+<div id="all-wrapper" class="d-flex flex-column"><div id="topbar-wrapper">
+    <div id="topbar" class="d-flex">
+        
+        <span id="breadcrumb" class="d-flex">
+              
+               
+            
+            
+            <div><a href='https://zongpitt.com/'>Home</a></div>
+              
+              
+            
+            <div><a href="https://zongpitt.com/papa-rudin">papa-rudin</a></div>
+               
+              
+            
+            <div><a href="https://zongpitt.com/papa-rudin/ch-3">ch-3</a></div>
+               
+                 
+                
+        </span>
+        <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i>
+        <div id="topbar-title">Guangzong</div>
+        <i id="search-trigger" class="fas fa-search fa-fw"></i>
+        <span id="search-wrapper" class="align-items-center">
+            <i class="fas fa-search fa-fw"></i>
+            <input class="form-control" id="search-input" type="search" aria-label="search" autocomplete="off"
+                placeholder="Search..." />
+            <i class="fa fa-times-circle fa-fw" id="search-cleaner"></i>
+        </span>
+    </div>
+</div>
+<div id="main-wrapper" class="d-flex mt-3">
+            <div id="core-wrapper" class="d-flex flex-column">
+                <div id="main" class="d-flex flex-column">
+                    
+<div class="post pl-1 pr-1 pl-md-2 pr-md-2">
+    
+    <div id="post-content">
+        <h1 style="text-align: center;">2 The $L^p$-spaces</h1>
+        <br>
+        
+        <p>In this section, <span class="math inline">\(X\)</span> will be an
+arbitrary measure space with a positive measure <span
+class="math inline">\(\mu\)</span>.</p>
+<h3 id="definition">3.6 Definition</h3>
+<p>If <span class="math inline">\(0&lt;p&lt;\infty\)</span> and if <span
+class="math inline">\(f\)</span> is a complex measurable function on
+<span class="math inline">\(X\)</span>, define</p>
+<p><span class="math display">\[
+\|f\|_p=\left\{\int_X|f|^p d \mu\right\}^{1 / p}
+\]</span></p>
+<p>and let <span class="math inline">\(L^p(\mu)\)</span> consist of all
+<span class="math inline">\(f\)</span> for which</p>
+<p><span class="math display">\[
+\|f\|_p&lt;\infty .
+\]</span></p>
+<p>We call <span class="math inline">\(\|f\|_p\)</span> the <span
+class="math inline">\(L^p\)</span>-norm of <span
+class="math inline">\(f\)</span>.</p>
+<p>If <span class="math inline">\(\mu\)</span> is Lebesgue measure on
+<span class="math inline">\(R^k\)</span>, we write <span
+class="math inline">\(L^p\left(R^k\right)\)</span> instead of <span
+class="math inline">\(L^p(\mu)\)</span>, as in Sec. <span
+class="math inline">\(2.21\)</span>. If <span
+class="math inline">\(\mu\)</span> is the counting measure on a set
+<span class="math inline">\(A\)</span>, it is customary to denote the
+corresponding <span class="math inline">\(L^p\)</span>-space by <span
+class="math inline">\(\ell^p(A)\)</span>, or simply by <span
+class="math inline">\(\ell^p\)</span>, if <span
+class="math inline">\(A\)</span> is countable. An element of <span
+class="math inline">\(\ell^p\)</span> may be regarded as a complex
+sequence <span class="math inline">\(x=\left\{\xi_n\right\}\)</span>,
+and</p>
+<p><span class="math display">\[
+\|x\|_p=\left\{\sum_{n=1}^{\infty}\left|\xi_n\right|^p\right\}^{1 / p} .
+\]</span></p>
+<h3 id="definition-1">3.7 Definition</h3>
+<p>Suppose <span class="math inline">\(g: X \rightarrow[0,
+\infty]\)</span> is measurable. Let <span
+class="math inline">\(S\)</span> be the set of all real <span
+class="math inline">\(\alpha\)</span> such that</p>
+<p><span class="math display">\[
+\mu\left(g^{-1}((\alpha, \infty])\right)=0 .
+\]</span></p>
+<p>If <span class="math inline">\(S=\varnothing\)</span>, put <span
+class="math inline">\(\beta=\infty\)</span>. If <span
+class="math inline">\(S \neq \varnothing\)</span>, put <span
+class="math inline">\(\beta=\inf S\)</span>. Since</p>
+<p><span class="math display">\[
+g^{-1}((\beta, \infty])=\bigcup_{n=1}^{\infty}
+g^{-1}\left(\left(\beta+\frac{1}{n}, \infty\right]\right),
+\]</span></p>
+<p>and since the union of a countable collection of sets of measure 0
+has measure 0 , we see that <span class="math inline">\(\beta \in
+S\)</span>. We call <span class="math inline">\(\beta\)</span> the
+essential supremum of <span class="math inline">\(g\)</span>.</p>
+<p>If <span class="math inline">\(f\)</span> is a complex measurable
+function on <span class="math inline">\(X\)</span>, we define <span
+class="math inline">\(\|f\|_{\infty}\)</span> to be the essential
+supremum of <span class="math inline">\(|f|\)</span>, and we let <span
+class="math inline">\(L^{\infty}(\mu)\)</span> consist of all <span
+class="math inline">\(f\)</span> for which <span
+class="math inline">\(\|f\|_{\infty}&lt;\infty\)</span>. The members of
+<span class="math inline">\(L^{\infty}(\mu)\)</span> are sometimes
+called essentially bounded measurable functions on <span
+class="math inline">\(X\)</span>.</p>
+<p><em>It follows from this definition that the inequality <span
+class="math inline">\(|f(x)| \leq \lambda\)</span> holds for almost all
+<span class="math inline">\(x\)</span> if and only if <span
+class="math inline">\(\lambda \geq\|f\|_{\infty}\)</span>.</em></p>
+<p>As in Definition 3.6, <span
+class="math inline">\(L^{\infty}\left(R^k\right)\)</span> denotes the
+class of all essentially bounded (with respect to Lebesgue measure)
+functions on <span class="math inline">\(R^k\)</span>, and <span
+class="math inline">\(\ell^{\infty}(A)\)</span> is the class of all
+bounded functions on <span class="math inline">\(A\)</span>. (Here
+bounded means the same as essentially bounded, since every nonempty set
+has positive measure!)</p>
+<h3 id="theorem">3.8 Theorem</h3>
+<p>If <span class="math inline">\(p\)</span> and <span
+class="math inline">\(q\)</span> are conjugate exponents, <span
+class="math inline">\(1 \leq p \leq \infty\)</span>, and if <span
+class="math inline">\(f \in L^p(\mu)\)</span> and <span
+class="math inline">\(g \in L^q(\mu)\)</span>, then <span
+class="math inline">\(f g \in L^1(\mu)\)</span>, and</p>
+<p><span class="math display">\[
+\|f g\|_1 \leq\|f\|_p\|g\|_q .
+\]</span></p>
+<p>Proof For <span class="math inline">\(1&lt;p&lt;\infty,(1)\)</span>
+is simply Hölder’s inequality, applied to <span
+class="math inline">\(|f|\)</span> and <span
+class="math inline">\(|g|\)</span>. If <span
+class="math inline">\(p=\infty\)</span>, note that <span
+class="math display">\[
+|f(x) g(x)| \leq\|f\|_{\infty}|g(x)|
+\]</span> for almost all <span class="math inline">\(x\)</span>;
+integrating (2), we obtain (1). If <span
+class="math inline">\(p=1\)</span>, then <span
+class="math inline">\(q=\infty\)</span>, and the same argument
+applies.</p>
+<h3 id="theorem-1">3.9 Theorem</h3>
+<p>Suppose <span class="math inline">\(1 \leq p \leq \infty\)</span>,
+and <span class="math inline">\(f \in L^p(\mu), g \in L^p(\mu)\)</span>.
+Then <span class="math inline">\(f+g \in L^p(\mu)\)</span>, and</p>
+<p><span class="math display">\[
+\|f+g\|_p \leq\|f\|_p+\|g\|_p .
+\]</span></p>
+<p>Proof For <span class="math inline">\(1&lt;p&lt;\infty\)</span>, this
+follows from Minkowski’s inequality, since</p>
+<p><span class="math display">\[
+\int_X|f+g|^p d \mu \leq \int_X(|f|+|g|)^p d \mu .
+\]</span></p>
+<p>For <span class="math inline">\(p=1\)</span> or <span
+class="math inline">\(p=\infty\)</span>, (1) is a trivial consequence of
+the inequality <span class="math inline">\(|f+g|
+\leq|f|+|g|\)</span>.</p>
+<h3 id="remarks">3.10 Remarks</h3>
+<p>Fix <span class="math inline">\(p, 1 \leq p \leq \infty\)</span>. If
+<span class="math inline">\(f \in L^p(\mu)\)</span> and <span
+class="math inline">\(\alpha\)</span> is a complex number, it is clear
+that <span class="math inline">\(\alpha f \in L^p(\mu)\)</span>. In
+fact,</p>
+<p><span class="math display">\[
+\|\alpha f\|_p=|\alpha|\|f\|_p .
+\]</span></p>
+<p>In conjunction with Theorem <span class="math inline">\(3.9\)</span>,
+this shows that <span class="math inline">\(L^p(\mu)\)</span> is a
+complex vector space.</p>
+<p>Suppose <span class="math inline">\(f, g\)</span>, and <span
+class="math inline">\(h\)</span> are in <span
+class="math inline">\(L^p(\mu)\)</span>. Replacing <span
+class="math inline">\(f\)</span> by <span
+class="math inline">\(f-g\)</span> and <span
+class="math inline">\(g\)</span> by <span
+class="math inline">\(g-h\)</span> in Theorem 3.9, we obtain</p>
+<p><span class="math display">\[
+\|f-h\|_p \leq\|f-g\|_p+\|g-h\|_p .
+\]</span></p>
+<p>This suggests that a metric may be introduced in <span
+class="math inline">\(L^p(\mu)\)</span> by defining the distance between
+<span class="math inline">\(f\)</span> and <span
+class="math inline">\(g\)</span> to be <span
+class="math inline">\(\|f-g\|_p\)</span>. Call this distance <span
+class="math inline">\(d(f, g)\)</span> for the moment. Then <span
+class="math inline">\(0 \leq d(f, g)&lt;\infty, d(f, f)=0, d(f, g)=d(g,
+f)\)</span>, and (2) shows that the triangle inequality <span
+class="math inline">\(d(f, h) \leq d(f, g)+d(g, h)\)</span> is
+satisfied. The only other property which <span
+class="math inline">\(d\)</span> should have to define a metric space is
+that <span class="math inline">\(d(f, g)=0\)</span> should imply that
+<span class="math inline">\(f=g\)</span>. In our present situation this
+need not be so; we have <span class="math inline">\(d(f, g)=0\)</span>
+precisely when <span class="math inline">\(f(x)=g(x)\)</span> for almost
+all <span class="math inline">\(x\)</span>.</p>
+<p>Let us write <span class="math inline">\(f \sim g\)</span> if and
+only if <span class="math inline">\(d(f, g)=0\)</span>. It is clear that
+this is an equivalence relation in <span
+class="math inline">\(L^p(\mu)\)</span> which partitions <span
+class="math inline">\(L^p(\mu)\)</span> into equivalence classes; each
+class consists of all functions which are equivalent to a given one. If
+<span class="math inline">\(F\)</span> and <span
+class="math inline">\(G\)</span> are two equivalence classes, choose
+<span class="math inline">\(f \in F\)</span> and <span
+class="math inline">\(g \in G\)</span>, and define <span
+class="math inline">\(d(F, G)=d(f, g)\)</span>; note that <span
+class="math inline">\(f \sim f_1\)</span> and <span
+class="math inline">\(g \sim g_1\)</span> implies</p>
+<p><span class="math display">\[
+d(f, g)=d\left(f_1, g_1\right)
+\]</span></p>
+<p>With this definition, the set of equivalence classes is now a metric
+space. Note that it is also a vector space, since <span
+class="math inline">\(f \sim f_1\)</span> and <span
+class="math inline">\(g \sim g_1\)</span> implies <span
+class="math inline">\(f+g \sim\)</span> <span
+class="math inline">\(f_1+g_1\)</span> and <span
+class="math inline">\(\alpha f \sim \alpha f_1\)</span>.</p>
+<p>When <span class="math inline">\(L^p(\mu)\)</span> is regarded as a
+metric space, then the space which is really under consideration is
+therefore <em>not a space whose elements are functions, but a space
+whose elements are equivalence classes of functions.</em> For the sake
+of simplicity of language, it is, however, customary to relegate this
+distinction to the status of a tacit understanding and to continue to
+speak of <span class="math inline">\(L^p(\mu)\)</span> as a space of
+functions. We shall follow this custom.</p>
+<p>If <span class="math inline">\(\left\{f_n\right\}\)</span> is a
+sequence in <span class="math inline">\(L^p(\mu)\)</span>, if <span
+class="math inline">\(f \in L^p(\mu)\)</span>, and if <span
+class="math inline">\(\lim _{n \rightarrow
+\infty}\left\|f_n-f\right\|_p=0\)</span>, we say that <span
+class="math inline">\(\left\{f_n\right\}\)</span> converges to <span
+class="math inline">\(f\)</span> in <span
+class="math inline">\(L^p(\mu)\)</span> (or that <span
+class="math inline">\(\left\{f_n\right\}\)</span> converges to <span
+class="math inline">\(f\)</span> in the mean of order <span
+class="math inline">\(p\)</span>, or that <span
+class="math inline">\(\left\{f_n\right\}\)</span> is <span
+class="math inline">\(L^p\)</span>-convergent to <span
+class="math inline">\(f\)</span> ). If to every <span
+class="math inline">\(\epsilon&gt;0\)</span> there corresponds an
+integer <span class="math inline">\(N\)</span> such that <span
+class="math inline">\(\left\|f_n-f_m\right\|_p&lt;\epsilon\)</span> as
+soon as <span class="math inline">\(n&gt;N\)</span> and <span
+class="math inline">\(m&gt;N\)</span>, we call <span
+class="math inline">\(\left\{f_n\right\}\)</span> a Cauchy sequence in
+<span class="math inline">\(L^p(\mu)\)</span>. These definitions are
+exactly as in any metric space.</p>
+<p>It is a very important fact that <span
+class="math inline">\(L^p(\mu)\)</span> is a complete metric space,
+i.e., that every Cauchy sequence in <span
+class="math inline">\(L^p(\mu)\)</span> converges to an element of <span
+class="math inline">\(L^p(\mu)\)</span> :</p>
+<h3 id="theorem-2">3.11 Theorem</h3>
+<p><span class="math inline">\(L^p(\mu)\)</span> is a complete metric
+space, for <span class="math inline">\(1 \leq p \leq \infty\)</span> and
+for every positive measure <span class="math inline">\(\mu\)</span>.</p>
+<p>Proof Assume first that <span class="math inline">\(1 \leq
+p&lt;\infty\)</span>. Let <span
+class="math inline">\(\left\{f_n\right\}\)</span> be a Cauchy sequence
+in <span class="math inline">\(L^p(\mu)\)</span>. There is a subsequence
+<span class="math inline">\(\left\{f_{n_i}\right\},
+n_1&lt;n_2&lt;\cdots\)</span>, such that</p>
+<p><span class="math display">\[
+\left\|f_{n_{i+1}}-f_{n_i}\right\|_p&lt;2^{-i} \quad(i=1,2,3, \ldots)
+\]</span></p>
+<p>Put</p>
+<p><span class="math display">\[
+g_k=\sum_{i=1}^k\left|f_{n_{i+1}}-f_{n_i}\right|, \quad
+g=\sum_{i=1}^{\infty}\left|f_{n_{i+1}}-f_{n_i}\right| .
+\]</span></p>
+<p>Since (1) holds, the Minkowski inequality shows that <span
+class="math inline">\(\left\|g_k\right\|_p&lt;1\)</span> for <span
+class="math inline">\(k=1\)</span>, <span class="math inline">\(2,3,
+\ldots\)</span>. Hence an application of Fatou’s lemma to <span
+class="math inline">\(\left\{g_k^p\right\}\)</span> gives <span
+class="math inline">\(\|g\|_p \leq 1\)</span>. In particular, <span
+class="math inline">\(g(x)&lt;\infty\)</span> a.e., so that the
+series</p>
+<p><span class="math display">\[
+f_{n_1}(x)+\sum_{i=1}^{\infty}\left(f_{n_{i+1}}(x)-f_{n_i}(x)\right)
+\]</span></p>
+<p>converges absolutely for almost every <span class="math inline">\(x
+\in X\)</span>. Denote the sum of (3) by <span
+class="math inline">\(f(x)\)</span>, for those <span
+class="math inline">\(x\)</span> at which (3) converges; put <span
+class="math inline">\(f(x)=0\)</span> on the remaining set of measure
+zero. Since</p>
+<p><span class="math display">\[
+f_{n_1}+\sum_{i=1}^{k-1}\left(f_{n_{i+1}}-f_{n_i}\right)=f_{n_k},
+\]</span></p>
+<p>we see that</p>
+<p><span class="math display">\[
+f(x)=\lim _{i \rightarrow \infty} f_{n_i}(x) \quad \text { a.e. }
+\]</span></p>
+<p>Having found a function <span class="math inline">\(f\)</span> which
+is the pointwise limit a.e. of <span class="math inline">\(\left\{f_{n
+i}\right\}\)</span>, we now have to prove that this <span
+class="math inline">\(f\)</span> is the <span
+class="math inline">\(L^p\)</span>-limit of <span
+class="math inline">\(\left\{f_n\right\}\)</span>. Choose <span
+class="math inline">\(\epsilon&gt;0\)</span>. There exists an <span
+class="math inline">\(N\)</span> such that <span
+class="math inline">\(\left\|f_n-f_m\right\|_p&lt;\epsilon\)</span> if
+<span class="math inline">\(n&gt;N\)</span> and <span
+class="math inline">\(m&gt;N\)</span>. For every <span
+class="math inline">\(m&gt;N\)</span>, Fatou’s lemma shows therefore
+that</p>
+<p><span class="math display">\[
+\int_X\left|f-f_m\right|^p d \mu \leq \liminf _{i \rightarrow \infty}
+\int_X\left|f_{n_i}-f_m\right|^p d \mu \leq \epsilon^p .
+\]</span></p>
+<p>We conclude from (6) that <span class="math inline">\(f-f_m \in
+L^p(\mu)\)</span>, hence that <span class="math inline">\(f \in
+L^p(\mu)\)</span> [since <span class="math inline">\(f=\)</span> <span
+class="math inline">\(\left.\left(f-f_m\right)+f_m\right]\)</span>, and
+finally that <span class="math inline">\(\left\|f-f_m\right\|_p
+\rightarrow 0\)</span> as <span class="math inline">\(m \rightarrow
+\infty\)</span>. This completes the proof for the case <span
+class="math inline">\(1 \leq p&lt;\infty\)</span>.</p>
+<p>In <span class="math inline">\(L^{\infty}(\mu)\)</span> the proof is
+much easier. Suppose <span
+class="math inline">\(\left\{f_n\right\}\)</span> is a Cauchy sequence
+in <span class="math inline">\(L^{\infty}(\mu)\)</span>, let <span
+class="math inline">\(A_k\)</span> and <span class="math inline">\(B_{m,
+n}\)</span> be the sets where <span
+class="math inline">\(\left|f_k(x)\right|&gt;\left\|f_k\right\|_{\infty}\)</span>
+and where <span
+class="math inline">\(\left|f_n(x)-f_m(x)\right|&gt;\left\|f_n-f_m\right\|_{\infty}\)</span>,
+and let <span class="math inline">\(E\)</span> be the union of these
+sets, for <span class="math inline">\(k, m\)</span>, <span
+class="math inline">\(n=1,2,3, \ldots\)</span>. Then <span
+class="math inline">\(\mu(E)=0\)</span>, and on the complement of <span
+class="math inline">\(E\)</span> the sequence <span
+class="math inline">\(\left\{f_n\right\}\)</span> converges uniformly to
+a bounded function <span class="math inline">\(f\)</span>. Define <span
+class="math inline">\(f(x)=0\)</span> for <span class="math inline">\(x
+\in E\)</span>. Then <span class="math inline">\(f \in
+L^{\infty}(\mu)\)</span>, and <span
+class="math inline">\(\left\|f_n-f\right\|_{\infty} \rightarrow
+0\)</span> as <span class="math inline">\(n \rightarrow
+\infty\)</span>.</p>
+<p>The preceding proof contains a result which is interesting enough to
+be stated separately:</p>
+<h3 id="theorem-3">3.12 Theorem</h3>
+<p>If <span class="math inline">\(1 \leq p \leq \infty\)</span> and if
+<span class="math inline">\(\left\{f_n\right\}\)</span> is a Cauchy
+sequence in <span class="math inline">\(L^p(\mu)\)</span>, with limit
+<span class="math inline">\(f\)</span>, then <span
+class="math inline">\(\left\{f_n\right\}\)</span> has a subsequence
+which converges pointwise almost everywhere to <span
+class="math inline">\(f(x)\)</span>.</p>
+<p>The simple functions play an interesting role in <span
+class="math inline">\(L^p(\mu)\)</span> :</p>
+<h3 id="theorem-4">3.13 Theorem</h3>
+<p>Let <span class="math inline">\(S\)</span> be the class of all
+complex, measurable, simple functions on <span
+class="math inline">\(X\)</span> such that <span class="math display">\[
+\mu(\{x: s(x) \neq 0\})&lt;\infty .
+\]</span> If <span class="math inline">\(1 \leq p&lt;\infty\)</span>,
+then <span class="math inline">\(S\)</span> is dense in <span
+class="math inline">\(L^p(\mu)\)</span>.</p>
+<p>Proof First, it is clear that <span class="math inline">\(S \subset
+L^p(\mu)\)</span>. Suppose <span class="math inline">\(f \geq 0, f \in
+L^p(\mu)\)</span>, and let <span
+class="math inline">\(\left\{s_n\right\}\)</span> be as in Theorem 1.17.
+Since <span class="math inline">\(0 \leq s_n \leq f\)</span>, we have
+<span class="math inline">\(s_n \in L^p(\mu)\)</span>, hence <span
+class="math inline">\(s_n \in S\)</span>. Since <span
+class="math inline">\(\left|f-s_n\right|^p \leq f^p\)</span>, the
+dominated convergence theorem shows that <span
+class="math inline">\(\left\|f-s_n\right\|_p \rightarrow 0\)</span> as
+<span class="math inline">\(n \rightarrow \infty\)</span>. Thus <span
+class="math inline">\(f\)</span> is in the <span
+class="math inline">\(L^p\)</span>-closure of <span
+class="math inline">\(S\)</span>. The general case <span
+class="math inline">\((f\)</span> complex) follows from this.</p>
+
+    </div>
+    
+</div>
+</div>
+
+                <div id="footer-wrapper">
+                    <footer class="footer"><footer class="row pl-3 pr-3">
+    <div class="col-12 d-flex justify-content-between align-items-center text-muted pl-0 pr-0">
+        <div class="footer-left">
+            <p class="mb-0"> © 2022 <a href="https://github.com/chen-gz">guangzong</a>. <span data-toggle="tooltip"
+                    data-placement="top"
+                    title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author.">All
+                    rights reserved.</span></p>
+        </div>
+        <div class="footer-right">
+            <p class="mb-0"> Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">hugo</a>
+                with <a href="https://github.com/chen-gz/hugo_zong" target="_blank" rel="noopener">zong</a>
+                theme.</p>
+        </div>
+    </div>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script> MathJax = {
+            tex: {
+                tags: 'ams',
+            }
+        };</script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</footer>
+</footer>
+                </div>
+            </div>
+            <div id="panel-wrapper" class="d-flex flex-column"><div id="toc-wrapper" class="mb-5 pl-2">
+    <span>Contents</span>
+    <nav id="toc" data-toggle="toc">
+        
+        
+        
+    </nav>
+</div>
+
+<div id="access-lastmod" class="pb-4 pl-2">
+    <div class="panel-heading">Recently Updated</div>
+    <ul class="post-content pl-3 pb-1 ml-1 mt-2">
+          
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/1-total-variation/">Total Variation</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-7/1-derivatives-of-measures/">Derivatives of Measures</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/3-consequences-of-the-radon-nikodym-theorem/">Consequences of the Radon-Nikodym Theorem</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/4-bounded-linear-functionals-on-lp/">Bounded linear functional on Lp</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/2-abosolute-continuity/">Abosolute Continuity</a></li>
+        
+    </ul>
+</div>
+
+<div id="access-tags" class="pl-2">
+    <div class="panel-heading">Trending Tags</div>
+    <div class="d-flex flex-wrap mt-3 mb-1 mr-3">
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/algorithm/">Algorithm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/android/">Android</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c/">C</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c-language/">c language</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/caddy/">Caddy</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cadence/">Cadence</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cdc/">CDC</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/classification/">classification</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/compress/">Compress</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/conf/">Conf</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/double-column/">Double Column</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/errno13/">Errno13</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/fish/">fish</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gan/">GAN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/git/">Git</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gtk/">Gtk</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/html/">Html</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/i3/">I3</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/idea/">Idea</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/java/">Java</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/latex/">Latex</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lda/">LDA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linear-programming/">Linear Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linux/">Linux</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lr/">LR</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/math/">Math</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mathematics/">Mathematics</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matlab/">Matlab</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matplot/">matplot</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/memory/">Memory</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mermaid/">Mermaid</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/misc/">Misc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/ml/">ML</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mosfet/">Mosfet</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/network/">Network</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/nn/">NN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pandoc/">Pandoc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pca/">PCA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/probability/">Probability</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/productive/">Productive</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/program/">Program</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/programming/">Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/python/">Python</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/qt/">Qt</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/random-variable/">Random Variable</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rcnn/">RCNN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rust/">Rust</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/security/">Security</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/software/">Software</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/std/">Std</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/svd/">Svd</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/tool/">Tool</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/usb/">USB</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vim/">Vim</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpn/">Vpn</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpnc/">Vpnc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/xterm/">xterm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/zsh/">Zsh</a>
+        
+    </div>
+</div>
+</div><div id="search-result-wrapper" class="d-flex justify-content-center unloaded">
+    <div class="col-12 col-sm-11 post-content">
+        <div id="search-hints"></div>
+        <div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3 col-12"></div>
+    </div>
+</div>
+
+<script src="/js/fuse.min.js"></script>
+<script src="/js/fastsearch.js"></script>
+
+
+</div>
+        <div id="mask"></div>
+        <a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button"
+            style="display: none">
+            <i class="fas fa-angle-up"></i>
+        </a>
+    </div>
+    
+</body>
+
+</html>

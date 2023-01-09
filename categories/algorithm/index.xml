@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Algorithm on Guangzong Blog</title>
+    <link>https://zongpitt.com/categories/algorithm/</link>
+    <description>Recent content in Algorithm on Guangzong Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 24 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://zongpitt.com/categories/algorithm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Binary indexed tree (Fenwick Tree)</title>
+      <link>https://zongpitt.com/algorithm/binary-indexed-tree/</link>
+      <pubDate>Wed, 24 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/algorithm/binary-indexed-tree/</guid>
+      <description>Background A Fenwick tree or binary indexed tree is a data structure that can efficiently update elements and calculate prefix sums in a table of numbers.1
+Space and Time Complexity
+\[ \begin{array}{lll} \text { Algorithm } &amp;amp; \text { Average } &amp;amp; \text { Worst case } \\ \text { Space } &amp;amp; \mathrm{O}(n) &amp;amp; \mathrm{O}(n) \\ \text { Search } &amp;amp; \mathrm{O}(\log n) &amp;amp; \mathrm{O}(\log n) \\ \text { Insert } &amp;amp; \mathrm{O}(\log n) &amp;amp; \mathrm{O}(\log n) \\ \text { Delete } &amp;amp; \mathrm{O}(\log n) &amp;amp; \mathrm{O}(\log n) \end{array} \]</description>
+    </item>
+    
+    <item>
+      <title>Segment Tree</title>
+      <link>https://zongpitt.com/algorithm/segment-tree/</link>
+      <pubDate>Wed, 24 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/algorithm/segment-tree/</guid>
+      <description>Background In computer science, a segment tree, also known as a statistic tree, is a tree data structure used for storing information about intervals, or segments. It allows querying which of the stored segments contain a given point. It is, in principle, a static structure; that is, it’s a structure that cannot be modified once it’s built. A similar data structure is the interval tree.1
+Space Complexity: \(O(n\log n)\)
+Time Complexity:</description>
+    </item>
+    
+    <item>
+      <title>Topology Sort</title>
+      <link>https://zongpitt.com/algorithm/topology-sort/</link>
+      <pubDate>Wed, 04 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/algorithm/topology-sort/</guid>
+      <description>Graph The graph has 3 member variables. edges store all edges. To retrieve an edge the index of the edge is required. So there are other member variables g to store the index of the edges. The content in g[i] are the edges index which start from node i. The member variable n is number of node. The node index in this template is [0, n-1].
+The edge have three attribution, from, to, cost.</description>
+    </item>
+    
+    <item>
+      <title>Strongly connected components</title>
+      <link>https://zongpitt.com/posts/2021-07-20-dfs-scc/</link>
+      <pubDate>Tue, 20 Jul 2021 11:36:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-07-20-dfs-scc/</guid>
+      <description>Most content of this post is from Introduction to Algorithms. I will explain idea in a simple way but without any prove.
+Strongly connected components The definition of strongly connected components of a directed graph \(G= (V, E)\) is amximal set of vertices\(C\subseteq V\) such that for every pair of vertices \(u\) and \(v\) in \(C\), we have both \(u \leadsto v\) and \(v\leadsto u\); that is, verices \(u\) and \(v\) are reachable from each other.</description>
+    </item>
+    
+    <item>
+      <title>Welfare-Optimal Driver Assignment in Ride Sharing</title>
+      <link>https://zongpitt.com/posts/2020-10-16-welfare-optimal-driver-assignment-in-fide-sharing/</link>
+      <pubDate>Fri, 16 Oct 2020 22:32:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-10-16-welfare-optimal-driver-assignment-in-fide-sharing/</guid>
+      <description>Problem Description After graduation, you decide to join ride sharing company Uber. An important problem of Uber is to assign drivers to different locations in order to maximize the sum of all driver’s payoffs, also called the welfare. Suppose there are n drivers to be assigned to l locations. How much payoff a driver can receive at location k will depend on how many drivers in total are at k since they compete with each other.</description>
+    </item>
+    
+    <item>
+      <title>Evaluation of Page Ranking</title>
+      <link>https://zongpitt.com/posts/2020-10-16-evaluation-of-page-ranking/</link>
+      <pubDate>Fri, 16 Oct 2020 18:39:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-10-16-evaluation-of-page-ranking/</guid>
+      <description>Problem Description After graduation, you decide to join Google. As a leading search engine company, an important problem Google faces is to evaluate the quality of a ranking of web pages. Many measures can capture this quality. In this question, we will consider the number of inverse pairs. Concretely, suppose you are asked o evaluate the ranking of \(n\) web pages. Web page \(i\) is ranked at position \(i\) on a search outcome page by Google.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>matplot on Guangzong Blog</title>
+    <link>https://zongpitt.com/tags/matplot/</link>
+    <description>Recent content in matplot on Guangzong Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 18 Apr 2021 13:28:00 -0400</lastBuildDate><atom:link href="https://zongpitt.com/tags/matplot/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Draw a rectangle on image</title>
+      <link>https://zongpitt.com/posts/2021-04-18-draw-a-rectangle-on-image/</link>
+      <pubDate>Sun, 18 Apr 2021 13:28:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-04-18-draw-a-rectangle-on-image/</guid>
+      <description>from the stackoverflow[https://stackoverflow.com/questions/37435369/matplotlib-how-to-draw-a-rectangle-on-image]
+import matplotlib.pyplot as plt import matplotlib.patches as patches from PIL import Image im = Image.open(&amp;#39;stinkbug.png&amp;#39;) # Create figure and axes fig, ax = plt.subplots() # Display the image ax.imshow(im) # Create a Rectangle patch rect = patches.Rectangle((50, 100), 40, 30, linewidth=1, edgecolor=&amp;#39;r&amp;#39;, facecolor=&amp;#39;none&amp;#39;) # Add the patch to the Axes ax.add_patch(rect) plt.show() </description>
+    </item>
+    
+  </channel>
+</rss>

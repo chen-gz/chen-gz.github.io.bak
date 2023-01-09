@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css"
+        class="dark-mode-native-dark-original" />
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+     
+    <link rel="stylesheet" href="https://zongpitt.com/sass/main.06935202011a97ba473ebeeb0cb6788daa9fb5a9fff471a4e85850293d1c5ac4.css" />
+    <title>
+          Guangzong Blog | Trigonometric Series
+    </title>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.bundle.min.js"></script>
+    <script src=" https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.js"></script>
+
+    <script
+        src="https://cdn.jsdelivr.net/combine/npm/magnific-popup@1/dist/jquery.magnific-popup.min.js,npm/lozad/dist/lozad.min.js,npm/clipboard@2/dist/clipboard.min.js"></script>
+    <script type="text/javascript" src="/js/commons/back-to-top.js"></script>
+    
+    
+    
+    <script type="text/javascript" src="/js/commons/topbar-switch.js"></script>
+    <script type="text/javascript" src="/js/commons/sidebar.js"></script>
+    <script type="text/javascript" src="/js/utils/category-collapse.js"></script>
+    <script type="text/javascript" src="/js/utils/checkbox.js"></script>
+    <script type="text/javascript" src="/js/utils/clipboard.js"></script>
+    <script type="text/javascript" src="/js/utils/img-extra.js"></script>
+    <script type="text/javascript" src="/js/utils/pageviews.js"></script>
+    
+    <script type="text/javascript" src="/js/utils/timeago.js"></script>
+    
+    
+</head>
+<body data-spy="scroll" data-target="#toc" data-topbar-visible="true" class="d-flex"><div id="sidebar" class="d-flex flex-column align-items-end">
+    <div class="profile-wrapper text-center">
+
+        <div id="avatar">
+            <a href="/" alt="avatar" class="mx-auto"> <img src=https://github.com/chen-gz/chen-gz/blob/main/mine_square.jpg?raw&#61;truehttps://raw.githubusercontent.com/chen-gz/chen-gz/blob/main/mine_square.jpg alt="avatar"
+                    onerror="this.style.display='none'"> </a>
+        </div>
+
+        <div class="site-title mt-3"> <a href="/">Guangzong</a> </div>
+        <div class="site-subtitle font-italic">Welcome to my blog</div>
+    </div>
+
+    <ul>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/">
+                <span>
+                    Home
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/archive/">
+                <span>
+                    Archive
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/tags/">
+                <span>
+                    Tags
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/about/">
+                <span>
+                    About
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/categories/">
+                <span>
+                    Categories
+                </span>
+            </a>
+        </li>
+        
+    </ul>
+
+    <div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center align-items-center">
+        <button class="mode-toggle btn" aria-label="Switch Mode"> 
+            <i class="fas fa-adjust"></i> 
+        </button>
+
+        <span class="icon-border"></span>
+        <a href="https://github.com/chen-gz" aria-label="github" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i>
+        </a>
+
+        <a href=" javascript:location.href = 'mailto:' + ['chen-gz','outlook.com'].join('@')" aria-label="email">
+            <i class="fas fa-envelope"></i>
+        </a>
+
+        <a href="/feed.xml" aria-label="rss"> <i class="fas fa-rss"></i> </a>
+    </div>
+
+    
+    
+</div>
+<div id="all-wrapper" class="d-flex flex-column"><div id="topbar-wrapper">
+    <div id="topbar" class="d-flex">
+        
+        <span id="breadcrumb" class="d-flex">
+              
+               
+            
+            
+            <div><a href='https://zongpitt.com/'>Home</a></div>
+              
+              
+            
+            <div><a href="https://zongpitt.com/papa-rudin">papa-rudin</a></div>
+               
+              
+            
+            <div><a href="https://zongpitt.com/papa-rudin/ch-4">ch-4</a></div>
+               
+                 
+                
+        </span>
+        <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i>
+        <div id="topbar-title">Guangzong</div>
+        <i id="search-trigger" class="fas fa-search fa-fw"></i>
+        <span id="search-wrapper" class="align-items-center">
+            <i class="fas fa-search fa-fw"></i>
+            <input class="form-control" id="search-input" type="search" aria-label="search" autocomplete="off"
+                placeholder="Search..." />
+            <i class="fa fa-times-circle fa-fw" id="search-cleaner"></i>
+        </span>
+    </div>
+</div>
+<div id="main-wrapper" class="d-flex mt-3">
+            <div id="core-wrapper" class="d-flex flex-column">
+                <div id="main" class="d-flex flex-column">
+                    
+<div class="post pl-1 pr-1 pl-md-2 pr-md-2">
+    
+    <div id="post-content">
+        <h1 style="text-align: center;">Trigonometric Series</h1>
+        <br>
+        
+        <h3 id="definitions">4.23 Definitions</h3>
+<p>Let <span class="math inline">\(T\)</span> be the unit circle in the
+complex plane, i.e., the set of all complex numbers of absolute value 1
+. If <span class="math inline">\(F\)</span> is any function on <span
+class="math inline">\(T\)</span> and if <span
+class="math inline">\(f\)</span> is defined on <span
+class="math inline">\(R^1\)</span> by</p>
+<p><span class="math display">\[
+\begin{equation}
+f(t)=F\left(e^{i t}\right),
+\end{equation}
+\]</span></p>
+<p>then <span class="math inline">\(f\)</span> is a periodic function of
+period <span class="math inline">\(2 \pi\)</span>. This means that <span
+class="math inline">\(f(t+2 \pi)=f(t)\)</span> for all real <span
+class="math inline">\(t\)</span>. Conversely, if <span
+class="math inline">\(f\)</span> is a function on <span
+class="math inline">\(R^1\)</span>, with period <span
+class="math inline">\(2 \pi\)</span>, then there is a function <span
+class="math inline">\(F\)</span> on <span
+class="math inline">\(T\)</span> such that (1) holds. Thus we may
+identify functions on <span class="math inline">\(T\)</span> with <span
+class="math inline">\(2 \pi\)</span>-periodic functions on <span
+class="math inline">\(R^1\)</span>; and, for simplicity of notation, we
+shall sometimes write <span class="math inline">\(f(t)\)</span> rather
+than <span class="math inline">\(f\left(e^{i t}\right)\)</span>, even if
+we think of <span class="math inline">\(f\)</span> as being defined on
+<span class="math inline">\(T\)</span>.</p>
+<p>With these conventions in mind, we define <span
+class="math inline">\(L^p(T)\)</span>, for <span class="math inline">\(1
+\leq p&lt;\infty\)</span>, to be the class of all complex, Lebesgue
+measurable, <span class="math inline">\(2 \pi\)</span>-periodic
+functions on <span class="math inline">\(R^1\)</span> for which the norm
+<span class="math display">\[
+\begin{equation}
+\|f\|_p=\left\{\frac{1}{2 \pi} \int_{-\pi}^\pi|f(t)|^p d t\right\}^{1 /
+p}
+\end{equation}
+\]</span> is finite.</p>
+<p>In other words, we are looking at <span
+class="math inline">\(L^p(\mu)\)</span>, where <span
+class="math inline">\(\mu\)</span> is Lebesgue measure on <span
+class="math inline">\([0,2 \pi]\)</span> (or on <span
+class="math inline">\(T\)</span> ), divided by <span
+class="math inline">\(2 \pi\)</span>. <span
+class="math inline">\(L^{\infty}(T)\)</span> will be the class of all
+<span class="math inline">\(2 \pi\)</span>-periodic members of <span
+class="math inline">\(L^{\infty}\left(R^1\right)\)</span>, with the
+essential supremum norm, and <span class="math inline">\(C(T)\)</span>
+consists of all continuous complex functions on <span
+class="math inline">\(T\)</span> (or, equivalently, of all continuous,
+complex, <span class="math inline">\(2 \pi\)</span>-periodic functions
+on <span class="math inline">\(R^1\)</span> ), with norm <span
+class="math display">\[
+\begin{equation}
+\|f\|_{\infty}=\sup _t|f(t)|,
+\end{equation}
+\]</span></p>
+<p>The factor <span class="math inline">\(1 /(2 \pi)\)</span> in (2)
+simplifies the formalism we are about to develop. For instance, the
+<span class="math inline">\(L^p\)</span>-norm of the constant function 1
+is 1 .</p>
+<p>A <em>trigonometric polynomial</em> is a finite sum of the form</p>
+<p><span class="math display">\[
+\begin{equation}
+f(t)=a_0+\sum_{n=1}^N\left(a_n \cos n t+b_n \sin n t\right) \quad\left(t
+\in R^1\right)
+\end{equation}
+\]</span></p>
+<p>where <span class="math inline">\(a_0, a_1, \ldots, a_N\)</span> and
+<span class="math inline">\(b_1, \ldots, b_N\)</span> are complex
+numbers. On account of the Euler identities, (4) can also be written in
+the form</p>
+<p><span class="math display">\[
+\begin{equation}
+f(t)=\sum_{n=-N}^N c_n e^{i n t}
+\end{equation}
+\]</span></p>
+<p>which is more convenient for most purposes. It is clear that every
+trigonometric polynomial has period <span class="math inline">\(2
+\pi\)</span>.</p>
+<p>We shall denote the set of all integers (positive, zero, and
+negative) by <span class="math inline">\(Z\)</span>, and put</p>
+<p><span class="math display">\[
+u_n(t)=e^{i n t} \quad(n \in Z) .
+\]</span></p>
+<p>If we define the inner product in <span
+class="math inline">\(L^2(T)\)</span> by</p>
+<p><span class="math display">\[
+(f, g)=\frac{1}{2 \pi} \int_{-\pi}^\pi f(t) \overline{g(t)} d t
+\]</span></p>
+<p>[note that this is in agreement with (2)], an easy computation shows
+that</p>
+<p><span class="math display">\[
+\left(u_n, u_m\right)=\frac{1}{2 \pi} \int_{-\pi}^\pi e^{i(n-m) t} d t=
+\begin{cases}1 &amp; \text { if } n=m, \\ 0 &amp; \text { if } n \neq m
+.\end{cases}
+\]</span></p>
+<p>Thus <span class="math inline">\(\left\{u_n: n \in Z\right\}\)</span>
+is an orthonormal set in <span class="math inline">\(L^2(T)\)</span>,
+usually called the trigonometric system. We shall now prove that this
+system is maximal, and shall then derive concrete versions of the
+abstract theorems previously obtained in the Hilbert space context.</p>
+<h3 id="the-completeness-of-the-trigonometric-system">4.24 The
+Completeness of the Trigonometric System</h3>
+<p>Theorem <span class="math inline">\(4.18\)</span> shows that the
+maximality (or completeness) of the trigonometric system will be proved
+as soon as we can show that the set of all trigonometric polynomials is
+dense in <span class="math inline">\(L^2(T)\)</span>. Since <span
+class="math inline">\(C(T)\)</span> is dense in <span
+class="math inline">\(L^2(T)\)</span>, by Theorem <span
+class="math inline">\(3.14\)</span> (note that <span
+class="math inline">\(T\)</span> is compact), it suffices to show that
+to every <span class="math inline">\(f \in C(T)\)</span> and to every
+<span class="math inline">\(\epsilon&gt;0\)</span> there is a
+trigonometric polynomial <span class="math inline">\(P\)</span> such
+that <span class="math inline">\(\|f-P\|_2&lt;\epsilon\)</span>. Since
+<span class="math inline">\(\|g\|_2 \leq\|g\|_{\infty}\)</span> for
+every <span class="math inline">\(g \in C(T)\)</span>, the estimate
+<span class="math inline">\(\|f-P\|_2&lt;\epsilon\)</span> will follow
+from <span class="math inline">\(\|f-P\|_{\infty}&lt;\epsilon\)</span>,
+and it is this estimate which we shall prove.</p>
+<p>Suppose we had trigonometric polynomials <span
+class="math inline">\(Q_1, Q_2, Q_3, \ldots\)</span>, with the following
+properties:</p>
+<ol type="a">
+<li><span class="math inline">\(Q_k(t) \geq 0\)</span> for <span
+class="math inline">\(t \in R^1\)</span>.</li>
+<li></li>
+</ol>
+<p><span class="math display">\[
+\frac{1}{2 \pi} \int_{-\pi}^\pi Q_k(t) d t=1 .
+\]</span></p>
+<ol start="3" type="a">
+<li>If <span class="math inline">\(\eta_k(\delta)=\sup \left\{Q_k(t):
+\delta \leq|t| \leq \pi\right\}\)</span>, then</li>
+</ol>
+<p><span class="math display">\[
+\lim _{k \rightarrow \infty} \eta_k(\delta)=0
+\]</span></p>
+<p>for every <span class="math inline">\(\delta&gt;0\)</span>.</p>
+<p>Another way of stating <span class="math inline">\((c)\)</span> is to
+say: for every <span class="math inline">\(\delta&gt;0, Q_k(t)
+\rightarrow 0\)</span> uniformly on <span
+class="math inline">\([-\pi,-\delta] \cup[\delta, \pi]\)</span></p>
+<p>To each <span class="math inline">\(f \in C(T)\)</span> we associate
+the functions <span class="math inline">\(P_k\)</span> defined by</p>
+<p><span class="math display">\[
+P_k(t)=\frac{1}{2 \pi} \int_{-\pi}^\pi f(t-s) Q_k(s) d s \quad(k=1,2,3,
+\ldots) .
+\]</span></p>
+<p>If we replace <span class="math inline">\(s\)</span> by <span
+class="math inline">\(-s\)</span> (using Theorem <span
+class="math inline">\(2.20(e)\)</span> ) and then by <span
+class="math inline">\(s-t\)</span>, the periodicity of <span
+class="math inline">\(f\)</span> and <span
+class="math inline">\(Q_k\)</span> shows that the value of the integral
+is not affected. Hence</p>
+<p><span class="math display">\[
+P_k(t)=\frac{1}{2 \pi} \int_{-\pi}^\pi f(s) Q_k(t-s) d s \quad(k=1,2,3,
+\ldots) .
+\]</span></p>
+<p>Since each <span class="math inline">\(Q_k\)</span> is a
+trigonometric polynomial, <span class="math inline">\(Q_k\)</span> is of
+the form</p>
+<p><span class="math display">\[
+Q_k(t)=\sum_{n=-N_k}^{N_k} a_{n, k} e^{i n t},
+\]</span></p>
+<p>and if we replace <span class="math inline">\(t\)</span> by <span
+class="math inline">\(t-s\)</span> in (3) and substitute the result in
+(2), we see that each <span class="math inline">\(P_k\)</span> is a
+trigonometric polynomial.</p>
+<p>Let <span class="math inline">\(\epsilon&gt;0\)</span> be given.
+Since <span class="math inline">\(f\)</span> is uniformly continuous on
+<span class="math inline">\(T\)</span>, there exists a <span
+class="math inline">\(\delta&gt;0\)</span> such that <span
+class="math inline">\(|f(t)-f(s)|&lt;\epsilon\)</span> whenever <span
+class="math inline">\(|t-s|&lt;\delta\)</span>. By <span
+class="math inline">\((b)\)</span>, we have</p>
+<p><span class="math display">\[
+P_k(t)-f(t)=\frac{1}{2 \pi} \int_{-\pi}^\pi\{f(t-s)-f(t)\} Q_k(s) d s,
+\]</span></p>
+<p>and <span class="math inline">\((a)\)</span> implies, for all <span
+class="math inline">\(t\)</span>, that</p>
+<p><span class="math display">\[
+\left|P_k(t)-f(t)\right| \leq \frac{1}{2 \pi}
+\int_{-\pi}^\pi|f(t-s)-f(t)| Q_k(s) d s=A_1+A_2,
+\]</span></p>
+<p>where <span class="math inline">\(A_1\)</span> is the integral over
+<span class="math inline">\([-\delta, \delta]\)</span> and <span
+class="math inline">\(A_2\)</span> is the integral over <span
+class="math inline">\([-\pi,-\delta] \cup\)</span> <span
+class="math inline">\([\delta, \pi]\)</span>. In <span
+class="math inline">\(A_1\)</span>, the integrand is less than <span
+class="math inline">\(\epsilon Q_k(s)\)</span>, so <span
+class="math inline">\(A_1&lt;\epsilon\)</span>, by <span
+class="math inline">\((b)\)</span>. In <span
+class="math inline">\(A_2\)</span>, we have <span
+class="math inline">\(Q_k(s) \leq \eta_k(\delta)\)</span>, hence</p>
+<p><span class="math display">\[
+A_2 \leq 2\|f\|_{\infty} \cdot \eta_k(\delta)&lt;\epsilon
+\]</span></p>
+<p>for sufficiently large <span class="math inline">\(k\)</span>, by
+<span class="math inline">\((c)\)</span>. Since these estimates are
+independent of <span class="math inline">\(t\)</span>, we have proved
+that</p>
+<p><span class="math display">\[
+\lim _{k \rightarrow \infty}\left\|f-P_k\right\|_{\infty}=0 .
+\]</span></p>
+<p>It remains to construct the <span class="math inline">\(Q_k\)</span>.
+This can be done in many ways. Here is a simple one. Put</p>
+<p><span class="math display">\[
+Q_k(t)=c_k\left\{\frac{1+\cos t}{2}\right\}^k,
+\]</span></p>
+<p>where <span class="math inline">\(c_k\)</span> is chosen so that
+<span class="math inline">\((b)\)</span> holds. Since <span
+class="math inline">\((a)\)</span> is clear, we only need to show <span
+class="math inline">\((c)\)</span>. Since <span
+class="math inline">\(Q_k\)</span> is even, <span
+class="math inline">\((b)\)</span> shows that</p>
+<p><span class="math display">\[
+1=\frac{c_k}{\pi} \int_0^\pi\left\{\frac{1+\cos t}{2}\right\}^k d
+t&gt;\frac{c_k}{\pi} \int_0^\pi\left\{\frac{1+\cos t}{2}\right\}^k \sin
+t d t=\frac{2 c_k}{\pi(k+1)} .
+\]</span></p>
+<p>Since <span class="math inline">\(Q_k\)</span> is decreasing on <span
+class="math inline">\([0, \pi]\)</span>, it follows that</p>
+<p><span class="math display">\[
+Q_k(t) \leq Q_k(\delta) \leq \frac{\pi(k+1)}{2}\left(\frac{1+\cos
+\delta}{2}\right)^k \quad(0&lt;\delta \leq|t| \leq \pi)
+\]</span></p>
+<p>This implies <span class="math inline">\((c)\)</span>, since <span
+class="math inline">\(1+\cos \delta&lt;2\)</span> if <span
+class="math inline">\(0&lt;\delta \leq \pi\)</span>.</p>
+<p>We have proved the following important result:</p>
+<h3 id="theorem">4.25 Theorem</h3>
+<p>If <span class="math inline">\(f \in C(T)\)</span> and <span
+class="math inline">\(\epsilon&gt;0\)</span>, there is a trigonometric
+polynomial <span class="math inline">\(P\)</span> such that</p>
+<p><span class="math display">\[
+|f(t)-P(t)|&lt;\epsilon
+\]</span></p>
+<p>for every real <span class="math inline">\(t\)</span>.</p>
+<p>A more precise result was proved by Fejér (1904): The arithmetic
+means of the partial sums of the Fourier series of any <span
+class="math inline">\(f \in C(T)\)</span> converge uniformly to <span
+class="math inline">\(f\)</span>. For a proof (quite similar to the
+above) see Theorem <span class="math inline">\(3.1\)</span> of <span
+class="math inline">\([45]\)</span>, or p. 89 of [36], vol. I.</p>
+<h3 id="fourier-series">4.26 Fourier Series</h3>
+<p>For any <span class="math inline">\(f \in L^1(T)\)</span>, we define
+the Fourier coefficients of <span class="math inline">\(f\)</span> by
+the formula</p>
+<p><span class="math display">\[
+\hat{f}(n)=\frac{1}{2 \pi} \int_{-\pi}^\pi f(t) e^{-i n t} d t \quad(n
+\in Z)
+\]</span></p>
+<p>where, we recall, <span class="math inline">\(Z\)</span> is the set
+of all integers. We thus associate with each <span
+class="math inline">\(f \in L^1(T)\)</span> a function <span
+class="math inline">\(\hat{f}\)</span> on <span
+class="math inline">\(Z\)</span>. The Fourier series of <span
+class="math inline">\(f\)</span> is</p>
+<p><span class="math display">\[
+\sum_{-\infty}^{\infty} \hat{f}(n) e^{i n t}
+\]</span></p>
+<p>and its partial sums are</p>
+<p><span class="math display">\[
+s_N(t)=\sum_{-N}^N \hat{f}(n) e^{i n t} \quad(N=0,1,2, \ldots)
+\]</span></p>
+<p>Since <span class="math inline">\(L^2(T) \subset L^1(T)\)</span>, (1)
+can be applied to every <span class="math inline">\(f \in
+L^2(T)\)</span>. Comparing the definitions made in Secs. <span
+class="math inline">\(4.23\)</span> and <span
+class="math inline">\(4.13\)</span>, we can now restate Theorems <span
+class="math inline">\(4.17\)</span> and <span
+class="math inline">\(4.18\)</span> in concrete terms:</p>
+<p>The Riesz-Fischer theorem asserts that if <span
+class="math inline">\(\left\{c_n\right\}\)</span> is a sequence of
+complex numbers such that</p>
+<p><span class="math display">\[
+\sum_{n=-\infty}^{\infty}\left|c_n\right|^2&lt;\infty
+\]</span></p>
+<p>then there exists an <span class="math inline">\(f \in
+L^2(T)\)</span> such that</p>
+<p><span class="math display">\[
+c_n=\frac{1}{2 \pi} \int_{-\pi}^\pi f(t) e^{-i n t} d t \quad(n \in Z)
+\]</span></p>
+<p>The Parseval theorem asserts that</p>
+<p><span class="math display">\[
+\sum_{n=-\infty}^{\infty} \hat{f}(n) \overline{\hat{g}(n)}=\frac{1}{2
+\pi} \int_{-\pi}^\pi f(t) \overline{g(t)} d t
+\]</span></p>
+<p>whenever <span class="math inline">\(f \in L^2(T)\)</span> and <span
+class="math inline">\(g \in L^2(T)\)</span>; the series on the left of
+(6) converges absolutely; and if <span
+class="math inline">\(s_N\)</span> is as in <span
+class="math inline">\((3)\)</span>, then</p>
+<p><span class="math display">\[
+\lim _{N \rightarrow \infty}\left\|f-s_N\right\|_2=0,
+\]</span></p>
+<p>since a special case of <span class="math inline">\((6)\)</span>
+yields</p>
+<p><span class="math display">\[
+\left\|f-s_N\right\|_2^2=\sum_{|n|&gt;N}|\hat{f}(n)|^2 .
+\]</span></p>
+<p>Note that (7) says that every <span class="math inline">\(f \in
+L^2(T)\)</span> is the <span class="math inline">\(L^2\)</span>-limit of
+the partial sums of its Fourier series; i.e., the Fourier series of
+<span class="math inline">\(f\)</span> converges to <span
+class="math inline">\(f\)</span>, in the <span
+class="math inline">\(L^2\)</span>-sense. Pointwise convergence presents
+a more delicate problem, as we shall see in Chap. 5.</p>
+<p>The Riesz-Fischer theorem and the Parseval theorem may be summarized
+by saying that the mapping <span class="math inline">\(f \leftrightarrow
+\hat{f}\)</span> is a Hilbert space isomorphism of <span
+class="math inline">\(L^2(T)\)</span> onto <span
+class="math inline">\(\ell^2(Z)\)</span>.</p>
+<p>The theory of Fourier series in other function spaces, for instance
+in <span class="math inline">\(L^1(T)\)</span>, is much more difficult
+than in <span class="math inline">\(L^2(T)\)</span>, and we shall touch
+only a few aspects of it.</p>
+<p>Observe that the crucial ingredient in the proof of the Riesz-Fischer
+theorem is the fact that <span class="math inline">\(L^2\)</span> is
+complete. This is so well recognized that the name “RieszFischer
+theorem” is sometimes given to the theorem which asserts the
+completeness of <span class="math inline">\(L^2\)</span>, or even of any
+<span class="math inline">\(L^p\)</span>.</p>
+
+    </div>
+    
+</div>
+</div>
+
+                <div id="footer-wrapper">
+                    <footer class="footer"><footer class="row pl-3 pr-3">
+    <div class="col-12 d-flex justify-content-between align-items-center text-muted pl-0 pr-0">
+        <div class="footer-left">
+            <p class="mb-0"> © 2022 <a href="https://github.com/chen-gz">guangzong</a>. <span data-toggle="tooltip"
+                    data-placement="top"
+                    title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author.">All
+                    rights reserved.</span></p>
+        </div>
+        <div class="footer-right">
+            <p class="mb-0"> Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">hugo</a>
+                with <a href="https://github.com/chen-gz/hugo_zong" target="_blank" rel="noopener">zong</a>
+                theme.</p>
+        </div>
+    </div>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script> MathJax = {
+            tex: {
+                tags: 'ams',
+            }
+        };</script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</footer>
+</footer>
+                </div>
+            </div>
+            <div id="panel-wrapper" class="d-flex flex-column"><div id="toc-wrapper" class="mb-5 pl-2">
+    <span>Contents</span>
+    <nav id="toc" data-toggle="toc">
+        
+        
+        
+    </nav>
+</div>
+
+<div id="access-lastmod" class="pb-4 pl-2">
+    <div class="panel-heading">Recently Updated</div>
+    <ul class="post-content pl-3 pb-1 ml-1 mt-2">
+          
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/1-total-variation/">Total Variation</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-7/1-derivatives-of-measures/">Derivatives of Measures</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/3-consequences-of-the-radon-nikodym-theorem/">Consequences of the Radon-Nikodym Theorem</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/4-bounded-linear-functionals-on-lp/">Bounded linear functional on Lp</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/2-abosolute-continuity/">Abosolute Continuity</a></li>
+        
+    </ul>
+</div>
+
+<div id="access-tags" class="pl-2">
+    <div class="panel-heading">Trending Tags</div>
+    <div class="d-flex flex-wrap mt-3 mb-1 mr-3">
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/algorithm/">Algorithm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/android/">Android</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c/">C</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c-language/">c language</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/caddy/">Caddy</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cadence/">Cadence</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cdc/">CDC</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/classification/">classification</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/compress/">Compress</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/conf/">Conf</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/double-column/">Double Column</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/errno13/">Errno13</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/fish/">fish</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gan/">GAN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/git/">Git</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gtk/">Gtk</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/html/">Html</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/i3/">I3</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/idea/">Idea</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/java/">Java</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/latex/">Latex</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lda/">LDA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linear-programming/">Linear Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linux/">Linux</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lr/">LR</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/math/">Math</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mathematics/">Mathematics</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matlab/">Matlab</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matplot/">matplot</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/memory/">Memory</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mermaid/">Mermaid</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/misc/">Misc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/ml/">ML</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mosfet/">Mosfet</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/network/">Network</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/nn/">NN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pandoc/">Pandoc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pca/">PCA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/probability/">Probability</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/productive/">Productive</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/program/">Program</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/programming/">Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/python/">Python</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/qt/">Qt</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/random-variable/">Random Variable</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rcnn/">RCNN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rust/">Rust</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/security/">Security</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/software/">Software</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/std/">Std</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/svd/">Svd</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/tool/">Tool</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/usb/">USB</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vim/">Vim</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpn/">Vpn</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpnc/">Vpnc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/xterm/">xterm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/zsh/">Zsh</a>
+        
+    </div>
+</div>
+</div><div id="search-result-wrapper" class="d-flex justify-content-center unloaded">
+    <div class="col-12 col-sm-11 post-content">
+        <div id="search-hints"></div>
+        <div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3 col-12"></div>
+    </div>
+</div>
+
+<script src="/js/fuse.min.js"></script>
+<script src="/js/fastsearch.js"></script>
+
+
+</div>
+        <div id="mask"></div>
+        <a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button"
+            style="display: none">
+            <i class="fas fa-angle-up"></i>
+        </a>
+    </div>
+    
+</body>
+
+</html>

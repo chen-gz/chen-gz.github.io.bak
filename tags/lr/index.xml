@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LR on Guangzong Blog</title>
+    <link>https://zongpitt.com/tags/lr/</link>
+    <description>Recent content in LR on Guangzong Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 10 Feb 2020 05:12:52 -0500</lastBuildDate><atom:link href="https://zongpitt.com/tags/lr/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Logistic Regression</title>
+      <link>https://zongpitt.com/posts/2021-02-11-logistic-regression/</link>
+      <pubDate>Mon, 10 Feb 2020 05:12:52 -0500</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-02-11-logistic-regression/</guid>
+      <description>For many logistic regression note they will put cost function as
+\[ J = - \frac{1}{N} l(\theta) \]
+I am not doing this here, basicaly we can use gradien ascent to to maximized cost function in the notes instread of gradient decent. Ther are almost the same. I alos want to comment \(1/m\) here, for gradient descent algorithm, what we care about is gradient descent direction. We will choose learning rate to change gradient descent speed.</description>
+    </item>
+    
+  </channel>
+</rss>

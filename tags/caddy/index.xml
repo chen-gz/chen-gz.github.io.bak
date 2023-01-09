@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Caddy on Guangzong Blog</title>
+    <link>https://zongpitt.com/tags/caddy/</link>
+    <description>Recent content in Caddy on Guangzong Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 02 Oct 2020 16:02:00 -0400</lastBuildDate><atom:link href="https://zongpitt.com/tags/caddy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Setup Caddy</title>
+      <link>https://zongpitt.com/posts/2020-10-02-setup-caddy/</link>
+      <pubDate>Fri, 02 Oct 2020 16:02:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-10-02-setup-caddy/</guid>
+      <description>caddy configure file Install caddy for now caddy2 not in archlinux official repository, should using aur to install
+follwing key is require when i was install (data: 2020-10-02)
+gpg --keyserver pool.sks-keyservers.net --receive-keys 29D0817A67156E4F25DC24782A349DD577D586A5 After install we need to setup caddy. configure file locate in /etc/caddy/Caddyfile.
+My configure show as follow.
+guangzong.xyz:443 { # i am only using 443 port tls chen-gz@outlook.com root * path_to_you_website_file file_server } For me, my file are locate in user account.</description>
+    </item>
+    
+  </channel>
+</rss>

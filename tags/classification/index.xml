@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>classification on Guangzong Blog</title>
+    <link>https://zongpitt.com/tags/classification/</link>
+    <description>Recent content in classification on Guangzong Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 06 Oct 2020 09:44:00 -0400</lastBuildDate><atom:link href="https://zongpitt.com/tags/classification/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Food Clarify</title>
+      <link>https://zongpitt.com/posts/2020-10-06-food-clarify/</link>
+      <pubDate>Tue, 06 Oct 2020 09:44:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-10-06-food-clarify/</guid>
+      <description>For each image k have 200 tag and confidence level.
+image tag1 confidence level … tag200 confidence level 1 tag1_1_name p1_2 tag200_1_name p1_200 2 tag1_2_name p2_1 tag200_2_name p2_200 … n tag1_n_name pn_1 tag200_n_name pn_200 Totally, 3641 tag appeared in all picture. Pict the tag with the highest frequency.
+construct the vector
+image tag1 tag2 … tag310 tag311 1 p1_1 p1_2 p1_310 p1_310 2 p2_1 p2_2 p2_310 p2_310 … n pn_1 pn_2 pn_310 pn_310 e.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>chapter 3 Numeriacal Sequences and Series on Guangzong Blog</title>
+    <link>https://zongpitt.com/baby-rudin/ch3/</link>
+    <description>Recent content in chapter 3 Numeriacal Sequences and Series on Guangzong Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://zongpitt.com/baby-rudin/ch3/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>5 SOME SPECIAL SEQUENCES</title>
+      <link>https://zongpitt.com/baby-rudin/ch3/5-some-special-sequences/</link>
+      <pubDate>Sun, 11 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/ch3/5-some-special-sequences/</guid>
+      <description>youtube bilibili note pdf xopp We shall now compute the limits of some sequences which occur frequently. The proofs will all be based on the following remark: If \(0 \leq x_{n} \leq s_{n}\) for \(n \geq N\), where \(N\) is some fixed number, and if \(s_{n} \rightarrow 0\), then \(x_{n} \rightarrow 0\).
+3.20 Theorem
+If \(p&amp;gt;0\), then \(\lim _{n \rightarrow \infty} \frac{1}{n^{p}}=0\).
+If \(p&amp;gt;0\), then \(\lim _{n \rightarrow \infty} \sqrt[n]{p}=1\).</description>
+    </item>
+    
+    <item>
+      <title>3 CAUCHY SEQUENCES</title>
+      <link>https://zongpitt.com/baby-rudin/ch3/3-cauchy-sequences/</link>
+      <pubDate>Tue, 06 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/ch3/3-cauchy-sequences/</guid>
+      <description>youtube bilibili note pdf xopp 3.8 Definition A sequence \(\left\{p_{n}\right\}\) in a metric space \(X\) is said to be a Cauchy sequence if for every \(\varepsilon&amp;gt;0\) there is an integer \(N\) such that \(d\left(p_{n}, p_{m}\right)&amp;lt;\varepsilon\) if \(n \geq N\) and \(m \geq N\).
+In our discussion of Cauchy sequences, as well as in other situations which will arise later, the following geometric concept will be useful.
+3.9 Definition Let \(E\) be a nonempty subset of a metric space \(X\), and let \(S\) be the set of all real numbers of the form \(d(p, q)\), with \(p \in E\) and \(q \in E\).</description>
+    </item>
+    
+    <item>
+      <title>4 UPPER AND LOWER LIMITS</title>
+      <link>https://zongpitt.com/baby-rudin/ch3/4-upper-and-lower-limits/</link>
+      <pubDate>Tue, 06 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/ch3/4-upper-and-lower-limits/</guid>
+      <description>youtube bilibili note pdf xopp 3.15 Definition Let \(\left\{s_{n}\right\}\) be a sequence of real numbers with the following property: For every real \(M\) there is an integer \(N\) such that \(n \geq N\) implies \(s_{n} \geq M\). We then write \[ s_{n} \rightarrow+\infty . \]
+Similarly, if for every real \(M\) there is an integer \(N\) such that \(n \geq N\) implies \(s_{n} \leq M\), we write
+\[ s_{n} \rightarrow-\infty \]</description>
+    </item>
+    
+    <item>
+      <title>2 SUBSEQUENCES</title>
+      <link>https://zongpitt.com/baby-rudin/ch3/2-subsequences/</link>
+      <pubDate>Sun, 04 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/ch3/2-subsequences/</guid>
+      <description>youtube bilibili note pdf xopp 3.5 Definition Given a sequence \(\left\{p_{n}\right\}\), consider a sequence \(\left\{n_{k}\right\}\) of positive integers, such that \(n_{1}&amp;lt;n_{2}&amp;lt;n_{3}&amp;lt;\cdots\). Then the sequence \(\left\{p_{n i}\right\}\) is called a subsequence of \(\left\{p_{n}\right\}\). If \(\left\{p_{n_{i}}\right\}\) converges, its limit is called a subsequential limit of \(\left\{p_{n}\right\}\).
+It is clear that \(\left\{p_{n}\right\}\) converges to \(p\) if and only if every subsequence of \(\left\{p_{n}\right\}\) converges to \(p\). We leave the details of the proof to the reader.</description>
+    </item>
+    
+    <item>
+      <title>1 CONVERGENT SEQUENCES</title>
+      <link>https://zongpitt.com/baby-rudin/ch3/1-convergent-sequences/</link>
+      <pubDate>Sat, 03 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/ch3/1-convergent-sequences/</guid>
+      <description>youtube part1 part2 bilibili part1 part2 note pdf 1 xopp 1 pdf 2 xopp 2 3.1 Definition A sequence \(\left\{p_{n}\right\}\) in a metric space \(X\) is said to converge if there is a point \(p \in X\) with the following property: For every \(\varepsilon&amp;gt;0\) there is an integer \(N\) such that \(n \geq N\) implies that \(d\left(p_{n}, p\right)&amp;lt;\varepsilon\). (Here \(d\) denotes the distance in \(X\).)
+In this case we also say that \(\left\{p_{n}\right\}\) converges to \(p\), or that \(p\) is the limit of \(\left\{p_{n}\right\}\) [see Theorem 3.</description>
+    </item>
+    
+    <item>
+      <title>INTRO</title>
+      <link>https://zongpitt.com/baby-rudin/ch3/0-intro/</link>
+      <pubDate>Sat, 03 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/ch3/0-intro/</guid>
+      <description>As the title indicates, this chapter will deal primarily with sequences and series of complex numbers. The basic facts about convergence, however, are just as easily explained in a more general setting. The first three sections will therefore be concerned with sequences in euclidean spaces, or even in metric spaces.</description>
+    </item>
+    
+    <item>
+      <title>REARRANGEMENTS</title>
+      <link>https://zongpitt.com/baby-rudin/ch3/14-rearrangements/</link>
+      <pubDate>Mon, 18 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/ch3/14-rearrangements/</guid>
+      <description>3.52 Definition Let \(\left\{k_{n}\right\}, n=1,2,3, \ldots\), be a sequence in which every positive integer appears once and only once (that is, \(\left\{k_{n}\right\}\) is a 1-1 function from \(J\) onto \(J\), in the notation of Definition 2.2). Putting \[ a_{n}^{\prime}=a_{k_{n}} \quad(n=1,2,3, \ldots), \] we say that \(\Sigma a_{n}^{\prime}\) is a rearrangement of \(\Sigma a_{n}\).
+If \(\left\{s_{n}\right\},\left\{s_{n}^{\prime}\right\}\) are the sequences of partial sums of \(\Sigma a_{n}, \Sigma a_{n}^{\prime}\), it is easily seen that, in general, these two sequences consist of entirely different numbers.</description>
+    </item>
+    
+    <item>
+      <title>10 POWER SERIES</title>
+      <link>https://zongpitt.com/baby-rudin/ch3/10-power-series/</link>
+      <pubDate>Sun, 17 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/ch3/10-power-series/</guid>
+      <description>youtube bili note pdf xopp 3.38 Definition Given a sequence \(\left\{c_{n}\right\}\) of complex numbers, the series
+\[ \sum_{n=0}^{\infty} c_{n} z^{n} \]
+is called a power series. The numbers \(c_{n}\) are called the coefficients of the series; \(z\) is a complex number.
+In general, the series will converge or diverge, depending on the choice of \(z\). More specifically, with every power series there is associated a circle, the circle of convergence, such that (19) converges if \(z\) is in the interior of the circle and diverges if \(z\) is in the exterior (to cover all cases, we have to consider the plane as the interior of a circle of infinite radius, and a point as a circle of radius zero).</description>
+    </item>
+    
+    <item>
+      <title>11 SUMMATION BY PARTS</title>
+      <link>https://zongpitt.com/baby-rudin/ch3/11-summation-by-parts/</link>
+      <pubDate>Sun, 17 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/ch3/11-summation-by-parts/</guid>
+      <description>youtube bilibili note pdf xopp 3.41 Theorem Given two sequences \(\left\{a_{n}\right\},\left\{b_{n}\right\}\), put
+\[ \begin{equation} A_{n}=\sum_{k=0}^{n} a_{k} \end{equation} \]
+if \(n \geq 0\); put \(A_{-1}=0\). Then, if \(0 \leq p \leq q\), we have
+\[ \begin{equation} \sum_{n=p}^{q} a_{n} b_{n}=\sum_{n=p}^{q-1} A_{n}\left(b_{n}-b_{n+1}\right)+A_{q} b_{q}-A_{p-1} b_{p} \end{equation} \]
+Proof
+\[ \begin{equation} \sum_{n=p}^{q} a_{n} b_{n}=\sum_{n=p}^{q}\left(A_{n}-A_{n-1}\right) b_{n}=\sum_{n=p}^{q} A_{n} b_{n}-\sum_{n=p-1}^{q-1} A_{n} b_{n+1}, \end{equation} \]
+and the last expression on the right is clearly equal to the right side of (2).</description>
+    </item>
+    
+    <item>
+      <title>12 ABSOLUTE CONVERGENCE</title>
+      <link>https://zongpitt.com/baby-rudin/ch3/12-absolute-convergence/</link>
+      <pubDate>Sun, 17 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/ch3/12-absolute-convergence/</guid>
+      <description>bilibili youtube The series \(\Sigma a_{n}\) is said to converge absolutely if the series \(\Sigma\left|a_{n}\right|\) converges.
+3.45 Theorem If \(Σ a_n\) converges absolutely, then \(\Sigma a_{n}\) converges.
+Proof The assertion follows from the inequality
+\[ \begin{equation} \left| ∑ {k=n}^{m} a_{k}\right| \leq ∑_{k=n}^{m}\left|a_{k}\right| \end{equation} \]
+3.46 Remarks For series of positive terms, absolute convergence is the same as convergence.
+If \(\Sigma a_{n}\) converges, but \(\Sigma\left|a_{n}\right|\) diverges, we say that \(\Sigma a_{n}\) converges nonabsolutely.</description>
+    </item>
+    
+    <item>
+      <title>9 THE ROOT AND RATIO TESTS</title>
+      <link>https://zongpitt.com/baby-rudin/ch3/9-the-root-and-ratio-tests/</link>
+      <pubDate>Sun, 17 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/ch3/9-the-root-and-ratio-tests/</guid>
+      <description>youtube bili 3.33 Theorem (Root Test) Given \(\Sigma a_{n}\), put \(\alpha=\limsup _{n \rightarrow \infty} \sqrt[n]{\left|a_{n}\right|}\). Then (a) if \(\alpha&amp;lt;1, \Sigma a_{n}\) converges; (b) if \(\alpha&amp;gt;1, \Sigma a_{n}\) diverges; (c) if \(\alpha=1\), the test gives no information.
+Proof If \(\alpha&amp;lt;1\), we can choose \(\beta\) so that \(\alpha&amp;lt;\beta&amp;lt;1\), and an integer \(N\) such that
+\[ \sqrt[n]{\left|a_{n}\right|}&amp;lt;\beta \]
+for \(n \geq N\) [by Theorem 3.17(b)]. That is, \(n \geq N\) implies
+\[ \left|a_{n}\right|&amp;lt;\beta^{n} .</description>
+    </item>
+    
+    <item>
+      <title>ADDITION AND MULTIPLICATION OF SERIES</title>
+      <link>https://zongpitt.com/baby-rudin/ch3/13-addition-and-multiplication-of-series/</link>
+      <pubDate>Sun, 17 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/ch3/13-addition-and-multiplication-of-series/</guid>
+      <description>3.47 Theorem If \(\Sigma a_{n}=A\), and \(\Sigma b_{n}=B\), then \(\Sigma\left(a_{n}+b_{n}\right)=A+B\), and \(\Sigma c a_{n}=c A\), for any fixed \(c\). Proof Let \[ A_{n}=\sum_{k=0}^{n} a_{k}, \quad B_{n}=\sum_{k=0}^{n} b_{k} \] Then \[ A_{n}+B_{n}=\sum_{k=0}^{n}\left(a_{k}+b_{k}\right) \text {. } \] Since \(\lim _{n \rightarrow \infty} A_{n}=A\) and \(\lim _{n \rightarrow \infty} B_{n}=B\), we see that \[ \lim _{n \rightarrow \infty}\left(A_{n}+B_{n}\right)=A+B \] The proof of the second assertion is even simpler.
+Thus two convergent series may be added term by term, and the resulting series converges to the sum of the two series.</description>
+    </item>
+    
+    <item>
+      <title>6 SERIES</title>
+      <link>https://zongpitt.com/baby-rudin/ch3/6-series/</link>
+      <pubDate>Sat, 16 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/ch3/6-series/</guid>
+      <description>youtube bilibili note pdf xopp In the remainder of this chapter, all sequences and series under consideration will be complex-valued, unless the contrary is explicitly stated. Extensions of some of the theorems which follow, to series with terms in \(R^{k}\), are mentioned in Exercise \(15 .\)
+3.21 Definition Given a sequence \(\left\{a_{n}\right\}\), we use the notation \[ \sum_{n=p}^{q} a_{n} \quad(p \leq q) \] to denote the sum \(a_{p}+a_{p+1}+\cdots+a_{q}\). With \(\left\{a_{n}\right\}\) we associate a sequence \(\left\{s_{n}\right\}\), where \[ s_{n}=\sum_{k=1}^{n} a_{k} .</description>
+    </item>
+    
+    <item>
+      <title>7 SERIES OF NONNEGATIVE TERMS</title>
+      <link>https://zongpitt.com/baby-rudin/ch3/7-series-of-nonnegative-terms/</link>
+      <pubDate>Sat, 16 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/ch3/7-series-of-nonnegative-terms/</guid>
+      <description>youtube bilibili note pdf xopp The simplest of all is perhaps the geometric series.
+3.26 Theorem If \(0 \leq x&amp;lt;1\), then \[ \sum_{n=0}^{\infty} x^{n}=\frac{1}{1-x} \] If \(x \geq 1\), the series diverges.
+Proof If \(x \neq 1\), \[ s_{n}=\sum_{k=0}^{n} x^{k}=\frac{1-x^{n+1}}{1-x} . \] The result follows if we let \(n \rightarrow \infty\). For \(x=1\), we get \[ 1+1+1+\cdots \text {, } \] which evidently diverges.
+In many cases which occur in applications, the terms of the series decrease monotonically.</description>
+    </item>
+    
+    <item>
+      <title>8 THE NUMBER e</title>
+      <link>https://zongpitt.com/baby-rudin/ch3/8-the-number-e/</link>
+      <pubDate>Sat, 16 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/ch3/8-the-number-e/</guid>
+      <description>youtube bili note pdf xopp 3.30 Definition \(e=\sum_{n=0}^{\infty} \frac{1}{n !}\) Here \(n !=1 \cdot 2 \cdot 3 \cdots n\) if \(n \geq 1\), and \(0 !=1\)
+Since \[ \begin{aligned} s_{n} &amp;amp;=1+1+\frac{1}{1 \cdot 2}+\frac{1}{1 \cdot 2 \cdot 3}+\cdots+\frac{1}{1 \cdot 2 \cdots n} \\ &amp;amp;&amp;lt;1+1+\frac{1}{2}+\frac{1}{2^{2}}+\cdots+\frac{1}{2^{n-1}}&amp;lt;3, \end{aligned} \] the series converges, and the definition makes sense. In fact, the series converges very rapidly and allows us to compute \(e\) with great accuracy.</description>
+    </item>
+    
+  </channel>
+</rss>

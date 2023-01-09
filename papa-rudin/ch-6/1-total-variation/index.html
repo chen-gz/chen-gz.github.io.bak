@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css"
+        class="dark-mode-native-dark-original" />
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+     
+    <link rel="stylesheet" href="https://zongpitt.com/sass/main.06935202011a97ba473ebeeb0cb6788daa9fb5a9fff471a4e85850293d1c5ac4.css" />
+    <title>
+          Guangzong Blog | Total Variation
+    </title>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.bundle.min.js"></script>
+    <script src=" https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.js"></script>
+
+    <script
+        src="https://cdn.jsdelivr.net/combine/npm/magnific-popup@1/dist/jquery.magnific-popup.min.js,npm/lozad/dist/lozad.min.js,npm/clipboard@2/dist/clipboard.min.js"></script>
+    <script type="text/javascript" src="/js/commons/back-to-top.js"></script>
+    
+    
+    
+    <script type="text/javascript" src="/js/commons/topbar-switch.js"></script>
+    <script type="text/javascript" src="/js/commons/sidebar.js"></script>
+    <script type="text/javascript" src="/js/utils/category-collapse.js"></script>
+    <script type="text/javascript" src="/js/utils/checkbox.js"></script>
+    <script type="text/javascript" src="/js/utils/clipboard.js"></script>
+    <script type="text/javascript" src="/js/utils/img-extra.js"></script>
+    <script type="text/javascript" src="/js/utils/pageviews.js"></script>
+    
+    <script type="text/javascript" src="/js/utils/timeago.js"></script>
+    
+    
+</head>
+<body data-spy="scroll" data-target="#toc" data-topbar-visible="true" class="d-flex"><div id="sidebar" class="d-flex flex-column align-items-end">
+    <div class="profile-wrapper text-center">
+
+        <div id="avatar">
+            <a href="/" alt="avatar" class="mx-auto"> <img src=https://github.com/chen-gz/chen-gz/blob/main/mine_square.jpg?raw&#61;truehttps://raw.githubusercontent.com/chen-gz/chen-gz/blob/main/mine_square.jpg alt="avatar"
+                    onerror="this.style.display='none'"> </a>
+        </div>
+
+        <div class="site-title mt-3"> <a href="/">Guangzong</a> </div>
+        <div class="site-subtitle font-italic">Welcome to my blog</div>
+    </div>
+
+    <ul>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/">
+                <span>
+                    Home
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/archive/">
+                <span>
+                    Archive
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/tags/">
+                <span>
+                    Tags
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/about/">
+                <span>
+                    About
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/categories/">
+                <span>
+                    Categories
+                </span>
+            </a>
+        </li>
+        
+    </ul>
+
+    <div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center align-items-center">
+        <button class="mode-toggle btn" aria-label="Switch Mode"> 
+            <i class="fas fa-adjust"></i> 
+        </button>
+
+        <span class="icon-border"></span>
+        <a href="https://github.com/chen-gz" aria-label="github" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i>
+        </a>
+
+        <a href=" javascript:location.href = 'mailto:' + ['chen-gz','outlook.com'].join('@')" aria-label="email">
+            <i class="fas fa-envelope"></i>
+        </a>
+
+        <a href="/feed.xml" aria-label="rss"> <i class="fas fa-rss"></i> </a>
+    </div>
+
+    
+    
+</div>
+<div id="all-wrapper" class="d-flex flex-column"><div id="topbar-wrapper">
+    <div id="topbar" class="d-flex">
+        
+        <span id="breadcrumb" class="d-flex">
+              
+               
+            
+            
+            <div><a href='https://zongpitt.com/'>Home</a></div>
+              
+              
+            
+            <div><a href="https://zongpitt.com/papa-rudin">papa-rudin</a></div>
+               
+              
+            
+            <div><a href="https://zongpitt.com/papa-rudin/ch-6">ch-6</a></div>
+               
+                 
+                
+        </span>
+        <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i>
+        <div id="topbar-title">Guangzong</div>
+        <i id="search-trigger" class="fas fa-search fa-fw"></i>
+        <span id="search-wrapper" class="align-items-center">
+            <i class="fas fa-search fa-fw"></i>
+            <input class="form-control" id="search-input" type="search" aria-label="search" autocomplete="off"
+                placeholder="Search..." />
+            <i class="fa fa-times-circle fa-fw" id="search-cleaner"></i>
+        </span>
+    </div>
+</div>
+<div id="main-wrapper" class="d-flex mt-3">
+            <div id="core-wrapper" class="d-flex flex-column">
+                <div id="main" class="d-flex flex-column">
+                    
+<div class="post pl-1 pr-1 pl-md-2 pr-md-2">
+    
+    <div id="post-content">
+        <h1 style="text-align: center;">Total Variation</h1>
+        <br>
+        
+        <h3 id="introduction">6.1 Introduction</h3>
+<p>Let <span class="math inline">\(\mathfrak{M}\)</span> be a <span
+class="math inline">\(\sigma\)</span>-algebra in a set <span
+class="math inline">\(X\)</span>. Call a countable collection <span
+class="math inline">\(\left\{E_i\right\}\)</span> of members of <span
+class="math inline">\(\mathfrak{M}\)</span> a partition of <span
+class="math inline">\(E\)</span> if <span class="math inline">\(E_i \cap
+E_j=\varnothing\)</span> whenever <span class="math inline">\(i \neq
+j\)</span>, and if <span class="math inline">\(E=\)</span> <span
+class="math inline">\(\bigcup E_i\)</span>. A complex measure <span
+class="math inline">\(\mu\)</span> on <span
+class="math inline">\(\mathfrak{M}\)</span> is then a complex function
+on <span class="math inline">\(\mathfrak{M}\)</span> such that <span
+class="math display">\[
+\mu(E)=\sum_{i=1}^{\infty} \mu\left(E_i\right) \quad(E \in \mathfrak{M})
+\]</span> for every partition <span
+class="math inline">\(\left\{E_i\right\}\)</span> of <span
+class="math inline">\(E\)</span>.</p>
+<p>Observe that the convergence of the series in (1) is now part of the
+requirement (unlike for positive measures, where the series could either
+converge or diverge to <span class="math inline">\(\infty\)</span> ).
+Since the union of the sets <span class="math inline">\(E_i\)</span> is
+not changed if the subscripts are permuted, every rearrangement of the
+series (1) must also converge. Hence ([26], Theorem 3.56) the series
+actually converges absolutely.</p>
+<p>Let us consider the problem of finding a positive measure <span
+class="math inline">\(\lambda\)</span> which dominates a given complex
+measure <span class="math inline">\(\mu\)</span> on <span
+class="math inline">\(\mathfrak{M}\)</span>, in the sense that <span
+class="math inline">\(|\mu(E)| \leq \lambda(E)\)</span> for every <span
+class="math inline">\(E \in \mathfrak{M}\)</span>, and let us try to
+keep <span class="math inline">\(\lambda\)</span> as small as we can.
+Every solution to our problem (if there is one at all) must satisfy</p>
+<p><span class="math display">\[
+\lambda(E)=\sum_{i=1}^{\infty} \lambda\left(E_i\right) \geq
+\sum_1^{\infty}\left|\mu\left(E_i\right)\right|,
+\]</span></p>
+<p>for every partition <span
+class="math inline">\(\left\{E_i\right\}\)</span> of any set <span
+class="math inline">\(E \in \mathfrak{M}\)</span>, so that <span
+class="math inline">\(\lambda(E)\)</span> is at least equal to the
+supremum of the sums on the right of (2), taken over all partitions of
+<span class="math inline">\(E\)</span>. <em>This suggests that we define
+a set function</em> <span class="math inline">\(|\mu|\)</span> on <span
+class="math inline">\(\mathfrak{M}\)</span> by <span
+class="math display">\[
+|\mu|(E)=\sup \sum_{i=1}^{\infty}\left|\mu\left(E_i\right)\right|
+\quad(E \in \mathfrak{M}),
+\]</span> <em>the supremum being taken over all partitions</em> <span
+class="math inline">\(\left\{E_i\right\}\)</span> of <span
+class="math inline">\(E\)</span>.</p>
+<p>This notation is perhaps not the best, but it is the customary one.
+Note that <span class="math inline">\(|\mu|(E) \geq|\mu(E)|\)</span>,
+but that in general <span class="math inline">\(|\mu|(E)\)</span> is not
+equal to <span class="math inline">\(|\mu(E)|\)</span>.</p>
+<p>It turns out, as will be proved below, that <span
+class="math inline">\(|\mu|\)</span> actually is a measure, so that our
+problem does have a solution. The discussion which led to (3) shows then
+clearly that <span class="math inline">\(|\mu|\)</span> is the minimal
+solution, in the sense that any other solution <span
+class="math inline">\(\lambda\)</span> has the property <span
+class="math inline">\(\lambda(E) \geq|\mu|(E)\)</span> for all <span
+class="math inline">\(E \in \mathfrak{M}\)</span>.</p>
+<p>The set function <span class="math inline">\(|\mu|\)</span> is called
+the total variation of <span class="math inline">\(\mu\)</span>, or
+sometimes, to avoid misunderstanding, the <strong>total variation
+measure.</strong> The term “<strong>total variation of</strong> <span
+class="math inline">\(\mu\)</span>” is also frequently used to denote
+the number <span class="math inline">\(|\mu|(X)\)</span>.</p>
+<p>If <span class="math inline">\(\mu\)</span> is a positive measure,
+then of course <span class="math inline">\(|\mu|=\mu\)</span>.</p>
+<p>Besides being a measure, <span class="math inline">\(|\mu|\)</span>
+has another unexpected property: <span
+class="math inline">\(|\mu|(X)&lt;\infty\)</span>. Since <span
+class="math inline">\(|\mu(E)| \leq|\mu|(E) \leq|\mu|(X)\)</span>, this
+implies that every complex measure <span
+class="math inline">\(\mu\)</span> on any <span
+class="math inline">\(\sigma\)</span>-algebra is bounded: If the range
+of <span class="math inline">\(\mu\)</span> lies in the complex plane,
+then it actually lies in some disc of finite radius. This property
+(proved in Theorem 6.4) is sometimes expressed by saying that <span
+class="math inline">\(\mu\)</span> is of <strong>bounded</strong>
+variation.</p>
+<h3 id="theorem">6.2 Theorem</h3>
+<p>The total variation <span class="math inline">\(|\mu|\)</span> of a
+complex measure <span class="math inline">\(\mu\)</span> on <span
+class="math inline">\(\mathfrak{M}\)</span> is a positive measure on
+<span class="math inline">\(\mathfrak{M}\)</span>.</p>
+<p>ProOF Let <span class="math inline">\(\left\{E_i\right\}\)</span> be
+a partition of <span class="math inline">\(E \in \mathfrak{M}\)</span>.
+Let <span class="math inline">\(t_i\)</span> be real numbers such that
+<span class="math inline">\(t_i&lt;|\mu|\left(E_i\right)\)</span>. Then
+each <span class="math inline">\(E_i\)</span> has a partition <span
+class="math inline">\(\left\{A_{i j}\right\}\)</span> such that <span
+class="math display">\[
+\sum_j\left|\mu\left(A_{i j}\right)\right|&gt;t_i \quad(i=1,2,3, \ldots)
+.
+\]</span> Since <span class="math inline">\(\left\{A_{i j}\right\}(i,
+j=1,2,3, \ldots)\)</span> is a partition of <span
+class="math inline">\(E\)</span>, it follows that <span
+class="math display">\[
+\sum_i t_i \leq \sum_{i, j}\left|\mu\left(A_{i j}\right)\right|
+\leq|\mu|(E) .
+\]</span> Taking the supremum of the left side of <span
+class="math inline">\((2)\)</span>, over all admissible choices of <span
+class="math inline">\(\left\{t_i\right\}\)</span>, we see that <span
+class="math display">\[
+\sum_i|\mu|\left(E_i\right) \leq|\mu|(E) .
+\]</span> To prove the opposite inequality, let <span
+class="math inline">\(\left\{A_j\right\}\)</span> be any partition of
+<span class="math inline">\(E\)</span>. Then for any fixed <span
+class="math inline">\(j,\left\{A_j \cap E_i\right\}\)</span> is a
+partition of <span class="math inline">\(A_j\)</span>, and for any fixed
+<span class="math inline">\(i,\left\{A_j \cap E_i\right\}\)</span> is a
+partition of <span class="math inline">\(E_i\)</span>. Hence <span
+class="math display">\[
+\begin{aligned}
+\sum_j\left|\mu\left(A_j\right)\right| &amp; =\sum_j\left|\sum_i
+\mu\left(A_j \cap E_i\right)\right| \\
+&amp; \leq \sum_j \sum_i\left|\mu\left(A_j \cap E_i\right)\right| \\
+&amp; =\sum_i \sum_j\left|\mu\left(A_j \cap E_i\right)\right| \leq
+\sum_i|\mu|\left(E_i\right)
+\end{aligned}
+\]</span> Since (4) holds for every partition <span
+class="math inline">\(\left\{A_j\right\}\)</span> of <span
+class="math inline">\(E\)</span>, we have <span class="math display">\[
+|\mu|(E) \leq \sum_i|\mu|\left(E_i\right) .
+\]</span> By (3) and (5), <span class="math inline">\(|\mu|\)</span> is
+countably additive.</p>
+<p>Note that the Corollary to Theorem <span
+class="math inline">\(1.27\)</span> was used in (2) and (4). That <span
+class="math inline">\(|\mu|\)</span> is not identically <span
+class="math inline">\(\infty\)</span> is a trivial consequence of
+Theorem <span class="math inline">\(6.4\)</span> but can also be seen
+right now, since <span
+class="math inline">\(|\mu|(\varnothing)=0\)</span>.</p>
+<h3 id="lemma">6.3 Lemma</h3>
+<p>If <span class="math inline">\(z_1, \ldots, z_N\)</span> are complex
+numbers then there is a subset <span class="math inline">\(S\)</span> of
+<span class="math inline">\(\{1, \ldots, N\}\)</span> for which <span
+class="math display">\[
+\left|\sum_{k \in S} z_k\right| \geq \frac{1}{\pi}
+\sum_{k=1}^N\left|z_k\right| .
+\]</span> Proof Write <span class="math inline">\(z_k=\left|z_k\right|
+e^{i a_k}\)</span>. For <span class="math inline">\(-\pi \leq \theta
+\leq \pi\)</span>, let <span class="math inline">\(S(\theta)\)</span> be
+the set of all <span class="math inline">\(k\)</span> for which <span
+class="math inline">\(\cos \left(\alpha_k-\theta\right)&gt;0\)</span>.
+Then <span class="math display">\[
+\left|\sum_{S(\theta)} z_k\right|=\left|\sum_{S(\theta)} e^{-i \theta}
+z_k\right| \geq \operatorname{Re} \sum_{S(\theta)} e^{-i \theta}
+z_k=\sum_{k=1}^N\left|z_k\right| \cos ^{+}\left(\alpha_k-\theta\right) .
+\]</span> Choose <span class="math inline">\(\theta_0\)</span> so as to
+maximize the last sum, and put <span
+class="math inline">\(S=S\left(\theta_0\right)\)</span>. This maximum is
+at least as large as the average of the sum over <span
+class="math inline">\([-\pi, \pi]\)</span>, and this average is <span
+class="math inline">\(\pi^{-1} \sum\left|z_k\right|\)</span>, because
+<span class="math display">\[
+\frac{1}{2 \pi} \int_{-\pi}^\pi \cos ^{+}(\alpha-\theta) d
+\theta=\frac{1}{\pi}
+\]</span> for every <span class="math inline">\(\alpha\)</span>.</p>
+<h3 id="theorem-1">6.4 Theorem</h3>
+<p>If <span class="math inline">\(\mu\)</span> is a complex measure on
+<span class="math inline">\(X\)</span>, then <span
+class="math display">\[
+|\mu|(X)&lt;\infty .
+\]</span> Proof Suppose first that some set <span
+class="math inline">\(E \in \mathfrak{M}\)</span> has <span
+class="math inline">\(|\mu|(E)=\infty\)</span>. Put <span
+class="math inline">\(t=\pi(1+|\mu(E)|)\)</span>. Since <span
+class="math inline">\(|\mu|(E)&gt;t\)</span>, there is a partition <span
+class="math inline">\(\left\{E_i\right\}\)</span> of <span
+class="math inline">\(E\)</span> such that <span class="math display">\[
+\sum_{i=1}^N\left|\mu\left(E_i\right)\right|&gt;t
+\]</span> for some <span class="math inline">\(N\)</span>. Apply Lemma
+6.3, with <span class="math inline">\(z_i=\mu\left(E_i\right)\)</span>,
+to conclude that there is a set <span class="math inline">\(A \subset
+E\)</span> (a union of some of the sets <span
+class="math inline">\(\left.E_i\right)\)</span> for which <span
+class="math display">\[
+|\mu(A)|&gt;t / \pi&gt;1 \text {. }
+\]</span> Setting <span class="math inline">\(B=E-A\)</span>, it follows
+that <span class="math display">\[
+|\mu(B)|=|\mu(E)-\mu(A)|
+\geq|\mu(A)|-|\mu(E)|&gt;\frac{t}{\pi}-|\mu(E)|=1 .
+\]</span> We have thus split <span class="math inline">\(E\)</span> into
+disjoint sets <span class="math inline">\(A\)</span> and <span
+class="math inline">\(B\)</span> with <span
+class="math inline">\(|\mu(A)|&gt;1\)</span> and <span
+class="math inline">\(|\mu(B)|&gt;1\)</span>. Evidently, at least one of
+<span class="math inline">\(|\mu|(A)\)</span> and <span
+class="math inline">\(|\mu|(B)\)</span> is <span
+class="math inline">\(\infty\)</span>, by Theorem 6.2. Now if <span
+class="math inline">\(|\mu|(X)=\infty\)</span>, split <span
+class="math inline">\(X\)</span> into <span class="math inline">\(A_1,
+B_1\)</span>, as above, with <span
+class="math inline">\(\left|\mu\left(A_1\right)\right|&gt;1\)</span>,
+<span class="math inline">\(|\mu|\left(B_1\right)=\infty\)</span>. Split
+<span class="math inline">\(B_1\)</span> into <span
+class="math inline">\(A_2, B_2\)</span>, with <span
+class="math inline">\(\left|\mu\left(A_2\right)\right|&gt;1,|\mu|\left(B_2\right)=\infty\)</span>.
+Continuing in this way, we get a countably infinite disjoint collection
+<span class="math inline">\(\left\{A_i\right\}\)</span>, with <span
+class="math inline">\(\left|\mu\left(A_i\right)\right|&gt;1\)</span> for
+each <span class="math inline">\(i\)</span>. The countable additivity of
+<span class="math inline">\(\mu\)</span> implies that <span
+class="math display">\[
+\mu\left(\bigcup_i A_i\right)=\sum_i \mu\left(A_i\right) .
+\]</span> But this series cannot converge, since <span
+class="math inline">\(\mu\left(A_i\right)\)</span> does not tend to 0 as
+<span class="math inline">\(i \rightarrow \infty\)</span>. This
+contradiction shows that <span
+class="math inline">\(|\mu|(X)&lt;\infty\)</span>.</p>
+<h3 id="section">6.5</h3>
+<p>If <span class="math inline">\(\mu\)</span> and <span
+class="math inline">\(\lambda\)</span> are complex measures on the same
+<span class="math inline">\(\sigma\)</span>-algebra <span
+class="math inline">\(\mathfrak{M}\)</span>, we define <span
+class="math inline">\(\mu+\lambda\)</span> and <span
+class="math inline">\(c \mu\)</span> by <span class="math display">\[
+\begin{aligned}
+(\mu+\lambda)(E) &amp; =\mu(E)+\lambda(E) \\
+(c \mu)(E) &amp; =c \mu(E) \quad(E \in \mathfrak{M})
+\end{aligned}
+\]</span> for any scalar <span class="math inline">\(c\)</span>, in the
+usual manner. It is then trivial to verify that <span
+class="math inline">\(\mu+\lambda\)</span> and <span
+class="math inline">\(c \mu\)</span> are complex measures. The
+collection of all complex measures on <span
+class="math inline">\(\mathfrak{M}\)</span> is thus a vector space. If
+we put <span class="math display">\[
+\|\mu\|=|\mu|(X),
+\]</span> it is easy to verify that all axioms of a normed linear space
+are satisfied.</p>
+<h3 id="positive-and-negative-variations">6.6 Positive and Negative
+Variations</h3>
+<p>Let us now specialize and consider a real measure <span
+class="math inline">\(\mu\)</span> on a <span
+class="math inline">\(\sigma\)</span>-algebra <span
+class="math inline">\(\mathfrak{M}\)</span>. (Such measures are
+frequently called signed measures.) Define <span
+class="math inline">\(|\mu|\)</span> as before, and define <span
+class="math display">\[
+\mu^{+}=\frac{1}{2}(|\mu|+\mu), \quad \mu^{-}=\frac{1}{2}(|\mu|-\mu) .
+\]</span> Then both <span class="math inline">\(\mu^{+}\)</span>and
+<span class="math inline">\(\mu^{-}\)</span>are positive measures on
+<span class="math inline">\(\mathfrak{M}\)</span>, and they are bounded,
+by Theorem 6.4. Also, <span class="math display">\[
+\mu=\mu^{+}-\mu^{-}, \quad|\mu|=\mu^{+}+\mu^{-} .
+\]</span></p>
+<p>The measures <span class="math inline">\(\mu^{+}\)</span>and <span
+class="math inline">\(\mu^{-}\)</span>are called the positive and
+negative variations of <span class="math inline">\(\mu\)</span>,
+respectively. This representation of <span
+class="math inline">\(\mu\)</span> as the difference of the positive
+measures <span class="math inline">\(\mu^{+}\)</span> and <span
+class="math inline">\(\mu^{-}\)</span>is known as the Jordan
+decomposition of <span class="math inline">\(\mu\)</span>. Among all
+representations of <span class="math inline">\(\mu\)</span> as a
+difference of two positive measures, the Jordan decomposition has a
+certain minimum property which will be established as a corollary to
+Theorem <span class="math inline">\(6.14\)</span>.</p>
+
+    </div>
+    
+</div>
+</div>
+
+                <div id="footer-wrapper">
+                    <footer class="footer"><footer class="row pl-3 pr-3">
+    <div class="col-12 d-flex justify-content-between align-items-center text-muted pl-0 pr-0">
+        <div class="footer-left">
+            <p class="mb-0"> © 2022 <a href="https://github.com/chen-gz">guangzong</a>. <span data-toggle="tooltip"
+                    data-placement="top"
+                    title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author.">All
+                    rights reserved.</span></p>
+        </div>
+        <div class="footer-right">
+            <p class="mb-0"> Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">hugo</a>
+                with <a href="https://github.com/chen-gz/hugo_zong" target="_blank" rel="noopener">zong</a>
+                theme.</p>
+        </div>
+    </div>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script> MathJax = {
+            tex: {
+                tags: 'ams',
+            }
+        };</script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</footer>
+</footer>
+                </div>
+            </div>
+            <div id="panel-wrapper" class="d-flex flex-column"><div id="toc-wrapper" class="mb-5 pl-2">
+    <span>Contents</span>
+    <nav id="toc" data-toggle="toc">
+        
+        
+        
+    </nav>
+</div>
+
+<div id="access-lastmod" class="pb-4 pl-2">
+    <div class="panel-heading">Recently Updated</div>
+    <ul class="post-content pl-3 pb-1 ml-1 mt-2">
+          
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/1-total-variation/">Total Variation</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-7/1-derivatives-of-measures/">Derivatives of Measures</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/3-consequences-of-the-radon-nikodym-theorem/">Consequences of the Radon-Nikodym Theorem</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/4-bounded-linear-functionals-on-lp/">Bounded linear functional on Lp</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/2-abosolute-continuity/">Abosolute Continuity</a></li>
+        
+    </ul>
+</div>
+
+<div id="access-tags" class="pl-2">
+    <div class="panel-heading">Trending Tags</div>
+    <div class="d-flex flex-wrap mt-3 mb-1 mr-3">
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/algorithm/">Algorithm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/android/">Android</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c/">C</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c-language/">c language</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/caddy/">Caddy</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cadence/">Cadence</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cdc/">CDC</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/classification/">classification</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/compress/">Compress</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/conf/">Conf</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/double-column/">Double Column</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/errno13/">Errno13</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/fish/">fish</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gan/">GAN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/git/">Git</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gtk/">Gtk</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/html/">Html</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/i3/">I3</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/idea/">Idea</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/java/">Java</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/latex/">Latex</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lda/">LDA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linear-programming/">Linear Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linux/">Linux</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lr/">LR</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/math/">Math</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mathematics/">Mathematics</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matlab/">Matlab</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matplot/">matplot</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/memory/">Memory</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mermaid/">Mermaid</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/misc/">Misc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/ml/">ML</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mosfet/">Mosfet</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/network/">Network</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/nn/">NN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pandoc/">Pandoc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pca/">PCA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/probability/">Probability</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/productive/">Productive</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/program/">Program</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/programming/">Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/python/">Python</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/qt/">Qt</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/random-variable/">Random Variable</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rcnn/">RCNN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rust/">Rust</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/security/">Security</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/software/">Software</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/std/">Std</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/svd/">Svd</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/tool/">Tool</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/usb/">USB</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vim/">Vim</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpn/">Vpn</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpnc/">Vpnc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/xterm/">xterm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/zsh/">Zsh</a>
+        
+    </div>
+</div>
+</div><div id="search-result-wrapper" class="d-flex justify-content-center unloaded">
+    <div class="col-12 col-sm-11 post-content">
+        <div id="search-hints"></div>
+        <div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3 col-12"></div>
+    </div>
+</div>
+
+<script src="/js/fuse.min.js"></script>
+<script src="/js/fastsearch.js"></script>
+
+
+</div>
+        <div id="mask"></div>
+        <a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button"
+            style="display: none">
+            <i class="fas fa-angle-up"></i>
+        </a>
+    </div>
+    
+</body>
+
+</html>

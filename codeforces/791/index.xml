@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>codeforces 791 DIV2 on Guangzong Blog</title>
+    <link>https://zongpitt.com/codeforces/791/</link>
+    <description>Recent content in codeforces 791 DIV2 on Guangzong Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://zongpitt.com/codeforces/791/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>791C Rooks Defenders</title>
+      <link>https://zongpitt.com/codeforces/791/c/</link>
+      <pubDate>Sat, 14 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/codeforces/791/c/</guid>
+      <description>Problem link https://codeforces.com/contest/1679/problem/C
+Solution For this problem, we only need position of \(x\) and position of \(y\) separately. We don’t need combine them.
+So use fenwick tree to store the presum of \(x\) and \(y\). The value in each node only 1 and 0. Stand for has \(x\) or haven’t \(x\). Then the answer just the \(presum(x2) - presum(x1) == x2 - x1 || presum(y2) - presum(y1) == y2 - y1\)</description>
+    </item>
+    
+  </channel>
+</rss>

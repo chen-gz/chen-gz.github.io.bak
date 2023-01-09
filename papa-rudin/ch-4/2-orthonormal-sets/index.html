@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css"
+        class="dark-mode-native-dark-original" />
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+     
+    <link rel="stylesheet" href="https://zongpitt.com/sass/main.06935202011a97ba473ebeeb0cb6788daa9fb5a9fff471a4e85850293d1c5ac4.css" />
+    <title>
+          Guangzong Blog | Orthonormal Sets
+    </title>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.bundle.min.js"></script>
+    <script src=" https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.js"></script>
+
+    <script
+        src="https://cdn.jsdelivr.net/combine/npm/magnific-popup@1/dist/jquery.magnific-popup.min.js,npm/lozad/dist/lozad.min.js,npm/clipboard@2/dist/clipboard.min.js"></script>
+    <script type="text/javascript" src="/js/commons/back-to-top.js"></script>
+    
+    
+    
+    <script type="text/javascript" src="/js/commons/topbar-switch.js"></script>
+    <script type="text/javascript" src="/js/commons/sidebar.js"></script>
+    <script type="text/javascript" src="/js/utils/category-collapse.js"></script>
+    <script type="text/javascript" src="/js/utils/checkbox.js"></script>
+    <script type="text/javascript" src="/js/utils/clipboard.js"></script>
+    <script type="text/javascript" src="/js/utils/img-extra.js"></script>
+    <script type="text/javascript" src="/js/utils/pageviews.js"></script>
+    
+    <script type="text/javascript" src="/js/utils/timeago.js"></script>
+    
+    
+</head>
+<body data-spy="scroll" data-target="#toc" data-topbar-visible="true" class="d-flex"><div id="sidebar" class="d-flex flex-column align-items-end">
+    <div class="profile-wrapper text-center">
+
+        <div id="avatar">
+            <a href="/" alt="avatar" class="mx-auto"> <img src=https://github.com/chen-gz/chen-gz/blob/main/mine_square.jpg?raw&#61;truehttps://raw.githubusercontent.com/chen-gz/chen-gz/blob/main/mine_square.jpg alt="avatar"
+                    onerror="this.style.display='none'"> </a>
+        </div>
+
+        <div class="site-title mt-3"> <a href="/">Guangzong</a> </div>
+        <div class="site-subtitle font-italic">Welcome to my blog</div>
+    </div>
+
+    <ul>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/">
+                <span>
+                    Home
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/archive/">
+                <span>
+                    Archive
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/tags/">
+                <span>
+                    Tags
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/about/">
+                <span>
+                    About
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/categories/">
+                <span>
+                    Categories
+                </span>
+            </a>
+        </li>
+        
+    </ul>
+
+    <div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center align-items-center">
+        <button class="mode-toggle btn" aria-label="Switch Mode"> 
+            <i class="fas fa-adjust"></i> 
+        </button>
+
+        <span class="icon-border"></span>
+        <a href="https://github.com/chen-gz" aria-label="github" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i>
+        </a>
+
+        <a href=" javascript:location.href = 'mailto:' + ['chen-gz','outlook.com'].join('@')" aria-label="email">
+            <i class="fas fa-envelope"></i>
+        </a>
+
+        <a href="/feed.xml" aria-label="rss"> <i class="fas fa-rss"></i> </a>
+    </div>
+
+    
+    
+</div>
+<div id="all-wrapper" class="d-flex flex-column"><div id="topbar-wrapper">
+    <div id="topbar" class="d-flex">
+        
+        <span id="breadcrumb" class="d-flex">
+              
+               
+            
+            
+            <div><a href='https://zongpitt.com/'>Home</a></div>
+              
+              
+            
+            <div><a href="https://zongpitt.com/papa-rudin">papa-rudin</a></div>
+               
+              
+            
+            <div><a href="https://zongpitt.com/papa-rudin/ch-4">ch-4</a></div>
+               
+                 
+                
+        </span>
+        <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i>
+        <div id="topbar-title">Guangzong</div>
+        <i id="search-trigger" class="fas fa-search fa-fw"></i>
+        <span id="search-wrapper" class="align-items-center">
+            <i class="fas fa-search fa-fw"></i>
+            <input class="form-control" id="search-input" type="search" aria-label="search" autocomplete="off"
+                placeholder="Search..." />
+            <i class="fa fa-times-circle fa-fw" id="search-cleaner"></i>
+        </span>
+    </div>
+</div>
+<div id="main-wrapper" class="d-flex mt-3">
+            <div id="core-wrapper" class="d-flex flex-column">
+                <div id="main" class="d-flex flex-column">
+                    
+<div class="post pl-1 pr-1 pl-md-2 pr-md-2">
+    
+    <div id="post-content">
+        <h1 style="text-align: center;">Orthonormal Sets</h1>
+        <br>
+        
+        <h3 id="definitions">4.13 Definitions</h3>
+<p>If <span class="math inline">\(V\)</span> is a vector space, if <span
+class="math inline">\(x_1, \ldots, x_k \in V\)</span>, and if <span
+class="math inline">\(c_1, \ldots, c_k\)</span> are scalars, then <span
+class="math inline">\(c_1 x_1+\cdots+c_k x_k\)</span> is called a
+<em>linear combination</em> of <span class="math inline">\(x_1, \ldots,
+x_k\)</span>. The set <span class="math inline">\(\left\{x_1, \ldots,
+x_k\right\}\)</span> is called <em>independent</em> if <span
+class="math inline">\(c_1 x_1+\cdots+c_k x_k=0\)</span> implies that
+<span class="math inline">\(c_1=\cdots=c_k=0\)</span>. A set <span
+class="math inline">\(S \subset V\)</span> is independent if every
+finite subset of <span class="math inline">\(S\)</span> is independent.
+The set <span class="math inline">\([S]\)</span> of all linear
+combinations of all finite subsets of <span
+class="math inline">\(S\)</span> (also called the set of all <em>finite
+linear combinations</em> of members of <span
+class="math inline">\(S\)</span> ) is clearly a vector space; <span
+class="math inline">\([S]\)</span> is the smallest subspace of <span
+class="math inline">\(V\)</span> which contains <span
+class="math inline">\(S ;[S]\)</span> is called the <em>span</em> of
+<span class="math inline">\(S\)</span>, or the space spanned by <span
+class="math inline">\(S\)</span>.</p>
+<p>A set of vectors <span class="math inline">\(u_\alpha\)</span> in a
+Hilbert space <span class="math inline">\(H\)</span>, where <span
+class="math inline">\(\alpha\)</span> runs through some index set <span
+class="math inline">\(A\)</span>, is called <em>orthonormal</em> if it
+satisfies the orthogonality relations <span
+class="math inline">\(\left(u_\alpha, u_\beta\right)=0\)</span> for all
+<span class="math inline">\(\alpha \neq \beta, \alpha \in A\)</span>,
+and <span class="math inline">\(\beta \in A\)</span>, and if it is
+normalized so that <span
+class="math inline">\(\left\|u_\alpha\right\|=1\)</span> for each <span
+class="math inline">\(\alpha \in A\)</span>. In other words, <span
+class="math inline">\(\left\{u_\alpha\right\}\)</span> is orthonormal
+provided that</p>
+<p><span class="math display">\[
+\left(u_\alpha, u_\beta\right)= \begin{cases}1 &amp; \text { if }
+\alpha=\beta, \\ 0 &amp; \text { if } \alpha \neq \beta .\end{cases}
+\]</span></p>
+<p>If <span class="math inline">\(\left\{u_\alpha: \alpha \in
+A\right\}\)</span> is orthonormal, we associate with each <span
+class="math inline">\(x \in H\)</span> a complex function <span
+class="math inline">\(\hat{x}\)</span> on the index set <span
+class="math inline">\(A\)</span>, defined by</p>
+<p><span class="math display">\[
+\hat{x}(\alpha)=\left(x, u_\alpha\right) \quad(\alpha \in A) .
+\]</span></p>
+<p>One sometimes calls the numbers <span
+class="math inline">\(\hat{x}(\alpha)\)</span> the Fourier coefficients
+of <span class="math inline">\(x\)</span>, relative to the set <span
+class="math inline">\(\left\{u_\alpha\right\}\)</span>.</p>
+<p>We begin with some simple facts about finite orthonormal sets.</p>
+<h3 id="theorem">4.14 Theorem</h3>
+<p>Suppose that <span class="math inline">\(\left\{u_\alpha: \alpha \in
+A\right\}\)</span> is an orthonormal set in <span
+class="math inline">\(H\)</span> and that <span
+class="math inline">\(F\)</span> is a finite subset of <span
+class="math inline">\(A\)</span>. Let <span
+class="math inline">\(M_F\)</span> be the span of <span
+class="math inline">\(\left\{u_\alpha: \alpha \in
+F\right\}\)</span>.</p>
+<ol type="a">
+<li>If <span class="math inline">\(\varphi\)</span> is a complex
+function on <span class="math inline">\(A\)</span> that is 0 outside
+<span class="math inline">\(F\)</span>, then there is a vector <span
+class="math inline">\(y \in M_F\)</span>, namely</li>
+</ol>
+<p><span class="math display">\[
+y=\sum_{\alpha \in F} \varphi(\alpha) u_\alpha
+\]</span></p>
+<p>that has <span
+class="math inline">\(\hat{y}(\alpha)=\varphi(\alpha)\)</span> for every
+<span class="math inline">\(\alpha \in A\)</span>. Also,</p>
+<p><span class="math display">\[
+\|y\|^2=\sum_{\alpha \in F}|\varphi(\alpha)|^2 .
+\]</span></p>
+<ol start="2" type="a">
+<li>If <span class="math inline">\(x \in H\)</span> and</li>
+</ol>
+<p><span class="math display">\[
+s_F(x)=\sum_{\alpha \in F} \hat{x}(\alpha) u_\alpha
+\]</span></p>
+<p>then</p>
+<p><span class="math display">\[
+\left\|x-s_F(x)\right\|&lt;\|x-s\|
+\]</span></p>
+<p>for every <span class="math inline">\(s \in M_F\)</span>, except for
+<span class="math inline">\(s=s_F(x)\)</span>, and</p>
+<p><span class="math display">\[
+\sum_{\alpha \in F}|\hat{x}(\alpha)|^2 \leq\|x\|^2
+\]</span></p>
+<p>Proof Part <span class="math inline">\((a)\)</span> is an immediate
+consequence of the orthogonality relations <span
+class="math inline">\(4.13(1)\)</span>.</p>
+<p>In the proof of <span class="math inline">\((b)\)</span>, let us
+write <span class="math inline">\(s_F\)</span> in place of <span
+class="math inline">\(s_F(x)\)</span>, and note that <span
+class="math inline">\(\hat{s}_F(\alpha)=\)</span> <span
+class="math inline">\(\hat{x}(\alpha)\)</span> for all <span
+class="math inline">\(\alpha \in F\)</span>. This says that <span
+class="math inline">\(\left(x-s_F\right) \perp u_\alpha\)</span> if
+<span class="math inline">\(\alpha \in F\)</span>, hence <span
+class="math inline">\(\left(x-s_F\right) \perp\)</span> <span
+class="math inline">\(\left(s_F-s\right)\)</span> for every <span
+class="math inline">\(s \in M_F\)</span>, and therefore</p>
+<p><span class="math display">\[
+\|x-s\|^2=\left\|\left(x-s_F\right)+\left(s_F-s\right)\right\|^2=\left\|x-s_F\right\|^2+\left\|s_F-s\right\|^2
+.
+\]</span></p>
+<p>This gives (4). With <span class="math inline">\(s=0\)</span>, (6)
+gives <span class="math inline">\(\left\|s_F\right\|^2
+\leq\|x\|^2\)</span>, which is the same as (5), because of (2).</p>
+<p>The inequality (4) states that the “partial sum” <span
+class="math inline">\(s_F(x)\)</span> of the “Fourier series” <span
+class="math inline">\(\sum \hat{x}(\alpha) u_\alpha\)</span> of <span
+class="math inline">\(x\)</span> is the unique best approximation to
+<span class="math inline">\(x\)</span> in <span
+class="math inline">\(M_F\)</span>, relative to the metric defined by
+the Hilbert space norm.</p>
+<h3 id="section">4.15</h3>
+<p>We want to drop the finiteness condition that appears in Theorem
+<span class="math inline">\(4.14\)</span> (thus obtaining Theorems <span
+class="math inline">\(4.17\)</span> and 4.18) without even restricting
+ourselves to sets that are necessarily countable. For this reason it
+seems advisable to clarify the meaning of the symbol <span
+class="math inline">\(\sum_{\alpha \in 4} \varphi(\alpha)\)</span> when
+<span class="math inline">\(\alpha\)</span> ranges over an arbitrary set
+<span class="math inline">\(A\)</span>.</p>
+<p>Assume <span class="math inline">\(0 \leq \varphi(\alpha) \leq
+\infty\)</span> for each <span class="math inline">\(\alpha \in
+A\)</span>. Then</p>
+<p><span class="math display">\[
+\sum_{\alpha \in A} \varphi(\alpha)
+\]</span></p>
+<p>denotes the supremum of the set of all finite sums <span
+class="math inline">\(\varphi\left(\alpha_1\right)+\cdots+\varphi\left(\alpha_n\right)\)</span>,
+where <span class="math inline">\(\alpha_1, \ldots, \alpha_n\)</span>
+are distinct members of <span class="math inline">\(A\)</span>.</p>
+<p>A moment’s consideration will show that the sum (1) is thus precisely
+the Lebesgue integral of <span class="math inline">\(\varphi\)</span>
+relative to the counting measure <span
+class="math inline">\(\mu\)</span> on <span
+class="math inline">\(A\)</span>.</p>
+<p>In this context one usually writes <span
+class="math inline">\(\ell^p(A)\)</span> for <span
+class="math inline">\(L^p(\mu)\)</span>. A complex function <span
+class="math inline">\(\varphi\)</span> with domain <span
+class="math inline">\(A\)</span> is thus in <span
+class="math inline">\(\ell^2(A)\)</span> if and only if</p>
+<p><span class="math display">\[
+\sum_{\alpha \in A}|\varphi(\alpha)|^2&lt;\infty .
+\]</span></p>
+<p>Example 4.5(b) shows that <span
+class="math inline">\(\ell^2(A)\)</span> is a Hilbert space, with inner
+product</p>
+<p><span class="math display">\[
+(\varphi, \psi)=\sum_{\alpha \in A} \varphi(\alpha)
+\overline{\psi(\alpha)} .
+\]</span></p>
+<p>Here, again, the sum over <span class="math inline">\(A\)</span>
+stands for the integral of <span class="math inline">\(\varphi
+\bar{\psi}\)</span> with respect to the counting measure; note that
+<span class="math inline">\(\varphi \bar{\psi} \in \ell^1(A)\)</span>
+because <span class="math inline">\(\varphi\)</span> and <span
+class="math inline">\(\psi\)</span> are in <span
+class="math inline">\(\ell^2(A)\)</span>.</p>
+<p>Theorem <span class="math inline">\(3.13\)</span> shows that the
+functions <span class="math inline">\(\varphi\)</span> that are zero
+except on some finite subset of <span class="math inline">\(A\)</span>
+are dense in <span class="math inline">\(\ell^2(A)\)</span>.</p>
+<p>Moreover, if <span class="math inline">\(\varphi \in
+\ell^2(A)\)</span>, then <span class="math inline">\(\{\alpha \in A:
+\varphi(\alpha) \neq 0\}\)</span> is at most countable. For if <span
+class="math inline">\(A_n\)</span> is the set of all <span
+class="math inline">\(\alpha\)</span> where <span
+class="math inline">\(|\varphi(\alpha)|&gt;1 / n\)</span>, then the
+number of elements of <span class="math inline">\(A\)</span> is at
+most</p>
+<p><span class="math display">\[
+\sum_{\alpha \in A_n}|n \varphi(\alpha)|^2 \leq n^2 \sum_{\alpha \in
+A}|\varphi(\alpha)|^2 .
+\]</span></p>
+<p>Each <span class="math inline">\(A_n(n=1,2,3, \ldots)\)</span> is
+thus a finite set. The following lemma about complete metric spaces will
+make it easy to pass from finite orthonormal sets to infinite ones.</p>
+<h3 id="lemma-suppose-that">4.16 Lemma Suppose that</h3>
+<ol type="a">
+<li><span class="math inline">\(X\)</span> and <span
+class="math inline">\(Y\)</span> are metric spaces, <span
+class="math inline">\(X\)</span> is complete,</li>
+<li><span class="math inline">\(f: X \rightarrow Y\)</span> is
+continuous,</li>
+<li><span class="math inline">\(X\)</span> has a dense subset <span
+class="math inline">\(X_0\)</span> on which <span
+class="math inline">\(f\)</span> is an isometry, and</li>
+<li><span class="math inline">\(f\left(X_0\right)\)</span> is dense in
+<span class="math inline">\(Y\)</span>. Then <span
+class="math inline">\(f\)</span> is an isometry of <span
+class="math inline">\(X\)</span> onto <span
+class="math inline">\(Y\)</span>. The most important part of the
+conclusion is that <span class="math inline">\(f\)</span> maps <span
+class="math inline">\(X\)</span> onto all of <span
+class="math inline">\(Y\)</span>. Recall that an isometry is simply a
+mapping that preserves distances. Thus, by assumption, the distance
+between <span class="math inline">\(f\left(x_1\right)\)</span> and <span
+class="math inline">\(f\left(x_2\right)\)</span> in <span
+class="math inline">\(Y\)</span> is equal to that between <span
+class="math inline">\(x_1\)</span> and <span
+class="math inline">\(x_2\)</span> in <span
+class="math inline">\(X\)</span>, for all points <span
+class="math inline">\(x_1, x_2\)</span> in <span
+class="math inline">\(X_0\)</span>.</li>
+</ol>
+<p>Proof The fact that <span class="math inline">\(f\)</span> is an
+isometry on <span class="math inline">\(X\)</span> is an immediate
+consequence of the continuity of <span class="math inline">\(f\)</span>,
+since <span class="math inline">\(X_0\)</span> is dense in <span
+class="math inline">\(X\)</span>.</p>
+<p>Pick <span class="math inline">\(y \in Y\)</span>. Since <span
+class="math inline">\(f\left(X_0\right)\)</span> is dense in <span
+class="math inline">\(Y\)</span>, there is a sequence <span
+class="math inline">\(\left\{x_n\right\}\)</span> in <span
+class="math inline">\(X_0\)</span> such that <span
+class="math inline">\(f\left(x_n\right) \rightarrow y\)</span> as <span
+class="math inline">\(n \rightarrow \infty\)</span>. Thus <span
+class="math inline">\(\left\{f\left(x_n\right)\right\}\)</span> is a
+Cauchy sequence in <span class="math inline">\(Y\)</span>. Since <span
+class="math inline">\(f\)</span> is an isometry on <span
+class="math inline">\(X_0\)</span>, it follows that <span
+class="math inline">\(\left\{x_n\right\}\)</span> is also a Cauchy
+sequence. The completeness of <span class="math inline">\(X\)</span>
+implies now that <span class="math inline">\(\left\{x_n\right\}\)</span>
+converges to some <span class="math inline">\(x \in X\)</span>, and the
+continuity of <span class="math inline">\(f\)</span> shows that <span
+class="math inline">\(f(x)=\lim f\left(x_n\right)=y\)</span>.</p>
+<h3 id="theorem-1">4.17 Theorem</h3>
+<p>Let <span class="math inline">\(\left\{u_\alpha: \alpha \in
+A\right\}\)</span> be an orthonormal set in <span
+class="math inline">\(H\)</span>, and let <span
+class="math inline">\(P\)</span> be the space of all finite linear
+combinations of the vectors <span
+class="math inline">\(u_\alpha\)</span>.</p>
+<p>The inequality</p>
+<p><span class="math display">\[
+\sum_{\alpha \in A}|\hat{x}(\alpha)|^2 \leq\|x\|^2
+\]</span></p>
+<p>holds then for every <span class="math inline">\(x \in H\)</span>,
+and <span class="math inline">\(x \rightarrow \hat{x}\)</span> is a
+continuous linear mapping of <span class="math inline">\(H\)</span> onto
+<span class="math inline">\(\ell^2(A)\)</span> whose restriction to the
+closure <span class="math inline">\(\bar{P}\)</span> of <span
+class="math inline">\(P\)</span> is an isometry of <span
+class="math inline">\(\bar{P}\)</span> onto <span
+class="math inline">\(\ell^2(A)\)</span>.</p>
+<p><strong>Proof</strong> Since the inequality <span
+class="math inline">\(4.14(5)\)</span> holds for every finite set <span
+class="math inline">\(F \subset A\)</span>, we have (1), the so-called
+Bessel inequality.</p>
+<p>Define <span class="math inline">\(f\)</span> on <span
+class="math inline">\(H\)</span> by <span
+class="math inline">\(f(x)=\hat{x}\)</span>. Then (1) shows explicitly
+that <span class="math inline">\(f\)</span> maps <span
+class="math inline">\(H\)</span> into <span
+class="math inline">\(\ell^2(A)\)</span>. The linearity of <span
+class="math inline">\(f\)</span> is obvious. If we apply (1) to <span
+class="math inline">\(x-y\)</span> we see that</p>
+<p><span class="math display">\[
+\|f(y)-f(x)\|_2=\|\hat{y}-\hat{x}\|_2 \leq\|y-x\| .
+\]</span></p>
+<p>Thus <span class="math inline">\(f\)</span> is continuous. Theorem
+4.14(a) shows that <span class="math inline">\(f\)</span> is an isometry
+of <span class="math inline">\(P\)</span> onto the dense subspace of
+<span class="math inline">\(\ell^2(A)\)</span> consisting of those
+functions whose support is a finite set <span class="math inline">\(F
+\subset A\)</span>. The theorem follows therefore from Lemma 4.16,
+applied with <span class="math inline">\(X=\bar{P}, X_0=P,
+Y=\ell^2(A)\)</span>; note that <span
+class="math inline">\(\bar{P}\)</span>, being a closed subset of the
+complete metric spate <span class="math inline">\(H\)</span>, is itself
+complete.</p>
+<p>The fact that the mapping <span class="math inline">\(x \rightarrow
+\hat{x}\)</span> carries <span class="math inline">\(H\)</span> onto
+<span class="math inline">\(\ell^2(A)\)</span> is known as the
+RieszFischer theorem.</p>
+<h3 id="theorem-2">4.18 Theorem</h3>
+<p>Let <span class="math inline">\(\left\{u_\alpha: \alpha \in
+A\right\}\)</span> be an orthonormal set in <span
+class="math inline">\(H\)</span>. Each of the following four conditions
+on <span class="math inline">\(\left\{u_\alpha\right\}\)</span> implies
+the other three:</p>
+<ol type="i">
+<li><span class="math inline">\(\left\{u_\alpha\right\}\)</span> is a
+maximal orthonormal set in <span class="math inline">\(H\)</span>.</li>
+<li>The set <span class="math inline">\(P\)</span> of all finite linear
+combinations of members of <span
+class="math inline">\(\left\{u_\alpha\right\}\)</span> is dense in <span
+class="math inline">\(H\)</span>.</li>
+<li>The equality</li>
+</ol>
+<p><span class="math display">\[
+\sum_{\alpha \in A}|\hat{x}(\alpha)|^2=\|x\|^2
+\]</span></p>
+<p>holds for every <span class="math inline">\(x \in H\)</span>. (iv)
+The equality</p>
+<p><span class="math display">\[
+\sum_{\alpha \in A} \hat{x}(\alpha) \overline{\hat{y}(\alpha)}=(x, y)
+\]</span></p>
+<p>holds for all <span class="math inline">\(x \in H\)</span> and <span
+class="math inline">\(y \in H\)</span>. The last formula is known as
+Parseval’s identity. Observe that <span
+class="math inline">\(\hat{x}\)</span> and <span
+class="math inline">\(\hat{y}\)</span> are in <span
+class="math inline">\(\ell^2(A)\)</span>, hence <span
+class="math inline">\(\hat{x} \hat{y}\)</span> is in <span
+class="math inline">\(\ell^1(A)\)</span>, so that the sum in (iv) is
+well defined. Of course, (iii) is the special case <span
+class="math inline">\(x=y\)</span> of (iv).</p>
+<p>Maximal orthonormal sets are often called <em>complete
+orthoriormal</em> sets or <em>orthonormal bases</em>.</p>
+<p><strong>Proof</strong> To say that <span
+class="math inline">\(\left\{u_\alpha\right\}\)</span> is maximal means
+simply that no vector of <span class="math inline">\(H\)</span> can be
+adjoined to <span class="math inline">\(\left\{u_\alpha\right\}\)</span>
+in such a way that the resulting set is still orthonormal. This happens
+precisely when there is no <span class="math inline">\(x \neq 0\)</span>
+in <span class="math inline">\(H\)</span> that is orthogonal to every
+<span class="math inline">\(u_\alpha\)</span>.</p>
+<p>We shall prove that (i) <span
+class="math inline">\(\rightarrow\)</span> (ii) <span
+class="math inline">\(\rightarrow\)</span> (iii) <span
+class="math inline">\(\rightarrow\)</span> (iv) <span
+class="math inline">\(\rightarrow\)</span> (i).</p>
+<p>If <span class="math inline">\(P\)</span> is not dense in <span
+class="math inline">\(H\)</span>, then its closure <span
+class="math inline">\(\bar{P}\)</span> is not all of <span
+class="math inline">\(H\)</span>, and the corollary to Theorem <span
+class="math inline">\(4.11\)</span> implies that <span
+class="math inline">\(P^{\perp}\)</span> contains a nonzero vector. Thus
+<span class="math inline">\(\left\{u_\alpha\right\}\)</span> is not
+maximal when <span class="math inline">\(P\)</span> is not dense, and
+(i) implies (ii).</p>
+<p>If (ii) holds, so does (iii), by Theorem 4.17.</p>
+<p>The implication (iii) <span
+class="math inline">\(\rightarrow\)</span> (iv) follows from the easily
+proved Hilbert space identity (sometimes called the “polarization
+identity”)</p>
+<p><span class="math display">\[
+4(x, y)=\|x+y\|^2-\|x-y\|^2+i\|x+i y\|^2-i\|x-i y\|^2
+\]</span></p>
+<p>which expresses the inner product <span class="math inline">\((x,
+y)\)</span> in terms of norms and which is equally valid with <span
+class="math inline">\(\hat{x}, \hat{y}\)</span> in place of <span
+class="math inline">\(x, y\)</span>, simply because <span
+class="math inline">\(\ell^2(A)\)</span> is also a Hilbert space. (See
+Exercise 19 for other identities of this type.) Note that the sums in
+(iii) and (iv) are <span class="math inline">\(\|\hat{x}\|_2^2\)</span>
+and <span class="math inline">\((\hat{x}, \hat{y})\)</span>,
+respectively.</p>
+<p>Finally, if (i) is false, there exists <span class="math inline">\(u
+\neq 0\)</span> in <span class="math inline">\(H\)</span> so that <span
+class="math inline">\(\left(u, u_\alpha\right)=0\)</span> for all <span
+class="math inline">\(\alpha \in A\)</span>. If <span
+class="math inline">\(x=y=u\)</span>, then <span
+class="math inline">\((x, y)=\|u\|^2&gt;0\)</span> but <span
+class="math inline">\(\hat{x}(\alpha)=0\)</span> for all <span
+class="math inline">\(\alpha \in A\)</span>, hence (iv) fails. Thus (iv)
+implies (i), and the proof is complete.</p>
+<h3 id="isomorphisms">4.19 Isomorphisms</h3>
+<p>Speaking informally, two algebraic systems of the same nature are
+said to be isomorphic if there is a one-to-one mapping of one onto the
+other which preserves all relevant properties. For instance, we may ask
+whether two groups are isomorphic or whether two fields are isomorphic.
+Two vector spaces are isomorphic if there is a one-to-one linear mapping
+of one onto the other. The linear mappings are the ones which preserve
+the relevant concepts in a vector space, namely, addition and scalar
+multiplication.</p>
+<p>In the same way, two Hilbert spaces <span
+class="math inline">\(H_1\)</span> and <span
+class="math inline">\(H_2\)</span> are isomorphic if there is a
+one-to-one linear mapping <span class="math inline">\(\Lambda\)</span>
+of <span class="math inline">\(H_1\)</span> onto <span
+class="math inline">\(H_2\)</span> which also preserves inner products:
+<span class="math inline">\((\Lambda x, \Lambda y)=(x, y)\)</span> for
+all <span class="math inline">\(x\)</span> and <span
+class="math inline">\(y \in H_1\)</span>. Such a <span
+class="math inline">\(\Lambda\)</span> is an isomorphism (or, more
+specifically, a Hilbert space isomorphism) of <span
+class="math inline">\(H_1\)</span> onto <span
+class="math inline">\(H_2\)</span>. Using this terminology, Theorems
+<span class="math inline">\(4.17\)</span> and <span
+class="math inline">\(4.18\)</span> yield the following statement:</p>
+<p><em>If <span class="math inline">\(\left\{u_\alpha: \alpha \in
+A\right\}\)</span> is a maximal orthonormal set in a Hilbert space <span
+class="math inline">\(H\)</span>, and if <span
+class="math inline">\(\hat{x}(\alpha)=\)</span> <span
+class="math inline">\(\left(x, u_\alpha\right)\)</span>, then the
+mapping <span class="math inline">\(x \rightarrow \hat{x}\)</span> is a
+Hilbert space isomorphism of <span class="math inline">\(H\)</span> onto
+<span class="math inline">\(\ell^2(A)\)</span>.</em></p>
+<p>One can prove (we shall omit this) that <span
+class="math inline">\(\ell^2(A)\)</span> and <span
+class="math inline">\(\ell^2(B)\)</span> are isomorphic if and only if
+the sets <span class="math inline">\(A\)</span> and <span
+class="math inline">\(B\)</span> have the same cardinal number. But we
+shall prove that every nontrivial Hilbert space (this means that the
+space does not consist of 0 alone) is isomorphic to some <span
+class="math inline">\(\ell^2(A)\)</span>, by proving that every such
+space contains a maximal orthonormal set (Theorem 4.22). The proof will
+depend on a property of partially ordered sets which is equivalent to
+the axiom of choice.</p>
+<h3 id="partially-ordered-sets">4.20 Partially Ordered Sets</h3>
+<p>A set <span class="math inline">\(\mathscr{P}\)</span> is said to be
+partially ordered by a binary relation <span
+class="math inline">\(\leq\)</span> if</p>
+<ol type="a">
+<li><span class="math inline">\(a \leq b\)</span> and <span
+class="math inline">\(b \leq c\)</span> implies <span
+class="math inline">\(a \leq c\)</span>.</li>
+<li><span class="math inline">\(a \leq a\)</span> for every <span
+class="math inline">\(\alpha \in \mathscr{P}\)</span>.</li>
+<li><span class="math inline">\(a \leq b\)</span> and <span
+class="math inline">\(b \leq a\)</span> implies <span
+class="math inline">\(a=b\)</span>.</li>
+</ol>
+<p>A subset <span class="math inline">\(\mathscr{2}\)</span> of a
+partially ordered set <span class="math inline">\(\mathscr{P}\)</span>
+is said to be totally ordered (or linearly ordered) if every pair <span
+class="math inline">\(a, b \in \mathscr{2}\)</span> satisfies either
+<span class="math inline">\(\alpha \leq b\)</span> or <span
+class="math inline">\(b \leq a\)</span>.</p>
+<p>For example, every collection of subsets of a given set is partially
+ordered by the inclusion relation <span
+class="math inline">\(\subset\)</span>.</p>
+<p>To give a more specific example, let <span
+class="math inline">\(\mathscr{P}\)</span> be the collection of all open
+subsets of the plane, partially ordered by set inclusion, and let <span
+class="math inline">\(\mathscr{2}\)</span> be the collection of all open
+circular discs with center at the origin. Then <span
+class="math inline">\(\mathscr{Q} \subset \mathscr{P},
+\mathscr{Q}\)</span> is totally ordered by <span
+class="math inline">\(\subset\)</span>, and <span
+class="math inline">\(\mathscr{2}\)</span> is a maximal totally ordered
+subset of <span class="math inline">\(\mathscr{P}\)</span>. This means
+that if any member of <span class="math inline">\(\mathscr{P}\)</span>
+not in <span class="math inline">\(\mathscr{Q}\)</span> is adjoined to
+<span class="math inline">\(\mathscr{2}\)</span>, the resulting
+collection of sets is no longer totally ordered by <span
+class="math inline">\(\subset\)</span>.</p>
+<h3 id="the-hausdorff-maximality-theorem">4.21 The Hausdorff Maximality
+Theorem</h3>
+<p>Every nonempty partially ordered set contains a maximal totally
+ordered subset.</p>
+<p>This is a consequence of the axiom of choice and is, in fact,
+equivalent to it ; another (very similar) form of it is known as Zorn’s
+lemma. We give the proof in the Appendix.</p>
+<p>If now <span class="math inline">\(H\)</span> is a nontrivial Hilbert
+space, then there exists a <span class="math inline">\(u \in H\)</span>
+with <span class="math inline">\(\|u\|=1\)</span>, so that there is a
+nonempty orthonormal set in <span class="math inline">\(H\)</span>. The
+existence of a maximal orthonormal set is therefore a consequence of the
+following theorem:</p>
+<h3 id="theorem-3">4.22 Theorem</h3>
+<p>Every orthonormal set <span class="math inline">\(B\)</span> in a
+Hilbert space <span class="math inline">\(H\)</span> is contained in a
+maximal orthonormal set in <span class="math inline">\(H\)</span>.</p>
+<p>Proof Let <span class="math inline">\(\mathscr{P}\)</span> be the
+class of all orthonormal sets in <span class="math inline">\(H\)</span>
+which contain the given set <span class="math inline">\(B\)</span>.
+Partially order <span class="math inline">\(\mathscr{P}\)</span> by set
+inclusion. Since <span class="math inline">\(B \in \mathscr{P},
+\mathscr{P} \neq \varnothing\)</span>. Hence <span
+class="math inline">\(\mathscr{P}\)</span> contains a maximal totally
+ordered class <span class="math inline">\(\Omega\)</span>. Let <span
+class="math inline">\(S\)</span> be the union of all members of <span
+class="math inline">\(\Omega\)</span>. It is clear that <span
+class="math inline">\(B \subset S\)</span>. We claim that <span
+class="math inline">\(S\)</span> is a maximal orthonormal set:</p>
+<p>If <span class="math inline">\(u_1\)</span> and <span
+class="math inline">\(u_2 \in S\)</span>, then <span
+class="math inline">\(u_1 \in A_1\)</span> and <span
+class="math inline">\(u_2 \in A_2\)</span> for some <span
+class="math inline">\(A_1\)</span> and <span class="math inline">\(A_2
+\in \Omega\)</span>. Since <span class="math inline">\(\Omega\)</span>
+is total ordered, <span class="math inline">\(A_1 \subset A_2\)</span>
+(or <span class="math inline">\(A_2 \subset A_1\)</span> ), so that
+<span class="math inline">\(u_1 \in A_2\)</span> and <span
+class="math inline">\(u_2 \in A_2\)</span>. Since <span
+class="math inline">\(A_2\)</span> is orthonormal, <span
+class="math inline">\(\left(u_1, u_2\right)=0\)</span> if <span
+class="math inline">\(u_1 \neq u_2,\left(u_1, u_2\right)=1\)</span> if
+<span class="math inline">\(u_1=u_2\)</span>. Thus <span
+class="math inline">\(S\)</span> is an orthonormal set.</p>
+<p>Suppose <span class="math inline">\(S\)</span> is not maximal. Then
+<span class="math inline">\(S\)</span> is a proper subset of an
+orthonormal set <span class="math inline">\(S^*\)</span>. Clearly, <span
+class="math inline">\(S^* \notin \Omega\)</span>, and <span
+class="math inline">\(S^*\)</span> contains every member of <span
+class="math inline">\(\Omega\)</span>. Hence we may adjoin <span
+class="math inline">\(S^*\)</span> to <span
+class="math inline">\(\Omega\)</span> and still have a total order. This
+contradicts the maximality of <span
+class="math inline">\(\Omega\)</span>.</p>
+
+    </div>
+    
+</div>
+</div>
+
+                <div id="footer-wrapper">
+                    <footer class="footer"><footer class="row pl-3 pr-3">
+    <div class="col-12 d-flex justify-content-between align-items-center text-muted pl-0 pr-0">
+        <div class="footer-left">
+            <p class="mb-0"> © 2022 <a href="https://github.com/chen-gz">guangzong</a>. <span data-toggle="tooltip"
+                    data-placement="top"
+                    title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author.">All
+                    rights reserved.</span></p>
+        </div>
+        <div class="footer-right">
+            <p class="mb-0"> Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">hugo</a>
+                with <a href="https://github.com/chen-gz/hugo_zong" target="_blank" rel="noopener">zong</a>
+                theme.</p>
+        </div>
+    </div>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script> MathJax = {
+            tex: {
+                tags: 'ams',
+            }
+        };</script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</footer>
+</footer>
+                </div>
+            </div>
+            <div id="panel-wrapper" class="d-flex flex-column"><div id="toc-wrapper" class="mb-5 pl-2">
+    <span>Contents</span>
+    <nav id="toc" data-toggle="toc">
+        
+        
+        
+    </nav>
+</div>
+
+<div id="access-lastmod" class="pb-4 pl-2">
+    <div class="panel-heading">Recently Updated</div>
+    <ul class="post-content pl-3 pb-1 ml-1 mt-2">
+          
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/1-total-variation/">Total Variation</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-7/1-derivatives-of-measures/">Derivatives of Measures</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/3-consequences-of-the-radon-nikodym-theorem/">Consequences of the Radon-Nikodym Theorem</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/4-bounded-linear-functionals-on-lp/">Bounded linear functional on Lp</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/2-abosolute-continuity/">Abosolute Continuity</a></li>
+        
+    </ul>
+</div>
+
+<div id="access-tags" class="pl-2">
+    <div class="panel-heading">Trending Tags</div>
+    <div class="d-flex flex-wrap mt-3 mb-1 mr-3">
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/algorithm/">Algorithm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/android/">Android</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c/">C</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c-language/">c language</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/caddy/">Caddy</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cadence/">Cadence</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cdc/">CDC</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/classification/">classification</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/compress/">Compress</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/conf/">Conf</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/double-column/">Double Column</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/errno13/">Errno13</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/fish/">fish</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gan/">GAN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/git/">Git</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gtk/">Gtk</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/html/">Html</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/i3/">I3</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/idea/">Idea</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/java/">Java</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/latex/">Latex</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lda/">LDA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linear-programming/">Linear Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linux/">Linux</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lr/">LR</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/math/">Math</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mathematics/">Mathematics</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matlab/">Matlab</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matplot/">matplot</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/memory/">Memory</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mermaid/">Mermaid</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/misc/">Misc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/ml/">ML</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mosfet/">Mosfet</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/network/">Network</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/nn/">NN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pandoc/">Pandoc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pca/">PCA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/probability/">Probability</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/productive/">Productive</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/program/">Program</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/programming/">Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/python/">Python</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/qt/">Qt</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/random-variable/">Random Variable</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rcnn/">RCNN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rust/">Rust</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/security/">Security</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/software/">Software</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/std/">Std</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/svd/">Svd</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/tool/">Tool</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/usb/">USB</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vim/">Vim</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpn/">Vpn</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpnc/">Vpnc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/xterm/">xterm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/zsh/">Zsh</a>
+        
+    </div>
+</div>
+</div><div id="search-result-wrapper" class="d-flex justify-content-center unloaded">
+    <div class="col-12 col-sm-11 post-content">
+        <div id="search-hints"></div>
+        <div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3 col-12"></div>
+    </div>
+</div>
+
+<script src="/js/fuse.min.js"></script>
+<script src="/js/fastsearch.js"></script>
+
+
+</div>
+        <div id="mask"></div>
+        <a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button"
+            style="display: none">
+            <i class="fas fa-angle-up"></i>
+        </a>
+    </div>
+    
+</body>
+
+</html>

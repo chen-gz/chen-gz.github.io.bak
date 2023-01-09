@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Embedded System on Guangzong Blog</title>
+    <link>https://zongpitt.com/categories/embedded-system/</link>
+    <description>Recent content in Embedded System on Guangzong Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 15 Feb 2021 23:08:52 -0500</lastBuildDate><atom:link href="https://zongpitt.com/categories/embedded-system/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>USB Communications Device Class</title>
+      <link>https://zongpitt.com/posts/2021-02-15-usb-cdc-linux/</link>
+      <pubDate>Mon, 15 Feb 2021 23:08:52 -0500</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-02-15-usb-cdc-linux/</guid>
+      <description>This code is not written by me. It is copy from website.
+I put it here just for easy to find.
+I change a little bit of this code to make it work. (It post 6 years ago, when i found it, it doesn’t work.)
+/* * This is a simple example to communicate with a CDC-ACM USB device * using libusb. */ #include &amp;lt;unistd.h&amp;gt; #include &amp;lt;stdlib.h&amp;gt; #include &amp;lt;stdio.h&amp;gt; #include &amp;lt;errno.</description>
+    </item>
+    
+  </channel>
+</rss>

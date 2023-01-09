@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css"
+        class="dark-mode-native-dark-original" />
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+     
+    <link rel="stylesheet" href="https://zongpitt.com/sass/main.06935202011a97ba473ebeeb0cb6788daa9fb5a9fff471a4e85850293d1c5ac4.css" />
+    <title>
+          Guangzong Blog | RECTIFIABLE CURVES
+    </title>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.bundle.min.js"></script>
+    <script src=" https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.js"></script>
+
+    <script
+        src="https://cdn.jsdelivr.net/combine/npm/magnific-popup@1/dist/jquery.magnific-popup.min.js,npm/lozad/dist/lozad.min.js,npm/clipboard@2/dist/clipboard.min.js"></script>
+    <script type="text/javascript" src="/js/commons/back-to-top.js"></script>
+    
+    
+    
+    <script type="text/javascript" src="/js/commons/topbar-switch.js"></script>
+    <script type="text/javascript" src="/js/commons/sidebar.js"></script>
+    <script type="text/javascript" src="/js/utils/category-collapse.js"></script>
+    <script type="text/javascript" src="/js/utils/checkbox.js"></script>
+    <script type="text/javascript" src="/js/utils/clipboard.js"></script>
+    <script type="text/javascript" src="/js/utils/img-extra.js"></script>
+    <script type="text/javascript" src="/js/utils/pageviews.js"></script>
+    
+    <script type="text/javascript" src="/js/utils/timeago.js"></script>
+    
+    
+</head>
+<body data-spy="scroll" data-target="#toc" data-topbar-visible="true" class="d-flex"><div id="sidebar" class="d-flex flex-column align-items-end">
+    <div class="profile-wrapper text-center">
+
+        <div id="avatar">
+            <a href="/" alt="avatar" class="mx-auto"> <img src=https://github.com/chen-gz/chen-gz/blob/main/mine_square.jpg?raw&#61;truehttps://raw.githubusercontent.com/chen-gz/chen-gz/blob/main/mine_square.jpg alt="avatar"
+                    onerror="this.style.display='none'"> </a>
+        </div>
+
+        <div class="site-title mt-3"> <a href="/">Guangzong</a> </div>
+        <div class="site-subtitle font-italic">Welcome to my blog</div>
+    </div>
+
+    <ul>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/">
+                <span>
+                    Home
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/archive/">
+                <span>
+                    Archive
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/tags/">
+                <span>
+                    Tags
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/about/">
+                <span>
+                    About
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/categories/">
+                <span>
+                    Categories
+                </span>
+            </a>
+        </li>
+        
+    </ul>
+
+    <div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center align-items-center">
+        <button class="mode-toggle btn" aria-label="Switch Mode"> 
+            <i class="fas fa-adjust"></i> 
+        </button>
+
+        <span class="icon-border"></span>
+        <a href="https://github.com/chen-gz" aria-label="github" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i>
+        </a>
+
+        <a href=" javascript:location.href = 'mailto:' + ['chen-gz','outlook.com'].join('@')" aria-label="email">
+            <i class="fas fa-envelope"></i>
+        </a>
+
+        <a href="/feed.xml" aria-label="rss"> <i class="fas fa-rss"></i> </a>
+    </div>
+
+    
+    
+</div>
+<div id="all-wrapper" class="d-flex flex-column"><div id="topbar-wrapper">
+    <div id="topbar" class="d-flex">
+        
+        <span id="breadcrumb" class="d-flex">
+              
+               
+            
+            
+            <div><a href='https://zongpitt.com/'>Home</a></div>
+              
+              
+            
+            <div><a href="https://zongpitt.com/baby-rudin">baby-rudin</a></div>
+               
+              
+            
+            <div><a href="https://zongpitt.com/baby-rudin/6-the-riemann-stieltjes-integral">6-the-riemann-stieltjes-integral</a></div>
+               
+                 
+                
+        </span>
+        <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i>
+        <div id="topbar-title">Guangzong</div>
+        <i id="search-trigger" class="fas fa-search fa-fw"></i>
+        <span id="search-wrapper" class="align-items-center">
+            <i class="fas fa-search fa-fw"></i>
+            <input class="form-control" id="search-input" type="search" aria-label="search" autocomplete="off"
+                placeholder="Search..." />
+            <i class="fa fa-times-circle fa-fw" id="search-cleaner"></i>
+        </span>
+    </div>
+</div>
+<div id="main-wrapper" class="d-flex mt-3">
+            <div id="core-wrapper" class="d-flex flex-column">
+                <div id="main" class="d-flex flex-column">
+                    
+<div class="post pl-1 pr-1 pl-md-2 pr-md-2">
+    
+    <div id="post-content">
+        <h1 style="text-align: center;">RECTIFIABLE CURVES</h1>
+        <br>
+        
+        <p>We conclude this chapter with a topic of geometric interest which
+provides an application of some of the preceding theory. The case <span
+class="math inline">\(k=2\)</span> (i.e., the case of plane curves) is
+of considerable importance in the study of analytic functions of a
+complex variable.</p>
+<p><strong>6.26 Definition</strong> A continuous mapping <span
+class="math inline">\(\gamma\)</span> of an interval <span
+class="math inline">\([a, b]\)</span> into <span
+class="math inline">\(R^{k}\)</span> is called a curve in <span
+class="math inline">\(R^{k}\)</span>. To emphasize the parameter
+interval <span class="math inline">\([a, b]\)</span>, we may also say
+that <span class="math inline">\(\gamma\)</span> is a curve on <span
+class="math inline">\([a, b]\)</span>.</p>
+<p>If <span class="math inline">\(\gamma\)</span> is one-to-one, <span
+class="math inline">\(\gamma\)</span> is called an arc.</p>
+<p>If <span class="math inline">\(\gamma(a)=\gamma(b), \gamma\)</span>
+is said to be a closed curve.</p>
+<p>It should be noted that we define a curve to be a mapping, not a
+point set. Of course, with each curve <span
+class="math inline">\(\gamma\)</span> in <span
+class="math inline">\(R^{k}\)</span> there is associated a subset of
+<span class="math inline">\(R^{k}\)</span>, namely the range of <span
+class="math inline">\(\gamma\)</span>, but different curves may have the
+same range.</p>
+<p>We associate to each partition <span
+class="math inline">\(P=\left\{x_{0}, \ldots, x_{n}\right\}\)</span> of
+<span class="math inline">\([a, b]\)</span> and to each curve <span
+class="math inline">\(\gamma\)</span> on <span class="math inline">\([a,
+b]\)</span> the number</p>
+<p><span class="math display">\[
+\Lambda(P,
+\gamma)=\sum_{i=1}^{n}\left|\gamma\left(x_{i}\right)-\gamma\left(x_{i-1}\right)\right|
+.
+\]</span></p>
+<p>The ith term in this sum is the distance (in <span
+class="math inline">\(\left.R^{k}\right)\)</span> between the points
+<span class="math inline">\(\gamma\left(x_{i-1}\right)\)</span> and
+<span class="math inline">\(\gamma\left(x_{i}\right)\)</span>. Hence
+<span class="math inline">\(\Lambda(P, \gamma)\)</span> is the length of
+a polygonal path with vertices at <span
+class="math inline">\(\gamma\left(x_{0}\right)\)</span>, <span
+class="math inline">\(\gamma\left(x_{1}\right), \ldots,
+\gamma\left(x_{n}\right)\)</span>, in this order. As our partition
+becomes finer and finer, this polygon approaches the range of <span
+class="math inline">\(\gamma\)</span> more and more closely. This makes
+it seem reasonable to define the length of <span
+class="math inline">\(\gamma\)</span> as</p>
+<p><span class="math display">\[
+\Lambda(\gamma)=\sup \Lambda(P, \gamma),
+\]</span></p>
+<p>where the supremum is taken over all partitions of <span
+class="math inline">\([a, b]\)</span>.</p>
+<p>If <span class="math inline">\(\Lambda(\gamma)&lt;\infty\)</span>, we
+say that <span class="math inline">\(\gamma\)</span> is rectifiable.</p>
+<p>In certain cases, <span
+class="math inline">\(\Lambda(\gamma)\)</span> is given by a Riemann
+integral. We shall prove this for continuously differentiable curves,
+i.e., for curves <span class="math inline">\(\gamma\)</span> whose
+derivative <span class="math inline">\(\gamma^{\prime}\)</span> is
+continuous.</p>
+<p><strong>6.27 Theorem</strong> If <span
+class="math inline">\(\gamma^{\prime}\)</span> is continuous on <span
+class="math inline">\([a, b]\)</span>, then <span
+class="math inline">\(\gamma\)</span> is rectifiable, and <span
+class="math display">\[
+\Lambda(\gamma)=\int_{a}^{b}\left|\gamma^{\prime}(t)\right| d t .
+\]</span></p>
+<p>Proof If <span class="math inline">\(a \leq x_{i-1}&lt;x_{i} \leq
+b\)</span>, then</p>
+<p><span class="math display">\[
+\left|\gamma\left(x_{i}\right)-\gamma\left(x_{i-1}\right)\right|=\left|\int_{x_{t-1}}^{x_{i}}
+\gamma^{\prime}(t) d t\right| \leq
+\int_{x_{i-1}}^{x_{i}}\left|\gamma^{\prime}(t)\right| d t .
+\]</span></p>
+<p>Hence</p>
+<p><span class="math display">\[
+\Lambda(P, \gamma) \leq \int_{a}^{b}\left|\gamma^{\prime}(t)\right| d t
+\]</span></p>
+<p>for every partition <span class="math inline">\(P\)</span> of <span
+class="math inline">\([a, b]\)</span>. Consequently,</p>
+<p><span class="math display">\[
+\Lambda(\gamma) \leq \int_{a}^{b}\left|\gamma^{\prime}(t)\right| d t .
+\]</span></p>
+<p>To prove the opposite inequality, let <span
+class="math inline">\(\varepsilon&gt;0\)</span> be given. Since <span
+class="math inline">\(\gamma^{\prime}\)</span> is uniformly continuous
+on <span class="math inline">\([a, b]\)</span>, there exists <span
+class="math inline">\(\delta&gt;0\)</span> such that</p>
+<p><span class="math display">\[
+\left|\gamma^{\prime}(s)-\gamma^{\prime}(t)\right|&lt;\varepsilon \quad
+\text { if }|s-t|&lt;\delta .
+\]</span></p>
+<p>Let <span class="math inline">\(P=\left\{x_{0}, \ldots,
+x_{n}\right\}\)</span> be a partition of <span class="math inline">\([a,
+b]\)</span>, with <span class="math inline">\(\Delta
+x_{i}&lt;\delta\)</span> for all <span class="math inline">\(i\)</span>.
+If <span class="math inline">\(x_{i-1} \leq t \leq x_{i}\)</span>, it
+follows that</p>
+<p><span class="math display">\[
+\left|\gamma^{\prime}(t)\right|
+\leq\left|\gamma^{\prime}\left(x_{i}\right)\right|+\varepsilon .
+\]</span></p>
+<p>Hence</p>
+<p><span class="math display">\[
+\begin{aligned}
+\int_{x_{i-1}}^{x_{i}}\left|\gamma^{\prime}(t)\right| d t &amp;
+\leq\left|\gamma^{\prime}\left(x_{i}\right)\right| \Delta
+x_{i}+\varepsilon \Delta x_{i} \\
+&amp;=\left|\int_{x_{i-1}}^{x_{i}}\left[\gamma^{\prime}(t)+\gamma^{\prime}\left(x_{i}\right)-\gamma^{\prime}(t)\right]
+d t\right|+\varepsilon \Delta x_{i} \\
+&amp; \leq\left|\int_{x_{i-1}}^{x_{i}} \gamma^{\prime}(t) d
+t\right|+\left|\int_{x_{i-1}}^{x_{i}}\left[\gamma^{\prime}\left(x_{i}\right)-\gamma^{\prime}(t)\right]
+d t\right|+\varepsilon \Delta x_{i} \\
+&amp;
+\leq\left|\gamma\left(x_{i}\right)-\gamma\left(x_{i-1}\right)\right|+2
+\varepsilon \Delta x_{i} .
+\end{aligned}
+\]</span></p>
+<p>If we add these inequalities, we obtain</p>
+<p><span class="math display">\[
+\begin{aligned}
+\int_{a}^{b}\left|\gamma^{\prime}(t)\right| d t &amp; \leq \Lambda(P,
+\gamma)+2 \varepsilon(b-a) \\
+&amp; \leq \Lambda(\gamma)+2 \varepsilon(b-a) .
+\end{aligned}
+\]</span></p>
+<p>Since <span class="math inline">\(\varepsilon\)</span> was
+arbitrary,</p>
+<p><span class="math display">\[
+\int_{a}^{b}\left|\gamma^{\prime}(t)\right| d t \leq \Lambda(\gamma)
+\]</span></p>
+<p>This completes the proof.</p>
+
+    </div>
+    
+</div>
+</div>
+
+                <div id="footer-wrapper">
+                    <footer class="footer"><footer class="row pl-3 pr-3">
+    <div class="col-12 d-flex justify-content-between align-items-center text-muted pl-0 pr-0">
+        <div class="footer-left">
+            <p class="mb-0"> © 2022 <a href="https://github.com/chen-gz">guangzong</a>. <span data-toggle="tooltip"
+                    data-placement="top"
+                    title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author.">All
+                    rights reserved.</span></p>
+        </div>
+        <div class="footer-right">
+            <p class="mb-0"> Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">hugo</a>
+                with <a href="https://github.com/chen-gz/hugo_zong" target="_blank" rel="noopener">zong</a>
+                theme.</p>
+        </div>
+    </div>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script> MathJax = {
+            tex: {
+                tags: 'ams',
+            }
+        };</script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</footer>
+</footer>
+                </div>
+            </div>
+            <div id="panel-wrapper" class="d-flex flex-column"><div id="toc-wrapper" class="mb-5 pl-2">
+    <span>Contents</span>
+    <nav id="toc" data-toggle="toc">
+        
+        
+        
+    </nav>
+</div>
+
+<div id="access-lastmod" class="pb-4 pl-2">
+    <div class="panel-heading">Recently Updated</div>
+    <ul class="post-content pl-3 pb-1 ml-1 mt-2">
+          
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/1-total-variation/">Total Variation</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-7/1-derivatives-of-measures/">Derivatives of Measures</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/3-consequences-of-the-radon-nikodym-theorem/">Consequences of the Radon-Nikodym Theorem</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/4-bounded-linear-functionals-on-lp/">Bounded linear functional on Lp</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/2-abosolute-continuity/">Abosolute Continuity</a></li>
+        
+    </ul>
+</div>
+
+<div id="access-tags" class="pl-2">
+    <div class="panel-heading">Trending Tags</div>
+    <div class="d-flex flex-wrap mt-3 mb-1 mr-3">
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/algorithm/">Algorithm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/android/">Android</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c/">C</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c-language/">c language</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/caddy/">Caddy</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cadence/">Cadence</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cdc/">CDC</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/classification/">classification</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/compress/">Compress</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/conf/">Conf</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/double-column/">Double Column</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/errno13/">Errno13</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/fish/">fish</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gan/">GAN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/git/">Git</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gtk/">Gtk</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/html/">Html</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/i3/">I3</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/idea/">Idea</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/java/">Java</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/latex/">Latex</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lda/">LDA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linear-programming/">Linear Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linux/">Linux</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lr/">LR</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/math/">Math</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mathematics/">Mathematics</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matlab/">Matlab</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matplot/">matplot</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/memory/">Memory</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mermaid/">Mermaid</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/misc/">Misc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/ml/">ML</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mosfet/">Mosfet</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/network/">Network</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/nn/">NN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pandoc/">Pandoc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pca/">PCA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/probability/">Probability</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/productive/">Productive</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/program/">Program</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/programming/">Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/python/">Python</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/qt/">Qt</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/random-variable/">Random Variable</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rcnn/">RCNN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rust/">Rust</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/security/">Security</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/software/">Software</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/std/">Std</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/svd/">Svd</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/tool/">Tool</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/usb/">USB</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vim/">Vim</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpn/">Vpn</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpnc/">Vpnc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/xterm/">xterm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/zsh/">Zsh</a>
+        
+    </div>
+</div>
+</div><div id="search-result-wrapper" class="d-flex justify-content-center unloaded">
+    <div class="col-12 col-sm-11 post-content">
+        <div id="search-hints"></div>
+        <div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3 col-12"></div>
+    </div>
+</div>
+
+<script src="/js/fuse.min.js"></script>
+<script src="/js/fastsearch.js"></script>
+
+
+</div>
+        <div id="mask"></div>
+        <a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button"
+            style="display: none">
+            <i class="fas fa-angle-up"></i>
+        </a>
+    </div>
+    
+</body>
+
+</html>

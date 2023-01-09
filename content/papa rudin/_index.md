@@ -1,3 +1,0 @@
----
-title: papa rudin
----

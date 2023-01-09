@@ -1,0 +1,1514 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css"
+        class="dark-mode-native-dark-original" />
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+     
+    <link rel="stylesheet" href="https://zongpitt.com/sass/main.06935202011a97ba473ebeeb0cb6788daa9fb5a9fff471a4e85850293d1c5ac4.css" />
+    <title>
+          Guangzong Blog | 5 DIFFERENTIAL FORMS
+    </title>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.bundle.min.js"></script>
+    <script src=" https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.js"></script>
+
+    <script
+        src="https://cdn.jsdelivr.net/combine/npm/magnific-popup@1/dist/jquery.magnific-popup.min.js,npm/lozad/dist/lozad.min.js,npm/clipboard@2/dist/clipboard.min.js"></script>
+    <script type="text/javascript" src="/js/commons/back-to-top.js"></script>
+    
+    
+    
+    <script type="text/javascript" src="/js/commons/topbar-switch.js"></script>
+    <script type="text/javascript" src="/js/commons/sidebar.js"></script>
+    <script type="text/javascript" src="/js/utils/category-collapse.js"></script>
+    <script type="text/javascript" src="/js/utils/checkbox.js"></script>
+    <script type="text/javascript" src="/js/utils/clipboard.js"></script>
+    <script type="text/javascript" src="/js/utils/img-extra.js"></script>
+    <script type="text/javascript" src="/js/utils/pageviews.js"></script>
+    
+    <script type="text/javascript" src="/js/utils/timeago.js"></script>
+    
+    
+</head>
+<body data-spy="scroll" data-target="#toc" data-topbar-visible="true" class="d-flex"><div id="sidebar" class="d-flex flex-column align-items-end">
+    <div class="profile-wrapper text-center">
+
+        <div id="avatar">
+            <a href="/" alt="avatar" class="mx-auto"> <img src=https://github.com/chen-gz/chen-gz/blob/main/mine_square.jpg?raw&#61;truehttps://raw.githubusercontent.com/chen-gz/chen-gz/blob/main/mine_square.jpg alt="avatar"
+                    onerror="this.style.display='none'"> </a>
+        </div>
+
+        <div class="site-title mt-3"> <a href="/">Guangzong</a> </div>
+        <div class="site-subtitle font-italic">Welcome to my blog</div>
+    </div>
+
+    <ul>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/">
+                <span>
+                    Home
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/archive/">
+                <span>
+                    Archive
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/tags/">
+                <span>
+                    Tags
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/about/">
+                <span>
+                    About
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/categories/">
+                <span>
+                    Categories
+                </span>
+            </a>
+        </li>
+        
+    </ul>
+
+    <div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center align-items-center">
+        <button class="mode-toggle btn" aria-label="Switch Mode"> 
+            <i class="fas fa-adjust"></i> 
+        </button>
+
+        <span class="icon-border"></span>
+        <a href="https://github.com/chen-gz" aria-label="github" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i>
+        </a>
+
+        <a href=" javascript:location.href = 'mailto:' + ['chen-gz','outlook.com'].join('@')" aria-label="email">
+            <i class="fas fa-envelope"></i>
+        </a>
+
+        <a href="/feed.xml" aria-label="rss"> <i class="fas fa-rss"></i> </a>
+    </div>
+
+    
+    
+</div>
+<div id="all-wrapper" class="d-flex flex-column"><div id="topbar-wrapper">
+    <div id="topbar" class="d-flex">
+        
+        <span id="breadcrumb" class="d-flex">
+              
+               
+            
+            
+            <div><a href='https://zongpitt.com/'>Home</a></div>
+              
+              
+            
+            <div><a href="https://zongpitt.com/baby-rudin">baby-rudin</a></div>
+               
+              
+            
+            <div><a href="https://zongpitt.com/baby-rudin/10-integration-of-differential-forms">10-integration-of-differential-forms</a></div>
+               
+                 
+                
+        </span>
+        <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i>
+        <div id="topbar-title">Guangzong</div>
+        <i id="search-trigger" class="fas fa-search fa-fw"></i>
+        <span id="search-wrapper" class="align-items-center">
+            <i class="fas fa-search fa-fw"></i>
+            <input class="form-control" id="search-input" type="search" aria-label="search" autocomplete="off"
+                placeholder="Search..." />
+            <i class="fa fa-times-circle fa-fw" id="search-cleaner"></i>
+        </span>
+    </div>
+</div>
+<div id="main-wrapper" class="d-flex mt-3">
+            <div id="core-wrapper" class="d-flex flex-column">
+                <div id="main" class="d-flex flex-column">
+                    
+<div class="post pl-1 pr-1 pl-md-2 pr-md-2">
+    
+    <div id="post-content">
+        <h1 style="text-align: center;">5 DIFFERENTIAL FORMS</h1>
+        <br>
+        
+        <p>We shall now develop some of the machinery that is needed for the
+<span class="math inline">\(n\)</span>-dimensional version of the
+fundamental theorem of calculus which is usually called Stokes’ theorem.
+The original form of Stokes’ theorem arose in applications of vector
+analysis to electromagnetism and was stated in terms of the curl of a
+vector field. Green’s theorem and the divergence theorem are other
+special cases. These topics are briefly discussed at the end of the
+chapter.</p>
+<p>It is a curious feature of Stokes’ theorem that the only thing that
+is difficult about it is the elaborate structure of definitions that are
+needed for its statement. These definitions concern differential forms,
+their derivatives, boundaries, and orientation. Once these concepts are
+understood, the statement of the theorem is very brief and succinct, and
+its proof presents little difficulty.</p>
+<p>Up to now we have considered derivatives of functions of several
+variables only for functions defined in open sets. This was done to
+avoid difficulties that can occur at boundary points. It will now be
+convenient, however, to discuss differentiable functions on compact
+sets. We therefore adopt the following convention:</p>
+<p>To say that <span class="math inline">\(\mathbf{f}\)</span> is a
+<span class="math inline">\(\mathscr{C}^{\prime}\)</span>-mapping (or a
+<span class="math inline">\(\mathscr{C}^{\prime
+\prime}\)</span>-mapping) of a compact set <span class="math inline">\(D
+\subset R^{k}\)</span> into <span class="math inline">\(R^{n}\)</span>
+means that there is a <span
+class="math inline">\(\mathscr{C}^{\prime}\)</span>-mapping (or a <span
+class="math inline">\(\mathscr{C}^{\prime \prime}\)</span>-mapping)
+<span class="math inline">\(\mathbf{g}\)</span> of an open set <span
+class="math inline">\(W \subset R^{k}\)</span> into <span
+class="math inline">\(R^{n}\)</span> such that <span
+class="math inline">\(D \subset W\)</span> and such that <span
+class="math inline">\(\mathbf{g}(\mathbf{x})=\mathbf{f}(\mathbf{x})\)</span>
+for all <span class="math inline">\(\mathbf{x} \in D\)</span></p>
+<p><strong>10.10 Definition</strong> Suppose <span
+class="math inline">\(E\)</span> is an open set in <span
+class="math inline">\(R^{n}\)</span>. A <span
+class="math inline">\(k\)</span>-surface in <span
+class="math inline">\(E\)</span> is a <span
+class="math inline">\(\mathscr{C}^{\prime}\)</span> mapping <span
+class="math inline">\(\Phi\)</span> from a compact set <span
+class="math inline">\(D \subset R^{k}\)</span> into <span
+class="math inline">\(E\)</span>.</p>
+<p><span class="math inline">\(D\)</span> is called the parameter domain
+of <span class="math inline">\(\Phi\)</span>. Points of <span
+class="math inline">\(D\)</span> will be denoted by <span
+class="math inline">\(\mathbf{u}=\left(u_{1}, \ldots,
+u_{k}\right)\)</span></p>
+<p>We shall confine ourselves to the simple situation in which <span
+class="math inline">\(D\)</span> is either a <span
+class="math inline">\(k\)</span>-cell or the <span
+class="math inline">\(k\)</span>-simplex <span
+class="math inline">\(Q^{k}\)</span> described in Example 10.4. The
+reason for this is that we shall have to integrate over <span
+class="math inline">\(D\)</span>, and we have not yet discussed
+integration over more complicated subsets of <span
+class="math inline">\(R^{k}\)</span>. It will be seen that this
+restriction on <span class="math inline">\(D\)</span> (which will be
+tacitly made from now on) entails no significant loss of generality in
+the resulting theory of differential forms.</p>
+<p>We stress that <span class="math inline">\(k\)</span>-surfaces in
+<span class="math inline">\(E\)</span> are defined to be mappings into
+<span class="math inline">\(E\)</span>, not subsets of <span
+class="math inline">\(E\)</span>. This agrees with our earlier
+definition of curves (Definition 6.26). In fact, 1-surfaces are
+precisely the same as continuously differentiable curves.</p>
+<p><strong>10.11 Definition</strong> Suppose <span
+class="math inline">\(E\)</span> is an open set in <span
+class="math inline">\(R^{n}\)</span>. A differential form of order <span
+class="math inline">\(k \geq 1\)</span> in <span
+class="math inline">\(E\)</span> (briefly, a <span
+class="math inline">\(k\)</span>-form in <span
+class="math inline">\(E\)</span> ) is a function <span
+class="math inline">\(\omega\)</span>, symbolically represented by the
+sum</p>
+<p><span class="math display">\[
+\begin{equation}
+\omega=\sum a_{i_{1} \cdots i_{k}}(\mathbf{x}) d x_{i_{1}} \wedge \cdots
+\wedge d x_{i_{k}}
+\end{equation}
+\]</span></p>
+<p>(the indices <span class="math inline">\(i_{1}, \ldots,
+i_{k}\)</span> range independently from 1 to <span
+class="math inline">\(n\)</span> ), which assigns to each <span
+class="math inline">\(k\)</span>-surface <span
+class="math inline">\(\Phi\)</span> in <span
+class="math inline">\(E\)</span> a number <span
+class="math inline">\(\omega(\Phi)=\int_{\Phi} \omega\)</span>,
+according to the rule</p>
+<p><span class="math display">\[
+\begin{equation}
+\int_{\Phi} \omega=\int_{D} \sum a_{i_{1}}
+\cdots_{i_{k}}(\Phi(\mathbf{u})) \frac{\partial\left(x_{i_{1}}, \ldots,
+x_{i_{k}}\right)}{\partial\left(u_{1}, \ldots, u_{k}\right)} d
+\mathbf{u}
+\end{equation}
+\]</span></p>
+<p>where <span class="math inline">\(D\)</span> is the parameter domain
+of <span class="math inline">\(\Phi\)</span>.</p>
+<p>The functions <span class="math inline">\(a_{i_{1} \cdots
+i_{k}}\)</span> are assumed to be real and continuous in <span
+class="math inline">\(E\)</span>. If <span
+class="math inline">\(\phi_{1}, \ldots, \phi_{n}\)</span> are the
+components of <span class="math inline">\(\Phi\)</span>, the Jacobian in
+(2) is the one determined by the mapping</p>
+<p><span class="math display">\[
+\left(u_{1}, \ldots, u_{k}\right)
+\rightarrow\left(\phi_{i_{1}}(\mathbf{u}), \ldots,
+\phi_{i_{k}}(\mathbf{u})\right) .
+\]</span></p>
+<p>Note that the right side of (2) is an integral over <span
+class="math inline">\(D\)</span>, as defined in Definition <span
+class="math inline">\(10.1\)</span> (or Example 10.4) and that (2) is
+the definition of the symbol <span class="math inline">\(\int_{\Phi}
+\omega\)</span>. A <span class="math inline">\(k\)</span>-form <span
+class="math inline">\(\omega\)</span> is said to be of class <span
+class="math inline">\(\mathscr{C}^{\prime}\)</span> or <span
+class="math inline">\(\mathscr{C}^{\prime \prime}\)</span> if the
+functions <span class="math inline">\(a_{i_{1}} \cdots i_{k}\)</span> in
+(1) are all of class <span
+class="math inline">\(\mathscr{C}^{\prime}\)</span> or <span
+class="math inline">\(\mathscr{C}^{\prime \prime}\)</span>.</p>
+<p>A 0-form in <span class="math inline">\(E\)</span> is defined to be a
+continuous function in <span class="math inline">\(E\)</span>.</p>
+<p><strong>10.12 Examples</strong></p>
+<ol type="a">
+<li>Let <span class="math inline">\(\gamma\)</span> be a 1-surface (a
+curve of class <span class="math inline">\(\mathscr{C}^{\prime}\)</span>
+) in <span class="math inline">\(R^{3}\)</span>, with parameter domain
+<span class="math inline">\([0,1]\)</span>.</li>
+</ol>
+<p>Write <span class="math inline">\((x, y, z)\)</span> in place of
+<span class="math inline">\(\left(x_{1}, x_{2}, x_{3}\right)\)</span>,
+and put</p>
+<p><span class="math display">\[
+\omega=x d y+y d x \text {. }
+\]</span></p>
+<p>Then</p>
+<p><span class="math display">\[
+\int_{\gamma} \omega=\int_{0}^{1}\left[\gamma_{1}(t)
+\gamma_{2}^{\prime}(t)+\gamma_{2}(t) \gamma_{1}^{\prime}(t)\right] d
+t=\gamma_{1}(1) \gamma_{2}(1)-\gamma_{1}(0) \gamma_{2}(0) \text {. }
+\]</span></p>
+<p>Note that in this example <span class="math inline">\(\int_{\gamma}
+\omega\)</span> depends only on the initial point <span
+class="math inline">\(\gamma(0)\)</span> and on the end point <span
+class="math inline">\(\gamma(1)\)</span> of <span
+class="math inline">\(\gamma\)</span>. In particular, <span
+class="math inline">\(\int_{\gamma} \omega=0\)</span> for every closed
+curve <span class="math inline">\(\gamma\)</span>. (As we shall see
+later, this is true for every 1-form <span
+class="math inline">\(\omega\)</span> which is exact.)</p>
+<p>Integrals of 1-forms are often called line integrals.</p>
+<ol start="2" type="a">
+<li>Fix <span class="math inline">\(a&gt;0, b&gt;0\)</span>, and
+define</li>
+</ol>
+<p><span class="math display">\[
+\gamma(t)=(a \cos t, b \sin t) \quad(0 \leq t \leq 2 \pi),
+\]</span></p>
+<p>so that <span class="math inline">\(\gamma\)</span> is a closed curve
+in <span class="math inline">\(R^{2}\)</span>. (Its range is an
+ellipse.) Then</p>
+<p><span class="math display">\[
+\int_{\gamma} x d y=\int_{0}^{2 \pi} a b \cos ^{2} t d t=\pi a b,
+\]</span></p>
+<p>whereas</p>
+<p><span class="math display">\[
+\int_{\gamma} y d x=-\int_{0}^{2 \pi} a b \sin ^{2} t d t=-\pi a b .
+\]</span></p>
+<p>Note that <span class="math inline">\(\int_{\gamma} x d y\)</span> is
+the area of the region bounded by <span
+class="math inline">\(\gamma\)</span>. This is a special case of Green’s
+theorem.</p>
+<ol start="3" type="a">
+<li>Let <span class="math inline">\(D\)</span> be the 3-cell defined
+by</li>
+</ol>
+<p><span class="math display">\[
+0 \leq r \leq 1, \quad 0 \leq \theta \leq \pi, \quad 0 \leq \varphi \leq
+2 \pi .
+\]</span></p>
+<p>Define <span class="math inline">\(\Phi(r, \theta, \varphi)=(x, y,
+z)\)</span>, where</p>
+<p><span class="math display">\[
+\begin{aligned}
+&amp;x=r \sin \theta \cos \varphi \\
+&amp;y=r \sin \theta \sin \varphi \\
+&amp;z=r \cos \theta .
+\end{aligned}
+\]</span></p>
+<p>Then</p>
+<p><span class="math display">\[
+J_{\Phi}(r, \theta, \varphi)=\frac{\partial(x, y, z)}{\partial(r,
+\theta, \varphi)}=r^{2} \sin \theta
+\]</span></p>
+<p>Hence</p>
+<p><span class="math display">\[
+\begin{equation}
+\int_{\Phi} d x \wedge d y \wedge d z=\int_{D} J_{\Phi}=\frac{4 \pi}{3}
+\label{eq:36}
+\end{equation}
+\]</span></p>
+<p>Note that <span class="math inline">\(\Phi\)</span> maps <span
+class="math inline">\(D\)</span> onto the closed unit ball of <span
+class="math inline">\(R^{3}\)</span>, that the mapping is 1-1 in the
+interior of <span class="math inline">\(D\)</span> (but certain boundary
+points are identified by <span class="math inline">\(\Phi)\)</span>, and
+that the integral <span class="math inline">\(\ref{eq:36}\)</span> is
+equal to the volume of <span class="math inline">\(\Phi(D)\)</span>.</p>
+<p><strong>10.13 Elementary properties</strong> Let <span
+class="math inline">\(\omega, \omega_{1}, \omega_{2}\)</span> be <span
+class="math inline">\(k\)</span>-forms in <span
+class="math inline">\(E\)</span>. We write <span
+class="math inline">\(\omega_{1}=\omega_{2}\)</span> if and only if
+<span class="math inline">\(\omega_{1}(\Phi)=\omega_{2}(\Phi)\)</span>
+for every <span class="math inline">\(k\)</span>-surface <span
+class="math inline">\(\Phi\)</span> in <span
+class="math inline">\(E\)</span>. In particular, <span
+class="math inline">\(\omega=0\)</span> means that <span
+class="math inline">\(\omega(\Phi)=0\)</span> for every <span
+class="math inline">\(k\)</span>-surface <span
+class="math inline">\(\Phi\)</span> in <span
+class="math inline">\(E\)</span>. If <span
+class="math inline">\(c\)</span> is a real number, then <span
+class="math inline">\(c \omega\)</span> is the <span
+class="math inline">\(k\)</span>-form defined by</p>
+<p><span class="math display">\[
+\begin{equation}
+\int_{\Phi} c \omega=c \int_{\Phi} \omega
+\end{equation}
+\label{eq:37}
+\]</span></p>
+<p>and <span class="math inline">\(\omega=\omega_{1}+\omega_{2}\)</span>
+means that</p>
+<p><span class="math display">\[
+\begin{equation}
+\int_{\Phi} \omega=\int_{\Phi} \omega_{1}+\int_{\Phi} \omega_{2}
+\label{eq:28}
+\end{equation}
+\]</span></p>
+<p>for every <span class="math inline">\(k\)</span>-surface <span
+class="math inline">\(\Phi\)</span> in <span
+class="math inline">\(E\)</span>. As a special case of (37), note that
+<span class="math inline">\(-\omega\)</span> is defined so that</p>
+<p><span class="math display">\[
+\begin{equation}
+\int_{\Phi}(-\omega)=-\int_{\Phi} d \omega
+\label{eq:39}
+\end{equation}
+\]</span></p>
+<p>Consider a <span class="math inline">\(k\)</span>-form</p>
+<p><span class="math display">\[
+\begin{equation}
+\omega=a(\mathbf{x}) d x_{i_{1}} \wedge \cdots \wedge d x_{i_{k}}
+\label{eq:40}
+\end{equation}
+\]</span></p>
+<p>and let <span class="math inline">\(\bar{\omega}\)</span> be the
+<span class="math inline">\(k\)</span>-form obtained by interchanging
+some pair of subscripts in (40). If (2) and (39) are combined with the
+fact that a determinant changes sign if two of its rows are
+interchanged, we see that</p>
+<p><span class="math display">\[
+\bar{\omega}=-\omega .
+\]</span></p>
+<p>As a special case of this, note that the anticommutative relation</p>
+<p><span class="math display">\[
+d x_{i} \wedge d x_{j}=-d x_{j} \wedge d x_{i}
+\]</span></p>
+<p>holds for all <span class="math inline">\(i\)</span> and <span
+class="math inline">\(j\)</span>. In particular,</p>
+<p><span class="math display">\[
+d x_{i} \wedge d x_{i}=0 \quad(i=1, \ldots, n) .
+\]</span></p>
+<p>More generally, let us return to (40), and assume that <span
+class="math inline">\(i_{r}=i_{s}\)</span> for some <span
+class="math inline">\(r \neq s\)</span>. If these two subscripts are
+interchanged, then <span
+class="math inline">\(\bar{\omega}=\omega\)</span>, hence <span
+class="math inline">\(\omega=0\)</span>, by (41).</p>
+<p>In other words, if <span class="math inline">\(\omega\)</span> is
+given by (40), then <span class="math inline">\(\omega=0\)</span> unless
+the subscripts <span class="math inline">\(i_{1}, \ldots, i_{k}\)</span>
+are all distinct.</p>
+<p>If <span class="math inline">\(\omega\)</span> is as in (34), the
+summands with repeated subscripts can therefore be omitted without
+changing <span class="math inline">\(\omega\)</span>.</p>
+<p>It follows that 0 is the only <span
+class="math inline">\(k\)</span>-form in any open subset of <span
+class="math inline">\(R^{n}\)</span>, if <span
+class="math inline">\(k&gt;n\)</span>.</p>
+<p>The anticommutativity expressed by (42) is the reason for the
+inordinate amount of attention that has to be paid to minus signs when
+studying differential forms.</p>
+<p><strong>10.14 Basic <span
+class="math inline">\(k\)</span>-forms</strong> If <span
+class="math inline">\(i_{1}, \ldots, i_{k}\)</span> are integers such
+that <span class="math inline">\(1 \leq
+i_{1}&lt;i_{2}&lt;\cdots\)</span> <span class="math inline">\(&lt;i_{k}
+\leq n\)</span>, and if <span class="math inline">\(I\)</span> is the
+ordered <span class="math inline">\(k\)</span>-tuple <span
+class="math inline">\(\left\{i_{1}, \ldots, i_{k}\right\}\)</span>, then
+we call <span class="math inline">\(I\)</span> an increasing <span
+class="math inline">\(k\)</span>-index, and we use the brief
+notation</p>
+<p><span class="math display">\[
+d x_{I}=d x_{i_{1}} \wedge \cdots \wedge d x_{i_{k}} .
+\]</span></p>
+<p>These forms <span class="math inline">\(d x_{I}\)</span> are the
+so-called basic <span class="math inline">\(k\)</span>-forms in <span
+class="math inline">\(R^{n}\)</span>.</p>
+<p>It is not hard to verify that there are precisely <span
+class="math inline">\(n ! / k !(n-k) !\)</span> basic <span
+class="math inline">\(k\)</span>-forms in <span
+class="math inline">\(R^{n}\)</span>; we shall make no use of this,
+however.</p>
+<p>Much more important is the fact that every <span
+class="math inline">\(k\)</span>-form can be represented in terms of
+basic <span class="math inline">\(k\)</span>-forms. To see this, note
+that every <span class="math inline">\(k\)</span>-tuple <span
+class="math inline">\(\left\{j_{1}, \ldots, j_{k}\right\}\)</span> of
+distinct integers can be converted to an increasing <span
+class="math inline">\(k\)</span>-index <span
+class="math inline">\(J\)</span> by a finite number of interchanges of
+pairs; each of these amounts to a multiplication by <span
+class="math inline">\(-1\)</span>, as we saw in Sec. 10.13; hence</p>
+<p><span class="math display">\[
+d x_{j_{1}} \wedge \cdots \wedge d x_{j_{k}}=\varepsilon\left(j_{1},
+\ldots, j_{k}\right) d x_{J}
+\]</span></p>
+<p>where <span class="math inline">\(\varepsilon\left(j_{1}, \ldots,
+j_{k}\right)\)</span> is 1 or <span class="math inline">\(-1\)</span>,
+depending on the number of interchanges that are needed. In fact, it is
+easy to see that</p>
+<p><span class="math display">\[
+\varepsilon\left(j_{1}, \ldots, j_{k}\right)=s\left(j_{1}, \ldots,
+j_{k}\right)
+\]</span></p>
+<p>where <span class="math inline">\(s\)</span> is as in Definition
+9.33.</p>
+<p>For example,</p>
+<p><span class="math display">\[
+d x_{1} \wedge d x_{5} \wedge d x_{3} \wedge d x_{2}=-d x_{1} \wedge d
+x_{2} \wedge d x_{3} \wedge d x_{5}
+\]</span></p>
+<p>and</p>
+<p><span class="math display">\[
+d x_{4} \wedge d x_{2} \wedge d x_{3}=d x_{2} \wedge d x_{3} \wedge d
+x_{4} .
+\]</span></p>
+<p>If every <span class="math inline">\(k\)</span>-tuple in (34) is
+converted to an increasing <span class="math inline">\(k\)</span>-index,
+then we obtain the so-called standard presentation of <span
+class="math inline">\(\omega\)</span> :</p>
+<p><span class="math display">\[
+\begin{equation}
+\omega=\sum_{I} b_{I}(\mathbf{x}) d x_{I} .
+\label{eq:47}
+\end{equation}
+\]</span></p>
+<p>The summation in <span class="math inline">\(\ref{eq:47}\)</span>
+extends over all increasing <span
+class="math inline">\(k\)</span>-indices <span
+class="math inline">\(I\)</span>. [Of course, every increasing <span
+class="math inline">\(k\)</span>-index arises from many (from <span
+class="math inline">\(k\)</span> !, to be precise) <span
+class="math inline">\(k\)</span>-tuples. Each <span
+class="math inline">\(b_{I}\)</span> in <span
+class="math inline">\(\ref{eq:47}\)</span> may thus be a sum of several
+of the coefficients that occur in (34).]</p>
+<p>For example,</p>
+<p><span class="math display">\[
+x_{1} d x_{2} \wedge d x_{1}-x_{2} d x_{3} \wedge d x_{2}+x_{3} d x_{2}
+\wedge d x_{3}+d x_{1} \wedge d x_{2}
+\]</span></p>
+<p>is a 2 -form in <span class="math inline">\(R^{3}\)</span> whose
+standard presentation is</p>
+<p><span class="math display">\[
+\left(1-x_{1}\right) d x_{1} \wedge d x_{2}+\left(x_{2}+x_{3}\right) d
+x_{2} \wedge d x_{3} .
+\]</span></p>
+<p>The following uniqueness theorem is one of the main reasons for the
+introduction of the standard presentation of a <span
+class="math inline">\(k\)</span>-form.</p>
+<p><strong>10.15 Theorem</strong> Suppose</p>
+<p><span class="math display">\[
+\begin{equation}
+\omega=\sum_{I} b_{I}(\mathbf{x}) d x_{I}
+\label{eq:48}
+\end{equation}
+\]</span></p>
+<p>is the standard presentation of a <span
+class="math inline">\(k\)</span>-form <span
+class="math inline">\(\omega\)</span> in an open set <span
+class="math inline">\(E \subset R^{n} .\)</span> If <span
+class="math inline">\(\omega=0\)</span> in <span
+class="math inline">\(E\)</span>, then <span
+class="math inline">\(b_{I}(\mathbf{x})=0\)</span> for every increasing
+<span class="math inline">\(k\)</span>-index <span
+class="math inline">\(I\)</span> and for every <span
+class="math inline">\(\mathbf{x} \in E\)</span>.</p>
+<p>Note that the analogous statement would be false for sums such as
+<span class="math inline">\(\ref{eq:34}\)</span>, since, for
+example,</p>
+<p><span class="math display">\[
+d x_{1} \wedge d x_{2}+d x_{2} \wedge d x_{1}=0 .
+\]</span></p>
+<p><strong>Proof</strong> Assume, to reach a contradiction, that <span
+class="math inline">\(b_{J}(\mathbf{v})&gt;0\)</span> for some <span
+class="math inline">\(\mathbf{v} \in E\)</span> and for some increasing
+<span class="math inline">\(k\)</span>-index <span
+class="math inline">\(J=\left\{j_{1}, \ldots, j_{k}\right\}\)</span>.
+Since <span class="math inline">\(b_{J}\)</span> is continuous, there
+exists <span class="math inline">\(h&gt;0\)</span> such that <span
+class="math inline">\(b_{J}(\mathbf{x})&gt;0\)</span> for all <span
+class="math inline">\(\mathbf{x} \in R^{n}\)</span> whose coordinates
+satisfy <span class="math inline">\(\left|x_{i}-v_{i}\right| \leq
+h\)</span>. Let <span class="math inline">\(D\)</span> be the <span
+class="math inline">\(k\)</span>-cell in <span
+class="math inline">\(R^{k}\)</span> such that <span
+class="math inline">\(\mathbf{u} \in D\)</span> if and only if <span
+class="math inline">\(\left|u_{r}\right| \leq h\)</span> for <span
+class="math inline">\(r=1, \ldots, k\)</span>. Define</p>
+<p><span class="math display">\[
+\begin{equation}
+\Phi(\mathbf{u})=\mathbf{v}+\sum_{r=1}^{k} u_{r} \mathbf{e}_{j_{r}}
+\quad(\mathbf{u} \in D) .
+\label{eq:49}
+\end{equation}
+\]</span></p>
+<p>Then <span class="math inline">\(\Phi\)</span> is a <span
+class="math inline">\(k\)</span>-surface in <span
+class="math inline">\(E\)</span>, with parameter domain <span
+class="math inline">\(D\)</span>, and <span
+class="math inline">\(b_{J}(\Phi(\mathbf{u}))&gt;0\)</span> for every
+<span class="math inline">\(\mathbf{u} \in D\)</span>.</p>
+<p>We claim that</p>
+<p><span class="math display">\[
+\begin{equation}
+\int_{\Phi} \omega=\int_{D} b_{J}(\Phi(\mathbf{u})) d \mathbf{u}
+\label{eq:50}
+\end{equation}
+\]</span></p>
+<p>Since the right side of <span
+class="math inline">\(\ref{eq:50}\)</span> is positive, it follows that
+<span class="math inline">\(\omega(\Phi) \neq 0\)</span>. Hence <span
+class="math inline">\(\ref{eq:50}\)</span> gives our contradiction.</p>
+<p>To prove <span class="math inline">\(\ref{eq:50}\)</span>, apply
+<span class="math inline">\(\ref{eq:35}\)</span> to the presentation
+<span class="math inline">\(\ref{eq:48}\)</span>. More specifically,
+compute the Jacobians that occur in <span
+class="math inline">\(\ref{eq:35}\)</span>. By <span
+class="math inline">\(\ref{eq:49}\)</span>,</p>
+<p><span class="math display">\[
+\frac{\partial\left(x_{j_{1}}, \ldots,
+x_{j_{k}}\right)}{\partial\left(u_{1}, \ldots, u_{k}\right)}=1 \text {.
+}
+\]</span></p>
+<p>For any other increasing <span class="math inline">\(k\)</span>-index
+<span class="math inline">\(I \neq J\)</span>, the Jacobian is 0 , since
+it is the determinant of a matrix with at least one row of zeros.</p>
+<p><strong>10.16 Products of basic <span
+class="math inline">\(k\)</span>-forms</strong> Suppose</p>
+<p><span class="math display">\[
+\begin{equation}
+I=\left\{i_{1}, \ldots, i_{p}\right\}, \quad J=\left\{j_{1}, \ldots,
+j_{q}\right\}
+\label{eq:51}
+\end{equation}
+\]</span></p>
+<p>where <span class="math inline">\(1 \leq i_{1}&lt;\cdots&lt;i_{p}
+\leq n\)</span> and <span class="math inline">\(1 \leq
+j_{1}&lt;\cdots&lt;j_{q} \leq n\)</span>. The product of the
+corresponding basic forms <span class="math inline">\(d x_{I}\)</span>
+and <span class="math inline">\(d x_{J}\)</span> in <span
+class="math inline">\(R^{n}\)</span> is a <span
+class="math inline">\((p+q)\)</span>-form in <span
+class="math inline">\(R^{n}\)</span>, denoted by the symbol <span
+class="math inline">\(d x_{I} \wedge d x_{J}\)</span>, and defined
+by</p>
+<p><span class="math display">\[
+\begin{equation}
+d x_{I} \wedge d x_{J}=d x_{i_{1}} \wedge \cdots \wedge d x_{i_{p}}
+\wedge d x_{j_{1}} \wedge \cdots \wedge d x_{j_{q}} .
+\label{eq:52}
+\end{equation}
+\]</span></p>
+<p>If <span class="math inline">\(I\)</span> and <span
+class="math inline">\(J\)</span> have an element in common, then the
+discussion in Sec. <span class="math inline">\(10.13\)</span> shows that
+<span class="math inline">\(d x_{I} \wedge d x_{J}=0\)</span>.</p>
+<p>If <span class="math inline">\(I\)</span> and <span
+class="math inline">\(J\)</span> have no element in common, let us write
+<span class="math inline">\([I, J]\)</span> for the increasing <span
+class="math inline">\((p+q)\)</span>-index which is obtained by
+arranging the members of <span class="math inline">\(I \cup J\)</span>
+in increasing order. Then <span class="math inline">\(d x_{[I,
+J]}\)</span> is a basic <span class="math inline">\((p+q)\)</span>-form.
+We claim that</p>
+<p><span class="math display">\[
+\begin{equation}
+d x_{\mathrm{I}} \wedge d x_{J}=(-1)^{\alpha} d x_{[I, J]}
+\label{eq:53}
+\end{equation}
+\]</span></p>
+<p>where <span class="math inline">\(\alpha\)</span> is the number of
+differences <span class="math inline">\(j_{t}-i_{s}\)</span> that are
+negative. (The number of positive differences is thus <span
+class="math inline">\(p q-\alpha .)\)</span></p>
+<p>To prove <span class="math inline">\(\ref{eq:53}\)</span>, perform
+the following operations on the numbers</p>
+<p><span class="math display">\[
+\begin{equation}
+i_{1}, \ldots, i_{p} ; j_{1}, \ldots, j_{q} .
+\label{eq:54}
+\end{equation}
+\]</span></p>
+<p>Move <span class="math inline">\(i_{p}\)</span> to the right, step by
+step, until its right neighbor is larger than <span
+class="math inline">\(i_{p}\)</span>. The number of steps is the number
+of subscripts <span class="math inline">\(t\)</span> such that <span
+class="math inline">\(i_{p}&lt;j_{t}\)</span>. (Note that 0 steps are a
+distinct possibility.) Then do the same for <span
+class="math inline">\(i_{p-1}, \ldots, i_{1}\)</span>. The total number
+of steps taken is <span class="math inline">\(\alpha\)</span>. The final
+arrangement reached is <span class="math inline">\([I, J]\)</span>. Each
+step, when applied to the right side of <span
+class="math inline">\(\ref{eq:52}\)</span>, multiplies <span
+class="math inline">\(d x_{I} \wedge d x_{J}\)</span> by <span
+class="math inline">\(-1\)</span>. Hence <span
+class="math inline">\(\ref{eq:53}\)</span> holds.</p>
+<p>Note that the right side of <span
+class="math inline">\(\ref{eq:53}\)</span> is the standard presentation
+of <span class="math inline">\(d x_{I} \wedge d x_{J}\)</span>. Next,
+let <span class="math inline">\(K=\left(k_{1}, \ldots,
+k_{r}\right)\)</span> be an increasing <span
+class="math inline">\(r\)</span>-index in <span
+class="math inline">\(\{1, \ldots, n\}\)</span>. We shall use <span
+class="math inline">\(\ref{eq:53}\)</span> to prove that</p>
+<p><span class="math display">\[
+\begin{equation}
+\left(d x_{I} \wedge d x_{J}\right) \wedge d x_{K}=d x_{I} \wedge\left(d
+x_{J} \wedge d x_{K}\right) .
+\label{eq:55}
+\end{equation}
+\]</span></p>
+<p>If any two of the sets <span class="math inline">\(I, J, K\)</span>
+have an element in common, then each side of <span
+class="math inline">\(\ref{eq:55}\)</span> is 0 , hence they are
+equal.</p>
+<p>So let us assume that <span class="math inline">\(I, J, K\)</span>
+are pairwise disjoint. Let <span class="math inline">\([I, J,
+K]\)</span> denote the increasing <span
+class="math inline">\((p+q+r)\)</span>-index obtained from their union.
+Associate <span class="math inline">\(\beta\)</span> with the ordered
+pair <span class="math inline">\((J, K)\)</span> and <span
+class="math inline">\(\gamma\)</span> with the ordered pair <span
+class="math inline">\((I, K)\)</span> in the way that <span
+class="math inline">\(\alpha\)</span> was associated with <span
+class="math inline">\((I, J)\)</span> in <span
+class="math inline">\(\ref{eq:53}\)</span>. The left side of <span
+class="math inline">\(\ref{eq:55}\)</span> is then</p>
+<p><span class="math display">\[
+(-1)^{\alpha} d x_{[I, J]} \wedge d
+x_{K}=(-1)^{\alpha}(-1)^{\beta+\gamma} d x_{[I, J, K]}
+\]</span></p>
+<p>by two applications of <span
+class="math inline">\(\ref{eq:53}\)</span>, and the right side of <span
+class="math inline">\(\ref{eq:55}\)</span> is</p>
+<p><span class="math display">\[
+(-1)^{\beta} d x_{I} \wedge d x_{[J,
+K]}=(-1)^{\beta}(-1)^{\alpha+\gamma} d x_{[I, J, K]} .
+\]</span></p>
+<p>Hence <span class="math inline">\(\ref{eq:55}\)</span> is
+correct.</p>
+<p><strong>10.17 Multiplication</strong> Suppose <span
+class="math inline">\(\omega\)</span> and <span
+class="math inline">\(\lambda\)</span> are <span
+class="math inline">\(p\)</span> - and <span
+class="math inline">\(q\)</span>-forms, respectively, in some open set
+<span class="math inline">\(E \subset R^{n}\)</span>, with standard
+presentations</p>
+<p><span class="math display">\[
+\begin{equation}
+\omega=\sum_{I} b_{I}(\mathbf{x}) d x_{I}, \quad \lambda=\sum_{J}
+c_{J}(\mathbf{x}) d x_{J}
+\label{eq:56}
+\end{equation}
+\]</span></p>
+<p>where <span class="math inline">\(I\)</span> and <span
+class="math inline">\(J\)</span> range over all increasing <span
+class="math inline">\(p\)</span>-indices and over all increasing <span
+class="math inline">\(q\)</span>-indices taken from the set <span
+class="math inline">\(\{1, \ldots, n\}\)</span>. Their product, denoted
+by the symbol <span class="math inline">\(\omega \wedge
+\lambda\)</span>, is defined to be</p>
+<p><span class="math display">\[
+\begin{equation}
+\omega \wedge \lambda=\sum_{I, J} b_{I}(\mathbf{x}) c_{J}(\mathbf{x}) d
+x_{I} \wedge d x_{J} .
+\label{eq:57}
+\end{equation}
+\]</span></p>
+<p>In this sum, <span class="math inline">\(I\)</span> and <span
+class="math inline">\(J\)</span> range independently over their possible
+values, and <span class="math inline">\(d x_{I} \wedge d x_{J}\)</span>
+is as in Sec. 10.16. Thus <span class="math inline">\(\omega \wedge
+\lambda\)</span> is a <span class="math inline">\((p+q)\)</span>-form in
+<span class="math inline">\(E\)</span>.</p>
+<p>It is quite easy to see (we leave the details as an exercise) that
+the distributive laws</p>
+<p><span class="math display">\[
+\left(\omega_{1}+\omega_{2}\right) \wedge \lambda=\left(\omega_{1}
+\wedge \lambda\right)+\left(\omega_{2} \wedge \lambda\right)
+\]</span></p>
+<p>and</p>
+<p><span class="math display">\[
+\omega \wedge\left(\lambda_{1}+\lambda_{2}\right)=\left(\omega \wedge
+\lambda_{1}\right)+\left(\omega \wedge \lambda_{2}\right)
+\]</span></p>
+<p>hold, with respect to the addition defined in Sec. 10.13. If these
+distributive laws are combined with (55), we obtain the associative
+law</p>
+<p><span class="math display">\[
+\begin{equation}
+(\omega \wedge \lambda) \wedge \sigma=\omega \wedge(\lambda \wedge
+\sigma)
+\label{eq:58}
+\end{equation}
+\]</span></p>
+<p>for arbitrary forms <span class="math inline">\(\omega, \lambda,
+\sigma\)</span> in <span class="math inline">\(E\)</span>.</p>
+<p>In this discussion it was tacitly assumed that <span
+class="math inline">\(p \geq 1\)</span> and <span
+class="math inline">\(q \geq 1\)</span>. The product of a 0 -form <span
+class="math inline">\(f\)</span> with the <span
+class="math inline">\(p\)</span>-form <span
+class="math inline">\(\omega\)</span> given by (56) is simply defined to
+be the <span class="math inline">\(p\)</span>-form</p>
+<p><span class="math display">\[
+f \omega=\omega f=\sum_{I} f(\mathbf{x}) b_{I}(\mathbf{x}) d x_{I} .
+\]</span></p>
+<p>It is customary to write <span class="math inline">\(f
+\omega\)</span>, rather than <span class="math inline">\(f \wedge
+\omega\)</span>, when <span class="math inline">\(f\)</span> is a 0
+-form.</p>
+<p><strong>10.18 Differentiation</strong> We shall now define a
+differentiation operator <span class="math inline">\(d\)</span> which
+associates a <span class="math inline">\((k+1)\)</span>-form <span
+class="math inline">\(d \omega\)</span> to each <span
+class="math inline">\(k\)</span>-form <span
+class="math inline">\(\omega\)</span> of class <span
+class="math inline">\(\mathscr{C}^{\prime}\)</span> in some open set
+<span class="math inline">\(E \subset R^{n}\)</span></p>
+<p>A 0-form of class <span
+class="math inline">\(\mathscr{C}^{\prime}\)</span> in <span
+class="math inline">\(E\)</span> is just a real function <span
+class="math inline">\(f \in \mathscr{C}^{\prime}(E)\)</span>, and we
+define</p>
+<p><span class="math display">\[
+\begin{equation}
+d f=\sum_{i=1}^{n}\left(D_{i} f\right)(\mathbf{x}) d x_{i} .
+\label{eq:59}
+\end{equation}
+\]</span></p>
+<p>If <span class="math inline">\(\omega=\Sigma b_{I}(\mathbf{x}) d
+x_{I}\)</span> is the standard presentation of a <span
+class="math inline">\(k\)</span>-form <span
+class="math inline">\(\omega\)</span>, and <span
+class="math inline">\(b_{I} \in \mathscr{C}^{\prime}(E)\)</span> for
+each increasing <span class="math inline">\(k\)</span>-index <span
+class="math inline">\(I\)</span>, then we define</p>
+<p><span class="math display">\[
+\begin{equation}
+d \omega=\sum_{I}\left(d b_{I}\right) \wedge d x_{I} .
+\label{eq:60}
+\end{equation}
+\]</span></p>
+<p><strong>10.19 Example</strong> Suppose <span
+class="math inline">\(E\)</span> is open in <span
+class="math inline">\(R^{n}, f \in \mathscr{C}^{\prime}(E)\)</span>, and
+<span class="math inline">\(\gamma\)</span> is a continuously
+differentiable curve in <span class="math inline">\(E\)</span>, with
+domain <span class="math inline">\([0,1]\)</span>. By <span
+class="math inline">\(\ref{eq:59}\)</span> and <span
+class="math inline">\(\ref{eq:35}\)</span>,</p>
+<p><span class="math display">\[
+\begin{equation}
+\int_{\gamma} d f=\int_{0}^{1} \sum_{i=1}^{n}\left(D_{i}
+f\right)(\gamma(t)) \gamma_{i}^{\prime}(t) d t .
+\label{eq:61}
+\end{equation}
+\]</span></p>
+<p>By the chain rule, the last integrand is <span
+class="math inline">\((f \circ \gamma)^{\prime}(t)\)</span>. Hence</p>
+<p><span class="math display">\[
+\begin{equation}
+\int_{\gamma} d f=f(\gamma(1))-f(\gamma(0)),
+\label{eq:62}
+\end{equation}
+\]</span></p>
+<p>and we see that <span class="math inline">\(\int_{\gamma} d
+f\)</span> is the same for all <span
+class="math inline">\(\gamma\)</span> with the same initial point and
+the same end point, as in <span class="math inline">\((a)\)</span> of
+Example <span class="math inline">\(10.12\)</span>.</p>
+<p>Comparison with Example <span class="math inline">\(10.12(b)\)</span>
+shows therefore that the 1-form <span class="math inline">\(x d
+y\)</span> is not the derivative of any 0 -form <span
+class="math inline">\(f\)</span>. This could also be deduced from part
+<span class="math inline">\((b)\)</span> of the following theorem,
+since</p>
+<p><span class="math display">\[
+d(x d y)=d x \wedge d y \neq 0 .
+\]</span></p>
+<p><strong>10.20 Theorem</strong></p>
+<ol type="a">
+<li>If <span class="math inline">\(\omega\)</span> and <span
+class="math inline">\(\lambda\)</span> are <span
+class="math inline">\(k\)</span> - and <span
+class="math inline">\(m\)</span>-forms, respectively, of class <span
+class="math inline">\(\mathscr{C}^{\prime}\)</span> in <span
+class="math inline">\(E\)</span>, then</li>
+</ol>
+<p><span class="math display">\[
+\begin{equation}
+d(\omega \wedge \lambda)=(d \omega) \wedge \lambda+(-1)^{k} \omega
+\wedge d \lambda .
+\label{eq:63}
+\end{equation}
+\]</span></p>
+<ol start="2" type="a">
+<li>If <span class="math inline">\(\omega\)</span> is of class <span
+class="math inline">\(\mathscr{C}^{\prime \prime}\)</span> in <span
+class="math inline">\(E\)</span>, then <span class="math inline">\(d^{2}
+\omega=0\)</span>.</li>
+</ol>
+<p>Here <span class="math inline">\(d^{2} \omega\)</span> means, of
+course, <span class="math inline">\(d(d \omega)\)</span>.</p>
+<p><strong>Proof</strong> Because of <span
+class="math inline">\(\ref{eq:57}\)</span> and <span
+class="math inline">\(\ref{eq:60}\)</span>,(a)$ follows if <span
+class="math inline">\(\ref{eq:63}\)</span> is proved for the special
+case</p>
+<p><span class="math display">\[
+\begin{equation}
+\omega=f d x_{I}, \quad \lambda=g d x_{J}
+\label{eq:64}
+\end{equation}
+\]</span></p>
+<p>where <span class="math inline">\(f, g \in \mathscr{C}^{\prime}(E), d
+x_{I}\)</span> is a basic <span class="math inline">\(k\)</span>-form,
+and <span class="math inline">\(d x_{J}\)</span> is a basic <span
+class="math inline">\(m\)</span>-form. [If <span
+class="math inline">\(k\)</span> or <span
+class="math inline">\(m\)</span> or both are 0 , simply omit <span
+class="math inline">\(d x_{I}\)</span> or <span class="math inline">\(d
+x_{J}\)</span> in (64); the proof that follows is unaffected by this.]
+Then</p>
+<p><span class="math display">\[
+\omega \wedge \lambda=f g d x_{I} \wedge d x_{J} .
+\]</span></p>
+<p>Let us assume that <span class="math inline">\(I\)</span> and <span
+class="math inline">\(J\)</span> have no element in common. [In the
+other case each of the three terms in (63) is 0.] Then, using (53),</p>
+<p><span class="math display">\[
+d(\omega \wedge \lambda)=d\left(f g d x_{I} \wedge d
+x_{J}\right)=(-1)^{\alpha} d\left(f g d x_{[I, J]}\right) .
+\]</span></p>
+<p>By (59), <span class="math inline">\(d(f g)=f d g+g d f\)</span>.
+Hence (60) gives</p>
+<p><span class="math display">\[
+\begin{aligned}
+d(\omega \wedge \lambda) &amp;=(-1)^{\alpha}(f d g+g d f) \wedge d
+x_{[I, J]} \\
+&amp;=(g d f+f d g) \wedge d x_{I} \wedge d x_{J} .
+\end{aligned}
+\]</span></p>
+<p>Since <span class="math inline">\(d g\)</span> is a 1-form and <span
+class="math inline">\(d x_{I}\)</span> is a <span
+class="math inline">\(k\)</span>-form, we have</p>
+<p><span class="math display">\[
+d g \wedge d x_{I}=(-1)^{k} d x_{I} \wedge d g,
+\]</span></p>
+<p>by (42). Hence</p>
+<p><span class="math display">\[
+\begin{aligned}
+d(\omega \wedge \lambda) &amp;=\left(d f \wedge d x_{I}\right)
+\wedge\left(g d x_{J}\right)+(-1)^{k}\left(f d x_{I}\right)
+\wedge\left(d g \wedge d x_{J}\right) \\
+&amp;=(d \omega) \wedge \lambda+(-1)^{k} \omega \wedge d \lambda
+\end{aligned}
+\]</span></p>
+<p>which proves <span class="math inline">\((a)\)</span>.</p>
+<p>Note that the associative law (58) was used freely.</p>
+<p>Let us prove (b) first for a 0 -form <span class="math inline">\(f
+\in \mathscr{C}^{\prime \prime}\)</span> :</p>
+<p><span class="math display">\[
+\begin{aligned}
+d^{2} f &amp;=d\left(\sum_{j=1}^{n}\left(D_{j} f\right)(\mathbf{x}) d
+x_{j}\right) \\
+&amp;=\sum_{j=1}^{n} d\left(D_{j} f\right) \wedge d x_{j} \\
+&amp;=\sum_{i, j=1}^{n}\left(D_{i j} f\right)(\mathbf{x}) d x_{i} \wedge
+d x_{j} .
+\end{aligned}
+\]</span></p>
+<p>Since <span class="math inline">\(D_{i j} f=D_{j i} f\)</span>
+(Theorem 9.41) and <span class="math inline">\(d x_{i} \wedge d x_{j}=-d
+x_{\jmath} \wedge d x_{i}\)</span>, we see that <span
+class="math inline">\(d^{2} f=0\)</span>.</p>
+<p>If <span class="math inline">\(\omega=f d x_{I}\)</span>, as in (64),
+then <span class="math inline">\(d \omega=(d f) \wedge d x_{I}\)</span>.
+By <span class="math inline">\((60), d\left(d x_{I}\right)=0\)</span>.
+Hence (63) shows that</p>
+<p><span class="math display">\[
+d^{2} \omega=\left(d^{2} f\right) \wedge d x_{I}=0
+\]</span></p>
+<p><strong>10.21 Change of variables</strong> Suppose <span
+class="math inline">\(E\)</span> is an open set in <span
+class="math inline">\(R^{n}, T\)</span> is a <span
+class="math inline">\(\mathscr{C}^{\prime}\)</span>-mapping of <span
+class="math inline">\(E\)</span> into an open set <span
+class="math inline">\(V \subset R^{m}\)</span>, and <span
+class="math inline">\(\omega\)</span> is a <span
+class="math inline">\(k\)</span>-form in <span
+class="math inline">\(V\)</span>, whose standard presentation is</p>
+<p><span class="math display">\[
+\begin{equation}
+\omega=\sum_{I} b_{I}(\mathbf{y}) d y_{I} .
+\label{eq:65}
+\end{equation}
+\]</span></p>
+<p>(We use y for points of <span class="math inline">\(V,
+\mathbf{x}\)</span> for points of <span
+class="math inline">\(E\)</span>.)</p>
+<p>Let <span class="math inline">\(t_{1}, \ldots, t_{m}\)</span> be the
+components of <span class="math inline">\(T\)</span> : If</p>
+<p><span class="math display">\[
+\mathbf{y}=\left(y_{1}, \ldots, y_{m}\right)=T(\mathbf{x})
+\]</span></p>
+<p>then <span class="math inline">\(y_{i}=t_{i}(\mathbf{x})\)</span>. As
+in <span class="math inline">\(\ref{eq:59}\)</span>,</p>
+<p><span class="math display">\[
+\begin{equation}
+d t_{i}=\sum_{j=1}^{n}\left(D_{j} t_{i}\right)(\mathbf{x}) d x_{j}
+\quad(1 \leq i \leq m) .
+\label{eq:66}
+\end{equation}
+\]</span></p>
+<p>Thus each <span class="math inline">\(d t_{i}\)</span> is a 1-form in
+<span class="math inline">\(E\)</span>.</p>
+<p>The mapping <span class="math inline">\(T\)</span> transforms <span
+class="math inline">\(\omega\)</span> into a <span
+class="math inline">\(k\)</span>-form <span
+class="math inline">\(\omega_{T}\)</span> in <span
+class="math inline">\(E\)</span>, whose definition is</p>
+<p><span class="math display">\[
+\begin{equation}
+\omega_{T}=\sum_{I} b_{I}(T(\mathbf{x})) d t_{i_{l}} \wedge \cdots
+\wedge d t_{i_{k}} .
+\label{eq:67}
+\end{equation}
+\]</span></p>
+<p>In each summand of <span class="math inline">\(\ref{eq:67}\)</span>,
+<span class="math inline">\(I=\left\{i_{1}, \ldots,
+i_{k}\right\}\)</span> is an increasing <span
+class="math inline">\(k\)</span>-index.</p>
+<p>Our next theorem shows that addition, multiplication, and
+differentiation of forms are defined in such a way that they commute
+with changes of variables.</p>
+<p><strong>10.22 Theorem</strong> <em>With <span
+class="math inline">\(E\)</span> and <span
+class="math inline">\(T\)</span> as in Sec. <span
+class="math inline">\(10.21\)</span>, let <span
+class="math inline">\(\omega\)</span> and <span
+class="math inline">\(\lambda\)</span> be <span
+class="math inline">\(k\)</span> - and <span
+class="math inline">\(m\)</span>-forms in <span
+class="math inline">\(V\)</span>, respectively. Then</em></p>
+<ol type="a">
+<li><span
+class="math inline">\((\omega+\lambda)_{T}=\omega_{T}+\lambda_{T}\)</span>
+if <span class="math inline">\(k=m\)</span>;</li>
+<li><span class="math inline">\((\omega \wedge \lambda)_{T}=\omega_{T}
+\wedge \lambda_{T}\)</span>;</li>
+<li><span class="math inline">\(d\left(\omega_{T}\right)=(d
+\omega)_{T}\)</span> if <span class="math inline">\(\omega\)</span> is
+of class <span class="math inline">\(\mathscr{C}^{\prime}\)</span> and
+<span class="math inline">\(T\)</span> is of class <span
+class="math inline">\(\mathscr{C}^{\prime \prime}\)</span>.</li>
+</ol>
+<p><strong>Proof</strong> Part (a) follows immediately from the
+definitions. Part <span class="math inline">\((b)\)</span> is almost as
+obvious, once we realize that</p>
+<p><span class="math display">\[
+\left(d y_{i_{1}} \wedge \cdots \wedge d y_{i_{r}}\right)_{T}=d
+t_{i_{1}} \wedge \cdots \wedge d t_{i_{r}}
+\]</span></p>
+<p>regardless of whether <span class="math inline">\(\left\{i_{1},
+\ldots, i_{r}\right\}\)</span> is increasing or not; (68) holds because
+the same number of minus signs are needed on each side of <span
+class="math inline">\((68)\)</span> to produce increasing
+rearrangements.</p>
+<p>We turn to the proof of <span class="math inline">\((c)\)</span>. If
+<span class="math inline">\(f\)</span> is a 0 -form of class <span
+class="math inline">\(\mathscr{C}^{\prime}\)</span> in <span
+class="math inline">\(V\)</span>, then</p>
+<p><span class="math display">\[
+f_{T}(\mathbf{x})=f(T(\mathbf{x})), \quad d f=\sum_{i}\left(D_{i}
+f\right)(\mathbf{y}) d y_{i} .
+\]</span></p>
+<p>By the chain rule, it follows that</p>
+<p><span class="math display">\[
+\begin{aligned}
+d\left(f_{T}\right) &amp;=\sum_{j}\left(D_{j} f_{T}\right)(\mathbf{x}) d
+x_{j} \\
+&amp;=\sum_{j} \sum_{i}\left(D_{i} f\right)(T(\mathbf{x}))\left(D_{j}
+t_{i}\right)(\mathbf{x}) d x_{j} \\
+&amp;=\sum_{i}\left(D_{i} f\right)(T(\mathbf{x})) d t_{i} \\
+&amp;=(d f)_{T}
+\end{aligned}
+\]</span></p>
+<p>If <span class="math inline">\(d y_{I}=d y_{i_{1}} \wedge \cdots
+\wedge d y_{i_{k}}\)</span>, then <span class="math inline">\(\left(d
+y_{I}\right)_{T}=d t_{i_{1}} \wedge \cdots \wedge d t_{i_{k}}\)</span>,
+and Theorem <span class="math inline">\(10.20\)</span> shows that</p>
+<p><span class="math display">\[
+d\left(\left(d y_{I}\right)_{T}\right)=0 .
+\]</span></p>
+<p>(This is where the assumption <span class="math inline">\(T \in
+\mathscr{C}^{\prime \prime}\)</span> is used.)</p>
+<p>Assume now that <span class="math inline">\(\omega=f d
+y_{I}\)</span>. Then</p>
+<p><span class="math display">\[
+\omega_{T}=f_{T}(\mathbf{x})\left(d y_{I}\right)_{T}
+\]</span></p>
+<p>and the preceding calculations lead to</p>
+<p><span class="math display">\[
+\begin{aligned}
+d\left(\omega_{T}\right) &amp;=d\left(f_{T}\right) \wedge\left(d
+y_{I}\right)_{T}=(d f)_{T} \wedge\left(d y_{I}\right)_{T} \\
+&amp;=\left((d f) \wedge d y_{I}\right)_{T}=(d \omega)_{T}
+\end{aligned}
+\]</span></p>
+<p>The first equality holds by (63) and (70), the second by (69), the
+third by part (b), and the last by the definition of <span
+class="math inline">\(d \omega\)</span>.</p>
+<p>The general case of <span class="math inline">\((c)\)</span> follows
+from the special case just proved, if we apply <span
+class="math inline">\((a)\)</span>. This completes the proof.</p>
+<p>Our next objective is Theorem 10.25. This will follow directly from
+two other important transformation properties of differential forms,
+which we state first.</p>
+<p><strong>10.23 Theorem</strong> Suppose <span
+class="math inline">\(T\)</span> is <span class="math inline">\(a
+\mathscr{C}^{\prime}\)</span>-mapping of an open set <span
+class="math inline">\(E \subset R^{n}\)</span> into an open set <span
+class="math inline">\(V \subset R^{m}, S\)</span> is a <span
+class="math inline">\(\mathscr{C}^{\prime}\)</span>-mapping of <span
+class="math inline">\(V\)</span> into an open set <span
+class="math inline">\(W \subset R^{p}\)</span>, and <span
+class="math inline">\(\omega\)</span> is a <span
+class="math inline">\(k\)</span>-form in <span
+class="math inline">\(W\)</span>, so that <span
+class="math inline">\(\omega_{S}\)</span> is a <span
+class="math inline">\(k\)</span>-form in <span
+class="math inline">\(V\)</span> and both <span
+class="math inline">\(\left(\omega_{S}\right)_{T}\)</span> and <span
+class="math inline">\(\omega_{S T}\)</span> are <span
+class="math inline">\(k\)</span>-forms in <span
+class="math inline">\(E\)</span>, where <span class="math inline">\(S
+T\)</span> is defined by <span class="math inline">\((S
+T)(\mathbf{x})=S(T(\mathbf{x}))\)</span>. Then</p>
+<p><span class="math display">\[
+\begin{equation}
+\left(\omega_{S}\right)_{T}=\omega_{S T} .
+\label{eq:71}
+\end{equation}
+\]</span></p>
+<p><strong>Proof</strong> If <span class="math inline">\(\omega\)</span>
+and <span class="math inline">\(\lambda\)</span> are forms in <span
+class="math inline">\(W\)</span>, Theorem <span
+class="math inline">\(10.22\)</span> shows that</p>
+<p><span class="math display">\[
+\left((\omega \wedge \lambda)_{S}\right)_{T}=\left(\omega_{S} \wedge
+\lambda_{S}\right)_{T}=\left(\omega_{S}\right)_{T}
+\wedge\left(\lambda_{S}\right)_{T}
+\]</span></p>
+<p>and</p>
+<p><span class="math display">\[
+(\omega \wedge \lambda)_{S T}=\omega_{S T} \wedge \lambda_{S T} \text {.
+}
+\]</span></p>
+<p>Thus if (71) holds for <span class="math inline">\(\omega\)</span>
+and for <span class="math inline">\(\lambda\)</span>, it follows that
+(71) also holds for <span class="math inline">\(\omega \wedge
+\lambda\)</span>. Since every form can be built up from 0-forms and
+1-forms by addition and multiplication, and since (71) is trivial for 0
+-forms, it is enough to prove (71) in the case <span
+class="math inline">\(\omega=d z_{q}, q=1, \ldots, p\)</span>. (We
+denote the points of <span class="math inline">\(E, V, W\)</span> by
+<span class="math inline">\(\mathbf{x}, \mathbf{y}, \mathbf{z}\)</span>,
+respectively.)</p>
+<p>Let <span class="math inline">\(t_{1}, \ldots, t_{m}\)</span> be the
+components of <span class="math inline">\(T\)</span>, let <span
+class="math inline">\(s_{1}, \ldots, s_{p}\)</span> be the components of
+<span class="math inline">\(S\)</span>, and let <span
+class="math inline">\(r_{1}, \ldots, r_{p}\)</span> be the components of
+<span class="math inline">\(S T\)</span>. If <span
+class="math inline">\(\omega=d z_{q}\)</span>, then</p>
+<p><span class="math display">\[
+\omega_{S}=d s_{q}=\sum_{j}\left(D_{j} s_{q}\right)(\mathbf{y}) d y_{j},
+\]</span></p>
+<p>so that the chain rule implies</p>
+<p><span class="math display">\[
+\begin{aligned}
+\left(\omega_{S}\right)_{T} &amp;=\sum_{j}\left(D_{j}
+s_{q}\right)(T(\mathbf{x})) d t_{j} \\
+&amp;=\sum_{j}\left(D_{j} s_{q}\right)(T(\mathbf{x}))
+\sum_{i}\left(D_{i} t_{j}\right)(\mathbf{x}) d x_{i} \\
+&amp;=\sum_{i}\left(D_{i} r_{q}\right)(\mathbf{x}) d x_{i}=d
+r_{q}=\omega_{S T}
+\end{aligned}
+\]</span></p>
+<p><strong>10.24 Theorem</strong> Suppose <span
+class="math inline">\(\omega\)</span> is a <span
+class="math inline">\(k\)</span>-form in an open set <span
+class="math inline">\(E \subset R^{n}, \Phi\)</span> is a <span
+class="math inline">\(k\)</span>-surface in <span
+class="math inline">\(E\)</span>, with parameter domain <span
+class="math inline">\(D \subset R^{k}\)</span>, and <span
+class="math inline">\(\Delta\)</span> is the <span
+class="math inline">\(k\)</span>-surface in <span
+class="math inline">\(R^{k}\)</span>, with parameter domain <span
+class="math inline">\(D\)</span>, defined by <span
+class="math inline">\(\Delta(\mathbf{u})=\mathbf{u}(\mathbf{u} \in
+D)\)</span>. Then</p>
+<p><span class="math display">\[
+\int_{\Phi} \omega=\int_{\Delta} \omega_{\Phi} .
+\]</span></p>
+<p>Proof We need only consider the case</p>
+<p><span class="math display">\[
+\omega=a(\mathbf{x}) d x_{i_{1}} \wedge \cdots \wedge d x_{i_{k}} .
+\]</span></p>
+<p>If <span class="math inline">\(\phi_{1}, \ldots, \phi_{n}\)</span>
+are the components of <span class="math inline">\(\Phi\)</span>,
+then</p>
+<p><span class="math display">\[
+\omega_{\Phi}=a(\Phi(\mathbf{u})) d \phi_{i_{1}} \wedge \cdots \wedge d
+\phi_{i_{k}} .
+\]</span></p>
+<p>The theorem will follow if we can show that</p>
+<p><span class="math display">\[
+d \phi_{i_{1}} \wedge \cdots \wedge d \phi_{i_{k}}=J(\mathbf{u}) d u_{1}
+\wedge \cdots \wedge d u_{k},
+\]</span></p>
+<p>where</p>
+<p><span class="math display">\[
+J(\mathbf{u})=\frac{\partial\left(x_{i_{1}}, \ldots,
+x_{i_{k}}\right)}{\partial\left(u_{1}, \ldots, u_{k}\right)}
+\]</span></p>
+<p>since (72) implies</p>
+<p><span class="math display">\[
+\begin{aligned}
+\int_{\Phi} \omega &amp;=\int_{D} a(\Phi(\mathbf{u})) J(\mathbf{u}) d
+\mathbf{u} \\
+&amp;=\int_{\Delta} a(\Phi(\mathbf{u})) J(\mathbf{u}) d u_{1} \wedge
+\cdots \wedge d u_{k}=\int_{\Delta} \omega_{\Phi} .
+\end{aligned}
+\]</span></p>
+<p>Let <span class="math inline">\([A]\)</span> be the <span
+class="math inline">\(k\)</span> by <span
+class="math inline">\(k\)</span> matrix with entries</p>
+<p><span class="math display">\[
+\alpha(p, q)=\left(D_{q} \phi_{i_{p}}\right)(\mathbf{u}) \quad(p, q=1,
+\ldots, k) .
+\]</span></p>
+<p>Then</p>
+<p><span class="math display">\[
+d \phi_{i_{p}}=\sum_{q} \alpha(p, q) d u_{q}
+\]</span></p>
+<p>so that</p>
+<p><span class="math display">\[
+d \phi_{i_{1}} \wedge \cdots \wedge d \phi_{i_{k}}=\sum \alpha\left(1,
+q_{1}\right) \cdots \alpha\left(k, q_{k}\right) d u_{q_{1}} \wedge
+\cdots \wedge d u_{q_{k}} \text {. }
+\]</span></p>
+<p>In this last sum, <span class="math inline">\(q_{1}, \ldots,
+q_{k}\)</span> range independently over <span class="math inline">\(1,
+\ldots, k\)</span>. The anticommutative relation (42) implies that</p>
+<p><span class="math display">\[
+d u_{q_{1}} \wedge \cdots \wedge d u_{q_{k}}=s\left(q_{1}, \ldots,
+q_{k}\right) d u_{1} \wedge \cdots \wedge d u_{k},
+\]</span></p>
+<p>where <span class="math inline">\(s\)</span> is as in Definition
+9.33; applying this definition, we see that</p>
+<p><span class="math display">\[
+d \phi_{i_{1}} \wedge \cdots \wedge d \phi_{i_{k}}=\operatorname{det}[A]
+d u_{1} \wedge \cdots \wedge d u_{k}
+\]</span></p>
+<p>and since <span
+class="math inline">\(J(\mathbf{u})=\operatorname{det}[A],(72)\)</span>
+is proved.</p>
+<p>The final result of this section combines the two preceding
+theorems.</p>
+<p><strong>10.25 Theorem</strong> Suppose <span
+class="math inline">\(T\)</span> is a <span
+class="math inline">\(\mathscr{C}^{\prime}\)</span>-mapping of an open
+set <span class="math inline">\(E \subset R^{n}\)</span> into an open
+set <span class="math inline">\(V \subset R^{m}, \Phi\)</span> is a
+<span class="math inline">\(k\)</span>-surface in <span
+class="math inline">\(E\)</span>, and <span
+class="math inline">\(\omega\)</span> is a <span
+class="math inline">\(k\)</span>-form in <span
+class="math inline">\(V\)</span>.</p>
+<p>Then</p>
+<p><span class="math display">\[
+\int_{T \Phi} \omega=\int_{\Phi} \omega_{T}
+\]</span></p>
+<p>Proof Let <span class="math inline">\(D\)</span> be the parameter
+domain of <span class="math inline">\(\Phi\)</span> (hence also of <span
+class="math inline">\(T \Phi\)</span> ) and define <span
+class="math inline">\(\Delta\)</span> as in Theorem <span
+class="math inline">\(10.24\)</span>.</p>
+<p>Then</p>
+<p><span class="math display">\[
+\int_{T \Phi} \omega=\int_{\Delta} \omega_{T
+\Phi}=\int_{\Delta}\left(\omega_{T}\right)_{\Phi}=\int_{\Phi} \omega_{T}
+.
+\]</span></p>
+<p>The first of these equalities is Theorem <span
+class="math inline">\(10.24\)</span>, applied to <span
+class="math inline">\(T \Phi\)</span> in place of <span
+class="math inline">\(\Phi\)</span>. The second follows from Theorem
+10.23. The third is Theorem 10.24, with <span
+class="math inline">\(\omega_{T}\)</span> in place of <span
+class="math inline">\(\omega\)</span>.</p>
+
+    </div>
+    
+</div>
+</div>
+
+                <div id="footer-wrapper">
+                    <footer class="footer"><footer class="row pl-3 pr-3">
+    <div class="col-12 d-flex justify-content-between align-items-center text-muted pl-0 pr-0">
+        <div class="footer-left">
+            <p class="mb-0"> © 2022 <a href="https://github.com/chen-gz">guangzong</a>. <span data-toggle="tooltip"
+                    data-placement="top"
+                    title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author.">All
+                    rights reserved.</span></p>
+        </div>
+        <div class="footer-right">
+            <p class="mb-0"> Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">hugo</a>
+                with <a href="https://github.com/chen-gz/hugo_zong" target="_blank" rel="noopener">zong</a>
+                theme.</p>
+        </div>
+    </div>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script> MathJax = {
+            tex: {
+                tags: 'ams',
+            }
+        };</script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</footer>
+</footer>
+                </div>
+            </div>
+            <div id="panel-wrapper" class="d-flex flex-column"><div id="toc-wrapper" class="mb-5 pl-2">
+    <span>Contents</span>
+    <nav id="toc" data-toggle="toc">
+        
+        
+        
+    </nav>
+</div>
+
+<div id="access-lastmod" class="pb-4 pl-2">
+    <div class="panel-heading">Recently Updated</div>
+    <ul class="post-content pl-3 pb-1 ml-1 mt-2">
+          
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/1-total-variation/">Total Variation</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-7/1-derivatives-of-measures/">Derivatives of Measures</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/3-consequences-of-the-radon-nikodym-theorem/">Consequences of the Radon-Nikodym Theorem</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/4-bounded-linear-functionals-on-lp/">Bounded linear functional on Lp</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/2-abosolute-continuity/">Abosolute Continuity</a></li>
+        
+    </ul>
+</div>
+
+<div id="access-tags" class="pl-2">
+    <div class="panel-heading">Trending Tags</div>
+    <div class="d-flex flex-wrap mt-3 mb-1 mr-3">
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/algorithm/">Algorithm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/android/">Android</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c/">C</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c-language/">c language</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/caddy/">Caddy</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cadence/">Cadence</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cdc/">CDC</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/classification/">classification</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/compress/">Compress</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/conf/">Conf</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/double-column/">Double Column</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/errno13/">Errno13</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/fish/">fish</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gan/">GAN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/git/">Git</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gtk/">Gtk</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/html/">Html</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/i3/">I3</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/idea/">Idea</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/java/">Java</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/latex/">Latex</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lda/">LDA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linear-programming/">Linear Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linux/">Linux</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lr/">LR</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/math/">Math</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mathematics/">Mathematics</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matlab/">Matlab</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matplot/">matplot</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/memory/">Memory</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mermaid/">Mermaid</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/misc/">Misc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/ml/">ML</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mosfet/">Mosfet</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/network/">Network</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/nn/">NN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pandoc/">Pandoc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pca/">PCA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/probability/">Probability</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/productive/">Productive</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/program/">Program</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/programming/">Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/python/">Python</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/qt/">Qt</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/random-variable/">Random Variable</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rcnn/">RCNN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rust/">Rust</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/security/">Security</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/software/">Software</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/std/">Std</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/svd/">Svd</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/tool/">Tool</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/usb/">USB</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vim/">Vim</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpn/">Vpn</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpnc/">Vpnc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/xterm/">xterm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/zsh/">Zsh</a>
+        
+    </div>
+</div>
+</div><div id="search-result-wrapper" class="d-flex justify-content-center unloaded">
+    <div class="col-12 col-sm-11 post-content">
+        <div id="search-hints"></div>
+        <div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3 col-12"></div>
+    </div>
+</div>
+
+<script src="/js/fuse.min.js"></script>
+<script src="/js/fastsearch.js"></script>
+
+
+</div>
+        <div id="mask"></div>
+        <a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button"
+            style="display: none">
+            <i class="fas fa-angle-up"></i>
+        </a>
+    </div>
+    
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>chapter 2 Positive Borel Measures on Guangzong Blog</title>
+    <link>https://zongpitt.com/papa-rudin/ch-2/</link>
+    <description>Recent content in chapter 2 Positive Borel Measures on Guangzong Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://zongpitt.com/papa-rudin/ch-2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>5 Continuity Properties of Measurable Functions</title>
+      <link>https://zongpitt.com/papa-rudin/ch-2/5-continuity-properties-of-measurable-functions/</link>
+      <pubDate>Thu, 27 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/papa-rudin/ch-2/5-continuity-properties-of-measurable-functions/</guid>
+      <description>Since the continuous functions played such a prominent role in our construction of Borel measures, and of Lebesgue measure in particular, it seems reasonable to expect that there are some interesting relations between continuous functions and measurable functions. In this section we shall give two theorems of this kind.
+We shall assume, in both of them, that \(\mu\) is a measure on a locally compact Hausdorff space \(X\) which has the properties stated in Theorem 2.</description>
+    </item>
+    
+    <item>
+      <title>4 Lebesgue Measure</title>
+      <link>https://zongpitt.com/papa-rudin/ch-2/4-lebesgue-measure/</link>
+      <pubDate>Sun, 16 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/papa-rudin/ch-2/4-lebesgue-measure/</guid>
+      <description>2.19 Euclidean Spaces Euclidean \(k\)-dimensional space \(R^k\) is the set of all points \(x=(ξ_1, \ldots, ξ_k)\) whose coordinates \(ξ_i\) are real numbers, with the following algebraic and topological structure:
+If \(x=\left( ξ_1, \ldots, ξ_k\right), y=\left( \eta_1, \ldots, \eta_k\right)\), and \(\alpha\) is a real number, \(x+y\) and \(\alpha x\) are defined by \[ x+y=\left(ξ_1+\eta_1, \ldots, ξ_k+\eta_k\right), \quad \alpha x=\left(\alpha ξ_1, \ldots, \alpha ξ_k\right) . \] This makes \(R^k\) into a real vector space.</description>
+    </item>
+    
+    <item>
+      <title>3  Regularity Properties of borel Measures</title>
+      <link>https://zongpitt.com/papa-rudin/ch-2/3-regularity-properties-of-borel-measures/</link>
+      <pubDate>Sat, 15 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/papa-rudin/ch-2/3-regularity-properties-of-borel-measures/</guid>
+      <description>2.15 Definition A measure \(\mu\) defined on the \(\sigma\)-algebra of all Borel sets in a locally compact Hausdorff space \(X\) is called a Borel measure on \(X\). If \(\mu\) is positive, a Borel set \(E \subset X\) is outer regular or inner regular, respectively, if \(E\) has property \((c)\) or \((d)\) of Theorem 2.14. If every Borel set in \(X\) is both outer and inner regular, \(\mu\) is called regular.</description>
+    </item>
+    
+    <item>
+      <title>1 Topological Preliminaries</title>
+      <link>https://zongpitt.com/papa-rudin/ch-2/1-topological-preliminaries/</link>
+      <pubDate>Tue, 04 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/papa-rudin/ch-2/1-topological-preliminaries/</guid>
+      <description>2.3 Definitions Let \(X\) be a topological space, as defined in Sec. \(1.2\).
+A set \(E \subset X\) is closed if its complement \(E^c\) is open. (Hence \(\varnothing\) and \(X\) are closed, finite unions of closed sets are closed, and arbitrary intersections of closed sets are closed.)
+The closure \(\bar{E}\) of a set \(E \subset X\) is the smallest closed set in \(X\) which contains \(E\). (The following argument proves the existence of \(\bar{E}\) : The collection \(\Omega\) of all closed subsets of \(X\) which contain \(E\) is not empty, since \(X \in \Omega\); let \(\bar{E}\) be the intersection of all members of \(\Omega\).</description>
+    </item>
+    
+    <item>
+      <title>2 The Riesz Representation Theorem</title>
+      <link>https://zongpitt.com/papa-rudin/ch-2/2-the-riesz-representation-theorem/</link>
+      <pubDate>Tue, 04 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/papa-rudin/ch-2/2-the-riesz-representation-theorem/</guid>
+      <description>2.14 Theorem Let \(X\) be a locally compact Hausdorff space, and let \(\Lambda\) be a positive linear functional on \(C_c(X)\). Then there exists a \(\sigma\)-algebra \(\mathfrak{M}\) in \(X\) which contains all Borel sets in \(X\), and there exists a unique positive measure \(\mu\) on \(\mathfrak{M}\) which represents \(\Lambda\) in the sense that
+\(Λ f=\int_X f d μ\) for every \(f \in C_c(X)\), and which has the following additional properties: \(\mu(K)&amp;lt;\infty\) for every compact set \(K \subset X\).</description>
+    </item>
+    
+    <item>
+      <title>0 Vector Spaces</title>
+      <link>https://zongpitt.com/papa-rudin/ch-2/0-vector-spaces/</link>
+      <pubDate>Mon, 03 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/papa-rudin/ch-2/0-vector-spaces/</guid>
+      <description>2.1 Definition A complex vector space (or a vector space over the complex field) is a set \(V\), whose elements are called vectors and in which two operations, called addition and scalar multiplication, are defined, with the following familiar algebraic properties:
+To every pair of vectors \(x\) and \(y\) there corresponds a vector \(x+y\), in such a way that \(x+y=y+x\) and \(x+(y+z)=(x+y)+z\); \(V\) contains a unique vector 0 (the zero vector or origin of \(V\) ) such that \(x+0=x\) for every \(x \in V\); and to each \(x \in V\) there corresponds a unique vector \(-x\) such that \(x+(-x)=0\).</description>
+    </item>
+    
+  </channel>
+</rss>

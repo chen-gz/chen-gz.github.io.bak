@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Software on Guangzong Blog</title>
+    <link>https://zongpitt.com/tags/software/</link>
+    <description>Recent content in Software on Guangzong Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 06 Oct 2020 14:57:00 -0400</lastBuildDate><atom:link href="https://zongpitt.com/tags/software/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Setup Star and GoldenDict Dictionary</title>
+      <link>https://zongpitt.com/posts/misc/2020-10-06-setup-star-dictionary/</link>
+      <pubDate>Tue, 06 Oct 2020 14:57:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/misc/2020-10-06-setup-star-dictionary/</guid>
+      <description>Refer to archlinux wiki and archlinux wiki - goldendict
+Install pacman -Syu Sdcv Once you have the appropriate files you can extract them into /usr/share/stardict/dic.
+Following command can be used.
+mkdir -p /usr/share/stardict/dic &amp;amp;&amp;amp; cd /usr/share/stardict/dic wget &amp;quot;https://github.com/chen-gz/picBed/raw/master/langdao-ec-gb.dict.dz&amp;quot; &amp;amp;&amp;amp; wget &amp;quot;https://raw.githubusercontent.com/chen-gz/picBed/master/langdao-ec-gb.idx&amp;quot; &amp;amp;&amp;amp; wget &amp;quot;https://raw.githubusercontent.com/chen-gz/picBed/master/langdao-ec-gb.ifo&amp;quot; Dictionary files
+dict index info </description>
+    </item>
+    
+  </channel>
+</rss>

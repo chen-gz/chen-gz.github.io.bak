@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ML on Guangzong Blog</title>
+    <link>https://zongpitt.com/tags/ml/</link>
+    <description>Recent content in ML on Guangzong Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 17 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://zongpitt.com/tags/ml/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Independent Component Analysis</title>
+      <link>https://zongpitt.com/posts/independent-component-analysis/</link>
+      <pubDate>Sat, 17 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/independent-component-analysis/</guid>
+      <description>This blog mainly refers to Independent Component Analysis: Algorithms and Applications which wrote by Aapo Hyvärinen and Erkki Oja.
+Some useful reference
+Elements of Information Theory What is projection pursuit - Entropy Estimation New approximations of differential entropy for independent component analysis and projection pursuit - Entropy Estimation Definition Cocktail party problem Imagine that you are in a room where two people are speaking simultaneously. You have two microphones, which you hold in different locations.</description>
+    </item>
+    
+    <item>
+      <title>Faster R-CNN paper notes</title>
+      <link>https://zongpitt.com/posts/2021-02-28-faster-rcnn/</link>
+      <pubDate>Mon, 26 Apr 2021 19:21:00 -0500</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-02-28-faster-rcnn/</guid>
+      <description>papper link
+github link
+github link python version
+Region Proposal Networks (RPNs) share convolutional layers with state-of-the-art object detection networks.
+main contribution.
+using region Proposal networks to make fast R-CNN faster.
+Region Proposal Network is an a full connection neural network
+Attention mechanisms</description>
+    </item>
+    
+    <item>
+      <title>Faster R-CNN</title>
+      <link>https://zongpitt.com/posts/2021-04-21-faster-r-cnn/</link>
+      <pubDate>Wed, 21 Apr 2021 20:00:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-04-21-faster-r-cnn/</guid>
+      <description>There is already a post about Faster R-CNN paper. Previous one is R-CNN note just for myself.
+In this post I will explain the idea of Faster R-CNN and make it very easy to understand.
+paper link
+The most idea alrady post on Fast R-CNN. The different is Faster R-CNN using RPN instead of selective search. The main idea of RPN is using sliding window and fast R-CNN sibling output layer to do region proposal.</description>
+    </item>
+    
+    <item>
+      <title>Fast R-CNN</title>
+      <link>https://zongpitt.com/posts/2021-04-21-fast-r-cnn/</link>
+      <pubDate>Wed, 21 Apr 2021 16:00:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-04-21-fast-r-cnn/</guid>
+      <description>There is already a post about Fast R-CNN paper. Previous one is Fast R-CNN note just for myself.
+In this post I will explain the idea of Fast R-CNN and make it very easy to understand.
+papper link
+The idea of previous version of R-CNN is very simple. We can easily understand the idea. It is multiple stage network. It have very clear work flow for R-CNN. Proposed regions –&amp;gt; feed to CNN –&amp;gt; classify.</description>
+    </item>
+    
+    <item>
+      <title>R-CNN</title>
+      <link>https://zongpitt.com/posts/2021-04-21-r-cnn/</link>
+      <pubDate>Wed, 21 Apr 2021 16:00:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-04-21-r-cnn/</guid>
+      <description>There is already a post about R-CNN paper. Previous one is R-CNN note just for myself.
+In this post I will explain the idea of R-CNN and make it very easy to understand.
+paper link
+Object detection system overview. Our system (1) takes an input image, (2) extracts around 2000 bottom-up region proposals, (3) computes features for each proposal using a large convolutional neural network (CNN), and then (4) classifies each region using class-specific linear SVMs.</description>
+    </item>
+    
+    <item>
+      <title>Initializing neural networks</title>
+      <link>https://zongpitt.com/posts/2021-04-03-initializing-neural-networks/</link>
+      <pubDate>Sat, 03 Apr 2021 15:54:00 -0500</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-04-03-initializing-neural-networks/</guid>
+      <description>read the post https://www.deeplearning.ai/ai-notes/initialization/index.html and https://cs230.stanford.edu/section/4/
+This two post is enough to understand the Xavier initialization.
+The Newer initialization is proposed by Kaiming He, A modified version of Xavier.
+Here is the link of the paper. https://www.cv-foundation.org/openaccess/content_iccv_2015/html/He_Delving_Deep_into_ICCV_2015_paper.html
+For more information of initializer refer to TensorFlow document. https://www.tensorflow.org/api_docs/python/tf/keras/initializers</description>
+    </item>
+    
+    <item>
+      <title>Dropout Regularization</title>
+      <link>https://zongpitt.com/posts/2021-04-02-dropout-regularization/</link>
+      <pubDate>Fri, 02 Apr 2021 19:06:00 -0500</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-04-02-dropout-regularization/</guid>
+      <description>Paper available from https://www.cs.toronto.edu/~hinton/absps/JMLRdropout.pdf and https://dl.acm.org/doi/10.5555/2627435.2670313
+The idea of dropout is eliminate some node randomly and then training the network.
+Inverted dropout technique makes the parameter remain same.
+https://machinelearning.wtf/terms/inverted-dropout/ https://pgaleone.eu/deep-learning/regularization/2017/01/10/anaysis-of-dropout/
+Intuition: Can’t rely on any one feature, so have to spread out weights.
+Different dropout ratio for different layer base on the number of the neuron number will help to improve the accuracy.
+Following is copy from link https://pgaleone.eu/deep-learning/regularization/2017/01/10/anaysis-of-dropout/ the author is Paolo Galeone.</description>
+    </item>
+    
+    <item>
+      <title>VC generalization bound</title>
+      <link>https://zongpitt.com/posts/2021-03-04-vc-generaliztion-bound/</link>
+      <pubDate>Thu, 04 Mar 2021 12:46:00 -0500</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-03-04-vc-generaliztion-bound/</guid>
+      <description>If we treated the growth function as an effective number of hypotheses, and replaced \(M\) in the generalization bound (2.1) with \(m_{}(N),\) the resulting bound would be
+\[ E_{\mathrm{out}}(g) \stackrel{?}{\leq} E_{\mathrm{in}}(g)+\sqrt{\frac{1}{2 N} \ln \frac{2 m_{\mathcal{H}}(N)}{\delta}} \]
+It turns out that this is not exactly the form that will hold. The quantities in red need to be technically modified to make (2.11) true. The correct bound, which is called the VC generalization bound, is given in the following theorem; it holds for any binary target function \(f,\) any hypothesis set \(,\) any learning algorithm \(,\) and any input probability distribution \(P\).</description>
+    </item>
+    
+    <item>
+      <title>Fast R-CNN paper notes</title>
+      <link>https://zongpitt.com/posts/2021-02-28-fast-rcnn/</link>
+      <pubDate>Sun, 28 Feb 2021 15:03:00 -0500</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-02-28-fast-rcnn/</guid>
+      <description>papper link
+github link
+summary Basic idea is get CNN feature one time instead 2000 times.
+In R-CNN it will propose 2000 region, then do classification using CNN.
+It will run about 2000 times CNN. This is very slow proceesion. So in fast R-CNN it only run one time CNN and map the region to feature at the same time. Finally put these region into classification network.
+There is a lot detail different between R-CNN and fast R-CNN.</description>
+    </item>
+    
+    <item>
+      <title>Principal component analysis</title>
+      <link>https://zongpitt.com/posts/2021-02-26-principal-component-analysis/</link>
+      <pubDate>Fri, 26 Feb 2021 13:50:00 -0500</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-02-26-principal-component-analysis/</guid>
+      <description>excellent material from Andrew Ng
+https://github.com/chen-gz/picBed/blob/master/PCA.pdf
+I add intuition here.
+The intuition of PCA for me comes from linear algebra’s base. (Orthogonal unit vector) form a vector space. All vectors can form from these vectors. Some bases only provide little information, so they can be ignored.
+PCA will keep the features with maximum variance.
+Procedure Normalization the data There are \(N\) samples, each sample is \(x^i \in \mathbb{R}^n\).
+Calculate mean value.</description>
+    </item>
+    
+    <item>
+      <title>Neural Network Random Initialization</title>
+      <link>https://zongpitt.com/posts/2021-02-24-neural-network-random-initialization/</link>
+      <pubDate>Wed, 24 Feb 2021 15:17:00 -0500</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-02-24-neural-network-random-initialization/</guid>
+      <description>The neural network should initialization with very small and random value.
+There are two reason.
+if initialization with same value, the same layer neural will have some value no matter how much iteration. because of sigmoid function, it is not sensitive when value is large. So neural should be initialized with small value. </description>
+    </item>
+    
+    <item>
+      <title>Growth Function</title>
+      <link>https://zongpitt.com/posts/2021-02-20-growth-function/</link>
+      <pubDate>Sat, 20 Feb 2021 22:07:00 -0500</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-02-20-growth-function/</guid>
+      <description>This material is from learning from data.</description>
+    </item>
+    
+    <item>
+      <title>R-CNN paper notes</title>
+      <link>https://zongpitt.com/posts/2021-02-18-r-cnn-paper-notes/</link>
+      <pubDate>Thu, 18 Feb 2021 19:49:00 -0500</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-02-18-r-cnn-paper-notes/</guid>
+      <description>paper link
+Object detection system overview Our system (1) takes an input image, (2) extracts around 2000 bottom-up region proposals, (3) computes features for each proposal using a large convolutional neural network (CNN), and then (4) classifies each region using class-specific linear SVMs.
+General Idea and Reason (what and why) extent CNN to object detection &amp;gt; To what extent do the CNN classification results on ImageNet generalize to object detection results on the PASCAL VOC Challenge?</description>
+    </item>
+    
+    <item>
+      <title>Linear Discriminant Analysis</title>
+      <link>https://zongpitt.com/posts/2021-02-10-linear-discriminant-analysis/</link>
+      <pubDate>Wed, 10 Feb 2021 05:12:52 -0500</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-02-10-linear-discriminant-analysis/</guid>
+      <description>my Matlab implementation
+clc; clear all; load(&amp;#39;/home/zong/Downloads/dataLDA-1/dataLDA/trainTrain.mat&amp;#39;) load(&amp;#39;/home/zong/Downloads/dataLDA-1/dataLDA/testLDA.mat&amp;#39;) % X and Y here is training data Y = Ytrain; X = Xtrain; [featrue_size, sample] = size(Xtrain); pi_0 = length(find(Y==0))/size(Y,2); pi_1 = length(find(Y==1))/size(Y,2); % mean u_0 = mean(X(:,find(Y==0)),2); u_1 = mean(X(:,find(Y==1)),2); % covariance by my code (psudo, not exactly convariance) covv = ((X(:,find(Y==0)) - u_0)*(X(:,find(Y==0)) - u_0)&amp;#39; + (X(:,find(Y==1)) - u_1)*(X(:,find(Y==1)) - u_1)&amp;#39;)/200; a = inv(covv) * (u_0 - u_1); b = -0.</description>
+    </item>
+    
+    <item>
+      <title>Linear Regression And Roc</title>
+      <link>https://zongpitt.com/posts/2020-10-22-linear-regression-and-roc/</link>
+      <pubDate>Thu, 22 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-10-22-linear-regression-and-roc/</guid>
+      <description>Receiver Operating Characteristic contingency table or confusion matrix, image-20201022185345033 \[ recall = TPR = \frac{T P}{T P+F N} \]
+\[ \mathrm{FPR}=\frac{\mathrm{FP}}{\mathrm{FP}+\mathrm{TN}} \]
+receiver operating example img Linear Regression using linear function to minimize the cost function.
+Seems like linear kernel SVM. The difference is SVM only consider support vector, linear regression will consider all samples.
+Experiment Result Food No Food 723 62 No 838 2265 for threshold = 0.1
+Result distribution (Histogram will be better) image-20201022192311836 ROC curve image-20201022192432434 </description>
+    </item>
+    
+    <item>
+      <title>Logistic Regression</title>
+      <link>https://zongpitt.com/posts/2021-02-11-logistic-regression/</link>
+      <pubDate>Mon, 10 Feb 2020 05:12:52 -0500</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-02-11-logistic-regression/</guid>
+      <description>For many logistic regression note they will put cost function as
+\[ J = - \frac{1}{N} l(\theta) \]
+I am not doing this here, basicaly we can use gradien ascent to to maximized cost function in the notes instread of gradient decent. Ther are almost the same. I alos want to comment \(1/m\) here, for gradient descent algorithm, what we care about is gradient descent direction. We will choose learning rate to change gradient descent speed.</description>
+    </item>
+    
+  </channel>
+</rss>

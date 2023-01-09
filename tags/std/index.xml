@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Std on Guangzong Blog</title>
+    <link>https://zongpitt.com/tags/std/</link>
+    <description>Recent content in Std on Guangzong Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 27 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://zongpitt.com/tags/std/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>C&#43;&#43; std library</title>
+      <link>https://zongpitt.com/posts/2020-11-27-c&#43;&#43;-std-library/</link>
+      <pubDate>Fri, 27 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-11-27-c&#43;&#43;-std-library/</guid>
+      <description>unique Removes all but the first element from every consecutive group of equivalent elements in the range [first,last).
+return value: An iterator to the element that follows the last element not removed.
+Example
+int n; vector&amp;lt;int&amp;gt; a; // suppose there are some value in a n = unique(a.begin(), a.end()) - a.begin(); // n is the number the unique item. a.resize(n); // remove repeated item. resize Resizes the container so that it contains n elements.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>chapter 1 The Real and Complex Number System on Guangzong Blog</title>
+    <link>https://zongpitt.com/baby-rudin/ch1/</link>
+    <description>Recent content in chapter 1 The Real and Complex Number System on Guangzong Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://zongpitt.com/baby-rudin/ch1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>7 APPENDIX</title>
+      <link>https://zongpitt.com/baby-rudin/ch1/7-appendix/</link>
+      <pubDate>Sat, 20 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/ch1/7-appendix/</guid>
+      <description>Theorem \(1.19\) will be proved in this appendix by constructing \(R\) from \(Q\). We shall divide the construction into several steps.
+Step 1 The members of \(R\) will be certain subsets of \(Q\), called cuts. A cut is, by definition, any set \(\alpha \subset Q\) with the following three properties.
+\(\alpha\) is not empty, and \(\alpha \neq Q\).
+If \(p \in \alpha, q \in Q\), and \(q&amp;lt;p\), then \(q \in \alpha\).</description>
+    </item>
+    
+    <item>
+      <title>EXERCISES</title>
+      <link>https://zongpitt.com/baby-rudin/ch1/8-exercises/</link>
+      <pubDate>Sat, 20 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/ch1/8-exercises/</guid>
+      <description>Unless the contrary is explicitly stated, all numbers that are mentioned in these exercises are understood to be real.
+If \(r\) is rational \((r \neq 0)\) and \(x\) is irrational, prove that \(r+x\) and \(r x\) are irrational. </description>
+    </item>
+    
+    <item>
+      <title>4 THE EXTENDED REAL NUMBER SYSTEM</title>
+      <link>https://zongpitt.com/baby-rudin/ch1/4-the-extended-real-number-system/</link>
+      <pubDate>Mon, 15 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/ch1/4-the-extended-real-number-system/</guid>
+      <description>youtube bilibili note pdf xopp 1.23 Definition The extended real number system consists of the real field \(R\) and two symbols, \(+\infty\) and \(-\infty\). We preserve the original order in \(R\), and define
+for every \(x \in R\).
+\[ -\infty&amp;lt;x&amp;lt;+\infty \]
+It is then clear that \(+\infty\) is an upper bound of every subset of the extended real number system, and that every nonempty subset has a least upper bound.</description>
+    </item>
+    
+    <item>
+      <title>5 THE COMPLEX FIELD</title>
+      <link>https://zongpitt.com/baby-rudin/ch1/5-the-complex-field/</link>
+      <pubDate>Mon, 15 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/ch1/5-the-complex-field/</guid>
+      <description>youtube bilibili note pdf xopp 1.24 Definition A complex number is an ordered pair \((a, b)\) of real numbers. “Ordered” means that \((a, b)\) and \((b, a)\) are regarded as distinct if \(a \neq b\).
+Let \(x=(a, b), y=(c, d)\) be two complex numbers. We write \(x=y\) if and only if \(a=c\) and \(b=d\). (Note that this definition is not entirely superfluous; think of equality of rational numbers, represented as quotients of integers.</description>
+    </item>
+    
+    <item>
+      <title>6 EUCLIDEAN SPACES</title>
+      <link>https://zongpitt.com/baby-rudin/ch1/6-euclidean-spaces/</link>
+      <pubDate>Mon, 15 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/ch1/6-euclidean-spaces/</guid>
+      <description>youtube bilibili note pdf xopp 1.36 Definitions For each positive integer \(k\), let \(R^{k}\) be the set of all ordered \(k\)-tuples
+\[ \mathbf{x}=\left(x_{1}, x_{2}, \ldots, x_{k}\right), \]
+where \(x_{1}, \ldots, x_{k}\) are real numbers, called the coordinates of \(\mathbf{x}\). The elements of \(R^{k}\) are called points, or vectors, especially when \(k&amp;gt;1\). We shall denote vectors by boldfaced letters. If \(\mathbf{y}=\left(y_{1}, \ldots, y_{k}\right)\) and if \(\alpha\) is a real number, put</description>
+    </item>
+    
+    <item>
+      <title>3 THE REAL FIELD</title>
+      <link>https://zongpitt.com/baby-rudin/ch1/3-the-real-field/</link>
+      <pubDate>Fri, 12 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/ch1/3-the-real-field/</guid>
+      <description>youtube bilibli note part1 pdf part1 xopp part2 pdf prat2 xopp We now state the existence theorem which is the core of this chapter.
+1.19 Theorem There exists an ordered field \(R\) which has the least-upper-bound property. Moreover, \(R\) contains \(Q\) as a subfield.
+The second statement means that \(Q \subset R\) and that the operations of addition and multiplication in \(R\), when applied to members of \(Q\), coincide with the usual operations on rational numbers; also, the positive rational numbers are positive elements of \(R\).</description>
+    </item>
+    
+    <item>
+      <title>2 FIELDS</title>
+      <link>https://zongpitt.com/baby-rudin/ch1/2-fields/</link>
+      <pubDate>Thu, 11 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/ch1/2-fields/</guid>
+      <description>youtube bilibili note pdf xopp \(1.12\) Definition A field is a set \(F\) with two operations, called addition and multiplication, which satisfy the following so-called “field axioms” (A), (M), and (D):
+Axioms for addition (A1) If \(x \in F\) and \(y \in F\), then their sum \(x+y\) is in \(F\).
+(A2) Addition is commutative: \(x+y=y+x\) for all \(x, y \in F\).
+(A3) Addition is associative: \((x+y)+z=x+(y+z)\) for all \(x, y, z \in F\).</description>
+    </item>
+    
+    <item>
+      <title>0 INTRO</title>
+      <link>https://zongpitt.com/baby-rudin/ch1/0-intro/</link>
+      <pubDate>Mon, 08 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/ch1/0-intro/</guid>
+      <description>A satisfactory discussion of the main concepts of analysis (such as convergence, continuity, differentiation, and integration) must be based on an accurately defined number concept. We shall not, however, enter into any discussion of the axioms that govern the arithmetic of the integers, but assume familiarity with the rational numbers (i.e., the numbers of the form \(m / n\), where \(m\) and \(n\) are integers and \(n \neq 0\) ).</description>
+    </item>
+    
+    <item>
+      <title>1 ORDERED SETS</title>
+      <link>https://zongpitt.com/baby-rudin/ch1/1-ordered-sets/</link>
+      <pubDate>Mon, 08 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/ch1/1-ordered-sets/</guid>
+      <description>youtube: part1 part2 bilibili: part1 part2 note: pdf xopp 1.5 Definition Let \(S\) be a set. An order on \(S\) is a relation, denoted by \(&amp;lt;\), with the following two properties:
+If \(x \in S\) and \(y \in S\) then one and only one of the statements \[ x&amp;lt;y, \quad x=y, \quad y&amp;lt;x \]
+is true.
+If \(x, y, z \in S\), if \(x&amp;lt;y\) and \(y&amp;lt;z\), then \(x&amp;lt;z\). The statement ” \(x&amp;lt;y\) ” may be read as ” \(x\) is less than \(y\) ” or ” \(x\) is smaller than \(y\) ” or ” \(x\) precedes \(y\) “.</description>
+    </item>
+    
+  </channel>
+</rss>

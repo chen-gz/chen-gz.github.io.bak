@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Svd on Guangzong Blog</title>
+    <link>https://zongpitt.com/tags/svd/</link>
+    <description>Recent content in Svd on Guangzong Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 17 Jun 2021 17:18:00 -0400</lastBuildDate><atom:link href="https://zongpitt.com/tags/svd/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Singular value decomposition 5</title>
+      <link>https://zongpitt.com/posts/2021-06-17-svd5/</link>
+      <pubDate>Thu, 17 Jun 2021 17:18:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-06-17-svd5/</guid>
+      <description>The singular value decomposition for a matrix A writes A as a product (hanger)(stretcher)(aligner).
+It’s an amazing and useful fact that every m x n matrix has a singular value decomposition.
+The following theorem goes two-thirds of the way to proving this fact:
+Two-thirds Theorem For an \(m \times n\) matrix \(\mathrm{A}: \mathbb{R}^{\mathrm{n}} \rightarrow \mathbb{R}^{\mathbb{m}}\) and any orthonormal basis \(\left\{\vec{a}_{1}, \vec{a}_{2}, \ldots, \vec{a}_{n}\right\}\) of \(\mathbb{R}^{n}\), define \(s_{i}=\left\|\hat{a} \vec{a}_{i}\right\|\) and \(\vec{h}_{i}=\left\{\begin{array}{cc}\overrightarrow{0} &amp;amp; \text { if } s_{i}=0 \\ \frac{1}{s_{i}} A \vec{a}_{i} &amp;amp; \text { if } s_{i} \neq 0\end{array}\right.</description>
+    </item>
+    
+    <item>
+      <title>Singular value decomposition 4</title>
+      <link>https://zongpitt.com/posts/2021-06-04-svd4/</link>
+      <pubDate>Fri, 04 Jun 2021 17:18:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-06-04-svd4/</guid>
+      <description>Projections Hitting with one matrix and then another Here’s a perpframe \(p_{1}=\left(\begin{array}{c}\cos (s) \\ \sin (s)\end{array}\right)\) and \(p_{2}=\left(\begin{array}{r}-\sin (s) \\ \cos (s)\end{array}\right)\) specified by angle \(s=\frac{\pi}{3}\).
+Plot an ellipse with a minor axis of \(0.5\) in the direction of \(\mathbf{p}_{1}\) and major axis of \(1.2\) in the direction of \(\mathbf{p}_{2}\).
+Answer: You know how to plot the unit circle:
+ParametricPlot \(\left[\left(\begin{array}{l}\operatorname{Cos}[t] \\ \operatorname{Sin}[t]\end{array}\right),\{\mathrm{t}, 0,2 \pi\}\right]\)
+You know how to use an xy-stretcher to stretch the circle into an ellipse with the desired axes lengths:</description>
+    </item>
+    
+    <item>
+      <title>Singular value decomposition 3</title>
+      <link>https://zongpitt.com/posts/2021-06-04-svd3/</link>
+      <pubDate>Fri, 04 Jun 2021 10:56:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-06-04-svd3/</guid>
+      <description>Coordinates From standard coordinates to perpframe coordinates. Here’s a perpframe together with the point \(P=\{1, \frac{1}{2}\}\).
+Use a matrix hit to find numbers a and \(\mathrm{b}\) so that \(P=a v_{1}+b v_{2}\).
+(The numbers a and b are the perpframe coordinates of the point P.)
+Why does that work?
+Answer: Here’s what you get when you hit everything in the plot above with the aligner matrix:
+The location of the rotated point aligner.</description>
+    </item>
+    
+    <item>
+      <title>Singular value decomposition 1</title>
+      <link>https://zongpitt.com/posts/2021-04-21-svd1/</link>
+      <pubDate>Sat, 08 May 2021 22:00:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-04-21-svd1/</guid>
+      <description>The reason I copy this information from website is to archive this information. The original website is no longer valid. I don’t want this really good tutorial of SVD disappeared.
+Introduction The Singular Value Decomposition (SVD) is a topic rarely reached in undergraduate linear algebra courses and often skipped over in graduate courses.
+Consequently relatively few mathematicians are familiar with what M.I.T. Professor Gilbert Strang calls “absolutely a high point of linear algebra.</description>
+    </item>
+    
+    <item>
+      <title>Singular value decomposition 2</title>
+      <link>https://zongpitt.com/posts/2021-05-08-svd2/</link>
+      <pubDate>Sat, 08 May 2021 22:00:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-05-08-svd2/</guid>
+      <description>Stretchers Look at the action of \((\begin{array}{ll}3 &amp;amp; 0 \\\ 0 &amp;amp; 2\end{array})\).
+when you look at taht action you can see why it’s natural to call a diagonal matrix a “stretcher” matrix.
+The diagonal matrix \(\left(\begin{array}{ll}a &amp;amp; 0 \\\ 0 &amp;amp; b\end{array}\right)\) stretches in the \(x\) direction by a factor of “a” and in the y direction by a factor of “b”.
+You can verify this by hand using the column way to multiply a matrix times a vector: \[ \left(\begin{array}{ll} a &amp;amp; 0 \\\ 0 &amp;amp; b \end{array}\right)\left(\begin{array}{l} x \\\ y \end{array}\right)=x\left(\begin{array}{l} a \\\ 0 \end{array}\right)+y\left(\begin{array}{l} 0 \\\ b \end{array}\right)=\left(\begin{array}{l} a x \\\ b y \end{array}\right) \]</description>
+    </item>
+    
+  </channel>
+</rss>

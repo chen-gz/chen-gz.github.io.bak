@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Electric on Guangzong Blog</title>
+    <link>https://zongpitt.com/categories/electric/</link>
+    <description>Recent content in Electric on Guangzong Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 31 Aug 2020 17:35:00 -0400</lastBuildDate><atom:link href="https://zongpitt.com/categories/electric/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MOSFET Structure</title>
+      <link>https://zongpitt.com/posts/2020-08-30-mosfet-structure/</link>
+      <pubDate>Mon, 31 Aug 2020 17:35:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-08-30-mosfet-structure/</guid>
+      <description>Basic Concept MOS stand for metal oxide semiconductor. FET stand for field effects transistor.
+MOSFET has four terminal, gate, source , drain and body. Source and drain actually they are same, they only been determined when there are external connection.
+Gate is used for control MOSFET. Source is the emit the resources. Drain is the receive the resources. Body is main part of MOSFET. Support and provide PN node to cut off the circuit.</description>
+    </item>
+    
+  </channel>
+</rss>

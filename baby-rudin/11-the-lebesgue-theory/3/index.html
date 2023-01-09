@@ -1,0 +1,1911 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css"
+        class="dark-mode-native-dark-original" />
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+     
+    <link rel="stylesheet" href="https://zongpitt.com/sass/main.06935202011a97ba473ebeeb0cb6788daa9fb5a9fff471a4e85850293d1c5ac4.css" />
+    <title>
+          Guangzong Blog | Measure Space
+    </title>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.bundle.min.js"></script>
+    <script src=" https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.js"></script>
+
+    <script
+        src="https://cdn.jsdelivr.net/combine/npm/magnific-popup@1/dist/jquery.magnific-popup.min.js,npm/lozad/dist/lozad.min.js,npm/clipboard@2/dist/clipboard.min.js"></script>
+    <script type="text/javascript" src="/js/commons/back-to-top.js"></script>
+    
+    
+    
+    <script type="text/javascript" src="/js/commons/topbar-switch.js"></script>
+    <script type="text/javascript" src="/js/commons/sidebar.js"></script>
+    <script type="text/javascript" src="/js/utils/category-collapse.js"></script>
+    <script type="text/javascript" src="/js/utils/checkbox.js"></script>
+    <script type="text/javascript" src="/js/utils/clipboard.js"></script>
+    <script type="text/javascript" src="/js/utils/img-extra.js"></script>
+    <script type="text/javascript" src="/js/utils/pageviews.js"></script>
+    
+    <script type="text/javascript" src="/js/utils/timeago.js"></script>
+    
+    
+</head>
+<body data-spy="scroll" data-target="#toc" data-topbar-visible="true" class="d-flex"><div id="sidebar" class="d-flex flex-column align-items-end">
+    <div class="profile-wrapper text-center">
+
+        <div id="avatar">
+            <a href="/" alt="avatar" class="mx-auto"> <img src=https://github.com/chen-gz/chen-gz/blob/main/mine_square.jpg?raw&#61;truehttps://raw.githubusercontent.com/chen-gz/chen-gz/blob/main/mine_square.jpg alt="avatar"
+                    onerror="this.style.display='none'"> </a>
+        </div>
+
+        <div class="site-title mt-3"> <a href="/">Guangzong</a> </div>
+        <div class="site-subtitle font-italic">Welcome to my blog</div>
+    </div>
+
+    <ul>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/">
+                <span>
+                    Home
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/archive/">
+                <span>
+                    Archive
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/tags/">
+                <span>
+                    Tags
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/about/">
+                <span>
+                    About
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/categories/">
+                <span>
+                    Categories
+                </span>
+            </a>
+        </li>
+        
+    </ul>
+
+    <div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center align-items-center">
+        <button class="mode-toggle btn" aria-label="Switch Mode"> 
+            <i class="fas fa-adjust"></i> 
+        </button>
+
+        <span class="icon-border"></span>
+        <a href="https://github.com/chen-gz" aria-label="github" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i>
+        </a>
+
+        <a href=" javascript:location.href = 'mailto:' + ['chen-gz','outlook.com'].join('@')" aria-label="email">
+            <i class="fas fa-envelope"></i>
+        </a>
+
+        <a href="/feed.xml" aria-label="rss"> <i class="fas fa-rss"></i> </a>
+    </div>
+
+    
+    
+</div>
+<div id="all-wrapper" class="d-flex flex-column"><div id="topbar-wrapper">
+    <div id="topbar" class="d-flex">
+        
+        <span id="breadcrumb" class="d-flex">
+              
+               
+            
+            
+            <div><a href='https://zongpitt.com/'>Home</a></div>
+              
+              
+            
+            <div><a href="https://zongpitt.com/baby-rudin">baby-rudin</a></div>
+               
+              
+            
+            <div><a href="https://zongpitt.com/baby-rudin/11-the-lebesgue-theory">11-the-lebesgue-theory</a></div>
+               
+                 
+                
+        </span>
+        <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i>
+        <div id="topbar-title">Guangzong</div>
+        <i id="search-trigger" class="fas fa-search fa-fw"></i>
+        <span id="search-wrapper" class="align-items-center">
+            <i class="fas fa-search fa-fw"></i>
+            <input class="form-control" id="search-input" type="search" aria-label="search" autocomplete="off"
+                placeholder="Search..." />
+            <i class="fa fa-times-circle fa-fw" id="search-cleaner"></i>
+        </span>
+    </div>
+</div>
+<div id="main-wrapper" class="d-flex mt-3">
+            <div id="core-wrapper" class="d-flex flex-column">
+                <div id="main" class="d-flex flex-column">
+                    
+<div class="post pl-1 pr-1 pl-md-2 pr-md-2">
+    
+    <div id="post-content">
+        <h1 style="text-align: center;">Measure Space</h1>
+        <br>
+        
+        <p>11.12 Definition Suppose <span class="math inline">\(X\)</span> is a
+set, not necessarily a subset of a euclidean space, or indeed of any
+metric space. <span class="math inline">\(X\)</span> is said to be a
+measure space if there exists a <span
+class="math inline">\(\sigma\)</span>-ring <span
+class="math inline">\(\mathfrak{M}\)</span> of subsets of <span
+class="math inline">\(X\)</span> (which are called measurable sets) and
+a nonnegative countably additive set function <span
+class="math inline">\(\mu\)</span> (which is called a measure), defined
+on <span class="math inline">\(\mathfrak{M}\)</span>.</p>
+<p>If, in addition, <span class="math inline">\(X \in
+\mathfrak{M}\)</span>, then <span class="math inline">\(X\)</span> is
+said to be a measurable space.</p>
+<p>For instance, we can take <span class="math inline">\(X=R^{p},
+\mathfrak{M}\)</span> the collection of all Lebesguemeasurable subsets
+of <span class="math inline">\(R^{p}\)</span>, and <span
+class="math inline">\(\mu\)</span> Lebesgue measure.</p>
+<p>Or, let <span class="math inline">\(X\)</span> be the set of all
+positive integers, <span class="math inline">\(M i\)</span> the
+collection of all subsets of <span class="math inline">\(X\)</span>, and
+<span class="math inline">\(\mu(E)\)</span> the number of elements of
+<span class="math inline">\(E\)</span>.</p>
+<p>Another example is provided by probability theory, where events may
+be considered as sets, and the probability of the occurrence of events
+is an additive (or countably additive) set function.</p>
+<p>In the following sections we shall always deal with measurable
+spaces. It should be emphasized that the integration theory which we
+shall soon discuss would not become simpler in any respect if we
+sacrificed the generality we have now attained and restricted ourselves
+to Lebesgue measure, say, on an interval of the real line. In fact, the
+essential features of the theory are brought out with much greater
+clarity in the more general situation, where it is seen that everything
+depends only on the countable additivity of <span
+class="math inline">\(\mu\)</span> on a <span
+class="math inline">\(\sigma\)</span>-ring.</p>
+<p>It will be convenient to introduce the notation</p>
+<p><span class="math display">\[
+\{x \mid P\}
+\]</span></p>
+<p>for the set of all elements <span class="math inline">\(x\)</span>
+which have the property <span class="math inline">\(P\)</span>.</p>
+<p>11.13 Definition Let <span class="math inline">\(f\)</span> be a
+function defined on the measurable space <span
+class="math inline">\(X\)</span>, with values in the extended real
+number system. The function <span class="math inline">\(f\)</span> is
+said to be measurable if the set</p>
+<p><span class="math display">\[
+\{x \mid f(x)&gt;a\}
+\]</span></p>
+<p>is measurable for every real <span
+class="math inline">\(a\)</span>.</p>
+<p>11.14 Example If <span class="math inline">\(X=R^{p}\)</span> and
+<span class="math inline">\(\mathfrak{M}=\mathfrak{M}(\mu)\)</span> as
+defined in Definition 11.9, every continuous <span
+class="math inline">\(f\)</span> is measurable, since then (42) is an
+open set. 11.15 Theorem Each of the following four conditions implies
+the other three:</p>
+<p><span class="math display">\[
+\begin{aligned}
+&amp;\{x \mid f(x)&gt;a\} \text { is measurable for every real } a . \\
+&amp;\{x \mid f(x) \geq a\} \text { is measurable for every real } a .
+\\
+&amp;\{x \mid f(x)&lt;a\} \text { is measurable for every real a. } \\
+&amp;\{x \mid f(x) \leq a\} \text { is measurable for every real } a .
+\end{aligned}
+\]</span></p>
+<p>Proof The relations</p>
+<p><span class="math display">\[
+\begin{aligned}
+&amp;\{x \mid f(x) \geq a\}=\bigcap_{n=1}^{\infty}\left\{x \mid
+f(x)&gt;a-\frac{1}{n}\right\} \\
+&amp;\{x \mid f(x)&lt;a\}=X-\{x \mid f(x) \geq a\} \\
+&amp;\{x \mid f(x) \leq a\}=\bigcap_{n=1}^{\infty}\left\{x \mid
+f(x)&lt;a+\frac{1}{n}\right\} \\
+&amp;\{x \mid f(x)&gt;a\}=X-\{x \mid f(x) \leq a\}
+\end{aligned}
+\]</span></p>
+<p>show successively that (43) implies (44), (44) implies (45), (45)
+implies (46), and (46) implies (43).</p>
+<p>Hence any of these conditions may be used instead of (42) to define
+measurability.</p>
+<p><span class="math display">\[
+\{x|| f(x) \mid&lt;a\}=\{x \mid f(x)&lt;a\} \cap\{x \mid f(x)&gt;-a\} .
+\]</span></p>
+<p>11.17 Theorem Let <span
+class="math inline">\(\left\{f_{n}\right\}\)</span> be a sequence of
+measurable functions. For <span class="math inline">\(x \in X\)</span>,
+put</p>
+<p><span class="math display">\[
+\begin{aligned}
+&amp;g(x)=\sup _{n}(x) \quad(n=1,2,3, \ldots), \\
+&amp;h(x)=\limsup _{n \rightarrow \infty} f_{n}(x) .
+\end{aligned}
+\]</span></p>
+<p>Then <span class="math inline">\(g\)</span> and <span
+class="math inline">\(h\)</span> are measurable.</p>
+<p>The same is of course true of the inf and lim inf.</p>
+<p><span class="math display">\[
+\begin{aligned}
+\{x \mid g(x)&gt;a\} &amp;=\bigcup_{n=1}^{\infty}\left\{x \mid
+f_{n}(x)&gt;a\right\}, \\
+h(x) &amp;=\inf g_{m}(x),
+\end{aligned}
+\]</span></p>
+<p>where <span class="math inline">\(g_{m}(x)=\sup f_{n}(x)(n \geq
+m)\)</span>.</p>
+<ol type="a">
+<li>Iff and <span class="math inline">\(g\)</span> are measurable, then
+<span class="math inline">\(\max (f, g)\)</span> and <span
+class="math inline">\(\min (f, g)\)</span> are measurable. If</li>
+</ol>
+<p><span class="math display">\[
+f^{+}=\max (f, 0), \quad f^{-}=-\min (f, 0),
+\]</span></p>
+<p>it follows, in particular, that <span
+class="math inline">\(f^{+}\)</span>and <span
+class="math inline">\(f^{-}\)</span>are measurable.</p>
+<ol start="2" type="a">
+<li>The limit of a convergent sequence of measurable functions is
+measurable.</li>
+</ol>
+<p>11.18 Theorem Let <span class="math inline">\(f\)</span> and <span
+class="math inline">\(g\)</span> be measurable real-valued functions
+defined on <span class="math inline">\(X\)</span>, let <span
+class="math inline">\(F\)</span> be real and continuous on <span
+class="math inline">\(R^{2}\)</span>, and put</p>
+<p><span class="math display">\[
+h(x)=F(f(x), g(x)) \quad(x \in X) .
+\]</span></p>
+<p>Then <span class="math inline">\(h\)</span> is measurable.</p>
+<p>In particular, <span class="math inline">\(f+g\)</span> and <span
+class="math inline">\(f g\)</span> are measurable.</p>
+<p>Proof Let</p>
+<p><span class="math display">\[
+G_{a}=\{(u, v) \mid F(u, v)&gt;a\} .
+\]</span></p>
+<p>Then <span class="math inline">\(G_{a}\)</span> is an open subset of
+<span class="math inline">\(R^{2}\)</span>, and we can write</p>
+<p><span class="math display">\[
+G_{a}=\bigcup_{n=1}^{\infty} I_{n},
+\]</span></p>
+<p>where <span class="math inline">\(\left\{I_{n}\right\}\)</span> is a
+sequence of open intervals:</p>
+<p><span class="math display">\[
+I_{n}=\left\{(u, v) \mid a_{n}&lt;u&lt;b_{n},
+c_{n}&lt;v&lt;d_{n}\right\} .
+\]</span></p>
+<p>Since</p>
+<p><span class="math display">\[
+\left\{x \mid a_{n}&lt;f(x)&lt;b_{n}\right\}=\left\{x \mid
+f(x)&gt;a_{n}\right\} \cap\left\{x \mid f(x)&lt;b_{n}\right\}
+\]</span></p>
+<p>is measurable, it follows that the set</p>
+<p><span class="math display">\[
+\left\{x \mid(f(x), g(x)) \in I_{n}\right\}=\left\{x \mid
+a_{n}&lt;f(x)&lt;b_{n}\right\} \cap\left\{x \mid
+c_{n}&lt;g(x)&lt;d_{n}\right\}
+\]</span></p>
+<p>is measurable. Hence the same is true of</p>
+<p><span class="math display">\[
+\begin{aligned}
+\{x \mid h(x)&gt;a\} &amp;=\left\{x \mid(f(x), g(x)) \in G_{a}\right\}
+\\
+&amp;=\bigcup_{n=1}^{\infty}\left\{x \mid(f(x), g(x)) \in I_{n}\right\}
+.
+\end{aligned}
+\]</span></p>
+<p>Summing up, we may say that all ordinary operations of analysis,
+including limit operations, when applied to measurable functions, lead
+to measurable functions; in other words, all functions that are
+ordinarily met with are measurable.</p>
+<p>That this is, however, only a rough statement is shown by the
+following example (based on Lebesgue measure, on the real line): If
+<span class="math inline">\(h(x)=f(g(x))\)</span>, where <span
+class="math inline">\(f\)</span> is measurable and <span
+class="math inline">\(g\)</span> is continuous, then <span
+class="math inline">\(h\)</span> is not necessarily measurable. (For the
+details, we refer to McShane, page 241.)</p>
+<p>The reader may have noticed that measure has not been mentioned in
+our discussion of measurable functions. In fact, the class of measurable
+functions on <span class="math inline">\(X\)</span> depends only on the
+<span class="math inline">\(\sigma\)</span>-ring <span
+class="math inline">\(\mathfrak{M}\)</span> (using the notation of
+Definition 11.12). For instance, we may speak of Borel-measurable
+functions on <span class="math inline">\(R^{p}\)</span>, that is, of
+function <span class="math inline">\(f\)</span> for which</p>
+<p><span class="math display">\[
+\{x \mid f(x)&gt;a\}
+\]</span></p>
+<p>is always a Borel set, without reference to any particular
+measure.</p>
+<p>11.19 Definition Let <span class="math inline">\(s\)</span> be a
+real-valued function defined on <span class="math inline">\(X\)</span>.
+If the range of <span class="math inline">\(s\)</span> is finite, we say
+that <span class="math inline">\(s\)</span> is a simple function.</p>
+<p>Let <span class="math inline">\(E \subset X\)</span>, and put</p>
+<p><span class="math display">\[
+K_{E}(x)= \begin{cases}1 &amp; (x \in E), \\ 0 &amp; (x \notin E)
+.\end{cases}
+\]</span></p>
+<p><span class="math inline">\(K_{E}\)</span> is called the
+characteristic function of <span class="math inline">\(E\)</span>.</p>
+<p>Suppose the range of <span class="math inline">\(s\)</span> consists
+of the distinct numbers <span class="math inline">\(c_{1}, \ldots,
+c_{n}\)</span>. Let</p>
+<p><span class="math display">\[
+E_{i}=\left\{x \mid s(x)=c_{i}\right\} \quad(i=1, \ldots, n) .
+\]</span></p>
+<p>Then</p>
+<p><span class="math display">\[
+s=\sum_{n=1}^{n} c_{i} K_{E_{i}},
+\]</span></p>
+<p>that is, every simple function is a finite linear combination of
+characteristic functions. It is clear that <span
+class="math inline">\(s\)</span> is measurable if and only if the sets
+<span class="math inline">\(E_{1}, \ldots, E_{n}\)</span> are
+measurable.</p>
+<p>It is of interest that every function can be approximated by simple
+functions:</p>
+<p>11.20 Theorem Let <span class="math inline">\(f\)</span> be a real
+function on <span class="math inline">\(X\)</span>. There exists a
+sequence <span class="math inline">\(\left\{s_{n}\right\}\)</span> of
+simple functions such that <span class="math inline">\(s_{n}(x)
+\rightarrow f(x)\)</span> as <span class="math inline">\(n \rightarrow
+\infty\)</span>, for every <span class="math inline">\(x \in X\)</span>.
+If <span class="math inline">\(f\)</span> is measurable, <span
+class="math inline">\(\left\{s_{n}\right\}\)</span> may be chosen to be
+a sequence of measurable functions. If <span class="math inline">\(f
+\geq 0,\left\{s_{n}\right\}\)</span> may be chosen to be a monotonically
+increasing sequence.</p>
+<p>Proof If <span class="math inline">\(f \geq 0\)</span>, define</p>
+<p><span class="math display">\[
+E_{n i}=\left\{x \mid \frac{i-1}{2^{n}} \leq
+f(x)&lt;\frac{i}{2^{n}}\right\}, \quad F_{n}=\{x \mid f(x) \geq n\}
+\]</span></p>
+<p>for <span class="math inline">\(n=1,2,3, \ldots, i=1,2, \ldots, n
+2^{n}\)</span>. Put</p>
+<p><span class="math display">\[
+s_{n}=\sum_{i=1}^{n 2^{n}} \frac{i-1}{2^{n}} K_{E_{n i}}+n K_{F_{n}} .
+\]</span></p>
+<p>In the general case, let <span
+class="math inline">\(f=f^{+}-f^{-}\)</span>, and apply the preceding
+construction to <span class="math inline">\(f^{+}\)</span>and to <span
+class="math inline">\(f^{-}\)</span>.</p>
+<p>It may be noted that the sequence <span
+class="math inline">\(\left\{s_{n}\right\}\)</span> given by (50)
+converges uniformly to <span class="math inline">\(f\)</span> if <span
+class="math inline">\(f\)</span> is bounded.</p>
+<p>We shall define integration on a measurable space <span
+class="math inline">\(X\)</span>, in which <span
+class="math inline">\(\mathfrak{M}\)</span> is the <span
+class="math inline">\(\sigma\)</span>-ring of measurable sets, and <span
+class="math inline">\(\mu\)</span> is the measure. The reader who wishes
+to visualize a more concrete situation may think of <span
+class="math inline">\(X\)</span> as the real line, or an interval, and
+of <span class="math inline">\(\mu\)</span> as the Lebesgue measure
+<span class="math inline">\(m\)</span>.</p>
+<p><span class="math display">\[
+s(x)=\sum_{i=1}^{n} c_{i} K_{E_{i}}(x) \quad\left(x \in X,
+c_{i}&gt;0\right)
+\]</span></p>
+<p>is measurable, and suppose <span class="math inline">\(E \in
+\mathfrak{M}\)</span>. We define</p>
+<p><span class="math display">\[
+I_{E}(s)=\sum_{i=1}^{n} c_{i} \mu\left(E \cap E_{i}\right) .
+\]</span></p>
+<p>If <span class="math inline">\(f\)</span> is measurable and
+nonnegative, we define</p>
+<p><span class="math display">\[
+\int_{E} f d \mu=\sup I_{E}(s),
+\]</span></p>
+<p>where the sup is taken over all measurable simple functions <span
+class="math inline">\(s\)</span> such that <span class="math inline">\(0
+\leq s \leq f\)</span>.</p>
+<p>The left member of (53) is called the Lebesgue integral of <span
+class="math inline">\(f\)</span>, with respect to the measure <span
+class="math inline">\(\mu\)</span>, over the set <span
+class="math inline">\(E\)</span>. It should be noted that the integral
+may have the value <span class="math inline">\(+\infty\)</span></p>
+<p>It is easily verified that</p>
+<p><span class="math display">\[
+\int_{E} s d \mu=I_{E}(s)
+\]</span></p>
+<p>for every nonnegative simple measurable function <span
+class="math inline">\(s\)</span>.</p>
+<p>11.22 Definition Let <span class="math inline">\(f\)</span> be
+measurable, and consider the two integrals</p>
+<p><span class="math display">\[
+\int_{E} f^{+} d \mu, \quad \int_{E} f^{-} d \mu,
+\]</span></p>
+<p>where <span class="math inline">\(f^{+}\)</span>and <span
+class="math inline">\(f^{-}\)</span>are defined as in (47). If at least
+one of the integrals (55) is finite, we define</p>
+<p><span class="math display">\[
+\int_{\boldsymbol{E}} f d \mu=\int_{\boldsymbol{E}} f^{+} d
+\mu-\int_{\boldsymbol{E}} f^{-} d \mu .
+\]</span></p>
+<p>If both integrals in (55) are finite, then (56) is finite, and we say
+that <span class="math inline">\(f\)</span> is integrable (or summable)
+on <span class="math inline">\(E\)</span> in the Lebesgue sense, with
+respect to <span class="math inline">\(\mu\)</span>; we write <span
+class="math inline">\(f \in \mathscr{L}(\mu)\)</span> on <span
+class="math inline">\(E\)</span>. If <span
+class="math inline">\(\mu=m\)</span>, the usual notation is: <span
+class="math inline">\(f \in \mathscr{L}\)</span> on <span
+class="math inline">\(E\)</span>.</p>
+<p>This terminology may be a little confusing: If (56) is <span
+class="math inline">\(+\infty\)</span> or <span
+class="math inline">\(-\infty\)</span>, then the integral of <span
+class="math inline">\(f\)</span> over <span
+class="math inline">\(E\)</span> is defined, although <span
+class="math inline">\(f\)</span> is not integrable in the above sense of
+the word; <span class="math inline">\(f\)</span> is integrable on <span
+class="math inline">\(E\)</span> only if its integral over <span
+class="math inline">\(E\)</span> is finite.</p>
+<p>We shall be mainly interested in integrable functions, although in
+some cases it is desirable to deal with the more general situation.</p>
+<p>11.23 Remarks The following properties are evident:</p>
+<ol type="a">
+<li><p>If <span class="math inline">\(f\)</span> is measurable and
+bounded on <span class="math inline">\(E\)</span>, and if <span
+class="math inline">\(\mu(E)&lt;+\infty\)</span>, then <span
+class="math inline">\(f \in \mathscr{L}(\mu)\)</span> on <span
+class="math inline">\(E\)</span></p></li>
+<li><p>If <span class="math inline">\(a \leq f(x) \leq b\)</span> for
+<span class="math inline">\(x \in E\)</span>, and <span
+class="math inline">\(\mu(E)&lt;+\infty\)</span>, then</p></li>
+</ol>
+<p><span class="math display">\[
+a \mu(E) \leq \int_{E} f d \mu \leq b \mu(E)
+\]</span></p>
+<ol start="3" type="a">
+<li>If <span class="math inline">\(f\)</span> and <span
+class="math inline">\(g \in \mathscr{L}(\mu)\)</span> on <span
+class="math inline">\(E\)</span>, and if <span
+class="math inline">\(f(x) \leq g(x)\)</span> for <span
+class="math inline">\(x \in E\)</span>, then</li>
+</ol>
+<p><span class="math display">\[
+\int_{E} f d \mu \leq \int_{E} g d \mu .
+\]</span></p>
+<ol start="4" type="a">
+<li>If <span class="math inline">\(f \in \mathscr{L}(\mu)\)</span> on
+<span class="math inline">\(E\)</span>, then <span
+class="math inline">\(c f \in \mathscr{L}(\mu)\)</span> on <span
+class="math inline">\(E\)</span>, for every finite constant <span
+class="math inline">\(c\)</span>, and</li>
+</ol>
+<p><span class="math display">\[
+\int_{E} c f d \mu=c \int_{E} f d \mu .
+\]</span></p>
+<ol start="5" type="a">
+<li>If <span class="math inline">\(\mu(E)=0\)</span>, and <span
+class="math inline">\(f\)</span> is measurable, then</li>
+</ol>
+<p><span class="math display">\[
+\int_{E} f d \mu=0 .
+\]</span></p>
+<ol start="6" type="a">
+<li>If <span class="math inline">\(f \in \mathscr{L}(\mu)\)</span> on
+<span class="math inline">\(E, A \in \mathfrak{P}\)</span>, and <span
+class="math inline">\(A \subset E\)</span>, then <span
+class="math inline">\(f \in \mathscr{L}(\mu)\)</span> on <span
+class="math inline">\(A\)</span>.</li>
+</ol>
+<ol type="a">
+<li>Suppose <span class="math inline">\(f\)</span> is measurable and
+nonnegative on <span class="math inline">\(X\)</span>. For <span
+class="math inline">\(A \in \mathfrak{M}\)</span>, define</li>
+</ol>
+<p><span class="math display">\[
+\phi(A)=\int_{A} f d \mu .
+\]</span></p>
+<p>Then <span class="math inline">\(\phi\)</span> is countably additive
+on <span class="math inline">\(\mathfrak{M}\)</span>.</p>
+<ol start="2" type="a">
+<li>The same conclusion holds if <span class="math inline">\(f \in
+\mathscr{L}(\mu)\)</span> on <span
+class="math inline">\(X\)</span>.</li>
+</ol>
+<p>Proof It is clear that <span class="math inline">\((b)\)</span>
+follows from <span class="math inline">\((a)\)</span> if we write <span
+class="math inline">\(f=f^{+}-f^{-}\)</span>and apply (a) to <span
+class="math inline">\(f^{+}\)</span>and to <span
+class="math inline">\(f^{-}\)</span>.</p>
+<p>To prove <span class="math inline">\((a)\)</span>, we have to show
+that</p>
+<p><span class="math display">\[
+\phi(A)=\sum_{n=1}^{\infty} \phi\left(A_{n}\right)
+\]</span></p>
+<p>if <span class="math inline">\(A_{n} \in \mathfrak{M}(n=1,2,3,
+\ldots), A_{i} \cap A_{j}=0\)</span> for <span class="math inline">\(i
+\neq j\)</span>, and <span class="math inline">\(A=\bigcup_{1}^{\infty}
+A_{n}\)</span>.</p>
+<p>If <span class="math inline">\(f\)</span> is a characteristic
+function, then the countable additivity of <span
+class="math inline">\(\phi\)</span> is precisely the same as the
+countable additivity of <span class="math inline">\(\mu\)</span>,
+since</p>
+<p><span class="math display">\[
+\int_{A} K_{E} d \mu=\mu(A \cap E) .
+\]</span> holds.</p>
+<p>If <span class="math inline">\(f\)</span> is simple, then <span
+class="math inline">\(f\)</span> is of the form (51), and the conclusion
+again</p>
+<p>In the general case, we have, for every measurable simple function
+<span class="math inline">\(s\)</span> such that <span
+class="math inline">\(0 \leq s \leq f\)</span></p>
+<p><span class="math display">\[
+\int_{A} s d \mu=\sum_{n=1}^{\infty} \int_{A_{n}} s d \mu \leq
+\sum_{n=1}^{\infty} \phi\left(A_{n}\right)
+\]</span></p>
+<p>Therefore, by (53),</p>
+<p><span class="math display">\[
+\phi(A) \leq \sum_{n=1}^{\infty} \phi\left(A_{n}\right)
+\]</span></p>
+<p>Now if <span
+class="math inline">\(\phi\left(A_{n}\right)=+\infty\)</span> for some
+<span class="math inline">\(n\)</span>, (58) is trivial, since <span
+class="math inline">\(\phi(A) \geq \phi\left(A_{n}\right)\)</span>.
+Suppose <span
+class="math inline">\(\phi\left(A_{n}\right)&lt;+\infty\)</span> for
+every <span class="math inline">\(n\)</span>.</p>
+<p>Given <span class="math inline">\(\varepsilon&gt;0\)</span>, we can
+choose a measurable function <span class="math inline">\(s\)</span> such
+that <span class="math inline">\(0 \leq s \leq f\)</span>, and such
+that</p>
+<p><span class="math display">\[
+\int_{A_{1}} s d \mu \geq \int_{A_{1}} f d \mu-\varepsilon, \quad
+\int_{A_{2}} s d \mu \geq \int_{A_{2}} f d \mu-\varepsilon .
+\]</span></p>
+<p>Hence</p>
+<p><span class="math display">\[
+\phi\left(A_{1} \cup A_{2}\right) \geq \int_{A_{1} \cup A_{2}} s d
+\mu=\int_{A_{1}} s d \mu+\int_{A_{2}} s d \mu \geq
+\phi\left(A_{1}\right)+\phi\left(A_{2}\right)-2 \varepsilon,
+\]</span></p>
+<p>so that</p>
+<p><span class="math display">\[
+\phi\left(A_{1} \cup A_{2}\right) \geq
+\phi\left(A_{1}\right)+\phi\left(A_{2}\right)
+\]</span></p>
+<p>It follows that we have, for every <span
+class="math inline">\(n\)</span>,</p>
+<p><span class="math display">\[
+\phi\left(A_{1} \cup \cdots \cup A_{n}\right) \geq
+\phi\left(A_{1}\right)+\cdots+\phi\left(A_{n}\right) \text {. }
+\]</span></p>
+<p>Since <span class="math inline">\(A \supset A_{1} \cup \cdots \cup
+A_{n}\)</span>, (61) implies</p>
+<p><span class="math display">\[
+\phi(A) \geq \sum_{n=1}^{\infty} \phi\left(A_{n}\right)
+\]</span></p>
+<p>and (58) follows from (59) and (62).</p>
+<p>Corollary If <span class="math inline">\(A \in \mathfrak{M}, B \in
+\mathfrak{M}, B \subset A\)</span>, and <span
+class="math inline">\(\mu(A-B)=0\)</span>, then</p>
+<p><span class="math display">\[
+\int_{\boldsymbol{A}} f d \mu=\int_{\boldsymbol{B}} f d \mu .
+\]</span></p>
+<p>Since <span class="math inline">\(A=B \cup(A-B)\)</span>, this
+follows from Remark 11.23(e).</p>
+<p>11.25 Remarks The preceding corollary shows that sets of ineasure
+zero are negligible in integration.</p>
+<p>Let us write <span class="math inline">\(f \sim g\)</span> on <span
+class="math inline">\(E\)</span> if the set</p>
+<p><span class="math display">\[
+\{x \mid f(x) \neq g(x)\} \cap E
+\]</span></p>
+<p>has measure zero.</p>
+<p>Then <span class="math inline">\(f \sim f ; f \sim g\)</span> implies
+<span class="math inline">\(g \sim f ;\)</span> and <span
+class="math inline">\(f \sim g, g \sim h\)</span> implies <span
+class="math inline">\(f \sim h\)</span>. That is, the relation <span
+class="math inline">\(\sim\)</span> is an equivalence relation.</p>
+<p>If <span class="math inline">\(f \sim g\)</span> on <span
+class="math inline">\(E\)</span>, we clearly have</p>
+<p><span class="math display">\[
+\int_{A} f d \mu=\int_{A} g d \mu
+\]</span></p>
+<p>provided the integrals exist, for every measurable subset <span
+class="math inline">\(A\)</span> of <span
+class="math inline">\(E\)</span>.</p>
+<p>If a property <span class="math inline">\(P\)</span> holds for every
+<span class="math inline">\(x \in E-A\)</span>, and if <span
+class="math inline">\(\mu(A)=0\)</span>, it is customary to say that
+<span class="math inline">\(P\)</span> holds for almost all <span
+class="math inline">\(x \in E\)</span>, or that <span
+class="math inline">\(P\)</span> holds almost everywhere on <span
+class="math inline">\(E\)</span>. (This concept of “almost everywhere”
+depends of course on the particular measure under consideration. In the
+literature, unless something is said to the contrary, it usually refers
+to Lebesgue measure.)</p>
+<p>If <span class="math inline">\(f \in \mathscr{L}(\mu)\)</span> on
+<span class="math inline">\(E\)</span>, it is clear that <span
+class="math inline">\(f(x)\)</span> must be finite almost everywhere on
+<span class="math inline">\(E\)</span>. In most cases we therefore do
+not lose any generality if we assume the given functions to be
+finite-valued from the outset.</p>
+<p>11.26 Theorem Iff <span class="math inline">\(\in
+\mathscr{L}(\mu)\)</span> on <span class="math inline">\(E\)</span>,
+then <span class="math inline">\(|f| \in \mathscr{L}(\mu)\)</span> on
+<span class="math inline">\(E\)</span>, and</p>
+<p><span class="math display">\[
+\left|\int_{E} f d \mu\right| \leq \int_{E}|f| d \mu .
+\]</span></p>
+<p>Proof Write <span class="math inline">\(E=A \cup B\)</span>, where
+<span class="math inline">\(f(x) \geq 0\)</span> on <span
+class="math inline">\(A\)</span> and <span
+class="math inline">\(f(x)&lt;0\)</span> on <span
+class="math inline">\(B\)</span>. By Theorem 11.24,</p>
+<p><span class="math display">\[
+\int_{E}|f| d \mu=\int_{A}|f| d \mu+\int_{B}|f| d \mu=\int_{A} f^{+} d
+\mu+\int_{B} f^{-} d \mu&lt;+\infty
+\]</span></p>
+<p>so that <span class="math inline">\(|f| \in
+\mathscr{L}(\mu)\)</span>. Since <span class="math inline">\(f
+\leq|f|\)</span> and <span class="math inline">\(-f \leq|f|\)</span>, we
+see that</p>
+<p><span class="math display">\[
+\int_{E} f d \mu \leq \int_{E}|f| d \mu, \quad-\int_{E} f d \mu \leq
+\int_{E}|f| d \mu,
+\]</span></p>
+<p>and <span class="math inline">\((63)\)</span> follows.</p>
+<p>Since the integrability of <span class="math inline">\(f\)</span>
+implies that of <span class="math inline">\(|f|\)</span>, the Lebesgue
+integral is often called an absolutely convergent integral. It is of
+course possible to define nonabsolutely convergent integrals, and in the
+treatment of some problems it is essential to do so. But these integrals
+lack some of the most useful properties of the Lebesgue integral and
+play a somewhat less important role in analysis.</p>
+<p>11.27 Theorem Suppose <span class="math inline">\(f\)</span> is
+measurable on <span class="math inline">\(E,|f| \leq g\)</span>, and
+<span class="math inline">\(g \in \mathscr{L}(\mu)\)</span> on <span
+class="math inline">\(E\)</span>. Then <span class="math inline">\(f \in
+\mathscr{L}(\mu)\)</span> on <span class="math inline">\(E\)</span>.</p>
+<p>Proof We have <span class="math inline">\(f^{+} \leq g\)</span> and
+<span class="math inline">\(f^{-} \leq g\)</span>.</p>
+<p>11.28 Lebesgue’s monotone convergence theorem Suppose <span
+class="math inline">\(E \in \mathfrak{M}\)</span>. Let <span
+class="math inline">\(\left\{f_{n}\right\}\)</span> be a sequence of
+measurable functions such that</p>
+<p><span class="math display">\[
+0 \leq f_{1}(x) \leq f_{2}(x) \leq \cdots \quad(x \in E) .
+\]</span></p>
+<p>Let <span class="math inline">\(f\)</span> be defined by</p>
+<p><span class="math display">\[
+f_{n}(x) \rightarrow f(x) \quad(x \in E)
+\]</span></p>
+<p>as <span class="math inline">\(n \rightarrow \infty\)</span>.
+Then</p>
+<p><span class="math display">\[
+\int_{E} f_{n} d \mu \rightarrow \int_{E} f d \mu \quad(n \rightarrow
+\infty) .
+\]</span></p>
+<p>Proof By (64) it is clear that, as <span class="math inline">\(n
+\rightarrow \infty\)</span>,</p>
+<p><span class="math display">\[
+\int_{E} f_{n} d \mu \rightarrow \alpha
+\]</span></p>
+<p>for some <span class="math inline">\(\alpha\)</span>; and since <span
+class="math inline">\(\int f_{n} \leq \int f\)</span>, we have</p>
+<p><span class="math display">\[
+\alpha \leq \int_{E} f d \mu .
+\]</span></p>
+<p>Choose <span class="math inline">\(c\)</span> such that <span
+class="math inline">\(0&lt;c&lt;1\)</span>, and let <span
+class="math inline">\(s\)</span> be a simple measurable function such
+that <span class="math inline">\(0 \leq s \leq f\)</span>. Put</p>
+<p><span class="math display">\[
+E_{n}=\left\{x \mid f_{n}(x) \geq c s(x)\right\} \quad(n=1,2,3, \ldots)
+\text {. }
+\]</span></p>
+<p>By (64), <span class="math inline">\(E_{1} \subset E_{2} \subset
+E_{3} \subset \cdots ;\)</span> and by (65),</p>
+<p><span class="math display">\[
+E=\bigcup_{n=1}^{\infty} E_{n} \text {. }
+\]</span></p>
+<p>For every <span class="math inline">\(n\)</span>,</p>
+<p><span class="math display">\[
+\int_{E} f_{n} d \mu \geq \int_{E_{n}} f_{n} d \mu \geq c \int_{E_{n}} s
+d \mu .
+\]</span></p>
+<p>We let <span class="math inline">\(n \rightarrow \infty\)</span> in
+(70). Since the integral is a countably additive set function (Theorem
+11.24), (69) shows that we may apply Theorem <span
+class="math inline">\(11.3\)</span> to the last integral in (70), and we
+obtain</p>
+<p><span class="math display">\[
+\alpha \geq c \int_{E} s d \mu
+\]</span></p>
+<p>Letting <span class="math inline">\(c \rightarrow 1\)</span>, we see
+that</p>
+<p><span class="math display">\[
+\alpha \geq \int_{E} s d \mu
+\]</span></p>
+<p>and (53) implies</p>
+<p><span class="math display">\[
+\alpha \geq \int_{E} f d \mu .
+\]</span></p>
+<p>The theorem follows from (67), (68), and (72).</p>
+<p>11.29 Theorem Suppose <span
+class="math inline">\(f=f_{1}+f_{2}\)</span>, where <span
+class="math inline">\(f_{i} \in \mathscr{L}(\mu)\)</span> on <span
+class="math inline">\(E(i=1,2)\)</span>. Then <span
+class="math inline">\(f \in \mathscr{L}(\mu)\)</span> on <span
+class="math inline">\(E\)</span>, and</p>
+<p><span class="math display">\[
+\int_{E} f d \mu=\int_{E} f_{1} d \mu+\int_{E} f_{2} d \mu .
+\]</span></p>
+<p>Proof First, suppose <span class="math inline">\(f_{1} \geq 0, f_{2}
+\geq 0\)</span>. If <span class="math inline">\(f_{1}\)</span> and <span
+class="math inline">\(f_{2}\)</span> are simple, (73) follows trivially
+from (52) and (54). Otherwise, choose monotonically increasing sequences
+<span
+class="math inline">\(\left\{s_{n}^{\prime}\right\},\left\{s_{n}^{\prime
+\prime}\right\}\)</span> of nonnegative measurable simple functions
+which converge to <span class="math inline">\(f_{1}, f_{2}\)</span>.
+Theorem <span class="math inline">\(11.20\)</span> shows that this is
+possible. Put <span
+class="math inline">\(s_{n}=s_{n}^{\prime}+s_{n}^{\prime
+\prime}\)</span>. Then</p>
+<p><span class="math display">\[
+\int_{E} s_{n} d \mu=\int_{E} s_{n}^{\prime} d \mu+\int_{E}
+s_{n}^{\prime \prime} d \mu,
+\]</span></p>
+<p>and (73) follows if we let <span class="math inline">\(n \rightarrow
+\infty\)</span> and appeal to Theorem 11.28. Next, suppose <span
+class="math inline">\(f_{1} \geq 0, f_{2} \leq 0\)</span>. Put</p>
+<p><span class="math display">\[
+A=\{x \mid f(x) \geq 0\}, \quad B=\{x \mid f(x)&lt;0\} .
+\]</span></p>
+<p>Then <span class="math inline">\(f, f_{1}\)</span>, and <span
+class="math inline">\(-f_{2}\)</span> are nonnegative on <span
+class="math inline">\(A\)</span>. Hence</p>
+<p><span class="math display">\[
+\int_{A} f_{1} d \mu=\int_{A} f d \mu+\int_{A}\left(-f_{2}\right) d
+\mu=\int_{A} f d \mu-\int_{A} f_{2} d \mu .
+\]</span></p>
+<p>Similarly, <span class="math inline">\(-f, f_{1}\)</span>, and <span
+class="math inline">\(-f_{2}\)</span> are nonnegative on <span
+class="math inline">\(B\)</span>, so that</p>
+<p><span class="math display">\[
+\int_{B}\left(-f_{2}\right) d \mu=\int_{B} f_{1} d \mu+\int_{B}(-f) d
+\mu,
+\]</span></p>
+<p>or</p>
+<p><span class="math display">\[
+\int_{B} f_{1} d \mu=\int_{B} f d \mu-\int_{B} f_{2} d \mu,
+\]</span></p>
+<p>and (73) follows if we add (74) and (75).</p>
+<p>In the general case, <span class="math inline">\(E\)</span> can be
+decomposed into four sets <span class="math inline">\(E_{i}\)</span> on
+each of which <span class="math inline">\(f_{1}(x)\)</span> and <span
+class="math inline">\(f_{2}(x)\)</span> are of constant sign. The two
+cases we have proved so far imply</p>
+<p><span class="math display">\[
+\int_{E_{i}} f d \mu=\int_{E_{i}} f_{1} d \mu+\int_{E_{i}} f_{2} d \mu
+\quad(i=1,2,3,4),
+\]</span></p>
+<p>and (73) follows by adding these four equations.</p>
+<p>We are now in a position to reformulate Theorem <span
+class="math inline">\(11.28\)</span> for series.</p>
+<p>11.30 Theorem Suppose <span class="math inline">\(E \in
+\mathfrak{M}\)</span>. If <span
+class="math inline">\(\left\{f_{n}\right\}\)</span> is a sequence of
+nonnegative measurable functions and</p>
+<p><span class="math display">\[
+f(x)=\sum_{n=1}^{\infty} f_{n}(x) \quad(x \in E),
+\]</span></p>
+<p>then</p>
+<p><span class="math display">\[
+\int_{E} f d \mu=\sum_{n=1}^{\infty} \int_{E} f_{n} d \mu .
+\]</span></p>
+<p>Proof The partial sums of (76) form a monotonically increasing
+sequence.</p>
+<p>11.31 Fatou’s theorem Suppose <span class="math inline">\(E \in
+\mathfrak{M}\)</span>. If <span
+class="math inline">\(\left\{f_{n}\right\}\)</span> is a sequence of
+nonnegative measurable functions and</p>
+<p><span class="math display">\[
+f(x)=\liminf _{n \rightarrow \infty} f_{n}(x) \quad(x \in E),
+\]</span></p>
+<p>then</p>
+<p><span class="math display">\[
+\int_{E} f d \mu \leq \liminf _{n \rightarrow \infty} \int_{E} f_{n} d
+\mu
+\]</span></p>
+<p>Strict inequality may hold in (77). An example is given in Exercise
+<span class="math inline">\(5 .\)</span></p>
+<p>Proof For <span class="math inline">\(n=1,2,3, \ldots\)</span> and
+<span class="math inline">\(x \in E\)</span>, put</p>
+<p><span class="math display">\[
+g_{n}(x)=\inf f_{i}(x) \quad(i \geq n) .
+\]</span></p>
+<p>Then <span class="math inline">\(g_{n}\)</span> is measurable on
+<span class="math inline">\(E\)</span>, and</p>
+<p><span class="math display">\[
+\begin{aligned}
+0 &amp; \leq g_{1}(x) \leq g_{2}(x) \leq \cdots, \\
+g_{n}(x) &amp; \leq f_{n}(x), \\
+g_{n}(x) &amp; \rightarrow f(x) \quad(n \rightarrow \infty) .
+\end{aligned}
+\]</span></p>
+<p>By (78), (80), and Theorem <span
+class="math inline">\(11.28\)</span>,</p>
+<p><span class="math display">\[
+\int_{E} g_{n} d \mu \rightarrow \int_{E} f d \mu,
+\]</span></p>
+<p>so that (77) follows from (79) and (81).</p>
+<p>11.32 Lebesgue’s dominated convergence theorem Suppose <span
+class="math inline">\(E \in \mathfrak{M}\)</span>. Let <span
+class="math inline">\(\left\{f_{n}\right\}\)</span> be a sequence of
+measurable functions such that</p>
+<p><span class="math display">\[
+f_{n}(x) \rightarrow f(x) \quad(x \in E)
+\]</span></p>
+<p>as <span class="math inline">\(n \rightarrow \infty\)</span>. If
+there exists a function <span class="math inline">\(g \in
+\mathscr{L}(\mu)\)</span> on <span class="math inline">\(E\)</span>,
+such that</p>
+<p><span class="math display">\[
+\left|f_{n}(x)\right| \leq g(x) \quad(n=1,2,3, \ldots, x \in E),
+\]</span></p>
+<p>then</p>
+<p><span class="math display">\[
+\lim _{n \rightarrow \infty} \int_{E} f_{n} d \mu=\int_{E} f d \mu .
+\]</span></p>
+<p>Because of <span
+class="math inline">\((83),\left\{f_{n}\right\}\)</span> is said to be
+dominated by <span class="math inline">\(g\)</span>, and we talk about
+dominated convergence. By Remark <span
+class="math inline">\(11.25\)</span>, the conclusion is the same if (82)
+holds almost everywhere on <span class="math inline">\(E\)</span>.</p>
+<p>Proof First, (83) and Theorem <span
+class="math inline">\(11.27\)</span> imply that <span
+class="math inline">\(f_{n} \in \mathscr{L}(\mu)\)</span> and <span
+class="math inline">\(f \in \mathscr{L}(\mu)\)</span> on <span
+class="math inline">\(E\)</span>.</p>
+<p>Since <span class="math inline">\(f_{n}+g \geq 0\)</span>, Fatou’s
+theorem shows that</p>
+<p><span class="math display">\[
+\int_{E}(f+g) d \mu \leq \liminf _{n \rightarrow \infty}
+\int_{E}\left(f_{n}+g\right) d \mu,
+\]</span></p>
+<p>or</p>
+<p><span class="math display">\[
+\int_{E} f d \mu \leq \liminf _{n \rightarrow \infty} \int_{E} f_{n} d
+\mu .
+\]</span></p>
+<p>Since <span class="math inline">\(g-f_{n} \geq 0\)</span>, we see
+similarly that</p>
+<p><span class="math display">\[
+\int_{E}(g-f) d \mu \leq \liminf _{n \rightarrow \infty}
+\int_{E}\left(g-f_{n}\right) d \mu,
+\]</span></p>
+<p>so that</p>
+<p><span class="math display">\[
+-\int_{E} f d \mu \leq \liminf _{n \rightarrow \infty}\left[-\int_{E}
+f_{n} d \mu\right],
+\]</span></p>
+<p>which is the same as</p>
+<p><span class="math display">\[
+\int_{E} f d \mu \geq \lim \sup _{n \rightarrow \infty} \int_{E} f d \mu
+.
+\]</span></p>
+<p>The existence of the limit in (84) and the equality asserted by (84)
+now follow from (85) and (86).</p>
+<p>Corollary If <span
+class="math inline">\(\mu(E)&lt;+\infty,\left\{f_{n}\right\}\)</span> is
+uniformly bounded on <span class="math inline">\(E\)</span>, and <span
+class="math inline">\(f_{n}(x) \rightarrow f(x)\)</span> on <span
+class="math inline">\(E\)</span>, then (84) holds.</p>
+<p>A uniformly bounded convergent sequence is often said to be boundedly
+convergent.</p>
+<p>Our next theorem will show that every function which is
+Riemann-integrable on an interval is also Lebesgue-integrable, and that
+Riemann-integrable functions are subject to rather stringent continuity
+conditions. Quite apart from the fact that the Lebesgue theory therefore
+enables us to integrate a much larger class of functions, its greatest
+advantage lies perhaps in the ease with which many limit operations can
+be handled; from this point of view, Lebesgue’s convergence theorems may
+well be regarded as the core of the Lebesgue theory.</p>
+<p>One of the difficulties which is encountered in the Riemann theory is
+that limits of Riemann-integrable functions (or even continuous
+functions) may fail to be Riemann-integrable. This difficulty is now
+almost eliminated, since limits of measurable functions are always
+measurable.</p>
+<p>Let the measure space <span class="math inline">\(X\)</span> be the
+interval <span class="math inline">\([a, b]\)</span> of the real line,
+with <span class="math inline">\(\mu=m\)</span> (the Lebesgue measure),
+and <span class="math inline">\(\mathfrak{M}\)</span> the family of
+Lebesgue-measurable subsets of <span class="math inline">\([a,
+b]\)</span>. Instead of</p>
+<p><span class="math display">\[
+\int_{X} f d m
+\]</span></p>
+<p>it is customary to use the familiar notation</p>
+<p><span class="math display">\[
+\int_{a}^{b} f d x
+\]</span></p>
+<p>for the Lebesgue integral of <span class="math inline">\(f\)</span>
+over <span class="math inline">\([a, b]\)</span>. To distinguish Riemann
+integrals from Lebesgue integrals, we shall now denote the former by</p>
+<p><span class="math display">\[
+\mathscr{R} \int_{a}^{b} f d x
+\]</span></p>
+<ol type="a">
+<li>If <span class="math inline">\(f \in \mathscr{R}\)</span> on <span
+class="math inline">\([a, b]\)</span>, then <span
+class="math inline">\(f \in \mathscr{L}\)</span> on <span
+class="math inline">\([a, b]\)</span>, and</li>
+</ol>
+<p><span class="math display">\[
+\int_{a}^{b} f d x=\mathscr{R} \int_{a}^{b} f d x .
+\]</span></p>
+<ol start="2" type="a">
+<li>Suppose <span class="math inline">\(f\)</span> is bounded on <span
+class="math inline">\([a, b]\)</span>. Then <span
+class="math inline">\(f \in \mathscr{R}\)</span> on <span
+class="math inline">\([a, b]\)</span> if and only if <span
+class="math inline">\(f\)</span> is continuous almost everywhere on
+<span class="math inline">\([a, b]\)</span>.</li>
+</ol>
+<p>Proof Suppose <span class="math inline">\(f\)</span> is bounded. By
+Definition <span class="math inline">\(6.1\)</span> and Theorem <span
+class="math inline">\(6.4\)</span> there is a sequence <span
+class="math inline">\(\left\{P_{k}\right\}\)</span> of partitions of
+<span class="math inline">\([a, b]\)</span>, such that <span
+class="math inline">\(P_{k+1}\)</span> is a refinement of <span
+class="math inline">\(P_{k}\)</span>, such that the distance between
+adjacent points of <span class="math inline">\(P_{k}\)</span> is less
+than <span class="math inline">\(1 / k\)</span>, and such that</p>
+<p><span class="math display">\[
+\lim _{k \rightarrow \infty} L\left(P_{k}, f\right)=\mathscr{R}
+\underline{\int} f d x, \quad \lim _{k \rightarrow \infty} U\left(P_{k},
+f\right)=\mathscr{R} \bar{\int} f d x .
+\]</span></p>
+<p>(In this proof, all integrals are taken over <span
+class="math inline">\([a, b]\)</span>.)</p>
+<p>If <span class="math inline">\(P_{k}=\left\{x_{0}, x_{1}, \ldots,
+x_{n}\right\}\)</span>, with <span class="math inline">\(x_{0}=a,
+x_{n}=b\)</span>, define</p>
+<p><span class="math display">\[
+U_{k}(a)=L_{k}(a)=f(a) ;
+\]</span></p>
+<p>put <span class="math inline">\(U_{k}(x)=M_{i}\)</span> and <span
+class="math inline">\(L_{k}(x)=m_{i}\)</span> for <span
+class="math inline">\(x_{i-1}&lt;x \leq x_{i}, 1 \leq i \leq n\)</span>,
+using the notation introduced in Definition 6.1. Then</p>
+<p><span class="math display">\[
+L\left(P_{k}, f\right)=\int L_{k} d x, \quad U\left(P_{k}, f\right)=\int
+U_{k} d x,
+\]</span></p>
+<p>and</p>
+<p><span class="math display">\[
+L_{1}(x) \leq L_{2}(x) \leq \cdots \leq f(x) \leq \cdots \leq U_{2}(x)
+\leq U_{1}(x)
+\]</span></p>
+<p>for all <span class="math inline">\(x \in[a, b]\)</span>, since <span
+class="math inline">\(P_{k+1}\)</span> refines <span
+class="math inline">\(P_{k}\)</span>. By (90), there exist</p>
+<p><span class="math display">\[
+L(x)=\lim _{k \rightarrow \infty} L_{k}(x), \quad U(x)=\lim _{k
+\rightarrow \infty} U_{k}(x) .
+\]</span></p>
+<p>Observe that <span class="math inline">\(L\)</span> and <span
+class="math inline">\(U\)</span> are bounded measurable functions on
+<span class="math inline">\([a, b]\)</span>, that</p>
+<p><span class="math display">\[
+L(x) \leq f(x) \leq U(x) \quad(a \leq x \leq b)
+\]</span></p>
+<p>and that</p>
+<p><span class="math display">\[
+\int L d x=\mathscr{R} \int f d x, \quad \int U d x=\mathscr{R} \int f d
+x
+\]</span></p>
+<p>by <span class="math inline">\((88),(90)\)</span>, and the monotone
+convergence theorem.</p>
+<p>So far, nothing has been assumed about <span
+class="math inline">\(f\)</span> except that <span
+class="math inline">\(f\)</span> is a bounded real function on <span
+class="math inline">\([a, b]\)</span>.</p>
+<p>To complete the proof, note that <span class="math inline">\(f \in
+\mathscr{R}\)</span> if and only if its upper and lower Riemann
+integrals are equal, hence if and only if</p>
+<p><span class="math display">\[
+\int L d x=\int U d x
+\]</span></p>
+<p>since <span class="math inline">\(L \leq U\)</span>, (94) happens if
+and only if <span class="math inline">\(L(x)=U(x)\)</span> for almost
+all <span class="math inline">\(x \in[a, b]\)</span> (Exercise 1).</p>
+<p>In that case, (92) implies that</p>
+<p><span class="math display">\[
+L(x)=f(x)=U(x)
+\]</span></p>
+<p>almost everywhere on <span class="math inline">\([a, b]\)</span>, so
+that <span class="math inline">\(f\)</span> is measurable, and (87)
+follows from (93) and (95).</p>
+<p>Furthermore, if <span class="math inline">\(x\)</span> belongs to no
+<span class="math inline">\(P_{k}\)</span>, it is quite easy to see that
+<span class="math inline">\(U(x)=\)</span> <span
+class="math inline">\(L(x)\)</span> if and only if <span
+class="math inline">\(f\)</span> is continuous at <span
+class="math inline">\(x\)</span>. Since the union of the sets <span
+class="math inline">\(P_{k}\)</span> is countable, its measure is 0 ,
+and we conclude that <span class="math inline">\(f\)</span> is
+continuous almost everywhere on <span class="math inline">\([a,
+b]\)</span> if and only if <span
+class="math inline">\(L(x)=U(x)\)</span> almost everywhere, hence (as we
+saw above) if and only if <span class="math inline">\(f \in
+\mathscr{R}\)</span>.</p>
+<p>This completes the proof.</p>
+<p>The familiar connection between integration and differentiation is to
+a large degree carried over into the Lebesgue theory. If <span
+class="math inline">\(f \in \mathscr{L}\)</span> on <span
+class="math inline">\([a, b]\)</span>, and</p>
+<p><span class="math display">\[
+F(x)=\int_{a}^{x} f d t \quad(a \leq x \leq b)
+\]</span></p>
+<p>then <span class="math inline">\(F^{\prime}(x)=f(x)\)</span> almost
+everywhere on <span class="math inline">\([a, b]\)</span>.</p>
+<p>Conversely, if <span class="math inline">\(F\)</span> is
+differentiable at every point of <span class="math inline">\([a,
+b]\)</span> (“almost everywhere” is not good enough here!) and if <span
+class="math inline">\(F^{\prime} \in \mathscr{L}\)</span> on <span
+class="math inline">\([a, b]\)</span>, then</p>
+<p><span class="math display">\[
+F(x)-F(a)=\int_{a}^{x} F^{\prime}(t) \quad(a \leq x \leq b)
+\]</span></p>
+<p>For the proofs of these two theorems, we refer the reader to any of
+the works on integration cited in the Bibliography.</p>
+<p>Suppose <span class="math inline">\(f\)</span> is a complex-valued
+function defined on a measure space <span
+class="math inline">\(X\)</span>, and <span class="math inline">\(f=u+i
+v\)</span>, where <span class="math inline">\(u\)</span> and <span
+class="math inline">\(v\)</span> are real. We say that <span
+class="math inline">\(f\)</span> is measurable if and only if both <span
+class="math inline">\(u\)</span> and <span
+class="math inline">\(v\)</span> are measurable.</p>
+<p>It is easy to verify that sums and products of complex measurable
+functions are again measurable. Since</p>
+<p><span class="math display">\[
+|f|=\left(u^{2}+v^{2}\right)^{1 / 2}
+\]</span></p>
+<p>Theorem <span class="math inline">\(11.18\)</span> shows that <span
+class="math inline">\(|f|\)</span> is measurable for every complex
+measurable <span class="math inline">\(f\)</span>.</p>
+<p>Suppose <span class="math inline">\(\mu\)</span> is a measure on
+<span class="math inline">\(X, E\)</span> is a measurable subset of
+<span class="math inline">\(X\)</span>, and <span
+class="math inline">\(f\)</span> is a complex function on <span
+class="math inline">\(X\)</span>. We say that <span
+class="math inline">\(f \in \mathscr{L}(\mu)\)</span> on <span
+class="math inline">\(E\)</span> provided that <span
+class="math inline">\(f\)</span> is measurable and</p>
+<p><span class="math display">\[
+\int_{E}|f| d \mu&lt;+\infty
+\]</span></p>
+<p>and we define</p>
+<p><span class="math display">\[
+\int_{E} f d \mu=\int_{E} u d \mu+i \int_{E} v d \mu
+\]</span></p>
+<p>if (97) holds. Since <span class="math inline">\(|u| \leq|f|,|v|
+\leq|f|\)</span>, and <span class="math inline">\(|f|
+\leq|u|+|v|\)</span>, it is clear that (97) holds if and only if <span
+class="math inline">\(u \in \mathscr{L}(\mu)\)</span> and <span
+class="math inline">\(v \in \mathscr{L}(\mu)\)</span> on <span
+class="math inline">\(E\)</span>.</p>
+<p>Theorems <span class="math inline">\(11.23(a),(d),(e),(f), 11.24(b),
+11.26,11.27,11.29\)</span>, and <span
+class="math inline">\(11.32\)</span> can now be extended to Lebesgue
+integrals of complex functions. The proofs are quite straightforward.
+That of Theorem <span class="math inline">\(11.26\)</span> is the only
+one that offers anything of interest:</p>
+<p>If <span class="math inline">\(f \in \mathscr{L}(\mu)\)</span> on
+<span class="math inline">\(E\)</span>, there is a complex number <span
+class="math inline">\(c,|c|=1\)</span>, such that</p>
+<p><span class="math display">\[
+c \int_{E} f d \mu \geq 0 .
+\]</span></p>
+<p>Put <span class="math inline">\(g=c f=u+i v, u\)</span> and <span
+class="math inline">\(v\)</span> real. Then</p>
+<p><span class="math display">\[
+\left|\int_{E} f d \mu\right|=c \int_{E} f d \mu=\int_{E} g d
+\mu=\int_{E} u d \mu \leq \int_{E}|f| d \mu .
+\]</span></p>
+<p>The third of the above equalities holds since the preceding ones show
+that <span class="math inline">\(\int g d \mu\)</span> is real.</p>
+<p>As an application of the Lebesgue theory, we shall now extend the
+Parseval theorem (which we proved only for Riemann-integrable functions
+in Chap. 8) and prove the Riesz-Fischer theorem for orthonormal sets of
+functions. 11.34 Definition Let <span class="math inline">\(X\)</span>
+be a measurable space. We say that a complex function <span
+class="math inline">\(f \in \mathscr{L}^{2}(\mu)\)</span> on <span
+class="math inline">\(X\)</span> if <span
+class="math inline">\(f\)</span> is measurable and if</p>
+<p><span class="math display">\[
+\int_{X}|f|^{2} d \mu&lt;+\infty .
+\]</span></p>
+<p>If <span class="math inline">\(\mu\)</span> is Lebesgue measure, we
+say <span class="math inline">\(f \in \mathscr{L}^{2}\)</span>. For
+<span class="math inline">\(f \in \mathscr{L}^{2}(\mu)\)</span> (we
+shall omit the phrase “on <span class="math inline">\(X\)</span>” from
+now on) we define</p>
+<p><span class="math display">\[
+\|f\|=\left\{\int_{X}|f|^{2} d \mu\right\}^{1 / 2}
+\]</span></p>
+<p>and call <span class="math inline">\(\|f\|\)</span> the <span
+class="math inline">\(\mathscr{L}^{2}(\mu)\)</span> norm of <span
+class="math inline">\(f\)</span>.</p>
+<p>11.35 Theorem Suppose <span class="math inline">\(f \in
+\mathscr{L}^{2}(\mu)\)</span> and <span class="math inline">\(g \in
+\mathscr{L}^{2}(\mu)\)</span>. Then <span class="math inline">\(f g \in
+\mathscr{L}(\mu)\)</span>, and</p>
+<p><span class="math display">\[
+\int_{x}|f g| d \mu \leq\|f\|\|g\| .
+\]</span></p>
+<p>This is the Schwarz inequality, which we have already encountered for
+series and for Riemann integrals. It follows from the inequality</p>
+<p><span class="math display">\[
+0 \leq \int_{\boldsymbol{X}}(|f|+\lambda|g|)^{2} d \mu=\|f\|^{2}+2
+\lambda \int_{\boldsymbol{X}}|f g| d \mu+\lambda^{2}\|g\|^{2}
+\]</span></p>
+<p>which holds for every real <span
+class="math inline">\(\lambda\)</span>.</p>
+<p>11.36 Theorem Iff <span class="math inline">\(\in
+\mathscr{L}^{2}(\mu)\)</span> and <span class="math inline">\(g \in
+\mathscr{L}^{2}(\mu)\)</span>, then <span class="math inline">\(f+g \in
+\mathscr{L}^{2}(\mu)\)</span>, and</p>
+<p><span class="math display">\[
+\|f+g\| \leq\|f\|+\|g\| .
+\]</span></p>
+<p>Proof The Schwarz inequality shows that</p>
+<p><span class="math display">\[
+\begin{aligned}
+\|f+g\|^{2} &amp;=\int|f|^{2}+\int f \bar{g}+\int f g+\int|g|^{2} \\
+&amp; \leq\|f\|^{2}+2\|f\|\|g\|+\|g\|^{2} \\
+&amp;=(\|f\|+\|g\|)^{2} .
+\end{aligned}
+\]</span></p>
+<p>11.37 Remark If we define the distance between two functions <span
+class="math inline">\(f\)</span> and <span
+class="math inline">\(g\)</span> in <span
+class="math inline">\(\mathscr{L}^{2}(\mu)\)</span> to be <span
+class="math inline">\(\|f-g\|\)</span>, we see that the conditions of
+Definition <span class="math inline">\(2.15\)</span> are satisfied,
+except for the fact that <span class="math inline">\(\|f-g\|=0\)</span>
+does not imply that <span class="math inline">\(f(x)=g(x)\)</span> for
+all <span class="math inline">\(x\)</span>, but only for almost all
+<span class="math inline">\(x\)</span>. Thus, if we identify functions
+which differ only on a set of measure zero, <span
+class="math inline">\(\mathscr{L}^{2}(\mu)\)</span> is a metric
+space.</p>
+<p>We now consider <span class="math inline">\(\mathscr{L}^{2}\)</span>
+on an interval of the real line, with respect to Lebesgue measure.</p>
+<p>11.38 Theorem The continuous functions form a dense subset of <span
+class="math inline">\(\mathscr{L}^{2}\)</span> on <span
+class="math inline">\([a, b]\)</span>. More explicitly, this means that
+for any <span class="math inline">\(f \in \mathscr{L}^{2}\)</span> on
+<span class="math inline">\([a, b]\)</span>, and any <span
+class="math inline">\(\varepsilon&gt;0\)</span>, there is a function
+<span class="math inline">\(g\)</span>, continuous on <span
+class="math inline">\([a, b]\)</span>, such that</p>
+<p><span class="math display">\[
+\|f-g\|=\left\{\int_{a}^{b}|f-g|^{2} d x\right\}^{1 / 2}&lt;\varepsilon
+.
+\]</span></p>
+<p>Proof We shall say that <span class="math inline">\(f\)</span> is
+approximated in <span class="math inline">\(\mathscr{L}^{2}\)</span> by
+a sequence <span class="math inline">\(\left\{g_{n}\right\}\)</span> if
+<span class="math inline">\(\left\|f-g_{n}\right\| \rightarrow
+0\)</span> as <span class="math inline">\(n \rightarrow
+\infty\)</span>.</p>
+<p>Let <span class="math inline">\(A\)</span> be a closed subset of
+<span class="math inline">\([a, b]\)</span>, and <span
+class="math inline">\(K_{A}\)</span> its characteristic function.
+Put</p>
+<p><span class="math display">\[
+t(x)=\inf |x-y| \quad(y \in A)
+\]</span></p>
+<p>and</p>
+<p><span class="math display">\[
+g_{n}(x)=\frac{1}{1+n t(x)} \quad(n=1,2,3, \ldots)
+\]</span></p>
+<p>Then <span class="math inline">\(g_{n}\)</span> is continuous on
+<span class="math inline">\([a, b], g_{n}(x)=1\)</span> on <span
+class="math inline">\(A\)</span>, and <span
+class="math inline">\(g_{n}(x) \rightarrow 0\)</span> on <span
+class="math inline">\(B\)</span>, where <span
+class="math inline">\(B=[a, b]-A\)</span>. Hence</p>
+<p><span class="math display">\[
+\left\|g_{n}-K_{A}\right\|=\left\{\int_{B} g_{n}^{2} d x\right\}^{1 / 2}
+\rightarrow 0
+\]</span></p>
+<p>by Theorem 11.32. Thus characteristic functions of closed sets can be
+approximated in <span class="math inline">\(\mathscr{L}^{2}\)</span> by
+continuous functions.</p>
+<p>By (39) the same is true for the characteristic function of any
+measurable set, and hence also for simple measurable functions.</p>
+<p>If <span class="math inline">\(f \geq 0\)</span> and <span
+class="math inline">\(f \in \mathscr{L}^{2}\)</span>, let <span
+class="math inline">\(\left\{s_{n}\right\}\)</span> be a monotonically
+increasing sequence of simple nonnegative measurable functions such that
+<span class="math inline">\(s_{n}(x) \rightarrow f(x)\)</span>. Since
+<span class="math inline">\(\left|f-s_{n}\right|^{2} \leq
+f^{2}\)</span>, Theorem <span class="math inline">\(11.32\)</span> shows
+that <span class="math inline">\(\left\|f-s_{n}\right\| \rightarrow
+0\)</span>.</p>
+<p>The general case follows.</p>
+<p>11.39 Definition We say that a sequence of complex functions <span
+class="math inline">\(\left\{\phi_{n}\right\}\)</span> is an orthonormal
+set of functions on a measurable space <span
+class="math inline">\(X\)</span> if</p>
+<p><span class="math display">\[
+\int_{X} \phi_{n} \Phi_{m} d \mu= \begin{cases}0 &amp; (n \neq m), \\ 1
+&amp; (n=m) .\end{cases}
+\]</span></p>
+<p>In particular, we must have <span class="math inline">\(\phi_{n} \in
+\mathscr{L}^{2}(\mu)\)</span>. If <span class="math inline">\(f \in
+\mathscr{L}^{2}(\mu)\)</span> and if</p>
+<p><span class="math display">\[
+c_{n}=\int_{X} f \Phi_{n} d \mu \quad(n=1,2,3, \ldots)
+\]</span></p>
+<p>we write</p>
+<p><span class="math display">\[
+f \sim \sum_{n=1}^{\infty} c_{n} \phi_{n}
+\]</span></p>
+<p>as in Definition <span class="math inline">\(8.10 .\)</span> The
+definition of a trigonometric Fourier series is extended in the same way
+to <span class="math inline">\(\mathscr{L}^{2}\)</span> (or even to
+<span class="math inline">\(\mathscr{L}\)</span> ) on <span
+class="math inline">\([-\pi, \pi]\)</span>. Theorems <span
+class="math inline">\(8.11\)</span> and <span
+class="math inline">\(8.12\)</span> (the Bessel inequality) hold for any
+<span class="math inline">\(f \in \mathscr{L}^{2}(\mu)\)</span>. The
+proofs are the same, word for word.</p>
+<p>We can now prove the Parseval theorem.</p>
+<p><span class="math display">\[
+f(x) \sim \sum_{-\infty}^{\infty} c_{n} e^{i n x},
+\]</span></p>
+<p>where <span class="math inline">\(f \in \mathscr{L}^{2}\)</span> on
+<span class="math inline">\([-\pi, \pi]\)</span>. Let <span
+class="math inline">\(s_{n}\)</span> be the nth partial sum of (99).
+Then</p>
+<p><span class="math display">\[
+\begin{aligned}
+\lim _{n \rightarrow \infty}\left\|f-s_{n}\right\| &amp;=0, \\
+\sum_{-\infty}^{\infty}\left|c_{n}\right|^{2} &amp;=\frac{1}{2 \pi}
+\int_{-\pi}^{\pi}|f|^{2} d x .
+\end{aligned}
+\]</span></p>
+<p>Proof Let <span class="math inline">\(\varepsilon&gt;0\)</span> be
+given. By Theorem 11.38, there is a continuous function <span
+class="math inline">\(g\)</span> such that</p>
+<p><span class="math display">\[
+\|f-g\|&lt;\frac{\varepsilon}{2} .
+\]</span></p>
+<p>Moreover, it is easy to see that we can arrange it so that <span
+class="math inline">\(g(\pi)=g(-\pi)\)</span>. Then <span
+class="math inline">\(g\)</span> can be extended to a periodic
+continuous function. By Theorem <span
+class="math inline">\(8.16\)</span>, there is a trigonometric polynomial
+<span class="math inline">\(T\)</span>, of degree <span
+class="math inline">\(N\)</span>, say, such that</p>
+<p><span class="math display">\[
+\|g-T\|&lt;\frac{\varepsilon}{2} .
+\]</span></p>
+<p>Hence, by Theorem <span class="math inline">\(8.11\)</span> (extended
+to <span class="math inline">\(\mathscr{L}^{2}\)</span> ), <span
+class="math inline">\(n \geq N\)</span> implies</p>
+<p><span class="math display">\[
+\left\|s_{n}-f\right\| \leq\|T-f\|&lt;\varepsilon,
+\]</span></p>
+<p>and (100) follows. Equation (101) is deduced from (100) as in the
+proof of Theorem <span class="math inline">\(8.16 .\)</span></p>
+<p>Corollary If <span class="math inline">\(f \in
+\mathscr{L}^{2}\)</span> on <span class="math inline">\([-\pi,
+\pi]\)</span>, and if</p>
+<p><span class="math display">\[
+\int_{-\pi}^{\pi} f(x) e^{-i n x} d x=0 \quad(n=0, \pm 1, \pm 2,
+\ldots),
+\]</span></p>
+<p>then <span class="math inline">\(\|f\|=0\)</span>.</p>
+<p>Thus if two functions in <span
+class="math inline">\(\mathscr{L}^{2}\)</span> have the same Fourier
+series, they differ at most on a set of measure zero. 11.41 Definition
+Let <span class="math inline">\(f\)</span> and <span
+class="math inline">\(f_{n} \in \mathscr{L}^{2}(\mu)(n=1,2,3,
+\ldots)\)</span>. We say that <span
+class="math inline">\(\left\{f_{n}\right\}\)</span> converges to <span
+class="math inline">\(f\)</span> in <span
+class="math inline">\(\mathscr{L}^{2}(\mu)\)</span> if <span
+class="math inline">\(\left\|f_{n}-f\right\| \rightarrow 0\)</span>. We
+say that <span class="math inline">\(\left\{f_{n}\right\}\)</span> is a
+Cauchy sequence in <span
+class="math inline">\(\mathscr{L}^{2}(\mu)\)</span> if for every <span
+class="math inline">\(\varepsilon&gt;0\)</span> there is an integer
+<span class="math inline">\(N\)</span> such that <span
+class="math inline">\(n \geq N, m \geq N\)</span> implies <span
+class="math inline">\(\left\|f_{n}-f_{m}\right\| \leq
+\varepsilon\)</span>.</p>
+<p>11.42 Theorem If <span
+class="math inline">\(\left\{f_{n}\right\}\)</span> is a Cauchy sequence
+in <span class="math inline">\(\mathscr{L}^{2}(\mu)\)</span>, then there
+exists a function <span class="math inline">\(f \in
+\mathscr{L}^{2}(\mu)\)</span> such that <span
+class="math inline">\(\left\{f_{n}\right\}\)</span> converges to <span
+class="math inline">\(f\)</span> in <span
+class="math inline">\(\mathscr{L}^{2}(\mu)\)</span>.</p>
+<p>This says, in other words, that <span
+class="math inline">\(\mathscr{L}^{2}(\mu)\)</span> is a complete metric
+space.</p>
+<p>Proof Since <span class="math inline">\(\left\{f_{n}\right\}\)</span>
+is a Cauchy sequence, we san find a sequence <span
+class="math inline">\(\left\{n_{k}\right\}\)</span>, <span
+class="math inline">\(k=1,2,3, \ldots\)</span>, such that</p>
+<p><span class="math display">\[
+\left\|f_{n_{k}}-f_{n_{k+1}}\right\|&lt;\frac{1}{2^{k}} \quad(k=1,2,3,
+\ldots) .
+\]</span></p>
+<p>Choose a function <span class="math inline">\(g \in
+\mathscr{L}^{2}(\mu)\)</span>. By the Schwarz inequality,</p>
+<p><span class="math display">\[
+\int_{X}\left|g\left(f_{n_{k}}-f_{n_{k+1}}\right)\right| d \mu \leq
+\frac{\|g\|}{2^{k}} .
+\]</span></p>
+<p>Hence</p>
+<p><span class="math display">\[
+\sum_{k=1}^{\infty}
+\int_{X}\left|g\left(f_{n_{k}}-f_{n_{k+1}}\right)\right| d \mu \leq\|g\|
+.
+\]</span></p>
+<p>By Theorem 11.30, we may interchange the summation and integration in
+(102). It follows that</p>
+<p><span class="math display">\[
+|g(x)|
+\sum_{k=1}^{\infty}\left|f_{n_{k}}(x)-f_{n_{k+1}}(x)\right|&lt;+\infty
+\]</span></p>
+<p>almost everywhere on <span class="math inline">\(X\)</span>.
+Therefore</p>
+<p><span class="math display">\[
+\sum_{k=1}^{\infty}\left|f_{n_{k+1}}(x)-f_{n_{k}}(x)\right|&lt;+\infty
+\]</span></p>
+<p>almost everywhere on <span class="math inline">\(X\)</span>. For if
+the series in (104) were divergent on a set <span
+class="math inline">\(E\)</span> of positive measure, we could take
+<span class="math inline">\(g(x)\)</span> to be nonzero on a subset of
+<span class="math inline">\(E\)</span> of positive measure, thus
+obtaining a contradiction to (103).</p>
+<p>Since the <span class="math inline">\(k\)</span> th partial sum of
+the series</p>
+<p><span class="math display">\[
+\sum_{k=1}^{\infty}\left(f_{n_{k+1}}(x)-f_{n_{k}}(x)\right)
+\]</span></p>
+<p>which converges almost everywhere on <span
+class="math inline">\(X\)</span>, is</p>
+<p><span class="math display">\[
+f_{n_{k+1}}(x)-f_{n_{1}}(x)
+\]</span></p>
+<p>we see that the equation</p>
+<p><span class="math display">\[
+f(x)=\lim _{k \rightarrow \infty} f_{n_{k}}(x)
+\]</span></p>
+<p>defines <span class="math inline">\(f(x)\)</span> for almost all
+<span class="math inline">\(x \in X\)</span>, and it does not matter how
+we define <span class="math inline">\(f(x)\)</span> at the remaining
+points of <span class="math inline">\(X\)</span>.</p>
+<p>We shall now show that this function <span
+class="math inline">\(f\)</span> has the desired properties. Let <span
+class="math inline">\(\varepsilon&gt;0\)</span> be given, and choose
+<span class="math inline">\(N\)</span> as indicated in Definition 11.41.
+If <span class="math inline">\(n_{k}&gt;N\)</span>, Fatou’s theorem
+shows that</p>
+<p><span class="math display">\[
+\left\|f-f_{n_{k}}\right\| \leq \liminf _{i \rightarrow
+\infty}\left\|f_{n_{i}}-f_{n_{k}}\right\| \leq \varepsilon .
+\]</span></p>
+<p>Thus <span class="math inline">\(f-f_{n_{k}} \in
+\mathscr{L}^{2}(\mu)\)</span>, and since <span
+class="math inline">\(f=\left(f-f_{n_{k}}\right)+f_{n_{k}}\)</span>, we
+see that <span class="math inline">\(f \in
+\mathscr{L}^{2}(\mu)\)</span>. Also, since <span
+class="math inline">\(\varepsilon\)</span> is arbitrary,</p>
+<p><span class="math display">\[
+\lim _{k \rightarrow \infty}\left\|f-f_{n_{k}}\right\|=0 .
+\]</span></p>
+<p>Finally, the inequality</p>
+<p><span class="math display">\[
+\left\|f-f_{n}\right\|
+\leq\left\|f-f_{n_{k}}\right\|+\left\|f_{n_{k}}-f_{n}\right\|
+\]</span></p>
+<p>shows that <span class="math inline">\(\left\{f_{n}\right\}\)</span>
+converges to <span class="math inline">\(f\)</span> in <span
+class="math inline">\(\mathscr{L}^{2}(\mu)\)</span>; for if we take
+<span class="math inline">\(n\)</span> and <span
+class="math inline">\(n_{k}\)</span> large enough, each of the two terms
+on the right of (105) can be made arbitrarily small.</p>
+<p>11.43 The Riesz-Fischer theorem Let <span
+class="math inline">\(\left\{\phi_{n}\right\}\)</span> be orthonormal on
+<span class="math inline">\(X\)</span>. Suppose <span
+class="math inline">\(\Sigma\left|c_{n}\right|^{2}\)</span> converges,
+and put <span class="math inline">\(s_{n}=c_{1} \phi_{1}+\cdots+c_{n}
+\phi_{n}\)</span>. Then there exists a function <span
+class="math inline">\(f \in \mathscr{L}^{2}(\mu)\)</span> such that
+<span class="math inline">\(\left\{s_{n}\right\}\)</span> converges to
+<span class="math inline">\(f\)</span> in <span
+class="math inline">\(\mathscr{L}^{2}(\mu)\)</span>, and such that</p>
+<p><span class="math display">\[
+f \sim \sum_{n=1}^{\infty} c_{n} \phi_{n} .
+\]</span></p>
+<p>Proof For <span class="math inline">\(n&gt;m\)</span>,</p>
+<p><span class="math display">\[
+\left\|s_{n}-s_{m}\right\|^{2}=\left|c_{m+1}\right|^{2}+\cdots+\left|c_{n}\right|^{2},
+\]</span></p>
+<p>so that <span class="math inline">\(\left\{s_{n}\right\}\)</span> is
+a Cauchy sequence in <span
+class="math inline">\(\mathscr{L}^{2}(\mu)\)</span>. By Theorem <span
+class="math inline">\(11.42\)</span>, there is a function <span
+class="math inline">\(f \in \mathscr{L}^{2}(\mu)\)</span> such that</p>
+<p><span class="math display">\[
+\lim _{n \rightarrow \infty}\left\|f-s_{n}\right\|=0 .
+\]</span></p>
+<p>Now, for <span class="math inline">\(n&gt;k\)</span></p>
+<p><span class="math display">\[
+\int_{X} f \Phi_{k} d \mu-c_{k}=\int_{X} f \Phi_{k} d \mu-\int_{X} s_{n}
+\bar{\phi}_{k} d \mu
+\]</span></p>
+<p>so that</p>
+<p><span class="math display">\[
+\left|\int_{X} f \phi_{k} d \mu-c_{k}\right| \leq\left\|f-s_{n}\right\|
+\cdot\left\|\phi_{k}\right\|+\left\|f-s_{n}\right\| .
+\]</span></p>
+<p>Letting <span class="math inline">\(n \rightarrow \infty\)</span>, we
+see that</p>
+<p><span class="math display">\[
+c_{k}=\int_{X} f \Phi_{k} d \mu \quad(k=1,2,3, \ldots)
+\]</span></p>
+<p>and the proof is complete.</p>
+<p>11.44 Definition An orthonormal set <span
+class="math inline">\(\left\{\phi_{n}\right\}\)</span> is said to be
+complete if, for <span class="math inline">\(f \in
+\mathscr{L}^{2}(\mu)\)</span>, the equations</p>
+<p><span class="math display">\[
+\int_{X} f \phi_{n} d \mu=0 \quad(n=1,2,3, \ldots)
+\]</span></p>
+<p>imply that <span class="math inline">\(\|f\|=0\)</span></p>
+<p>In the Corollary to Theorem <span
+class="math inline">\(11.40\)</span> we deduced the completeness of the
+trigonometric system from the Parseval equation (101). Conversely, the
+Parseval equation holds for every complete orthonormal set:</p>
+<p>11.45 Theorem Let <span
+class="math inline">\(\left\{\phi_{n}\right\}\)</span> be a complete
+orthonormal set. If <span class="math inline">\(f \in
+\mathscr{L}^{2}(\mu)\)</span> and if</p>
+<p>then</p>
+<p><span class="math display">\[
+f \sim \sum_{n=1}^{\infty} c_{n} \phi_{n},
+\]</span></p>
+<p><span class="math display">\[
+\int_{X}|f|^{2} d \mu=\sum_{n=1}^{\infty}\left|c_{n}\right|^{2}
+\]</span></p>
+<p>Proof By the Bessel inequality, <span
+class="math inline">\(\Sigma\left|c_{n}\right|^{2}\)</span> converges.
+Putting</p>
+<p><span class="math display">\[
+s_{n}=c_{1} \phi_{1}+\cdots+c_{n} \phi_{n},
+\]</span></p>
+<p>the Riesz-Fischer theorem shows that there is a function <span
+class="math inline">\(g \in \mathscr{L}^{2}(\mu)\)</span> such that</p>
+<p><span class="math display">\[
+g \sim \sum_{n=1}^{\infty} c_{n} \phi_{n},
+\]</span></p>
+<p>and such that <span class="math inline">\(\left\|g-s_{n}\right\|
+\rightarrow 0\)</span>. Hence <span
+class="math inline">\(\left\|s_{n}\right\| \rightarrow\|g\|\)</span>.
+Since</p>
+<p><span class="math display">\[
+\left\|s_{n}\right\|^{2}=\left|c_{1}\right|^{2}+\cdots+\left|c_{n}\right|^{2}
+\text {, }
+\]</span></p>
+<p>we have</p>
+<p><span class="math display">\[
+\int_{X}|g|^{2} d \mu=\sum_{n=1}^{\infty}\left|c_{n}\right|^{2}
+\]</span></p>
+<p>Now (106), (108), and the completeness of <span
+class="math inline">\(\left\{\phi_{n}\right\}\)</span> show that <span
+class="math inline">\(\|f-g\|=0\)</span>, so that (109) implies
+(107).</p>
+<p>Combining Theorems <span class="math inline">\(11.43\)</span> and
+<span class="math inline">\(11.45\)</span>, we arrive at the very
+interesting conclusion that every complete orthonormal set induces a 1-1
+correspondence between the functions <span class="math inline">\(f \in
+\mathscr{L}^{2}(\mu)\)</span> (identifying those which are equal almost
+everywhere) on the one hand and the sequences <span
+class="math inline">\(\left\{c_{n}\right\}\)</span> for which <span
+class="math inline">\(\Sigma\left|c_{n}\right|^{2}\)</span> converges,
+on the other. The representation</p>
+<p><span class="math display">\[
+f \sim \sum_{n=1}^{\infty} c_{n} \phi_{n},
+\]</span></p>
+<p>together with the Parseval equation, shows that <span
+class="math inline">\(\mathscr{L}^{2}(\mu)\)</span> may be regarded as
+an infinite-dimensional euclidean space (the so-called “Hilbert space”),
+in which the point <span class="math inline">\(f\)</span> has
+coordinates <span class="math inline">\(c_{n}\)</span>, and the
+functions <span class="math inline">\(\phi_{n}\)</span> are the
+coordinate vectors.</p>
+<ol type="1">
+<li><p>If <span class="math inline">\(f \geq 0\)</span> and <span
+class="math inline">\(\int_{E} f d \mu=0\)</span>, prove that <span
+class="math inline">\(f(x)=0\)</span> almost everywhere on <span
+class="math inline">\(E\)</span>. Hint: Let <span
+class="math inline">\(E_{n}\)</span> be the subset of <span
+class="math inline">\(E\)</span> on which <span
+class="math inline">\(f(x)&gt;1 / n\)</span>. Write <span
+class="math inline">\(A=\bigcup E_{n}\)</span>. Then <span
+class="math inline">\(\mu(A)=0\)</span> if and only if <span
+class="math inline">\(\mu\left(E_{n}\right)=0\)</span> for every <span
+class="math inline">\(n\)</span>.</p></li>
+<li><p>If <span class="math inline">\(\int_{A} f d \mu=0\)</span> for
+every measurable subset <span class="math inline">\(A\)</span> of a
+measurable set <span class="math inline">\(E\)</span>, then <span
+class="math inline">\(f(x)=0\)</span> almost everywhere on <span
+class="math inline">\(E\)</span>.</p></li>
+<li><p>If <span class="math inline">\(\left\{f_{n}\right\}\)</span> is a
+sequence of measurable functions, prove that the set of points <span
+class="math inline">\(x\)</span> at which <span
+class="math inline">\(\left\{f_{n}(x)\right\}\)</span> converges is
+measurable.</p></li>
+<li><p>If <span class="math inline">\(f \in \mathscr{L}(\mu)\)</span> on
+<span class="math inline">\(E\)</span> and <span
+class="math inline">\(g\)</span> is bounded and measurable on <span
+class="math inline">\(E\)</span>, then <span class="math inline">\(f g
+\in \mathscr{L}(\mu)\)</span> on <span
+class="math inline">\(E\)</span>.</p></li>
+<li><p>Put</p></li>
+</ol>
+<p><span class="math display">\[
+\begin{aligned}
+&amp; g(x)= \begin{cases}0 &amp; \left(0 \leq x \leq \frac{1}{2}\right),
+\\ 1 &amp; \left(\frac{1}{2}&lt;x \leq 1\right),\end{cases} \\
+&amp; f_{2 k}(x)=g(x) \quad(0 \leq x \leq 1) \text {, } \\
+&amp; f_{2 k+1}(x)=g(1-x) \quad(0 \leq x \leq 1) \text {. }
+\end{aligned}
+\]</span></p>
+<p>Show that</p>
+<p><span class="math display">\[
+\underset{n \rightarrow \infty}{\lim \inf } f_{n}(x)=0 \quad(0 \leq x
+\leq 1),
+\]</span></p>
+<p>but</p>
+<p><span class="math display">\[
+\int_{0}^{1} f_{n}(x) d x=\frac{1}{2} .
+\]</span></p>
+<p>[Compare with (77).] 6. Let</p>
+<p><span class="math display">\[
+f_{n}(x)= \begin{cases}\frac{1}{n} &amp; (|x| \leq n) \\ 0 &amp;
+(|x|&gt;n)\end{cases}
+\]</span></p>
+<p>Then <span class="math inline">\(f_{n}(x) \rightarrow 0\)</span>
+uniformly on <span class="math inline">\(R^{1}\)</span>, but</p>
+<p><span class="math display">\[
+\int_{-\infty}^{\infty} f_{n} d x=2 \quad(n=1,2,3, \ldots) .
+\]</span></p>
+<p>(We write <span
+class="math inline">\(\int_{-\infty}^{\infty}\)</span> in place of <span
+class="math inline">\(\int_{R 1}\)</span>.) Thus uniform convergence
+does not imply dominated convergence in the sense of Theorem 11.32.
+However, on sets of finite measure, uniformly convergent sequences of
+bounded functions do satisfy Theorem 11.32.</p>
+<ol start="7" type="1">
+<li><p>Find a necessary and sufficient condition that <span
+class="math inline">\(f \in \mathscr{R}(\alpha)\)</span> on <span
+class="math inline">\([a, b]\)</span>. Hint: Consider Example 11.6(b)
+and Theorem 11.33.</p></li>
+<li><p>If <span class="math inline">\(f \in \mathscr{R}\)</span> on
+<span class="math inline">\([a, b]\)</span> and if <span
+class="math inline">\(F(x)=\int_{a}^{x} f(t) d t\)</span>, prove that
+<span class="math inline">\(F^{\prime}(x)=f(x)\)</span> almost
+everywhere on <span class="math inline">\([a, b]\)</span>.</p></li>
+<li><p>Prove that the function <span class="math inline">\(F\)</span>
+given by (96) is continuous on <span class="math inline">\([a,
+b]\)</span>.</p></li>
+<li><p>If <span class="math inline">\(\mu(X)&lt;+\infty\)</span> and
+<span class="math inline">\(f \in \mathscr{L}^{2}(\mu)\)</span> on <span
+class="math inline">\(X\)</span>, prove that <span
+class="math inline">\(f \in \mathscr{L}(\mu)\)</span> on <span
+class="math inline">\(X\)</span>. If</p></li>
+</ol>
+<p><span class="math display">\[
+\mu(X)=+\infty,
+\]</span></p>
+<p>this is false. For instance, if</p>
+<p><span class="math display">\[
+f(x)=\frac{1}{1+|x|},
+\]</span></p>
+<p>then <span class="math inline">\(f \in \mathscr{L}^{2}\)</span> on
+<span class="math inline">\(R^{1}\)</span>, but <span
+class="math inline">\(f \notin \mathscr{L}\)</span> on <span
+class="math inline">\(R^{1}\)</span>.</p>
+<ol start="11" type="1">
+<li>If <span class="math inline">\(f, g \in \mathscr{L}(\mu)\)</span> on
+<span class="math inline">\(X\)</span>, define the distance between
+<span class="math inline">\(f\)</span> and <span
+class="math inline">\(g\)</span> by</li>
+</ol>
+<p><span class="math display">\[
+\int_{x}|f-g| d \mu .
+\]</span></p>
+<p>Prove that <span class="math inline">\(\mathscr{L}(\mu)\)</span> is a
+complete metric space.</p>
+<ol start="12" type="1">
+<li>Suppose</li>
+</ol>
+<ol type="a">
+<li><p><span class="math inline">\(|f(x, y)| \leq 1\)</span> if <span
+class="math inline">\(0 \leq x \leq 1,0 \leq y \leq 1\)</span>,</p></li>
+<li><p>for fixed <span class="math inline">\(x, f(x, y)\)</span> is a
+continuous function of <span class="math inline">\(y\)</span>,</p></li>
+<li><p>for fixed <span class="math inline">\(y, f(x, y)\)</span> is a
+continuous function of <span class="math inline">\(x\)</span>.</p></li>
+</ol>
+<p>Put</p>
+<p><span class="math display">\[
+g(x)=\int_{0}^{1} f(x, y) d y \quad(0 \leq x \leq 1) .
+\]</span></p>
+<p>Is <span class="math inline">\(g\)</span> continuous?</p>
+<ol start="13" type="1">
+<li>Consider the functions</li>
+</ol>
+<p><span class="math display">\[
+f_{n}(x)=\sin n x \quad(n=1,2,3, \ldots,-\pi \leq x \leq \pi)
+\]</span></p>
+
+    </div>
+    
+</div>
+</div>
+
+                <div id="footer-wrapper">
+                    <footer class="footer"><footer class="row pl-3 pr-3">
+    <div class="col-12 d-flex justify-content-between align-items-center text-muted pl-0 pr-0">
+        <div class="footer-left">
+            <p class="mb-0"> © 2022 <a href="https://github.com/chen-gz">guangzong</a>. <span data-toggle="tooltip"
+                    data-placement="top"
+                    title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author.">All
+                    rights reserved.</span></p>
+        </div>
+        <div class="footer-right">
+            <p class="mb-0"> Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">hugo</a>
+                with <a href="https://github.com/chen-gz/hugo_zong" target="_blank" rel="noopener">zong</a>
+                theme.</p>
+        </div>
+    </div>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script> MathJax = {
+            tex: {
+                tags: 'ams',
+            }
+        };</script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</footer>
+</footer>
+                </div>
+            </div>
+            <div id="panel-wrapper" class="d-flex flex-column"><div id="toc-wrapper" class="mb-5 pl-2">
+    <span>Contents</span>
+    <nav id="toc" data-toggle="toc">
+        
+        
+        
+    </nav>
+</div>
+
+<div id="access-lastmod" class="pb-4 pl-2">
+    <div class="panel-heading">Recently Updated</div>
+    <ul class="post-content pl-3 pb-1 ml-1 mt-2">
+          
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/1-total-variation/">Total Variation</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-7/1-derivatives-of-measures/">Derivatives of Measures</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/3-consequences-of-the-radon-nikodym-theorem/">Consequences of the Radon-Nikodym Theorem</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/4-bounded-linear-functionals-on-lp/">Bounded linear functional on Lp</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/2-abosolute-continuity/">Abosolute Continuity</a></li>
+        
+    </ul>
+</div>
+
+<div id="access-tags" class="pl-2">
+    <div class="panel-heading">Trending Tags</div>
+    <div class="d-flex flex-wrap mt-3 mb-1 mr-3">
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/algorithm/">Algorithm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/android/">Android</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c/">C</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c-language/">c language</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/caddy/">Caddy</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cadence/">Cadence</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cdc/">CDC</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/classification/">classification</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/compress/">Compress</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/conf/">Conf</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/double-column/">Double Column</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/errno13/">Errno13</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/fish/">fish</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gan/">GAN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/git/">Git</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gtk/">Gtk</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/html/">Html</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/i3/">I3</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/idea/">Idea</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/java/">Java</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/latex/">Latex</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lda/">LDA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linear-programming/">Linear Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linux/">Linux</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lr/">LR</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/math/">Math</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mathematics/">Mathematics</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matlab/">Matlab</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matplot/">matplot</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/memory/">Memory</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mermaid/">Mermaid</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/misc/">Misc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/ml/">ML</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mosfet/">Mosfet</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/network/">Network</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/nn/">NN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pandoc/">Pandoc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pca/">PCA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/probability/">Probability</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/productive/">Productive</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/program/">Program</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/programming/">Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/python/">Python</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/qt/">Qt</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/random-variable/">Random Variable</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rcnn/">RCNN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rust/">Rust</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/security/">Security</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/software/">Software</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/std/">Std</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/svd/">Svd</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/tool/">Tool</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/usb/">USB</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vim/">Vim</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpn/">Vpn</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpnc/">Vpnc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/xterm/">xterm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/zsh/">Zsh</a>
+        
+    </div>
+</div>
+</div><div id="search-result-wrapper" class="d-flex justify-content-center unloaded">
+    <div class="col-12 col-sm-11 post-content">
+        <div id="search-hints"></div>
+        <div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3 col-12"></div>
+    </div>
+</div>
+
+<script src="/js/fuse.min.js"></script>
+<script src="/js/fastsearch.js"></script>
+
+
+</div>
+        <div id="mask"></div>
+        <a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button"
+            style="display: none">
+            <i class="fas fa-angle-up"></i>
+        </a>
+    </div>
+    
+</body>
+
+</html>

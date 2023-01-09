@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css"
+        class="dark-mode-native-dark-original" />
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+     
+    <link rel="stylesheet" href="https://zongpitt.com/sass/main.06935202011a97ba473ebeeb0cb6788daa9fb5a9fff471a4e85850293d1c5ac4.css" />
+    <title>
+          Guangzong Blog | 7 DETERMINANTS
+    </title>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.bundle.min.js"></script>
+    <script src=" https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.js"></script>
+
+    <script
+        src="https://cdn.jsdelivr.net/combine/npm/magnific-popup@1/dist/jquery.magnific-popup.min.js,npm/lozad/dist/lozad.min.js,npm/clipboard@2/dist/clipboard.min.js"></script>
+    <script type="text/javascript" src="/js/commons/back-to-top.js"></script>
+    
+    
+    
+    <script type="text/javascript" src="/js/commons/topbar-switch.js"></script>
+    <script type="text/javascript" src="/js/commons/sidebar.js"></script>
+    <script type="text/javascript" src="/js/utils/category-collapse.js"></script>
+    <script type="text/javascript" src="/js/utils/checkbox.js"></script>
+    <script type="text/javascript" src="/js/utils/clipboard.js"></script>
+    <script type="text/javascript" src="/js/utils/img-extra.js"></script>
+    <script type="text/javascript" src="/js/utils/pageviews.js"></script>
+    
+    <script type="text/javascript" src="/js/utils/timeago.js"></script>
+    
+    
+</head>
+<body data-spy="scroll" data-target="#toc" data-topbar-visible="true" class="d-flex"><div id="sidebar" class="d-flex flex-column align-items-end">
+    <div class="profile-wrapper text-center">
+
+        <div id="avatar">
+            <a href="/" alt="avatar" class="mx-auto"> <img src=https://github.com/chen-gz/chen-gz/blob/main/mine_square.jpg?raw&#61;truehttps://raw.githubusercontent.com/chen-gz/chen-gz/blob/main/mine_square.jpg alt="avatar"
+                    onerror="this.style.display='none'"> </a>
+        </div>
+
+        <div class="site-title mt-3"> <a href="/">Guangzong</a> </div>
+        <div class="site-subtitle font-italic">Welcome to my blog</div>
+    </div>
+
+    <ul>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/">
+                <span>
+                    Home
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/archive/">
+                <span>
+                    Archive
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/tags/">
+                <span>
+                    Tags
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/about/">
+                <span>
+                    About
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/categories/">
+                <span>
+                    Categories
+                </span>
+            </a>
+        </li>
+        
+    </ul>
+
+    <div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center align-items-center">
+        <button class="mode-toggle btn" aria-label="Switch Mode"> 
+            <i class="fas fa-adjust"></i> 
+        </button>
+
+        <span class="icon-border"></span>
+        <a href="https://github.com/chen-gz" aria-label="github" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i>
+        </a>
+
+        <a href=" javascript:location.href = 'mailto:' + ['chen-gz','outlook.com'].join('@')" aria-label="email">
+            <i class="fas fa-envelope"></i>
+        </a>
+
+        <a href="/feed.xml" aria-label="rss"> <i class="fas fa-rss"></i> </a>
+    </div>
+
+    
+    
+</div>
+<div id="all-wrapper" class="d-flex flex-column"><div id="topbar-wrapper">
+    <div id="topbar" class="d-flex">
+        
+        <span id="breadcrumb" class="d-flex">
+              
+               
+            
+            
+            <div><a href='https://zongpitt.com/'>Home</a></div>
+              
+              
+            
+            <div><a href="https://zongpitt.com/baby-rudin">baby-rudin</a></div>
+               
+              
+            
+            <div><a href="https://zongpitt.com/baby-rudin/9-functions-of-several-variables">9-functions-of-several-variables</a></div>
+               
+                 
+                
+        </span>
+        <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i>
+        <div id="topbar-title">Guangzong</div>
+        <i id="search-trigger" class="fas fa-search fa-fw"></i>
+        <span id="search-wrapper" class="align-items-center">
+            <i class="fas fa-search fa-fw"></i>
+            <input class="form-control" id="search-input" type="search" aria-label="search" autocomplete="off"
+                placeholder="Search..." />
+            <i class="fa fa-times-circle fa-fw" id="search-cleaner"></i>
+        </span>
+    </div>
+</div>
+<div id="main-wrapper" class="d-flex mt-3">
+            <div id="core-wrapper" class="d-flex flex-column">
+                <div id="main" class="d-flex flex-column">
+                    
+<div class="post pl-1 pr-1 pl-md-2 pr-md-2">
+    
+    <div id="post-content">
+        <h1 style="text-align: center;">7 DETERMINANTS</h1>
+        <br>
+        
+        <p>Determinants are numbers associated to square matrices, and hence to
+the operators represented by such matrices. They are 0 if and only if
+the corresponding operator fails to be invertible. They can therefore be
+used to decide whether the hypotheses of some of the preceding theorems
+are satisfied. They will play an even more important role in Chap. <span
+class="math inline">\(10 .\)</span></p>
+<p><strong>9.33 Definition</strong> If <span
+class="math inline">\(\left(j_{1}, \ldots, j_{n}\right)\)</span> is an
+ordered <span class="math inline">\(n\)</span>-tuple of integers,
+define</p>
+<p><span class="math display">\[
+s\left(j_{1}, \ldots, j_{n}\right)=\prod_{p&lt;q}
+\operatorname{sgn}\left(j_{q}-j_{p}\right),
+\]</span></p>
+<p>where <span class="math inline">\(\operatorname{sgn} x=1\)</span> if
+<span class="math inline">\(x&gt;0, \operatorname{sgn} x=-1\)</span> if
+<span class="math inline">\(x&lt;0, \operatorname{sgn} x=0\)</span> if
+<span class="math inline">\(x=0\)</span>. Then <span
+class="math inline">\(s\left(j_{1}, \ldots, j_{n}\right)=1,-1\)</span>,
+or 0 , and it changes sign if any two of the <span
+class="math inline">\(j\)</span> ’s are interchanged.</p>
+<p>Let <span class="math inline">\([A]\)</span> be the matrix of a
+linear operator <span class="math inline">\(A\)</span> on <span
+class="math inline">\(R^{n}\)</span>, relative to the standard basis
+<span class="math inline">\(\left\{\mathbf{e}_{1}, \ldots,
+\mathbf{e}_{n}\right\}\)</span>, with entries <span
+class="math inline">\(a(i, j)\)</span> in the <span
+class="math inline">\(i\)</span> th row and jth column. The determinant
+of <span class="math inline">\([A]\)</span> is defined to be the
+number</p>
+<p><span class="math display">\[
+\operatorname{det}[A]=\sum s\left(j_{1}, \ldots, j_{n}\right) a\left(1,
+j_{1}\right) a\left(2, j_{2}\right) \cdots a\left(n, j_{n}\right) .
+\]</span></p>
+<p>The sum in (83) extends over all ordered <span
+class="math inline">\(n\)</span>-tuples of integers <span
+class="math inline">\(\left(j_{1}, \ldots, j_{n}\right)\)</span> with
+<span class="math inline">\(1 \leq j_{r} \leq n\)</span>.</p>
+<p>The column vectors <span
+class="math inline">\(\mathbf{x}_{j}\)</span> of <span
+class="math inline">\([A]\)</span> are</p>
+<p><span class="math display">\[
+\mathbf{x}_{j}=\sum_{i=1}^{n} a(i, j) \mathbf{e}_{i} \quad(1 \leq j \leq
+n) .
+\]</span></p>
+<p>It will be convenient to think of det <span
+class="math inline">\([A]\)</span> as a function of the column vectors
+of <span class="math inline">\([A]\)</span>. If we write</p>
+<p><span class="math display">\[
+\operatorname{det}\left(\mathbf{x}_{1}, \ldots,
+\mathbf{x}_{n}\right)=\operatorname{det}[A] \text {, }
+\]</span></p>
+<p>det is now a real function on the set of all ordered <span
+class="math inline">\(n\)</span>-tuples of vectors in <span
+class="math inline">\(R^{n}\)</span>.</p>
+<p><strong>9.34 Theorem</strong></p>
+<ol type="a">
+<li>If I is the identity operator on <span
+class="math inline">\(R^{n}\)</span>, then</li>
+</ol>
+<p><span class="math display">\[
+\operatorname{det}[I]=\operatorname{det}\left(\mathbf{e}_{1}, \ldots,
+\mathbf{e}_{n}\right)=1 .
+\]</span></p>
+<ol start="2" type="a">
+<li><p>det is a linear function of each of the column vectors <span
+class="math inline">\(\mathbf{x}_{j}\)</span>, if the others are held
+fixed.</p></li>
+<li><p>If <span class="math inline">\([A]_{1}\)</span> is obtained from
+<span class="math inline">\([A]\)</span> by interchanging two columns,
+then <span
+class="math inline">\(\operatorname{det}[A]_{1}=-\operatorname{det}[A]\)</span>.</p></li>
+<li><p>If <span class="math inline">\([A]\)</span> has two equal
+columns, then <span
+class="math inline">\(\operatorname{det}[A]=0\)</span>.</p></li>
+</ol>
+<p>Proof If <span class="math inline">\(A=I\)</span>, then <span
+class="math inline">\(a(i, i)=1\)</span> and <span
+class="math inline">\(a(i, j)=0\)</span> for <span
+class="math inline">\(i \neq j\)</span>. Hence</p>
+<p><span class="math display">\[
+\operatorname{det}[I]=s(1,2, \ldots, n)=1 \text {, }
+\]</span></p>
+<p>which proves <span class="math inline">\((a)\)</span>. By (82), <span
+class="math inline">\(s\left(j_{1}, \ldots, j_{n}\right)=0\)</span> if
+any two of the <span class="math inline">\(j\)</span> ’s are equal. Each
+of the remaining <span class="math inline">\(n\)</span> ! products in
+(83) contains exactly one factor from each column. This proves <span
+class="math inline">\((b)\)</span>. Part <span
+class="math inline">\((c)\)</span> is an immediate consequence of the
+fact that <span class="math inline">\(s\left(j_{1}, \ldots,
+j_{n}\right)\)</span> changes sign if any two of the j’s are
+interchanged, and <span class="math inline">\((d)\)</span> is a
+corollary of <span class="math inline">\((c)\)</span>.</p>
+<p><strong>9.35 Theorem</strong> <em>If <span
+class="math inline">\([A]\)</span> and <span
+class="math inline">\([B]\)</span> are <span
+class="math inline">\(n\)</span> by <span
+class="math inline">\(n\)</span> matrices, then</em></p>
+<p><span class="math display">\[
+\operatorname{det}([B][A])=\operatorname{det}[B] \operatorname{det}[A] .
+\]</span></p>
+<p>Proof If <span class="math inline">\(\mathbf{x}_{1}, \ldots,
+\mathbf{x}_{n}\)</span> are the columns of <span
+class="math inline">\([A]\)</span>, define</p>
+<p><span class="math display">\[
+\Delta_{B}\left(\mathbf{x}_{1}, \ldots,
+\mathbf{x}_{n}\right)=\Delta_{B}[A]=\operatorname{det}([B][A]) .
+\]</span></p>
+<p>The columns of <span class="math inline">\([B][A]\)</span> are the
+vectors <span class="math inline">\(B \mathbf{x}_{1}, \ldots, B
+\mathbf{x}_{n}\)</span>. Thus</p>
+<p><span class="math display">\[
+\Delta_{B}\left(\mathbf{x}_{1}, \ldots,
+\mathbf{x}_{n}\right)=\operatorname{det}\left(B \mathbf{x}_{1}, \ldots,
+B \mathbf{x}_{n}\right) \text {. }
+\]</span></p>
+<p>By (86) and Theorem <span class="math inline">\(9.34,
+\Delta_{B}\)</span> also has properties <span
+class="math inline">\(9.34(b)\)</span> to <span
+class="math inline">\((d)\)</span>. By <span
+class="math inline">\((b)\)</span> and (84),</p>
+<p><span class="math display">\[
+\Delta_{B}[A]=\Delta_{B}\left(\sum_{i} a(i, 1) \mathbf{e}_{i},
+\mathbf{x}_{2}, \ldots, \mathbf{x}_{n}\right)=\sum_{i} a(i, 1)
+\Delta_{B}\left(\mathbf{e}_{i}, \mathbf{x}_{2}, \ldots,
+\mathbf{x}_{n}\right) .
+\]</span></p>
+<p>Repeating this process with <span
+class="math inline">\(\mathbf{x}_{2}, \ldots, \mathbf{x}_{n}\)</span>,
+we obtain</p>
+<p><span class="math display">\[
+\Delta_{B}[A]=\sum a\left(i_{1}, 1\right) a\left(i_{2}, 2\right) \cdots
+a\left(i_{n}, n\right) \Delta_{B}\left(\mathbf{e}_{i_{1}}, \ldots,
+\mathbf{e}_{i_{n}}\right) \text {, }
+\]</span></p>
+<p>the sum being extended over all ordered <span
+class="math inline">\(n\)</span>-tuples <span
+class="math inline">\(\left(i_{1}, \ldots, i_{n}\right)\)</span> with
+<span class="math inline">\(1 \leq i_{r} \leq n .\)</span> By <span
+class="math inline">\((c)\)</span> and <span
+class="math inline">\((d)\)</span></p>
+<p><span class="math display">\[
+\Delta_{B}\left(\mathbf{e}_{i_{1}}, \ldots,
+\mathbf{e}_{i_{n}}\right)=t\left(i_{1}, \ldots, i_{n}\right)
+\Delta_{B}\left(\mathbf{e}_{1}, \ldots, \mathbf{e}_{n}\right),
+\]</span></p>
+<p>where <span class="math inline">\(t=1,0\)</span>, or <span
+class="math inline">\(-1\)</span>, and since <span
+class="math inline">\([B][I]=[B],(85)\)</span> shows that</p>
+<p><span class="math display">\[
+\Delta_{B}\left(\mathbf{e}_{1}, \ldots,
+\mathbf{e}_{n}\right)=\operatorname{det}[B] \text {. }
+\]</span></p>
+<p>Substituting (89) and (88) into (87), we obtain</p>
+<p><span class="math display">\[
+\operatorname{det}([B][A])=\left\{\sum a\left(i_{1}, 1\right) \cdots
+a\left(i_{n}, n\right) t\left(i_{1}, \ldots, i_{n}\right)\right\}
+\operatorname{det}[B] \text {, }
+\]</span></p>
+<p>for all <span class="math inline">\(n\)</span> by <span
+class="math inline">\(n\)</span> matrices <span
+class="math inline">\([A]\)</span> and <span
+class="math inline">\([B]\)</span>. Taking <span
+class="math inline">\(B=I\)</span>, we see that the above sum in braces
+is <span class="math inline">\(\operatorname{det}[A]\)</span>. This
+proves the theorem.</p>
+<p><strong>9.36 Theorem</strong> <em><span
+class="math inline">\(A\)</span> linear operator <span
+class="math inline">\(A\)</span> on <span
+class="math inline">\(R^{n}\)</span> is invertible if and only if <span
+class="math inline">\(\operatorname{det}[A] \neq 0\)</span>.</em></p>
+<p><strong>Proof</strong> If <span class="math inline">\(A\)</span> is
+invertible, Theorem <span class="math inline">\(9.35\)</span> shows
+that</p>
+<p><span class="math display">\[
+\operatorname{det}[A]
+\operatorname{det}\left[A^{-1}\right]=\operatorname{det}\left[A
+A^{-1}\right]=\operatorname{det}[I]=1 \text {, }
+\]</span></p>
+<p>so that <span class="math inline">\(\operatorname{det}[A] \neq
+0\)</span>.</p>
+<p>If <span class="math inline">\(A\)</span> is not invertible, the
+columns <span class="math inline">\(\mathbf{x}_{1}, \ldots,
+\mathbf{x}_{n}\)</span> of <span class="math inline">\([A]\)</span> are
+dependent (Theorem 9.5); hence there is one, say, <span
+class="math inline">\(\mathbf{x}_{k}\)</span>, such that</p>
+<p><span class="math display">\[
+\mathbf{x}_{k}+\sum_{j \neq k} c_{j} \mathbf{x}_{j}=0
+\]</span></p>
+<p>for certain scalars <span class="math inline">\(c_{j}\)</span>. By
+<span class="math inline">\(9.34(b)\)</span> and <span
+class="math inline">\((d), \mathbf{x}_{k}\)</span> can be replaced by
+<span class="math inline">\(\mathbf{x}_{k}+c_{j} \mathbf{x}_{j}\)</span>
+without altering the determinant, if <span class="math inline">\(j \neq
+k\)</span>. Repeating, we see that <span
+class="math inline">\(\mathbf{x}_{k}\)</span> can be replaced by the
+left side of (90), i.e., by 0 , without altering the determinant. But a
+matrix which has 0 for one column has determinant 0 . Hence <span
+class="math inline">\(\operatorname{det}[A]=0\)</span>.</p>
+<p><strong>9.37 Remark</strong> Suppose <span
+class="math inline">\(\left\{\mathbf{e}_{1}, \ldots,
+\mathbf{e}_{n}\right\}\)</span> and <span
+class="math inline">\(\left\{\mathbf{u}_{1}, \ldots,
+\mathbf{u}_{n}\right\}\)</span> are bases in <span
+class="math inline">\(R^{n}\)</span>. Every linear operator <span
+class="math inline">\(A\)</span> on <span
+class="math inline">\(R^{n}\)</span> determines matrices <span
+class="math inline">\([A]\)</span> and <span
+class="math inline">\([A]_{U}\)</span>, with entries <span
+class="math inline">\(a_{i j}\)</span> and <span
+class="math inline">\(\alpha_{i j}\)</span>, given by</p>
+<p><span class="math display">\[
+A \mathbf{e}_{j}=\sum_{\imath} a_{i j} \mathbf{e}_{i}, \quad A
+\mathbf{u}_{j}=\sum_{i} \alpha_{i j} \mathbf{u}_{i} .
+\]</span></p>
+<p>If <span class="math inline">\(\mathbf{u}_{j}=B \mathbf{e}_{j}=\Sigma
+b_{i j} \mathbf{e}_{i}\)</span>, then <span class="math inline">\(A
+\mathbf{u}_{j}\)</span> is equal to</p>
+<p><span class="math display">\[
+\sum_{k} \alpha_{k j} B \mathbf{e}_{k}=\sum_{k} \alpha_{k j} \sum_{i}
+b_{i k} \mathbf{e}_{i}=\sum_{i}\left(\sum_{k} b_{i k} \alpha_{k
+j}\right) \mathbf{e}_{i},
+\]</span></p>
+<p>and also to</p>
+<p><span class="math display">\[
+A B \mathbf{e}_{j}=A \sum_{k} b_{k j}
+\mathbf{e}_{k}=\sum_{i}\left(\sum_{k} a_{i k} b_{k j}\right)
+\mathbf{e}_{i} .
+\]</span></p>
+<p>Thus <span class="math inline">\(\Sigma b_{i k} \alpha_{k j}=\Sigma
+a_{i k} b_{k j}\)</span>, or</p>
+<p><span class="math display">\[
+[B][A]_{U}=[A][B] \text {. }
+\]</span></p>
+<p>Since <span class="math inline">\(B\)</span> is invertible, <span
+class="math inline">\(\operatorname{det}[B] \neq 0\)</span>. Hence <span
+class="math inline">\((91)\)</span>, combined with Theorem <span
+class="math inline">\(9.35\)</span>, shows that</p>
+<p><span class="math display">\[
+\operatorname{det}[A]_{U}=\operatorname{det}[A] \text {. }
+\]</span></p>
+<p>The determinant of the matrix of a linear operator does therefore not
+depend on the basis which is used to construct the matrix. It is thus
+meaningful to speak of the determinant of a linear operator, without
+having any basis in mind.</p>
+<p><strong>9.38 Jacobians</strong> If <span
+class="math inline">\(\mathrm{f}\)</span> maps an open set <span
+class="math inline">\(E \subset R^{n}\)</span> into <span
+class="math inline">\(R^{n}\)</span>, and if <span
+class="math inline">\(\mathrm{f}\)</span> is differentiable at a point
+<span class="math inline">\(\mathbf{x} \in E\)</span>, the determinant
+of the linear operator <span
+class="math inline">\(\mathbf{f}^{\prime}(\mathbf{x})\)</span> is called
+the Jacobian of <span class="math inline">\(\mathbf{f}\)</span> at <span
+class="math inline">\(\mathbf{x}\)</span>. In symbols,</p>
+<p><span class="math display">\[
+J_{\mathbf{f}}(\mathbf{x})=\operatorname{det}
+\mathbf{f}^{\prime}(\mathbf{x}) .
+\]</span></p>
+<p>We shall also use the notation</p>
+<p><span class="math display">\[
+\frac{\partial\left(y_{1}, \ldots, y_{n}\right)}{\partial\left(x_{1},
+\ldots, x_{n}\right)}
+\]</span></p>
+<p>for <span class="math inline">\(J_{\mathbf{f}}(\mathbf{x})\)</span>,
+if <span class="math inline">\(\left(y_{1}, \ldots,
+y_{n}\right)=\mathbf{f}\left(x_{1}, \ldots, x_{n}\right)\)</span>.</p>
+<p>In terms of Jacobians, the crucial hypothesis in the inverse function
+theorem is that <span class="math inline">\(J_{\mathbf{f}}(\mathbf{a})
+\neq 0\)</span> (compare Theorem 9.36). If the implicit function theorem
+is stated in terms of the functions (59), the assumption made there on
+<span class="math inline">\(A\)</span> amounts to</p>
+<p><span class="math display">\[
+\frac{\partial\left(f_{1}, \ldots, f_{n}\right)}{\partial\left(x_{1},
+\ldots, x_{n}\right)} \neq 0
+\]</span></p>
+
+    </div>
+    
+</div>
+</div>
+
+                <div id="footer-wrapper">
+                    <footer class="footer"><footer class="row pl-3 pr-3">
+    <div class="col-12 d-flex justify-content-between align-items-center text-muted pl-0 pr-0">
+        <div class="footer-left">
+            <p class="mb-0"> © 2022 <a href="https://github.com/chen-gz">guangzong</a>. <span data-toggle="tooltip"
+                    data-placement="top"
+                    title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author.">All
+                    rights reserved.</span></p>
+        </div>
+        <div class="footer-right">
+            <p class="mb-0"> Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">hugo</a>
+                with <a href="https://github.com/chen-gz/hugo_zong" target="_blank" rel="noopener">zong</a>
+                theme.</p>
+        </div>
+    </div>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script> MathJax = {
+            tex: {
+                tags: 'ams',
+            }
+        };</script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</footer>
+</footer>
+                </div>
+            </div>
+            <div id="panel-wrapper" class="d-flex flex-column"><div id="toc-wrapper" class="mb-5 pl-2">
+    <span>Contents</span>
+    <nav id="toc" data-toggle="toc">
+        
+        
+        
+    </nav>
+</div>
+
+<div id="access-lastmod" class="pb-4 pl-2">
+    <div class="panel-heading">Recently Updated</div>
+    <ul class="post-content pl-3 pb-1 ml-1 mt-2">
+          
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/1-total-variation/">Total Variation</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-7/1-derivatives-of-measures/">Derivatives of Measures</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/3-consequences-of-the-radon-nikodym-theorem/">Consequences of the Radon-Nikodym Theorem</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/4-bounded-linear-functionals-on-lp/">Bounded linear functional on Lp</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/2-abosolute-continuity/">Abosolute Continuity</a></li>
+        
+    </ul>
+</div>
+
+<div id="access-tags" class="pl-2">
+    <div class="panel-heading">Trending Tags</div>
+    <div class="d-flex flex-wrap mt-3 mb-1 mr-3">
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/algorithm/">Algorithm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/android/">Android</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c/">C</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c-language/">c language</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/caddy/">Caddy</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cadence/">Cadence</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cdc/">CDC</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/classification/">classification</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/compress/">Compress</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/conf/">Conf</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/double-column/">Double Column</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/errno13/">Errno13</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/fish/">fish</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gan/">GAN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/git/">Git</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gtk/">Gtk</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/html/">Html</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/i3/">I3</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/idea/">Idea</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/java/">Java</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/latex/">Latex</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lda/">LDA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linear-programming/">Linear Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linux/">Linux</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lr/">LR</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/math/">Math</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mathematics/">Mathematics</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matlab/">Matlab</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matplot/">matplot</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/memory/">Memory</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mermaid/">Mermaid</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/misc/">Misc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/ml/">ML</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mosfet/">Mosfet</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/network/">Network</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/nn/">NN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pandoc/">Pandoc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pca/">PCA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/probability/">Probability</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/productive/">Productive</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/program/">Program</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/programming/">Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/python/">Python</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/qt/">Qt</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/random-variable/">Random Variable</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rcnn/">RCNN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rust/">Rust</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/security/">Security</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/software/">Software</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/std/">Std</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/svd/">Svd</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/tool/">Tool</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/usb/">USB</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vim/">Vim</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpn/">Vpn</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpnc/">Vpnc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/xterm/">xterm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/zsh/">Zsh</a>
+        
+    </div>
+</div>
+</div><div id="search-result-wrapper" class="d-flex justify-content-center unloaded">
+    <div class="col-12 col-sm-11 post-content">
+        <div id="search-hints"></div>
+        <div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3 col-12"></div>
+    </div>
+</div>
+
+<script src="/js/fuse.min.js"></script>
+<script src="/js/fastsearch.js"></script>
+
+
+</div>
+        <div id="mask"></div>
+        <a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button"
+            style="display: none">
+            <i class="fas fa-angle-up"></i>
+        </a>
+    </div>
+    
+</body>
+
+</html>

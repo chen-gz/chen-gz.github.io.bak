@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Random processes on Guangzong Blog</title>
+    <link>https://zongpitt.com/random-process/</link>
+    <description>Recent content in Random processes on Guangzong Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 08 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://zongpitt.com/random-process/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1 set theory</title>
+      <link>https://zongpitt.com/random-process/1-set-theory/</link>
+      <pubDate>Sat, 08 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/random-process/1-set-theory/</guid>
+      <description> youtube bilibili
+note pdf xopp </description>
+    </item>
+    
+    <item>
+      <title>2 Basic Concepts</title>
+      <link>https://zongpitt.com/random-process/2-basic-concepts/</link>
+      <pubDate>Sat, 08 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/random-process/2-basic-concepts/</guid>
+      <description> youtube part1 part2 bilibili part1 part2 note pdf xopp </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css"
+        class="dark-mode-native-dark-original" />
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+     
+    <link rel="stylesheet" href="https://zongpitt.com/sass/main.06935202011a97ba473ebeeb0cb6788daa9fb5a9fff471a4e85850293d1c5ac4.css" />
+    <title>
+          Guangzong Blog | Wasserstein GAN 1
+    </title>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.bundle.min.js"></script>
+    <script src=" https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.js"></script>
+
+    <script
+        src="https://cdn.jsdelivr.net/combine/npm/magnific-popup@1/dist/jquery.magnific-popup.min.js,npm/lozad/dist/lozad.min.js,npm/clipboard@2/dist/clipboard.min.js"></script>
+    <script type="text/javascript" src="/js/commons/back-to-top.js"></script>
+    
+    
+    
+    <script type="text/javascript" src="/js/commons/topbar-switch.js"></script>
+    <script type="text/javascript" src="/js/commons/sidebar.js"></script>
+    <script type="text/javascript" src="/js/utils/category-collapse.js"></script>
+    <script type="text/javascript" src="/js/utils/checkbox.js"></script>
+    <script type="text/javascript" src="/js/utils/clipboard.js"></script>
+    <script type="text/javascript" src="/js/utils/img-extra.js"></script>
+    <script type="text/javascript" src="/js/utils/pageviews.js"></script>
+    
+    <script type="text/javascript" src="/js/utils/timeago.js"></script>
+    
+    
+</head>
+<body data-spy="scroll" data-target="#toc" data-topbar-visible="true" class="d-flex"><div id="sidebar" class="d-flex flex-column align-items-end">
+    <div class="profile-wrapper text-center">
+
+        <div id="avatar">
+            <a href="/" alt="avatar" class="mx-auto"> <img src=https://github.com/chen-gz/chen-gz/blob/main/mine_square.jpg?raw&#61;truehttps://raw.githubusercontent.com/chen-gz/chen-gz/blob/main/mine_square.jpg alt="avatar"
+                    onerror="this.style.display='none'"> </a>
+        </div>
+
+        <div class="site-title mt-3"> <a href="/">Guangzong</a> </div>
+        <div class="site-subtitle font-italic">Welcome to my blog</div>
+    </div>
+
+    <ul>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/">
+                <span>
+                    Home
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/archive/">
+                <span>
+                    Archive
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/tags/">
+                <span>
+                    Tags
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/about/">
+                <span>
+                    About
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/categories/">
+                <span>
+                    Categories
+                </span>
+            </a>
+        </li>
+        
+    </ul>
+
+    <div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center align-items-center">
+        <button class="mode-toggle btn" aria-label="Switch Mode"> 
+            <i class="fas fa-adjust"></i> 
+        </button>
+
+        <span class="icon-border"></span>
+        <a href="https://github.com/chen-gz" aria-label="github" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i>
+        </a>
+
+        <a href=" javascript:location.href = 'mailto:' + ['chen-gz','outlook.com'].join('@')" aria-label="email">
+            <i class="fas fa-envelope"></i>
+        </a>
+
+        <a href="/feed.xml" aria-label="rss"> <i class="fas fa-rss"></i> </a>
+    </div>
+
+    
+    
+</div>
+<div id="all-wrapper" class="d-flex flex-column"><div id="topbar-wrapper">
+    <div id="topbar" class="d-flex">
+        
+        <span id="breadcrumb" class="d-flex">
+              
+               
+            
+            
+            <div><a href='https://zongpitt.com/'>Home</a></div>
+              
+              
+            
+            <div><a href="https://zongpitt.com/posts">posts</a></div>
+               
+                 
+                
+        </span>
+        <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i>
+        <div id="topbar-title">Guangzong</div>
+        <i id="search-trigger" class="fas fa-search fa-fw"></i>
+        <span id="search-wrapper" class="align-items-center">
+            <i class="fas fa-search fa-fw"></i>
+            <input class="form-control" id="search-input" type="search" aria-label="search" autocomplete="off"
+                placeholder="Search..." />
+            <i class="fa fa-times-circle fa-fw" id="search-cleaner"></i>
+        </span>
+    </div>
+</div>
+<div id="main-wrapper" class="d-flex mt-3">
+            <div id="core-wrapper" class="d-flex flex-column">
+                <div id="main" class="d-flex flex-column">
+                    
+<div class="post pl-1 pr-1 pl-md-2 pr-md-2">
+    
+    <div id="post-content">
+        <h1 style="text-align: center;">Wasserstein GAN 1</h1>
+        <br>
+        
+        <p>There are two paper to introduce Wasserstein GAN. <a
+href="https://arxiv.org/abs/1701.04862">Towards Principled Methods for
+Training Generative Adversarial Networks</a> and <a
+href="https://arxiv.org/abs/1701.07875">Wasserstein GAN</a>.</p>
+<p>First one present the issue in the GAN. It prove several theorem to
+get understanding why GAN is unstable and why it is hard to train. There
+are a lot resources in the internet. This post will take ever theorem
+and give intuitive. Intuition means, it is not rigorous prove like the
+paper did.</p>
+<p>The general idea is cross entropy cost function will not give enough
+gradient to train the network.</p>
+<h4
+id="theorem-2.1-smooth-optimal-separate-function-for-two-distribution">Theorem
+2.1 (smooth optimal separate function for two distribution)</h4>
+<p>If two distributions <span
+class="math inline">\(\mathbb{P}_{r}\)</span> and <span
+class="math inline">\(\mathbb{P}_{g}\)</span> have support contained on
+two disjoint compact subset <span
+class="math inline">\(\mathcal{M}\)</span> and <span
+class="math inline">\(\mathcal{P}\)</span> respectively, then there is a
+smooth optimal decimator <span class="math inline">\(D^{*}: \mathcal{X}
+\rightarrow[0,1]\)</span> that has accuracy 1 and <span
+class="math inline">\(\nabla_{x} D^{*}(x)=0\)</span> for all <span
+class="math inline">\(x \in \mathcal{M} \cup \mathcal{P} .\)</span></p>
+<p>This theorem is very obvious. If there are two disjoin distributions,
+then there is some interval between these two distributions. We can map
+this distribution to another space, to make the interval larger. In
+mapped space, we can easily find a smooth optimal discriminator. Then we
+can map this optimal discriminator back. The prove in the paper, is
+divide interval between two distributions tow 3 parts. Then can find a
+smooth function in the middle part. That means there is a smooth optimal
+discriminator to separate these distributions.</p>
+<h4 id="definition-2.1-transversally">Definition 2.1
+(transversally)</h4>
+<p>We first need to recall the definition of transversally. Let <span
+class="math inline">\(\mathcal{M}\)</span> and <span
+class="math inline">\(\mathcal{P}\)</span> be two boundary free regular
+submanifolds of <span class="math inline">\(\mathcal{F}\)</span>, which
+in our cases will simply be <span
+class="math inline">\(\mathcal{F}=\mathbb{R}^{d}\)</span>. Let <span
+class="math inline">\(x \in \mathcal{M} \cap \mathcal{P}\)</span> be an
+intersection point of the two manifolds. We say that <span
+class="math inline">\(\mathcal{M}\)</span> and <span
+class="math inline">\(\mathcal{P}\)</span> intersect transversally in
+<span class="math inline">\(x\)</span> if <span
+class="math inline">\(T_{x} \mathcal{M}+T_{x} \mathcal{P}=T_{x}
+\mathcal{F}\)</span>, where <span class="math inline">\(T_{x}
+\mathcal{M}\)</span> means the tangent space of <span
+class="math inline">\(\mathcal{M}\)</span> around <span
+class="math inline">\(x\)</span>.</p>
+<p>This is the definition of transversally. This is onsite of tangent
+space. This almost means they have different tangent space at certain
+point.</p>
+<h4 id="definition-2.2-perfectly-align">Definition 2.2 (perfectly
+align)</h4>
+<p>We say that two manifolds without boundary <span
+class="math inline">\(\mathcal{M}\)</span> and <span
+class="math inline">\(\mathcal{P}\)</span> perfectly align if there is
+an <span class="math inline">\(x \in \mathcal{M} \cap
+\mathcal{P}\)</span> such that <span
+class="math inline">\(\mathcal{M}\)</span> and <span
+class="math inline">\(\mathcal{P}\)</span> don’t intersect transversally
+in <span class="math inline">\(x\)</span>. We shall note the boundary
+and interior of a manifold <span
+class="math inline">\(\mathcal{M}\)</span> by <span
+class="math inline">\(\partial M\)</span> and Int <span
+class="math inline">\(M\)</span> respectively. We say that two manifolds
+<span class="math inline">\(\mathcal{M}\)</span> and <span
+class="math inline">\(\mathcal{P}\)</span> (with or without boundary)
+perfectly align if any of the boundary free manifold pairs <span
+class="math inline">\((\operatorname{Int} \mathcal{M},
+\operatorname{Int} \mathcal{P}),(\operatorname{Int} \mathcal{M},
+\partial \mathcal{P}),(\partial \mathcal{M}\)</span>, Int <span
+class="math inline">\(\mathcal{P})\)</span> or <span
+class="math inline">\((\partial \mathcal{M}, \partial
+\mathcal{P})\)</span> perfectly align.</p>
+<p>We can simply regard <span class="math inline">\(\mathcal{M}\)</span>
+and <span class="math inline">\(\mathcal{P}\)</span> are same.</p>
+<h4 id="lemma-2-not-perfectly-align">Lemma 2 (not perfectly align)</h4>
+<p>Lemma 2. Let <span class="math inline">\(\mathcal{M}\)</span> and
+<span class="math inline">\(\mathcal{P}\)</span> be two regular
+submanifolds of <span class="math inline">\(\mathbb{R}^{d}\)</span> that
+don’t have full dimension. Let <span class="math inline">\(\eta,
+\eta^{\prime}\)</span> be arbitrary independent continuous random
+variables. We therefore define the perturbed manifolds as <span
+class="math inline">\(\tilde{\mathcal{M}}=\mathcal{M}+\eta\)</span> and
+<span
+class="math inline">\(\tilde{\mathcal{P}}=\mathcal{P}+\eta^{\prime}
+.\)</span> Then</p>
+<p><span class="math inline">\(\mathbb{P}_{\eta,
+\eta^{\prime}}(\tilde{\mathcal{M}}\)</span> does not perfectly align
+with <span class="math inline">\(\tilde{\mathcal{P}})=1\)</span></p>
+<p>Lemma 2 shows that as long as there exist noise, two submanifold
+never perfect align.</p>
+<p>This will be use later to prove cross entropy function does not work
+well for GAN.</p>
+<h4 id="lemma-3-intersection-is-lower-dimension-and-measure-is-0">Lemma
+3 (intersection is lower dimension and measure is 0)</h4>
+<p>Lemma 3. Let <span class="math inline">\(\mathcal{M}\)</span> and
+<span class="math inline">\(\mathcal{P}\)</span> be two regular
+submanifolds of <span class="math inline">\(\mathbb{R}^{d}\)</span> that
+don’t perfectly align and don’t have full dimension. Let <span
+class="math inline">\(\mathcal{L}=\mathcal{M} \cap \mathcal{P}\)</span>.
+If <span class="math inline">\(\mathcal{M}\)</span> and <span
+class="math inline">\(\mathcal{P}\)</span> don’t have boundary, then
+<span class="math inline">\(\mathcal{L}\)</span> is also a manifold, and
+has strictly lower dimension than both the one of <span
+class="math inline">\(\mathcal{M}\)</span> and the one of <span
+class="math inline">\(\mathcal{P}\)</span>. If they have boundary, <span
+class="math inline">\(\mathcal{L}\)</span> is a union of at most 4
+strictly lower dimensional manifolds. In both cases, <span
+class="math inline">\(\mathcal{L}\)</span> has measure 0 in both <span
+class="math inline">\(\mathcal{M}\)</span> and <span
+class="math inline">\(\mathcal{P}\)</span>.</p>
+<p>This lemma means <span class="math inline">\(M\)</span> and <span
+class="math inline">\(P\)</span> almost disjoin. Even they have
+intersection.</p>
+<h4 id="theorem-2.2">Theorem 2.2</h4>
+<p>Theorem 2.2. Let <span class="math inline">\(\mathbb{P}_{r}\)</span>
+and <span class="math inline">\(\mathbb{P}_{g}\)</span> be two
+distributions that have support contained in two closed manifolds <span
+class="math inline">\(\mathcal{M}\)</span> and <span
+class="math inline">\(\mathcal{P}\)</span> that don’t perfectly align
+and don’t have full dimension. We further assume that <span
+class="math inline">\(\mathbb{P}_{r}\)</span> and <span
+class="math inline">\(\mathbb{P}_{g}\)</span> are continuous in their
+respective manifolds, meaning that if there is a set <span
+class="math inline">\(A\)</span> with measure 0 in <span
+class="math inline">\(\mathcal{M}\)</span>, then <span
+class="math inline">\(\mathbb{P}_{r}(A)=0\)</span> (and analogously for
+<span class="math inline">\(\mathbb{P}_{g}\)</span> ). Then, there
+exists an optimal discriminator <span class="math inline">\(D^{*}:
+\mathcal{X} \rightarrow[0,1]\)</span> that has accuracy 1 and for almost
+any <span class="math inline">\(x\)</span> in <span
+class="math inline">\(\mathcal{M}\)</span> or <span
+class="math inline">\(\mathcal{P}, D^{*}\)</span> is smooth in a
+neighborhood of <span class="math inline">\(x\)</span> and <span
+class="math inline">\(\nabla_{x} D^{*}(x)=0 .\)</span></p>
+<p>This theorem shows that if two distribution is in two manifolds.
+These manifolds does not perfect align, then optimal discriminator exist
+and accuracy is 1.</p>
+<h4 id="theorem-2.3">Theorem 2.3</h4>
+<p>Theorem 2.3. Let <span class="math inline">\(\mathbb{P}_{r}\)</span>
+and <span class="math inline">\(\mathbb{P}_{g}\)</span> be two
+distributions whose support lies in two manifolds <span
+class="math inline">\(\mathcal{M}\)</span> and <span
+class="math inline">\(\mathcal{P}\)</span> that don’t have full
+dimension and don’t perfectly align. We further assume that <span
+class="math inline">\(\mathbb{P}_{r}\)</span> and <span
+class="math inline">\(\mathbb{P}_{g}\)</span> are continuous in their
+respective manifolds. Then, <span class="math display">\[
+\begin{aligned}
+J S D\left(\mathbb{P}_{r} \| \mathbb{P}_{g}\right) &amp;=\log 2 \\
+K L\left(\mathbb{P}_{r} \| \mathbb{P}_{g}\right) &amp;=+\infty \\
+K L\left(\mathbb{P}_{g} \| \mathbb{P}_{r}\right) &amp;=+\infty
+\end{aligned}
+\]</span></p>
+<p>This Theorem tell us JSD and KL divergence will not give correct
+gradient for generator when we have a good discriminator, because they
+value does not depend on two distribution.</p>
+<h4 id="theorem-2.4-vanishing-gradients-on-the-generator">Theorem 2.4
+Vanishing gradients on the generator</h4>
+<p>Theorem <span class="math inline">\(2.4\)</span> (Vanishing gradients
+on the generator). Let <span class="math inline">\(g_{\theta}:
+\mathcal{Z} \rightarrow \mathcal{X}\)</span> be a differentiable
+function that induces a distribution <span
+class="math inline">\(\mathbb{P}_{g}\)</span>. Let <span
+class="math inline">\(\mathbb{P}_{r}\)</span> be the real data
+distribution. Let <span class="math inline">\(D\)</span> be a
+differentiable discriminator. If the conditions of Theorems <span
+class="math inline">\(2.1\)</span> or <span
+class="math inline">\(2.2\)</span> are satisfied, <span
+class="math inline">\(\left\|D-D^{*}\right\|&lt;\epsilon\)</span>, and
+<span class="math inline">\(\mathbb{E}_{z \sim
+p(z)}\left[\left\|J_{\theta} g_{\theta}(z)\right\|_{2}^{2}\right] \leq
+M^{2}, 2\)</span> then <span class="math display">\[
+\left\|\nabla_{\theta} \mathbb{E}_{z \sim p(z)}\left[\log
+\left(1-D\left(g_{\theta}(z)\right)\right)\right]\right\|_{2}&lt;M
+\frac{\epsilon}{1-\epsilon}
+\]</span></p>
+<p>This theorem give us upbound of generator gradient base on optimal
+discriminator. This gradient is really small and it make us unable to
+train GAN.</p>
+<h4 id="corollary-2.1">Corollary 2.1</h4>
+<p>Corollary 2.1. Under the same assumptions of Theorem <span
+class="math inline">\(2.4\)</span> <span class="math display">\[
+\lim _{\left\|D-D^{*}\right\| \rightarrow 0} \nabla_{\theta}
+\mathbb{E}_{z \sim p(z)}\left[\log
+\left(1-D\left(g_{\theta}(z)\right)\right)\right]=0
+\]</span></p>
+<p>This corollary shows that gradient almost 0 when we have optimal
+discriminator.</p>
+<h2 id="the--logd-alternative">The <span
+class="math inline">\(-logD\)</span> Alternative</h2>
+<p>The original GAN paper post use <span
+class="math inline">\(-logD(g_\theta(z))\)</span> as cost function to
+train the GAN at early stage. But this step will cost GAN instability.
+Following theorem give the prove for this statement.</p>
+<h4 id="theorem-2.5">Theorem 2.5</h4>
+<p>Let <span class="math inline">\(\mathbb{P}_{r}\)</span> and <span
+class="math inline">\(\mathbb{P}_{g_{\theta}}\)</span> be two continuous
+distributions, with densities <span class="math inline">\(P_{r}\)</span>
+and <span class="math inline">\(P_{g_{\theta}}\)</span> respectively.
+Let <span
+class="math inline">\(D^{*}=\frac{P_{r}}{P_{g_{\theta}}+P_{r}}\)</span>
+be the optimal discriminator, fixed for a value <span
+class="math inline">\(\theta_{0}\)</span>. Therefore, <span
+class="math display">\[
+\mathbb{E}_{z \sim p(z)}\left[-\left.\nabla_{\theta} \log
+D^{*}\left(g_{\theta}(z)\right)\right|_{\theta=\theta_{0}}\right]=\left.\nabla_{\theta}\left[K
+L\left(\mathbb{P}_{g_{\theta}} \| \mathbb{P}_{r}\right)-2 J S
+D\left(\mathbb{P}_{g_{\theta}} \|
+\mathbb{P}_{r}\right)\right]\right|_{\theta=\theta_{0}}
+\]</span> This theorem shows that JSD seems like a fault update when
+using <span class="math inline">\(-log D\)</span> alternative. Because
+for generator we wan <span
+class="math inline">\(\mathbb{P}_\theta\)</span> close to <span
+class="math inline">\(\mathbb{P}_r\)</span>. But <span
+class="math inline">\(JSD\)</span> in opposite sign, it will push them
+away from each other.</p>
+<h4 id="theorem-2.6-instability-of-generator-gradient-updates">Theorem
+2.6 (Instability of generator gradient updates)</h4>
+<p>Let <span class="math inline">\(g_{\theta}: \mathcal{Z} \rightarrow
+\mathcal{X}\)</span> be a differentiable function that induces a
+distribution <span class="math inline">\(\mathbb{P}_{g}\)</span>. Let
+<span class="math inline">\(\mathbb{P}_{r}\)</span> be the real data
+distribution, with either conditions of Theorems 2.1 or <span
+class="math inline">\(2.2\)</span> satisfied. Let <span
+class="math inline">\(D\)</span> be a discriminator such that <span
+class="math inline">\(D^{*}-D=\epsilon\)</span> is a centered Gaussian
+process indexed by <span class="math inline">\(x\)</span> and
+independent for every <span class="math inline">\(x\)</span> (popularly
+known as white noise) and <span class="math inline">\(\nabla_{x}
+D^{*}-\nabla_{x} D=r\)</span> another independent centered Gaussian
+process indexed by <span class="math inline">\(x\)</span> and
+independent for every <span class="math inline">\(x .\)</span> Then,
+each coordinate of <span class="math display">\[
+\mathbb{E}_{z \sim p(z)}\left[-\nabla_{\theta} \log
+D\left(g_{\theta}(z)\right)\right]
+\]</span> is a centered Cauchy distribution with infinite expectation
+and variance.</p>
+<p>Because Cauchy distribution is unstable. The gradient follows the
+Cauchy distribution, so the training state will be unstable.</p>
+<h2 id="towards-softer-metrics-and-distributions">Towards Softer Metrics
+and Distributions</h2>
+<p>The theorem in this section is aim to fix the instability and
+vanishing gradient issue.</p>
+<h4 id="theorem-3.1">Theorem 3.1</h4>
+<p>If <span class="math inline">\(X\)</span> has distribution <span
+class="math inline">\(\mathbb{P}_{X}\)</span> with support on <span
+class="math inline">\(\mathcal{M}\)</span> and <span
+class="math inline">\(\epsilon\)</span> is an absolutely continuous
+random variable with density <span
+class="math inline">\(P_{\epsilon}\)</span>, then <span
+class="math inline">\(\mathbb{P}_{X+\epsilon}\)</span> is absolutely
+continuous with density <span class="math display">\[
+\begin{aligned}
+P_{X+\epsilon}(x) &amp;=\mathbb{E}_{y \sim
+\mathbb{P}_{X}}\left[P_{\epsilon}(x-y)\right] \\
+&amp;=\int_{\mathcal{M}} P_{\epsilon}(x-y) \mathrm{d} \mathbb{P}_{X}(y)
+\end{aligned}
+\]</span></p>
+<h4 id="corollary-3.1">Corollary 3.1</h4>
+<ul>
+<li>If <span class="math inline">\(\epsilon \sim \mathcal{N}\left(0,
+\sigma^{2} I\right)\)</span> then <span class="math display">\[
+P_{X+c}(x)=\frac{1}{Z} \int_{\mathcal{M}} e^{-\frac{\|y-x\|^{2}}{2
+\sigma^{2}}} \mathrm{~d} \mathbb{P}_{X}(y)
+\]</span></li>
+<li>If <span class="math inline">\(c \sim \mathcal{N}(0,
+\Sigma)\)</span> then <span class="math display">\[
+P_{X+\epsilon}(x)=\frac{1}{Z} \mathbb{E}_{y \sim
+\mathbf{P}_{X}}\left[e^{-\frac{1}{2}\|y-x\|_{\Sigma-1}^{2}}\right]
+\]</span></li>
+<li>If <span class="math inline">\(P_{\epsilon}(x) \propto
+\frac{1}{\|x\|^{d+1}}\)</span> then <span class="math display">\[
+P_{X+\epsilon}(x)=\frac{1}{Z} \mathbb{E}_{y \sim
+\mathbb{P}_{X}}\left[\frac{1}{\|x-y\|^{d+1}}\right]
+\]</span></li>
+</ul>
+<h4 id="theorem-3.2">Theorem 3.2</h4>
+<p>Theorem 3.2. Let <span class="math inline">\(\mathbb{P}_{r}\)</span>
+and <span class="math inline">\(\mathbb{P}_{g}\)</span> be two
+distributions with support on <span
+class="math inline">\(\mathcal{M}\)</span> and <span
+class="math inline">\(\mathcal{P}\)</span> respectively, with <span
+class="math inline">\(\epsilon \sim \mathcal{N}\left(0, \sigma^{2}
+I\right) .\)</span> Then, the gradient passed to the generator has the
+form <span class="math display">\[
+\begin{aligned}
+\mathbb{E}_{z \sim p(z)} &amp;\left[\nabla_{\theta} \log
+\left(1-D^{*}\left(g_{0}(z)\right)\right)\right] \\
+&amp;=\mathbb{E}_{z \sim p(z)}\left[a(z) \int_{\mathcal{M}}
+P_{\epsilon}\left(g_{\theta}(z)-y\right)
+\nabla_{\theta}\left\|g_{\theta}(z)-y\right\|^{2} \mathrm{~d}
+\mathbb{P}_{r}(y)\right.\\
+&amp;\left.-b(z) \int_{\mathcal{P}}
+P_{\epsilon}\left(g_{\theta}(z)-y\right)
+\nabla_{\theta}\left\|g_{\theta}(z)-y\right\|^{2} \mathrm{~d}
+\mathbb{P}_{g}(y)\right]
+\end{aligned}
+\]</span> where <span class="math inline">\(a(z)\)</span> and <span
+class="math inline">\(b(z)\)</span> are positive functions. Furthermore,
+<span class="math inline">\(b&gt;a\)</span> if and only if <span
+class="math inline">\(P_{r+\epsilon}&gt;P_{g+\epsilon}\)</span>, and
+<span class="math inline">\(b&lt;a\)</span> if and only if <span
+class="math inline">\(P_{r+\epsilon}&lt;P_{g+\epsilon}\)</span>.</p>
+<h4 id="corollary-3.2">Corollary 3.2</h4>
+<p>Let <span class="math inline">\(c, \epsilon^{\prime} \sim
+\mathcal{N}\left(0, \sigma^{2} I\right)\)</span> and <span
+class="math inline">\(\tilde{g}_{\theta}(z)=g_{\theta}(z)+c^{\prime}\)</span>,
+then <span class="math display">\[
+\begin{aligned}
+\mathbb{E}_{z \sim p(z), \epsilon^{\prime}} &amp;\left[\nabla_{\theta}
+\log \left(1-D^{*}\left(\tilde{g}_{0}(z)\right)\right)\right] \\
+&amp;=\mathbb{E}_{z \sim p(z), \epsilon^{\prime}}\left[a(z)
+\int_{\mathcal{M}} P_{\epsilon}\left(\tilde{g}_{0}(z)-y\right)
+\nabla_{\theta}\left\|\tilde{g}_{0}(z)-y\right\|^{2} \mathrm{~d}
+\mathbb{P}_{r}(y)\right.\\
+&amp;\left.-b(z) \int_{\mathcal{P}}
+P_{\epsilon}\left(\tilde{g}_{\theta}(z)-y\right)
+\nabla_{\theta}\left\|\tilde{g}_{\theta}(z)-y\right\|^{2} \mathrm{~d}
+\mathbb{P}_{g}(y)\right] \\
+&amp;=2 \nabla_{\theta} J S D\left(\mathbb{P}_{r+\epsilon} \|
+\mathbb{P}_{g+\epsilon}\right)
+\end{aligned}
+\]</span></p>
+<h4 id="definition-3.1">Definition 3.1</h4>
+<p>Definition 3.1. We recall the definition of the Wasserstein metric
+<span class="math inline">\(W(P, Q)\)</span> for <span
+class="math inline">\(P\)</span> and <span
+class="math inline">\(Q\)</span> two distributions over <span
+class="math inline">\(\mathcal{X}\)</span>. Namely, <span
+class="math display">\[
+W(P, Q)=\inf _{\gamma \in \Gamma} \int_{\mathcal{X} \times
+\mathcal{X}}\|x-y\|_{2} d \gamma(x, y)
+\]</span> where <span class="math inline">\(\Gamma\)</span> is the set
+of all possible joints on <span class="math inline">\(\mathcal{X} \times
+\mathcal{X}\)</span> that have marginals <span
+class="math inline">\(P\)</span> and <span
+class="math inline">\(Q\)</span>.</p>
+<h4 id="lemma-4.">Lemma 4.</h4>
+<p>If <span class="math inline">\(\epsilon\)</span> is a random vector
+with mean 0, then we have <span class="math display">\[
+W\left(\mathbb{P}_{X}, \mathbb{P}_{X+\epsilon}\right) \leq
+V^{\frac{1}{2}}
+\]</span> where <span
+class="math inline">\(V=\mathbb{E}\left[\|c\|_{2}^{2}\right]\)</span> is
+the variance of <span class="math inline">\(\epsilon\)</span></p>
+<h4 id="theorem-3.3.">Theorem 3.3.</h4>
+<p>Let <span class="math inline">\(\mathbb{P}_{r}\)</span> and <span
+class="math inline">\(\mathbb{P}_{g}\)</span> be any two distributions,
+and <span class="math inline">\(\epsilon\)</span> be a random vector
+with mean 0 and variance <span class="math inline">\(V\)</span>. If
+<span class="math inline">\(\mathbb{P}_{r+c}\)</span> and <span
+class="math inline">\(\mathbb{P}_{g+c}\)</span> have support contained
+on a ball of diameter <span class="math inline">\(C\)</span>, then <span
+class="math display">\[
+W\left(\mathbb{P}_{r}, \mathbb{P}_{g}\right) \leq 2 V^{\frac{1}{2}}+2 C
+\sqrt{J S D\left(\mathbb{P}_{r+\epsilon} \|
+\mathbb{P}_{g+\epsilon}\right)}
+\]</span></p>
+
+    </div>
+    
+</div>
+</div>
+
+                <div id="footer-wrapper">
+                    <footer class="footer"><footer class="row pl-3 pr-3">
+    <div class="col-12 d-flex justify-content-between align-items-center text-muted pl-0 pr-0">
+        <div class="footer-left">
+            <p class="mb-0"> © 2022 <a href="https://github.com/chen-gz">guangzong</a>. <span data-toggle="tooltip"
+                    data-placement="top"
+                    title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author.">All
+                    rights reserved.</span></p>
+        </div>
+        <div class="footer-right">
+            <p class="mb-0"> Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">hugo</a>
+                with <a href="https://github.com/chen-gz/hugo_zong" target="_blank" rel="noopener">zong</a>
+                theme.</p>
+        </div>
+    </div>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script> MathJax = {
+            tex: {
+                tags: 'ams',
+            }
+        };</script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</footer>
+</footer>
+                </div>
+            </div>
+            <div id="panel-wrapper" class="d-flex flex-column"><div id="toc-wrapper" class="mb-5 pl-2">
+    <span>Contents</span>
+    <nav id="toc" data-toggle="toc">
+        
+        
+        
+    </nav>
+</div>
+
+<div id="access-lastmod" class="pb-4 pl-2">
+    <div class="panel-heading">Recently Updated</div>
+    <ul class="post-content pl-3 pb-1 ml-1 mt-2">
+          
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/1-total-variation/">Total Variation</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-7/1-derivatives-of-measures/">Derivatives of Measures</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/3-consequences-of-the-radon-nikodym-theorem/">Consequences of the Radon-Nikodym Theorem</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/4-bounded-linear-functionals-on-lp/">Bounded linear functional on Lp</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/2-abosolute-continuity/">Abosolute Continuity</a></li>
+        
+    </ul>
+</div>
+
+<div id="access-tags" class="pl-2">
+    <div class="panel-heading">Trending Tags</div>
+    <div class="d-flex flex-wrap mt-3 mb-1 mr-3">
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/algorithm/">Algorithm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/android/">Android</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c/">C</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c-language/">c language</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/caddy/">Caddy</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cadence/">Cadence</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cdc/">CDC</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/classification/">classification</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/compress/">Compress</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/conf/">Conf</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/double-column/">Double Column</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/errno13/">Errno13</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/fish/">fish</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gan/">GAN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/git/">Git</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gtk/">Gtk</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/html/">Html</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/i3/">I3</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/idea/">Idea</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/java/">Java</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/latex/">Latex</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lda/">LDA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linear-programming/">Linear Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linux/">Linux</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lr/">LR</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/math/">Math</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mathematics/">Mathematics</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matlab/">Matlab</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matplot/">matplot</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/memory/">Memory</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mermaid/">Mermaid</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/misc/">Misc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/ml/">ML</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mosfet/">Mosfet</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/network/">Network</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/nn/">NN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pandoc/">Pandoc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pca/">PCA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/probability/">Probability</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/productive/">Productive</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/program/">Program</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/programming/">Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/python/">Python</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/qt/">Qt</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/random-variable/">Random Variable</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rcnn/">RCNN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rust/">Rust</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/security/">Security</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/software/">Software</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/std/">Std</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/svd/">Svd</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/tool/">Tool</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/usb/">USB</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vim/">Vim</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpn/">Vpn</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpnc/">Vpnc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/xterm/">xterm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/zsh/">Zsh</a>
+        
+    </div>
+</div>
+</div><div id="search-result-wrapper" class="d-flex justify-content-center unloaded">
+    <div class="col-12 col-sm-11 post-content">
+        <div id="search-hints"></div>
+        <div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3 col-12"></div>
+    </div>
+</div>
+
+<script src="/js/fuse.min.js"></script>
+<script src="/js/fastsearch.js"></script>
+
+
+</div>
+        <div id="mask"></div>
+        <a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button"
+            style="display: none">
+            <i class="fas fa-angle-up"></i>
+        </a>
+    </div>
+    
+</body>
+
+</html>

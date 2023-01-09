@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>10 Integration of Differential Forms on Guangzong Blog</title>
+    <link>https://zongpitt.com/baby-rudin/10-integration-of-differential-forms/</link>
+    <description>Recent content in 10 Integration of Differential Forms on Guangzong Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://zongpitt.com/baby-rudin/10-integration-of-differential-forms/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>10 Exerciese.md</title>
+      <link>https://zongpitt.com/baby-rudin/10-integration-of-differential-forms/10-exerciese/</link>
+      <pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/10-integration-of-differential-forms/10-exerciese/</guid>
+      <description>Let \(H\) be a compact convex set in \(R^{k}\), with nonempty interior. Let \(f \in \mathscr{C}(H)\), put \(f(\mathbf{x})=0\) in the complement of \(H\), and define \(\int_{H} f\) as in Definition 10.3. Prove that \(\int_{H} f\) is independent of the order in which the \(k\) integrations are carried out.
+Hint: Approximate \(f\) by functions that are continuous on \(R^{k}\) and whose supports are in \(H\), as was done in Example 10.</description>
+    </item>
+    
+    <item>
+      <title>9 VECTOR ANALYSIS</title>
+      <link>https://zongpitt.com/baby-rudin/10-integration-of-differential-forms/9-vector-analysis/</link>
+      <pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/10-integration-of-differential-forms/9-vector-analysis/</guid>
+      <description>We conclude this chapter with a few applications of the preceding material to theorems concerning vector analysis in \(R^{3}\). These are special cases of theorems about differential forms, but are usually stated in different terminology. We are thus faced with the job of translating from one language to another.
+10.42 Vector fields Let \(F=F_{1} \mathbf{e}_{1}+F_{2} \mathbf{e}_{2}+F_{3} \mathbf{e}_{3}\) be a continuous mapping of an open set \(E \subset R^{3}\) into \(R^{3}\). Since \(\mathbf{F}\) associates a vector to each point of \(E, \mathbf{F}\) is sometimes called a vector field, especially in physics.</description>
+    </item>
+    
+    <item>
+      <title>5 DIFFERENTIAL FORMS</title>
+      <link>https://zongpitt.com/baby-rudin/10-integration-of-differential-forms/5-differential-forms/</link>
+      <pubDate>Tue, 16 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/10-integration-of-differential-forms/5-differential-forms/</guid>
+      <description>We shall now develop some of the machinery that is needed for the \(n\)-dimensional version of the fundamental theorem of calculus which is usually called Stokes’ theorem. The original form of Stokes’ theorem arose in applications of vector analysis to electromagnetism and was stated in terms of the curl of a vector field. Green’s theorem and the divergence theorem are other special cases. These topics are briefly discussed at the end of the chapter.</description>
+    </item>
+    
+    <item>
+      <title>6 SIMPLEXEs AND CHAINS</title>
+      <link>https://zongpitt.com/baby-rudin/10-integration-of-differential-forms/6-simplexes-and-chains/</link>
+      <pubDate>Tue, 16 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/10-integration-of-differential-forms/6-simplexes-and-chains/</guid>
+      <description>10.26 Affine simplexes A mapping \(\mathrm{f}\) that carries a vector space \(X\) into a vector space \(Y\) is said to be affine if \(\mathbf{f}-\mathbf{f}(0)\) is linear. In other words, the requirement is that
+\[ \begin{equation} \mathbf{f}(\mathbf{x})=\mathbf{f}(\mathbf{0})+A \mathbf{x} \label{eq:73} \end{equation} \]
+for some \(A \in L(X, Y)\).
+An affine mapping of \(R^{k}\) into \(R^{n}\) is thus determined if we know \(\mathbf{f}(0)\) and \(\mathbf{f}\left(\mathbf{e}_{i}\right)\) for \(1 \leq i \leq k\); as usual, \(\left\{\mathbf{e}_{1}, \ldots, \mathbf{e}_{k}\right\}\) is the standard basis of \(R^{k}\).</description>
+    </item>
+    
+    <item>
+      <title>7 STOKES&#39; THEOREM</title>
+      <link>https://zongpitt.com/baby-rudin/10-integration-of-differential-forms/7-stokes-theorem/</link>
+      <pubDate>Tue, 16 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/10-integration-of-differential-forms/7-stokes-theorem/</guid>
+      <description>10.33 Theorem If \(\Psi\) is a \(k\)-chain of class \(\mathscr{C}^{\prime \prime}\) in an open set \(V \subset R^{m}\) and if \(\omega\) is a \((k-1)\)-form of class \(\mathscr{C}^{\prime}\) in \(V\), then
+\[ \int_{\Psi} d \omega=\int_{\partial \Psi} \omega . \]
+The case \(k=m=1\) is nothing but the fundamental theorem of calculus (with an additional differentiability assumption). The case \(k=m=2\) is Green’s theorem, and \(k=m=3\) gives the so-called “divergence theorem’” of Gauss. The case \(k=2, m=3\) is the one originally discovered by Stokes.</description>
+    </item>
+    
+    <item>
+      <title>8 CLOSED FORMS AND EXACT FORMS</title>
+      <link>https://zongpitt.com/baby-rudin/10-integration-of-differential-forms/8-closed-forms-and-exact-forms/</link>
+      <pubDate>Tue, 16 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/10-integration-of-differential-forms/8-closed-forms-and-exact-forms/</guid>
+      <description>10.34 Definition Let \(\omega\) be a \(k\)-form in an open set \(E \subset R^{n}\). If there is a \((k-1)\) form \(\lambda\) in \(E\) such that \(\omega=d \lambda\), then \(\omega\) is said to be exact in \(E\).
+If \(\omega\) is of class \(\mathscr{C}^{\prime}\) and \(d \omega=0\), then \(\omega\) is said to be closed.
+Theorem \(10.20(b)\) shows that every exact form of class \(\mathscr{C}^{\prime}\) is closed.
+In certain sets \(E\), for example in convex ones, the converse is true; this is the content of Theorem \(10.</description>
+    </item>
+    
+    <item>
+      <title>1 INTEGRATION</title>
+      <link>https://zongpitt.com/baby-rudin/10-integration-of-differential-forms/1-integration/</link>
+      <pubDate>Mon, 15 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/10-integration-of-differential-forms/1-integration/</guid>
+      <description>10.1 Definition Suppose \(I^{k}\) is a \(k\)-cell in \(R^{k}\), consisting of all
+\[ \mathbf{x}=\left(x_{1}, \ldots, x_{k}\right) \]
+such that
+\[ a_{i} \leq x_{i} \leq b_{i} \quad(i=1, \ldots, k), \]
+\(I^{j}\) is the \(j\)-cell in \(R^{j}\) defined by the first \(j\) inequalities (1), and \(f\) is a real continuous function on \(I^{k}\).
+Put \(f=f_{k}\), and define \(f_{k-1}\) on \(I^{k-1}\) by
+\[ f_{k-1}\left(x_{1}, \ldots, x_{k-1}\right)=\int_{a_{k}}^{b_{k}} f_{k}\left(x_{1}, \ldots, x_{k-1}, x_{k}\right) d x_{k} . \]</description>
+    </item>
+    
+    <item>
+      <title>2 PRIMITIVE MAPPINGS</title>
+      <link>https://zongpitt.com/baby-rudin/10-integration-of-differential-forms/2-primitive-mappings/</link>
+      <pubDate>Mon, 15 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/10-integration-of-differential-forms/2-primitive-mappings/</guid>
+      <description>10.5 Definition If \(\mathbf{G}\) maps an open set \(E \subset R^{n}\) into \(R^{n}\), and if there is an integer \(m\) and a real function \(g\) with domain \(E\) such that
+\[ \mathbf{G}(\mathbf{x})=\sum_{i \neq m} x_{i} \mathbf{e}_{i}+g(\mathbf{x}) \mathbf{e}_{m} \quad(\mathbf{x} \in E), \]
+then we call G primitive. A primitive mapping is thus one that changes at most one coordinate. Note that (9) can also be written in the form
+\[ \mathbf{G}(\mathbf{x})=\mathbf{x}+\left[g(\mathbf{x})-x_{m}\right] \mathbf{e}_{m} .</description>
+    </item>
+    
+    <item>
+      <title>3 PARTITIONS OF UNITY</title>
+      <link>https://zongpitt.com/baby-rudin/10-integration-of-differential-forms/3-partitions-of-unity/</link>
+      <pubDate>Mon, 15 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/10-integration-of-differential-forms/3-partitions-of-unity/</guid>
+      <description>10.8 Theorem Suppose \(K\) is a compact subset of \(R^{n}\), and \(\left\{\mathrm{V}_{\alpha}\right\}\) is an open cover of \(K\). Then there exist functions \(\psi_{1}, \ldots, \psi_{s} \in \mathscr{C}\left(R^{n}\right)\) such that
+\(0 \leq \psi_{i} \leq 1\) for \(1 \leq i \leq s\); each \(\psi_{i}\) has its support in some \(V_{\alpha}\), and \(\psi_{1}(\mathbf{x})+\cdots+\psi_{s}(\mathbf{x})=1\) for every \(\mathbf{x} \in K\). Because of \((c),\left\{\psi_{i}\right\}\) is called a partition of unity, and \((b)\) is sometimes expressed by saying that \(\left\{\psi_{i}\right\}\) is subordinate to the cover \(\left\{V_{\alpha}\right\}\).</description>
+    </item>
+    
+    <item>
+      <title>4 CHANGE OF VARIABLES</title>
+      <link>https://zongpitt.com/baby-rudin/10-integration-of-differential-forms/4-change-of-variables/</link>
+      <pubDate>Mon, 15 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/10-integration-of-differential-forms/4-change-of-variables/</guid>
+      <description>We can now describe the effect of a change of variables on a multiple integral. For simplicity, we confine ourselves here to continuous functions with compact support, although this is too restrictive for many applications. This is illustrated by Exercises 9 to 13 .
+10.9 Theorem Suppose \(T\) is a 1-1 \(\mathscr{C}^{\prime}\)-mapping of an open set \(E \subset R^{k}\) into \(R^{k}\) such that \(J_{T}(\mathbf{x}) \neq 0\) for all \(\mathbf{x} \in E\).</description>
+    </item>
+    
+    <item>
+      <title>INTRO</title>
+      <link>https://zongpitt.com/baby-rudin/10-integration-of-differential-forms/0-intro/</link>
+      <pubDate>Mon, 15 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/baby-rudin/10-integration-of-differential-forms/0-intro/</guid>
+      <description>Integration can be studied on many levels. In Chap. 6, the theory was developed for reasonably well-behaved functions on subintervals of the real line. In Chap. 11 we shall encounter a very highly developed theory of integration that can be applied to much larger classes of functions, whose domains are more or less arbitrary sets, not necessarily subsets of \(R^{n}\). The present chapter is devoted to those aspects of integration theory that are closely related to the geometry of euclidean spaces, such as the change of variables formula, line integrals, and the machinery of differential forms that is used in the statement and proof of the \(n\)-dimensional analogue of the fundamental theorem of calculus, namely Stokes’ theorem.</description>
+    </item>
+    
+  </channel>
+</rss>

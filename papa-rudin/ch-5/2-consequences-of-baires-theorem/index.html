@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css"
+        class="dark-mode-native-dark-original" />
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+     
+    <link rel="stylesheet" href="https://zongpitt.com/sass/main.06935202011a97ba473ebeeb0cb6788daa9fb5a9fff471a4e85850293d1c5ac4.css" />
+    <title>
+          Guangzong Blog | Consequences of Baire&#39;s Theorem
+    </title>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.bundle.min.js"></script>
+    <script src=" https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.js"></script>
+
+    <script
+        src="https://cdn.jsdelivr.net/combine/npm/magnific-popup@1/dist/jquery.magnific-popup.min.js,npm/lozad/dist/lozad.min.js,npm/clipboard@2/dist/clipboard.min.js"></script>
+    <script type="text/javascript" src="/js/commons/back-to-top.js"></script>
+    
+    
+    
+    <script type="text/javascript" src="/js/commons/topbar-switch.js"></script>
+    <script type="text/javascript" src="/js/commons/sidebar.js"></script>
+    <script type="text/javascript" src="/js/utils/category-collapse.js"></script>
+    <script type="text/javascript" src="/js/utils/checkbox.js"></script>
+    <script type="text/javascript" src="/js/utils/clipboard.js"></script>
+    <script type="text/javascript" src="/js/utils/img-extra.js"></script>
+    <script type="text/javascript" src="/js/utils/pageviews.js"></script>
+    
+    <script type="text/javascript" src="/js/utils/timeago.js"></script>
+    
+    
+</head>
+<body data-spy="scroll" data-target="#toc" data-topbar-visible="true" class="d-flex"><div id="sidebar" class="d-flex flex-column align-items-end">
+    <div class="profile-wrapper text-center">
+
+        <div id="avatar">
+            <a href="/" alt="avatar" class="mx-auto"> <img src=https://github.com/chen-gz/chen-gz/blob/main/mine_square.jpg?raw&#61;truehttps://raw.githubusercontent.com/chen-gz/chen-gz/blob/main/mine_square.jpg alt="avatar"
+                    onerror="this.style.display='none'"> </a>
+        </div>
+
+        <div class="site-title mt-3"> <a href="/">Guangzong</a> </div>
+        <div class="site-subtitle font-italic">Welcome to my blog</div>
+    </div>
+
+    <ul>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/">
+                <span>
+                    Home
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/archive/">
+                <span>
+                    Archive
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/tags/">
+                <span>
+                    Tags
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/about/">
+                <span>
+                    About
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/categories/">
+                <span>
+                    Categories
+                </span>
+            </a>
+        </li>
+        
+    </ul>
+
+    <div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center align-items-center">
+        <button class="mode-toggle btn" aria-label="Switch Mode"> 
+            <i class="fas fa-adjust"></i> 
+        </button>
+
+        <span class="icon-border"></span>
+        <a href="https://github.com/chen-gz" aria-label="github" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i>
+        </a>
+
+        <a href=" javascript:location.href = 'mailto:' + ['chen-gz','outlook.com'].join('@')" aria-label="email">
+            <i class="fas fa-envelope"></i>
+        </a>
+
+        <a href="/feed.xml" aria-label="rss"> <i class="fas fa-rss"></i> </a>
+    </div>
+
+    
+    
+</div>
+<div id="all-wrapper" class="d-flex flex-column"><div id="topbar-wrapper">
+    <div id="topbar" class="d-flex">
+        
+        <span id="breadcrumb" class="d-flex">
+              
+               
+            
+            
+            <div><a href='https://zongpitt.com/'>Home</a></div>
+              
+              
+            
+            <div><a href="https://zongpitt.com/papa-rudin">papa-rudin</a></div>
+               
+              
+            
+            <div><a href="https://zongpitt.com/papa-rudin/ch-5">ch-5</a></div>
+               
+                 
+                
+        </span>
+        <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i>
+        <div id="topbar-title">Guangzong</div>
+        <i id="search-trigger" class="fas fa-search fa-fw"></i>
+        <span id="search-wrapper" class="align-items-center">
+            <i class="fas fa-search fa-fw"></i>
+            <input class="form-control" id="search-input" type="search" aria-label="search" autocomplete="off"
+                placeholder="Search..." />
+            <i class="fa fa-times-circle fa-fw" id="search-cleaner"></i>
+        </span>
+    </div>
+</div>
+<div id="main-wrapper" class="d-flex mt-3">
+            <div id="core-wrapper" class="d-flex flex-column">
+                <div id="main" class="d-flex flex-column">
+                    
+<div class="post pl-1 pr-1 pl-md-2 pr-md-2">
+    
+    <div id="post-content">
+        <h1 style="text-align: center;">Consequences of Baire&#39;s Theorem</h1>
+        <br>
+        
+        <h3 id="section">5.5</h3>
+<p>The manner in which the completeness of Banach spaces is frequently
+exploited depends on the following theorem about complete metric spaces,
+which also has many applications in other parts of mathematics. It
+implies two of the three most important theorems which make Banach
+spaces useful tools in analysis, the Banach-Steinhaus theorem and the
+open mapping theorem. The third is the Hahn-Banach extension theorem, in
+which completeness plays no role.</p>
+<h3 id="baires-theorem">5.6 Baire’s Theorem</h3>
+<p>If <span class="math inline">\(X\)</span> is a complete metric space,
+the intersection of every countable collection of dense open subsets of
+<span class="math inline">\(X\)</span> is dense in <span
+class="math inline">\(X\)</span>.</p>
+<p>In particular (except in the trivial case <span
+class="math inline">\(X=\varnothing\)</span> ), the intersection is not
+empty. This is often the principal significance of the theorem.</p>
+<p>Proof Suppose <span class="math inline">\(V_1, V_2, V_3,
+\ldots\)</span> are dense and open in <span
+class="math inline">\(X\)</span>. Let <span
+class="math inline">\(W\)</span> be any open set in <span
+class="math inline">\(X\)</span>. We have to show that <span
+class="math inline">\(\bigcap V_n\)</span> has a point in <span
+class="math inline">\(W\)</span> if <span class="math inline">\(W \neq
+\varnothing\)</span>. Let <span class="math inline">\(\rho\)</span> be
+the metric of <span class="math inline">\(X\)</span>; let us write <span
+class="math display">\[
+S(x, r)=\{y \in X: \rho(x, y)&lt;r\}
+\]</span> and let <span class="math inline">\(\bar{S}(x, r)\)</span> be
+the closure of <span class="math inline">\(S(x, r)\)</span>. [Note:
+There exist situations in which <span class="math inline">\(\bar{S}(x,
+r)\)</span> does not contain all <span class="math inline">\(y\)</span>
+with <span class="math inline">\(\rho(x, y) \leq r !]\)</span></p>
+<p>Since <span class="math inline">\(V_1\)</span> is dense, <span
+class="math inline">\(W \cap V_1\)</span> is a nonempty open set, and we
+can therefore find <span class="math inline">\(x_1\)</span> and <span
+class="math inline">\(r_1\)</span> such that <span
+class="math display">\[
+\bar{S}\left(x_1, r_1\right) \subset W \cap V_1 \text { and }
+0&lt;r_1&lt;1 .
+\]</span> If <span class="math inline">\(n \geq 2\)</span> and <span
+class="math inline">\(x_{n-1}\)</span> and <span
+class="math inline">\(r_{n-1}\)</span> are chosen, the denseness of
+<span class="math inline">\(V_n\)</span> shows that <span
+class="math inline">\(V_n \cap\)</span> <span
+class="math inline">\(S\left(x_{n-1}, r_{n-1}\right)\)</span> is not
+empty, and we can therefore find <span
+class="math inline">\(x_n\)</span> and <span
+class="math inline">\(r_n\)</span> such that <span
+class="math display">\[
+\bar{S}\left(x_n, r_n\right) \subset V_n \cap S\left(x_{n-1},
+r_{n-1}\right) \text { and } 0&lt;r_n&lt;\frac{1}{n} .
+\]</span></p>
+<p>By induction, this process produces a sequence <span
+class="math inline">\(\left\{x_n\right\}\)</span> in <span
+class="math inline">\(X\)</span>. If <span
+class="math inline">\(i&gt;n\)</span> and <span
+class="math inline">\(j&gt;n\)</span>, the construction shows that <span
+class="math inline">\(x_i\)</span> and <span
+class="math inline">\(x_j\)</span> both lie in <span
+class="math inline">\(S\left(x_n, r_n\right)\)</span>, so that <span
+class="math inline">\(\rho\left(x_i, x_j\right)&lt;2 r_n&lt;2 /
+n\)</span>, and hence <span
+class="math inline">\(\left\{x_n\right\}\)</span> is a Cauchy sequence.
+Since <span class="math inline">\(X\)</span> is complete, there is a
+point <span class="math inline">\(x \in X\)</span> such that <span
+class="math inline">\(x=\lim _{n \rightarrow \infty} x_n\)</span>.</p>
+<p>Since <span class="math inline">\(x_i\)</span> lies in the closed set
+<span class="math inline">\(\bar{S}\left(x_n, r_n\right)\)</span> if
+<span class="math inline">\(i&gt;n\)</span>, it follows that <span
+class="math inline">\(x\)</span> lies in each <span
+class="math inline">\(\bar{S}\left(x_n, r_n\right)\)</span>, and (3)
+shows that <span class="math inline">\(x\)</span> lies in each <span
+class="math inline">\(V_n\)</span>. By (2), <span
+class="math inline">\(x \in W\)</span>. This completes the proof.</p>
+<p><strong>Corollary</strong> In a complete metric space, the
+intersection of any countable collection of dense <span
+class="math inline">\(G_\delta\)</span> ’s is again a dense <span
+class="math inline">\(G_\delta\)</span>.</p>
+<p>This follows from the theorem, since every <span
+class="math inline">\(G_\delta\)</span> is the intersection of a
+countable collection of open sets, and since the union of countably many
+countable sets is countable.</p>
+<h3 id="section-1">5.7</h3>
+<p>Baire’s theorem is sometimes called the category theorem, for the
+following reason.</p>
+<p>Call a set <span class="math inline">\(E \subset X\)</span> nowhere
+dense if its closure <span class="math inline">\(\bar{E}\)</span>
+contains no nonempty open subset of <span
+class="math inline">\(X\)</span>. Any countable union of nowhere dense
+sets is called a set of the first category; all other subsets of <span
+class="math inline">\(X\)</span> are of the second category (Baire’s
+terminology). Theorem <span class="math inline">\(5.6\)</span> is
+equivalent to the statement that no complete metric space is of the
+first category. To see this, just take complements in the stateent of
+Theorem 5.6.</p>
+<h3 id="the-banach-steinhaus-theorem">5.8 The Banach-Steinhaus
+Theorem</h3>
+<p>Suppose <span class="math inline">\(X\)</span> is a Banach space,
+<span class="math inline">\(Y\)</span> is a normed linear space, and
+<span class="math inline">\(\left\{\Lambda_\alpha\right\}\)</span> is a
+collection of bounded linear transformations of <span
+class="math inline">\(X\)</span> into <span
+class="math inline">\(Y\)</span>, where <span
+class="math inline">\(\alpha\)</span> ranges over some index set <span
+class="math inline">\(A\)</span>. Then either there exists an <span
+class="math inline">\(M&lt;\infty\)</span> such that</p>
+<p><span class="math display">\[
+\left\|\Lambda_\alpha\right\| \leq M
+\]</span></p>
+<p>for every <span class="math inline">\(\alpha \in A\)</span>, or</p>
+<p><span class="math display">\[
+\sup _{\alpha \in A}\left\|\Lambda_\alpha x\right\|=\infty
+\]</span></p>
+<p>for all <span class="math inline">\(x\)</span> belonging to some
+dense <span class="math inline">\(G_\delta\)</span> in <span
+class="math inline">\(X\)</span>.</p>
+<p>In geometric terminology, the alternatives are as follows: Either
+there is a ball <span class="math inline">\(B\)</span> in <span
+class="math inline">\(Y\)</span> (with radius <span
+class="math inline">\(M\)</span> and center at 0 ) such that every <span
+class="math inline">\(\Lambda_\alpha\)</span> maps the unit ball of
+<span class="math inline">\(X\)</span> into <span
+class="math inline">\(B\)</span>, or there exist <span
+class="math inline">\(x \in X\)</span> (in fact, a whole dense <span
+class="math inline">\(G_\delta\)</span> of them) such that no ball in
+<span class="math inline">\(Y\)</span> contains <span
+class="math inline">\(\Lambda_\alpha x\)</span> for all <span
+class="math inline">\(\alpha\)</span>.</p>
+<p>The theorem is sometimes referred to as the uniform boundedness
+principle.</p>
+<p>Proof Put</p>
+<p><span class="math display">\[
+\varphi(x)=\sup _{\alpha \in A}\left\|\Lambda_\alpha x\right\| \quad(x
+\in X)
+\]</span></p>
+<p>and let</p>
+<p><span class="math display">\[
+V_n=\{x: \varphi(x)&gt;n\} \quad(n=1,2,3, \ldots) .
+\]</span></p>
+<p>Since each <span class="math inline">\(\Lambda_\alpha\)</span> is
+continuous and since the norm of <span class="math inline">\(Y\)</span>
+is a continuous function on <span class="math inline">\(Y\)</span> (an
+immediate consequence of the triangle inequality, as in the proof of
+Theorem 4.6), each function <span class="math inline">\(x
+\rightarrow\left\|\Lambda_\alpha x\right\|\)</span> is continuous on
+<span class="math inline">\(X\)</span>. Hence <span
+class="math inline">\(\varphi\)</span> is lower semicontinuous, and each
+<span class="math inline">\(V_n\)</span> is open.</p>
+<p>If one of these sets, say <span class="math inline">\(V_N\)</span>,
+fails to be dense in <span class="math inline">\(X\)</span>, then there
+exist an <span class="math inline">\(x_0 \in X\)</span> and an <span
+class="math inline">\(r&gt;0\)</span> such that <span
+class="math inline">\(\|x\| \leq r\)</span> implies <span
+class="math inline">\(x_0+x \notin V_N\)</span>; this means that <span
+class="math inline">\(\varphi\left(x_0+x\right) \leq N\)</span>, or</p>
+<p><span class="math display">\[
+\left\|\Lambda_\alpha\left(x_0+x\right)\right\| \leq N
+\]</span></p>
+<p>for all <span class="math inline">\(\alpha \in A\)</span> and all
+<span class="math inline">\(x\)</span> with <span
+class="math inline">\(\|x\| \leq r\)</span>. Since <span
+class="math inline">\(x=\left(x_0+x\right)-x_0\)</span>, we then
+have</p>
+<p><span class="math display">\[
+\left\|\Lambda_\alpha x\right\|
+\leq\left\|\Lambda_\alpha\left(x_0+x\right)\right\|+\left\|\Lambda_\alpha
+x_0\right\| \leq 2 N,
+\]</span></p>
+<p>and it follows that (1) holds with <span class="math inline">\(M=2 N
+/ r\)</span>.</p>
+<p>The other possibility is that every <span
+class="math inline">\(V_n\)</span> is dense in <span
+class="math inline">\(X\)</span>. In that case, <span
+class="math inline">\(\bigcap V_n\)</span> is a dense <span
+class="math inline">\(G_\delta\)</span> in <span
+class="math inline">\(X\)</span>, by Baire’s theorem; and since <span
+class="math inline">\(\varphi(x)=\infty\)</span> for every <span
+class="math inline">\(x \in \bigcap V_n\)</span>, the proof is
+complete.</p>
+<h3 id="the-open-mapping-theorem">5.9 The Open Mapping Theorem</h3>
+<p>Let <span class="math inline">\(U\)</span> and <span
+class="math inline">\(V\)</span> be the open unit balls of the <span
+class="math inline">\(B a n a c h\)</span> spaces <span
+class="math inline">\(X\)</span> and <span
+class="math inline">\(Y\)</span>. To every bounded linear transformation
+<span class="math inline">\(\Lambda\)</span> of <span
+class="math inline">\(X\)</span> onto <span
+class="math inline">\(Y\)</span> there corresponds a <span
+class="math inline">\(\delta&gt;0\)</span> so that</p>
+<p><span class="math display">\[
+\Lambda(U) \supset \delta V .
+\]</span></p>
+<p>Note the word “onto” in the hypothesis. The symbol <span
+class="math inline">\(\delta V\)</span> stands for the set <span
+class="math inline">\(y: y \in V\}\)</span>, i.e., the set of all <span
+class="math inline">\(y \in Y\)</span> with <span
+class="math inline">\(\|y\|&lt;\delta\)</span>.</p>
+<p>It follows from (1) and the linearity of <span
+class="math inline">\(\Lambda\)</span> that the image of every open ball
+in with center at <span class="math inline">\(x_0\)</span>, say,
+contains an open ball in <span class="math inline">\(Y\)</span> with
+center at <span class="math inline">\(\Lambda x_0\)</span>. Hence e
+image of every open set is open. This explains the name of the theorem.
+Here is another way of stating (1): To every <span
+class="math inline">\(y\)</span> with <span
+class="math inline">\(\|y\|&lt;\delta\)</span> there corresponds <span
+class="math inline">\(x\)</span> with <span
+class="math inline">\(\|x\|&lt;1\)</span> so that <span
+class="math inline">\(\Lambda x=y\)</span>.</p>
+<p>Proof Given <span class="math inline">\(y \in Y\)</span>, there
+exists an <span class="math inline">\(x \in X\)</span> such that <span
+class="math inline">\(\Lambda x=y\)</span>; if <span
+class="math inline">\(\|x\|&lt;k\)</span>, it follows that <span
+class="math inline">\(y \in \Lambda(k U)\)</span>. Hence <span
+class="math inline">\(Y\)</span> is the union of the sets <span
+class="math inline">\(\Lambda(k U)\)</span>, for <span
+class="math inline">\(k=1,2,3, \ldots\)</span>. Since <span
+class="math inline">\(Y\)</span> is complete, the Baire theorem implies
+that there is a nonempty open set <span class="math inline">\(W\)</span>
+in the closure of some <span class="math inline">\(\Lambda(k
+U)\)</span>. This means that every point of <span
+class="math inline">\(W\)</span> is the limit of a sequence <span
+class="math inline">\(\left\{\Lambda x_i\right\}\)</span>, where <span
+class="math inline">\(x_i \in k U\)</span>; from now on, <span
+class="math inline">\(k\)</span> and <span
+class="math inline">\(W\)</span> are fixed.</p>
+<p>Choose <span class="math inline">\(y_0 \in W\)</span>, and choose
+<span class="math inline">\(\eta&gt;0\)</span> so that <span
+class="math inline">\(y_0+y \in W\)</span> if <span
+class="math inline">\(\|y\|&lt;\eta\)</span>. For any such <span
+class="math inline">\(y\)</span> there are sequences <span
+class="math inline">\(\left\{x_i^{\prime}\right\},\left\{x_i^{\prime
+\prime}\right\}\)</span> in <span class="math inline">\(k U\)</span>
+such that <span class="math display">\[
+\Lambda x_i^{\prime} \rightarrow y_0, \quad \Lambda x_i^{\prime \prime}
+\rightarrow y_0+y \quad(i \rightarrow \infty) .
+\]</span> Setting <span class="math inline">\(x_i=x_i^{\prime
+\prime}-x_i^{\prime}\)</span>, we have <span
+class="math inline">\(\left\|x_i\right\|&lt;2 k\)</span> and <span
+class="math inline">\(\Lambda x_i \rightarrow y\)</span>. Since this
+holds for every <span class="math inline">\(y\)</span> with <span
+class="math inline">\(\|y\|&lt;\eta\)</span>, the linearity of <span
+class="math inline">\(\Lambda\)</span> shows that the following is true,
+if <span class="math inline">\(\delta=\eta / 2 k\)</span> To each <span
+class="math inline">\(y \in Y\)</span> and to each <span
+class="math inline">\(\epsilon&gt;0\)</span> there corresponds an <span
+class="math inline">\(x \in X\)</span> such that <span
+class="math display">\[
+\|x\| \leq \delta^{-1}\|y\| \quad \text { and }\|y-\Lambda
+x\|&lt;\epsilon \text {. }
+\]</span> This is almost the desired conclusion, as stated just before
+the start of the proof, except that there we had <span
+class="math inline">\(\epsilon=0\)</span>.</p>
+<p>Fix <span class="math inline">\(y \in \delta V\)</span>, and fix
+<span class="math inline">\(\epsilon&gt;0\)</span>. By (3) there exists
+an <span class="math inline">\(x_1\)</span> with <span
+class="math inline">\(\left\|x_1\right\|&lt;1\)</span> and <span
+class="math display">\[
+\left\|y-\Lambda x_1\right\|&lt;\frac{1}{2} \delta \epsilon .
+\]</span> Suppose <span class="math inline">\(x_1, \ldots, x_n\)</span>
+are chosen so that <span class="math display">\[
+\left\|y-\Lambda x_1-\cdots-\Lambda x_n\right\|&lt;2^{-n} \delta
+\epsilon .
+\]</span> Use (3), with <span class="math inline">\(y\)</span> replaced
+by the vector on the left side of (5), to obtain an <span
+class="math inline">\(x_{n+1}\)</span> so that (5) holds with <span
+class="math inline">\(n+1\)</span> in place of <span
+class="math inline">\(n\)</span>, and <span class="math display">\[
+\left\|x_{n+1}\right\|&lt;2^{-n} \epsilon \quad(n=1,2,3, \ldots) .
+\]</span> If we set <span
+class="math inline">\(s_n=x_1+\cdots+x_n\)</span>, (6) shows that <span
+class="math inline">\(\left\{s_n\right\}\)</span> is a Cauchy sequence
+in <span class="math inline">\(X\)</span>. Since <span
+class="math inline">\(X\)</span> is complete, there exists an <span
+class="math inline">\(x \in X\)</span> so that <span
+class="math inline">\(s_n \rightarrow x\)</span>. The inequality <span
+class="math inline">\(\left\|x_1\right\|&lt;1\)</span>, together with
+(6), shows that <span
+class="math inline">\(\|x\|&lt;1+\epsilon\)</span>. Since <span
+class="math inline">\(\Lambda\)</span> is continuous, <span
+class="math inline">\(\Lambda s_n \rightarrow \Lambda x\)</span>. By
+(5), <span class="math inline">\(\Lambda s_n \rightarrow y\)</span>.
+Hence <span class="math inline">\(\Lambda x=y\)</span>.</p>
+<p>We have now proved that <span class="math display">\[
+\Lambda((1+\epsilon) U) \supset \delta V
+\]</span> or <span class="math display">\[
+\Lambda(U) \supset(1+\epsilon)^{-1} \delta V,
+\]</span> for every <span class="math inline">\(\epsilon&gt;0\)</span>.
+The union of the sets on the right of (8), taken over all <span
+class="math inline">\(\epsilon&gt;0\)</span>, is <span
+class="math inline">\(\delta V\)</span>. This proves (1).</p>
+<h3 id="theorem">5.10 Theorem</h3>
+<p>If <span class="math inline">\(X\)</span> and <span
+class="math inline">\(Y\)</span> are Banach spaces and if <span
+class="math inline">\(\Lambda\)</span> is a bounded linear
+transformation of <span class="math inline">\(X\)</span> onto <span
+class="math inline">\(Y\)</span> which is also one-to-one, then there is
+a <span class="math inline">\(\delta&gt;0\)</span> such that</p>
+<p><span class="math display">\[
+\|\Lambda x\| \geq \delta\|x\| \quad(x \in X) .
+\]</span></p>
+<p>In other words, <span class="math inline">\(\Lambda^{-1}\)</span> is
+a bounded linear transformation of <span
+class="math inline">\(Y\)</span> onto <span
+class="math inline">\(X\)</span>.</p>
+<p>Proof If <span class="math inline">\(\delta\)</span> is chosen as in
+the statement of Theorem 5.9, the conclusion of that theorem, combined
+with the fact that <span class="math inline">\(\Lambda\)</span> is now
+one-to-one, shows that <span class="math inline">\(\|\Lambda
+x\|&lt;\delta\)</span> implies <span
+class="math inline">\(\|x\|&lt;1\)</span>. Hence <span
+class="math inline">\(\|x\| \geq 1\)</span> implies <span
+class="math inline">\(\|\Lambda x\| \geq \delta\)</span>, and (1) is
+proved.</p>
+<p>The transformation <span class="math inline">\(\Lambda^{-1}\)</span>
+is defined on <span class="math inline">\(Y\)</span> by the requirement
+that <span class="math inline">\(\Lambda^{-1} y=x\)</span> if <span
+class="math inline">\(y=\Lambda x\)</span>. A trivial verification shows
+that <span class="math inline">\(\Lambda^{-1}\)</span> is linear, and
+(1) implies that <span class="math inline">\(\left\|\Lambda^{-1}\right\|
+\leq 1 / \delta\)</span>.</p>
+
+    </div>
+    
+</div>
+</div>
+
+                <div id="footer-wrapper">
+                    <footer class="footer"><footer class="row pl-3 pr-3">
+    <div class="col-12 d-flex justify-content-between align-items-center text-muted pl-0 pr-0">
+        <div class="footer-left">
+            <p class="mb-0"> © 2022 <a href="https://github.com/chen-gz">guangzong</a>. <span data-toggle="tooltip"
+                    data-placement="top"
+                    title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author.">All
+                    rights reserved.</span></p>
+        </div>
+        <div class="footer-right">
+            <p class="mb-0"> Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">hugo</a>
+                with <a href="https://github.com/chen-gz/hugo_zong" target="_blank" rel="noopener">zong</a>
+                theme.</p>
+        </div>
+    </div>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script> MathJax = {
+            tex: {
+                tags: 'ams',
+            }
+        };</script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</footer>
+</footer>
+                </div>
+            </div>
+            <div id="panel-wrapper" class="d-flex flex-column"><div id="toc-wrapper" class="mb-5 pl-2">
+    <span>Contents</span>
+    <nav id="toc" data-toggle="toc">
+        
+        
+        
+    </nav>
+</div>
+
+<div id="access-lastmod" class="pb-4 pl-2">
+    <div class="panel-heading">Recently Updated</div>
+    <ul class="post-content pl-3 pb-1 ml-1 mt-2">
+          
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/1-total-variation/">Total Variation</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-7/1-derivatives-of-measures/">Derivatives of Measures</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/3-consequences-of-the-radon-nikodym-theorem/">Consequences of the Radon-Nikodym Theorem</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/4-bounded-linear-functionals-on-lp/">Bounded linear functional on Lp</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/2-abosolute-continuity/">Abosolute Continuity</a></li>
+        
+    </ul>
+</div>
+
+<div id="access-tags" class="pl-2">
+    <div class="panel-heading">Trending Tags</div>
+    <div class="d-flex flex-wrap mt-3 mb-1 mr-3">
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/algorithm/">Algorithm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/android/">Android</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c/">C</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c-language/">c language</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/caddy/">Caddy</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cadence/">Cadence</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cdc/">CDC</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/classification/">classification</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/compress/">Compress</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/conf/">Conf</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/double-column/">Double Column</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/errno13/">Errno13</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/fish/">fish</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gan/">GAN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/git/">Git</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gtk/">Gtk</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/html/">Html</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/i3/">I3</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/idea/">Idea</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/java/">Java</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/latex/">Latex</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lda/">LDA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linear-programming/">Linear Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linux/">Linux</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lr/">LR</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/math/">Math</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mathematics/">Mathematics</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matlab/">Matlab</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matplot/">matplot</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/memory/">Memory</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mermaid/">Mermaid</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/misc/">Misc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/ml/">ML</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mosfet/">Mosfet</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/network/">Network</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/nn/">NN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pandoc/">Pandoc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pca/">PCA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/probability/">Probability</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/productive/">Productive</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/program/">Program</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/programming/">Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/python/">Python</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/qt/">Qt</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/random-variable/">Random Variable</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rcnn/">RCNN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rust/">Rust</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/security/">Security</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/software/">Software</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/std/">Std</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/svd/">Svd</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/tool/">Tool</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/usb/">USB</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vim/">Vim</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpn/">Vpn</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpnc/">Vpnc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/xterm/">xterm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/zsh/">Zsh</a>
+        
+    </div>
+</div>
+</div><div id="search-result-wrapper" class="d-flex justify-content-center unloaded">
+    <div class="col-12 col-sm-11 post-content">
+        <div id="search-hints"></div>
+        <div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3 col-12"></div>
+    </div>
+</div>
+
+<script src="/js/fuse.min.js"></script>
+<script src="/js/fastsearch.js"></script>
+
+
+</div>
+        <div id="mask"></div>
+        <a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button"
+            style="display: none">
+            <i class="fas fa-angle-up"></i>
+        </a>
+    </div>
+    
+</body>
+
+</html>

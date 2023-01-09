@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>chapter 1 Abstract Integration on Guangzong Blog</title>
+    <link>https://zongpitt.com/papa-rudin/ch-1/</link>
+    <description>Recent content in chapter 1 Abstract Integration on Guangzong Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://zongpitt.com/papa-rudin/ch-1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>7 Integration of Complex Functions</title>
+      <link>https://zongpitt.com/papa-rudin/ch-1/7-integration-of-complex-functions/</link>
+      <pubDate>Sat, 24 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/papa-rudin/ch-1/7-integration-of-complex-functions/</guid>
+      <description>As before, \(\mu\) will in this section be a positive measure on an arbitrary measurable space \(X\).
+1.30 Definition We define \(L^1(\mu)\) to be the collection of all complex measurable functions \(f\) on \(X\) for which
+\[ \begin{equation} \int_X|f| d \mu&amp;lt;\infty . \end{equation} \]
+Note that the measurability of \(f\) implies that of \(|f|\), as we saw in Proposition \(1.9(b)\); hence the above integral is defined.
+The members of \(L^1(\mu)\) are called Lebesgue integrable functions (with respect to \(\mu\) ) or summable functions.</description>
+    </item>
+    
+    <item>
+      <title>8 The Role Played by Sets of Measure Zero</title>
+      <link>https://zongpitt.com/papa-rudin/ch-1/8-the-role-played-by-sets-of-measure-zero/</link>
+      <pubDate>Sat, 24 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/papa-rudin/ch-1/8-the-role-played-by-sets-of-measure-zero/</guid>
+      <description>1.35 Definition Let \(P\) be a property which a point \(x\) may or may not have. For instance, \(P\) might be the property ” \(f(x)&amp;gt;0\) ” if \(f\) is a given function, or it might be ” \(\left\{f_n(x)\right\}\) converges” if \(\left\{f_n\right\}\) is a given sequence of functions.
+If \(\mu\) is a measure on a \(\sigma\)-algebra \(\mathfrak{M}\) and if \(E \in \mathfrak{M}\), the statement “\(P\) holds almost everywhere on \(E\)” (abbreviated to “\(P\) holds a.</description>
+    </item>
+    
+    <item>
+      <title>4 Elementary Properties of Measures</title>
+      <link>https://zongpitt.com/papa-rudin/ch-1/4-elementary-properties-of-measures/</link>
+      <pubDate>Fri, 23 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/papa-rudin/ch-1/4-elementary-properties-of-measures/</guid>
+      <description>1.18 Definition A positive measure is a function \(\mu\), defined on a \(\sigma\)-algebra \(\mathfrak{M}\), whose range is in \([0, \infty]\) and which is countably additive. This means that if \(\left\{A_i\right\}\) is a disjoint countable collection of members of \(\mathfrak{M}\), then \[ \begin{equation} \mu\left(\bigcup_{i=1}^{\infty} A_i\right)=\sum_{i=1}^{\infty} \mu\left(A_i\right) . \end{equation} \]
+To avoid trivialities, we shall also assume that \(\mu(A)&amp;lt;\infty\) for at least one \(A \in \mathfrak{M}\).
+A measure space is a measurable space which has a positive measure defined on the \(\sigma\)-algebra of its measurable sets.</description>
+    </item>
+    
+    <item>
+      <title>5 Arithmetic in [0, ∞]</title>
+      <link>https://zongpitt.com/papa-rudin/ch-1/5-arithmetic-in-0-inf/</link>
+      <pubDate>Fri, 23 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/papa-rudin/ch-1/5-arithmetic-in-0-inf/</guid>
+      <description>1.22 Throughout integration theory, one inevitably encounters \(\infty\). One reason is that one wants to be able to integrate over sets of infinite measure; after all, the real line has infinite length. Another reason is that even if one is primarily interested in real-valued functions, the lim sup of a sequence of positive real functions or the sum of a sequence of positive real functions may well be \(\infty\) at some points, and much of the elegance of theorems like \(1.</description>
+    </item>
+    
+    <item>
+      <title>6 Integration of Positive Functions</title>
+      <link>https://zongpitt.com/papa-rudin/ch-1/6-integration-of-positive-function/</link>
+      <pubDate>Fri, 23 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/papa-rudin/ch-1/6-integration-of-positive-function/</guid>
+      <description>In this section, \(\mathfrak{M}\) will be a \(\sigma\)-algebra in a set \(X\) and \(\mu\) will be a positive measure on \(\mathfrak{M}\).
+1.23 Definition If \(s: X \rightarrow[0, \infty)\) is a measurable simple function, of the form
+\[ \begin{equation} s=\sum_{i=1}^n \alpha_i \chi_{A_i}, \end{equation} \]
+where \(\alpha_1, \ldots, \alpha_n\) are the distinct values of \(s\) (compare Definition 1.16), and if \(E \in \mathfrak{M}\), we define
+\[ \begin{equation} \int_E s d \mu=\sum_{i=1}^n \alpha_i \mu\left(A_i \cap E\right) .</description>
+    </item>
+    
+    <item>
+      <title>3 Simple Functions</title>
+      <link>https://zongpitt.com/papa-rudin/ch-1/3-simple-functions/</link>
+      <pubDate>Sun, 18 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/papa-rudin/ch-1/3-simple-functions/</guid>
+      <description>1.16 Definition A complex function \(s\) on a measurable space \(X\) whose range consists of only finitely many points will be called a simple function. Among these are the nonnegative simple functions, whose range is a finite subset of \([0, \infty)\). Note that we explicitly exclude \(\infty\) from the values of a simple function.
+If \(\alpha_1, \ldots, \alpha_n\) are the distinct values of a simple function \(s\), and if we set \(A_i=\left\{x: s(x)=\alpha_i\right\}\), then clearly</description>
+    </item>
+    
+    <item>
+      <title>0 ABSTRACT INTEGRATION</title>
+      <link>https://zongpitt.com/papa-rudin/ch-1/0-abstract-integration/</link>
+      <pubDate>Sat, 17 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/papa-rudin/ch-1/0-abstract-integration/</guid>
+      <description>Toward the end of the nineteenth century it became clear to many mathematicians that the Riemann integral (about which one learns in calculus courses) should be replaced by some other type of integral, more general and more flexible, better suited for dealing with limit processes. Among the attempts made in this direction, the most notable ones were due to Jordan, Borel, W. H. Young, and Lebesgue. It was Lebesgue’s construction which turned out to be the most successful.</description>
+    </item>
+    
+    <item>
+      <title>1 Set-Theoretic Notations and Terminology</title>
+      <link>https://zongpitt.com/papa-rudin/ch-1/1-set-theoretic-notations-and-terminology/</link>
+      <pubDate>Sat, 17 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/papa-rudin/ch-1/1-set-theoretic-notations-and-terminology/</guid>
+      <description>1.1 Some sets can be described by listing their members. Thus \(\left\{x_1, \ldots, x_n\right\}\) is the set whose members are \(x_1, \ldots, x_n\); and \(\{x\}\) is the set whose only member is \(x\). More often, sets are described by properties. We write \[ \{x: P\} \] for the set of all elements \(x\) which have the property \(P\). The symbol \(\varnothing\) denotes the empty set. The words collection, family, and class will be used synonymously with set.</description>
+    </item>
+    
+    <item>
+      <title>2 The Concept of Measurability</title>
+      <link>https://zongpitt.com/papa-rudin/ch-1/2-the-concept-of-measurability/</link>
+      <pubDate>Sat, 17 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/papa-rudin/ch-1/2-the-concept-of-measurability/</guid>
+      <description>The class of measurable functions plays a fundamental role in integration theory. It has some basic properties in common with another most important class of functions, namely, the continuous ones. It is helpful to keep these similarities in mind. Our presentation is therefore organized in such a way that the analogies between the concepts topological space, open set, and continuous function, on the one hand, and measurable space, measurable set, and measurable function, on the other, are strongly emphasized.</description>
+    </item>
+    
+  </channel>
+</rss>

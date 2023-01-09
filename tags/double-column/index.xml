@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Double Column on Guangzong Blog</title>
+    <link>https://zongpitt.com/tags/double-column/</link>
+    <description>Recent content in Double Column on Guangzong Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 29 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://zongpitt.com/tags/double-column/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Latex synchronize column</title>
+      <link>https://zongpitt.com/posts/2020-11-29-latex-synchronize-column/</link>
+      <pubDate>Sun, 29 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-11-29-latex-synchronize-column/</guid>
+      <description>the way to make two column synchoronze.
+chinese test
+\documentclass{article} \usepackage[UTF8]{ctex} \begin{document} 你好，这是一个测试文档。 \end{document} two column synchoronize template
+\documentclass{article} \usepackage[a4paper,top=1cm,bottom=2.1cm,left=2.1cm,right=1.8cm,% includehead,includefoot]{geometry} % \usepackage[UTF8]{ctex} \usepackage{parallel} \begin{document} \begin{Parallel} \ParallelLText{ % 左侧文字1 test } \ParallelRText{ % 右侧文字1 test2 } \ParallelPar \ParallelLText{ % 左侧文字2 } \ParallelRText{ % 右侧文字2 } \ParallelPar \end{Parallel} \end{document} </description>
+    </item>
+    
+  </channel>
+</rss>

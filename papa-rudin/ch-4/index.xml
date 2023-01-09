@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>chapter 4 ELEMENTARY HILBERT SPACE THEORY on Guangzong Blog</title>
+    <link>https://zongpitt.com/papa-rudin/ch-4/</link>
+    <description>Recent content in chapter 4 ELEMENTARY HILBERT SPACE THEORY on Guangzong Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://zongpitt.com/papa-rudin/ch-4/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Trigonometric Series</title>
+      <link>https://zongpitt.com/papa-rudin/ch-4/3-trigonometric-series/</link>
+      <pubDate>Mon, 07 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/papa-rudin/ch-4/3-trigonometric-series/</guid>
+      <description>4.23 Definitions Let \(T\) be the unit circle in the complex plane, i.e., the set of all complex numbers of absolute value 1 . If \(F\) is any function on \(T\) and if \(f\) is defined on \(R^1\) by
+\[ \begin{equation} f(t)=F\left(e^{i t}\right), \end{equation} \]
+then \(f\) is a periodic function of period \(2 \pi\). This means that \(f(t+2 \pi)=f(t)\) for all real \(t\). Conversely, if \(f\) is a function on \(R^1\), with period \(2 \pi\), then there is a function \(F\) on \(T\) such that (1) holds.</description>
+    </item>
+    
+    <item>
+      <title>Orthonormal Sets</title>
+      <link>https://zongpitt.com/papa-rudin/ch-4/2-orthonormal-sets/</link>
+      <pubDate>Mon, 31 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/papa-rudin/ch-4/2-orthonormal-sets/</guid>
+      <description>4.13 Definitions If \(V\) is a vector space, if \(x_1, \ldots, x_k \in V\), and if \(c_1, \ldots, c_k\) are scalars, then \(c_1 x_1+\cdots+c_k x_k\) is called a linear combination of \(x_1, \ldots, x_k\). The set \(\left\{x_1, \ldots, x_k\right\}\) is called independent if \(c_1 x_1+\cdots+c_k x_k=0\) implies that \(c_1=\cdots=c_k=0\). A set \(S \subset V\) is independent if every finite subset of \(S\) is independent. The set \([S]\) of all linear combinations of all finite subsets of \(S\) (also called the set of all finite linear combinations of members of \(S\) ) is clearly a vector space; \([S]\) is the smallest subspace of \(V\) which contains \(S ;[S]\) is called the span of \(S\), or the space spanned by \(S\).</description>
+    </item>
+    
+    <item>
+      <title>1 Inner Products and Linear Functionals</title>
+      <link>https://zongpitt.com/papa-rudin/ch-4/1-inner-products-and-linear-functionals/</link>
+      <pubDate>Sun, 30 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/papa-rudin/ch-4/1-inner-products-and-linear-functionals/</guid>
+      <description>4.1 Definition A complex vector space \(H\) is called an inner product space (or unitary space) if to each ordered pair of vectors \(x\) and \(y \in H\) there is associated a complex number \((x, y)\), the so-called “inner product” (or “scalar product”) of \(x\) and \(y\), such that the following rules hold:
+\((y, x)=(\overline{x, y)}\). (The bar denotes complex conjugation.) \((x+y, z)=(x, z)+(y, z)\) if \(x, y\), and \(z \in H\).</description>
+    </item>
+    
+  </channel>
+</rss>

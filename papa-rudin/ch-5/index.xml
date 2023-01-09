@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>chapter 6 COMPLEXMEASURES on Guangzong Blog</title>
+    <link>https://zongpitt.com/papa-rudin/ch-5/</link>
+    <description>Recent content in chapter 6 COMPLEXMEASURES on Guangzong Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 11 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://zongpitt.com/papa-rudin/ch-5/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>EXAMPLES OF BANACH SPACE TECHNIQUES</title>
+      <link>https://zongpitt.com/papa-rudin/ch-5/1-examples-of-banach-space-techniques/</link>
+      <pubDate>Tue, 06 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/papa-rudin/ch-5/1-examples-of-banach-space-techniques/</guid>
+      <description>Banach Spaces
+5.1 In the preceding chapter we saw how certain analytic facts about trigonometric series can be made to emerge from essentially goemetric considerations about general Hilbert spaces, involving the notions of convexity, subspaces, orthogonality, and completeness. There are many problems in analysis that can be attacked with greater ease when they are placed within a suitably chosen abstract framework. The theory of Hilbert spaces is not always suitable since orthogonality is something rather special.</description>
+    </item>
+    
+    <item>
+      <title>An Abstract Approach to the Poisson Integral</title>
+      <link>https://zongpitt.com/papa-rudin/ch-5/6-an-abstract-approach-to-the-poisson-integral/</link>
+      <pubDate>Sat, 19 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/papa-rudin/ch-5/6-an-abstract-approach-to-the-poisson-integral/</guid>
+      <description>5.22 Successful applications of the Hahn-Banach theorem to concrete problems depend of course on a knowledge of the bounded linear functionals on the normed linear space under consideration. So far we have only determined the bounded linear functionals on a Hilbert space (where a much simpler proof of the Hahn-Banach theorem exists; see Exercise 6), and we know the positive linear functionals on \(C_c(X)\).
+We shall now describe a general situation in which the last-mentioned functionals occur naturally.</description>
+    </item>
+    
+    <item>
+      <title>Fourier Coefficients of L¹-functions</title>
+      <link>https://zongpitt.com/papa-rudin/ch-5/4-fourier-coefficients-of-l1-functions/</link>
+      <pubDate>Sat, 19 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/papa-rudin/ch-5/4-fourier-coefficients-of-l1-functions/</guid>
+      <description>5.14 As in Sec. 4.26, we associate to every \(f \in L^1(T)\) a function \(\hat{f}\) on \(Z\) defined by \[ \hat{f}(n)=\frac{1}{2 \pi} \int_{-\pi}^\pi f(t) e^{-i n t} d t \quad(n \in Z) . \] It is easy to prove that \(\hat{f}(n) \rightarrow 0\) as \(|n| \rightarrow \infty\), for every \(f \in L^1\). For we know that \(C(T)\) is dense in \(L^1(T)\) (Theorem 3.14) and that the trigonometric polynomials are dense in \(C(T)\) (Theorem 4.</description>
+    </item>
+    
+    <item>
+      <title>The Hahn-Banach Theorem</title>
+      <link>https://zongpitt.com/papa-rudin/ch-5/5-the-hahn-banach-theorem/</link>
+      <pubDate>Sat, 19 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/papa-rudin/ch-5/5-the-hahn-banach-theorem/</guid>
+      <description>5.16 Theorem If \(M\) is a subspace of a normed linear space \(X\) and if \(f\) is a bounded linear functional on \(M\), then \(f\) can be extended to a bounded linear functional \(F\) on \(X\) so that \(\|F\|=\|f\|\).
+Note that \(M\) need not be closed.
+Before we turn to the proof, some comments seem called for. First, to say (in the most general situation) that a function \(F\) is an extension of \(f\) means that the domain of \(F\) includes that of \(f\) and that \(F(x)=f(x)\) for all \(x\) in the domain of \(f\).</description>
+    </item>
+    
+    <item>
+      <title>Fourier Series of Continuous Functions</title>
+      <link>https://zongpitt.com/papa-rudin/ch-5/3-fourier-series-of-continuous-functions/</link>
+      <pubDate>Fri, 18 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/papa-rudin/ch-5/3-fourier-series-of-continuous-functions/</guid>
+      <description>5.11 A Convergence Problem Is it true for every \(f \in C(T)\) that the Fourier series of \(f\) converges to \(f(x)\) at every point \(x\) ?
+Let us recall that the \(n\)th partial sum of the Fourier series of \(f\) at the point \(x\) is given by \[ s_n(f ; x)=\frac{1}{2 \pi} \int_{-\pi}^\pi f(t) D_n(x-t) d t \quad(n=0,1,2, \ldots), \] where \[ D_n(t)=\sum_{k=-n}^n e^{i k t} . \] This follows directly from formulas \(4.</description>
+    </item>
+    
+    <item>
+      <title>Consequences of Baire&#39;s Theorem</title>
+      <link>https://zongpitt.com/papa-rudin/ch-5/2-consequences-of-baires-theorem/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/papa-rudin/ch-5/2-consequences-of-baires-theorem/</guid>
+      <description>5.5 The manner in which the completeness of Banach spaces is frequently exploited depends on the following theorem about complete metric spaces, which also has many applications in other parts of mathematics. It implies two of the three most important theorems which make Banach spaces useful tools in analysis, the Banach-Steinhaus theorem and the open mapping theorem. The third is the Hahn-Banach extension theorem, in which completeness plays no role.</description>
+    </item>
+    
+  </channel>
+</rss>

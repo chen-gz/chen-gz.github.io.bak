@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Security on Guangzong Blog</title>
+    <link>https://zongpitt.com/tags/security/</link>
+    <description>Recent content in Security on Guangzong Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 02 Oct 2020 14:43:00 -0400</lastBuildDate><atom:link href="https://zongpitt.com/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Protect SSH Port</title>
+      <link>https://zongpitt.com/posts/2020-10-02-protect-ssh-port/</link>
+      <pubDate>Fri, 02 Oct 2020 14:43:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-10-02-protect-ssh-port/</guid>
+      <description>disable password login generate ssh key and put ssh publick to server.
+the location of server ssh key
+${USER_HOME}/.ssh/authorized_keys open /etc/ssh/sshd_config as root user.
+uncomment foloowing lines and becareful about the option should be no
+AuthorizedKeysFile .ssh/authorized_keys PasswordAuthentication no disable using root login the system in file /etc/ssh/sshd_config the option PermitRootLogin should be no
+PermitRootLogin no change login port to protect nmap scan in /etc/ssh/sshd_config uncomment Port 22 change to another port like Port 2020</description>
+    </item>
+    
+  </channel>
+</rss>

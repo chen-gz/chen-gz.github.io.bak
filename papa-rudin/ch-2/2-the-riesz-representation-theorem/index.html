@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css"
+        class="dark-mode-native-dark-original" />
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+     
+    <link rel="stylesheet" href="https://zongpitt.com/sass/main.06935202011a97ba473ebeeb0cb6788daa9fb5a9fff471a4e85850293d1c5ac4.css" />
+    <title>
+          Guangzong Blog | 2 The Riesz Representation Theorem
+    </title>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.bundle.min.js"></script>
+    <script src=" https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.js"></script>
+
+    <script
+        src="https://cdn.jsdelivr.net/combine/npm/magnific-popup@1/dist/jquery.magnific-popup.min.js,npm/lozad/dist/lozad.min.js,npm/clipboard@2/dist/clipboard.min.js"></script>
+    <script type="text/javascript" src="/js/commons/back-to-top.js"></script>
+    
+    
+    
+    <script type="text/javascript" src="/js/commons/topbar-switch.js"></script>
+    <script type="text/javascript" src="/js/commons/sidebar.js"></script>
+    <script type="text/javascript" src="/js/utils/category-collapse.js"></script>
+    <script type="text/javascript" src="/js/utils/checkbox.js"></script>
+    <script type="text/javascript" src="/js/utils/clipboard.js"></script>
+    <script type="text/javascript" src="/js/utils/img-extra.js"></script>
+    <script type="text/javascript" src="/js/utils/pageviews.js"></script>
+    
+    <script type="text/javascript" src="/js/utils/timeago.js"></script>
+    
+    
+</head>
+<body data-spy="scroll" data-target="#toc" data-topbar-visible="true" class="d-flex"><div id="sidebar" class="d-flex flex-column align-items-end">
+    <div class="profile-wrapper text-center">
+
+        <div id="avatar">
+            <a href="/" alt="avatar" class="mx-auto"> <img src=https://github.com/chen-gz/chen-gz/blob/main/mine_square.jpg?raw&#61;truehttps://raw.githubusercontent.com/chen-gz/chen-gz/blob/main/mine_square.jpg alt="avatar"
+                    onerror="this.style.display='none'"> </a>
+        </div>
+
+        <div class="site-title mt-3"> <a href="/">Guangzong</a> </div>
+        <div class="site-subtitle font-italic">Welcome to my blog</div>
+    </div>
+
+    <ul>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/">
+                <span>
+                    Home
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/archive/">
+                <span>
+                    Archive
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/tags/">
+                <span>
+                    Tags
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/about/">
+                <span>
+                    About
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/categories/">
+                <span>
+                    Categories
+                </span>
+            </a>
+        </li>
+        
+    </ul>
+
+    <div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center align-items-center">
+        <button class="mode-toggle btn" aria-label="Switch Mode"> 
+            <i class="fas fa-adjust"></i> 
+        </button>
+
+        <span class="icon-border"></span>
+        <a href="https://github.com/chen-gz" aria-label="github" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i>
+        </a>
+
+        <a href=" javascript:location.href = 'mailto:' + ['chen-gz','outlook.com'].join('@')" aria-label="email">
+            <i class="fas fa-envelope"></i>
+        </a>
+
+        <a href="/feed.xml" aria-label="rss"> <i class="fas fa-rss"></i> </a>
+    </div>
+
+    
+    
+</div>
+<div id="all-wrapper" class="d-flex flex-column"><div id="topbar-wrapper">
+    <div id="topbar" class="d-flex">
+        
+        <span id="breadcrumb" class="d-flex">
+              
+               
+            
+            
+            <div><a href='https://zongpitt.com/'>Home</a></div>
+              
+              
+            
+            <div><a href="https://zongpitt.com/papa-rudin">papa-rudin</a></div>
+               
+              
+            
+            <div><a href="https://zongpitt.com/papa-rudin/ch-2">ch-2</a></div>
+               
+                 
+                
+        </span>
+        <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i>
+        <div id="topbar-title">Guangzong</div>
+        <i id="search-trigger" class="fas fa-search fa-fw"></i>
+        <span id="search-wrapper" class="align-items-center">
+            <i class="fas fa-search fa-fw"></i>
+            <input class="form-control" id="search-input" type="search" aria-label="search" autocomplete="off"
+                placeholder="Search..." />
+            <i class="fa fa-times-circle fa-fw" id="search-cleaner"></i>
+        </span>
+    </div>
+</div>
+<div id="main-wrapper" class="d-flex mt-3">
+            <div id="core-wrapper" class="d-flex flex-column">
+                <div id="main" class="d-flex flex-column">
+                    
+<div class="post pl-1 pr-1 pl-md-2 pr-md-2">
+    
+    <div id="post-content">
+        <h1 style="text-align: center;">2 The Riesz Representation Theorem</h1>
+        <br>
+        
+        <h2 id="theorem">2.14 Theorem</h2>
+<p>Let <span class="math inline">\(X\)</span> be a locally compact
+Hausdorff space, and let <span class="math inline">\(\Lambda\)</span> be
+a positive linear functional on <span
+class="math inline">\(C_c(X)\)</span>. Then there exists a <span
+class="math inline">\(\sigma\)</span>-algebra <span
+class="math inline">\(\mathfrak{M}\)</span> in <span
+class="math inline">\(X\)</span> which contains all Borel sets in <span
+class="math inline">\(X\)</span>, and there exists a unique positive
+measure <span class="math inline">\(\mu\)</span> on <span
+class="math inline">\(\mathfrak{M}\)</span> which represents <span
+class="math inline">\(\Lambda\)</span> in the sense that</p>
+<ol type="a">
+<li><span class="math inline">\(Λ f=\int_X f d μ\)</span> for every
+<span class="math inline">\(f \in C_c(X)\)</span>, <br> and which has
+the following additional properties:</li>
+<li><span class="math inline">\(\mu(K)&lt;\infty\)</span> for every
+compact set <span class="math inline">\(K \subset X\)</span>.</li>
+<li>For every <span class="math inline">\(E \in \mathfrak{M}\)</span>,
+we have</li>
+</ol>
+<p><span class="math display">\[
+\begin{equation}
+\mu(E)=\inf \{\mu(V): E \subset V, V \text { open }\} .
+\end{equation}
+\]</span></p>
+<ol start="4" type="a">
+<li>The relation</li>
+</ol>
+<p><span class="math display">\[
+\begin{equation}
+\mu(E)=\sup \{\mu(K): K \subset E, K \text { compact }\}
+\end{equation}
+\]</span></p>
+<p>holds for every open set <span class="math inline">\(E\)</span>, and
+for every <span class="math inline">\(E \in \mathfrak{M}\)</span> with
+<span class="math inline">\(\mu(E)&lt;\infty\)</span>.</p>
+<ol start="5" type="a">
+<li>If <span class="math inline">\(E \in \mathfrak{M}, A \subset
+E\)</span>, and <span class="math inline">\(\mu(E)=0\)</span>, then
+<span class="math inline">\(A \in \mathfrak{M}\)</span>.</li>
+</ol>
+<p>For the sake of clarity, let us be more explicit about the meaning of
+the word “positive” in the hypothesis: <span
+class="math inline">\(\Lambda\)</span> is assumed to be a linear
+functional on the complex vector space <span
+class="math inline">\(C_c(X)\)</span>, with the additional property that
+<span class="math inline">\(\Lambda f\)</span> is a nonnegative real
+number for every <span class="math inline">\(f\)</span> whose range
+consists of nonnegative real numbers. Briefly, if <span
+class="math inline">\(f(X) \subset[0, \infty)\)</span> then <span
+class="math inline">\(\Lambda f \in[0, \infty)\)</span>.</p>
+<p>Property <span class="math inline">\((a)\)</span> is of course the
+one of greatest interest. After we define <span
+class="math inline">\(\mathfrak{M}\)</span> and <span
+class="math inline">\(\mu\)</span>, (b) to <span
+class="math inline">\((d)\)</span> will be established in the course of
+proving that <span class="math inline">\(\mathfrak{M}\)</span> is a
+<span class="math inline">\(\sigma\)</span>-algebra and that <span
+class="math inline">\(\mu\)</span> is countably additive. We shall see
+later (Theorem 2.18) that in “reasonable” spaces <span
+class="math inline">\(X\)</span> every Borel measure which satisfies
+<span class="math inline">\((b)\)</span> also satisfies <span
+class="math inline">\((c)\)</span> and <span
+class="math inline">\((d)\)</span> and that <span
+class="math inline">\((d)\)</span> actually holds for every <span
+class="math inline">\(E \in \mathfrak{M}\)</span>, in those cases.
+Property <span class="math inline">\((e)\)</span> merely says that <span
+class="math inline">\((X, \mathfrak{M}, \mu)\)</span> is a complete
+measure space, in the sense of Theorem <span class="math inline">\(1.36{
+}_2\)</span></p>
+<p>Throughout the proof of this theorem, the letter <span
+class="math inline">\(K\)</span> will stand for a compact subset of
+<span class="math inline">\(X\)</span>, and <span
+class="math inline">\(V\)</span> will denote an open set in <span
+class="math inline">\(X\)</span>.</p>
+<p>Let us begin by proving the uniqueness of <span
+class="math inline">\(\mu\)</span>. If <span
+class="math inline">\(\mu\)</span> satisfies <span
+class="math inline">\((c)\)</span> and <span
+class="math inline">\((d)\)</span>, it is clear that <span
+class="math inline">\(\mu\)</span> is determined on <span
+class="math inline">\(\mathfrak{M}\)</span> by its values on compact
+sets. Hence it suffices to prove that <span
+class="math inline">\(\mu_1(K)=\mu_2(K)\)</span> for all <span
+class="math inline">\(K\)</span>, whenever <span
+class="math inline">\(\mu_1\)</span> and <span
+class="math inline">\(\mu_2\)</span> are measures for which the theorem
+holds. So, fix <span class="math inline">\(K\)</span> and <span
+class="math inline">\(\epsilon&gt;0\)</span>. By <span
+class="math inline">\((b)\)</span> and <span
+class="math inline">\((c)\)</span>, there exists a <span
+class="math inline">\(V \supset K\)</span> with <span
+class="math inline">\(\mu_2(V)&lt;\mu_2(K)+\epsilon\)</span>; by
+Urysohn’s lemma, there exists an <span class="math inline">\(f\)</span>
+so that <span class="math inline">\(K \prec f&lt;V\)</span>; hence</p>
+<p><span class="math display">\[
+\begin{equation}
+\begin{aligned}
+\mu_1(K) &amp;=\int_X \chi_K d \mu_1 \leq \int_X f d \mu_1=\Lambda
+f=\int_X f d \mu_2 \\
+&amp; \leq \int_X \chi_V d \mu_2=\mu_2(V)&lt;\mu_2(K)+\epsilon
+\end{aligned}
+\end{equation}
+\]</span></p>
+<p>Thus <span class="math inline">\(\mu_1(K) \leq \mu_2(K)\)</span>. If
+we interchange the roles of <span class="math inline">\(\mu_1\)</span>
+and <span class="math inline">\(\mu_2\)</span>, the opposite inequality
+is obtained, and the uniqueness of <span
+class="math inline">\(\mu\)</span> is proved.</p>
+<p>Incidentally, the above computation shows that <span
+class="math inline">\((a)\)</span> forces <span
+class="math inline">\((b)\)</span>.</p>
+<h4 id="construction-of-mu-and-mathfrakm">Construction of <span
+class="math inline">\(\mu\)</span> and <span
+class="math inline">\(\mathfrak{M}\)</span></h4>
+<p>For every open set <span class="math inline">\(V\)</span> in <span
+class="math inline">\(X\)</span>, define</p>
+<p><span class="math display">\[
+\begin{equation}
+\mu(V)=\sup \{\Lambda f: f&lt;V\}
+\end{equation}
+\]</span></p>
+<p>If <span class="math inline">\(V_1 \subset V_2\)</span>, it is clear
+that (1) implies <span class="math inline">\(\mu\left(V_1\right) \leq
+\mu\left(V_2\right)\)</span>. Hence</p>
+<p><span class="math display">\[
+\begin{equation}
+\mu(E)=\inf \{\mu(V): E \subset V, V \text { open }\},
+\end{equation}
+\]</span></p>
+<p>if <span class="math inline">\(E\)</span> is an open set, and it is
+consistent with (1) to define <span
+class="math inline">\(\mu(E)\)</span> by (2), for every <span
+class="math inline">\(E \subset X\)</span>.</p>
+<p>Note that although we have defined <span
+class="math inline">\(\mu(E)\)</span> for every <span
+class="math inline">\(E \subset X\)</span>, the countable additivity of
+<span class="math inline">\(\mu\)</span> will be proved only on a
+certain <span class="math inline">\(\sigma\)</span>-algebra <span
+class="math inline">\(\mathfrak{M}\)</span> in <span
+class="math inline">\(X\)</span>.</p>
+<p>Let <span class="math inline">\(\mathfrak{M}_F\)</span> be the class
+of all <span class="math inline">\(E \subset X\)</span> which satisfy
+two conditions: <span class="math inline">\(\mu(E)&lt;\infty\)</span>,
+and</p>
+<p><span class="math display">\[
+\begin{equation}
+\mu(E)=\sup \{\mu(K): K \subset E, K \text { compact }\} .
+\end{equation}
+\]</span></p>
+<p>Finally, let <span class="math inline">\(\mathfrak{M}\)</span> be the
+class of all <span class="math inline">\(E \subset X\)</span> such that
+<span class="math inline">\(E \cap K \in \mathfrak{M}_F\)</span> for
+every compact <span class="math inline">\(K\)</span>.</p>
+<h4 id="proof-that-mu-and-mathfrakm-have-the-required-properties">Proof
+that <span class="math inline">\(\mu\)</span> and <span
+class="math inline">\(\mathfrak{M}\)</span> have the required
+properties</h4>
+<p>It is evident that <span class="math inline">\(\mu\)</span> is
+monotone, i.e., that <span class="math inline">\(\mu(A) \leq
+\mu(B)\)</span> if <span class="math inline">\(A \subset B\)</span> and
+that <span class="math inline">\(\mu(E)=0\)</span> implies <span
+class="math inline">\(E \in \mathfrak{M}_F\)</span> and <span
+class="math inline">\(E \in \mathfrak{M}\)</span>. Thus (e) holds, and
+so does (c), by definition.</p>
+<p>Since the proof of the other assertions is rather long, it will be
+convenient to divide it into several steps.</p>
+<p>Observe that the positivity of <span
+class="math inline">\(\Lambda\)</span> implies that <span
+class="math inline">\(\Lambda\)</span> is monotone: <span
+class="math inline">\(f \leq g\)</span> implies <span
+class="math inline">\(\Lambda f \leq \Lambda g\)</span>. This is clear,
+since <span class="math inline">\(\Lambda g=\Lambda
+f+\Lambda(g-f)\)</span> and <span class="math inline">\(g-f \geq
+0\)</span>. This monotonicity will be used in Steps II and <span
+class="math inline">\(\mathrm{X}\)</span>.</p>
+<h4
+id="step-i-if-e_1-e_2-e_3-ldots-are-arbitrary-subsets-of-x-then">STEP I
+If <span class="math inline">\(E_1, E_2, E_3, \ldots\)</span> are
+arbitrary subsets of <span class="math inline">\(X\)</span>, then</h4>
+<p><span class="math display">\[
+\begin{equation}
+\mu\left(\bigcup_{i=1}^{\infty} E_i\right) \leq \sum_{i=1}^{\infty}
+\mu\left(E_i\right)
+\end{equation}
+\]</span></p>
+<p>Proof We first show that</p>
+<p><span class="math display">\[
+\begin{equation}
+\mu\left(V_1 \cup V_2\right) \leq
+\mu\left(V_1\right)+\mu\left(V_2\right)
+\end{equation}
+\]</span></p>
+<p>if <span class="math inline">\(V_1\)</span> and <span
+class="math inline">\(V_2\)</span> are open. Choose <span
+class="math inline">\(g \prec V_1 \cup V_2\)</span>. By Theorem <span
+class="math inline">\(2.13\)</span> there are functions <span
+class="math inline">\(h_1\)</span> and <span
+class="math inline">\(h_2\)</span> such that <span
+class="math inline">\(h_i&lt;V_i\)</span> and <span
+class="math inline">\(h_1(x)+h_2(x)=1\)</span> for all <span
+class="math inline">\(x\)</span> in the support of <span
+class="math inline">\(g\)</span>. Hence <span class="math inline">\(h_i
+g \prec V_i, g=h_1 g+h_2 g\)</span>, and so</p>
+<p><span class="math display">\[
+\begin{equation}
+\Lambda g=\Lambda\left(h_1 g\right)+\Lambda\left(h_2 g\right) \leq
+\mu\left(V_1\right)+\mu\left(V_2\right)
+\end{equation}
+\]</span></p>
+<p>Since (6) holds for every <span class="math inline">\(g&lt;V_1 \cup
+V_2\)</span>, (5) follows.</p>
+<p>If <span class="math inline">\(\mu\left(E_i\right)=\infty\)</span>
+for some <span class="math inline">\(i\)</span>, then (4) is trivially
+true. Suppose therefore that <span
+class="math inline">\(\mu\left(E_i\right)&lt;\infty\)</span> for every
+<span class="math inline">\(i\)</span>. Choose <span
+class="math inline">\(\epsilon&gt;0\)</span>. By (2) there are open sets
+<span class="math inline">\(V_i \supset E_i\)</span> such that</p>
+<p><span class="math display">\[
+\begin{equation}
+\mu\left(V_i\right)&lt;\mu\left(E_i\right)+2^{-i} \epsilon
+\quad(i=1,2,3, \ldots)
+\end{equation}
+\]</span></p>
+<p>Put <span class="math inline">\(V=\bigcup_1^{\infty} V_i\)</span>,
+and choose <span class="math inline">\(f \prec V\)</span>. Since <span
+class="math inline">\(f\)</span> has compact support, we see that <span
+class="math inline">\(f \prec V_1 \cup \cdots \cup V_n\)</span> for some
+<span class="math inline">\(n\)</span>. Applying induction to (5), we
+therefore obtain</p>
+<p><span class="math display">\[
+\begin{equation}
+\Lambda f \leq \mu\left(V_1 \cup \cdots \cup V_n\right) \leq
+\mu\left(V_1\right)+\cdots+\mu\left(V_n\right) \leq \sum_{i=1}^{\infty}
+\mu\left(E_i\right)+\epsilon .
+\end{equation}
+\]</span></p>
+<p>Since this holds for every <span class="math inline">\(f \prec
+V\)</span>, and since <span class="math inline">\(\bigcup E_i \subset
+V\)</span>, it follows that</p>
+<p><span class="math display">\[
+\begin{equation}
+\mu\left(\bigcup_{i=1}^{\infty} E_i\right) \leq \mu(V) \leq
+\sum_{i=1}^{\infty} \mu\left(E_i\right)+\epsilon,
+\end{equation}
+\]</span></p>
+<p>which proves (4), since <span class="math inline">\(\epsilon\)</span>
+was arbitrary.</p>
+<h4 id="step-ii-if-k-is-compact-then-k-in-mathfrakm_f-and">STEP II If
+<span class="math inline">\(K\)</span> is compact, then <span
+class="math inline">\(K \in \mathfrak{M}_F\)</span> and</h4>
+<p><span class="math display">\[
+\begin{equation}
+\mu(K)=\inf \{\Lambda f: K \prec f\} .
+\end{equation}
+\]</span></p>
+<p>This implies assertion <span class="math inline">\((b)\)</span> of
+the theorem.</p>
+<p>Proof If <span class="math inline">\(K \prec f\)</span> and <span
+class="math inline">\(0&lt;\alpha&lt;1\)</span>, let <span
+class="math inline">\(V_\alpha=\{x: f(x)&gt;\alpha\}\)</span>. Then
+<span class="math inline">\(K \subset V_\alpha\)</span>, and <span
+class="math inline">\(\alpha g \leq f\)</span> whenever <span
+class="math inline">\(g \prec V_\alpha\)</span>. Hence</p>
+<p><span class="math display">\[
+\begin{equation}
+\mu(K) \leq \mu\left(V_\alpha\right)=\sup \left\{\Lambda g: g \prec
+V_\alpha\right\} \leq \alpha^{-1} \Lambda f .
+\end{equation}
+\]</span></p>
+<p>Let <span class="math inline">\(\alpha \rightarrow 1\)</span>, to
+conclude that</p>
+<p><span class="math display">\[
+\begin{equation}
+\mu(K) \leq \Lambda f \text {. }
+\end{equation}
+\]</span></p>
+<p>Thus <span class="math inline">\(\mu(K)&lt;\infty\)</span>. Since
+<span class="math inline">\(K\)</span> evidently satisfies (3), <span
+class="math inline">\(K \in \mathfrak{M}_F\)</span>.</p>
+<p>If <span class="math inline">\(\epsilon&gt;0\)</span>, there exists
+<span class="math inline">\(V \supset K\)</span> with <span
+class="math inline">\(\mu(V)&lt;\mu(K)+\epsilon\)</span>. By Urysohn’s
+lemma, <span class="math inline">\(K \prec f \prec V\)</span> for some
+<span class="math inline">\(f\)</span>. Thus</p>
+<p><span class="math display">\[
+\begin{equation}
+\Lambda f \leq \mu(V)&lt;\mu(K)+\epsilon,
+\end{equation}
+\]</span></p>
+<p>which, combined with (8), gives (7). STEP III Every open set
+satisfies (3). Hence <span class="math inline">\(\mathfrak{M}_F\)</span>
+contains every open set <span class="math inline">\(V\)</span> with
+<span class="math inline">\(\mu(V)&lt;\infty\)</span>.</p>
+<p>Proof Let <span class="math inline">\(\alpha\)</span> be a real
+number such that <span class="math inline">\(\alpha&lt;\mu(V)\)</span>.
+There exists an <span class="math inline">\(f&lt;V\)</span> with <span
+class="math inline">\(\alpha&lt;\Lambda f\)</span>. If <span
+class="math inline">\(W\)</span> is any open set which contains the
+support <span class="math inline">\(K\)</span> of <span
+class="math inline">\(f\)</span>, then <span class="math inline">\(f
+\prec W\)</span>, hence <span class="math inline">\(\Lambda f \leq
+\mu(W)\)</span>. Thus <span class="math inline">\(\Lambda f \leq
+\mu(K)\)</span>. This exhibits a compact <span class="math inline">\(K
+\subset V\)</span> with <span
+class="math inline">\(\alpha&lt;\mu(K)\)</span>, so that (3) holds for
+<span class="math inline">\(V\)</span>.</p>
+<p>STEP IV Suppose <span class="math inline">\(E=\bigcup_{i=1}^{\infty}
+E_i\)</span>, where <span class="math inline">\(E_1, E_2, E_3,
+\ldots\)</span> are pairwise disjoint members of <span
+class="math inline">\(\mathfrak{M}_F\)</span>. Then</p>
+<p><span class="math display">\[
+\begin{equation}
+\mu(E)=\sum_{i=1}^{\infty} \mu\left(E_i\right) .
+\end{equation}
+\]</span></p>
+<p>If, in addition, <span
+class="math inline">\(\mu(E)&lt;\infty\)</span>, then also <span
+class="math inline">\(E \in \mathfrak{M}_F\)</span>.</p>
+<p>Proof We first show that <span class="math display">\[
+\mu\left(K_1 \cup K_2\right)=\mu\left(K_1\right)+\mu\left(K_2\right)
+\]</span> if <span class="math inline">\(K_1\)</span> and <span
+class="math inline">\(K_2\)</span> are disjoint compact sets. Choose
+<span class="math inline">\(\epsilon&gt;0\)</span>. By Urysohn’s lemma,
+there exists <span class="math inline">\(f \in C_c(X)\)</span> such that
+<span class="math inline">\(f(x)=1\)</span> on <span
+class="math inline">\(K_1, f(x)=0\)</span> on <span
+class="math inline">\(K_2\)</span>, and <span class="math inline">\(0
+\leq f \leq 1\)</span>. By Step II there exists <span
+class="math inline">\(g\)</span> such that <span class="math display">\[
+K_1 \cup K_2 \prec g \text { and } \Lambda g&lt;\mu\left(K_1 \cup
+K_2\right)+\epsilon .
+\]</span> Note that <span class="math inline">\(K_1 \prec f g\)</span>
+and <span class="math inline">\(K_2 \prec(1-f) g\)</span>. Since <span
+class="math inline">\(\Lambda\)</span> is linear, it follows from (8)
+that <span class="math display">\[
+\mu\left(K_1\right)+\mu\left(K_2\right) \leq \Lambda(f g)+\Lambda(g-f
+g)=\Lambda g&lt;\mu\left(K_1 \cup K_2\right)+\epsilon .
+\]</span> Since <span class="math inline">\(\epsilon\)</span> was
+arbitrary, (10) follows now from Step I. If <span
+class="math inline">\(\mu(E)=\infty\)</span>, (9) follows from Step I.
+Assume therefore that <span
+class="math inline">\(\mu(E)&lt;\infty\)</span>, and choose <span
+class="math inline">\(\epsilon&gt;0\)</span>. Since <span
+class="math inline">\(E_i \in \mathfrak{M}_F\)</span>, there are compact
+sets <span class="math inline">\(H_i \subset E_i\)</span> with <span
+class="math display">\[
+\mu\left(H_i\right)&gt;\mu\left(E_i\right)-2^{-i} \epsilon
+\quad(i=1,2,3, \ldots) .
+\]</span> Putting <span class="math inline">\(K_n=H_1 \cup \cdots \cup
+H_n\)</span> and using induction on (10), we obtain <span
+class="math display">\[
+\mu(E) \geq \mu\left(K_n\right)=\sum_{i=1}^n
+\mu\left(H_i\right)&gt;\sum_{i=1}^n \mu\left(E_i\right)-\epsilon .
+\]</span> Since (12) holds for every <span
+class="math inline">\(n\)</span> and every <span
+class="math inline">\(\epsilon&gt;0\)</span>, the left side of (9) is
+not smaller than the right side, and so (9) follows from Step I. But if
+<span class="math inline">\(\mu(E)&lt;\infty\)</span> and <span
+class="math inline">\(\epsilon&gt;0\)</span>, (9) shows that <span
+class="math display">\[
+\mu(E) \leq \sum_{i=1}^N \mu\left(E_i\right)+\epsilon
+\]</span> for some <span class="math inline">\(N\)</span>. By (12), it
+follows that <span class="math inline">\(\mu(E) \leq
+\mu\left(K_N\right)+2 \epsilon\)</span>, and this shows that <span
+class="math inline">\(E\)</span> satisfies (3); hence <span
+class="math inline">\(E \in \mathfrak{M}_F\)</span>.</p>
+<p>STEP <span class="math inline">\(\vee\)</span> If <span
+class="math inline">\(E \in \mathfrak{M}_F\)</span> and <span
+class="math inline">\(\epsilon&gt;0\)</span>, there is a compact <span
+class="math inline">\(K\)</span> and an open <span
+class="math inline">\(V\)</span> such that <span class="math inline">\(K
+\subset E \subset V\)</span> and <span
+class="math inline">\(\mu(V-K)&lt;\epsilon\)</span>. Proof Our
+definitions show that there exist <span class="math inline">\(K \subset
+E\)</span> and <span class="math inline">\(V \supset E\)</span> so that
+<span class="math display">\[
+\mu(V)-\frac{\epsilon}{2}&lt;\mu(E)&lt;\mu(K)+\frac{\epsilon}{2} .
+\]</span> Since <span class="math inline">\(V-K\)</span> is open, <span
+class="math inline">\(V-K \in \mathfrak{M}_F\)</span>, by Step III.
+Hence Step IV implies that <span class="math display">\[
+\mu(K)+\mu(V-K)=\mu(V)&lt;\mu(K)+\epsilon .
+\]</span> STEP VI If <span class="math inline">\(A \in
+\mathfrak{M}_F\)</span> and <span class="math inline">\(B \in
+\mathfrak{M}_F\)</span>, then <span class="math inline">\(A-B, A \cup
+B\)</span>, and <span class="math inline">\(A \cap B\)</span> belong to
+<span class="math inline">\(\mathfrak{M}_F\)</span>.</p>
+<p>PROOF If <span class="math inline">\(\epsilon&gt;0\)</span>, Step
+<span class="math inline">\(\mathrm{V}\)</span> shows that there are
+sets <span class="math inline">\(K_i\)</span> and <span
+class="math inline">\(V_i\)</span> such that <span
+class="math inline">\(K_1 \subset A \subset V_1, K_2 \subset B \subset
+V_2\)</span>, and <span
+class="math inline">\(\mu\left(V_i-K_i\right)&lt;\epsilon\)</span>, for
+<span class="math inline">\(i=1,2\)</span>. Since <span
+class="math display">\[
+A-B \subset V_1-K_2 \subset\left(V_1-K_1\right) \cup\left(K_1-V_2\right)
+\cup\left(V_2-K_2\right),
+\]</span> Step I shows that <span class="math display">\[
+\mu(A-B) \leq \epsilon+\mu\left(K_1-V_2\right)+\epsilon .
+\]</span> Since <span class="math inline">\(K_1-V_2\)</span> is a
+compact subset of <span class="math inline">\(A-B\)</span>, (14) shows
+that <span class="math inline">\(A-B\)</span> satisfies (3), so that
+<span class="math inline">\(A-B \in \mathfrak{M}_F\)</span>.</p>
+<p>Since <span class="math inline">\(A \cup B=(A-B) \cup B\)</span>, an
+application of Step IV shows that <span class="math inline">\(A \cup B
+\in \mathfrak{M}_F\)</span>. Since <span class="math inline">\(A \cap
+B=A-(A-B)\)</span>, we also have <span class="math inline">\(A \cap B
+\in \mathfrak{M}_F\)</span>. I/// STEP VII <span
+class="math inline">\(\mathfrak{M}\)</span> is a <span
+class="math inline">\(\sigma\)</span>-algebra in <span
+class="math inline">\(X\)</span> which contains all Borel sets. PROOF
+Let <span class="math inline">\(K\)</span> be an arbitrary compact set
+in <span class="math inline">\(X\)</span>. If <span
+class="math inline">\(A \in \mathfrak{M}\)</span>, then <span
+class="math inline">\(A^c \cap K=K-(A \cap K)\)</span>, so that <span
+class="math inline">\(A^c \cap K\)</span> is a difference of two members
+of <span class="math inline">\(\mathscr{M}_F\)</span>. Hence <span
+class="math inline">\(A^c \cap K \in \mathfrak{M}_F\)</span>, and we
+conclude: <span class="math inline">\(A \in \mathfrak{M}\)</span>
+implies <span class="math inline">\(A^c \in \mathfrak{M}\)</span>.</p>
+<p>Next, suppose <span class="math inline">\(A=\bigcup_1^{\infty}
+A_i\)</span>, where each <span class="math inline">\(A_i \in
+\mathfrak{M}\)</span>. Put <span class="math inline">\(B_1=A_1 \cap
+K\)</span>, and <span class="math display">\[
+B_n=\left(A_n \cap K\right)-\left(B_1 \cup \cdots \cup B_{n-1}\right)
+\quad(n=2,3,4, \ldots) .
+\]</span> Then <span class="math inline">\(\left\{B_n\right\}\)</span>
+is a disjoint sequence of members of <span
+class="math inline">\(\mathfrak{M}_F\)</span>, by Step VI, and <span
+class="math inline">\(A \cap K=\bigcup_1^{\infty} B_n\)</span>. It
+follows from Step IV that <span class="math inline">\(A \cap K \in
+\mathfrak{M}_F\)</span>. Hence <span class="math inline">\(A \in
+\mathfrak{M}\)</span>. Finally, if <span
+class="math inline">\(C\)</span> is closed, then <span
+class="math inline">\(C \cap K\)</span> is compact, hence <span
+class="math inline">\(C \cap K \in \mathfrak{M}_F\)</span>, so <span
+class="math inline">\(C \in \mathfrak{M}\)</span>. In particular, <span
+class="math inline">\(X \in \mathfrak{M}\)</span>.</p>
+<p>We have thus proved that <span
+class="math inline">\(\mathfrak{M}\)</span> is a <span
+class="math inline">\(\sigma\)</span>-algebra in <span
+class="math inline">\(X\)</span> which contains all closed subsets of
+<span class="math inline">\(X\)</span>. Hence <span
+class="math inline">\(\mathfrak{M}\)</span> contains all Borel sets in
+<span class="math inline">\(X\)</span>. STEP VIII <span
+class="math inline">\(\mathfrak{M}_F\)</span> consists of precisely
+those sets <span class="math inline">\(E \in \mathfrak{M}\)</span> for
+which <span class="math inline">\(\mu(E)&lt;\infty\)</span>. This
+implies assertion <span class="math inline">\((d)\)</span> of the
+theorem. Proof If <span class="math inline">\(E \in
+\mathfrak{M}_F\)</span>, Steps II and VI imply that <span
+class="math inline">\(E \cap K \in \mathfrak{M}_F\)</span> for every
+compact <span class="math inline">\(K\)</span>, hence <span
+class="math inline">\(E \in \mathfrak{M}\)</span>.</p>
+<p>Conversely, suppose <span class="math inline">\(E \in
+\mathfrak{M}\)</span> and <span
+class="math inline">\(\mu(E)&lt;\infty\)</span>, and choose <span
+class="math inline">\(\epsilon&gt;0\)</span>. There is an open set <span
+class="math inline">\(V \supset E\)</span> with <span
+class="math inline">\(\mu(V)&lt;\infty\)</span>; by III and V, there is
+a compact <span class="math inline">\(K \subset V\)</span> with <span
+class="math inline">\(\mu(V-K)&lt;\epsilon\)</span>. Since <span
+class="math inline">\(E \cap K \in \mathfrak{M}_F\)</span>, there is a
+compact set <span class="math inline">\(H \subset E \cap K\)</span> with
+<span class="math display">\[
+\mu(E \cap K)&lt;\mu(H)+\epsilon .
+\]</span> Since <span class="math inline">\(E \subset(E \cap K)
+\cup(V-K)\)</span>, it follows that <span class="math display">\[
+\mu(E) \leq \mu(E \cap K)+\mu(V-K)&lt;\mu(H)+2 \epsilon,
+\]</span> which implies that <span class="math inline">\(E \in
+\mathfrak{M}_F\)</span>. STEP IX <span
+class="math inline">\(\mu\)</span> is a measure on <span
+class="math inline">\(\mathfrak{M}\)</span>.</p>
+<p>Proof The countable additivity of <span
+class="math inline">\(\mu\)</span> on <span
+class="math inline">\(\mathfrak{M}\)</span> follows immediately from
+Steps IV and VIII. STEP X For every <span class="math inline">\(f \in
+C_c(X), \Lambda f=\int_X f d \mu\)</span>. This proves <span
+class="math inline">\((a)\)</span>, and completes the theorem. Proof
+Clearly, it is enough to prove this for real <span
+class="math inline">\(f\)</span>. Also, it is enough to prove the
+inequality <span class="math display">\[
+\Lambda f \leq \int_{\boldsymbol{X}} f d \mu
+\]</span> for every real <span class="math inline">\(f \in
+C_c(X)\)</span>. For once (16) is established, the linearity of <span
+class="math inline">\(\Lambda\)</span> shows that <span
+class="math display">\[
+-\Lambda f=\Lambda(-f) \leq \int_X(-f) d \mu=-\int_X f d \mu
+\]</span> which, together with (16), shows that equality holds in (16).
+Let <span class="math inline">\(K\)</span> be the support of a real
+<span class="math inline">\(f \in C_c(X)\)</span>, let <span
+class="math inline">\([a, b]\)</span> be an interval which contains the
+range of <span class="math inline">\(f\)</span> (note the Corollary to
+Theorem 2.10), choose <span
+class="math inline">\(\epsilon&gt;0\)</span>, and choose <span
+class="math inline">\(y_i\)</span>, for <span
+class="math inline">\(i=0,1, \ldots, n\)</span>, so that <span
+class="math inline">\(y_i-y_{i-1}&lt;\epsilon\)</span> and <span
+class="math display">\[
+y_0&lt;a&lt;y_1&lt;\cdots&lt;y_n=b .
+\]</span> Put <span class="math display">\[
+E_i=\left\{x: y_{i-1}&lt;f(x) \leq y_i\right\} \cap K \quad(i=1, \ldots,
+n) .
+\]</span> Since <span class="math inline">\(f\)</span> is continuous,
+<span class="math inline">\(f\)</span> is Borel measurable, and the sets
+<span class="math inline">\(E_i\)</span> are therefore disjoint Borel
+sets whose union is <span class="math inline">\(K\)</span>. There are
+open sets <span class="math inline">\(V_i \supset E_i\)</span> such that
+<span class="math display">\[
+\mu\left(V_i\right)&lt;\mu\left(E_i\right)+\frac{\epsilon}{n} \quad(i=1,
+\ldots, n)
+\]</span> and such that <span
+class="math inline">\(f(x)&lt;y_i+\epsilon\)</span> for all <span
+class="math inline">\(x \in V_i\)</span>. By Theorem <span
+class="math inline">\(2.13\)</span>, there are functions <span
+class="math inline">\(h_i \prec V_i\)</span> such that <span
+class="math inline">\(\sum h_i=1\)</span> on <span
+class="math inline">\(K\)</span>. Hence <span
+class="math inline">\(f=\sum h_i f\)</span>, and Step II shows that
+<span class="math display">\[
+\mu(K) \leq \Lambda\left(\sum h_i\right)=\sum \Lambda h_i .
+\]</span></p>
+<p>Since <span class="math inline">\(h_i f \leq\left(y_i+\epsilon\right)
+h_i\)</span>, and since <span
+class="math inline">\(y_i-\epsilon&lt;f(x)\)</span> on <span
+class="math inline">\(E_i\)</span>, we have <span
+class="math display">\[
+\begin{aligned}
+\Lambda f &amp;=\sum_{i=1}^n \Lambda\left(h_i f\right) \leq
+\sum_{i=1}^n\left(y_i+\epsilon\right) \Lambda h_i \\
+&amp;=\sum_{i=1}^n\left(|a|+y_i+\epsilon\right) \Lambda h_i-|a|
+\sum_{i=1}^n \Lambda h_i \\
+&amp; \leq
+\sum_{i=1}^n\left(|a|+y_i+\epsilon\right)\left[\mu\left(E_i\right)+\epsilon
+/ n\right]-|a| \mu(K) \\
+&amp;=\sum_{i=1}^n\left(y_i-\epsilon\right) \mu\left(E_i\right)+2
+\epsilon \mu(K)+\frac{\epsilon}{n}
+\sum_{i=1}^n\left(|a|+y_i+\epsilon\right) \\
+&amp; \leq \int_X f d \mu+\epsilon[2 \mu(K)+|a|+b+\epsilon]
+\end{aligned}
+\]</span> Since <span class="math inline">\(\epsilon\)</span> was
+arbitrary, (16) is established, and the proof of the theorem is
+complete.</p>
+
+    </div>
+    
+</div>
+</div>
+
+                <div id="footer-wrapper">
+                    <footer class="footer"><footer class="row pl-3 pr-3">
+    <div class="col-12 d-flex justify-content-between align-items-center text-muted pl-0 pr-0">
+        <div class="footer-left">
+            <p class="mb-0"> © 2022 <a href="https://github.com/chen-gz">guangzong</a>. <span data-toggle="tooltip"
+                    data-placement="top"
+                    title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author.">All
+                    rights reserved.</span></p>
+        </div>
+        <div class="footer-right">
+            <p class="mb-0"> Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">hugo</a>
+                with <a href="https://github.com/chen-gz/hugo_zong" target="_blank" rel="noopener">zong</a>
+                theme.</p>
+        </div>
+    </div>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script> MathJax = {
+            tex: {
+                tags: 'ams',
+            }
+        };</script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</footer>
+</footer>
+                </div>
+            </div>
+            <div id="panel-wrapper" class="d-flex flex-column"><div id="toc-wrapper" class="mb-5 pl-2">
+    <span>Contents</span>
+    <nav id="toc" data-toggle="toc">
+        
+        
+        
+    </nav>
+</div>
+
+<div id="access-lastmod" class="pb-4 pl-2">
+    <div class="panel-heading">Recently Updated</div>
+    <ul class="post-content pl-3 pb-1 ml-1 mt-2">
+          
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/1-total-variation/">Total Variation</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-7/1-derivatives-of-measures/">Derivatives of Measures</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/3-consequences-of-the-radon-nikodym-theorem/">Consequences of the Radon-Nikodym Theorem</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/4-bounded-linear-functionals-on-lp/">Bounded linear functional on Lp</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/2-abosolute-continuity/">Abosolute Continuity</a></li>
+        
+    </ul>
+</div>
+
+<div id="access-tags" class="pl-2">
+    <div class="panel-heading">Trending Tags</div>
+    <div class="d-flex flex-wrap mt-3 mb-1 mr-3">
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/algorithm/">Algorithm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/android/">Android</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c/">C</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c-language/">c language</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/caddy/">Caddy</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cadence/">Cadence</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cdc/">CDC</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/classification/">classification</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/compress/">Compress</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/conf/">Conf</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/double-column/">Double Column</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/errno13/">Errno13</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/fish/">fish</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gan/">GAN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/git/">Git</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gtk/">Gtk</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/html/">Html</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/i3/">I3</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/idea/">Idea</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/java/">Java</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/latex/">Latex</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lda/">LDA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linear-programming/">Linear Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linux/">Linux</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lr/">LR</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/math/">Math</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mathematics/">Mathematics</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matlab/">Matlab</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matplot/">matplot</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/memory/">Memory</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mermaid/">Mermaid</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/misc/">Misc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/ml/">ML</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mosfet/">Mosfet</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/network/">Network</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/nn/">NN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pandoc/">Pandoc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pca/">PCA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/probability/">Probability</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/productive/">Productive</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/program/">Program</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/programming/">Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/python/">Python</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/qt/">Qt</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/random-variable/">Random Variable</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rcnn/">RCNN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rust/">Rust</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/security/">Security</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/software/">Software</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/std/">Std</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/svd/">Svd</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/tool/">Tool</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/usb/">USB</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vim/">Vim</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpn/">Vpn</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpnc/">Vpnc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/xterm/">xterm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/zsh/">Zsh</a>
+        
+    </div>
+</div>
+</div><div id="search-result-wrapper" class="d-flex justify-content-center unloaded">
+    <div class="col-12 col-sm-11 post-content">
+        <div id="search-hints"></div>
+        <div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3 col-12"></div>
+    </div>
+</div>
+
+<script src="/js/fuse.min.js"></script>
+<script src="/js/fastsearch.js"></script>
+
+
+</div>
+        <div id="mask"></div>
+        <a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button"
+            style="display: none">
+            <i class="fas fa-angle-up"></i>
+        </a>
+    </div>
+    
+</body>
+
+</html>

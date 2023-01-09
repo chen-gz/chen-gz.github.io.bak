@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>codeforces 787 DIV3 on Guangzong Blog</title>
+    <link>https://zongpitt.com/codeforces/787-div3/</link>
+    <description>Recent content in codeforces 787 DIV3 on Guangzong Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://zongpitt.com/codeforces/787-div3/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>787G Sorting Pancakes</title>
+      <link>https://zongpitt.com/codeforces/787-div3/g/</link>
+      <pubDate>Sat, 07 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/codeforces/787-div3/g/</guid>
+      <description>Problem link https://codeforces.com/contest/1675/problem/G
+Solution We consider using dynamic programming to solve this problem since we don’t have any other method related to this problem.
+we have \(dp[i][last][sum]\), This stand for \(i\) prefix element, the value of \(last\) element in the array, the sum of \(i\) prefix. \(dp[i][last][sum]\) stand the number of action we need to construct \(i\) prefix element with last element is \(last\) and sum the array is \(sum\). At the begin we set all element to \(\infty\).</description>
+    </item>
+    
+    <item>
+      <title>787D Vertical Paths</title>
+      <link>https://zongpitt.com/codeforces/787-div3/d/</link>
+      <pubDate>Thu, 05 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/codeforces/787-div3/d/</guid>
+      <description>Problem link https://codeforces.com/contest/1675/problem/D
+Solution The number of leaves is the number of paths. For each leaf, we have to build a path for it. So the leaf is the last element for each path.
+Now we start to build our path from the leaf. We will find its father and add it to the path. If the parent node is already added by another brother node, we should stop at the current node to avoid having the same node in two paths.</description>
+    </item>
+    
+    <item>
+      <title>787E Replace With the Previous, Minimize</title>
+      <link>https://zongpitt.com/codeforces/787-div3/e/</link>
+      <pubDate>Thu, 05 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/codeforces/787-div3/e/</guid>
+      <description>Problem link https://codeforces.com/contest/1675/problem/E
+To get the minimum string, we need to optimize characters from left to right. The point we should minimize from the largest character which we can let it become a. For example, we can only need 2 steps to minimize string \(abc\) instead of 3.
+Now the string can divide into two parts. The first part is we can get all a within \(k\) step. In another part, we can only minimize the first character.</description>
+    </item>
+    
+    <item>
+      <title>787F Vlad and Unfinished Business</title>
+      <link>https://zongpitt.com/codeforces/787-div3/f/</link>
+      <pubDate>Thu, 05 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/codeforces/787-div3/f/</guid>
+      <description>Problem link https://codeforces.com/contest/1675/problem/F
+Solution Put \(x\) as root. Then we can find that to visit a house, not on the path \(x\rightarrow y\) we need to walk on the same road twice. If we visit a house on the path \(x \rightarrow y\) we only need to walk the road once. After we found this characteristic, the rest of things became easy. We can just use dfs to visit all nodes, if this node is in the path \(x\) to \(y\), we mark it as 2, else if it is in the path \(x\) to some houses, we mark it as 1, Otherwise mark it as 0.</description>
+    </item>
+    
+  </channel>
+</rss>

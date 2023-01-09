@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css"
+        class="dark-mode-native-dark-original" />
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+     
+    <link rel="stylesheet" href="https://zongpitt.com/sass/main.06935202011a97ba473ebeeb0cb6788daa9fb5a9fff471a4e85850293d1c5ac4.css" />
+    <title>
+          Guangzong Blog | DEFINITION AND EXISTENCE OF THE INTEGRAL
+    </title>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.bundle.min.js"></script>
+    <script src=" https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.js"></script>
+
+    <script
+        src="https://cdn.jsdelivr.net/combine/npm/magnific-popup@1/dist/jquery.magnific-popup.min.js,npm/lozad/dist/lozad.min.js,npm/clipboard@2/dist/clipboard.min.js"></script>
+    <script type="text/javascript" src="/js/commons/back-to-top.js"></script>
+    
+    
+    
+    <script type="text/javascript" src="/js/commons/topbar-switch.js"></script>
+    <script type="text/javascript" src="/js/commons/sidebar.js"></script>
+    <script type="text/javascript" src="/js/utils/category-collapse.js"></script>
+    <script type="text/javascript" src="/js/utils/checkbox.js"></script>
+    <script type="text/javascript" src="/js/utils/clipboard.js"></script>
+    <script type="text/javascript" src="/js/utils/img-extra.js"></script>
+    <script type="text/javascript" src="/js/utils/pageviews.js"></script>
+    
+    <script type="text/javascript" src="/js/utils/timeago.js"></script>
+    
+    
+</head>
+<body data-spy="scroll" data-target="#toc" data-topbar-visible="true" class="d-flex"><div id="sidebar" class="d-flex flex-column align-items-end">
+    <div class="profile-wrapper text-center">
+
+        <div id="avatar">
+            <a href="/" alt="avatar" class="mx-auto"> <img src=https://github.com/chen-gz/chen-gz/blob/main/mine_square.jpg?raw&#61;truehttps://raw.githubusercontent.com/chen-gz/chen-gz/blob/main/mine_square.jpg alt="avatar"
+                    onerror="this.style.display='none'"> </a>
+        </div>
+
+        <div class="site-title mt-3"> <a href="/">Guangzong</a> </div>
+        <div class="site-subtitle font-italic">Welcome to my blog</div>
+    </div>
+
+    <ul>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/">
+                <span>
+                    Home
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/archive/">
+                <span>
+                    Archive
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/tags/">
+                <span>
+                    Tags
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/about/">
+                <span>
+                    About
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/categories/">
+                <span>
+                    Categories
+                </span>
+            </a>
+        </li>
+        
+    </ul>
+
+    <div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center align-items-center">
+        <button class="mode-toggle btn" aria-label="Switch Mode"> 
+            <i class="fas fa-adjust"></i> 
+        </button>
+
+        <span class="icon-border"></span>
+        <a href="https://github.com/chen-gz" aria-label="github" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i>
+        </a>
+
+        <a href=" javascript:location.href = 'mailto:' + ['chen-gz','outlook.com'].join('@')" aria-label="email">
+            <i class="fas fa-envelope"></i>
+        </a>
+
+        <a href="/feed.xml" aria-label="rss"> <i class="fas fa-rss"></i> </a>
+    </div>
+
+    
+    
+</div>
+<div id="all-wrapper" class="d-flex flex-column"><div id="topbar-wrapper">
+    <div id="topbar" class="d-flex">
+        
+        <span id="breadcrumb" class="d-flex">
+              
+               
+            
+            
+            <div><a href='https://zongpitt.com/'>Home</a></div>
+              
+              
+            
+            <div><a href="https://zongpitt.com/baby-rudin">baby-rudin</a></div>
+               
+              
+            
+            <div><a href="https://zongpitt.com/baby-rudin/6-the-riemann-stieltjes-integral">6-the-riemann-stieltjes-integral</a></div>
+               
+                 
+                
+        </span>
+        <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i>
+        <div id="topbar-title">Guangzong</div>
+        <i id="search-trigger" class="fas fa-search fa-fw"></i>
+        <span id="search-wrapper" class="align-items-center">
+            <i class="fas fa-search fa-fw"></i>
+            <input class="form-control" id="search-input" type="search" aria-label="search" autocomplete="off"
+                placeholder="Search..." />
+            <i class="fa fa-times-circle fa-fw" id="search-cleaner"></i>
+        </span>
+    </div>
+</div>
+<div id="main-wrapper" class="d-flex mt-3">
+            <div id="core-wrapper" class="d-flex flex-column">
+                <div id="main" class="d-flex flex-column">
+                    
+<div class="post pl-1 pr-1 pl-md-2 pr-md-2">
+    
+    <div id="post-content">
+        <h1 style="text-align: center;">DEFINITION AND EXISTENCE OF THE INTEGRAL</h1>
+        <br>
+        
+        <p><strong>6.1 Definition</strong> Let <span class="math inline">\([a,
+b]\)</span> be a given interval. By a partition <span
+class="math inline">\(P\)</span> of <span class="math inline">\([a,
+b]\)</span> we mean a finite set of points <span
+class="math inline">\(x_{0}, x_{1}, \ldots, x_{n}\)</span>, where</p>
+<p><span class="math display">\[
+a=x_{0} \leq x_{1} \leq \cdots \leq x_{n-1} \leq x_{n}=b .
+\]</span></p>
+<p>We write</p>
+<p><span class="math display">\[
+\Delta x_{i}=x_{i}-x_{i-1} \quad(i=1, \ldots, n)
+\]</span></p>
+<p>Now suppose <span class="math inline">\(f\)</span> is a bounded real
+function defined on <span class="math inline">\([a, b]\)</span>.
+Corresponding to each partition <span class="math inline">\(P\)</span>
+of <span class="math inline">\([a, b]\)</span> we put</p>
+<p><span class="math display">\[
+\begin{aligned}
+M_{i} &amp;=\sup f(x) &amp; &amp;\left(x_{i-1} \leq x \leq x_{i}\right)
+\\
+m_{i} &amp;=\inf f(x) &amp; &amp;\left(x_{i-1} \leq x \leq x_{i}\right)
+\\
+U(P, f) &amp;=\sum_{i=1}^{n} M_{i} \Delta x_{i}, &amp; \\
+L(P, f) &amp;=\sum_{i=1}^{n} m_{i} \Delta x_{i}, &amp;
+\end{aligned}
+\]</span></p>
+<p>and finally</p>
+<p><span class="math display">\[
+\begin{aligned}
+&amp;\int_{a}^{b} f d x=\inf U(P, f) \\
+&amp;\int_{a}^{b} f d x=\sup L(P, f)
+\end{aligned}
+\]</span></p>
+<p>where the inf and the sup are taken over all partitions <span
+class="math inline">\(P\)</span> of <span class="math inline">\([a,
+b]\)</span>. The left members of (1) and (2) are called the upper and
+lower Riemann integrals of <span class="math inline">\(f\)</span> over
+<span class="math inline">\([a, b]\)</span>, respectively.</p>
+<p>If the upper and lower integrals are equal, we say that <span
+class="math inline">\(f\)</span> is Riemannintegrable on <span
+class="math inline">\([a, b]\)</span>, we write <span
+class="math inline">\(f \in \mathscr{R}\)</span> (that is, <span
+class="math inline">\(\mathscr{R}\)</span> denotes the set of
+Riemannintegrable functions), and we denote the common value of (1) and
+(2) by</p>
+<p><span class="math display">\[
+\int_{a}^{b} f d x
+\]</span></p>
+<p>or by</p>
+<p><span class="math display">\[
+\int_{a}^{b} f(x) d x .
+\]</span></p>
+<p>This is the Riemann integral of <span
+class="math inline">\(f\)</span> over <span class="math inline">\([a,
+b]\)</span>. Since <span class="math inline">\(f\)</span> is bounded,
+there exist two numbers, <span class="math inline">\(m\)</span> and
+<span class="math inline">\(M\)</span>, such that</p>
+<p><span class="math display">\[
+m \leq f(x) \leq M \quad(a \leq x \leq b) .
+\]</span></p>
+<p>Hence, for every <span class="math inline">\(P\)</span></p>
+<p><span class="math display">\[
+m(b-a) \leq L(P, f) \leq U(P, f) \leq M(b-a),
+\]</span></p>
+<p>so that the numbers <span class="math inline">\(L(P, f)\)</span> and
+<span class="math inline">\(U(P, f)\)</span> form a bounded set. This
+shows that the upper and lower integrals are defined for every bounded
+function <span class="math inline">\(f\)</span>. The question of their
+equality, and hence the question of the integrability of <span
+class="math inline">\(f\)</span>, is a more delicate one. Instead of
+investigating it separately for the Riemann integral, we shall
+immediately consider a more general situation.</p>
+<p><strong>6.2 Definition</strong> Let <span
+class="math inline">\(\alpha\)</span> be a monotonically increasing
+function on <span class="math inline">\([a, b]\)</span> (since <span
+class="math inline">\(\alpha(a)\)</span> and <span
+class="math inline">\(\alpha(b)\)</span> are finite, it follows that
+<span class="math inline">\(\alpha\)</span> is bounded on <span
+class="math inline">\([a, b])\)</span>. Corresponding to each partition
+<span class="math inline">\(P\)</span> of <span
+class="math inline">\([a, b]\)</span>, we write <span
+class="math display">\[
+\Delta \alpha_{i}=\alpha\left(x_{i}\right)-\alpha\left(x_{i-1}\right) .
+\]</span></p>
+<p>It is clear that <span class="math inline">\(\Delta \alpha_{i} \geq
+0\)</span>. For any real function <span class="math inline">\(f\)</span>
+which is bounded on <span class="math inline">\([a, b]\)</span> we
+put</p>
+<p><span class="math display">\[
+\begin{aligned}
+&amp;U(P, f, \alpha)=\sum_{i=1}^{n} M_{i} \Delta \alpha_{i}, \\
+&amp;L(P, f, \alpha)=\sum_{i=1}^{n} m_{i} \Delta \alpha_{i},
+\end{aligned}
+\]</span></p>
+<p>where <span class="math inline">\(M_{i}, m_{i}\)</span> have the same
+meaning as in Definition 6.1, and we define</p>
+<p><span class="math display">\[
+\begin{aligned}
+&amp;\bar{\int}_{a}^{b} f d \alpha=\inf U(P, f, \alpha), \\
+&amp;\int_{a}^{b} f d \alpha=\sup L(P, f, \alpha),
+\end{aligned}
+\]</span></p>
+<p>the inf and sup again being taken over all partitions.</p>
+<p>If the left members of (5) and (6) are equal, we denote their common
+value by</p>
+<p><span class="math display">\[
+\int_{a}^{b} f d \alpha
+\]</span></p>
+<p>or sometimes by</p>
+<p><span class="math display">\[
+\int_{a}^{b} f(x) d \alpha(x) .
+\]</span></p>
+<p>This is the Riemann-Stieltjes integral (or simply the Stieltjes
+integral) of <span class="math inline">\(f\)</span> with respect to
+<span class="math inline">\(\alpha\)</span>, over <span
+class="math inline">\([a, b]\)</span>.</p>
+<p>If (7) exists, i.e., if (5) and (6) are equal, we say that <span
+class="math inline">\(f\)</span> is integrable with respect to <span
+class="math inline">\(\alpha\)</span>, in the Riemann sense, and write
+<span class="math inline">\(f \in \mathscr{R}(\alpha)\)</span>.</p>
+<p>By taking <span class="math inline">\(\alpha(x)=x\)</span>, the
+Riemann integral is seen to be a special case of the Riemann-Stieltjes
+integral. Let us mention explicitly, however, that in the general case
+<span class="math inline">\(\alpha\)</span> need not even be
+continuous.</p>
+<p>A few words should be said about the notation. We prefer (7) to (8),
+since the letter <span class="math inline">\(x\)</span> which appears in
+(8) adds nothing to the content of (7). It is immaterial which letter we
+use to represent the so-called “variable of integration.” For instance,
+(8) is the same as</p>
+<p><span class="math display">\[
+\int_{a}^{b} f(y) d \alpha(y)
+\]</span></p>
+<p>The integral depends on <span class="math inline">\(f, \alpha,
+a\)</span> and <span class="math inline">\(b\)</span>, but not on the
+variable of integration, which may as well be omitted.</p>
+<p>The role played by the variable of integration is quite analogous to
+that of the index of summation: The two symbols</p>
+<p><span class="math display">\[
+\sum_{i=1}^{n} c_{i}, \quad \sum_{k=1}^{n} c_{k}
+\]</span></p>
+<p>mean the same thing, since each means <span
+class="math inline">\(c_{1}+c_{2}+\cdots+c_{n}\)</span>.</p>
+<p>Of course, no harm is done by inserting the variable of integration,
+and in many cases it is actually convenient to do so.</p>
+<p><strong>We shall now investigate the existence of the integral (7).
+Without saying so every time, <span class="math inline">\(f\)</span>
+will be assumed real and bounded, and <span
+class="math inline">\(\alpha\)</span> monotonically increasing on <span
+class="math inline">\([a, b]\)</span>; and, when there can be no
+misunderstanding, we shall write <span
+class="math inline">\(\int\)</span> in place of <span
+class="math inline">\(\int_{a}^{b}\)</span></strong></p>
+<p><strong>6.3 Definition</strong> We say that the partition <span
+class="math inline">\(P^{*}\)</span> is a refinement of <span
+class="math inline">\(P\)</span> if <span class="math inline">\(P^{*}
+\supset P\)</span> (that is, if every point of <span
+class="math inline">\(P\)</span> is a point of <span
+class="math inline">\(P^{*}\)</span> ). Given two partitions, <span
+class="math inline">\(P_{1}\)</span> and <span
+class="math inline">\(P_{2}\)</span>, we say that <span
+class="math inline">\(P^{*}\)</span> is their common refinement if <span
+class="math inline">\(P^{*}=P_{1} \cup P_{2}\)</span>.</p>
+<p><strong>6.4 Theorem</strong> If <span
+class="math inline">\(P^{*}\)</span> is a refinement of <span
+class="math inline">\(P\)</span>, then <span class="math display">\[
+L(P, f, \alpha) \leq L\left(P^{*}, f, \alpha\right)
+\]</span></p>
+<p>and</p>
+<p><span class="math display">\[
+U\left(P^{*}, f, \alpha\right) \leq U(P, f, \alpha) .
+\]</span></p>
+<p>Proof To prove (9), suppose first that <span
+class="math inline">\(P^{*}\)</span> contains just one point more than
+<span class="math inline">\(P\)</span>. Let this extra point be <span
+class="math inline">\(x^{*}\)</span>, and suppose <span
+class="math inline">\(x_{i-1}&lt;x^{*}&lt;x_{i}\)</span>, where <span
+class="math inline">\(x_{i-1}\)</span> and <span
+class="math inline">\(x_{i}\)</span> are two consecutive points of <span
+class="math inline">\(P\)</span>. Put</p>
+<p>Clearly <span class="math inline">\(w_{1} \geq m_{i}\)</span> and
+<span class="math inline">\(w_{2} \geq m_{i}\)</span>, where, as
+before,</p>
+<p><span class="math display">\[
+m_{i}=\inf f(x) \quad\left(x_{i-1} \leq x \leq x_{i}\right) .
+\]</span></p>
+<p>Hence</p>
+<p><span class="math display">\[
+\begin{aligned}
+&amp;L\left(P^{*}, f, \alpha\right)-L(P, f, \alpha) \\
+&amp;\quad=w_{1}\left[\alpha\left(x^{*}\right)-\alpha\left(x_{i-1}\right)\right]+w_{2}\left[\alpha\left(x_{i}\right)-\alpha\left(x^{*}\right)\right]-m_{i}\left[\alpha\left(x_{i}\right)-\alpha\left(x_{i-1}\right)\right]
+\\
+&amp;\quad=\left(w_{1}-m_{i}\right)\left[\alpha\left(x^{*}\right)-\alpha\left(x_{i-1}\right)\right]+\left(w_{2}-m_{i}\right)\left[\alpha\left(x_{i}\right)-\alpha\left(x^{*}\right)\right]
+\geq 0 .
+\end{aligned}
+\]</span></p>
+<p>If <span class="math inline">\(P^{*}\)</span> contains <span
+class="math inline">\(k\)</span> points more than <span
+class="math inline">\(P\)</span>, we repeat this reasoning <span
+class="math inline">\(k\)</span> times, and arrive at (9). The proof of
+<span class="math inline">\((10)\)</span> is analogous.</p>
+<p><span class="math display">\[
+\begin{aligned}
+&amp; w_{1}=\inf f(x) \quad\left(x_{i-1} \leq x \leq x^{*}\right), \\
+&amp; w_{2}=\inf f(x) \quad\left(x^{*} \leq x \leq x_{i}\right) \text {.
+}
+\end{aligned}
+\]</span></p>
+<p><strong>6.5 Theorem</strong> <span class="math inline">\(\int_{a}^{b}
+f d \alpha \leq \int_{a}^{b} f d \alpha\)</span>.</p>
+<p>Proof Let <span class="math inline">\(P^{*}\)</span> be the common
+refinement of two partitions <span class="math inline">\(P_{1}\)</span>
+and <span class="math inline">\(P_{2}\)</span>. By Theorem 6.4,</p>
+<p><span class="math display">\[
+L\left(P_{1}, f, \alpha\right) \leq L\left(P^{*}, f, \alpha\right) \leq
+U\left(P^{*}, f, \alpha\right) \leq U\left(P_{2}, f, \alpha\right) .
+\]</span></p>
+<p>Hence</p>
+<p><span class="math display">\[
+L\left(P_{1}, f, \alpha\right) \leq U\left(P_{2}, f, \alpha\right) .
+\]</span></p>
+<p>If <span class="math inline">\(P_{2}\)</span> is fixed and the sup is
+taken over all <span class="math inline">\(P_{1},(11)\)</span> gives</p>
+<p><span class="math display">\[
+\int f d \alpha \leq U\left(P_{2}, f, \alpha\right)
+\]</span></p>
+<p>The theorem follows by taking the inf over all <span
+class="math inline">\(P_{2}\)</span> in (12).</p>
+<p><strong>6.6 Theorem</strong> <span class="math inline">\(f \in
+\mathscr{R}(\alpha)\)</span> on <span class="math inline">\([a,
+b]\)</span> if and only if for every <span
+class="math inline">\(\varepsilon&gt;0\)</span> there exists a partition
+<span class="math inline">\(P\)</span> such that <span
+class="math display">\[
+U(P, f, \alpha)-L(P, f, \alpha)&lt;\varepsilon .
+\]</span></p>
+<p>Proof For every <span class="math inline">\(P\)</span> we have</p>
+<p><span class="math display">\[
+L(P, f, \alpha) \leq \int f d \alpha \leq \bar{\int} f d \alpha \leq
+U(P, f, \alpha) .
+\]</span></p>
+<p>Thus (13) implies</p>
+<p><span class="math display">\[
+0 \leq \bar{\int} f d \alpha-\int_{-} f d \alpha&lt;\varepsilon .
+\]</span></p>
+<p>Hence, if (13) can be satisfied for every <span
+class="math inline">\(\varepsilon&gt;0\)</span>, we have</p>
+<p><span class="math display">\[
+\int f d \alpha=\int_{-} f d \alpha
+\]</span></p>
+<p>that is, <span class="math inline">\(f \in
+\mathscr{R}(\alpha)\)</span>.</p>
+<p>Conversely, suppose <span class="math inline">\(f \in
+\mathscr{R}(\alpha)\)</span>, and let <span
+class="math inline">\(\varepsilon&gt;0\)</span> be given. Then there
+exist partitions <span class="math inline">\(P_{1}\)</span> and <span
+class="math inline">\(P_{2}\)</span> such that</p>
+<p><span class="math display">\[
+\begin{aligned}
+&amp;U\left(P_{2}, f, \alpha\right)-\int f d
+\alpha&lt;\frac{\varepsilon}{2} \\
+&amp;\int f d \alpha-L\left(P_{1}, f,
+\alpha\right)&lt;\frac{\varepsilon}{2}
+\end{aligned}
+\]</span></p>
+<p>We choose <span class="math inline">\(P\)</span> to be the common
+refinement of <span class="math inline">\(P_{1}\)</span> and <span
+class="math inline">\(P_{2}\)</span>. Then Theorem <span
+class="math inline">\(6.4\)</span>, together with (14) and (15), shows
+that</p>
+<p><span class="math display">\[
+U(P, f, \alpha) \leq U\left(P_{2}, f, \alpha\right)&lt;\int f d
+\alpha+\frac{\varepsilon}{2}&lt;L\left(P_{1}, f,
+\alpha\right)+\varepsilon \leq L(P, f, \alpha)+\varepsilon
+\]</span></p>
+<p>so that (13) holds for this partition <span
+class="math inline">\(P\)</span>.</p>
+<p>Theorem <span class="math inline">\(6.6\)</span> furnishes a
+convenient criterion for integrability. Before we apply it, we state
+some closely related facts.</p>
+<p><strong>6.7 Theorem</strong></p>
+<ol type="a">
+<li><p>If (13) holds for some <span class="math inline">\(P\)</span> and
+some <span class="math inline">\(\varepsilon\)</span>, then (13) holds
+(with the same <span class="math inline">\(\varepsilon\)</span> ) for
+every refinement of <span class="math inline">\(P\)</span>.</p></li>
+<li><p>If (13) holds for <span class="math inline">\(P=\left\{x_{0},
+\ldots, x_{n}\right\}\)</span> and if <span class="math inline">\(s_{i},
+t_{i}\)</span> are arbitrary points in <span
+class="math inline">\(\left[x_{i-1}, x_{i}\right]\)</span>,
+then</p></li>
+</ol>
+<p><span class="math display">\[
+\sum_{i=1}^{n}\left|f\left(s_{i}\right)-f\left(t_{i}\right)\right|
+\Delta \alpha_{i}&lt;\varepsilon .
+\]</span></p>
+<ol start="3" type="a">
+<li>If <span class="math inline">\(f \in \mathscr{R}(\alpha)\)</span>
+and the hypotheses of <span class="math inline">\((b)\)</span> hold,
+then</li>
+</ol>
+<p><span class="math display">\[
+\left|\sum_{i=1}^{n} f\left(t_{i}\right) \Delta \alpha_{i}-\int_{a}^{b}
+f d \alpha\right|&lt;\varepsilon .
+\]</span></p>
+<p>Proof Theorem <span class="math inline">\(6.4\)</span> implies (a).
+Under the assumptions made in (b), both <span
+class="math inline">\(f\left(s_{i}\right)\)</span> and <span
+class="math inline">\(f\left(t_{i}\right)\)</span> lie in <span
+class="math inline">\(\left[m_{i}, M_{i}\right]\)</span>, so that <span
+class="math inline">\(\left|f\left(s_{i}\right)-f\left(t_{i}\right)\right|
+\leq M_{i}-m_{i}\)</span>. Thus</p>
+<p><span class="math display">\[
+\sum_{i=1}^{n}\left|f\left(s_{i}\right)-f\left(t_{i}\right)\right|
+\Delta \alpha_{i} \leq U(P, f, \alpha)-L(P, f, \alpha),
+\]</span></p>
+<p>which proves <span class="math inline">\((b)\)</span>. The obvious
+inequalities</p>
+<p><span class="math display">\[
+L(P, f, \alpha) \leq \sum f\left(t_{i}\right) \Delta \alpha_{i} \leq
+U(P, f, \alpha)
+\]</span></p>
+<p>and</p>
+<p><span class="math display">\[
+L(P, f, \alpha) \leq \int f d \alpha \leq U(P, f, \alpha)
+\]</span></p>
+<p>prove <span class="math inline">\((c)\)</span></p>
+<p><strong>6.8 Theorem</strong> If <span
+class="math inline">\(f\)</span> is continuous on <span
+class="math inline">\([a, b]\)</span> then <span class="math inline">\(f
+\in \mathscr{R}(\alpha)\)</span> on <span class="math inline">\([a,
+b]\)</span>.</p>
+<p>Proof Let <span class="math inline">\(\varepsilon&gt;0\)</span> be
+given. Choose <span class="math inline">\(\eta&gt;0\)</span> so that</p>
+<p><span class="math display">\[
+[\alpha(b)-\alpha(a)] \eta&lt;\varepsilon .
+\]</span></p>
+<p>Since <span class="math inline">\(f\)</span> is uniformly continuous
+on <span class="math inline">\([a, b]\)</span> (Theorem 4.19), there
+exists a <span class="math inline">\(\delta&gt;0\)</span> such that</p>
+<p><span class="math display">\[
+|f(x)-f(t)|&lt;\eta
+\]</span></p>
+<p>if <span class="math inline">\(x \in[a, b], t \in[a, b]\)</span>, and
+<span class="math inline">\(|x-t|&lt;\delta\)</span>.</p>
+<p>If <span class="math inline">\(P\)</span> is any partition of <span
+class="math inline">\([a, b]\)</span> such that <span
+class="math inline">\(\Delta x_{i}&lt;\delta\)</span> for all <span
+class="math inline">\(i\)</span>, then (16) implies that</p>
+<p><span class="math display">\[
+M_{i}-m_{i} \leq \eta \quad(i-1, \ldots, n)
+\]</span></p>
+<p>and therefore</p>
+<p><span class="math display">\[
+\begin{array}{r}
+U(P, f, \alpha)-L(P, f, \alpha)=\sum_{i=1}^{n}\left(M_{i}-m_{i}\right)
+\Delta \alpha_{i} \\
+\leq \eta \sum_{i=1}^{n} \Delta
+\alpha_{i}=\eta[\alpha(b)-\alpha(a)]&lt;\varepsilon .
+\end{array}
+\]</span></p>
+<p>By Theorem 6.6, <span class="math inline">\(f \in
+\mathscr{R}(\alpha)\)</span>.</p>
+<p><strong>6.9 Theorem</strong> If <span
+class="math inline">\(f\)</span> is monotonic on <span
+class="math inline">\([a, b]\)</span>, and if <span
+class="math inline">\(\alpha\)</span> is continuous on <span
+class="math inline">\([a, b]\)</span>, then <span
+class="math inline">\(f \in \mathscr{R}(\alpha)\)</span>. (We still
+assume, of course, that <span class="math inline">\(\alpha\)</span> is
+monotonic.)</p>
+<p>Proof Let <span class="math inline">\(\varepsilon&gt;0\)</span> be
+given. For any positive integer <span class="math inline">\(n\)</span>,
+choose a partition such that</p>
+<p><span class="math display">\[
+\Delta \alpha_{i}=\frac{\alpha(b)-\alpha(a)}{n} \quad(i=1, \ldots, n) .
+\]</span></p>
+<p>This is possible since <span class="math inline">\(\alpha\)</span> is
+continuous (Theorem 4.23).</p>
+<p>We suppose that <span class="math inline">\(f\)</span> is
+monotonically increasing (the proof is analogous in the other case).
+Then</p>
+<p><span class="math display">\[
+M_{i}=f\left(x_{i}\right), \quad m_{i}=f\left(x_{i-1}\right) \quad(i=1,
+\ldots, n),
+\]</span></p>
+<p>so that</p>
+<p><span class="math display">\[
+\begin{aligned}
+U(P, f, \alpha)-L(P, f, \alpha) &amp;=\frac{\alpha(b)-\alpha(a)}{n}
+\sum_{i=1}^{n}\left[f\left(x_{i}\right)-f\left(x_{i-1}\right)\right] \\
+&amp;=\frac{\alpha(b)-\alpha(a)}{n} \cdot[f(b)-f(a)]&lt;\varepsilon
+\end{aligned}
+\]</span></p>
+<p>if <span class="math inline">\(n\)</span> is taken large enough. By
+Theorem 6.6, <span class="math inline">\(f \in
+\mathscr{R}(\alpha)\)</span>.</p>
+<p><strong>6.10 Theorem</strong> Suppose <span
+class="math inline">\(f\)</span> is bounded on <span
+class="math inline">\([a, b], f\)</span> has only finitely many points
+of discontinuity on <span class="math inline">\([a, b]\)</span>, and
+<span class="math inline">\(\alpha\)</span> is continuous at every point
+at which <span class="math inline">\(f\)</span> is discontinuous. Then
+<span class="math inline">\(f \in \mathscr{R}(\alpha)\)</span>.</p>
+<p>Proof Let <span class="math inline">\(\varepsilon&gt;0\)</span> be
+given. Put <span class="math inline">\(M=\sup |f(x)|\)</span>, let <span
+class="math inline">\(E\)</span> be the set of points at which <span
+class="math inline">\(f\)</span> is discontinuous. Since <span
+class="math inline">\(E\)</span> is finite and <span
+class="math inline">\(\alpha\)</span> is continuous at every point of
+<span class="math inline">\(E\)</span>, we can cover <span
+class="math inline">\(E\)</span> by finitely many disjoint intervals
+<span class="math inline">\(\left[u_{j}, v_{j}\right] \subset\)</span>
+<span class="math inline">\([a, b]\)</span> such that the sum of the
+corresponding differences <span
+class="math inline">\(\alpha\left(v_{j}\right)-\alpha\left(u_{j}\right)\)</span>
+is less than <span class="math inline">\(\varepsilon\)</span>.
+Furthermore, we can place these intervals in such a way that every point
+of <span class="math inline">\(E \cap(a, b)\)</span> lies in the
+interior of some <span class="math inline">\(\left[u_{j},
+v_{j}\right]\)</span>. Remove the segments <span
+class="math inline">\(\left(u_{j}, v_{j}\right)\)</span> from <span
+class="math inline">\([a, b]\)</span>. The remaining set <span
+class="math inline">\(K\)</span> is compact. Hence <span
+class="math inline">\(f\)</span> is uniformly continuous on <span
+class="math inline">\(K\)</span>, and there exists <span
+class="math inline">\(\delta&gt;0\)</span> such that <span
+class="math inline">\(|f(s)-f(t)|&lt;\varepsilon\)</span> if <span
+class="math inline">\(s \in K, t \in K,|s-t|&lt;\delta\)</span>.</p>
+<p>Now form a partition <span class="math inline">\(P=\left\{x_{0},
+x_{1}, \ldots, x_{n}\right\}\)</span> of <span class="math inline">\([a,
+b]\)</span>, as follows: Each <span class="math inline">\(u_{j}\)</span>
+occurs in <span class="math inline">\(P\)</span>. Each <span
+class="math inline">\(v_{j}\)</span> occurs in <span
+class="math inline">\(P\)</span>. No point of any segment <span
+class="math inline">\(\left(u_{j}, v_{j}\right)\)</span> occurs in <span
+class="math inline">\(P\)</span>. If <span
+class="math inline">\(x_{i-1}\)</span> is not one of the <span
+class="math inline">\(u_{j}\)</span>, then <span
+class="math inline">\(\Delta x_{i}&lt;\delta\)</span>.</p>
+<p>Note that <span class="math inline">\(M_{i}-m_{i} \leq 2 M\)</span>
+for every <span class="math inline">\(i\)</span>, and that <span
+class="math inline">\(M_{i}-m_{i} \leq \varepsilon\)</span> unless <span
+class="math inline">\(x_{i-1}\)</span> is one of the <span
+class="math inline">\(u_{j}\)</span>. Hence, as in the proof of Theorem
+<span class="math inline">\(6.8\)</span>,</p>
+<p><span class="math display">\[
+U(P, f, \alpha)-L(P, f, \alpha) \leq[\alpha(b)-\alpha(a)] \varepsilon+2
+M \varepsilon .
+\]</span></p>
+<p>Since <span class="math inline">\(\varepsilon\)</span> is arbitrary,
+Theorem <span class="math inline">\(6.6\)</span> shows that <span
+class="math inline">\(f \in \mathscr{R}(\alpha)\)</span>.</p>
+<p>Note: If <span class="math inline">\(f\)</span> and <span
+class="math inline">\(\alpha\)</span> have a common point of
+discontinuity, then <span class="math inline">\(f\)</span> need not be
+in <span class="math inline">\(\mathscr{R}(\alpha)\)</span>. Exercise 3
+shows this.</p>
+<p><strong>6.11 Theorem</strong> Suppose <span class="math inline">\(f
+\in \mathscr{R}(\alpha)\)</span> on <span class="math inline">\([a, b],
+m \leq f \leq M, \phi\)</span> is continuous on <span
+class="math inline">\([m, M]\)</span>, and <span
+class="math inline">\(h(x)=\phi(f(x))\)</span> on <span
+class="math inline">\([a, b]\)</span>. Then <span
+class="math inline">\(h \in \mathscr{R}(\alpha)\)</span> on <span
+class="math inline">\([a, b]\)</span>.</p>
+<p>Proof Choose <span class="math inline">\(\varepsilon&gt;0\)</span>.
+Since <span class="math inline">\(\phi\)</span> is uniformly continuous
+on <span class="math inline">\([m, M]\)</span>, there exists <span
+class="math inline">\(\delta&gt;0\)</span> such that <span
+class="math inline">\(\delta&lt;\varepsilon\)</span> and <span
+class="math inline">\(|\phi(s)-\phi(t)|&lt;\varepsilon\)</span> if <span
+class="math inline">\(|s-t| \leq \delta\)</span> and <span
+class="math inline">\(s, t \in[m, M]\)</span>.</p>
+<p>Since <span class="math inline">\(f \in \mathscr{R}(\alpha)\)</span>,
+there is a partition <span class="math inline">\(P=\left\{x_{0}, x_{1},
+\ldots, x_{n}\right\}\)</span> of <span class="math inline">\([a,
+b]\)</span> such that</p>
+<p><span class="math display">\[
+U(P, f, \alpha)-L(P, f, \alpha)&lt;\delta^{2} .
+\]</span></p>
+<p>Let <span class="math inline">\(M_{i}, m_{i}\)</span> have the same
+meaning as in Definition 6.1, and let <span
+class="math inline">\(M_{i}^{*}, m_{i}^{*}\)</span> be the analogous
+numbers for <span class="math inline">\(h\)</span>. Divide the numbers
+<span class="math inline">\(1, \ldots, n\)</span> into two classes:
+<span class="math inline">\(i \in A\)</span> if <span
+class="math inline">\(M_{i}-m_{i}&lt;\delta, i \in B\)</span> if <span
+class="math inline">\(M_{i}-m_{i} \geq \delta\)</span>.</p>
+<p>For <span class="math inline">\(i \in A\)</span>, our choice of <span
+class="math inline">\(\delta\)</span> shows that <span
+class="math inline">\(M_{i}^{*}-m_{i}^{*} \leq \varepsilon\)</span>.</p>
+<p>For <span class="math inline">\(i \in B, M_{i}^{*}-m_{i}^{*} \leq 2
+K\)</span>, where <span class="math inline">\(K=\sup |\phi(t)|, m \leq t
+\leq M\)</span>. By (18), we have</p>
+<p><span class="math display">\[
+\delta \sum_{i \in B} \Delta \alpha_{i} \leq \sum_{i \in
+B}\left(M_{i}-m_{i}\right) \Delta \alpha_{i}&lt;\delta^{2}
+\]</span></p>
+<p>so that <span class="math inline">\(\sum_{i \in B} \Delta
+\alpha_{i}&lt;\delta\)</span>. It follows that</p>
+<p><span class="math display">\[
+\begin{aligned}
+U(P, h, \alpha)-L(P, h, \alpha) &amp;=\sum_{i \in
+A}\left(M_{i}^{*}-m_{i}^{*}\right) \Delta \alpha_{i}+\sum_{i \in
+B}\left(M_{i}^{*}-m_{i}^{*}\right) \Delta \alpha_{i} \\
+&amp; \leq \varepsilon[\alpha(b)-\alpha(a)]+2 K
+\delta&lt;\varepsilon[\alpha(b)-\alpha(a)+2 K] .
+\end{aligned}
+\]</span></p>
+<p>Since <span class="math inline">\(\varepsilon\)</span> was arbitrary,
+Theorem <span class="math inline">\(6.6\)</span> implies that <span
+class="math inline">\(h \in \mathscr{R}(\alpha)\)</span>.</p>
+<p>Remark: This theorem suggests the question: Just what functions are
+Riemann-integrable? The answer is given by Theorem <span
+class="math inline">\(11.33(b)\)</span>.</p>
+
+    </div>
+    
+</div>
+</div>
+
+                <div id="footer-wrapper">
+                    <footer class="footer"><footer class="row pl-3 pr-3">
+    <div class="col-12 d-flex justify-content-between align-items-center text-muted pl-0 pr-0">
+        <div class="footer-left">
+            <p class="mb-0"> © 2022 <a href="https://github.com/chen-gz">guangzong</a>. <span data-toggle="tooltip"
+                    data-placement="top"
+                    title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author.">All
+                    rights reserved.</span></p>
+        </div>
+        <div class="footer-right">
+            <p class="mb-0"> Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">hugo</a>
+                with <a href="https://github.com/chen-gz/hugo_zong" target="_blank" rel="noopener">zong</a>
+                theme.</p>
+        </div>
+    </div>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script> MathJax = {
+            tex: {
+                tags: 'ams',
+            }
+        };</script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</footer>
+</footer>
+                </div>
+            </div>
+            <div id="panel-wrapper" class="d-flex flex-column"><div id="toc-wrapper" class="mb-5 pl-2">
+    <span>Contents</span>
+    <nav id="toc" data-toggle="toc">
+        
+        
+        
+    </nav>
+</div>
+
+<div id="access-lastmod" class="pb-4 pl-2">
+    <div class="panel-heading">Recently Updated</div>
+    <ul class="post-content pl-3 pb-1 ml-1 mt-2">
+          
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/1-total-variation/">Total Variation</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-7/1-derivatives-of-measures/">Derivatives of Measures</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/3-consequences-of-the-radon-nikodym-theorem/">Consequences of the Radon-Nikodym Theorem</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/4-bounded-linear-functionals-on-lp/">Bounded linear functional on Lp</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/2-abosolute-continuity/">Abosolute Continuity</a></li>
+        
+    </ul>
+</div>
+
+<div id="access-tags" class="pl-2">
+    <div class="panel-heading">Trending Tags</div>
+    <div class="d-flex flex-wrap mt-3 mb-1 mr-3">
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/algorithm/">Algorithm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/android/">Android</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c/">C</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c-language/">c language</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/caddy/">Caddy</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cadence/">Cadence</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cdc/">CDC</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/classification/">classification</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/compress/">Compress</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/conf/">Conf</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/double-column/">Double Column</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/errno13/">Errno13</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/fish/">fish</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gan/">GAN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/git/">Git</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gtk/">Gtk</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/html/">Html</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/i3/">I3</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/idea/">Idea</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/java/">Java</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/latex/">Latex</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lda/">LDA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linear-programming/">Linear Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linux/">Linux</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lr/">LR</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/math/">Math</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mathematics/">Mathematics</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matlab/">Matlab</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matplot/">matplot</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/memory/">Memory</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mermaid/">Mermaid</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/misc/">Misc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/ml/">ML</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mosfet/">Mosfet</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/network/">Network</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/nn/">NN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pandoc/">Pandoc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pca/">PCA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/probability/">Probability</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/productive/">Productive</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/program/">Program</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/programming/">Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/python/">Python</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/qt/">Qt</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/random-variable/">Random Variable</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rcnn/">RCNN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rust/">Rust</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/security/">Security</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/software/">Software</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/std/">Std</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/svd/">Svd</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/tool/">Tool</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/usb/">USB</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vim/">Vim</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpn/">Vpn</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpnc/">Vpnc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/xterm/">xterm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/zsh/">Zsh</a>
+        
+    </div>
+</div>
+</div><div id="search-result-wrapper" class="d-flex justify-content-center unloaded">
+    <div class="col-12 col-sm-11 post-content">
+        <div id="search-hints"></div>
+        <div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3 col-12"></div>
+    </div>
+</div>
+
+<script src="/js/fuse.min.js"></script>
+<script src="/js/fastsearch.js"></script>
+
+
+</div>
+        <div id="mask"></div>
+        <a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button"
+            style="display: none">
+            <i class="fas fa-angle-up"></i>
+        </a>
+    </div>
+    
+</body>
+
+</html>

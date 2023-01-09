@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GAN on Guangzong Blog</title>
+    <link>https://zongpitt.com/tags/gan/</link>
+    <description>Recent content in GAN on Guangzong Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 19 Jul 2021 10:36:00 -0400</lastBuildDate><atom:link href="https://zongpitt.com/tags/gan/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Style GAN</title>
+      <link>https://zongpitt.com/posts/2021-07-19-style-gan/</link>
+      <pubDate>Mon, 19 Jul 2021 10:36:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-07-19-style-gan/</guid>
+      <description>Nvidia post style GAN. This GAN structure can generate very high resolution image. this person does not exist shows a very good result to apply in human face generate.
+There are two paper relate to style GAN. A style-Based Generator Architecture for Generative Adversarial Networks proposed the idea. Analyzing and Improving the Image Quality of StyleGAN improve the styleGAN.
+The most important idea in style GAN is control different feature in different stage instead of put all of them in the first stage.</description>
+    </item>
+    
+    <item>
+      <title>Wasserstein GAN 1</title>
+      <link>https://zongpitt.com/posts/2021-07-17-wgan/</link>
+      <pubDate>Sat, 17 Jul 2021 10:36:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-07-17-wgan/</guid>
+      <description>There are two paper to introduce Wasserstein GAN. Towards Principled Methods for Training Generative Adversarial Networks and Wasserstein GAN.
+First one present the issue in the GAN. It prove several theorem to get understanding why GAN is unstable and why it is hard to train. There are a lot resources in the internet. This post will take ever theorem and give intuitive. Intuition means, it is not rigorous prove like the paper did.</description>
+    </item>
+    
+    <item>
+      <title>Wasserstein GAN 2</title>
+      <link>https://zongpitt.com/posts/2021-07-18-wgan2/</link>
+      <pubDate>Sat, 17 Jul 2021 10:36:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-07-18-wgan2/</guid>
+      <description>There are two paper to introduce Wasserstein GAN. Towards Principled Methods for Training Generative Adversarial Networks and Wasserstein GAN.
+Different Distances The Total Variation (TV) distance \[ \delta\left(\mathbb{P}_{r}, \mathbb{P}_{g}\right)=\sup _{A \in \Sigma}\left|\mathbb{P}_{r}(A)-\mathbb{P}_{g}(A)\right| \] The Kullback-Leibler (KL) divergence \[ K L\left(\mathbb{P}_{r} \| \mathbb{P}_{g}\right)=\int \log \left(\frac{P_{r}(x)}{P_{g}(x)}\right) P_{r}(x) d \mu(x) \]
+where both \(\mathbb{P}_{r}\) and \(\mathbb{P}_{g}\) are assumed to be absolutely continuous, and therefore admit densities, with respect to a same measure \(\mu\) defined on \(\mathcal{X} \stackrel{2}{ }^{2}\) The KL divergence is famously assymetric and possibly infinite when there are points such that \(P_{g}(x)=0\) and \(P_{r}(x)&amp;gt;0\)</description>
+    </item>
+    
+    <item>
+      <title>5 GAN structures</title>
+      <link>https://zongpitt.com/posts/2021-06-15-gans/</link>
+      <pubDate>Tue, 15 Jun 2021 10:36:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-06-15-gans/</guid>
+      <description>Auxiliary Classifier GAN Add additional classifier to help GAN generator better image. This is very similar to conditional GANs. The structure show as follow.
+Adversarial Autoencoders using GAN as regulator to help training autoencoder
+Two training stage.
+reconstruction
+regularization
+Least Square GAN different loss function, structure as same as original.
+Cycle GAN used for image to image translation
+Condition GAN Add more information as condition for GAN structure</description>
+    </item>
+    
+    <item>
+      <title>Generative Adversarial Nets</title>
+      <link>https://zongpitt.com/posts/2021-06-12-gan/</link>
+      <pubDate>Sat, 12 Jun 2021 10:36:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-06-12-gan/</guid>
+      <description>GAN is very popular network now. It can be used to generate fake read good fake dataset, change image style, generate carton images. Anyway, it is a really good network. As we all know it is useful, let’s get into detail directly. Generative adversarial network usually contains two part, generative model \(G\) and discriminative model \(D .\) Figure 1 shows this GAN structure.
+In GAN simultaneously train two models: a generative model \(G\) that capture the data distribution, and a discriminative model \(D\) that estimates the probability that a sample came from the training data rather than \(G\).</description>
+    </item>
+    
+  </channel>
+</rss>

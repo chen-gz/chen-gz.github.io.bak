@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>chapter 6 Differentiation on Guangzong Blog</title>
+    <link>https://zongpitt.com/papa-rudin/ch-7/</link>
+    <description>Recent content in chapter 6 Differentiation on Guangzong Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 01 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zongpitt.com/papa-rudin/ch-7/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Derivatives of Measures</title>
+      <link>https://zongpitt.com/papa-rudin/ch-7/1-derivatives-of-measures/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/papa-rudin/ch-7/1-derivatives-of-measures/</guid>
+      <description>We begin with a simple, theorem whose main purpose is to motivate the definitions that follow.
+7.1 Theorem Suppose \(\mu\) is a complex Borel measure on \(R^1\) and
+\[ f(x)=\mu((-\infty, x)) \quad\left(x \in R^1\right) . \]
+If \(x \in R^1\) and \(A\) is a complex number, each of the following two statements implies the other:
+\(f\) is differentiable at \(x\) and \(f^{\prime}(x)=A\). To every \(\epsilon&amp;gt;0\) corresponds a \(\delta&amp;gt;0\) such that \[ \left|\frac{\mu(I)}{m(I)}-A\right|&amp;lt;\epsilon \]</description>
+    </item>
+    
+  </channel>
+</rss>

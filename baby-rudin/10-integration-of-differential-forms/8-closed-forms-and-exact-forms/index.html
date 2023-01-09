@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css"
+        class="dark-mode-native-dark-original" />
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+     
+    <link rel="stylesheet" href="https://zongpitt.com/sass/main.06935202011a97ba473ebeeb0cb6788daa9fb5a9fff471a4e85850293d1c5ac4.css" />
+    <title>
+          Guangzong Blog | 8 CLOSED FORMS AND EXACT FORMS
+    </title>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.bundle.min.js"></script>
+    <script src=" https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.js"></script>
+
+    <script
+        src="https://cdn.jsdelivr.net/combine/npm/magnific-popup@1/dist/jquery.magnific-popup.min.js,npm/lozad/dist/lozad.min.js,npm/clipboard@2/dist/clipboard.min.js"></script>
+    <script type="text/javascript" src="/js/commons/back-to-top.js"></script>
+    
+    
+    
+    <script type="text/javascript" src="/js/commons/topbar-switch.js"></script>
+    <script type="text/javascript" src="/js/commons/sidebar.js"></script>
+    <script type="text/javascript" src="/js/utils/category-collapse.js"></script>
+    <script type="text/javascript" src="/js/utils/checkbox.js"></script>
+    <script type="text/javascript" src="/js/utils/clipboard.js"></script>
+    <script type="text/javascript" src="/js/utils/img-extra.js"></script>
+    <script type="text/javascript" src="/js/utils/pageviews.js"></script>
+    
+    <script type="text/javascript" src="/js/utils/timeago.js"></script>
+    
+    
+</head>
+<body data-spy="scroll" data-target="#toc" data-topbar-visible="true" class="d-flex"><div id="sidebar" class="d-flex flex-column align-items-end">
+    <div class="profile-wrapper text-center">
+
+        <div id="avatar">
+            <a href="/" alt="avatar" class="mx-auto"> <img src=https://github.com/chen-gz/chen-gz/blob/main/mine_square.jpg?raw&#61;truehttps://raw.githubusercontent.com/chen-gz/chen-gz/blob/main/mine_square.jpg alt="avatar"
+                    onerror="this.style.display='none'"> </a>
+        </div>
+
+        <div class="site-title mt-3"> <a href="/">Guangzong</a> </div>
+        <div class="site-subtitle font-italic">Welcome to my blog</div>
+    </div>
+
+    <ul>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/">
+                <span>
+                    Home
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/archive/">
+                <span>
+                    Archive
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/tags/">
+                <span>
+                    Tags
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/about/">
+                <span>
+                    About
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/categories/">
+                <span>
+                    Categories
+                </span>
+            </a>
+        </li>
+        
+    </ul>
+
+    <div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center align-items-center">
+        <button class="mode-toggle btn" aria-label="Switch Mode"> 
+            <i class="fas fa-adjust"></i> 
+        </button>
+
+        <span class="icon-border"></span>
+        <a href="https://github.com/chen-gz" aria-label="github" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i>
+        </a>
+
+        <a href=" javascript:location.href = 'mailto:' + ['chen-gz','outlook.com'].join('@')" aria-label="email">
+            <i class="fas fa-envelope"></i>
+        </a>
+
+        <a href="/feed.xml" aria-label="rss"> <i class="fas fa-rss"></i> </a>
+    </div>
+
+    
+    
+</div>
+<div id="all-wrapper" class="d-flex flex-column"><div id="topbar-wrapper">
+    <div id="topbar" class="d-flex">
+        
+        <span id="breadcrumb" class="d-flex">
+              
+               
+            
+            
+            <div><a href='https://zongpitt.com/'>Home</a></div>
+              
+              
+            
+            <div><a href="https://zongpitt.com/baby-rudin">baby-rudin</a></div>
+               
+              
+            
+            <div><a href="https://zongpitt.com/baby-rudin/10-integration-of-differential-forms">10-integration-of-differential-forms</a></div>
+               
+                 
+                
+        </span>
+        <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i>
+        <div id="topbar-title">Guangzong</div>
+        <i id="search-trigger" class="fas fa-search fa-fw"></i>
+        <span id="search-wrapper" class="align-items-center">
+            <i class="fas fa-search fa-fw"></i>
+            <input class="form-control" id="search-input" type="search" aria-label="search" autocomplete="off"
+                placeholder="Search..." />
+            <i class="fa fa-times-circle fa-fw" id="search-cleaner"></i>
+        </span>
+    </div>
+</div>
+<div id="main-wrapper" class="d-flex mt-3">
+            <div id="core-wrapper" class="d-flex flex-column">
+                <div id="main" class="d-flex flex-column">
+                    
+<div class="post pl-1 pr-1 pl-md-2 pr-md-2">
+    
+    <div id="post-content">
+        <h1 style="text-align: center;">8 CLOSED FORMS AND EXACT FORMS</h1>
+        <br>
+        
+        <p><strong>10.34 Definition</strong> Let <span
+class="math inline">\(\omega\)</span> be a <span
+class="math inline">\(k\)</span>-form in an open set <span
+class="math inline">\(E \subset R^{n}\)</span>. If there is a <span
+class="math inline">\((k-1)\)</span> form <span
+class="math inline">\(\lambda\)</span> in <span
+class="math inline">\(E\)</span> such that <span
+class="math inline">\(\omega=d \lambda\)</span>, then <span
+class="math inline">\(\omega\)</span> is said to be exact in <span
+class="math inline">\(E\)</span>.</p>
+<p>If <span class="math inline">\(\omega\)</span> is of class <span
+class="math inline">\(\mathscr{C}^{\prime}\)</span> and <span
+class="math inline">\(d \omega=0\)</span>, then <span
+class="math inline">\(\omega\)</span> is said to be closed.</p>
+<p>Theorem <span class="math inline">\(10.20(b)\)</span> shows that
+every exact form of class <span
+class="math inline">\(\mathscr{C}^{\prime}\)</span> is closed.</p>
+<p>In certain sets <span class="math inline">\(E\)</span>, for example
+in convex ones, the converse is true; this is the content of Theorem
+<span class="math inline">\(10.39\)</span> (usually known as Poincarés
+lemma) and</p>
+<p>Theorem 10.40. However, Examples <span
+class="math inline">\(10.36\)</span> and <span
+class="math inline">\(10.37\)</span> will exhibit closed forms that are
+not exact.</p>
+<p><strong>10.35 Remarks</strong></p>
+<ol type="a">
+<li>Whether a given <span class="math inline">\(k\)</span>-form <span
+class="math inline">\(\omega\)</span> is or is not closed can be
+verified by simply differentiating the coefficients in the standard
+presentation of <span class="math inline">\(\omega\)</span>. For
+example, a 1-form</li>
+</ol>
+<p><span class="math display">\[
+\begin{equation}
+\omega=\sum_{i=1}^{n} f_{i}(\mathbf{x}) d x_{i},
+\label{eq:104}
+\end{equation}
+\]</span></p>
+<p>with <span class="math inline">\(f_{i} \in
+\mathscr{C}^{\prime}(E)\)</span> for some open set <span
+class="math inline">\(E \subset R^{n}\)</span>, is closed if and only if
+the equations</p>
+<p><span class="math display">\[
+\begin{equation}
+\left(D_{j} f_{i}\right)(\mathbf{x})=\left(D_{i}
+f_{j}\right)(\mathbf{x})
+\label{eq:105}
+\end{equation}
+\]</span></p>
+<p>hold for all <span class="math inline">\(i, j\)</span> in <span
+class="math inline">\(\{1, \ldots, n\}\)</span> and for all <span
+class="math inline">\(\mathbf{x} \in E\)</span>. Note that (105) is a
+“pointwise” condition; it does not involve any global properties that
+depend on the shape of <span class="math inline">\(E\)</span>.</p>
+<p>On the other hand, to show that <span
+class="math inline">\(\omega\)</span> is exact in <span
+class="math inline">\(E\)</span>, one has to prove the existence of a
+form <span class="math inline">\(\lambda\)</span>, defined in <span
+class="math inline">\(E\)</span>, such that <span
+class="math inline">\(d \lambda=\omega\)</span>. This amounts to solving
+a system of partial differential equations, not just locally, but in all
+of <span class="math inline">\(E\)</span>. For example, to show that
+(104) is exact in a set <span class="math inline">\(E\)</span>, one has
+to find a function (or 0-form) <span class="math inline">\(g \in
+\mathscr{B}^{\prime}(E)\)</span> such that</p>
+<p><span class="math display">\[
+\begin{equation}
+\left(D_{i} g\right)(\mathbf{x})=f_{i}(\mathbf{x}) \quad(\mathbf{x} \in
+E, 1 \leq i \leq n) .
+\label{eq:106}
+\end{equation}
+\]</span></p>
+<p>Of course, (105) is a necessary condition for the solvability of
+(106).</p>
+<ol start="2" type="a">
+<li>Let <span class="math inline">\(\omega\)</span> be an exact <span
+class="math inline">\(k\)</span>-form in <span
+class="math inline">\(E\)</span>. Then there is a <span
+class="math inline">\((k-1)\)</span>-form <span
+class="math inline">\(\lambda\)</span> in <span
+class="math inline">\(E\)</span> with <span class="math inline">\(d
+\lambda=\omega\)</span>, and Stokes’ theorem asserts that</li>
+</ol>
+<p><span class="math display">\[
+\begin{equation}
+\int_{\Psi} \omega=\int_{\Psi} d \lambda=\int_{\partial \Psi} \lambda
+\label{eq:107}
+\end{equation}
+\]</span></p>
+<p>for every <span class="math inline">\(k\)</span>-chain <span
+class="math inline">\(\Psi\)</span> of class <span
+class="math inline">\(\mathscr{C}^{\prime \prime}\)</span> in <span
+class="math inline">\(E\)</span>.</p>
+<p>If <span class="math inline">\(\Psi_{1}\)</span> and <span
+class="math inline">\(\Psi_{2}\)</span> are such chains, and if they
+have the same boundaries, it follows that</p>
+<p><span class="math display">\[
+\int_{\Psi_{1}} \omega=\int_{\Psi_{2}} \omega .
+\]</span></p>
+<p>In particular, the integral of an exact <span
+class="math inline">\(k\)</span>-form in <span
+class="math inline">\(E\)</span> is 0 over every <span
+class="math inline">\(k\)</span>-chain in <span
+class="math inline">\(E\)</span> whose boundary is 0 .</p>
+<p>As an important special case of this, note that integrals of exact
+1-forms in <span class="math inline">\(E\)</span> are 0 over closed
+(differentiable) curves in <span class="math inline">\(E\)</span>.</p>
+<ol start="3" type="a">
+<li>Let <span class="math inline">\(\omega\)</span> be a closed <span
+class="math inline">\(k\)</span>-form in <span
+class="math inline">\(E\)</span>. Then <span class="math inline">\(d
+\omega=0\)</span>, and Stokes’ theorem asserts that</li>
+</ol>
+<p><span class="math display">\[
+\begin{equation}
+\int_{\partial \Psi} \omega=\int_{\Psi} d \omega=0
+\label{eq:108}
+\end{equation}
+\]</span></p>
+<p>for every <span class="math inline">\((k+1)\)</span>-chain <span
+class="math inline">\(\Psi\)</span> of class <span
+class="math inline">\(\mathscr{B}^{\prime \prime}\)</span> in <span
+class="math inline">\(E\)</span>.</p>
+<p>In other words, integrals of closed <span
+class="math inline">\(k\)</span>-forms in <span
+class="math inline">\(E\)</span> are 0 over <span
+class="math inline">\(k\)</span>-chains that are boundaries of <span
+class="math inline">\((k+1)\)</span>-chains in <span
+class="math inline">\(E\)</span>.</p>
+<ol start="4" type="a">
+<li>Let <span class="math inline">\(\Psi\)</span> be a <span
+class="math inline">\((k+1)\)</span>-chain in <span
+class="math inline">\(E\)</span> and let <span
+class="math inline">\(\lambda\)</span> be a <span
+class="math inline">\((k-1)\)</span>-form in <span
+class="math inline">\(E\)</span>, both of class <span
+class="math inline">\(\mathscr{C}^{\prime \prime}\)</span>. Since <span
+class="math inline">\(d^{2} \lambda=0\)</span>, two applications of
+Stokes’ theorem show that</li>
+</ol>
+<p><span class="math display">\[
+\begin{equation}
+\int_{\partial \partial \Psi} \lambda=\int_{\partial \Psi} d
+\lambda=\int_{\Psi} d^{2} \lambda=0 .
+\label{eq:109}
+\end{equation}
+\]</span></p>
+<p>We conclude that <span class="math inline">\(\partial^{2}
+\Psi=0\)</span>. In other words, the boundary of a boundary is 0 .</p>
+<p>See Exercise 16 for a more direct proof of this.</p>
+<p><strong>10.36 Example</strong> Let <span
+class="math inline">\(E=R^{2}-\{0\}\)</span>, the plane with the origin
+removed. The 1-form</p>
+<p><span class="math display">\[
+\begin{equation}
+\eta=\frac{x d y-y d x}{x^{2}+y^{2}}
+\label{eq:110}
+\end{equation}
+\]</span></p>
+<p>is closed in <span
+class="math inline">\(R^{2}-\{\mathbf{0}\}\)</span>. This is easily
+verified by differentiation. Fix <span
+class="math inline">\(r&gt;0\)</span>, and define</p>
+<p><span class="math display">\[
+\begin{equation}
+\gamma(t)=(r \cos t, r \sin t) \quad(0 \leq t \leq 2 \pi) .
+\label{eq:111}
+\end{equation}
+\]</span></p>
+<p>Then <span class="math inline">\(\gamma\)</span> is a curve (an
+“oriented 1-simplex”) in <span
+class="math inline">\(R^{2}-\{0\}\)</span>. Since <span
+class="math inline">\(\gamma(0)=\gamma(2 \pi)\)</span>, we have</p>
+<p><span class="math display">\[
+\begin{equation}
+\partial \gamma=0 \text {. }
+\label{eq:112}
+\end{equation}
+\]</span></p>
+<p>Direct computation shows that</p>
+<p><span class="math display">\[
+\begin{equation}
+\int_{\gamma} \eta=2 \pi \neq 0 .
+\label{eq:113}
+\end{equation}
+\]</span></p>
+<p>The discussion in Remarks <span
+class="math inline">\(10.35(b)\)</span> and <span
+class="math inline">\((c)\)</span> shows that we can draw two
+conclusions from (113):</p>
+<p>First, <span class="math inline">\(\eta\)</span> is not exact in
+<span class="math inline">\(R^{2}-\{0\}\)</span>, for otherwise (112)
+would force the integral (113) to be <span class="math inline">\(0
+.\)</span></p>
+<p>Secondly, <span class="math inline">\(\gamma\)</span> is not the
+boundary of any 2 -chain in <span
+class="math inline">\(R^{2}-\{0\}\)</span> (of class <span
+class="math inline">\(\mathscr{C}^{\prime \prime}\)</span> ), for
+otherwise the fact that <span class="math inline">\(\eta\)</span> is
+closed would force the integral (113) to be 0 .</p>
+<p><strong>10.37 Example</strong> Let <span
+class="math inline">\(E=R^{3}-\{0\}, 3\)</span>-space with the origin
+removed. Define</p>
+<p><span class="math display">\[
+\begin{equation}
+\zeta=\frac{x d y \wedge d z+y d z \wedge d x+z d x \wedge d
+y}{\left(x^{2}+y^{2}+z^{2}\right)^{3 / 2}}
+\label{eq:114}
+\end{equation}
+\]</span></p>
+<p>where we have written <span class="math inline">\((x, y, z)\)</span>
+in place of <span class="math inline">\(\left(x_{1}, x_{2},
+x_{3}\right)\)</span>. Differentiation shows that <span
+class="math inline">\(d \zeta=0\)</span>, so that <span
+class="math inline">\(\zeta\)</span> is a closed 2-form in <span
+class="math inline">\(R^{3}-\{\boldsymbol{0}\}\)</span>.</p>
+<p>Let <span class="math inline">\(\Sigma\)</span> be the 2-chain in
+<span class="math inline">\(R^{3}-\{0\}\)</span> that was constructed in
+Example 10.32; recall that <span class="math inline">\(\Sigma\)</span>
+is a parametrization of the unit sphere in <span
+class="math inline">\(R^{3}\)</span>. Using the rectangle <span
+class="math inline">\(D\)</span> of Example <span
+class="math inline">\(10.32\)</span> as parameter domain, it is easy to
+compute that</p>
+<p><span class="math display">\[
+\begin{equation}
+\int_{\Sigma} \zeta=\int_{D} \sin u d u d v=4 \pi \neq 0 .
+\label{eq:115}
+\end{equation}
+\]</span></p>
+<p>As in the preceding example, we can now conclude that <span
+class="math inline">\(\zeta\)</span> is not exact in <span
+class="math inline">\(R^{3}-\{\boldsymbol{0}\}\)</span> (since <span
+class="math inline">\(\partial \Sigma=0\)</span>, as was shown in
+Example 10.32) and that the sphere <span
+class="math inline">\(\Sigma\)</span> is not the boundary of any 3
+-chain in <span class="math inline">\(R^{3}-\{0\}\)</span> (of class
+<span class="math inline">\(\mathscr{C}^{\prime \prime}\)</span> ),
+although <span class="math inline">\(\partial \Sigma=0\)</span>.</p>
+<p>The following result will be used in the proof of Theorem 10.39.</p>
+<p><strong>10.38 Theorem</strong> Suppose <span
+class="math inline">\(E\)</span> is a convex open set in <span
+class="math inline">\(R^{n}, f \in \mathscr{C}^{\prime}(E), p\)</span>
+is an integer, <span class="math inline">\(1 \leq p \leq n\)</span>,
+and</p>
+<p><span class="math display">\[
+\begin{equation}
+\left(D_{j} f\right)(\mathbf{x})=0 \quad(p&lt;j \leq n, \mathbf{x} \in
+E) .
+\label{eq:116}
+\end{equation}
+\]</span></p>
+<p>Then there exists an <span class="math inline">\(F \in
+\mathscr{C}^{\prime}(E)\)</span> such that</p>
+<p><span class="math display">\[
+\begin{equation}
+\left(D_{p} F\right)(\mathbf{x})=f(\mathbf{x}), \quad\left(D_{j}
+F\right)(\mathbf{x})=0 \quad(p&lt;j \leq n, \mathbf{x} \in E) .
+\label{eq:117}
+\end{equation}
+\]</span></p>
+<p>Proof Write <span
+class="math inline">\(\mathbf{x}=\left(\mathbf{x}^{\prime}, x_{p},
+\mathbf{x}^{\prime \prime}\right)\)</span>, where</p>
+<p><span class="math display">\[
+\mathbf{x}^{\prime}=\left(x_{1}, \ldots, x_{p-1}\right),
+\mathbf{x}^{\prime \prime}=\left(x_{p+1}, \ldots, x_{n}\right) \text {.
+}
+\]</span></p>
+<p>(When <span class="math inline">\(p=1, \mathbf{x}^{\prime}\)</span>
+is absent; when <span class="math inline">\(p=n, \mathbf{x}^{\prime
+\prime}\)</span> is absent.) Let <span class="math inline">\(V\)</span>
+be the set of all <span class="math inline">\(\left(\mathbf{x}^{\prime},
+x_{p}\right) \in R^{p}\)</span> such that <span
+class="math inline">\(\left(\mathbf{x}^{\prime}, x_{p},
+\mathbf{x}^{\prime \prime}\right) \in E\)</span> for some <span
+class="math inline">\(\mathbf{x}^{\prime \prime}\)</span>. Being a
+projection of <span class="math inline">\(E, V\)</span> is a convex open
+set in <span class="math inline">\(R^{p}\)</span>. Since <span
+class="math inline">\(E\)</span> is convex and (116) holds, <span
+class="math inline">\(f(\mathbf{x})\)</span> does not depend on <span
+class="math inline">\(\mathbf{x}^{\prime \prime}\)</span>. Hence there
+is a function <span class="math inline">\(\varphi\)</span>, with domain
+<span class="math inline">\(V\)</span>, such that</p>
+<p><span class="math display">\[
+f(\mathbf{x})=\varphi\left(\mathbf{x}^{\prime}, x_{p}\right)
+\]</span></p>
+<p>for all <span class="math inline">\(\mathbf{x} \in E\)</span>.</p>
+<p>If <span class="math inline">\(p=1, V\)</span> is a segment in <span
+class="math inline">\(R^{1}\)</span> (possibly unbounded). Pick <span
+class="math inline">\(c \in V\)</span> and define</p>
+<p><span class="math display">\[
+F(\mathbf{x})=\int_{c}^{x_{1}} \varphi(t) d t \quad(\mathbf{x} \in E) .
+\]</span></p>
+<p>If <span class="math inline">\(p&gt;1\)</span>, let <span
+class="math inline">\(U\)</span> be the set of all <span
+class="math inline">\(\mathbf{x}^{\prime} \in R^{p-1}\)</span> such that
+<span class="math inline">\(\left(\mathbf{x}^{\prime}, x_{p}\right) \in
+V\)</span> for some <span class="math inline">\(x_{p}\)</span>. Then
+<span class="math inline">\(U\)</span> is a convex open set in <span
+class="math inline">\(R^{p-1}\)</span>, and there is a function <span
+class="math inline">\(\alpha \in \mathscr{C}^{\prime}(U)\)</span> such
+that <span class="math inline">\(\left(\mathbf{x}^{\prime},
+\alpha\left(\mathbf{x}^{\prime}\right)\right) \in V\)</span> for every
+<span class="math inline">\(\mathbf{x}^{\prime} \in U\)</span>; in other
+words, the graph of <span class="math inline">\(\alpha\)</span> lies in
+<span class="math inline">\(V\)</span> (Exercise 29). Define</p>
+<p><span class="math display">\[
+F(\mathbf{x})=\int_{\alpha\left(\mathbf{x}^{\prime}\right)}^{x_{p}}
+\varphi\left(\mathbf{x}^{\prime}, t\right) d t \quad(\mathbf{x} \in E) .
+\]</span></p>
+<p>In either case, <span class="math inline">\(F\)</span> satisfies
+(117).</p>
+<p>(Note: Recall the usual convention that <span
+class="math inline">\(\int_{a}^{b}\)</span> means <span
+class="math inline">\(-\int_{b}^{a}\)</span> if <span
+class="math inline">\(b&lt;a\)</span>.)</p>
+<p>10.39 Theorem If <span class="math inline">\(E \subset R^{n}\)</span>
+is convex and open, if <span class="math inline">\(k \geq 1\)</span>, if
+<span class="math inline">\(\omega\)</span> is a <span
+class="math inline">\(k\)</span>-form of class <span
+class="math inline">\(\mathscr{C}^{\prime}\)</span> in <span
+class="math inline">\(E\)</span>, and if <span class="math inline">\(d
+\omega=0\)</span>, then there is <span
+class="math inline">\(a(k-1)\)</span>-form <span
+class="math inline">\(\lambda\)</span> in <span
+class="math inline">\(E\)</span> such that <span
+class="math inline">\(\omega=d \lambda\)</span>.</p>
+<p>Briefly, closed forms are exact in convex sets.</p>
+<p>Proof For <span class="math inline">\(p=1, \ldots, n\)</span>, let
+<span class="math inline">\(Y_{p}\)</span> denote the set of all <span
+class="math inline">\(k\)</span>-forms <span
+class="math inline">\(\omega\)</span>, of class <span
+class="math inline">\(\mathscr{C}^{\prime}\)</span> in <span
+class="math inline">\(E\)</span>, whose standard presentation</p>
+<p><span class="math display">\[
+\omega=\sum_{I} f_{I}(\mathbf{x}) d x_{I}
+\]</span></p>
+<p>does not involve <span class="math inline">\(d x_{p+1}, \ldots, d
+x_{n}\)</span>. In other words, <span class="math inline">\(I
+\subset\{1, \ldots, p\}\)</span> if <span
+class="math inline">\(f_{I}(\mathbf{x}) \neq 0\)</span> for some <span
+class="math inline">\(\mathbf{x} \in E\)</span>. We shall proceed by
+induction on <span class="math inline">\(p\)</span>.</p>
+<p>Assume first that <span class="math inline">\(\omega \in
+Y_{1}\)</span>. Then <span class="math inline">\(\omega=f(\mathbf{x}) d
+x_{1}\)</span>. Since <span class="math inline">\(d \omega=0\)</span>,
+<span class="math inline">\(\left(D_{j} f\right)(\mathbf{x})=0\)</span>
+for <span class="math inline">\(1&lt;j \leq n, \mathbf{x} \in
+E\)</span>. By Theorem <span class="math inline">\(10.38\)</span> there
+is an <span class="math inline">\(F \in \mathscr{C}^{\prime}(E)\)</span>
+such that <span class="math inline">\(D_{1} F=f\)</span> and <span
+class="math inline">\(D_{j} F=0\)</span> for <span
+class="math inline">\(1&lt;j \leq n\)</span>. Thus</p>
+<p><span class="math display">\[
+d F=\left(D_{1} F\right)(\mathbf{x}) d x_{1}=f(\mathbf{x}) d
+x_{1}=\omega .
+\]</span></p>
+<p>Now we take <span class="math inline">\(p&gt;1\)</span> and make the
+following induction hypothesis: Every closed <span
+class="math inline">\(k\)</span>-form that belongs to <span
+class="math inline">\(Y_{p-1}\)</span> is exact in <span
+class="math inline">\(E\)</span>.</p>
+<p>Choose <span class="math inline">\(\omega \in Y_{p}\)</span> so that
+<span class="math inline">\(d \omega=0\)</span>. By (118),</p>
+<p><span class="math display">\[
+\sum_{I} \sum_{j=1}^{n}\left(D_{j} f_{I}\right)(\mathbf{x}) d x_{j}
+\wedge d x_{I}=d \omega=0 .
+\]</span></p>
+<p>Consider a fixed <span class="math inline">\(j\)</span>, with <span
+class="math inline">\(p&lt;j \leq n\)</span>. Each <span
+class="math inline">\(I\)</span> that occurs in (118) lies in <span
+class="math inline">\(\{1, \ldots, p\}\)</span>. If <span
+class="math inline">\(I_{1}, I_{2}\)</span> are two of these <span
+class="math inline">\(k\)</span>-indices, and if <span
+class="math inline">\(I_{1} \neq I_{2}\)</span>, then the <span
+class="math inline">\((k+1)\)</span>-indices <span
+class="math inline">\(\left(I_{1}, j\right),\left(I_{2},
+j\right)\)</span> are distinct. Thus there is no cancellation, and we
+conclude from (119) that every coefficient in (ii8) satisfies</p>
+<p><span class="math display">\[
+\left(D_{j} f_{I}\right)(\mathbf{x})=0 \quad(\mathbf{x} \in E, p&lt;j
+\leq n) \text {. }
+\]</span></p>
+<p>We now gather those terms in (118) that contain <span
+class="math inline">\(d x_{p}\)</span> and rewrite <span
+class="math inline">\(\omega\)</span> in the form</p>
+<p><span class="math display">\[
+\omega=\alpha+\sum_{I_{0}} f_{I}(\mathbf{x}) d x_{I_{0}} \wedge d x_{p},
+\]</span></p>
+<p>where <span class="math inline">\(\alpha \in Y_{p-1}\)</span>, each
+<span class="math inline">\(I_{0}\)</span> is an increasing <span
+class="math inline">\((k-1)\)</span>-index in <span
+class="math inline">\(\{1, \ldots, p-1\}\)</span>, and <span
+class="math inline">\(I=\left(I_{0}, p\right)\)</span>. By <span
+class="math inline">\((120)\)</span>, Theorem <span
+class="math inline">\(10.38\)</span> furnishes functions <span
+class="math inline">\(F_{I} \in \mathscr{C}^{\prime}(E)\)</span> such
+that</p>
+<p><span class="math display">\[
+D_{p} F_{I}=f_{I}, \quad D_{j} F_{I}=0 \quad(p&lt;j \leq n) .
+\]</span></p>
+<p>Put</p>
+<p><span class="math display">\[
+\beta=\sum_{I_{0}} F_{I}(\mathbf{x}) d x_{I_{0}}
+\]</span></p>
+<p>and define <span class="math inline">\(\gamma=\omega-(-1)^{k-1} d
+\beta\)</span>. Since <span class="math inline">\(\beta\)</span> is a
+<span class="math inline">\((k-1)\)</span>-form, it follows that</p>
+<p><span class="math display">\[
+\begin{aligned}
+\gamma &amp;=\omega-\sum_{I_{0}} \sum_{j=1}^{p}\left(D_{j}
+F_{I}\right)(\mathbf{x}) d x_{I_{0}} \wedge d x_{j} \\
+&amp;=\alpha-\sum_{I_{0}}^{p-1} \sum_{j=1}^{p-1}\left(D_{j}
+F_{I}\right)(\mathbf{x}) d x_{I_{0}} \wedge d x_{j}
+\end{aligned}
+\]</span></p>
+<p>which is clearly in <span class="math inline">\(Y_{p-1}\)</span>.
+Since <span class="math inline">\(d \omega=0\)</span> and <span
+class="math inline">\(d^{2} \beta=0\)</span>, we have <span
+class="math inline">\(d \gamma=0\)</span>. Our induction hypothesis
+shows therefore that <span class="math inline">\(\gamma=d \mu\)</span>
+for some <span class="math inline">\((k-1)\)</span>-form <span
+class="math inline">\(\mu\)</span> in <span
+class="math inline">\(E\)</span>. If <span
+class="math inline">\(\lambda=\mu+(-1)^{k-1} \beta\)</span>, we conclude
+that <span class="math inline">\(\omega=d \lambda\)</span>,</p>
+<p>By induction, this completes the proof.</p>
+<p><strong>10.40 Theorem</strong> Fix <span class="math inline">\(k, 1
+\leq k \leq n\)</span>. Let <span class="math inline">\(E \subset
+R^{n}\)</span> be an open set in which every closed <span
+class="math inline">\(k\)</span>-form is exact. Let <span
+class="math inline">\(T\)</span> be a 1-1 <span
+class="math inline">\(\mathscr{C}^{\prime \prime}\)</span>-mapping of
+<span class="math inline">\(E\)</span> onto an open set <span
+class="math inline">\(U \subset R^{n}\)</span> whose inverse <span
+class="math inline">\(S\)</span> is also of class <span
+class="math inline">\(\mathscr{C}^{\prime \prime}\)</span>.</p>
+<p>Then every closed <span class="math inline">\(k\)</span>-form in
+<span class="math inline">\(U\)</span> is exact in <span
+class="math inline">\(U\)</span>.</p>
+<p>Note that every convex open set <span
+class="math inline">\(E\)</span> satisfies the present hypothesis, by
+Theorem 10.39. The relation between <span
+class="math inline">\(E\)</span> and <span
+class="math inline">\(U\)</span> may be expressed by saying that they
+are <span class="math inline">\(\mathscr{C}^{\prime
+\prime}\)</span>-equivalent.</p>
+<p>Thus every closed form is exact in any set which is <span
+class="math inline">\(\mathscr{C}^{\prime \prime}\)</span>-equivalent to
+a convex open set.</p>
+<p>Proof Let <span class="math inline">\(\omega\)</span> be a <span
+class="math inline">\(k\)</span>-form in <span
+class="math inline">\(U\)</span>, with <span class="math inline">\(d
+\omega=0\)</span>. By Theorem <span
+class="math inline">\(10.22(c)\)</span>, <span
+class="math inline">\(\omega_{T}\)</span> is a <span
+class="math inline">\(k\)</span>-form in <span
+class="math inline">\(E\)</span> for which <span
+class="math inline">\(d\left(\omega_{T}\right)=0\)</span>. Hence <span
+class="math inline">\(\omega_{T}=d \lambda\)</span> for some <span
+class="math inline">\((k-1)\)</span>-form <span
+class="math inline">\(\lambda\)</span> in <span
+class="math inline">\(E\)</span>. By Theorem 10.23, and another
+application of Theorem <span
+class="math inline">\(10.22(c)\)</span>,</p>
+<p><span class="math display">\[
+\omega=\left(\omega_{T}\right)_{S}=(d
+\lambda)_{S}=d\left(\lambda_{S}\right) .
+\]</span></p>
+<p>Since <span class="math inline">\(\lambda_{S}\)</span> is a <span
+class="math inline">\((k-1)\)</span>-form in <span
+class="math inline">\(U, \omega\)</span> is exact in <span
+class="math inline">\(U\)</span>.</p>
+<p><strong>10.41 Remark</strong> In applications, cells (see Definition
+2.17) are often more convenient parameter domains than simplexes. If our
+whole development had been based on cells rather than simplexes, the
+computation that occurs in the proof of Stokes’ theorem would be even
+simpler. (It is done that way in Spivak’s book.) The reason for
+preferring simplexes is that the definition of the boundary of an
+oriented simplex seems easier and more natural than is the case for a
+cell. (See Exercise 19.) Also, the partitioning of sets into simplexes
+(called “triangulation’) plays an important role in topology, and there
+are strong connections between certain aspects of topology, on the one
+hand, and differential forms, on the other. These are hinted at in Sec.
+10.35. The book by Singer and Thorpe contains a good introduction to
+this topic.</p>
+<p>Since every cell can be triangulated, we may regard it as a chain.
+For dimension 2, this was done in Example 10.32; for dimension 3, see
+Exercise <span class="math inline">\(18 .\)</span></p>
+<p>Poincaré’s lemma (Theorem 10.39) can be proved in several ways. See,
+for example, page 94 in Spivak’s book, or page 280 in Fleming’s. Two
+simple proofs for certain special cases are indicated in Exercises 24
+and <span class="math inline">\(27 .\)</span></p>
+
+    </div>
+    
+</div>
+</div>
+
+                <div id="footer-wrapper">
+                    <footer class="footer"><footer class="row pl-3 pr-3">
+    <div class="col-12 d-flex justify-content-between align-items-center text-muted pl-0 pr-0">
+        <div class="footer-left">
+            <p class="mb-0"> © 2022 <a href="https://github.com/chen-gz">guangzong</a>. <span data-toggle="tooltip"
+                    data-placement="top"
+                    title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author.">All
+                    rights reserved.</span></p>
+        </div>
+        <div class="footer-right">
+            <p class="mb-0"> Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">hugo</a>
+                with <a href="https://github.com/chen-gz/hugo_zong" target="_blank" rel="noopener">zong</a>
+                theme.</p>
+        </div>
+    </div>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script> MathJax = {
+            tex: {
+                tags: 'ams',
+            }
+        };</script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</footer>
+</footer>
+                </div>
+            </div>
+            <div id="panel-wrapper" class="d-flex flex-column"><div id="toc-wrapper" class="mb-5 pl-2">
+    <span>Contents</span>
+    <nav id="toc" data-toggle="toc">
+        
+        
+        
+    </nav>
+</div>
+
+<div id="access-lastmod" class="pb-4 pl-2">
+    <div class="panel-heading">Recently Updated</div>
+    <ul class="post-content pl-3 pb-1 ml-1 mt-2">
+          
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/1-total-variation/">Total Variation</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-7/1-derivatives-of-measures/">Derivatives of Measures</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/3-consequences-of-the-radon-nikodym-theorem/">Consequences of the Radon-Nikodym Theorem</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/4-bounded-linear-functionals-on-lp/">Bounded linear functional on Lp</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/2-abosolute-continuity/">Abosolute Continuity</a></li>
+        
+    </ul>
+</div>
+
+<div id="access-tags" class="pl-2">
+    <div class="panel-heading">Trending Tags</div>
+    <div class="d-flex flex-wrap mt-3 mb-1 mr-3">
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/algorithm/">Algorithm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/android/">Android</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c/">C</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c-language/">c language</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/caddy/">Caddy</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cadence/">Cadence</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cdc/">CDC</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/classification/">classification</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/compress/">Compress</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/conf/">Conf</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/double-column/">Double Column</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/errno13/">Errno13</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/fish/">fish</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gan/">GAN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/git/">Git</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gtk/">Gtk</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/html/">Html</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/i3/">I3</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/idea/">Idea</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/java/">Java</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/latex/">Latex</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lda/">LDA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linear-programming/">Linear Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linux/">Linux</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lr/">LR</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/math/">Math</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mathematics/">Mathematics</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matlab/">Matlab</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matplot/">matplot</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/memory/">Memory</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mermaid/">Mermaid</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/misc/">Misc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/ml/">ML</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mosfet/">Mosfet</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/network/">Network</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/nn/">NN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pandoc/">Pandoc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pca/">PCA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/probability/">Probability</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/productive/">Productive</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/program/">Program</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/programming/">Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/python/">Python</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/qt/">Qt</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/random-variable/">Random Variable</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rcnn/">RCNN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rust/">Rust</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/security/">Security</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/software/">Software</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/std/">Std</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/svd/">Svd</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/tool/">Tool</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/usb/">USB</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vim/">Vim</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpn/">Vpn</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpnc/">Vpnc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/xterm/">xterm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/zsh/">Zsh</a>
+        
+    </div>
+</div>
+</div><div id="search-result-wrapper" class="d-flex justify-content-center unloaded">
+    <div class="col-12 col-sm-11 post-content">
+        <div id="search-hints"></div>
+        <div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3 col-12"></div>
+    </div>
+</div>
+
+<script src="/js/fuse.min.js"></script>
+<script src="/js/fastsearch.js"></script>
+
+
+</div>
+        <div id="mask"></div>
+        <a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button"
+            style="display: none">
+            <i class="fas fa-angle-up"></i>
+        </a>
+    </div>
+    
+</body>
+
+</html>

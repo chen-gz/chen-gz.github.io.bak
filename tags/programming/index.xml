@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Programming on Guangzong Blog</title>
+    <link>https://zongpitt.com/tags/programming/</link>
+    <description>Recent content in Programming on Guangzong Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 25 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://zongpitt.com/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>C Integer Overflow And Compare</title>
+      <link>https://zongpitt.com/posts/2020-10-25-c-integer-overflow-and-compare/</link>
+      <pubDate>Sun, 25 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-10-25-c-integer-overflow-and-compare/</guid>
+      <description>notice: this post used gcc, clang, pelle C, to test code. including C99, C17 standard
+I didn’t change integer length in printf function except long long(64 bits)
+Conclusion Do not trust C when doing compare using integer with overflow case. It is very stupid.
+Expression C use complement to store numbers wikipedia
+use following code will easy to find out how numbers store in C.
+printf(&amp;quot;%x\n&amp;quot;,1); // 1 printf(&amp;quot;%x\n&amp;quot;,2); // 2 printf(&amp;quot;%x\n&amp;quot;,-1); // ffffffff printf(&amp;quot;%x\n&amp;quot;,-2); // fffffffe printf(&amp;quot;%x\n&amp;quot;,0); // 0 printf(&amp;quot;%x\n&amp;quot;,-0); // 0 printf(&amp;quot;%d\n&amp;quot;,0x80000000); // the minium value -2147483648 printf(&amp;quot;%d\n&amp;quot;,0xffffffff); // -1 printf(&amp;quot;%d\n&amp;quot;,0x7fffffff); // largest value 2147483647 examination: why 0x8000 0000 is minimum value the first one means this number is negative value.</description>
+    </item>
+    
+  </channel>
+</rss>

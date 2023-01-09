@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css"
+        class="dark-mode-native-dark-original" />
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+     
+    <link rel="stylesheet" href="https://zongpitt.com/sass/main.06935202011a97ba473ebeeb0cb6788daa9fb5a9fff471a4e85850293d1c5ac4.css" />
+    <title>
+          Guangzong Blog | 3 CAUCHY SEQUENCES
+    </title>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.bundle.min.js"></script>
+    <script src=" https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.js"></script>
+
+    <script
+        src="https://cdn.jsdelivr.net/combine/npm/magnific-popup@1/dist/jquery.magnific-popup.min.js,npm/lozad/dist/lozad.min.js,npm/clipboard@2/dist/clipboard.min.js"></script>
+    <script type="text/javascript" src="/js/commons/back-to-top.js"></script>
+    
+    
+    
+    <script type="text/javascript" src="/js/commons/topbar-switch.js"></script>
+    <script type="text/javascript" src="/js/commons/sidebar.js"></script>
+    <script type="text/javascript" src="/js/utils/category-collapse.js"></script>
+    <script type="text/javascript" src="/js/utils/checkbox.js"></script>
+    <script type="text/javascript" src="/js/utils/clipboard.js"></script>
+    <script type="text/javascript" src="/js/utils/img-extra.js"></script>
+    <script type="text/javascript" src="/js/utils/pageviews.js"></script>
+    
+    <script type="text/javascript" src="/js/utils/timeago.js"></script>
+    
+    
+</head>
+<body data-spy="scroll" data-target="#toc" data-topbar-visible="true" class="d-flex"><div id="sidebar" class="d-flex flex-column align-items-end">
+    <div class="profile-wrapper text-center">
+
+        <div id="avatar">
+            <a href="/" alt="avatar" class="mx-auto"> <img src=https://github.com/chen-gz/chen-gz/blob/main/mine_square.jpg?raw&#61;truehttps://raw.githubusercontent.com/chen-gz/chen-gz/blob/main/mine_square.jpg alt="avatar"
+                    onerror="this.style.display='none'"> </a>
+        </div>
+
+        <div class="site-title mt-3"> <a href="/">Guangzong</a> </div>
+        <div class="site-subtitle font-italic">Welcome to my blog</div>
+    </div>
+
+    <ul>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/">
+                <span>
+                    Home
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/archive/">
+                <span>
+                    Archive
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/tags/">
+                <span>
+                    Tags
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/about/">
+                <span>
+                    About
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/categories/">
+                <span>
+                    Categories
+                </span>
+            </a>
+        </li>
+        
+    </ul>
+
+    <div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center align-items-center">
+        <button class="mode-toggle btn" aria-label="Switch Mode"> 
+            <i class="fas fa-adjust"></i> 
+        </button>
+
+        <span class="icon-border"></span>
+        <a href="https://github.com/chen-gz" aria-label="github" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i>
+        </a>
+
+        <a href=" javascript:location.href = 'mailto:' + ['chen-gz','outlook.com'].join('@')" aria-label="email">
+            <i class="fas fa-envelope"></i>
+        </a>
+
+        <a href="/feed.xml" aria-label="rss"> <i class="fas fa-rss"></i> </a>
+    </div>
+
+    
+    
+</div>
+<div id="all-wrapper" class="d-flex flex-column"><div id="topbar-wrapper">
+    <div id="topbar" class="d-flex">
+        
+        <span id="breadcrumb" class="d-flex">
+              
+               
+            
+            
+            <div><a href='https://zongpitt.com/'>Home</a></div>
+              
+              
+            
+            <div><a href="https://zongpitt.com/baby-rudin">baby-rudin</a></div>
+               
+              
+            
+            <div><a href="https://zongpitt.com/baby-rudin/ch3">ch3</a></div>
+               
+                 
+                
+        </span>
+        <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i>
+        <div id="topbar-title">Guangzong</div>
+        <i id="search-trigger" class="fas fa-search fa-fw"></i>
+        <span id="search-wrapper" class="align-items-center">
+            <i class="fas fa-search fa-fw"></i>
+            <input class="form-control" id="search-input" type="search" aria-label="search" autocomplete="off"
+                placeholder="Search..." />
+            <i class="fa fa-times-circle fa-fw" id="search-cleaner"></i>
+        </span>
+    </div>
+</div>
+<div id="main-wrapper" class="d-flex mt-3">
+            <div id="core-wrapper" class="d-flex flex-column">
+                <div id="main" class="d-flex flex-column">
+                    
+<div class="post pl-1 pr-1 pl-md-2 pr-md-2">
+    
+    <div id="post-content">
+        <h1 style="text-align: center;">3 CAUCHY SEQUENCES</h1>
+        <br>
+        
+        <ul>
+<li><a href="https://youtu.be/iAbgvKO-k3o">youtube</a></li>
+<li><a
+href="https://www.bilibili.com/video/BV1sG411J7NU/">bilibili</a></li>
+<li>note <a
+href="https://github.com/chen-gz/bed2/blob/b590a02f3a9e146a3f1e04f18fd66732c27014ff/14%20CAUCHY%20SEQUENCES%20part1_note.pdf">pdf</a>
+<a
+href="https://github.com/chen-gz/bed2/blob/b590a02f3a9e146a3f1e04f18fd66732c27014ff/14%20CAUCHY%20SEQUENCES%20part1_note.xopp">xopp</a></li>
+</ul>
+<p><strong>3.8 Definition</strong> A sequence <span
+class="math inline">\(\left\{p_{n}\right\}\)</span> in a metric space
+<span class="math inline">\(X\)</span> is said to be a Cauchy sequence
+if for every <span class="math inline">\(\varepsilon&gt;0\)</span> there
+is an integer <span class="math inline">\(N\)</span> such that <span
+class="math inline">\(d\left(p_{n}, p_{m}\right)&lt;\varepsilon\)</span>
+if <span class="math inline">\(n \geq N\)</span> and <span
+class="math inline">\(m \geq N\)</span>.</p>
+<p>In our discussion of Cauchy sequences, as well as in other situations
+which will arise later, the following geometric concept will be
+useful.</p>
+<p><strong>3.9 Definition</strong> Let <span
+class="math inline">\(E\)</span> be a nonempty subset of a metric space
+<span class="math inline">\(X\)</span>, and let <span
+class="math inline">\(S\)</span> be the set of all real numbers of the
+form <span class="math inline">\(d(p, q)\)</span>, with <span
+class="math inline">\(p \in E\)</span> and <span class="math inline">\(q
+\in E\)</span>. The sup of <span class="math inline">\(S\)</span> is
+called the diameter of <span class="math inline">\(E\)</span>. If <span
+class="math inline">\(\left\{p_{n}\right\}\)</span> is a sequence in
+<span class="math inline">\(X\)</span> and if <span
+class="math inline">\(E_{N}\)</span> consists of the points <span
+class="math inline">\(p_{N}, p_{N+1}, p_{N+2}, \ldots\)</span>, it is
+clear from the two preceding definitions that <span
+class="math inline">\(\left\{p_{n}\right\}\)</span> is a Cauchy sequence
+if and only if</p>
+<p><span class="math display">\[
+\lim _{N \rightarrow \infty} \operatorname{diam} E_{N}=0 .
+\]</span></p>
+<p><strong>3.10 Theorem</strong></p>
+<ol type="a">
+<li>If <span class="math inline">\(\bar{E}\)</span> is the closure of a
+set <span class="math inline">\(E\)</span> in a metric space <span
+class="math inline">\(X\)</span>, then</li>
+</ol>
+<p><span class="math display">\[
+\operatorname{diam} \bar{E}=\operatorname{diam} E .
+\]</span></p>
+<ol start="2" type="a">
+<li>If <span class="math inline">\(K_{n}\)</span> is a sequence of
+compact sets in <span class="math inline">\(X\)</span> such that <span
+class="math inline">\(K_{n} \supset K_{n+1}\)</span> <span
+class="math inline">\((n=1,2,3, \ldots)\)</span> and if</li>
+</ol>
+<p><span class="math display">\[
+\lim _{n \rightarrow \infty} \operatorname{diam} K_{n}=0,
+\]</span></p>
+<p>then <span class="math inline">\(\bigcap_{1}^{\infty} K_{n}\)</span>
+consists of exactly one point.</p>
+<p>Proof</p>
+<ol type="a">
+<li>Since <span class="math inline">\(E \subset \bar{E}\)</span>, it is
+clear that</li>
+</ol>
+<p><span class="math display">\[
+\operatorname{diam} E \leq \operatorname{diam} \bar{E} .
+\]</span></p>
+<p>Fix <span class="math inline">\(\varepsilon&gt;0\)</span>, and choose
+<span class="math inline">\(p \in \bar{E}, q \in \bar{E}\)</span>. By
+the definition of <span class="math inline">\(\bar{E}\)</span>, there
+are points <span class="math inline">\(p^{\prime}, q^{\prime}\)</span>,
+in <span class="math inline">\(E\)</span> such that $d(p, p^{})&lt;,
+d(q, q^{</p>
+<p><span class="math display">\[
+\begin{aligned}
+d(p, q) &amp; \leq d\left(p, p^{\prime}\right)+d\left(p^{\prime}
+q^{\prime}\right)+d\left(q^{\prime}, q\right) \\
+&amp;&lt;2 \varepsilon+d\left(p^{\prime}, q^{\prime}\right) \leq 2
+\varepsilon+\operatorname{diam} E
+\end{aligned}
+\]</span></p>
+<p>It follows that</p>
+<p><span class="math display">\[
+\operatorname{diam} \bar{E} \leq 2 \varepsilon+\operatorname{diam} E,
+\]</span></p>
+<p>and since <span class="math inline">\(\varepsilon\)</span> was
+arbitrary, <span class="math inline">\((a)\)</span> is proved.</p>
+<ol start="2" type="a">
+<li>Put <span class="math inline">\(K=\bigcap_{1}^{\infty}
+K_{n}\)</span>. By Theorem <span class="math inline">\(2.36, K\)</span>
+is not empty. If <span class="math inline">\(K\)</span> contains more
+than one point, then diam <span class="math inline">\(K&gt;0\)</span>.
+But for each <span class="math inline">\(n, K_{n} \supset K\)</span>, so
+that <span class="math inline">\(\operatorname{diam} K_{n} \geq
+\operatorname{diam} K\)</span>. This contradicts the assumption that
+diam <span class="math inline">\(K_{n} \rightarrow 0\)</span>.</li>
+</ol>
+<p><strong>3.11 Theorem</strong></p>
+<ol type="a">
+<li><p>In any metric space <span class="math inline">\(X\)</span>, every
+convergent sequence is a Cauchy sequence.</p></li>
+<li><p>If <span class="math inline">\(X\)</span> is a compact metric
+space and if <span class="math inline">\(\left\{p_{n}\right\}\)</span>
+is a Cauchy sequence in <span class="math inline">\(X\)</span>, then
+<span class="math inline">\(\left\{p_{n}\right\}\)</span> converges to
+some point of <span class="math inline">\(X\)</span>.</p></li>
+<li><p>In <span class="math inline">\(R^{k}\)</span>, every Cauchy
+sequence converges.</p></li>
+</ol>
+<p>Note: The difference between the definition of convergence and the
+definition of a Cauchy sequence is that the limit is explicitly involved
+in the former, but not in the latter. Thus Theorem 3.11(b) may enable us
+to decide whether or not a given sequence converges without knowledge of
+the limit to which it may converge.</p>
+<p>The fact (contained in Theorem 3.11) that a sequence converges in
+<span class="math inline">\(R^{k}\)</span> if and only if it is a Cauchy
+sequence is usually called the Cauchy criterion for convergence.</p>
+<p><strong>Proof</strong></p>
+<ol type="a">
+<li>If <span class="math inline">\(p_{n} \rightarrow p\)</span> and if
+<span class="math inline">\(\varepsilon&gt;0\)</span>, there is an
+integer <span class="math inline">\(N\)</span> such that <span
+class="math inline">\(d\left(p, p_{n}\right)&lt;\varepsilon\)</span> for
+all <span class="math inline">\(n \geq N\)</span>. Hence</li>
+</ol>
+<p><span class="math display">\[
+d\left(p_{n}, p_{m}\right) \leq d\left(p_{n}, p\right)+d\left(p,
+p_{m}\right)&lt;2 \varepsilon
+\]</span></p>
+<p>as soon as <span class="math inline">\(n \geq N\)</span> and <span
+class="math inline">\(m \geq N\)</span>. Thus <span
+class="math inline">\(\left\{p_{n}\right\}\)</span> is a Cauchy
+sequence.</p>
+<ol start="2" type="a">
+<li>Let <span class="math inline">\(\left\{p_{n}\right\}\)</span> be a
+Cauchy sequence in the compact space <span
+class="math inline">\(X\)</span>. For <span
+class="math inline">\(N=1,2,3, \ldots\)</span>, let <span
+class="math inline">\(E_{N}\)</span> be the set consisting of <span
+class="math inline">\(p_{N}, p_{N+1}, p_{N+2}, \ldots\)</span> Then</li>
+</ol>
+<p><span class="math display">\[
+\lim _{N \rightarrow \infty} \operatorname{diam} \bar{E}_{N}=0,
+\]</span></p>
+<p>by Definition <span class="math inline">\(3.9\)</span> and Theorem
+3.10 <span class="math inline">\(a\)</span>. Being a closed subset of
+the compact space <span class="math inline">\(X\)</span>, each <span
+class="math inline">\(\bar{E}_{N}\)</span> is compact (Theorem 2.35).
+Also <span class="math inline">\(E_{N} \supset E_{N+1}\)</span>, so that
+<span class="math inline">\(\bar{E}_{N} \supset
+\bar{E}_{N+1}\)</span>.</p>
+<p>Theorem <span class="math inline">\(3.10(b)\)</span> shows now that
+there is a unique <span class="math inline">\(p \in X\)</span> which
+lies in every <span class="math inline">\(\bar{E}_{N}\)</span>.</p>
+<p>Let <span class="math inline">\(\varepsilon&gt;0\)</span> be given.
+By (3) there is an integer <span class="math inline">\(N_{0}\)</span>
+such that <span class="math inline">\(\operatorname{diam}
+\bar{E}_{N}&lt;\varepsilon\)</span> if <span class="math inline">\(N
+\geq N_{0}\)</span>. Since <span class="math inline">\(p \in
+\bar{E}_{N}\)</span>, it follows that <span class="math inline">\(d(p,
+q)&lt;\varepsilon\)</span> for every <span class="math inline">\(q \in
+\bar{E}_{N}\)</span>, hence for every <span class="math inline">\(q \in
+E_{N}\)</span>. In other words, <span class="math inline">\(d\left(p,
+p_{n}\right)&lt;\varepsilon\)</span> if <span class="math inline">\(n
+\geq N_{0}\)</span>. This says precisely that <span
+class="math inline">\(p_{n} \rightarrow p\)</span>.</p>
+<ol start="3" type="a">
+<li>Let <span
+class="math inline">\(\left\{\mathbf{x}_{n}\right\}\)</span> be a Cauchy
+sequence in <span class="math inline">\(R^{k}\)</span>. Define <span
+class="math inline">\(E_{N}\)</span> as in (b), with <span
+class="math inline">\(\mathbf{x}_{i}\)</span> in place of <span
+class="math inline">\(p_{i}\)</span>. For some <span
+class="math inline">\(N\)</span>, <span
+class="math inline">\(\operatorname{diam} E_{N}&lt;1\)</span>. The range
+of <span class="math inline">\(\left\{\mathbf{x}_{n}\right\}\)</span> is
+the union of <span class="math inline">\(E_{N}\)</span> and the finite
+set <span class="math inline">\(\left\{\mathbf{x}_{1}, \ldots,
+\mathbf{x}_{N-1}\right\}\)</span>. Hence <span
+class="math inline">\(\left\{\mathbf{x}_{n}\right\}\)</span> is bounded.
+Since every bounded subset of <span class="math inline">\(R^{k}\)</span>
+has compact closure in <span class="math inline">\(R^{k}\)</span>
+(Theorem 2.41), (c) follows from <span
+class="math inline">\((b)\)</span>.</li>
+</ol>
+<p><strong>3.12 Definition</strong> A metric space in which every Cauchy
+sequence converges is said to be complete.</p>
+<p>Thus Theorem <span class="math inline">\(3.11\)</span> says that all
+compact metric spaces and all Euclidean spaces are complete. Theorem
+<span class="math inline">\(3.11\)</span> implies also that every closed
+subset <span class="math inline">\(E\)</span> of a complete metric space
+<span class="math inline">\(X\)</span> is complete. (Every Cauchy
+sequence in <span class="math inline">\(E\)</span> is a Cauchy sequence
+in <span class="math inline">\(X\)</span>, hence it converges to some
+<span class="math inline">\(p \in X\)</span>, and actually <span
+class="math inline">\(p \in E\)</span> since <span
+class="math inline">\(E\)</span> is closed.) An example of a metric
+space which is not complete is the space of all rational numbers, with
+<span class="math inline">\(d(x, y)=|x-y|\)</span>.</p>
+<p>Theorem 3.2(c) and example <span class="math inline">\((d)\)</span>
+of Definition 3.1 show that convergent sequences are bounded, but that
+bounded sequences in <span class="math inline">\(R^{k}\)</span> need not
+converge. However, there is one important case in which convergence is
+equivalent to boundedness; this happens for monotonic sequences in <span
+class="math inline">\(R^{1}\)</span>.</p>
+<p><strong>3.13 Definition</strong> A sequence <span
+class="math inline">\(\left\{s_{n}\right\}\)</span> of real numbers is
+said to be</p>
+<ol type="a">
+<li><p>monotonically increasing if <span class="math inline">\(s_{n}
+\leq s_{n+1}(n=1,2,3, \ldots)\)</span>;</p></li>
+<li><p>monotonically decreasing if <span class="math inline">\(s_{n}
+\geq s_{n+1}(n=1,2,3, \ldots)\)</span>.</p></li>
+</ol>
+<p>The class of monotonic sequences consists of the increasing and the
+decreasing sequences.</p>
+<p><strong>3.14 Theorem</strong> Suppose <span
+class="math inline">\(\left\{s_{n}\right\}\)</span> is monotonic. Then
+<span class="math inline">\(\left\{s_{n}\right\}\)</span> converges if
+and only if it is bounded.</p>
+<p><strong>Proof</strong> Suppose <span class="math inline">\(s_{n} \leq
+s_{n+1}\)</span> (the proof is analogous in the other case). Let <span
+class="math inline">\(E\)</span> be the range of <span
+class="math inline">\(\left\{s_{n}\right\}\)</span>. If <span
+class="math inline">\(\left\{s_{n}\right\}\)</span> is bounded, let
+<span class="math inline">\(s\)</span> be the least upper bound of <span
+class="math inline">\(E\)</span>. Then</p>
+<p><span class="math display">\[
+s_{n} \leq s \quad(n=1,2,3, \ldots) .
+\]</span></p>
+<p>For every <span class="math inline">\(\varepsilon&gt;0\)</span>,
+there is an integer <span class="math inline">\(N\)</span> such that</p>
+<p><span class="math display">\[
+s-\varepsilon&lt;s_{N} \leq s,
+\]</span></p>
+<p>for otherwise <span class="math inline">\(s-\varepsilon\)</span>
+would be an upper bound of <span class="math inline">\(E\)</span>. Since
+<span class="math inline">\(\left\{s_{n}\right\}\)</span> increases,
+<span class="math inline">\(n \geq N\)</span> therefore implies</p>
+<p><span class="math display">\[
+s-\varepsilon&lt;s_{n} \leq s,
+\]</span></p>
+<p>which shows that <span
+class="math inline">\(\left\{s_{n}\right\}\)</span> converges (to <span
+class="math inline">\(s\)</span> ).</p>
+<p>The converse follows from Theorem 3.2(c).</p>
+
+    </div>
+    
+</div>
+</div>
+
+                <div id="footer-wrapper">
+                    <footer class="footer"><footer class="row pl-3 pr-3">
+    <div class="col-12 d-flex justify-content-between align-items-center text-muted pl-0 pr-0">
+        <div class="footer-left">
+            <p class="mb-0"> © 2022 <a href="https://github.com/chen-gz">guangzong</a>. <span data-toggle="tooltip"
+                    data-placement="top"
+                    title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author.">All
+                    rights reserved.</span></p>
+        </div>
+        <div class="footer-right">
+            <p class="mb-0"> Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">hugo</a>
+                with <a href="https://github.com/chen-gz/hugo_zong" target="_blank" rel="noopener">zong</a>
+                theme.</p>
+        </div>
+    </div>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script> MathJax = {
+            tex: {
+                tags: 'ams',
+            }
+        };</script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</footer>
+</footer>
+                </div>
+            </div>
+            <div id="panel-wrapper" class="d-flex flex-column"><div id="toc-wrapper" class="mb-5 pl-2">
+    <span>Contents</span>
+    <nav id="toc" data-toggle="toc">
+        
+        
+        
+    </nav>
+</div>
+
+<div id="access-lastmod" class="pb-4 pl-2">
+    <div class="panel-heading">Recently Updated</div>
+    <ul class="post-content pl-3 pb-1 ml-1 mt-2">
+          
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/1-total-variation/">Total Variation</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-7/1-derivatives-of-measures/">Derivatives of Measures</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/3-consequences-of-the-radon-nikodym-theorem/">Consequences of the Radon-Nikodym Theorem</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/4-bounded-linear-functionals-on-lp/">Bounded linear functional on Lp</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/2-abosolute-continuity/">Abosolute Continuity</a></li>
+        
+    </ul>
+</div>
+
+<div id="access-tags" class="pl-2">
+    <div class="panel-heading">Trending Tags</div>
+    <div class="d-flex flex-wrap mt-3 mb-1 mr-3">
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/algorithm/">Algorithm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/android/">Android</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c/">C</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c-language/">c language</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/caddy/">Caddy</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cadence/">Cadence</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cdc/">CDC</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/classification/">classification</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/compress/">Compress</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/conf/">Conf</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/double-column/">Double Column</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/errno13/">Errno13</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/fish/">fish</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gan/">GAN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/git/">Git</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gtk/">Gtk</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/html/">Html</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/i3/">I3</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/idea/">Idea</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/java/">Java</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/latex/">Latex</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lda/">LDA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linear-programming/">Linear Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linux/">Linux</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lr/">LR</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/math/">Math</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mathematics/">Mathematics</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matlab/">Matlab</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matplot/">matplot</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/memory/">Memory</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mermaid/">Mermaid</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/misc/">Misc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/ml/">ML</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mosfet/">Mosfet</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/network/">Network</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/nn/">NN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pandoc/">Pandoc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pca/">PCA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/probability/">Probability</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/productive/">Productive</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/program/">Program</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/programming/">Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/python/">Python</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/qt/">Qt</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/random-variable/">Random Variable</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rcnn/">RCNN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rust/">Rust</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/security/">Security</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/software/">Software</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/std/">Std</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/svd/">Svd</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/tool/">Tool</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/usb/">USB</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vim/">Vim</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpn/">Vpn</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpnc/">Vpnc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/xterm/">xterm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/zsh/">Zsh</a>
+        
+    </div>
+</div>
+</div><div id="search-result-wrapper" class="d-flex justify-content-center unloaded">
+    <div class="col-12 col-sm-11 post-content">
+        <div id="search-hints"></div>
+        <div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3 col-12"></div>
+    </div>
+</div>
+
+<script src="/js/fuse.min.js"></script>
+<script src="/js/fastsearch.js"></script>
+
+
+</div>
+        <div id="mask"></div>
+        <a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button"
+            style="display: none">
+            <i class="fas fa-angle-up"></i>
+        </a>
+    </div>
+    
+</body>
+
+</html>

@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Guangzong Blog</title>
+    <link>https://zongpitt.com/tags/</link>
+    <description>Recent content in Tags on Guangzong Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 17 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://zongpitt.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ML</title>
+      <link>https://zongpitt.com/tags/ml/</link>
+      <pubDate>Sat, 17 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/tags/ml/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>https://zongpitt.com/tags/linux/</link>
+      <pubDate>Thu, 08 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Algorithm</title>
+      <link>https://zongpitt.com/tags/algorithm/</link>
+      <pubDate>Wed, 24 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/tags/algorithm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Misc</title>
+      <link>https://zongpitt.com/tags/misc/</link>
+      <pubDate>Tue, 04 Jan 2022 11:36:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/tags/misc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tool</title>
+      <link>https://zongpitt.com/tags/tool/</link>
+      <pubDate>Fri, 08 Oct 2021 11:36:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/tags/tool/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Math</title>
+      <link>https://zongpitt.com/tags/math/</link>
+      <pubDate>Wed, 21 Jul 2021 11:36:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/tags/math/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GAN</title>
+      <link>https://zongpitt.com/tags/gan/</link>
+      <pubDate>Mon, 19 Jul 2021 10:36:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/tags/gan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Svd</title>
+      <link>https://zongpitt.com/tags/svd/</link>
+      <pubDate>Thu, 17 Jun 2021 17:18:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/tags/svd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RCNN</title>
+      <link>https://zongpitt.com/tags/rcnn/</link>
+      <pubDate>Mon, 26 Apr 2021 19:21:00 -0500</pubDate>
+      
+      <guid>https://zongpitt.com/tags/rcnn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>matplot</title>
+      <link>https://zongpitt.com/tags/matplot/</link>
+      <pubDate>Sun, 18 Apr 2021 13:28:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/tags/matplot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Matlab</title>
+      <link>https://zongpitt.com/tags/matlab/</link>
+      <pubDate>Wed, 03 Mar 2021 10:44:00 -0500</pubDate>
+      
+      <guid>https://zongpitt.com/tags/matlab/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PCA</title>
+      <link>https://zongpitt.com/tags/pca/</link>
+      <pubDate>Fri, 26 Feb 2021 13:50:00 -0500</pubDate>
+      
+      <guid>https://zongpitt.com/tags/pca/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>fish</title>
+      <link>https://zongpitt.com/tags/fish/</link>
+      <pubDate>Fri, 26 Feb 2021 09:45:00 -0500</pubDate>
+      
+      <guid>https://zongpitt.com/tags/fish/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>xterm</title>
+      <link>https://zongpitt.com/tags/xterm/</link>
+      <pubDate>Fri, 26 Feb 2021 09:21:00 -0500</pubDate>
+      
+      <guid>https://zongpitt.com/tags/xterm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Html</title>
+      <link>https://zongpitt.com/tags/html/</link>
+      <pubDate>Wed, 24 Feb 2021 22:17:00 -0500</pubDate>
+      
+      <guid>https://zongpitt.com/tags/html/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NN</title>
+      <link>https://zongpitt.com/tags/nn/</link>
+      <pubDate>Wed, 24 Feb 2021 15:17:00 -0500</pubDate>
+      
+      <guid>https://zongpitt.com/tags/nn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Android</title>
+      <link>https://zongpitt.com/tags/android/</link>
+      <pubDate>Wed, 24 Feb 2021 12:00:00 -0500</pubDate>
+      
+      <guid>https://zongpitt.com/tags/android/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Java</title>
+      <link>https://zongpitt.com/tags/java/</link>
+      <pubDate>Wed, 24 Feb 2021 12:00:00 -0500</pubDate>
+      
+      <guid>https://zongpitt.com/tags/java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CDC</title>
+      <link>https://zongpitt.com/tags/cdc/</link>
+      <pubDate>Mon, 15 Feb 2021 23:08:52 -0500</pubDate>
+      
+      <guid>https://zongpitt.com/tags/cdc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>USB</title>
+      <link>https://zongpitt.com/tags/usb/</link>
+      <pubDate>Mon, 15 Feb 2021 23:08:52 -0500</pubDate>
+      
+      <guid>https://zongpitt.com/tags/usb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>LDA</title>
+      <link>https://zongpitt.com/tags/lda/</link>
+      <pubDate>Wed, 10 Feb 2021 05:12:52 -0500</pubDate>
+      
+      <guid>https://zongpitt.com/tags/lda/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>c language</title>
+      <link>https://zongpitt.com/tags/c-language/</link>
+      <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/tags/c-language/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cadence</title>
+      <link>https://zongpitt.com/tags/cadence/</link>
+      <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/tags/cadence/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Program</title>
+      <link>https://zongpitt.com/tags/program/</link>
+      <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/tags/program/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Double Column</title>
+      <link>https://zongpitt.com/tags/double-column/</link>
+      <pubDate>Sun, 29 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/tags/double-column/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Latex</title>
+      <link>https://zongpitt.com/tags/latex/</link>
+      <pubDate>Sun, 29 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/tags/latex/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>C</title>
+      <link>https://zongpitt.com/tags/c/</link>
+      <pubDate>Fri, 27 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/tags/c/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Std</title>
+      <link>https://zongpitt.com/tags/std/</link>
+      <pubDate>Fri, 27 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/tags/std/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Idea</title>
+      <link>https://zongpitt.com/tags/idea/</link>
+      <pubDate>Thu, 19 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/tags/idea/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linear Programming</title>
+      <link>https://zongpitt.com/tags/linear-programming/</link>
+      <pubDate>Sun, 08 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/tags/linear-programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vpn</title>
+      <link>https://zongpitt.com/tags/vpn/</link>
+      <pubDate>Mon, 02 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/tags/vpn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Errno13</title>
+      <link>https://zongpitt.com/tags/errno13/</link>
+      <pubDate>Thu, 29 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/tags/errno13/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://zongpitt.com/tags/python/</link>
+      <pubDate>Thu, 29 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mermaid</title>
+      <link>https://zongpitt.com/tags/mermaid/</link>
+      <pubDate>Wed, 28 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/tags/mermaid/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vim</title>
+      <link>https://zongpitt.com/tags/vim/</link>
+      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/tags/vim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Programming</title>
+      <link>https://zongpitt.com/tags/programming/</link>
+      <pubDate>Sun, 25 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/tags/programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Compress</title>
+      <link>https://zongpitt.com/tags/compress/</link>
+      <pubDate>Sat, 24 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/tags/compress/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Qt</title>
+      <link>https://zongpitt.com/tags/qt/</link>
+      <pubDate>Sat, 24 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/tags/qt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Productive</title>
+      <link>https://zongpitt.com/tags/productive/</link>
+      <pubDate>Mon, 19 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/tags/productive/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Memory</title>
+      <link>https://zongpitt.com/tags/memory/</link>
+      <pubDate>Sat, 17 Oct 2020 11:00:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/tags/memory/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mathematics</title>
+      <link>https://zongpitt.com/tags/mathematics/</link>
+      <pubDate>Sun, 11 Oct 2020 20:20:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/tags/mathematics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Git</title>
+      <link>https://zongpitt.com/tags/git/</link>
+      <pubDate>Sat, 10 Oct 2020 23:49:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Conf</title>
+      <link>https://zongpitt.com/tags/conf/</link>
+      <pubDate>Thu, 08 Oct 2020 23:54:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/tags/conf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Zsh</title>
+      <link>https://zongpitt.com/tags/zsh/</link>
+      <pubDate>Thu, 08 Oct 2020 23:54:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/tags/zsh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>I3</title>
+      <link>https://zongpitt.com/tags/i3/</link>
+      <pubDate>Thu, 08 Oct 2020 10:12:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/tags/i3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vpnc</title>
+      <link>https://zongpitt.com/tags/vpnc/</link>
+      <pubDate>Tue, 06 Oct 2020 17:58:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/tags/vpnc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Software</title>
+      <link>https://zongpitt.com/tags/software/</link>
+      <pubDate>Tue, 06 Oct 2020 14:57:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/tags/software/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>classification</title>
+      <link>https://zongpitt.com/tags/classification/</link>
+      <pubDate>Tue, 06 Oct 2020 09:44:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/tags/classification/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Caddy</title>
+      <link>https://zongpitt.com/tags/caddy/</link>
+      <pubDate>Fri, 02 Oct 2020 16:02:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/tags/caddy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Security</title>
+      <link>https://zongpitt.com/tags/security/</link>
+      <pubDate>Fri, 02 Oct 2020 14:43:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/tags/security/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Network</title>
+      <link>https://zongpitt.com/tags/network/</link>
+      <pubDate>Tue, 29 Sep 2020 22:01:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/tags/network/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mosfet</title>
+      <link>https://zongpitt.com/tags/mosfet/</link>
+      <pubDate>Mon, 31 Aug 2020 17:35:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/tags/mosfet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gtk</title>
+      <link>https://zongpitt.com/tags/gtk/</link>
+      <pubDate>Fri, 28 Aug 2020 18:30:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/tags/gtk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rust</title>
+      <link>https://zongpitt.com/tags/rust/</link>
+      <pubDate>Fri, 28 Aug 2020 18:30:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/tags/rust/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pandoc</title>
+      <link>https://zongpitt.com/tags/pandoc/</link>
+      <pubDate>Sun, 16 Feb 2020 14:00:52 -0500</pubDate>
+      
+      <guid>https://zongpitt.com/tags/pandoc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>LR</title>
+      <link>https://zongpitt.com/tags/lr/</link>
+      <pubDate>Mon, 10 Feb 2020 05:12:52 -0500</pubDate>
+      
+      <guid>https://zongpitt.com/tags/lr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Probability</title>
+      <link>https://zongpitt.com/tags/probability/</link>
+      <pubDate>Thu, 03 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/tags/probability/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Random Variable</title>
+      <link>https://zongpitt.com/tags/random-variable/</link>
+      <pubDate>Thu, 03 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/tags/random-variable/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

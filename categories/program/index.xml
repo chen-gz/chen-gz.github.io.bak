@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Program on Guangzong Blog</title>
+    <link>https://zongpitt.com/categories/program/</link>
+    <description>Recent content in Program on Guangzong Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 27 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://zongpitt.com/categories/program/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>C&#43;&#43; std library</title>
+      <link>https://zongpitt.com/posts/2020-11-27-c&#43;&#43;-std-library/</link>
+      <pubDate>Fri, 27 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-11-27-c&#43;&#43;-std-library/</guid>
+      <description>unique Removes all but the first element from every consecutive group of equivalent elements in the range [first,last).
+return value: An iterator to the element that follows the last element not removed.
+Example
+int n; vector&amp;lt;int&amp;gt; a; // suppose there are some value in a n = unique(a.begin(), a.end()) - a.begin(); // n is the number the unique item. a.resize(n); // remove repeated item. resize Resizes the container so that it contains n elements.</description>
+    </item>
+    
+    <item>
+      <title>Python Permission Denied</title>
+      <link>https://zongpitt.com/posts/2020-10-29-python-errno13-permission-denied/</link>
+      <pubDate>Thu, 29 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-10-29-python-errno13-permission-denied/</guid>
+      <description>This may happen in windows although you have permission.
+The way to solve the problem is change properity of file in windows.
+file-&amp;gt;properties-&amp;gt;General
+uncheck Hidden and archived</description>
+    </item>
+    
+    <item>
+      <title>C Integer Overflow And Compare</title>
+      <link>https://zongpitt.com/posts/2020-10-25-c-integer-overflow-and-compare/</link>
+      <pubDate>Sun, 25 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-10-25-c-integer-overflow-and-compare/</guid>
+      <description>notice: this post used gcc, clang, pelle C, to test code. including C99, C17 standard
+I didn’t change integer length in printf function except long long(64 bits)
+Conclusion Do not trust C when doing compare using integer with overflow case. It is very stupid.
+Expression C use complement to store numbers wikipedia
+use following code will easy to find out how numbers store in C.
+printf(&amp;quot;%x\n&amp;quot;,1); // 1 printf(&amp;quot;%x\n&amp;quot;,2); // 2 printf(&amp;quot;%x\n&amp;quot;,-1); // ffffffff printf(&amp;quot;%x\n&amp;quot;,-2); // fffffffe printf(&amp;quot;%x\n&amp;quot;,0); // 0 printf(&amp;quot;%x\n&amp;quot;,-0); // 0 printf(&amp;quot;%d\n&amp;quot;,0x80000000); // the minium value -2147483648 printf(&amp;quot;%d\n&amp;quot;,0xffffffff); // -1 printf(&amp;quot;%d\n&amp;quot;,0x7fffffff); // largest value 2147483647 examination: why 0x8000 0000 is minimum value the first one means this number is negative value.</description>
+    </item>
+    
+  </channel>
+</rss>

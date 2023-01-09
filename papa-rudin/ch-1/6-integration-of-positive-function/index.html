@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css"
+        class="dark-mode-native-dark-original" />
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+     
+    <link rel="stylesheet" href="https://zongpitt.com/sass/main.06935202011a97ba473ebeeb0cb6788daa9fb5a9fff471a4e85850293d1c5ac4.css" />
+    <title>
+          Guangzong Blog | 6 Integration of Positive Functions
+    </title>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.bundle.min.js"></script>
+    <script src=" https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.js"></script>
+
+    <script
+        src="https://cdn.jsdelivr.net/combine/npm/magnific-popup@1/dist/jquery.magnific-popup.min.js,npm/lozad/dist/lozad.min.js,npm/clipboard@2/dist/clipboard.min.js"></script>
+    <script type="text/javascript" src="/js/commons/back-to-top.js"></script>
+    
+    
+    
+    <script type="text/javascript" src="/js/commons/topbar-switch.js"></script>
+    <script type="text/javascript" src="/js/commons/sidebar.js"></script>
+    <script type="text/javascript" src="/js/utils/category-collapse.js"></script>
+    <script type="text/javascript" src="/js/utils/checkbox.js"></script>
+    <script type="text/javascript" src="/js/utils/clipboard.js"></script>
+    <script type="text/javascript" src="/js/utils/img-extra.js"></script>
+    <script type="text/javascript" src="/js/utils/pageviews.js"></script>
+    
+    <script type="text/javascript" src="/js/utils/timeago.js"></script>
+    
+    
+</head>
+<body data-spy="scroll" data-target="#toc" data-topbar-visible="true" class="d-flex"><div id="sidebar" class="d-flex flex-column align-items-end">
+    <div class="profile-wrapper text-center">
+
+        <div id="avatar">
+            <a href="/" alt="avatar" class="mx-auto"> <img src=https://github.com/chen-gz/chen-gz/blob/main/mine_square.jpg?raw&#61;truehttps://raw.githubusercontent.com/chen-gz/chen-gz/blob/main/mine_square.jpg alt="avatar"
+                    onerror="this.style.display='none'"> </a>
+        </div>
+
+        <div class="site-title mt-3"> <a href="/">Guangzong</a> </div>
+        <div class="site-subtitle font-italic">Welcome to my blog</div>
+    </div>
+
+    <ul>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/">
+                <span>
+                    Home
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/archive/">
+                <span>
+                    Archive
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/tags/">
+                <span>
+                    Tags
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/about/">
+                <span>
+                    About
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/categories/">
+                <span>
+                    Categories
+                </span>
+            </a>
+        </li>
+        
+    </ul>
+
+    <div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center align-items-center">
+        <button class="mode-toggle btn" aria-label="Switch Mode"> 
+            <i class="fas fa-adjust"></i> 
+        </button>
+
+        <span class="icon-border"></span>
+        <a href="https://github.com/chen-gz" aria-label="github" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i>
+        </a>
+
+        <a href=" javascript:location.href = 'mailto:' + ['chen-gz','outlook.com'].join('@')" aria-label="email">
+            <i class="fas fa-envelope"></i>
+        </a>
+
+        <a href="/feed.xml" aria-label="rss"> <i class="fas fa-rss"></i> </a>
+    </div>
+
+    
+    
+</div>
+<div id="all-wrapper" class="d-flex flex-column"><div id="topbar-wrapper">
+    <div id="topbar" class="d-flex">
+        
+        <span id="breadcrumb" class="d-flex">
+              
+               
+            
+            
+            <div><a href='https://zongpitt.com/'>Home</a></div>
+              
+              
+            
+            <div><a href="https://zongpitt.com/papa-rudin">papa-rudin</a></div>
+               
+              
+            
+            <div><a href="https://zongpitt.com/papa-rudin/ch-1">ch-1</a></div>
+               
+                 
+                
+        </span>
+        <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i>
+        <div id="topbar-title">Guangzong</div>
+        <i id="search-trigger" class="fas fa-search fa-fw"></i>
+        <span id="search-wrapper" class="align-items-center">
+            <i class="fas fa-search fa-fw"></i>
+            <input class="form-control" id="search-input" type="search" aria-label="search" autocomplete="off"
+                placeholder="Search..." />
+            <i class="fa fa-times-circle fa-fw" id="search-cleaner"></i>
+        </span>
+    </div>
+</div>
+<div id="main-wrapper" class="d-flex mt-3">
+            <div id="core-wrapper" class="d-flex flex-column">
+                <div id="main" class="d-flex flex-column">
+                    
+<div class="post pl-1 pr-1 pl-md-2 pr-md-2">
+    
+    <div id="post-content">
+        <h1 style="text-align: center;">6 Integration of Positive Functions</h1>
+        <br>
+        
+        <p>In this section, <span class="math inline">\(\mathfrak{M}\)</span>
+will be a <span class="math inline">\(\sigma\)</span>-algebra in a set
+<span class="math inline">\(X\)</span> and <span
+class="math inline">\(\mu\)</span> will be a positive measure on <span
+class="math inline">\(\mathfrak{M}\)</span>.</p>
+<h3 id="definition">1.23 Definition</h3>
+<p>If <span class="math inline">\(s: X \rightarrow[0, \infty)\)</span>
+is a measurable simple function, of the form</p>
+<p><span class="math display">\[
+\begin{equation}
+s=\sum_{i=1}^n \alpha_i \chi_{A_i},
+\end{equation}
+\]</span></p>
+<p>where <span class="math inline">\(\alpha_1, \ldots, \alpha_n\)</span>
+are the distinct values of <span class="math inline">\(s\)</span>
+(compare Definition 1.16), and if <span class="math inline">\(E \in
+\mathfrak{M}\)</span>, we define</p>
+<p><span class="math display">\[
+\begin{equation}
+\int_E s d \mu=\sum_{i=1}^n \alpha_i \mu\left(A_i \cap E\right) .
+\end{equation}
+\]</span></p>
+<p>The convention <span class="math inline">\(0 \cdot \infty=0\)</span>
+is used here; it may happen that <span
+class="math inline">\(\alpha_i=0\)</span> for some <span
+class="math inline">\(i\)</span> and that <span
+class="math inline">\(\mu\left(A_i \cap E\right)=\infty\)</span>.</p>
+<p>If <span class="math inline">\(f: X \rightarrow[0, \infty]\)</span>
+is measurable, and <span class="math inline">\(E \in
+\mathfrak{M}\)</span>, we define <span class="math display">\[
+\begin{equation}
+\int_E f d \mu=\sup \int_E s d \mu,
+\end{equation}
+\]</span> the supremum being taken over all simple measurable functions
+<span class="math inline">\(s\)</span> such that <span
+class="math inline">\(0 \leq s \leq f\)</span>.</p>
+<p>The left member of (3) is called the Lebesgue integral of <span
+class="math inline">\(f\)</span> over <span
+class="math inline">\(E\)</span>, with respect to the measure <span
+class="math inline">\(\mu\)</span>. It is a number in <span
+class="math inline">\([0, \infty]\)</span>.</p>
+<p>Observe that we apparently have two definitions for <span
+class="math inline">\(\int_E f d \mu\)</span> if <span
+class="math inline">\(f\)</span> is simple, namely, (2) and (3).
+However, these assign the same value to the integral, since <span
+class="math inline">\(f\)</span> is, in this case, the largest of the
+functions <span class="math inline">\(s\)</span> which occur on the
+right of (3).</p>
+<h3 id="section">1.24</h3>
+<p>The following propositions are immediate consequences of the
+definitions. The functions and sets occurring in them are assumed to be
+measurable:</p>
+<ol type="a">
+<li>If <span class="math inline">\(0 \leq f \leq g\)</span>, then <span
+class="math inline">\(\int_E f d \mu \leq \int_E g d \mu\)</span>.</li>
+<li>If <span class="math inline">\(A \subset B\)</span> and <span
+class="math inline">\(f \geq 0\)</span>, then <span
+class="math inline">\(\int_A f d \mu \leq \int_B f d \mu\)</span>.</li>
+<li>Iff <span class="math inline">\(\geq 0\)</span> and <span
+class="math inline">\(c\)</span> is a constant, <span
+class="math inline">\(0 \leq c&lt;\infty\)</span>, then <span
+class="math display">\[
+\int_E c f d \mu=c \int_E f d \mu .
+\]</span></li>
+<li>If <span class="math inline">\(f(x)=0\)</span> for all <span
+class="math inline">\(x \in E\)</span>, then <span
+class="math inline">\(\int_E f d \mu=0\)</span>, even if <span
+class="math inline">\(\mu(E)=\infty\)</span>.</li>
+<li>If <span class="math inline">\(\mu(E)=0\)</span>, then <span
+class="math inline">\(\int_E f d \mu=0\)</span>, even if <span
+class="math inline">\(f(x)=\infty\)</span> for every <span
+class="math inline">\(x \in E\)</span>.</li>
+<li>If <span class="math inline">\(f \geq 0\)</span>, then <span
+class="math inline">\(\int_E f d \mu=\int_X \chi_E f d
+\mu\)</span>.</li>
+</ol>
+<p>This last result shows that we could have restricted our definition
+of integration to integrals over all of <span
+class="math inline">\(X\)</span>, without losing any generality. If we
+wanted to integrate over subsets, we could then use <span
+class="math inline">\((f)\)</span> as the definition. It is purely a
+matter of taste which definition is preferred.</p>
+<p>One may also remark here that every measurable subset <span
+class="math inline">\(E\)</span> of a measure space <span
+class="math inline">\(X\)</span> is again a measure space, in a
+perfectly natural way: The new measurable sets are simply those
+measurable subsets of <span class="math inline">\(X\)</span> which lie
+in <span class="math inline">\(E\)</span>, and the measure is unchanged,
+except that its domain is restricted. This shows again that as soon as
+we have integration defined over every measure space, we automatically
+have it defined over every measurable subset of every measure space.</p>
+<h3 id="proposition">1.25 Proposition</h3>
+<p>Let <span class="math inline">\(s\)</span> and <span
+class="math inline">\(t\)</span> be nonnegative measurable simple
+functions on <span class="math inline">\(X\)</span>. For <span
+class="math inline">\(E \in \mathfrak{M}\)</span>, define</p>
+<p><span class="math display">\[
+\begin{equation}
+\varphi(E)=\int_E s d \mu .
+\end{equation}
+\]</span></p>
+<p>Then <span class="math inline">\(\varphi\)</span> is a measure on
+<span class="math inline">\(\mathfrak{M}\)</span>. Also</p>
+<p><span class="math display">\[
+\int_X(s+t) d \mu=\int_X s d \mu+\int_X t d \mu .
+\]</span> (This proposition contains provisional forms of Theorems <span
+class="math inline">\(1.27\)</span> and 1.29.)</p>
+<p><strong>Proof</strong> If <span class="math inline">\(s\)</span> is
+as in Definition <span class="math inline">\(1.23\)</span>, and if <span
+class="math inline">\(E_1, E_2, \ldots\)</span> are disjoint members of
+<span class="math inline">\(\mathfrak{M}\)</span> whose union is <span
+class="math inline">\(E\)</span>, the countable additivity of <span
+class="math inline">\(\mu\)</span> shows that</p>
+<p><span class="math display">\[
+\begin{equation}
+\begin{aligned}
+\varphi(E) &amp;=\sum_{i=1}^n \alpha_i \mu\left(A_i \cap
+E\right)=\sum_{i=1}^n \alpha_i \sum_{r=1}^{\infty} \mu\left(A_i \cap
+E_r\right) \\
+&amp;=\sum_{r=1}^{\infty} \sum_{i=1}^n \alpha_i \mu\left(A_i \cap
+E_r\right)=\sum_{r=1}^{\infty} \varphi\left(E_r\right) .
+\end{aligned}
+\end{equation}
+\]</span></p>
+<p>Also, <span class="math inline">\(\varphi(\varnothing)=0\)</span>, so
+that <span class="math inline">\(\varphi\)</span> is not identically
+<span class="math inline">\(\infty\)</span>.</p>
+<p>Next, let <span class="math inline">\(s\)</span> be as before, let
+<span class="math inline">\(\beta_1, \ldots, \beta_m\)</span> be the
+distinct values of <span class="math inline">\(t\)</span>, and let <span
+class="math inline">\(B_j=\left\{x: t(x)=\beta_j\right\}\)</span>. If
+<span class="math inline">\(E_{i j}=A_i \cap B_j\)</span>, then and</p>
+<p><span class="math display">\[
+\begin{equation}
+\int_{E_{i j}}(s+t) d \mu=\left(\alpha_i+\beta_j\right) \mu\left(E_{i
+j}\right) \\
+\end{equation}
+\]</span></p>
+<p>and</p>
+<p><span class="math display">\[
+\begin{equation}
+\int_{E_{i j}} s d \mu+\int_{E_{i j}} t d \mu=\alpha_i \mu\left(E_{i
+j}\right)+\beta_j \mu\left(E_{i j}\right) .
+\end{equation}
+\]</span></p>
+<p>Thus (2) holds with <span class="math inline">\(E_{i j}\)</span> in
+place of <span class="math inline">\(X\)</span>. Since <span
+class="math inline">\(X\)</span> is the disjoint union of the sets <span
+class="math inline">\(E_{i j}(1 \leq i \leq n, 1 \leq j \leq
+m)\)</span>, the first half of our proposition implies that (2) holds.
+<span class="math inline">\(\blacksquare\)</span></p>
+<p>We now come to the interesting part of the theory. One of its most
+remarkable features is the ease with which it handles limit
+operations.</p>
+<h3 id="lebesgues-monotone-convergence-theorem">1.26 Lebesgue’s Monotone
+Convergence Theorem</h3>
+<p>Let <span class="math inline">\(\left\{f_n\right\}\)</span> be a
+sequence of measurable functions on <span
+class="math inline">\(X\)</span>, and suppose that</p>
+<ol type="a">
+<li><span class="math inline">\(0 \leq f_1(x) \leq f_2(x) \leq \cdots
+\leq \infty\)</span> for every <span class="math inline">\(x \in
+X\)</span>,</li>
+<li><span class="math inline">\(f_n(x) \rightarrow f(x)\)</span> as
+<span class="math inline">\(n \rightarrow \infty\)</span>, for every
+<span class="math inline">\(x \in X\)</span>.</li>
+</ol>
+<p>Then <span class="math inline">\(f\)</span> is measurable, and</p>
+<p><span class="math display">\[
+\begin{equation}
+\int_X f_n d \mu \rightarrow \int_X f d \mu \quad \text { as } n
+\rightarrow \infty .
+\end{equation}
+\]</span></p>
+<p><strong>Proof</strong> Since <span class="math inline">\(\int f_n
+\leq \int f_{n+1}\)</span>, there exists an <span
+class="math inline">\(\alpha \in[0, \infty]\)</span> such that</p>
+<p><span class="math display">\[
+\begin{equation}
+\int_X f_n d \mu \rightarrow \alpha \text { as } n \rightarrow \infty
+\text {. }
+\end{equation}
+\]</span></p>
+<p>By Theorem <span class="math inline">\(1.14, f\)</span> is
+measurable. Since <span class="math inline">\(f_n \leq f\)</span>, we
+have <span class="math inline">\(\int f_n \leq \int f\)</span> for every
+<span class="math inline">\(n\)</span>, so (1) implies</p>
+<p><span class="math display">\[
+\begin{equation}
+\alpha \leq \int_X f d \mu .
+\end{equation}
+\]</span></p>
+<p>Let <span class="math inline">\(s\)</span> be any simple measurable
+function such that <span class="math inline">\(0 \leq s \leq f\)</span>,
+let <span class="math inline">\(c\)</span> be a constant, <span
+class="math inline">\(0&lt;c&lt;1\)</span>, and define</p>
+<p><span class="math display">\[
+\begin{equation}
+E_n=\left\{x: f_n(x) \geq c s(x)\right\} \quad(n=1,2,3, \ldots) .
+\end{equation}
+\]</span></p>
+<p>Each <span class="math inline">\(E_n\)</span> is measurable, <span
+class="math inline">\(E_1 \subset E_2 \subset E_3 \subset
+\cdots\)</span>, and <span class="math inline">\(X=\bigcup E_n\)</span>.
+To see this equality, consider some <span class="math inline">\(x \in
+X\)</span>. If <span class="math inline">\(f(x)=0\)</span>, then <span
+class="math inline">\(x \in E_1 ;\)</span> if <span
+class="math inline">\(f(x)&gt;0\)</span>, then <span
+class="math inline">\(c s(x)&lt;f(x)\)</span>, since <span
+class="math inline">\(c&lt;1\)</span>; hence <span
+class="math inline">\(x \in E_n\)</span> for some <span
+class="math inline">\(n\)</span>. Also</p>
+<p><span class="math display">\[
+\begin{equation}
+\int_X f_n d \mu \geq \int_{E_n} f_n d \mu \geq c \int_{E_n} s d \mu
+\quad(n=1,2,3, \ldots) .
+\end{equation}
+\]</span></p>
+<p>Let <span class="math inline">\(n \rightarrow \infty\)</span>,
+applying Proposition <span class="math inline">\(1.25\)</span> and
+Theorem <span class="math inline">\(1.19(d)\)</span> to the last
+integral in (4). The result is</p>
+<p><span class="math display">\[
+\begin{equation}
+\alpha \geq c \int_X s d \mu .
+\end{equation}
+\]</span></p>
+<p>Since (5) holds for every <span
+class="math inline">\(c&lt;1\)</span>, we have</p>
+<p><span class="math display">\[
+\begin{equation}
+\alpha \geq \int_X s d \mu
+\end{equation}
+\]</span></p>
+<p>for every simple measurable <span class="math inline">\(s\)</span>
+satisfying <span class="math inline">\(0 \leq s \leq f\)</span>, so
+that</p>
+<p><span class="math display">\[
+\begin{equation}
+\alpha \geq \int_x f d \mu .
+\end{equation}
+\]</span></p>
+<p>The theorem follows from (1), (2), and (7).</p>
+<h3 id="theorem">1.27 Theorem</h3>
+<p>If <span class="math inline">\(f_n: X \rightarrow[0, \infty]\)</span>
+is measurable, for <span class="math inline">\(n=1,2,3, \ldots\)</span>,
+and</p>
+<p><span class="math display">\[
+\begin{equation}
+f(x)=\sum_{n=1}^{\infty} f_n(x) \quad(x \in X),
+\end{equation}
+\]</span></p>
+<p>then</p>
+<p><span class="math display">\[
+\begin{equation}
+\int_X f d \mu=\sum_{n=1}^{\infty} \int_X f_n d \mu
+\end{equation}
+\]</span></p>
+<p><strong>Proof</strong> First, there are sequences <span
+class="math inline">\(\left\{s_i^{\prime}\right\},\left\{s_i^{\prime
+\prime}\right\}\)</span> of simple measurable functions such that <span
+class="math inline">\(s_i^{\prime} \rightarrow f_1\)</span> and <span
+class="math inline">\(s_i^{\prime \prime} \rightarrow f_2\)</span>, as
+in Theorem 1.17. If <span
+class="math inline">\(s_i=s_i^{\prime}+s_i^{\prime \prime}\)</span>,
+then <span class="math inline">\(s_i \rightarrow f_1+f_2\)</span>, and
+the monotone convergence theorem, combined with Proposition <span
+class="math inline">\(1.25\)</span>, shows that</p>
+<p><span class="math display">\[
+\begin{equation}
+\int_X\left(f_1+f_2\right) d \mu=\int_X f_1 d \mu+\int_X f_2 d \mu .
+\end{equation}
+\]</span></p>
+<p>Next, put <span class="math inline">\(g_N=f_1+\cdots+f_N\)</span>.
+The sequence <span class="math inline">\(\left\{g_N\right\}\)</span>
+converges monotonically to <span class="math inline">\(f\)</span>, and
+if we apply induction to (3) we see that</p>
+<p><span class="math display">\[
+\begin{equation}
+\int_X g_N d \mu=\sum_{n=1}^N \int_X f_n d \mu .
+\end{equation}
+\]</span></p>
+<p>Applying the monotone convergence theorem once more, we obtain (2),
+and the proof is complete. <span
+class="math inline">\(\blacksquare\)</span></p>
+<p>If we let <span class="math inline">\(\mu\)</span> be the counting
+measure on a countable set, Theorem <span
+class="math inline">\(1.27\)</span> is a statement about double series
+of nonnegative real numbers (which can of course be proved by more
+elementary means):</p>
+<p><strong>Corollary</strong> If <span class="math inline">\(a_{i j}
+\geq 0\)</span> for <span class="math inline">\(i\)</span> and <span
+class="math inline">\(j=1,2,3, \ldots\)</span>, then</p>
+<p><span class="math display">\[
+\sum_{i=1}^{\infty} \sum_{j=1}^{\infty} a_{i j}=\sum_{j=1}^{\infty}
+\sum_{i=1}^{\infty} a_{i j} .
+\]</span></p>
+<h3 id="fatous-lemma">1.28 Fatou’s Lemma</h3>
+<p>If <span class="math inline">\(f_n: X \rightarrow[0, \infty]\)</span>
+is measurable, for each positive integer <span
+class="math inline">\(n\)</span>, then</p>
+<p><span class="math display">\[
+\begin{equation}
+\int_X\left(\liminf _{n \rightarrow \infty} f_n\right) d \mu \leq
+\liminf _{n \rightarrow \infty} \int_X f_n d \mu .
+\end{equation}
+\]</span></p>
+<p>Strict inequality can occur in (1); see Exercise 8.</p>
+<p><strong>Proof</strong> Put <span class="math display">\[
+\begin{equation}
+g_k(x)=\inf _{i \geq k} f_i(x) \quad(k=1,2,3, \ldots ; x \in X) .
+\end{equation}
+\]</span></p>
+<p>Then <span class="math inline">\(g_k \leq f_k\)</span>, so that</p>
+<p><span class="math display">\[
+\begin{equation}
+\int_X g_k d \mu \leq \int_X f_k d \mu \quad(k=1,2,3, \ldots) .
+\end{equation}
+\]</span></p>
+<p>Also, <span class="math inline">\(0 \leq g_1 \leq g_2 \leq
+\cdots\)</span>, each <span class="math inline">\(g_k\)</span> is
+measurable, by Theorem 1.14, and <span class="math inline">\(g_k(x)
+\rightarrow \lim \inf f_n(x)\)</span> as <span class="math inline">\(k
+\rightarrow \infty\)</span>, by Definition 1.13. The monotone
+convergence theorem shows therefore that the left side of (3) tends to
+the left side of (1), as <span class="math inline">\(k \rightarrow
+\infty\)</span>. Hence (1) follows from (3). <span
+class="math inline">\(\blacksquare\)</span></p>
+<h3 id="theorem-1">1.29 Theorem</h3>
+<p>Suppose <span class="math inline">\(f: X \rightarrow[0,
+\infty]\)</span> is measurable, and</p>
+<p><span class="math display">\[
+\begin{equation}
+\varphi(E)=\int_E f d \mu \quad(E \in \mathfrak{M}) .
+\end{equation}
+\]</span></p>
+<p>Then <span class="math inline">\(\varphi\)</span> is a measure on
+<span class="math inline">\(\mathfrak{M}\)</span>, and</p>
+<p><span class="math display">\[
+\begin{equation}
+\int_X g d \varphi=\int_X g f d \mu
+\end{equation}
+\]</span></p>
+<p>for every measurable <span class="math inline">\(g\)</span> on <span
+class="math inline">\(X\)</span> with range in <span
+class="math inline">\([0, \infty]\)</span>. Proof Let <span
+class="math inline">\(E_1, E_2, E_3, \ldots\)</span> be disjoint members
+of <span class="math inline">\(\mathfrak{M}\)</span> whose union is
+<span class="math inline">\(E\)</span>. Observe that</p>
+<p><span class="math display">\[
+\begin{equation}
+\chi_{E} f=\sum_{j=1}^{\infty} \chi_{E_j} f
+\end{equation}
+\]</span></p>
+<p>and that</p>
+<p><span class="math display">\[
+\begin{equation}
+\varphi(E)=\int_X \chi_E f d \mu, \quad \varphi\left(E_j\right)=\int_X
+\chi_{E_j} f d \mu .
+\end{equation}
+\]</span></p>
+<p>It now follows from Theorem <span class="math inline">\(1.27\)</span>
+that</p>
+<p><span class="math display">\[
+\begin{equation}
+\varphi(E)=\sum_{j=1}^{\infty} \varphi\left(E_j\right) .
+\end{equation}
+\]</span></p>
+<p>Since <span class="math inline">\(\varphi(\varnothing)=0,(5)\)</span>
+proves that <span class="math inline">\(\varphi\)</span> is a
+measure.</p>
+<p>Next, (1) shows that (2) holds whenever <span
+class="math inline">\(g=\chi_E\)</span> for some <span
+class="math inline">\(E \in \mathfrak{M}\)</span>. Hence (2) holds for
+every simple measurable function <span class="math inline">\(g\)</span>,
+and the general case follows from the monotone convergence theorem.</p>
+<p><strong>Remark</strong> The second assertion of Theorem <span
+class="math inline">\(1.29\)</span> is sometimes written in the form</p>
+<p><span class="math display">\[
+\begin{equation}
+d \varphi=f d \mu .
+\end{equation}
+\]</span></p>
+<p>We assign no independent meaning to the symbols <span
+class="math inline">\(d \varphi\)</span> and <span
+class="math inline">\(d \mu ;(6)\)</span> merely means that (2) holds
+for every measurable <span class="math inline">\(g \geq 0\)</span>.</p>
+<p>Theorem 1.29 has a very important converse, the Radon-Nikodym
+theorem, which will be proved in Chap. 6.</p>
+
+    </div>
+    
+</div>
+</div>
+
+                <div id="footer-wrapper">
+                    <footer class="footer"><footer class="row pl-3 pr-3">
+    <div class="col-12 d-flex justify-content-between align-items-center text-muted pl-0 pr-0">
+        <div class="footer-left">
+            <p class="mb-0"> © 2022 <a href="https://github.com/chen-gz">guangzong</a>. <span data-toggle="tooltip"
+                    data-placement="top"
+                    title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author.">All
+                    rights reserved.</span></p>
+        </div>
+        <div class="footer-right">
+            <p class="mb-0"> Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">hugo</a>
+                with <a href="https://github.com/chen-gz/hugo_zong" target="_blank" rel="noopener">zong</a>
+                theme.</p>
+        </div>
+    </div>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script> MathJax = {
+            tex: {
+                tags: 'ams',
+            }
+        };</script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</footer>
+</footer>
+                </div>
+            </div>
+            <div id="panel-wrapper" class="d-flex flex-column"><div id="toc-wrapper" class="mb-5 pl-2">
+    <span>Contents</span>
+    <nav id="toc" data-toggle="toc">
+        
+        
+        
+    </nav>
+</div>
+
+<div id="access-lastmod" class="pb-4 pl-2">
+    <div class="panel-heading">Recently Updated</div>
+    <ul class="post-content pl-3 pb-1 ml-1 mt-2">
+          
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/1-total-variation/">Total Variation</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-7/1-derivatives-of-measures/">Derivatives of Measures</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/3-consequences-of-the-radon-nikodym-theorem/">Consequences of the Radon-Nikodym Theorem</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/4-bounded-linear-functionals-on-lp/">Bounded linear functional on Lp</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/2-abosolute-continuity/">Abosolute Continuity</a></li>
+        
+    </ul>
+</div>
+
+<div id="access-tags" class="pl-2">
+    <div class="panel-heading">Trending Tags</div>
+    <div class="d-flex flex-wrap mt-3 mb-1 mr-3">
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/algorithm/">Algorithm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/android/">Android</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c/">C</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c-language/">c language</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/caddy/">Caddy</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cadence/">Cadence</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cdc/">CDC</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/classification/">classification</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/compress/">Compress</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/conf/">Conf</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/double-column/">Double Column</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/errno13/">Errno13</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/fish/">fish</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gan/">GAN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/git/">Git</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gtk/">Gtk</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/html/">Html</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/i3/">I3</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/idea/">Idea</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/java/">Java</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/latex/">Latex</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lda/">LDA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linear-programming/">Linear Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linux/">Linux</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lr/">LR</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/math/">Math</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mathematics/">Mathematics</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matlab/">Matlab</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matplot/">matplot</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/memory/">Memory</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mermaid/">Mermaid</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/misc/">Misc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/ml/">ML</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mosfet/">Mosfet</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/network/">Network</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/nn/">NN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pandoc/">Pandoc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pca/">PCA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/probability/">Probability</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/productive/">Productive</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/program/">Program</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/programming/">Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/python/">Python</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/qt/">Qt</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/random-variable/">Random Variable</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rcnn/">RCNN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rust/">Rust</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/security/">Security</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/software/">Software</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/std/">Std</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/svd/">Svd</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/tool/">Tool</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/usb/">USB</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vim/">Vim</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpn/">Vpn</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpnc/">Vpnc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/xterm/">xterm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/zsh/">Zsh</a>
+        
+    </div>
+</div>
+</div><div id="search-result-wrapper" class="d-flex justify-content-center unloaded">
+    <div class="col-12 col-sm-11 post-content">
+        <div id="search-hints"></div>
+        <div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3 col-12"></div>
+    </div>
+</div>
+
+<script src="/js/fuse.min.js"></script>
+<script src="/js/fastsearch.js"></script>
+
+
+</div>
+        <div id="mask"></div>
+        <a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button"
+            style="display: none">
+            <i class="fas fa-angle-up"></i>
+        </a>
+    </div>
+    
+</body>
+
+</html>

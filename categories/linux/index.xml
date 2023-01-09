@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on Guangzong Blog</title>
+    <link>https://zongpitt.com/categories/linux/</link>
+    <description>Recent content in Linux on Guangzong Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 24 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://zongpitt.com/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>monitor folder</title>
+      <link>https://zongpitt.com/posts/2021-01-24-monitor-folder/</link>
+      <pubDate>Sun, 24 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-01-24-monitor-folder/</guid>
+      <description>folloing scrip is used to monitor ag it folder by using inotify-tool
+#!/bin/bash src=&amp;quot;/home/git/hugo.git&amp;quot; /usr/bin/inotifywait -mq --timefmt &amp;#39;%d/%m/%y %H:%M&amp;#39; --format &amp;#39;%T %w%f%e&amp;#39; --event delete,modify,create,attrib $src | while read file do sh ./publish.sh done </description>
+    </item>
+    
+    <item>
+      <title>safe remove drive command</title>
+      <link>https://zongpitt.com/posts/2021-01-24-safe-remove-drive-command/</link>
+      <pubDate>Sun, 24 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-01-24-safe-remove-drive-command/</guid>
+      <description>install udisks2
+unmount udisksctl unmout -b /dev/sd****
+safe remove udisksctl power-off -b /dev/sdb*</description>
+    </item>
+    
+    <item>
+      <title>Some Usefull Samba Settings</title>
+      <link>https://zongpitt.com/posts/2020-10-29-samba-settings/</link>
+      <pubDate>Thu, 29 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-10-29-samba-settings/</guid>
+      <description>enable windows user to change the permission
+dos filemod = yes fix time synchronize issue
+time server = yes dos filetimes = yes fake directory create times = yes dos filetime resolution = yes </description>
+    </item>
+    
+    <item>
+      <title>Useful Linux Command</title>
+      <link>https://zongpitt.com/posts/2020-10-17-useful-linux-command/</link>
+      <pubDate>Sat, 17 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-10-17-useful-linux-command/</guid>
+      <description>Get CPU information
+cat /proc/cpuinfo change default terminal
+gsettings set org.cinnamon.desktop.default-applications.terminal exec kitty modify system PATH
+export PATH=$PATH:/place/with/the/file View all network socket and connect status
+netstat -na system sys TCP syn cookies status(default is on)
+sysctl -a | grep cookie (Display the SYN cookie flag) sysctl -w net.ipv4.tcp_syncookies=0 (turn off SYN cookie) sysctl -w net.ipv4.tcp_syncookies=1 (turn on SYN cookie) Netwox Tool 76
+image-20201017151944946 Netwox Tool 78
+image-20201017152400707 synchronize time</description>
+    </item>
+    
+    <item>
+      <title>Mathematica Install</title>
+      <link>https://zongpitt.com/posts/2020-10-11-mathematica-install/</link>
+      <pubDate>Sun, 11 Oct 2020 20:20:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-10-11-mathematica-install/</guid>
+      <description>We don’t need using root to execute the file.
+Install Location Create an folder in /opt/ and change owner to normal user
+mkdir Mathematica chown zong:users mathematica provide following position for Mathematica
+/opt/Mathematica/11.3 create directory type y
+it will start installing
+Start Script in order to start Mathematica and change nothing in our system.
+Create a folder bin under Mathematica folder.
+cd /opt/Mathematica/11.3 mkdir bin chown zong:users bin type following command in Mathematica install terminal</description>
+    </item>
+    
+    <item>
+      <title>Setup ZSH</title>
+      <link>https://zongpitt.com/posts/2020-10-08-setup-zsh/</link>
+      <pubDate>Thu, 08 Oct 2020 23:54:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-10-08-setup-zsh/</guid>
+      <description>install zsh and plugins in order to keep system clear and I don’t need too much functions. So I only using the package which already in archlinux package.
+pacman -Syu zsh zhs-syntax-highlighting zsh-theme-powerlevel10k` pacman -Syu zsh-autosuggestings After these we need zshrc to configure zsh.
+Following command to get my zsh configuration
+wget guanngzong.xyz ./assets/linux/conf/zsh for zsh-theme-powerlevel10k theme, we just using following command to start configuration</description>
+    </item>
+    
+    <item>
+      <title>Setup i3</title>
+      <link>https://zongpitt.com/posts/2020-10-08-setup-i3/</link>
+      <pubDate>Thu, 08 Oct 2020 10:12:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-10-08-setup-i3/</guid>
+      <description>i3 pacman -Syu i3-gap xorg-xint we are using startx to start i3. So change /etc/X11/xinit/xinitrc uncomment last four lines and add follwing lines
+export GTK_IM_MODULE=fcitx export QT_IM_MODULE=fcitx export XMODIFIERS=@im=fcitx exec i3 Before we start i3, we need some configuration. Otherwise we can no do anything aferter i3 been started.
+The configuration file for i3 is here. Follwing command can be use to set up configuration.
+mkdir -p ~/.config/i3 wget https://gist.githubusercontent.com/chen-gz/83eade557baf20a4021af321d973d8fe/raw/d0f0fdcfa03f32f9497d08689dad14c7fcbf54ec/i3_config -o ~/.</description>
+    </item>
+    
+    <item>
+      <title>Setup VPNC</title>
+      <link>https://zongpitt.com/posts/2020-10-06-setup-vpnc/</link>
+      <pubDate>Tue, 06 Oct 2020 17:58:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-10-06-setup-vpnc/</guid>
+      <description>Install pacman -Syu vpnc Configuration copy follwing configuration to /etc/vpnc/&amp;lt;name&amp;gt;.conf
+IPSec gateway vpn.pitt.edu IPSec ID sam_users IPSec secret ooL6ohho Xauth username guc25 </description>
+    </item>
+    
+    <item>
+      <title>Setup Star and GoldenDict Dictionary</title>
+      <link>https://zongpitt.com/posts/misc/2020-10-06-setup-star-dictionary/</link>
+      <pubDate>Tue, 06 Oct 2020 14:57:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/misc/2020-10-06-setup-star-dictionary/</guid>
+      <description>Refer to archlinux wiki and archlinux wiki - goldendict
+Install pacman -Syu Sdcv Once you have the appropriate files you can extract them into /usr/share/stardict/dic.
+Following command can be used.
+mkdir -p /usr/share/stardict/dic &amp;amp;&amp;amp; cd /usr/share/stardict/dic wget &amp;quot;https://github.com/chen-gz/picBed/raw/master/langdao-ec-gb.dict.dz&amp;quot; &amp;amp;&amp;amp; wget &amp;quot;https://raw.githubusercontent.com/chen-gz/picBed/master/langdao-ec-gb.idx&amp;quot; &amp;amp;&amp;amp; wget &amp;quot;https://raw.githubusercontent.com/chen-gz/picBed/master/langdao-ec-gb.ifo&amp;quot; Dictionary files
+dict index info </description>
+    </item>
+    
+    <item>
+      <title>Setup Caddy</title>
+      <link>https://zongpitt.com/posts/2020-10-02-setup-caddy/</link>
+      <pubDate>Fri, 02 Oct 2020 16:02:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-10-02-setup-caddy/</guid>
+      <description>caddy configure file Install caddy for now caddy2 not in archlinux official repository, should using aur to install
+follwing key is require when i was install (data: 2020-10-02)
+gpg --keyserver pool.sks-keyservers.net --receive-keys 29D0817A67156E4F25DC24782A349DD577D586A5 After install we need to setup caddy. configure file locate in /etc/caddy/Caddyfile.
+My configure show as follow.
+guangzong.xyz:443 { # i am only using 443 port tls chen-gz@outlook.com root * path_to_you_website_file file_server } For me, my file are locate in user account.</description>
+    </item>
+    
+    <item>
+      <title>linux system log</title>
+      <link>https://zongpitt.com/posts/2020-10-02-linux-system-log/</link>
+      <pubDate>Fri, 02 Oct 2020 15:15:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-10-02-linux-system-log/</guid>
+      <description>login logs using command last and lastb to check the login information.
+last will show the last login information. The log file locate in /var/wtmp.
+last will show the the user who trying to login information. The log file locate in /var/btmp.</description>
+    </item>
+    
+    <item>
+      <title>Protect SSH Port</title>
+      <link>https://zongpitt.com/posts/2020-10-02-protect-ssh-port/</link>
+      <pubDate>Fri, 02 Oct 2020 14:43:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-10-02-protect-ssh-port/</guid>
+      <description>disable password login generate ssh key and put ssh publick to server.
+the location of server ssh key
+${USER_HOME}/.ssh/authorized_keys open /etc/ssh/sshd_config as root user.
+uncomment foloowing lines and becareful about the option should be no
+AuthorizedKeysFile .ssh/authorized_keys PasswordAuthentication no disable using root login the system in file /etc/ssh/sshd_config the option PermitRootLogin should be no
+PermitRootLogin no change login port to protect nmap scan in /etc/ssh/sshd_config uncomment Port 22 change to another port like Port 2020</description>
+    </item>
+    
+    <item>
+      <title>Setup Static Ip Address</title>
+      <link>https://zongpitt.com/posts/2020-09-29-setup-static-ip-address/</link>
+      <pubDate>Tue, 29 Sep 2020 22:01:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-09-29-setup-static-ip-address/</guid>
+      <description>Add following content to /etc/systemd/network/10-static.network
+The service systemd-networkd is required.
+[https://wiki.archlinux.org/index.php/systemd-networkd]
+[Match] Name=enp37s0 # may be wlan0 for wireless. Using ip addr to check [Network] DNS=0.0.0.0 Address=192.168.0.200/24 Gateway=192.168.0.255 </description>
+    </item>
+    
+    <item>
+      <title>How to Configure Arch Linux desktop</title>
+      <link>https://zongpitt.com/posts/2020-09-22-how-to-configure-archlinux-desktop/</link>
+      <pubDate>Tue, 22 Sep 2020 14:30:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-09-22-how-to-configure-archlinux-desktop/</guid>
+      <description>Assume already install Arch Linux. guide is here
+Network manager pacman -Syu networkmanager network-manager-applet dhcpcd dhclient systemctl enable NetworkManager touchpad To enable touchpad tap to click
+copy configure file to /etc/X11/xorg.conf.d/
+congifure file
+backlight pacman -S acpilight and add user to video group
+reference arch wiki
+gpasswd -a user group sound install pulseaudio to support sound
+pacman -S pulseaudio pavucontrol Chinese font pacman -Syu wqy-microhei Browser firefox and chrome both are good choise in linux system.</description>
+    </item>
+    
+    <item>
+      <title>How To Install Archlinux</title>
+      <link>https://zongpitt.com/posts/2020-09-11-how-to-install-archlinux/</link>
+      <pubDate>Fri, 11 Sep 2020 15:30:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-09-11-how-to-install-archlinux/</guid>
+      <description>Setup network In new version of installer image, wifi-menu instead by iwctl.
+using iwctl get into iwctl command window scan the network
+station wlan0 scan get the network
+station wlan0 get-networks connect to the network
+station wlan0 connect &amp;lt;ssid&amp;gt; after connect wireless network, use ping to test network
+ping google.com Synchronised time timedatectl set-ntp true Change mirrorlist choose one close to you
+vim /etc/pacman.d/mirrorlist Partition use lsblk to check disks and decide which one want to be installed archlinux system.</description>
+    </item>
+    
+  </channel>
+</rss>

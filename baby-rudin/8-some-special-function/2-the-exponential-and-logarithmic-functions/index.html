@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css"
+        class="dark-mode-native-dark-original" />
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+     
+    <link rel="stylesheet" href="https://zongpitt.com/sass/main.06935202011a97ba473ebeeb0cb6788daa9fb5a9fff471a4e85850293d1c5ac4.css" />
+    <title>
+          Guangzong Blog | 2 THE EXPONENTIAL AND LOGARITHMIC FUNCTIONS
+    </title>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.bundle.min.js"></script>
+    <script src=" https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.js"></script>
+
+    <script
+        src="https://cdn.jsdelivr.net/combine/npm/magnific-popup@1/dist/jquery.magnific-popup.min.js,npm/lozad/dist/lozad.min.js,npm/clipboard@2/dist/clipboard.min.js"></script>
+    <script type="text/javascript" src="/js/commons/back-to-top.js"></script>
+    
+    
+    
+    <script type="text/javascript" src="/js/commons/topbar-switch.js"></script>
+    <script type="text/javascript" src="/js/commons/sidebar.js"></script>
+    <script type="text/javascript" src="/js/utils/category-collapse.js"></script>
+    <script type="text/javascript" src="/js/utils/checkbox.js"></script>
+    <script type="text/javascript" src="/js/utils/clipboard.js"></script>
+    <script type="text/javascript" src="/js/utils/img-extra.js"></script>
+    <script type="text/javascript" src="/js/utils/pageviews.js"></script>
+    
+    <script type="text/javascript" src="/js/utils/timeago.js"></script>
+    
+    
+</head>
+<body data-spy="scroll" data-target="#toc" data-topbar-visible="true" class="d-flex"><div id="sidebar" class="d-flex flex-column align-items-end">
+    <div class="profile-wrapper text-center">
+
+        <div id="avatar">
+            <a href="/" alt="avatar" class="mx-auto"> <img src=https://github.com/chen-gz/chen-gz/blob/main/mine_square.jpg?raw&#61;truehttps://raw.githubusercontent.com/chen-gz/chen-gz/blob/main/mine_square.jpg alt="avatar"
+                    onerror="this.style.display='none'"> </a>
+        </div>
+
+        <div class="site-title mt-3"> <a href="/">Guangzong</a> </div>
+        <div class="site-subtitle font-italic">Welcome to my blog</div>
+    </div>
+
+    <ul>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/">
+                <span>
+                    Home
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/archive/">
+                <span>
+                    Archive
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/tags/">
+                <span>
+                    Tags
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/about/">
+                <span>
+                    About
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/categories/">
+                <span>
+                    Categories
+                </span>
+            </a>
+        </li>
+        
+    </ul>
+
+    <div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center align-items-center">
+        <button class="mode-toggle btn" aria-label="Switch Mode"> 
+            <i class="fas fa-adjust"></i> 
+        </button>
+
+        <span class="icon-border"></span>
+        <a href="https://github.com/chen-gz" aria-label="github" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i>
+        </a>
+
+        <a href=" javascript:location.href = 'mailto:' + ['chen-gz','outlook.com'].join('@')" aria-label="email">
+            <i class="fas fa-envelope"></i>
+        </a>
+
+        <a href="/feed.xml" aria-label="rss"> <i class="fas fa-rss"></i> </a>
+    </div>
+
+    
+    
+</div>
+<div id="all-wrapper" class="d-flex flex-column"><div id="topbar-wrapper">
+    <div id="topbar" class="d-flex">
+        
+        <span id="breadcrumb" class="d-flex">
+              
+               
+            
+            
+            <div><a href='https://zongpitt.com/'>Home</a></div>
+              
+              
+            
+            <div><a href="https://zongpitt.com/baby-rudin">baby-rudin</a></div>
+               
+              
+            
+            <div><a href="https://zongpitt.com/baby-rudin/8-some-special-function">8-some-special-function</a></div>
+               
+                 
+                
+        </span>
+        <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i>
+        <div id="topbar-title">Guangzong</div>
+        <i id="search-trigger" class="fas fa-search fa-fw"></i>
+        <span id="search-wrapper" class="align-items-center">
+            <i class="fas fa-search fa-fw"></i>
+            <input class="form-control" id="search-input" type="search" aria-label="search" autocomplete="off"
+                placeholder="Search..." />
+            <i class="fa fa-times-circle fa-fw" id="search-cleaner"></i>
+        </span>
+    </div>
+</div>
+<div id="main-wrapper" class="d-flex mt-3">
+            <div id="core-wrapper" class="d-flex flex-column">
+                <div id="main" class="d-flex flex-column">
+                    
+<div class="post pl-1 pr-1 pl-md-2 pr-md-2">
+    
+    <div id="post-content">
+        <h1 style="text-align: center;">2 THE EXPONENTIAL AND LOGARITHMIC FUNCTIONS</h1>
+        <br>
+        
+        <p>We define</p>
+<p><span class="math display">\[
+E(z)=\sum_{n=0}^{\infty} \frac{z^{n}}{n !}
+\]</span></p>
+<p>The ratio test shows that this series converges for every complex z.
+Applying Theorem <span class="math inline">\(3.50\)</span> on
+multiplication of absolutely convergent series, we obtain</p>
+<p><span class="math display">\[
+\begin{aligned}
+E(z) E(w) &amp;=\sum_{n=0}^{\infty} \frac{z^{n}}{n !}
+\sum_{m=0}^{\infty} \frac{w^{m}}{m !}=\sum_{n=0}^{\infty} \sum_{k=0}^{n}
+\frac{z^{k} w^{n-k}}{k !(n-k) !} \\
+&amp;=\sum_{n=0}^{\infty} \frac{1}{n !}
+\sum_{k=0}^{n}\left(\begin{array}{l}
+n \\
+k
+\end{array}\right) z^{k} w^{n-k}=\sum_{n=0}^{\infty} \frac{(z+w)^{n}}{n
+!}
+\end{aligned}
+\]</span></p>
+<p>which gives us the important addition formula</p>
+<p><span class="math display">\[
+E(z+w)=E(z) E(w) \quad(z, w \text { complex })
+\]</span></p>
+<p>One consequence is that</p>
+<p><span class="math display">\[
+E(z) E(-z)=E(z-z)=E(0)=1 \quad \text { ( } z \text { complex). }
+\]</span></p>
+<p>This shows that <span class="math inline">\(E(z) \neq 0\)</span> for
+all <span class="math inline">\(z\)</span>. By (25), <span
+class="math inline">\(E(x)&gt;0\)</span> if <span
+class="math inline">\(x&gt;0\)</span>; hence (27) shows that <span
+class="math inline">\(E(x)&gt;0\)</span> for all real <span
+class="math inline">\(x\)</span>. By <span class="math inline">\((25),
+E(x) \rightarrow+\infty\)</span> as <span class="math inline">\(x
+\rightarrow+\infty\)</span>; hence (27) shows that <span
+class="math inline">\(E(x) \rightarrow 0\)</span> as <span
+class="math inline">\(x \rightarrow-\infty\)</span> along the real axis.
+By <span class="math inline">\((25), 0&lt;x&lt;y\)</span> implies that
+<span class="math inline">\(E(x)&lt;E(y)\)</span>; by (27), it follows
+that <span class="math inline">\(E(-y)&lt;E(-x)\)</span>; hence <span
+class="math inline">\(E\)</span> is strictly increasing on the whole
+real axis. The addition formula also shows that</p>
+<p><span class="math display">\[
+\lim _{h=0} \frac{E(z+h)-E(z)}{h}=E(z) \lim _{h=0} \frac{E(h)-1}{h}=E(z)
+\text {; }
+\]</span></p>
+<p>the last equality follows directly from (25). Iteration of (26)
+gives</p>
+<p><span class="math display">\[
+E\left(z_{1}+\cdots+z_{n}\right)=E\left(z_{1}\right) \cdots
+E\left(z_{n}\right) .
+\]</span></p>
+<p>Let us take <span
+class="math inline">\(z_{1}=\cdots=z_{n}=1\)</span>. Since <span
+class="math inline">\(E(1)=e\)</span>, where <span
+class="math inline">\(e\)</span> is the number defined in Definition
+3.30, we obtain</p>
+<p><span class="math display">\[
+E(n)=e^{n} \quad(n=1,2,3, \ldots) .
+\]</span></p>
+<p>If <span class="math inline">\(p=n / m\)</span>, where <span
+class="math inline">\(n, m\)</span> are positive integers, then</p>
+<p><span class="math display">\[
+[E(p)]^{m}=E(m p)=E(n)=e^{n}
+\]</span></p>
+<p>so that</p>
+<p><span class="math display">\[
+E(p)=e^{p} \quad(p&gt;0, p \text { rational). }
+\]</span></p>
+<p>It follows from (27) that <span
+class="math inline">\(E(-p)=e^{-p}\)</span> if <span
+class="math inline">\(p\)</span> is positive and rational. Thus (32)
+holds for all rational <span class="math inline">\(p\)</span>. In
+Exercise 6, Chap. 1, we suggested the definition</p>
+<p><span class="math display">\[
+x^{y}=\sup x^{p},
+\]</span></p>
+<p>where the sup is taken over all rational <span
+class="math inline">\(p\)</span> such that <span
+class="math inline">\(p&lt;y\)</span>, for any real <span
+class="math inline">\(y\)</span>, and <span
+class="math inline">\(x&gt;1\)</span>. If we thus define, for any real
+<span class="math inline">\(x\)</span>,</p>
+<p><span class="math display">\[
+e^{x}=\sup e^{p} \quad(p&lt;x, p \text { rational }),
+\]</span></p>
+<p>the continuity and monotonicity properties of <span
+class="math inline">\(E\)</span>, together with (32), show that</p>
+<p><span class="math display">\[
+E(x)=e^{x}
+\]</span></p>
+<p>for all real <span class="math inline">\(x\)</span>. Equation (35)
+explains why <span class="math inline">\(E\)</span> is called the
+exponential function. The notation <span class="math inline">\(\exp
+(x)\)</span> is often used in place of <span
+class="math inline">\(e^{x}\)</span>, expecially when <span
+class="math inline">\(x\)</span> is a complicated expression.</p>
+<p>Actually one may very well use (35) instead of (34) as the definition
+of <span class="math inline">\(e^{x}\)</span>; (35) is a much more
+convenient starting point for the investigation of the properties of
+<span class="math inline">\(e^{x}\)</span>. We shall see presently that
+(33) may also be replaced by a more convenient definition [see
+(43)].</p>
+<p><strong>8.6 Theorem</strong> Let <span
+class="math inline">\(e^{x}\)</span> be defined on <span
+class="math inline">\(R^{1}\)</span> by (35) and (25). Then (a) <span
+class="math inline">\(e^{x}\)</span> is continuous and differentiable
+for all <span class="math inline">\(x\)</span>; (b) <span
+class="math inline">\(\left(e^{x}\right)^{\prime}=e^{x}\)</span> (c)
+<span class="math inline">\(e^{x}\)</span> is a strictly increasing
+function of <span class="math inline">\(x\)</span>, and <span
+class="math inline">\(e^{x}&gt;0\)</span> (d) <span
+class="math inline">\(e^{x+y}=e^{x} e^{y}\)</span> (e) <span
+class="math inline">\(e^{x} \rightarrow+\infty\)</span> as <span
+class="math inline">\(x \rightarrow+\infty, e^{x} \rightarrow 0\)</span>
+as <span class="math inline">\(x \rightarrow-\infty\)</span>; (f) <span
+class="math inline">\(\lim _{x \rightarrow+\infty} x^{n}
+e^{-x}=0\)</span>, for every <span class="math inline">\(n\)</span>.</p>
+<p><strong>Proof</strong> We have already proved <span
+class="math inline">\((a)\)</span> to <span class="math inline">\((e)
+;(25)\)</span> shows that</p>
+<p><span class="math display">\[
+e^{x}&gt;\frac{x^{n+1}}{(n+1) !}
+\]</span></p>
+<p>for <span class="math inline">\(x&gt;0\)</span>, so that</p>
+<p><span class="math display">\[
+x^{n} e^{-x}&lt;\frac{(n+1) !}{x}
+\]</span></p>
+<p>and <span class="math inline">\((f)\)</span> follows. Part <span
+class="math inline">\((f)\)</span> shows that <span
+class="math inline">\(e^{x}\)</span> tends to <span
+class="math inline">\(+\infty\)</span> “faster” than any power of <span
+class="math inline">\(x\)</span>, as <span class="math inline">\(x
+\rightarrow+\infty\)</span>.</p>
+<p>Since <span class="math inline">\(E\)</span> is strictly increasing
+and differentiable on <span class="math inline">\(R^{1}\)</span>, it has
+an inverse function <span class="math inline">\(L\)</span> which is also
+strictly increasing and differentiable and whose domain is <span
+class="math inline">\(E\left(R^{1}\right)\)</span>, that is, the set of
+all positive numbers. <span class="math inline">\(L\)</span> is defined
+by</p>
+<p><span class="math display">\[
+E(L(y))=y \quad(y&gt;0),
+\]</span></p>
+<p>or, equivalently, by</p>
+<p><span class="math display">\[
+L(E(x))=x \quad(x \text { real }) .
+\]</span></p>
+<p>Differentiating (37), we get (compare Theorem 5.5)</p>
+<p><span class="math display">\[
+L^{\prime}(E(x)) \cdot E(x)=1 .
+\]</span></p>
+<p>Writing <span class="math inline">\(y=E(x)\)</span>, this gives
+us</p>
+<p><span class="math display">\[
+L^{\prime}(y)=\frac{1}{y} \quad(y&gt;0)
+\]</span></p>
+<p>Taking <span class="math inline">\(x=0\)</span> in (37), we see that
+<span class="math inline">\(L(1)=0\)</span>. Hence (38) implies</p>
+<p><span class="math display">\[
+L(y)=\int_{1}^{y} \frac{d x}{x} .
+\]</span></p>
+<p>Quite frequently, (39) is taken as the starting point of the theory
+of the logarithm and the exponential function. Writing <span
+class="math inline">\(u=E(x), v=E(y)\)</span>, (26) gives</p>
+<p><span class="math display">\[
+L(u v)=L(E(x) \cdot E(y))=L(E(x+y))=x+y,
+\]</span></p>
+<p>so that</p>
+<p><span class="math display">\[
+L(u v)=L(u)+L(v) \quad(u&gt;0, v&gt;0) .
+\]</span></p>
+<p>This shows that <span class="math inline">\(L\)</span> has the
+familiar property which makes logarithms useful tools for computation.
+The customary notation for <span class="math inline">\(L(x)\)</span> is
+of course <span class="math inline">\(\log x\)</span>. As to the
+behavior of <span class="math inline">\(\log x\)</span> as <span
+class="math inline">\(x \rightarrow+\infty\)</span> and as <span
+class="math inline">\(x \rightarrow 0\)</span>, Theorem <span
+class="math inline">\(8.6(e)\)</span> shows that</p>
+<p><span class="math display">\[
+\begin{array}{ll}
+\log x \rightarrow+\infty &amp; \text { as } x \rightarrow+\infty \\
+\log x \rightarrow-\infty &amp; \text { as } x \rightarrow 0
+\end{array}
+\]</span></p>
+<p>It is easily seen that</p>
+<p><span class="math display">\[
+x^{n}=E(n L(x))
+\]</span></p>
+<p>if <span class="math inline">\(x&gt;0\)</span> and <span
+class="math inline">\(n\)</span> is an integer. Similarly, if <span
+class="math inline">\(m\)</span> is a positive integer, we have</p>
+<p><span class="math display">\[
+x^{1 / m}=E\left(\frac{1}{m} L(x)\right),
+\]</span></p>
+<p>since each term of (42), when raised to the <span
+class="math inline">\(m\)</span> th power, yields the corresponding term
+of (36). Combining (41) and (42), we obtain</p>
+<p><span class="math display">\[
+x^{\alpha}=E(\alpha L(x))=e^{\alpha \log x}
+\]</span></p>
+<p>for any rational <span class="math inline">\(\alpha\)</span>.</p>
+<p>We now define <span class="math inline">\(x^{\alpha}\)</span>, for
+any real <span class="math inline">\(\alpha\)</span> and any <span
+class="math inline">\(x&gt;0\)</span>, by (43). The continuity and
+monotonicity of <span class="math inline">\(E\)</span> and <span
+class="math inline">\(L\)</span> show that this definition leads to the
+same result as the previously suggested one. The facts stated in
+Exercise 6 of Chap. 1, are trivial consequences of (43). If we
+differentiate (43), we obtain, by Theorem <span
+class="math inline">\(5.5\)</span>,</p>
+<p><span class="math display">\[
+\left(x^{\alpha}\right)^{\prime}=E(\alpha L(x)) \cdot
+\frac{\alpha}{x}=\alpha x^{\alpha-1} .
+\]</span></p>
+<p>Note that we have previously used (44) only for integral values of
+<span class="math inline">\(\alpha\)</span>, in which case (44) follows
+easily from Theorem 5.3(b). To prove (44) directly from the definition
+of the derivative, if <span class="math inline">\(x^{\alpha}\)</span> is
+defined by (33) and <span class="math inline">\(\alpha\)</span> is
+irrational, is quite troublesome.</p>
+<p>The well-known integration formula for <span
+class="math inline">\(x^{\alpha}\)</span> follows from (44) if <span
+class="math inline">\(\alpha \neq-1\)</span>, and from (38) if <span
+class="math inline">\(\alpha=-1\)</span>. We wish to demonstrate one
+more property of <span class="math inline">\(\log x\)</span>,
+namely,</p>
+<p><span class="math display">\[
+\lim _{x \rightarrow+\infty} x^{-\alpha} \log x=0
+\]</span></p>
+<p>for every <span class="math inline">\(\alpha&gt;0\)</span>. That is,
+<span class="math inline">\(\log x \rightarrow+\infty\)</span> “slower”
+than any positive power of <span class="math inline">\(x\)</span>, as
+<span class="math inline">\(x \rightarrow+\infty\)</span></p>
+<p>For if <span
+class="math inline">\(0&lt;\varepsilon&lt;\alpha\)</span>, and <span
+class="math inline">\(x&gt;1\)</span>, then</p>
+<p><span class="math display">\[
+\begin{aligned}
+x^{-\alpha} \log x &amp;=x^{-\alpha} \int_{1}^{x} t^{-1} d
+t&lt;x^{-\alpha} \int_{1}^{x} t^{\varepsilon-1} d t \\
+&amp;=x^{-\alpha} \cdot
+\frac{x^{\varepsilon}-1}{\varepsilon}&lt;\frac{x^{\varepsilon-\alpha}}{\varepsilon}
+\end{aligned}
+\]</span></p>
+<p>and (45) follows. We could also have used Theorem <span
+class="math inline">\(8.6(f)\)</span> to derive (45).</p>
+
+    </div>
+    
+</div>
+</div>
+
+                <div id="footer-wrapper">
+                    <footer class="footer"><footer class="row pl-3 pr-3">
+    <div class="col-12 d-flex justify-content-between align-items-center text-muted pl-0 pr-0">
+        <div class="footer-left">
+            <p class="mb-0"> © 2022 <a href="https://github.com/chen-gz">guangzong</a>. <span data-toggle="tooltip"
+                    data-placement="top"
+                    title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author.">All
+                    rights reserved.</span></p>
+        </div>
+        <div class="footer-right">
+            <p class="mb-0"> Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">hugo</a>
+                with <a href="https://github.com/chen-gz/hugo_zong" target="_blank" rel="noopener">zong</a>
+                theme.</p>
+        </div>
+    </div>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script> MathJax = {
+            tex: {
+                tags: 'ams',
+            }
+        };</script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</footer>
+</footer>
+                </div>
+            </div>
+            <div id="panel-wrapper" class="d-flex flex-column"><div id="toc-wrapper" class="mb-5 pl-2">
+    <span>Contents</span>
+    <nav id="toc" data-toggle="toc">
+        
+        
+        
+    </nav>
+</div>
+
+<div id="access-lastmod" class="pb-4 pl-2">
+    <div class="panel-heading">Recently Updated</div>
+    <ul class="post-content pl-3 pb-1 ml-1 mt-2">
+          
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/1-total-variation/">Total Variation</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-7/1-derivatives-of-measures/">Derivatives of Measures</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/3-consequences-of-the-radon-nikodym-theorem/">Consequences of the Radon-Nikodym Theorem</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/4-bounded-linear-functionals-on-lp/">Bounded linear functional on Lp</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/2-abosolute-continuity/">Abosolute Continuity</a></li>
+        
+    </ul>
+</div>
+
+<div id="access-tags" class="pl-2">
+    <div class="panel-heading">Trending Tags</div>
+    <div class="d-flex flex-wrap mt-3 mb-1 mr-3">
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/algorithm/">Algorithm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/android/">Android</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c/">C</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c-language/">c language</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/caddy/">Caddy</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cadence/">Cadence</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cdc/">CDC</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/classification/">classification</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/compress/">Compress</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/conf/">Conf</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/double-column/">Double Column</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/errno13/">Errno13</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/fish/">fish</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gan/">GAN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/git/">Git</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gtk/">Gtk</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/html/">Html</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/i3/">I3</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/idea/">Idea</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/java/">Java</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/latex/">Latex</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lda/">LDA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linear-programming/">Linear Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linux/">Linux</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lr/">LR</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/math/">Math</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mathematics/">Mathematics</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matlab/">Matlab</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matplot/">matplot</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/memory/">Memory</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mermaid/">Mermaid</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/misc/">Misc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/ml/">ML</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mosfet/">Mosfet</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/network/">Network</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/nn/">NN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pandoc/">Pandoc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pca/">PCA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/probability/">Probability</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/productive/">Productive</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/program/">Program</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/programming/">Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/python/">Python</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/qt/">Qt</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/random-variable/">Random Variable</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rcnn/">RCNN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rust/">Rust</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/security/">Security</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/software/">Software</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/std/">Std</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/svd/">Svd</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/tool/">Tool</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/usb/">USB</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vim/">Vim</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpn/">Vpn</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpnc/">Vpnc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/xterm/">xterm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/zsh/">Zsh</a>
+        
+    </div>
+</div>
+</div><div id="search-result-wrapper" class="d-flex justify-content-center unloaded">
+    <div class="col-12 col-sm-11 post-content">
+        <div id="search-hints"></div>
+        <div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3 col-12"></div>
+    </div>
+</div>
+
+<script src="/js/fuse.min.js"></script>
+<script src="/js/fastsearch.js"></script>
+
+
+</div>
+        <div id="mask"></div>
+        <a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button"
+            style="display: none">
+            <i class="fas fa-angle-up"></i>
+        </a>
+    </div>
+    
+</body>
+
+</html>

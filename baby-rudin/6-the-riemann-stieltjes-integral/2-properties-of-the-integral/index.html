@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css"
+        class="dark-mode-native-dark-original" />
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+     
+    <link rel="stylesheet" href="https://zongpitt.com/sass/main.06935202011a97ba473ebeeb0cb6788daa9fb5a9fff471a4e85850293d1c5ac4.css" />
+    <title>
+          Guangzong Blog | PROPERTIES OF THE INTEGRAL
+    </title>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.bundle.min.js"></script>
+    <script src=" https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.js"></script>
+
+    <script
+        src="https://cdn.jsdelivr.net/combine/npm/magnific-popup@1/dist/jquery.magnific-popup.min.js,npm/lozad/dist/lozad.min.js,npm/clipboard@2/dist/clipboard.min.js"></script>
+    <script type="text/javascript" src="/js/commons/back-to-top.js"></script>
+    
+    
+    
+    <script type="text/javascript" src="/js/commons/topbar-switch.js"></script>
+    <script type="text/javascript" src="/js/commons/sidebar.js"></script>
+    <script type="text/javascript" src="/js/utils/category-collapse.js"></script>
+    <script type="text/javascript" src="/js/utils/checkbox.js"></script>
+    <script type="text/javascript" src="/js/utils/clipboard.js"></script>
+    <script type="text/javascript" src="/js/utils/img-extra.js"></script>
+    <script type="text/javascript" src="/js/utils/pageviews.js"></script>
+    
+    <script type="text/javascript" src="/js/utils/timeago.js"></script>
+    
+    
+</head>
+<body data-spy="scroll" data-target="#toc" data-topbar-visible="true" class="d-flex"><div id="sidebar" class="d-flex flex-column align-items-end">
+    <div class="profile-wrapper text-center">
+
+        <div id="avatar">
+            <a href="/" alt="avatar" class="mx-auto"> <img src=https://github.com/chen-gz/chen-gz/blob/main/mine_square.jpg?raw&#61;truehttps://raw.githubusercontent.com/chen-gz/chen-gz/blob/main/mine_square.jpg alt="avatar"
+                    onerror="this.style.display='none'"> </a>
+        </div>
+
+        <div class="site-title mt-3"> <a href="/">Guangzong</a> </div>
+        <div class="site-subtitle font-italic">Welcome to my blog</div>
+    </div>
+
+    <ul>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/">
+                <span>
+                    Home
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/archive/">
+                <span>
+                    Archive
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/tags/">
+                <span>
+                    Tags
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/about/">
+                <span>
+                    About
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/categories/">
+                <span>
+                    Categories
+                </span>
+            </a>
+        </li>
+        
+    </ul>
+
+    <div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center align-items-center">
+        <button class="mode-toggle btn" aria-label="Switch Mode"> 
+            <i class="fas fa-adjust"></i> 
+        </button>
+
+        <span class="icon-border"></span>
+        <a href="https://github.com/chen-gz" aria-label="github" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i>
+        </a>
+
+        <a href=" javascript:location.href = 'mailto:' + ['chen-gz','outlook.com'].join('@')" aria-label="email">
+            <i class="fas fa-envelope"></i>
+        </a>
+
+        <a href="/feed.xml" aria-label="rss"> <i class="fas fa-rss"></i> </a>
+    </div>
+
+    
+    
+</div>
+<div id="all-wrapper" class="d-flex flex-column"><div id="topbar-wrapper">
+    <div id="topbar" class="d-flex">
+        
+        <span id="breadcrumb" class="d-flex">
+              
+               
+            
+            
+            <div><a href='https://zongpitt.com/'>Home</a></div>
+              
+              
+            
+            <div><a href="https://zongpitt.com/baby-rudin">baby-rudin</a></div>
+               
+              
+            
+            <div><a href="https://zongpitt.com/baby-rudin/6-the-riemann-stieltjes-integral">6-the-riemann-stieltjes-integral</a></div>
+               
+                 
+                
+        </span>
+        <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i>
+        <div id="topbar-title">Guangzong</div>
+        <i id="search-trigger" class="fas fa-search fa-fw"></i>
+        <span id="search-wrapper" class="align-items-center">
+            <i class="fas fa-search fa-fw"></i>
+            <input class="form-control" id="search-input" type="search" aria-label="search" autocomplete="off"
+                placeholder="Search..." />
+            <i class="fa fa-times-circle fa-fw" id="search-cleaner"></i>
+        </span>
+    </div>
+</div>
+<div id="main-wrapper" class="d-flex mt-3">
+            <div id="core-wrapper" class="d-flex flex-column">
+                <div id="main" class="d-flex flex-column">
+                    
+<div class="post pl-1 pr-1 pl-md-2 pr-md-2">
+    
+    <div id="post-content">
+        <h1 style="text-align: center;">PROPERTIES OF THE INTEGRAL</h1>
+        <br>
+        
+        <p><strong>6.12 Theorem</strong></p>
+<ol type="a">
+<li>If <span class="math inline">\(f_{1} \in
+\mathscr{R}(\alpha)\)</span> and <span class="math inline">\(f_{2} \in
+\mathscr{R}(\alpha)\)</span> on <span class="math inline">\([a,
+b]\)</span>, then</li>
+</ol>
+<p><span class="math display">\[
+f_{1}+f_{2} \in \mathscr{R}(\alpha),
+\]</span></p>
+<p><span class="math inline">\(c f \in \mathscr{R}(\alpha)\)</span> for
+every constant <span class="math inline">\(c\)</span>, and</p>
+<p><span class="math display">\[
+\begin{gathered}
+\int_{a}^{b}\left(f_{1}+f_{2}\right) d \alpha=\int_{a}^{b} f_{1} d
+\alpha+\int_{a}^{b} f_{2} d \alpha, \\
+\int_{a}^{b} c f d \alpha=c \int_{a}^{b} f d \alpha .
+\end{gathered}
+\]</span></p>
+<ol start="2" type="a">
+<li>If <span class="math inline">\(f_{1}(x) \leq f_{2}(x)\)</span> on
+<span class="math inline">\([a, b]\)</span>, then</li>
+</ol>
+<p><span class="math display">\[
+\int_{a}^{b} f_{1} d \alpha \leq \int_{a}^{b} f_{2} d \alpha .
+\]</span></p>
+<ol start="3" type="a">
+<li>If <span class="math inline">\(f \in \mathscr{R}(\alpha)\)</span> on
+<span class="math inline">\([a, b]\)</span> and if <span
+class="math inline">\(a&lt;c&lt;b\)</span>, then <span
+class="math inline">\(f \in \mathscr{R}(\alpha)\)</span> on <span
+class="math inline">\([a, c]\)</span> and on <span
+class="math inline">\([c, b]\)</span>, and</li>
+</ol>
+<p><span class="math display">\[
+\int_{a}^{c} f d \alpha+\int_{c}^{b} f d \alpha=\int_{a}^{b} f d \alpha
+.
+\]</span></p>
+<ol start="4" type="a">
+<li>If <span class="math inline">\(f \in \mathscr{R}(\alpha)\)</span> on
+<span class="math inline">\([a, b]\)</span> and if <span
+class="math inline">\(|f(x)| \leq M\)</span> on <span
+class="math inline">\([a, b]\)</span>, then</li>
+</ol>
+<p><span class="math display">\[
+\left|\int_{a}^{b} f d \alpha\right| \leq M[\alpha(b)-\alpha(a)] \text
+{. }
+\]</span></p>
+<ol start="5" type="a">
+<li>If <span class="math inline">\(f \in
+\mathscr{R}\left(\alpha_{1}\right)\)</span> and <span
+class="math inline">\(f \in \mathscr{R}\left(\alpha_{2}\right)\)</span>,
+then <span class="math inline">\(f \in
+\mathscr{R}\left(\alpha_{1}+\alpha_{2}\right)\)</span> and</li>
+</ol>
+<p><span class="math display">\[
+\int_{a}^{b} f d\left(\alpha_{1}+\alpha_{2}\right)=\int_{a}^{b} f d
+\alpha_{1}+\int_{a}^{b} f d \alpha_{2} ;
+\]</span></p>
+<p>if <span class="math inline">\(f \in \mathscr{R}(\alpha)\)</span> and
+<span class="math inline">\(c\)</span> is a positive constant, then
+<span class="math inline">\(f \in \mathscr{R}(c \alpha)\)</span> and</p>
+<p><span class="math display">\[
+\int_{a}^{b} f d(c \alpha)=c \int_{a}^{b} f d \alpha .
+\]</span></p>
+<p>Proof If <span class="math inline">\(f=f_{1}+f_{2}\)</span> and <span
+class="math inline">\(P\)</span> is any partition of <span
+class="math inline">\([a, b]\)</span>, we have</p>
+<p><span class="math display">\[
+\begin{aligned}
+L\left(P, f_{1}, \alpha\right)+L\left(P, f_{2}, \alpha\right) \leq L(P,
+f, \alpha) \\
+&amp; \leq U(P, f, \alpha) \leq U\left(P, f_{1}, \alpha\right)+U\left(P,
+f_{2}, \alpha\right) .
+\end{aligned}
+\]</span></p>
+<p>If <span class="math inline">\(f_{1} \in \mathscr{R}(\alpha)\)</span>
+and <span class="math inline">\(f_{2} \in \mathscr{R}(\alpha)\)</span>,
+let <span class="math inline">\(\varepsilon&gt;0\)</span> be given.
+There are partitions <span class="math inline">\(P_{j}\)</span> <span
+class="math inline">\((j=1,2)\)</span> such that</p>
+<p><span class="math display">\[
+U\left(P_{j}, f_{j}, \alpha\right)-L\left(P_{j}, f_{j},
+\alpha\right)&lt;\varepsilon
+\]</span></p>
+<p>These inequalities persist if <span
+class="math inline">\(P_{1}\)</span> and <span
+class="math inline">\(P_{2}\)</span> are replaced by their common
+refinement <span class="math inline">\(P\)</span>. Then (20) implies</p>
+<p><span class="math display">\[
+U(P, f, \alpha)-L(P, f, \alpha)&lt;2 \varepsilon,
+\]</span></p>
+<p>which proves that <span class="math inline">\(f \in
+\mathscr{R}(\alpha)\)</span>.</p>
+<p>With this same <span class="math inline">\(P\)</span> we have</p>
+<p><span class="math display">\[
+U\left(P, f_{J}, \alpha\right)&lt;\int f_{j} d \alpha+\varepsilon
+\quad(j=1,2) ;
+\]</span></p>
+<p>hence (20) implies</p>
+<p><span class="math display">\[
+\int f d \alpha \leq U(P, f, \alpha)&lt;\int f_{1} d \alpha+\int f_{2} d
+\alpha+2 \varepsilon .
+\]</span></p>
+<p>Since <span class="math inline">\(\varepsilon\)</span> was arbitrary,
+we conclude that</p>
+<p><span class="math display">\[
+\int f d \alpha \leq \int f_{1} d \alpha+\int f_{2} d \alpha .
+\]</span></p>
+<p>If we replace <span class="math inline">\(f_{1}\)</span> and <span
+class="math inline">\(f_{2}\)</span> in (21) by <span
+class="math inline">\(-f_{1}\)</span> and <span
+class="math inline">\(-f_{2}\)</span>, the inequality is reversed, and
+the equality is proved.</p>
+<p>The proofs of the other assertions of Theorem <span
+class="math inline">\(6.12\)</span> are so similar that we omit the
+details. In part <span class="math inline">\((c)\)</span> the point is
+that (by passing to refinements) we may restrict ourselves to partitions
+which contain the point <span class="math inline">\(c\)</span>, in
+approximating <span class="math inline">\(\int f d \alpha\)</span>.</p>
+<p><strong>6.13 Theorem</strong> If <span class="math inline">\(f \in
+\mathscr{R}(\alpha)\)</span> and <span class="math inline">\(g \in
+\mathscr{R}(\alpha)\)</span> on <span class="math inline">\([a,
+b]\)</span>, then</p>
+<ol type="a">
+<li><p><span class="math inline">\(f g \in
+\mathscr{R}(\alpha)\)</span>;</p></li>
+<li><p><span class="math inline">\(|f| \in \mathscr{R}(\alpha)\)</span>
+and <span class="math inline">\(\left|\int_{a}^{b} f d \alpha\right|
+\leq \int_{a}^{b}|f| d \alpha\)</span>.</p></li>
+</ol>
+<p>Proof If we take <span class="math inline">\(\phi(t)=t^{2}\)</span>,
+Theorem <span class="math inline">\(6.11\)</span> shows that <span
+class="math inline">\(f^{2} \in \mathscr{R}(\alpha)\)</span> if <span
+class="math inline">\(f \in \mathscr{R}(a)\)</span>. The identity</p>
+<p><span class="math display">\[
+4 f g=(f+g)^{2}-(f-g)^{2}
+\]</span></p>
+<p>completes the proof of <span class="math inline">\((a)\)</span>.</p>
+<p>If we take <span class="math inline">\(\phi(t)=|t|\)</span>, Theorem
+6.11 shows similarly that <span class="math inline">\(|f| \in
+\mathscr{R}(\alpha)\)</span>. Choose <span class="math inline">\(c=\pm
+1\)</span>, so that</p>
+<p><span class="math display">\[
+c \int f d \alpha \geq 0
+\]</span></p>
+<p>Then</p>
+<p><span class="math display">\[
+\left|\int f d \alpha\right|=c \int f d \alpha=\int c f d \alpha
+\leq-\int|f| d \alpha,
+\]</span></p>
+<p>since <span class="math inline">\(c f \leq|f|\)</span>.</p>
+<p><strong>6.14 Definition</strong> The unit step function <span
+class="math inline">\(I\)</span> is defined by <span
+class="math display">\[
+I(x)= \begin{cases}0 &amp; (x \leq 0) \\ 1 &amp; (x&gt;0)\end{cases}
+\]</span></p>
+<p><strong>6.15 Theorem</strong> If <span
+class="math inline">\(a&lt;s&lt;b, f\)</span> is bounded on <span
+class="math inline">\([a, b], f\)</span> is continuous at <span
+class="math inline">\(s\)</span>, and <span
+class="math inline">\(\alpha(x)=I(x-s)\)</span>, then <span
+class="math display">\[
+\int_{a}^{b} f d \alpha=f(s) .
+\]</span></p>
+<p>Proof Consider partitions <span class="math inline">\(P=\left\{x_{0},
+x_{1}, x_{2}, x_{3}\right\}\)</span>, where <span
+class="math inline">\(x_{0}=a\)</span>, and <span
+class="math inline">\(x_{1}=s&lt;x_{2}&lt;x_{3}=b\)</span>. Then</p>
+<p><span class="math display">\[
+U(P, f, \alpha)=M_{2}, \quad L(P, f, \alpha)=m_{2} .
+\]</span></p>
+<p>Since <span class="math inline">\(f\)</span> is continuous at <span
+class="math inline">\(s\)</span>, we see that <span
+class="math inline">\(M_{2}\)</span> and <span
+class="math inline">\(m_{2}\)</span> converge to <span
+class="math inline">\(f(s)\)</span> as <span class="math inline">\(x_{2}
+\rightarrow s\)</span>.</p>
+<p><strong>6.16 Theorem</strong> Suppose <span
+class="math inline">\(c_{n} \geq 0\)</span> for <span
+class="math inline">\(1,2,3, \ldots, \Sigma c_{n}\)</span> converges,
+<span class="math inline">\(\left\{s_{n}\right\}\)</span> is a sequence
+of distinct points in <span class="math inline">\((a, b)\)</span>, and
+<span class="math display">\[
+\alpha(x)=\sum_{n=1}^{\infty} c_{n} I\left(x-s_{n}\right) .
+\]</span></p>
+<p>Let <span class="math inline">\(f\)</span> be continuous on <span
+class="math inline">\([a, b]\)</span>. Then</p>
+<p><span class="math display">\[
+\int_{a}^{b} f d \alpha=\sum_{n=1}^{\infty} c_{n} f\left(s_{n}\right) .
+\]</span></p>
+<p>Proof The comparison test shows that the series (22) converges for
+every <span class="math inline">\(x\)</span>. Its <span
+class="math inline">\(\operatorname{sum} \alpha(x)\)</span> is evidently
+monotonic, and <span class="math inline">\(\alpha(a)=0, \alpha(b)=\Sigma
+c_{n}\)</span>. (This is the type of function that occurred in Remark
+4.31.)</p>
+<p>Let <span class="math inline">\(\varepsilon&gt;0\)</span> be given,
+and choose <span class="math inline">\(N\)</span> so that</p>
+<p><span class="math display">\[
+\sum_{N+1}^{\infty} c_{n}&lt;\varepsilon .
+\]</span></p>
+<p>Put</p>
+<p><span class="math display">\[
+\alpha_{1}(x)=\sum_{n=1}^{N} c_{n} I\left(x-s_{n}\right), \quad
+\alpha_{2}(x)=\sum_{N+1}^{\infty} c_{n} I\left(x-s_{n}\right) .
+\]</span></p>
+<p>By Theorems <span class="math inline">\(6.12\)</span> and <span
+class="math inline">\(6.15\)</span>,</p>
+<p><span class="math display">\[
+\int_{a}^{b} f d \alpha_{1}=\sum_{i=1}^{N} c_{n} f\left(s_{n}\right) .
+\]</span></p>
+<p>Since <span
+class="math inline">\(\alpha_{2}(b)-\alpha_{2}(a)&lt;\varepsilon\)</span></p>
+<p><span class="math display">\[
+\left|\int_{a}^{b} f d \alpha_{2}\right| \leq M \varepsilon,
+\]</span></p>
+<p>where <span class="math inline">\(M=\sup |f(x)|\)</span>. Since <span
+class="math inline">\(\alpha=\alpha_{1}+\alpha_{2}\)</span>, it follows
+from (24) and (25) that</p>
+<p><span class="math display">\[
+\left|\int_{a}^{b} f d \alpha-\sum_{i=1}^{N} c_{n}
+f\left(s_{n}\right)\right| \leq M \varepsilon .
+\]</span></p>
+<p>If we let <span class="math inline">\(N \rightarrow \infty\)</span>,
+we obtain (23).</p>
+<p><strong>6.17 Theorem</strong> Assume <span
+class="math inline">\(\alpha\)</span> increases monotonically and <span
+class="math inline">\(\alpha^{\prime} \in \mathscr{R}\)</span> on <span
+class="math inline">\([a, b]\)</span>. Let <span
+class="math inline">\(f\)</span> be a bounded real function on <span
+class="math inline">\([a, b]\)</span>.</p>
+<p>Then <span class="math inline">\(f \in \mathscr{R}(\alpha)\)</span>
+if and only if <span class="math inline">\(f \alpha^{\prime} \in
+\mathscr{R}\)</span>. In that case</p>
+<p><span class="math display">\[
+\int_{a}^{b} f d \alpha=\int_{a}^{b} f(x) \alpha^{\prime}(x) d x .
+\]</span></p>
+<p>Proof Let <span class="math inline">\(\varepsilon&gt;0\)</span> be
+given and apply Theorem <span class="math inline">\(6.6\)</span> to
+<span class="math inline">\(\alpha^{\prime}\)</span> : There is a
+partition <span class="math inline">\(P=\left\{x_{0}, \ldots,
+x_{n}\right\}\)</span> of <span class="math inline">\([a, b]\)</span>
+such that</p>
+<p><span class="math display">\[
+U\left(P, \alpha^{\prime}\right)-L\left(P,
+\alpha^{\prime}\right)&lt;\varepsilon .
+\]</span></p>
+<p>The mean value theorem furnishes points <span
+class="math inline">\(t_{i} \in\left[x_{i-1}, x_{i}\right]\)</span> such
+that</p>
+<p><span class="math display">\[
+\Delta \alpha_{i}=\alpha^{\prime}\left(t_{i}\right) \Delta x_{i}
+\]</span></p>
+<p>for <span class="math inline">\(i=1, \ldots, n\)</span>. If <span
+class="math inline">\(s_{i} \in\left[x_{i-1}, x_{i}\right]\)</span>,
+then</p>
+<p><span class="math display">\[
+\sum_{i=1}^{n}\left|\alpha^{\prime}\left(s_{i}\right)-\alpha^{\prime}\left(t_{i}\right)\right|
+\Delta x_{i}&lt;\varepsilon,
+\]</span></p>
+<p>by (28) and Theorem 6.7(b). Put <span class="math inline">\(M=\sup
+|f(x)|\)</span>. Since</p>
+<p><span class="math display">\[
+\sum_{i=1}^{n} f\left(s_{i}\right) \Delta \alpha_{i}=\sum_{i=1}^{n}
+f\left(s_{i}\right) \alpha^{\prime}\left(t_{i}\right) \Delta x_{i}
+\]</span></p>
+<p>it follows from (29) that</p>
+<p><span class="math display">\[
+\left|\sum_{i=1}^{n} f\left(s_{i}\right) \Delta
+\alpha_{i}-\sum_{i=1}^{n} f\left(s_{i}\right)
+\alpha^{\prime}\left(s_{i}\right) \Delta x_{i}\right| \leq M \varepsilon
+.
+\]</span></p>
+<p>In particular,</p>
+<p><span class="math display">\[
+\sum_{i=1}^{n} f\left(s_{i}\right) \Delta \alpha_{i} \leq U\left(P, f
+\alpha^{\prime}\right)+M \varepsilon,
+\]</span></p>
+<p>for all choices of <span class="math inline">\(s_{i}
+\in\left[x_{i-1}, x_{i}\right]\)</span>, so that</p>
+<p><span class="math display">\[
+U(P, f, \alpha) \leq U\left(P, f \alpha^{\prime}\right)+M \varepsilon .
+\]</span></p>
+<p>The same argument leads from (30) to</p>
+<p><span class="math display">\[
+U\left(P, f \alpha^{\prime}\right) \leq U(P, f, \alpha)+M \varepsilon .
+\]</span></p>
+<p>Thus</p>
+<p><span class="math display">\[
+\left|U(P, f, \alpha)-U\left(P, f \alpha^{\prime}\right)\right| \leq M
+\varepsilon .
+\]</span></p>
+<p>Now note that (28) remains true if <span
+class="math inline">\(P\)</span> is replaced by any refinement. Hence
+(31) also remains true. We conclude that</p>
+<p><span class="math display">\[
+\left|\int_{a}^{b} f d \alpha-\bar{\int}_{a}^{b} f(x) \alpha^{\prime}(x)
+d x\right| \leq M \varepsilon .
+\]</span></p>
+<p>But <span class="math inline">\(\varepsilon\)</span> is arbitrary.
+Hence</p>
+<p><span class="math display">\[
+\int_{a}^{b} f d \alpha=\bar{\int}_{a}^{b} f(x) \alpha^{\prime}(x) d x,
+\]</span></p>
+<p>for any bounded <span class="math inline">\(f\)</span>. The equality
+of the lower integrals follows from (30) in exactly the same way. The
+theorem follows.</p>
+<p><strong>6.18 Remark</strong> The two preceding theorems illustrate
+the generality and flexibility which are inherent in the Stieltjes
+process of integration. If <span class="math inline">\(\alpha\)</span>
+is a pure step function [this is the name often given to functions of
+the form (22)], the integral reduces to a finite or infinite series. If
+<span class="math inline">\(\alpha\)</span> has an integrable
+derivative, the integral reduces to an ordinary Riemann integral. This
+makes it possible in many cases to study series and integrals
+simultaneously, rather than separately.</p>
+<p>To illustrate this point, consider a physical example. The moment of
+inertia of a straight wire of unit length, about an axis through an
+endpoint, at right angles to the wire, is</p>
+<p><span class="math display">\[
+\int_{0}^{1} x^{2} d m
+\]</span></p>
+<p>where <span class="math inline">\(m(x)\)</span> is the mass contained
+in the interval <span class="math inline">\([0, x]\)</span>. If the wire
+is regarded as having a continuous density <span
+class="math inline">\(\rho\)</span>, that is, if <span
+class="math inline">\(m^{\prime}(x)=\rho(x)\)</span>, then (33) turns
+into</p>
+<p><span class="math display">\[
+\int_{0}^{1} x^{2} \rho(x) d x .
+\]</span></p>
+<p>On the other hand, if the wire is composed of masses <span
+class="math inline">\(m_{i}\)</span> concentrated at points <span
+class="math inline">\(x_{i},(33)\)</span> becomes</p>
+<p><span class="math display">\[
+\sum_{i} x_{i}^{2} m_{i} \text {. }
+\]</span></p>
+<p>Thus (33) contains (34) and (35) as special cases, but it contains
+much more; for instance, the case in which <span
+class="math inline">\(m\)</span> is continuous but not everywhere
+differentiable.</p>
+<p><strong>6.19 Theorem</strong> (change of variable) Suppose <span
+class="math inline">\(\varphi\)</span> is a <strong>strictly increasing
+continuous function</strong> that maps an interval <span
+class="math inline">\([A, B]\)</span> onto <span
+class="math inline">\([a, b]\)</span>. Suppose <span
+class="math inline">\(\alpha\)</span> is monotonically increasing on
+<span class="math inline">\([a, b]\)</span> and <span
+class="math inline">\(f \in \mathscr{R}(\alpha)\)</span> on <span
+class="math inline">\([a, b]\)</span>. Define <span
+class="math inline">\(\beta\)</span> and <span
+class="math inline">\(g\)</span> on <span class="math inline">\([A,
+B]\)</span> by <span class="math display">\[
+\beta(y)=\alpha(\varphi(y)), \quad g(y)=f(\varphi(y)) .
+\]</span></p>
+<p><span class="math display">\[
+\int_{A}^{B} g d \beta=\int_{a}^{b} f d \alpha
+\]</span></p>
+<p>Proof To each partition <span class="math inline">\(P=\left\{x_{0},
+\ldots, x_{n}\right\}\)</span> of <span class="math inline">\([a,
+b]\)</span> corresponds a partition <span
+class="math inline">\(Q=\left\{y_{0}, \ldots, y_{n}\right\}\)</span> of
+<span class="math inline">\([A, B]\)</span>, so that <span
+class="math inline">\(x_{i}=\varphi\left(y_{i}\right)\)</span>. All
+partitions of <span class="math inline">\([A, B]\)</span> are obtained
+in this way. Since the values taken by <span
+class="math inline">\(f\)</span> on <span
+class="math inline">\(\left[x_{i-1}, x_{i}\right]\)</span> are exactly
+the same as those taken by <span class="math inline">\(g\)</span> on
+<span class="math inline">\(\left[y_{i-1}, y_{i}\right]\)</span>, we see
+that</p>
+<p><span class="math display">\[
+U(Q, g, \beta)=U(P, f, \alpha), \quad L(Q, g, \beta)=L(P, f, \alpha) .
+\]</span></p>
+<p>Since <span class="math inline">\(f \in \mathscr{R}(\alpha),
+P\)</span> can be chosen so that both <span class="math inline">\(U(P,
+f, \alpha)\)</span> and <span class="math inline">\(L(P, f,
+\alpha)\)</span> are close to <span class="math inline">\(\int f d
+\alpha\)</span>. Hence (38), combined with Theorem 6.6, shows that <span
+class="math inline">\(g \in \mathscr{R}(\beta)\)</span> and that (37)
+holds. This completes the proof.</p>
+<p>Let us note the following special case:</p>
+<p>Take <span class="math inline">\(\alpha(x)=x\)</span>. Then <span
+class="math inline">\(\beta=\varphi\)</span>. Assume <span
+class="math inline">\(\varphi^{\prime} \in \mathscr{R}\)</span> on <span
+class="math inline">\([A, B]\)</span>. If Theorem <span
+class="math inline">\(6.17\)</span> is applied to the left side of (37),
+we obtain</p>
+<p><span class="math display">\[
+\int_{a}^{b} f(x) d x=\int_{A}^{B} f(\varphi(y)) \varphi^{\prime}(y) d y
+.
+\]</span></p>
+
+    </div>
+    
+</div>
+</div>
+
+                <div id="footer-wrapper">
+                    <footer class="footer"><footer class="row pl-3 pr-3">
+    <div class="col-12 d-flex justify-content-between align-items-center text-muted pl-0 pr-0">
+        <div class="footer-left">
+            <p class="mb-0"> © 2022 <a href="https://github.com/chen-gz">guangzong</a>. <span data-toggle="tooltip"
+                    data-placement="top"
+                    title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author.">All
+                    rights reserved.</span></p>
+        </div>
+        <div class="footer-right">
+            <p class="mb-0"> Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">hugo</a>
+                with <a href="https://github.com/chen-gz/hugo_zong" target="_blank" rel="noopener">zong</a>
+                theme.</p>
+        </div>
+    </div>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script> MathJax = {
+            tex: {
+                tags: 'ams',
+            }
+        };</script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</footer>
+</footer>
+                </div>
+            </div>
+            <div id="panel-wrapper" class="d-flex flex-column"><div id="toc-wrapper" class="mb-5 pl-2">
+    <span>Contents</span>
+    <nav id="toc" data-toggle="toc">
+        
+        
+        
+    </nav>
+</div>
+
+<div id="access-lastmod" class="pb-4 pl-2">
+    <div class="panel-heading">Recently Updated</div>
+    <ul class="post-content pl-3 pb-1 ml-1 mt-2">
+          
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/1-total-variation/">Total Variation</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-7/1-derivatives-of-measures/">Derivatives of Measures</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/3-consequences-of-the-radon-nikodym-theorem/">Consequences of the Radon-Nikodym Theorem</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/4-bounded-linear-functionals-on-lp/">Bounded linear functional on Lp</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/2-abosolute-continuity/">Abosolute Continuity</a></li>
+        
+    </ul>
+</div>
+
+<div id="access-tags" class="pl-2">
+    <div class="panel-heading">Trending Tags</div>
+    <div class="d-flex flex-wrap mt-3 mb-1 mr-3">
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/algorithm/">Algorithm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/android/">Android</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c/">C</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c-language/">c language</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/caddy/">Caddy</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cadence/">Cadence</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cdc/">CDC</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/classification/">classification</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/compress/">Compress</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/conf/">Conf</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/double-column/">Double Column</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/errno13/">Errno13</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/fish/">fish</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gan/">GAN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/git/">Git</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gtk/">Gtk</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/html/">Html</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/i3/">I3</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/idea/">Idea</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/java/">Java</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/latex/">Latex</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lda/">LDA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linear-programming/">Linear Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linux/">Linux</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lr/">LR</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/math/">Math</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mathematics/">Mathematics</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matlab/">Matlab</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matplot/">matplot</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/memory/">Memory</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mermaid/">Mermaid</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/misc/">Misc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/ml/">ML</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mosfet/">Mosfet</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/network/">Network</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/nn/">NN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pandoc/">Pandoc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pca/">PCA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/probability/">Probability</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/productive/">Productive</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/program/">Program</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/programming/">Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/python/">Python</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/qt/">Qt</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/random-variable/">Random Variable</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rcnn/">RCNN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rust/">Rust</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/security/">Security</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/software/">Software</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/std/">Std</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/svd/">Svd</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/tool/">Tool</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/usb/">USB</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vim/">Vim</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpn/">Vpn</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpnc/">Vpnc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/xterm/">xterm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/zsh/">Zsh</a>
+        
+    </div>
+</div>
+</div><div id="search-result-wrapper" class="d-flex justify-content-center unloaded">
+    <div class="col-12 col-sm-11 post-content">
+        <div id="search-hints"></div>
+        <div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3 col-12"></div>
+    </div>
+</div>
+
+<script src="/js/fuse.min.js"></script>
+<script src="/js/fastsearch.js"></script>
+
+
+</div>
+        <div id="mask"></div>
+        <a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button"
+            style="display: none">
+            <i class="fas fa-angle-up"></i>
+        </a>
+    </div>
+    
+</body>
+
+</html>

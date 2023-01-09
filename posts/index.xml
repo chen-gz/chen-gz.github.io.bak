@@ -1,0 +1,1277 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>post on Guangzong Blog</title>
+    <link>https://zongpitt.com/posts/</link>
+    <description>Recent content in post on Guangzong Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://zongpitt.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Independent Component Analysis</title>
+      <link>https://zongpitt.com/posts/independent-component-analysis/</link>
+      <pubDate>Sat, 17 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/independent-component-analysis/</guid>
+      <description>This blog mainly refers to Independent Component Analysis: Algorithms and Applications which wrote by Aapo Hyvärinen and Erkki Oja.
+Some useful reference
+Elements of Information Theory What is projection pursuit - Entropy Estimation New approximations of differential entropy for independent component analysis and projection pursuit - Entropy Estimation Definition Cocktail party problem Imagine that you are in a room where two people are speaking simultaneously. You have two microphones, which you hold in different locations.</description>
+    </item>
+    
+    <item>
+      <title>Linux disable suspend and hibernate</title>
+      <link>https://zongpitt.com/posts/misc/linux-disable-suspend-and-hibernate/</link>
+      <pubDate>Thu, 08 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/misc/linux-disable-suspend-and-hibernate/</guid>
+      <description>Following command disable suspend and hibernate function in Linux.
+# systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target </description>
+    </item>
+    
+    <item>
+      <title>heap and stack</title>
+      <link>https://zongpitt.com/posts/misc/heap-and-stack/</link>
+      <pubDate>Wed, 24 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/misc/heap-and-stack/</guid>
+      <description>img How to know the heap size in RAM.</description>
+    </item>
+    
+    <item>
+      <title>sdcard pin layout</title>
+      <link>https://zongpitt.com/posts/misc/sd-card-/</link>
+      <pubDate>Wed, 24 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/misc/sd-card-/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>stylegan v2 doc</title>
+      <link>https://zongpitt.com/posts/misc/stylegan-v2-doc/</link>
+      <pubDate>Wed, 24 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/misc/stylegan-v2-doc/</guid>
+      <description>import training speed
+cudnn_benchmark = True allow_tf32 = False torch.backends.cudnn.benchmark = cudnn_benchmark # Improves training speed. torch.backends.cuda.matmul.allow_tf32 = allow_tf32 # Allow PyTorch to internally use tf32 for matmul torch.backends.cudnn.allow_tf32 = allow_tf32 # Allow PyTorch to internally use tf32 for convolutions use nvidia custom gradient fixed convolution (not detail yet)
+training set keywards
+class_name = training.dataset.ImageFolderDataset path = /home/zong/datasets/food-101-gan use_labels = False max_szie = 98000 xflip = False resolution = 256 __len__ = 6 data_loader_kwargs</description>
+    </item>
+    
+    <item>
+      <title>setup samba and nginx server</title>
+      <link>https://zongpitt.com/posts/misc/server_setup/</link>
+      <pubDate>Sun, 07 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/misc/server_setup/</guid>
+      <description>samba install pacman -S samba gvfs-smb copy samba configure file
+add user for samba
+smbpasswd -a zong setup hostname (config file in samba) netbios name = gserver wins support = yes if connect using hostname, the subfolder name is required. It can not connect to the server without subfolder name.
+nginx </description>
+    </item>
+    
+    <item>
+      <title>HUGO setup</title>
+      <link>https://zongpitt.com/posts/misc/hugo-setup/</link>
+      <pubDate>Thu, 05 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/misc/hugo-setup/</guid>
+      <description>Build Hugo The default Hugo release does not satisfy my requirement. I want it to support pandoc with TOC (table of content) and extensions. Because pandoc has better math formula support.
+git clone https://github.com/chen-gz/hugo go build --tag extend We need Hugo to support pandoc because pandoc support math formula much better than default render.
+Second, we need extensions. So we need to build huge with parameter go build --tag extend .</description>
+    </item>
+    
+    <item>
+      <title>CMake and MathGL configuration</title>
+      <link>https://zongpitt.com/posts/2022-01-04-mathgl-cmake/</link>
+      <pubDate>Tue, 04 Jan 2022 11:36:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2022-01-04-mathgl-cmake/</guid>
+      <description>CMake and MathGL configuration Most of the content is from StackOverflow.
+cmake_minimum_required(VERSION 3.21) project(untitled) set(CMAKE_CXX_STANDARD 17) FIND_PATH(MathGL_INCLUDE_DIRS NAMES mgl2/mgl.h PATHS /opt/local/include /usr/include /usr/local/include ) FIND_LIBRARY(MathGL_LIB NAMES libmgl2.so PATHS /opt/local/lib /usr/local/lib /usr/lib ) FIND_LIBRARY(MathGL_QT_LIB NAMES libmgl2-qt5.so PATHS /opt/local/lib /usr/local/lib /usr/lib ) SET(MathGL_LIBRARIES ${MathGL_LIB} ${MathGL_QT_LIB}) message(${MathGL_LIBRARIES}) IF (MathGL_INCLUDE_DIRS AND MathGL_LIBRARIES) SET(MathGL_FOUND TRUE) MESSAGE(STATUS &amp;quot;MathGL found&amp;quot;) MESSAGE(STATUS &amp;quot;MathGL Include dirs:&amp;quot; ${MathGL_INCLUDE_DIRS}) MESSAGE(STATUS &amp;quot;MathGL Library:&amp;quot; ${MathGL_LIB}) ELSE (MathGL_INCLUDE_DIRS AND MathGL_LIBRARIES) MESSAGE(STATUS &amp;quot;MathGL was not found&amp;quot;) ENDIF(MathGL_INCLUDE_DIRS AND MathGL_LIBRARIES) #add_executable(untitled mathgl.</description>
+    </item>
+    
+    <item>
+      <title>Serial Communication Tool Description</title>
+      <link>https://zongpitt.com/posts/2021-10-08-serial_port_tool/</link>
+      <pubDate>Fri, 08 Oct 2021 11:36:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-10-08-serial_port_tool/</guid>
+      <description>I am an embedded software developer. USART is a very common communication protocol for communication and debug. I was using Moserial Terminal and Cutecom. But I found several problems with those tools. So I designed this tool to help embedded software developers. This tool still works in progress. The function of this tool is limited for now.
+The main thing in this tool is reliability. The tool will not crash and get correct data from the serial port.</description>
+    </item>
+    
+    <item>
+      <title>Manifolds</title>
+      <link>https://zongpitt.com/posts/2021-07-21-real-analysis-manifolds/</link>
+      <pubDate>Wed, 21 Jul 2021 11:36:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-07-21-real-analysis-manifolds/</guid>
+      <description>manifold: By an \(n\)-dimensional manifold we mean a connected Hausdorff space \(M\) such that each point has a neighborhood which is homeomorphic to a ball in \(R^n\)​. We sometimes express this by saying that a manifold is a connected Hausdorff space which is locally Euclidean. (real analysis)
+Hausdorff space: In topology and related branches of mathematics, a Hausdorff space, separated space or T2 space is a topological space where for any two distinct points there exist neighbourhoods of each which are disjoint from each other.</description>
+    </item>
+    
+    <item>
+      <title>Strongly connected components</title>
+      <link>https://zongpitt.com/posts/2021-07-20-dfs-scc/</link>
+      <pubDate>Tue, 20 Jul 2021 11:36:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-07-20-dfs-scc/</guid>
+      <description>Most content of this post is from Introduction to Algorithms. I will explain idea in a simple way but without any prove.
+Strongly connected components The definition of strongly connected components of a directed graph \(G= (V, E)\) is amximal set of vertices\(C\subseteq V\) such that for every pair of vertices \(u\) and \(v\) in \(C\), we have both \(u \leadsto v\) and \(v\leadsto u\); that is, verices \(u\) and \(v\) are reachable from each other.</description>
+    </item>
+    
+    <item>
+      <title>Style GAN</title>
+      <link>https://zongpitt.com/posts/2021-07-19-style-gan/</link>
+      <pubDate>Mon, 19 Jul 2021 10:36:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-07-19-style-gan/</guid>
+      <description>Nvidia post style GAN. This GAN structure can generate very high resolution image. this person does not exist shows a very good result to apply in human face generate.
+There are two paper relate to style GAN. A style-Based Generator Architecture for Generative Adversarial Networks proposed the idea. Analyzing and Improving the Image Quality of StyleGAN improve the styleGAN.
+The most important idea in style GAN is control different feature in different stage instead of put all of them in the first stage.</description>
+    </item>
+    
+    <item>
+      <title>Wasserstein GAN 1</title>
+      <link>https://zongpitt.com/posts/2021-07-17-wgan/</link>
+      <pubDate>Sat, 17 Jul 2021 10:36:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-07-17-wgan/</guid>
+      <description>There are two paper to introduce Wasserstein GAN. Towards Principled Methods for Training Generative Adversarial Networks and Wasserstein GAN.
+First one present the issue in the GAN. It prove several theorem to get understanding why GAN is unstable and why it is hard to train. There are a lot resources in the internet. This post will take ever theorem and give intuitive. Intuition means, it is not rigorous prove like the paper did.</description>
+    </item>
+    
+    <item>
+      <title>Wasserstein GAN 2</title>
+      <link>https://zongpitt.com/posts/2021-07-18-wgan2/</link>
+      <pubDate>Sat, 17 Jul 2021 10:36:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-07-18-wgan2/</guid>
+      <description>There are two paper to introduce Wasserstein GAN. Towards Principled Methods for Training Generative Adversarial Networks and Wasserstein GAN.
+Different Distances The Total Variation (TV) distance \[ \delta\left(\mathbb{P}_{r}, \mathbb{P}_{g}\right)=\sup _{A \in \Sigma}\left|\mathbb{P}_{r}(A)-\mathbb{P}_{g}(A)\right| \] The Kullback-Leibler (KL) divergence \[ K L\left(\mathbb{P}_{r} \| \mathbb{P}_{g}\right)=\int \log \left(\frac{P_{r}(x)}{P_{g}(x)}\right) P_{r}(x) d \mu(x) \]
+where both \(\mathbb{P}_{r}\) and \(\mathbb{P}_{g}\) are assumed to be absolutely continuous, and therefore admit densities, with respect to a same measure \(\mu\) defined on \(\mathcal{X} \stackrel{2}{ }^{2}\) The KL divergence is famously assymetric and possibly infinite when there are points such that \(P_{g}(x)=0\) and \(P_{r}(x)&amp;gt;0\)</description>
+    </item>
+    
+    <item>
+      <title>Singular value decomposition 5</title>
+      <link>https://zongpitt.com/posts/2021-06-17-svd5/</link>
+      <pubDate>Thu, 17 Jun 2021 17:18:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-06-17-svd5/</guid>
+      <description>The singular value decomposition for a matrix A writes A as a product (hanger)(stretcher)(aligner).
+It’s an amazing and useful fact that every m x n matrix has a singular value decomposition.
+The following theorem goes two-thirds of the way to proving this fact:
+Two-thirds Theorem For an \(m \times n\) matrix \(\mathrm{A}: \mathbb{R}^{\mathrm{n}} \rightarrow \mathbb{R}^{\mathbb{m}}\) and any orthonormal basis \(\left\{\vec{a}_{1}, \vec{a}_{2}, \ldots, \vec{a}_{n}\right\}\) of \(\mathbb{R}^{n}\), define \(s_{i}=\left\|\hat{a} \vec{a}_{i}\right\|\) and \(\vec{h}_{i}=\left\{\begin{array}{cc}\overrightarrow{0} &amp;amp; \text { if } s_{i}=0 \\ \frac{1}{s_{i}} A \vec{a}_{i} &amp;amp; \text { if } s_{i} \neq 0\end{array}\right.</description>
+    </item>
+    
+    <item>
+      <title>5 GAN structures</title>
+      <link>https://zongpitt.com/posts/2021-06-15-gans/</link>
+      <pubDate>Tue, 15 Jun 2021 10:36:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-06-15-gans/</guid>
+      <description>Auxiliary Classifier GAN Add additional classifier to help GAN generator better image. This is very similar to conditional GANs. The structure show as follow.
+Adversarial Autoencoders using GAN as regulator to help training autoencoder
+Two training stage.
+reconstruction
+regularization
+Least Square GAN different loss function, structure as same as original.
+Cycle GAN used for image to image translation
+Condition GAN Add more information as condition for GAN structure</description>
+    </item>
+    
+    <item>
+      <title>Generative Adversarial Nets</title>
+      <link>https://zongpitt.com/posts/2021-06-12-gan/</link>
+      <pubDate>Sat, 12 Jun 2021 10:36:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-06-12-gan/</guid>
+      <description>GAN is very popular network now. It can be used to generate fake read good fake dataset, change image style, generate carton images. Anyway, it is a really good network. As we all know it is useful, let’s get into detail directly. Generative adversarial network usually contains two part, generative model \(G\) and discriminative model \(D .\) Figure 1 shows this GAN structure.
+In GAN simultaneously train two models: a generative model \(G\) that capture the data distribution, and a discriminative model \(D\) that estimates the probability that a sample came from the training data rather than \(G\).</description>
+    </item>
+    
+    <item>
+      <title>Singular value decomposition 4</title>
+      <link>https://zongpitt.com/posts/2021-06-04-svd4/</link>
+      <pubDate>Fri, 04 Jun 2021 17:18:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-06-04-svd4/</guid>
+      <description>Projections Hitting with one matrix and then another Here’s a perpframe \(p_{1}=\left(\begin{array}{c}\cos (s) \\ \sin (s)\end{array}\right)\) and \(p_{2}=\left(\begin{array}{r}-\sin (s) \\ \cos (s)\end{array}\right)\) specified by angle \(s=\frac{\pi}{3}\).
+Plot an ellipse with a minor axis of \(0.5\) in the direction of \(\mathbf{p}_{1}\) and major axis of \(1.2\) in the direction of \(\mathbf{p}_{2}\).
+Answer: You know how to plot the unit circle:
+ParametricPlot \(\left[\left(\begin{array}{l}\operatorname{Cos}[t] \\ \operatorname{Sin}[t]\end{array}\right),\{\mathrm{t}, 0,2 \pi\}\right]\)
+You know how to use an xy-stretcher to stretch the circle into an ellipse with the desired axes lengths:</description>
+    </item>
+    
+    <item>
+      <title>Singular value decomposition 3</title>
+      <link>https://zongpitt.com/posts/2021-06-04-svd3/</link>
+      <pubDate>Fri, 04 Jun 2021 10:56:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-06-04-svd3/</guid>
+      <description>Coordinates From standard coordinates to perpframe coordinates. Here’s a perpframe together with the point \(P=\{1, \frac{1}{2}\}\).
+Use a matrix hit to find numbers a and \(\mathrm{b}\) so that \(P=a v_{1}+b v_{2}\).
+(The numbers a and b are the perpframe coordinates of the point P.)
+Why does that work?
+Answer: Here’s what you get when you hit everything in the plot above with the aligner matrix:
+The location of the rotated point aligner.</description>
+    </item>
+    
+    <item>
+      <title>t-SNE</title>
+      <link>https://zongpitt.com/posts/2021-05-18-t-sne/</link>
+      <pubDate>Tue, 18 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-05-18-t-sne/</guid>
+      <description>Introduction The content is from Visualizing Data using t-SNE which proposed by Lauren and Hinton. This method is mainly focus on visualizing data. It used a none lienar method to map high dimension data to low dimension data. Then it will be easy for human to tell the relationship between data and verify our algorithm. This post will only introduce he general idea of t-SNE. The trick and implement detail may not explain in this post.</description>
+    </item>
+    
+    <item>
+      <title>Singular value decomposition 1</title>
+      <link>https://zongpitt.com/posts/2021-04-21-svd1/</link>
+      <pubDate>Sat, 08 May 2021 22:00:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-04-21-svd1/</guid>
+      <description>The reason I copy this information from website is to archive this information. The original website is no longer valid. I don’t want this really good tutorial of SVD disappeared.
+Introduction The Singular Value Decomposition (SVD) is a topic rarely reached in undergraduate linear algebra courses and often skipped over in graduate courses.
+Consequently relatively few mathematicians are familiar with what M.I.T. Professor Gilbert Strang calls “absolutely a high point of linear algebra.</description>
+    </item>
+    
+    <item>
+      <title>Singular value decomposition 2</title>
+      <link>https://zongpitt.com/posts/2021-05-08-svd2/</link>
+      <pubDate>Sat, 08 May 2021 22:00:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-05-08-svd2/</guid>
+      <description>Stretchers Look at the action of \((\begin{array}{ll}3 &amp;amp; 0 \\\ 0 &amp;amp; 2\end{array})\).
+when you look at taht action you can see why it’s natural to call a diagonal matrix a “stretcher” matrix.
+The diagonal matrix \(\left(\begin{array}{ll}a &amp;amp; 0 \\\ 0 &amp;amp; b\end{array}\right)\) stretches in the \(x\) direction by a factor of “a” and in the y direction by a factor of “b”.
+You can verify this by hand using the column way to multiply a matrix times a vector: \[ \left(\begin{array}{ll} a &amp;amp; 0 \\\ 0 &amp;amp; b \end{array}\right)\left(\begin{array}{l} x \\\ y \end{array}\right)=x\left(\begin{array}{l} a \\\ 0 \end{array}\right)+y\left(\begin{array}{l} 0 \\\ b \end{array}\right)=\left(\begin{array}{l} a x \\\ b y \end{array}\right) \]</description>
+    </item>
+    
+    <item>
+      <title>Faster R-CNN paper notes</title>
+      <link>https://zongpitt.com/posts/2021-02-28-faster-rcnn/</link>
+      <pubDate>Mon, 26 Apr 2021 19:21:00 -0500</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-02-28-faster-rcnn/</guid>
+      <description>papper link
+github link
+github link python version
+Region Proposal Networks (RPNs) share convolutional layers with state-of-the-art object detection networks.
+main contribution.
+using region Proposal networks to make fast R-CNN faster.
+Region Proposal Network is an a full connection neural network
+Attention mechanisms</description>
+    </item>
+    
+    <item>
+      <title>Faster R-CNN</title>
+      <link>https://zongpitt.com/posts/2021-04-21-faster-r-cnn/</link>
+      <pubDate>Wed, 21 Apr 2021 20:00:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-04-21-faster-r-cnn/</guid>
+      <description>There is already a post about Faster R-CNN paper. Previous one is R-CNN note just for myself.
+In this post I will explain the idea of Faster R-CNN and make it very easy to understand.
+paper link
+The most idea alrady post on Fast R-CNN. The different is Faster R-CNN using RPN instead of selective search. The main idea of RPN is using sliding window and fast R-CNN sibling output layer to do region proposal.</description>
+    </item>
+    
+    <item>
+      <title>Fast R-CNN</title>
+      <link>https://zongpitt.com/posts/2021-04-21-fast-r-cnn/</link>
+      <pubDate>Wed, 21 Apr 2021 16:00:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-04-21-fast-r-cnn/</guid>
+      <description>There is already a post about Fast R-CNN paper. Previous one is Fast R-CNN note just for myself.
+In this post I will explain the idea of Fast R-CNN and make it very easy to understand.
+papper link
+The idea of previous version of R-CNN is very simple. We can easily understand the idea. It is multiple stage network. It have very clear work flow for R-CNN. Proposed regions –&amp;gt; feed to CNN –&amp;gt; classify.</description>
+    </item>
+    
+    <item>
+      <title>R-CNN</title>
+      <link>https://zongpitt.com/posts/2021-04-21-r-cnn/</link>
+      <pubDate>Wed, 21 Apr 2021 16:00:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-04-21-r-cnn/</guid>
+      <description>There is already a post about R-CNN paper. Previous one is R-CNN note just for myself.
+In this post I will explain the idea of R-CNN and make it very easy to understand.
+paper link
+Object detection system overview. Our system (1) takes an input image, (2) extracts around 2000 bottom-up region proposals, (3) computes features for each proposal using a large convolutional neural network (CNN), and then (4) classifies each region using class-specific linear SVMs.</description>
+    </item>
+    
+    <item>
+      <title>Draw a rectangle on image</title>
+      <link>https://zongpitt.com/posts/2021-04-18-draw-a-rectangle-on-image/</link>
+      <pubDate>Sun, 18 Apr 2021 13:28:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-04-18-draw-a-rectangle-on-image/</guid>
+      <description>from the stackoverflow[https://stackoverflow.com/questions/37435369/matplotlib-how-to-draw-a-rectangle-on-image]
+import matplotlib.pyplot as plt import matplotlib.patches as patches from PIL import Image im = Image.open(&amp;#39;stinkbug.png&amp;#39;) # Create figure and axes fig, ax = plt.subplots() # Display the image ax.imshow(im) # Create a Rectangle patch rect = patches.Rectangle((50, 100), 40, 30, linewidth=1, edgecolor=&amp;#39;r&amp;#39;, facecolor=&amp;#39;none&amp;#39;) # Add the patch to the Axes ax.add_patch(rect) plt.show() </description>
+    </item>
+    
+    <item>
+      <title>Initializing neural networks</title>
+      <link>https://zongpitt.com/posts/2021-04-03-initializing-neural-networks/</link>
+      <pubDate>Sat, 03 Apr 2021 15:54:00 -0500</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-04-03-initializing-neural-networks/</guid>
+      <description>read the post https://www.deeplearning.ai/ai-notes/initialization/index.html and https://cs230.stanford.edu/section/4/
+This two post is enough to understand the Xavier initialization.
+The Newer initialization is proposed by Kaiming He, A modified version of Xavier.
+Here is the link of the paper. https://www.cv-foundation.org/openaccess/content_iccv_2015/html/He_Delving_Deep_into_ICCV_2015_paper.html
+For more information of initializer refer to TensorFlow document. https://www.tensorflow.org/api_docs/python/tf/keras/initializers</description>
+    </item>
+    
+    <item>
+      <title>Dropout Regularization</title>
+      <link>https://zongpitt.com/posts/2021-04-02-dropout-regularization/</link>
+      <pubDate>Fri, 02 Apr 2021 19:06:00 -0500</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-04-02-dropout-regularization/</guid>
+      <description>Paper available from https://www.cs.toronto.edu/~hinton/absps/JMLRdropout.pdf and https://dl.acm.org/doi/10.5555/2627435.2670313
+The idea of dropout is eliminate some node randomly and then training the network.
+Inverted dropout technique makes the parameter remain same.
+https://machinelearning.wtf/terms/inverted-dropout/ https://pgaleone.eu/deep-learning/regularization/2017/01/10/anaysis-of-dropout/
+Intuition: Can’t rely on any one feature, so have to spread out weights.
+Different dropout ratio for different layer base on the number of the neuron number will help to improve the accuracy.
+Following is copy from link https://pgaleone.eu/deep-learning/regularization/2017/01/10/anaysis-of-dropout/ the author is Paolo Galeone.</description>
+    </item>
+    
+    <item>
+      <title>VC generalization bound</title>
+      <link>https://zongpitt.com/posts/2021-03-04-vc-generaliztion-bound/</link>
+      <pubDate>Thu, 04 Mar 2021 12:46:00 -0500</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-03-04-vc-generaliztion-bound/</guid>
+      <description>If we treated the growth function as an effective number of hypotheses, and replaced \(M\) in the generalization bound (2.1) with \(m_{}(N),\) the resulting bound would be
+\[ E_{\mathrm{out}}(g) \stackrel{?}{\leq} E_{\mathrm{in}}(g)+\sqrt{\frac{1}{2 N} \ln \frac{2 m_{\mathcal{H}}(N)}{\delta}} \]
+It turns out that this is not exactly the form that will hold. The quantities in red need to be technically modified to make (2.11) true. The correct bound, which is called the VC generalization bound, is given in the following theorem; it holds for any binary target function \(f,\) any hypothesis set \(,\) any learning algorithm \(,\) and any input probability distribution \(P\).</description>
+    </item>
+    
+    <item>
+      <title>Linux Matlab Avoid Frozen</title>
+      <link>https://zongpitt.com/posts/2021-03-03-linux-matlab-avoid-frozen/</link>
+      <pubDate>Wed, 03 Mar 2021 10:44:00 -0500</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-03-03-linux-matlab-avoid-frozen/</guid>
+      <description>using softwareopengl to avoid frozen when using matlab
+matlab -softwareopengl </description>
+    </item>
+    
+    <item>
+      <title>Fast R-CNN paper notes</title>
+      <link>https://zongpitt.com/posts/2021-02-28-fast-rcnn/</link>
+      <pubDate>Sun, 28 Feb 2021 15:03:00 -0500</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-02-28-fast-rcnn/</guid>
+      <description>papper link
+github link
+summary Basic idea is get CNN feature one time instead 2000 times.
+In R-CNN it will propose 2000 region, then do classification using CNN.
+It will run about 2000 times CNN. This is very slow proceesion. So in fast R-CNN it only run one time CNN and map the region to feature at the same time. Finally put these region into classification network.
+There is a lot detail different between R-CNN and fast R-CNN.</description>
+    </item>
+    
+    <item>
+      <title>Linux shutdown execute script</title>
+      <link>https://zongpitt.com/posts/2021-02-28-linux-shutdown-execute-script/</link>
+      <pubDate>Sun, 28 Feb 2021 14:27:00 -0500</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-02-28-linux-shutdown-execute-script/</guid>
+      <description>create file &amp;lt;service_name&amp;gt;.service at /etc/systemd/system/multi-user.target.wants/
+Example file
+[Unit] Description=unmount network disks before shutdown [Service] Type=oneshot RemainAfterExit=true ExecStop=/usr/local/bin/un_mount_script.sh [Install] WantedBy=multi-user.target then do systemctl enable &amp;lt;service_name&amp;gt; --now</description>
+    </item>
+    
+    <item>
+      <title>Principal component analysis</title>
+      <link>https://zongpitt.com/posts/2021-02-26-principal-component-analysis/</link>
+      <pubDate>Fri, 26 Feb 2021 13:50:00 -0500</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-02-26-principal-component-analysis/</guid>
+      <description>excellent material from Andrew Ng
+https://github.com/chen-gz/picBed/blob/master/PCA.pdf
+I add intuition here.
+The intuition of PCA for me comes from linear algebra’s base. (Orthogonal unit vector) form a vector space. All vectors can form from these vectors. Some bases only provide little information, so they can be ignored.
+PCA will keep the features with maximum variance.
+Procedure Normalization the data There are \(N\) samples, each sample is \(x^i \in \mathbb{R}^n\).
+Calculate mean value.</description>
+    </item>
+    
+    <item>
+      <title>Fish Add Path</title>
+      <link>https://zongpitt.com/posts/2021-02-26-fish-add-path/</link>
+      <pubDate>Fri, 26 Feb 2021 09:45:00 -0500</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-02-26-fish-add-path/</guid>
+      <description>set -x PATH $PATH /home/zong/.gem/ruby/2.7.0/bin </description>
+    </item>
+    
+    <item>
+      <title>Xterm settings</title>
+      <link>https://zongpitt.com/posts/2021-02-26-xterm-settings/</link>
+      <pubDate>Fri, 26 Feb 2021 09:21:00 -0500</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-02-26-xterm-settings/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
+      <title>Html redirecting</title>
+      <link>https://zongpitt.com/posts/2021-02-24-html-redirecting/</link>
+      <pubDate>Wed, 24 Feb 2021 22:17:00 -0500</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-02-24-html-redirecting/</guid>
+      <description>&amp;lt;html&amp;gt;&amp;lt;head&amp;gt;&amp;lt;title&amp;gt;redirecting&amp;gt;&amp;lt;/title&amp;gt;&amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;script language=&amp;#39;javascript&amp;#39;&amp;gt;document.location = &amp;#39;https://giogio.club&amp;#39;&amp;lt;/script&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; </description>
+    </item>
+    
+    <item>
+      <title>Neural Network Random Initialization</title>
+      <link>https://zongpitt.com/posts/2021-02-24-neural-network-random-initialization/</link>
+      <pubDate>Wed, 24 Feb 2021 15:17:00 -0500</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-02-24-neural-network-random-initialization/</guid>
+      <description>The neural network should initialization with very small and random value.
+There are two reason.
+if initialization with same value, the same layer neural will have some value no matter how much iteration. because of sigmoid function, it is not sensitive when value is large. So neural should be initialized with small value. </description>
+    </item>
+    
+    <item>
+      <title>Android Permission</title>
+      <link>https://zongpitt.com/posts/2021-02-24-android-permission/</link>
+      <pubDate>Wed, 24 Feb 2021 12:00:00 -0500</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-02-24-android-permission/</guid>
+      <description>the content is from following link
+https://www.geeksforgeeks.org/android-how-to-request-permissions-in-android-application/
+package org.geeksforgeeks.requestPermission; import android.Manifest; import android.content.pm.PackageManager; import android.support.annotation.NonNull; import android.support.v4.app.ActivityCompat; import android.support.v4.content.ContextCompat; import android.support.v7.app.AppCompatActivity; import android.os.Bundle; import android.view.View; import android.widget.Button; import android.widget.Toast; public class MainActivity extends AppCompatActivity { // Defining Buttons private Button storage, camera; // Defining Permission codes. // We can give any value // but unique for each permission. private static final int CAMERA_PERMISSION_CODE = 100; private static final int STORAGE_PERMISSION_CODE = 101; @Override protected void onCreate(Bundle savedInstanceState) { super.</description>
+    </item>
+    
+    <item>
+      <title>Java Date and Time</title>
+      <link>https://zongpitt.com/posts/2021-02-22-java-date-and-time/</link>
+      <pubDate>Mon, 22 Feb 2021 20:14:00 -0500</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-02-22-java-date-and-time/</guid>
+      <description>java get time from system
+import java.time.format.DateTimeFormatter; import java.time.LocalDateTime; public class CurrentDateTimeExample1 { public static void main(String[] args) { DateTimeFormatter dtf = DateTimeFormatter.ofPattern(&amp;quot;yyyy/MM/dd HH:mm:ss&amp;quot;); LocalDateTime now = LocalDateTime.now(); System.out.println(dtf.format(now)); } } </description>
+    </item>
+    
+    <item>
+      <title>Java file</title>
+      <link>https://zongpitt.com/posts/2021-02-22-java-file/</link>
+      <pubDate>Mon, 22 Feb 2021 18:54:00 -0500</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-02-22-java-file/</guid>
+      <description>Test file file exist by exists() method
+File tempFile = new File(&amp;quot;c:/temp/temp.txt&amp;quot;); boolean exists = tempFile.exists(); java read file by Scanner (code from w3school)
+import java.io.File; // Import the File class import java.io.FileNotFoundException; // Import this class to handle errors import java.util.Scanner; // Import the Scanner class to read text files public class ReadFile { public static void main(String[] args) { try { File myObj = new File(&amp;quot;filename.txt&amp;quot;); Scanner myReader = new Scanner(myObj); while (myReader.</description>
+    </item>
+    
+    <item>
+      <title>Growth Function</title>
+      <link>https://zongpitt.com/posts/2021-02-20-growth-function/</link>
+      <pubDate>Sat, 20 Feb 2021 22:07:00 -0500</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-02-20-growth-function/</guid>
+      <description>This material is from learning from data.</description>
+    </item>
+    
+    <item>
+      <title>linear function</title>
+      <link>https://zongpitt.com/posts/2021-02-20-linear-function/</link>
+      <pubDate>Sat, 20 Feb 2021 21:56:00 -0500</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-02-20-linear-function/</guid>
+      <description>This post is a notation for myself.
+line function
+\[ ax + by + c = 0 \]
+vector (a,b) is normal vector for this line, c is the bias for this line.
+and more we can regard it as a plane.
+\[ ax + by + cz = d \] where z = 1 and d = 0.
+vector (a, b, c) is normal vector for the plane.
+we can calculate distance between point and line easily by following equation.</description>
+    </item>
+    
+    <item>
+      <title>R-CNN paper notes</title>
+      <link>https://zongpitt.com/posts/2021-02-18-r-cnn-paper-notes/</link>
+      <pubDate>Thu, 18 Feb 2021 19:49:00 -0500</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-02-18-r-cnn-paper-notes/</guid>
+      <description>paper link
+Object detection system overview Our system (1) takes an input image, (2) extracts around 2000 bottom-up region proposals, (3) computes features for each proposal using a large convolutional neural network (CNN), and then (4) classifies each region using class-specific linear SVMs.
+General Idea and Reason (what and why) extent CNN to object detection &amp;gt; To what extent do the CNN classification results on ImageNet generalize to object detection results on the PASCAL VOC Challenge?</description>
+    </item>
+    
+    <item>
+      <title>Include Other HTML File by iframe</title>
+      <link>https://zongpitt.com/posts/2021-02-16-iframe-include-html/</link>
+      <pubDate>Tue, 16 Feb 2021 14:00:52 -0500</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-02-16-iframe-include-html/</guid>
+      <description>iframe can use include other html.
+&amp;lt;iframe src=&amp;quot;souce_path&amp;quot; width=&amp;quot;100%&amp;quot; height=&amp;quot;700px&amp;quot;&amp;gt;&amp;lt;/iframe&amp;gt; </description>
+    </item>
+    
+    <item>
+      <title>USB Communications Device Class</title>
+      <link>https://zongpitt.com/posts/2021-02-15-usb-cdc-linux/</link>
+      <pubDate>Mon, 15 Feb 2021 23:08:52 -0500</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-02-15-usb-cdc-linux/</guid>
+      <description>This code is not written by me. It is copy from website.
+I put it here just for easy to find.
+I change a little bit of this code to make it work. (It post 6 years ago, when i found it, it doesn’t work.)
+/* * This is a simple example to communicate with a CDC-ACM USB device * using libusb. */ #include &amp;lt;unistd.h&amp;gt; #include &amp;lt;stdlib.h&amp;gt; #include &amp;lt;stdio.h&amp;gt; #include &amp;lt;errno.</description>
+    </item>
+    
+    <item>
+      <title>Linear Discriminant Analysis</title>
+      <link>https://zongpitt.com/posts/2021-02-10-linear-discriminant-analysis/</link>
+      <pubDate>Wed, 10 Feb 2021 05:12:52 -0500</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-02-10-linear-discriminant-analysis/</guid>
+      <description>my Matlab implementation
+clc; clear all; load(&amp;#39;/home/zong/Downloads/dataLDA-1/dataLDA/trainTrain.mat&amp;#39;) load(&amp;#39;/home/zong/Downloads/dataLDA-1/dataLDA/testLDA.mat&amp;#39;) % X and Y here is training data Y = Ytrain; X = Xtrain; [featrue_size, sample] = size(Xtrain); pi_0 = length(find(Y==0))/size(Y,2); pi_1 = length(find(Y==1))/size(Y,2); % mean u_0 = mean(X(:,find(Y==0)),2); u_1 = mean(X(:,find(Y==1)),2); % covariance by my code (psudo, not exactly convariance) covv = ((X(:,find(Y==0)) - u_0)*(X(:,find(Y==0)) - u_0)&amp;#39; + (X(:,find(Y==1)) - u_1)*(X(:,find(Y==1)) - u_1)&amp;#39;)/200; a = inv(covv) * (u_0 - u_1); b = -0.</description>
+    </item>
+    
+    <item>
+      <title>monitor folder</title>
+      <link>https://zongpitt.com/posts/2021-01-24-monitor-folder/</link>
+      <pubDate>Sun, 24 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-01-24-monitor-folder/</guid>
+      <description>folloing scrip is used to monitor ag it folder by using inotify-tool
+#!/bin/bash src=&amp;quot;/home/git/hugo.git&amp;quot; /usr/bin/inotifywait -mq --timefmt &amp;#39;%d/%m/%y %H:%M&amp;#39; --format &amp;#39;%T %w%f%e&amp;#39; --event delete,modify,create,attrib $src | while read file do sh ./publish.sh done </description>
+    </item>
+    
+    <item>
+      <title>safe remove drive command</title>
+      <link>https://zongpitt.com/posts/2021-01-24-safe-remove-drive-command/</link>
+      <pubDate>Sun, 24 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-01-24-safe-remove-drive-command/</guid>
+      <description>install udisks2
+unmount udisksctl unmout -b /dev/sd****
+safe remove udisksctl power-off -b /dev/sdb*</description>
+    </item>
+    
+    <item>
+      <title>C language clang format config file</title>
+      <link>https://zongpitt.com/posts/misc/2021-01-05-c-language-clang-format-config-file/</link>
+      <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/misc/2021-01-05-c-language-clang-format-config-file/</guid>
+      <description>my clang format config file.
+show details --- Language: Cpp # BasedOnStyle: LLVM AccessModifierOffset: -2 AlignAfterOpenBracket: Align AlignArrayOfStructures: None AlignConsecutiveMacros: None AlignConsecutiveAssignments: None AlignConsecutiveBitFields: None AlignConsecutiveDeclarations: None AlignEscapedNewlines: Right AlignOperands: Align AlignTrailingComments: true AllowAllArgumentsOnNextLine: true AllowAllParametersOfDeclarationOnNextLine: true AllowShortEnumsOnASingleLine: true AllowShortBlocksOnASingleLine: Never AllowShortCaseLabelsOnASingleLine: false AllowShortFunctionsOnASingleLine: All AllowShortLambdasOnASingleLine: All AllowShortIfStatementsOnASingleLine: Never AllowShortLoopsOnASingleLine: false AlwaysBreakAfterDefinitionReturnType: None AlwaysBreakAfterReturnType: None AlwaysBreakBeforeMultilineStrings: false AlwaysBreakTemplateDeclarations: MultiLine AttributeMacros: - __capability BinPackArguments: true BinPackParameters: true BraceWrapping: AfterCaseLabel: false AfterClass: false AfterControlStatement: Never AfterEnum: false AfterFunction: false AfterNamespace: false AfterObjCDeclaration: false AfterStruct: false AfterUnion: false AfterExternBlock: false BeforeCatch: false BeforeElse: false BeforeLambdaBody: false BeforeWhile: false IndentBraces: false SplitEmptyFunction: true SplitEmptyRecord: true SplitEmptyNamespace: true BreakBeforeBinaryOperators: None BreakBeforeConceptDeclarations: true BreakBeforeBraces: Attach BreakBeforeInheritanceComma: false BreakInheritanceList: BeforeColon BreakBeforeTernaryOperators: true BreakConstructorInitializersBeforeComma: false BreakConstructorInitializers: BeforeColon BreakAfterJavaFieldAnnotations: false BreakStringLiterals: true ColumnLimit: 80 CommentPragmas: &amp;#39;^ IWYU pragma:&amp;#39; QualifierAlignment: Leave CompactNamespaces: false ConstructorInitializerIndentWidth: 4 ContinuationIndentWidth: 4 Cpp11BracedListStyle: true DeriveLineEnding: true DerivePointerAlignment: false DisableFormat: false EmptyLineAfterAccessModifier: Never EmptyLineBeforeAccessModifier: LogicalBlock ExperimentalAutoDetectBinPacking: false PackConstructorInitializers: BinPack BasedOnStyle: &amp;#39;&amp;#39; ConstructorInitializerAllOnOneLineOrOnePerLine: false AllowAllConstructorInitializersOnNextLine: true FixNamespaceComments: true ForEachMacros: - foreach - Q_FOREACH - BOOST_FOREACH IfMacros: - KJ_IF_MAYBE IncludeBlocks: Preserve IncludeCategories: - Regex: &amp;#39;^&amp;quot;(llvm|llvm-c|clang|clang-c)/&amp;#39; Priority: 2 SortPriority: 0 CaseSensitive: false - Regex: &amp;#39;^(&amp;lt;|&amp;quot;(gtest|gmock|isl|json)/)&amp;#39; Priority: 3 SortPriority: 0 CaseSensitive: false - Regex: &amp;#39;.</description>
+    </item>
+    
+    <item>
+      <title>cadence IC6 install</title>
+      <link>https://zongpitt.com/posts/2021-01-05-cadence-ic6-install/</link>
+      <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-01-05-cadence-ic6-install/</guid>
+      <description>https://seujxh.wordpress.com/2018/09/25/%e6%90%ad%e5%bb%ba%e5%9c%a8%e8%99%9a%e6%8b%9f%e6%9c%bacentos-7%e4%b8%8a%e7%9a%84cadence-ic617%e5%a5%97%e4%bb%b6/
+mkdir -p /opt/cadence/installscape mkdir -p /opt/mentor/Calibre2015
+should install lib32-gcc-libs
+127.0.0.1 主机名 主机别名
+#127.0.0.1 localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1 localhost localhost.localdomain localhost6 localhost6.localdomain6</description>
+    </item>
+    
+    <item>
+      <title>JavaFX in IDEA</title>
+      <link>https://zongpitt.com/posts/2021-01-03-javafx-in-idea/</link>
+      <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-01-03-javafx-in-idea/</guid>
+      <description>for JavaFx in idea we need add VM option
+link https://openjfx.io/openjfx-docs/</description>
+    </item>
+    
+    <item>
+      <title>Latex synchronize column</title>
+      <link>https://zongpitt.com/posts/2020-11-29-latex-synchronize-column/</link>
+      <pubDate>Sun, 29 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-11-29-latex-synchronize-column/</guid>
+      <description>the way to make two column synchoronze.
+chinese test
+\documentclass{article} \usepackage[UTF8]{ctex} \begin{document} 你好，这是一个测试文档。 \end{document} two column synchoronize template
+\documentclass{article} \usepackage[a4paper,top=1cm,bottom=2.1cm,left=2.1cm,right=1.8cm,% includehead,includefoot]{geometry} % \usepackage[UTF8]{ctex} \usepackage{parallel} \begin{document} \begin{Parallel} \ParallelLText{ % 左侧文字1 test } \ParallelRText{ % 右侧文字1 test2 } \ParallelPar \ParallelLText{ % 左侧文字2 } \ParallelRText{ % 右侧文字2 } \ParallelPar \end{Parallel} \end{document} </description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43; std library</title>
+      <link>https://zongpitt.com/posts/2020-11-27-c&#43;&#43;-std-library/</link>
+      <pubDate>Fri, 27 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-11-27-c&#43;&#43;-std-library/</guid>
+      <description>unique Removes all but the first element from every consecutive group of equivalent elements in the range [first,last).
+return value: An iterator to the element that follows the last element not removed.
+Example
+int n; vector&amp;lt;int&amp;gt; a; // suppose there are some value in a n = unique(a.begin(), a.end()) - a.begin(); // n is the number the unique item. a.resize(n); // remove repeated item. resize Resizes the container so that it contains n elements.</description>
+    </item>
+    
+    <item>
+      <title>Latex usage</title>
+      <link>https://zongpitt.com/posts/2020-11-23-latex-usage/</link>
+      <pubDate>Mon, 23 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-11-23-latex-usage/</guid>
+      <description>change image caption to center
+https://tex.stackexchange.com/questions/95207/how-to-center-a-specific-caption
+\captionsetup{justification=centering} Fix image position issue
+https://tex.stackexchange.com/questions/494694/how-can-i-get-my-table-or-figure-to-stay-where-they-are-instead-of-going-to-the
+\documentclass[a4paper,man,floatsintext,natbib]{apa6} how to insert image
+\begin{figure}[!h] \centering % 图片居中 \includegraphics[width = 15cm]{result1.png} \caption{Adversarial images} \label{Fig3} \end{figure} </description>
+    </item>
+    
+    <item>
+      <title>Matplot origin point</title>
+      <link>https://zongpitt.com/posts/2020-11-23-matplot-origin-point/</link>
+      <pubDate>Mon, 23 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-11-23-matplot-origin-point/</guid>
+      <description>change point orgin point to left-bottom corner.
+plt.xlim(0, 1) plt.ylim(0, 1) </description>
+    </item>
+    
+    <item>
+      <title>梦-记录-11-19</title>
+      <link>https://zongpitt.com/posts/2020-11-19-%E6%A2%A6-%E8%AE%B0%E5%BD%95-11-19/</link>
+      <pubDate>Thu, 19 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-11-19-%E6%A2%A6-%E8%AE%B0%E5%BD%95-11-19/</guid>
+      <description>今天早上的梦， 今天梦中的场景 有两个阶段，第一个阶段是我回到家里并且妹妹喊着要抱抱。
+第二个阶段是因为寒冷，梦到有人给我盖了两床被子，再两个梦中间，我醒来过一次。 然后将梦的内容说了一下才继续睡觉。
+人的记忆是非常短暂的，即使在当时我说出了梦境的内容，早上起来梦境还是快速的消失了。像是两个平行宇宙。 在这一次的梦境里，所有的东西都非常的清晰，非常的真实，甚至连情绪上的表现也有。
+人的视觉处理和记忆是分开。记忆和视觉无关。但是处理图像的方法几乎所有人都差不多。
+记忆是再不断训练神经元的过程而不是一直改变原有的神经元。 原有的记忆会不断的减弱。大部分的只是依靠现有的知识去想象和重建。而非真的有以前的记忆。
+人的记忆是高度压缩的，也是快速遗忘的。 人不会记住没有用的信息。冗余信息。信息越多当然越好，但是人脑的功率只有20多W。在有限资源的情况下需要高度压缩所有的内容。
+及时反馈，人对信息的处理不是到了最后一层才通过BP逐层往回传递。而是可能在连个细胞之间有信息传递的通道了。</description>
+    </item>
+    
+    <item>
+      <title>梦中梦的发生可能性</title>
+      <link>https://zongpitt.com/posts/2020-11-16-%E6%A2%A6%E4%B8%AD%E6%A2%A6%E7%9A%84%E5%8F%91%E7%94%9F%E5%8F%AF%E8%83%BD%E6%80%A7/</link>
+      <pubDate>Mon, 16 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-11-16-%E6%A2%A6%E4%B8%AD%E6%A2%A6%E7%9A%84%E5%8F%91%E7%94%9F%E5%8F%AF%E8%83%BD%E6%80%A7/</guid>
+      <description>梦中梦发生时，脑子在想什么？ 陈光宗在上optimization课时，我在睡午觉（第二顿饭后都觉难道不就是午觉吗？）。在我快醒来的时间里，发生了梦中梦。
+在梦中梦里，我大概在经历什么危险的事，整个人的状态都很不安，我挣扎着想要起来，但是怎样都睁不开眼，眼皮好像有千斤重。一旦我挣扎着睁眼又没有成功，就会有很严重的耳鸣，让我感觉脑袋都要炸了。梦里强烈的耳鸣也不是第一次了，而这是在我生病后才新出现的状况。好不容易从梦中梦里醒来了，但是还是困得不得了，随时都会再次睡下。这时，在梦里，陈光宗来了，在我床边坐了一会就准备离开。我慌了，好不容易来了个能叫醒我的人，就这么走了我可怎么办。于是我抓住他的手，想让他叫醒我。奈何陈光宗悟性有限，没能理解我的意思，还是靠我自己挣扎着才醒来的。虽然是在梦里醒来，但是周围环境和现实里基本一致，我也没觉得有什么区别，黑漆漆的一片。到这里，梦就真的醒了，我在一片黑暗中，看见陈光宗推门而入，把灯打开了，啪的一声，很快啊。
+靠着记忆的连贯性，我确定自己是完全醒了，而不是另一层套娃梦。那么问题来了，梦中梦的我想要醒来时，为什么那么艰难？这种体验陈光宗也有过。梦中梦的机制会不会和神经网络一样，是嵌套着的？还有，梦中梦的我醒来时，为什么不会意识到自己还在梦里？现实中醒来后，为什么我可以立刻意识到我醒了？区别在哪？体验感更真实吗？如果每次睡觉醒来后第一件事就是确认自己记忆的连贯性，有没有可能意识到自己还在梦里？
+盗梦空间里，区分现实和梦的关键道具是陀螺。如果我们也这么做，可以分辨梦和现实吗？</description>
+    </item>
+    
+    <item>
+      <title>Kalman Filter 卡尔曼滤波</title>
+      <link>https://zongpitt.com/posts/2020-11-12-kalman-filter/</link>
+      <pubDate>Thu, 12 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-11-12-kalman-filter/</guid>
+      <description>参考资料 kalman-filter 前言 卡尔曼滤波器是一个非常神奇的滤波器。卡尔曼滤波器就是一个状态估计器，与状态观测器的最大区别不大。 可以认为卡尔曼滤波器就是一个变系数的状态估计器。这里的系数成为卡尔曼增益。以纪念卡尔曼在1960年发表的文章中所作出的突出贡献。
+卡尔曼滤波器是在最小均方根误差意义下对状态变量的最优估计。在不同的参考资料中会给出不同的推导。
+本人看过两个不同的推导。 先对这两种方法的思路给出简单的描述 1. 直接给出均方根的表达式，然后对卡尔曼增益求导，这样就可以得到均方根取得极值时，最优的卡尔曼增益。 2. 使用函数逼近的想法，因为在过去时刻测量的数据具有无关性，因此使用新息的线性组合来表示状态变量，为了达到均方根最小的目的，就是选择合适系数，在这个想法的基础上，把公式变成递推公式就得到了卡尔曼滤波的公式。
+结论 在这里先直接的给出卡尔曼滤波公式。 这里的模型是最简单的状态空间模型 \[\begin{equation} \pmb{x}_{n} = \pmb{A}\pmb{x}_{n-1} + \pmb{\omega}_{n-1} \\\ \pmb{y}_{n} = \pmb{B}\pmb{x}_{n} + \pmb{v}_{n} \end{equation}\]{n} + {n} \end{equation} 其中\(\pmb{A}\)是\(\pmb{x}_{n-1}\)到\(\pmb{x}_n\)的过渡矩阵,\(\pmb{B}_n\)是测量矩阵。动态噪声\(\pmb{\omega}\)和测量噪声\(\pmb{v}\)满足均值为0的高斯分布，且相互独立。 \[\begin{equation} \begin{aligned} Q_{\omega} &amp;amp;=E\left[w_{k} w_{k}^{T}\right] \\\ Q_{v} &amp;amp;=E\left[v_{k} v_{k}^{T}\right] \end{aligned} \end{equation}\]\end{equation}
+卡尔曼滤波方程如下
+卡尔曼增益 \[\begin{equation} K_{k}=P_{k|k-1} B^T (B P_{k|k-1} B^T+Q_v)^{-1} \end{equation}\] 滤波方程 \[\begin{equation} \hat{x}_{k|k}=\hat{x}_{k|k-1}+K_{k} (y_{k}-B \hat{x}_{k|k-1}) \end{equation}\] 预测误差协方差矩阵 \[\begin{equation} P_{k|k}=(I-K_{k} B) P_{k|k-1} \end{equation}\] 预报方程 \[\begin{equation} \begin{array}{c} \hat{x}_{k+1|k}=A \hat{x}_{k|k} \\\ P_{k+1|k}=A P_{k|k} A^T +Q_{\omega} \end{array} \end{equation}\]\end{equation} 初始条件 1.</description>
+    </item>
+    
+    <item>
+      <title>凸规划的一些想法</title>
+      <link>https://zongpitt.com/posts/2020-11-08-%E5%85%B3%E4%BA%8E%E5%87%B8%E8%A7%84%E5%88%92%E7%9A%84%E6%83%B3%E6%B3%95/</link>
+      <pubDate>Sun, 08 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-11-08-%E5%85%B3%E4%BA%8E%E5%87%B8%E8%A7%84%E5%88%92%E7%9A%84%E6%83%B3%E6%B3%95/</guid>
+      <description>凸规划是指在凸函数上的寻找最小值或者最大值。
+一元函数的最值和极值 凸规划的基本想法来源于使用函数导数求函数极值。在一元函数中我们通过通过寻找导数值为0的点来寻找极大值和极小值。 \[ \frac{df(x)}{dx} = 0 \] 导数值为0的点可以确定为极值，但无法确定是极大值还是极小值。 因此通过二阶导数正负来确定是哪一种。 \[ \text{在极大值处有 } \frac{d^2f(x)}{dx^2} &amp;lt; 0 \\ \text{在极小值处有 }\frac{d^2f(x)}{dx^2} &amp;gt; 0 \\ \text{驻点 非极值点} \frac{d^2f(x)}{dx^2} = 0 \] 在凸函数上，极值将退化为最值。
+关于一元函数的极值可以理解为：函数f(x)在x方向上的变化量为0的点为极值点（可能是驻点）。
+多元函数的最值和极值 多元函数的极值和最值可以理解为一元函数的推广：多元函数的极值点在所有方向的上的变化量都为0.。在函数连续可微的情况下，这个条件可以退化成为：在基向量方向上，函数的变化量为0；
+例如，二元函数 \(f(x,y)\) 有一点\((x_0, y_0)\) 在方向\((0,1)\)和方向\((1,0)\)上的变化量为都0，可以推出函数\(f(x,y)\)在点\((x_0, y_0)\)上的所有方向变化量都为0。
+表达式为 \[ \frac{df(\mathbf{x})}{d\mathbf{x^T}} = 0 \]
+\[ \left[\begin{array}{c} \frac{\partial f}{\partial x_{1}} \\ \frac{\partial f}{\partial x_{2}} \\ \vdots \\ \frac{\partial f}{\partial x_{n}} \end{array}\right]=0 \]
+这就是所谓的一阶必要条件(first order necessary condition)。
+和一元函数类似，如果函数\(f(x,y)\) 有一点\((x_0,y_0)\)的hessian矩阵是positive defined（正定的），该点为极小值点；反之，为极大值点。此为二阶必要条件。如果既不是正定也不是负定，那该点为驻点。
+draft 凸规划得定理大多数可以有一元函数得全导数扩展。</description>
+    </item>
+    
+    <item>
+      <title>constrain optimization</title>
+      <link>https://zongpitt.com/posts/2020-10-24-first-order-necessary-conditions-constain/</link>
+      <pubDate>Sat, 07 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-10-24-first-order-necessary-conditions-constain/</guid>
+      <description>TANGENT PLANE Definition. A point \(x^{*}\) satisfying the constraint \(\mathbf{h}\left(\mathbf{x}^{*}\right)=\mathbf{0}\) is said to be a regular point of the constraint if the gradient vectors \(\nabla h_{1}\left(\mathbf{x}^{*}\right), \nabla h_{2}\left(\mathbf{x}^{*}\right), \ldots, \nabla h_{m}\left(\mathbf{x}^{*}\right)\) are linearly independent.
+Theorem. At a regular point \(\mathbf{x}^{*}\) of the surface \(S\) defined by \(\mathbf{h}(x)=0\) the tangent plane is equal to \[ M=\left\{y: \nabla h\left(x^{*}\right) y=0\right\} \]
+FIRST-ORDER NECESSARY CONDITIONS (EQUALITY CONSTRAINTS) Lemma. Let \(\mathbf{x}^{*}\) be a regular point of the constraints \(\mathbf{h}(\boldsymbol{x})=\boldsymbol{0}\) and a local extreme point ( \(a\) minimum or maximum) of \(f\) subject to these constraints.</description>
+    </item>
+    
+    <item>
+      <title>Conjugate Direction Method</title>
+      <link>https://zongpitt.com/posts/2020-11-02-conjugate-direction-method/</link>
+      <pubDate>Mon, 02 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-11-02-conjugate-direction-method/</guid>
+      <description>CONJUGATE DIRECTIONS Definition. Given a symmetric matrix \(\mathbf{Q}\), two vectors \(\mathbf{d}_{1}\) and \(\mathbf{d}_{2}\) are said to be \(\mathbf{Q}\) -orthogonal, or conjugate with respect to \(\mathbf{Q},\) if \(\mathbf{d}_{1}^{T} \mathbf{Q} \mathbf{d}_{2}=0 .\)
+Proposition. If \(\mathbf{Q}\) is positive definite and the set of nonzero vectors \(\mathrm{d}_{0}, \mathrm{d}_{1}, \mathrm{d}_{2}, \ldots, \mathrm{d}_{k}\) are \(\mathbf{Q}\)-orthogonal, then these vectors are linearly independent.
+Conjugate Direction Theorem Let \(\left\{\mathbf{d}_{i}\right\}_{i=0}^{n-1}\) be a set of nonzero \(\mathbf{Q}\) -orthogonal vectors. For any \(\mathbf{x}_{0} \in E^{n}\) the sequence \(\left\{\mathbf{x}_{\mathbf{k}}\right\}\) generated according to \[ \begin{equation} \mathbf{x}_{k+1}=\mathbf{x}_{k}+\alpha_{k} \mathbf{d}_{k}, k \geqslant 0 \end{equation} \] with \[ \begin{equation} \alpha_{k}=-\frac{\mathbf{g}_{k}^{T} \mathbf{d}_{k}}{\mathbf{d}_{k}^{T} \mathbf{Q} \mathbf{d}_{\mathbf{k}}} \end{equation} \] and \[ \mathrm{g}_{k}=\mathbf{Q} \mathbf{x}_{k}-\mathbf{b} \] converges to the unique solution, \(\mathbf{x}^{*},\) of \(\mathbf{Q} \mathbf{x}=\mathbf{b}\) after \(n\) steps, that is, \(\mathbf{x}_{n}=\mathbf{x}^{*}\)</description>
+    </item>
+    
+    <item>
+      <title>vpnc configuration</title>
+      <link>https://zongpitt.com/posts/2020-10-17-vpnc-configure/</link>
+      <pubDate>Mon, 02 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-10-17-vpnc-configure/</guid>
+      <description>IPSec gateway vpn.pitt.edu IPSec ID guc25 IPSec secret ooL6ohho Xauth username guc25 </description>
+    </item>
+    
+    <item>
+      <title>深夜睡不着觉的夜谈会Part1</title>
+      <link>https://zongpitt.com/posts/2020-11-02-%E6%B7%B1%E5%A4%9C%E7%9D%A1%E4%B8%8D%E7%9D%80%E8%A7%89%E7%9A%84%E5%A4%9C%E8%B0%88%E4%BC%9Apart1/</link>
+      <pubDate>Mon, 02 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-11-02-%E6%B7%B1%E5%A4%9C%E7%9D%A1%E4%B8%8D%E7%9D%80%E8%A7%89%E7%9A%84%E5%A4%9C%E8%B0%88%E4%BC%9Apart1/</guid>
+      <description>深夜睡不着觉的夜谈会part1
+经过半年的隔离，我总算等到了外卖平台大打折。10月30日，Kongfu Tea半价，不买不是人。终于，在十一月到来之前，我们喝到了奶茶店的奶茶，两杯加布丁，两杯加珍珠。
+但是我和陈光宗万万没想到，这奶茶的劲是真的足。凌晨两点，两个人一点睡意都没有。不仅没有睡意，还能侃大山。从人生哲学谈到宇宙物理，基本上能想到的都扯了一遍。本次日记为夜谈有趣部分总结。
+蛋壳宇宙：人在死后会去天堂，遇见上帝。而上帝会督促你去“投胎”，即转生开始体验下一个生命旅程。这个旅程是所有时空所有生命中的任意一个，只要是你尚未经历过的，都有可能。包括上帝，也是你。而所有生命旅程都体验完了，这个宇宙也就迎来了终结。这么一想，颇有种一为全，全为一的感觉。看来我杀我自己是真的。
+万物皆可薛定谔：薛定谔的猫是个老物理故事了，真要解释起来涉及的知识还挺深奥。但是用通俗的话来说，其实可以很简单。打个比方，我和小表弟分别后，在下一次见面之前，小表弟都有一定概率遭遇不测。所以在我见到小表弟之前，我是不能确定小表弟的状态的。所以小表弟处于又死又活的叠加态。故，万物皆可薛定谔。所以，只要我不看B站，我关注的UP主就会处于更新和拖更的叠加态。直到我打开了B站，我才能确定状态。所以我逛B站是有理由的。
+陈光宗自学能力培养之谜：陈光宗以前也是个会乖乖听课的小孩，但是他总忍不住在学习新知识的过程中联想以前学过的东西。等他回国神来，老师已经在讲其他的内容了。如果老师的进度不快，陈光宗有一定概率跟上老师进度，继续学习。如果老师讲的很快，他就跟不上了，最后只能自己看书弄懂。从小学到大学，老师讲课的速度是单调递增的，所以陈光宗的自学能力稳步提升。用我的话说，就是这小孩上课总走神，所以只能自学。还好脑子好，要不然大专又要多一个学生。
+陈嘉诚换女朋友规律总结：陈嘉诚可能比咱俩更容易适应新环境，证据如下：第一，陈嘉诚每逢寒暑假有大概率换女朋友。第二，在换了女朋友后三个月内，下一个女朋友预备将会出现在陈嘉诚的生活中，并迅速感情升温，连游戏都可以不打。第三，这家伙来美国后考了驾照，还有车。至于前两条规律，还需要更多样本来证实，如果将来没有更多样本……那就恭喜陈嘉诚终于快踏进婚姻的坟墓了。
+PS：最后我三点多才睡着。但是第二天的奶茶照喝不误。</description>
+    </item>
+    
+    <item>
+      <title>Python Permission Denied</title>
+      <link>https://zongpitt.com/posts/2020-10-29-python-errno13-permission-denied/</link>
+      <pubDate>Thu, 29 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-10-29-python-errno13-permission-denied/</guid>
+      <description>This may happen in windows although you have permission.
+The way to solve the problem is change properity of file in windows.
+file-&amp;gt;properties-&amp;gt;General
+uncheck Hidden and archived</description>
+    </item>
+    
+    <item>
+      <title>Some Usefull Samba Settings</title>
+      <link>https://zongpitt.com/posts/2020-10-29-samba-settings/</link>
+      <pubDate>Thu, 29 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-10-29-samba-settings/</guid>
+      <description>enable windows user to change the permission
+dos filemod = yes fix time synchronize issue
+time server = yes dos filetimes = yes fake directory create times = yes dos filetime resolution = yes </description>
+    </item>
+    
+    <item>
+      <title>Mermaid</title>
+      <link>https://zongpitt.com/posts/2020-10-28-mermaid/</link>
+      <pubDate>Wed, 28 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-10-28-mermaid/</guid>
+      <description>mermaid is a very good tool to draw simple diagram.
+official site
+most example can be found in the official website.
+The most simple example of flowchat.
+graph TD; A--&amp;gt;B; A--&amp;gt;C; B--&amp;gt;D; C--&amp;gt;D; graph LR A[Square Rect] -- Link text --&amp;gt; B((Circle)) A --&amp;gt; C(Round Rect) B --&amp;gt; D{Rhombus} C --&amp;gt; D </description>
+    </item>
+    
+    <item>
+      <title>关于记的机制的猜想Part1</title>
+      <link>https://zongpitt.com/posts/2020-10-27-%E5%85%B3%E4%BA%8E%E8%AE%B0%E7%9A%84%E6%9C%BA%E5%88%B6%E7%9A%84%E7%8C%9C%E6%83%B3part1/</link>
+      <pubDate>Tue, 27 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-10-27-%E5%85%B3%E4%BA%8E%E8%AE%B0%E7%9A%84%E6%9C%BA%E5%88%B6%E7%9A%84%E7%8C%9C%E6%83%B3part1/</guid>
+      <description>2020.10.27
+一早上没有喝水的陈光宗找不到杯子了。要喝水时找不到杯子已经不是第一次了，一般来说，找找厨房或者卧室就马上能找到。很奇怪的是我俩找遍了家里所有地方，连冰箱都看了，就是找不到。直到在厨房洗旧杯子时，看到微波炉的我才突然想起来，昨天陈光宗用微波炉热咖啡忘记拿出来了。
+杯子的事真相大白了，这让我俩关于人类记忆机制产生了一个猜想：记忆的开启需要一个关键物。比如找杯子时，微波炉就是开启关于杯子的记忆的关键物。但是只有关键物也不准确，因为在想起来之前，其实我们已经看到过微波炉很多遍了。而日常中的经验也是这样的规律，直到找到了物品，才想起来曾经自己有意无意把它放在这了。奇怪的是，突然想起来的记忆又非常清楚，当时的情景也十分鲜活。
+其实这不是我们俩第一次讨论关于记忆产生的机制了。上一次讨论是在找三笔画的字的时候。字与字之间基本没有逻辑关系可言，那为什么有的字就会突然从脑袋里冒出来呢？这种突然出现又毫无逻辑的记忆，真的没有规律可循吗？也许本质上是非常简单的机制，但是在想到之前，它就是琢磨不透。这么一想，简直就和找东西本质一样嘛（笑）。
+可能人的大部分记忆是基于某个场景重构的。利用脑海里元素拼接而成。而非真正的记住物体和历史。</description>
+    </item>
+    
+    <item>
+      <title>Vim Skill</title>
+      <link>https://zongpitt.com/posts/2020-10-26-vim-skill/</link>
+      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-10-26-vim-skill/</guid>
+      <description>vim skill vimgrep is same as vim.
+search a string in current folder :vim /&amp;lt;pattern&amp;gt;/gj * search a string in current folder and all subfolder :vim /&amp;lt;pattern&amp;gt;/gj ** search a string in current folder and all subfolder only search in source file :vim /&amp;lt;pattern&amp;gt;/gj */**.c open file with line number vim +&amp;lt;line_number&amp;gt; &amp;lt;filename&amp;gt; remove space at the end of line %s/\s\+$//g 可以删除行尾多余的空格和tab符号。
+%s/ *$//g /和*中间有空格，只能删除行尾空格，对于tab不能删除</description>
+    </item>
+    
+    <item>
+      <title>C Integer Overflow And Compare</title>
+      <link>https://zongpitt.com/posts/2020-10-25-c-integer-overflow-and-compare/</link>
+      <pubDate>Sun, 25 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-10-25-c-integer-overflow-and-compare/</guid>
+      <description>notice: this post used gcc, clang, pelle C, to test code. including C99, C17 standard
+I didn’t change integer length in printf function except long long(64 bits)
+Conclusion Do not trust C when doing compare using integer with overflow case. It is very stupid.
+Expression C use complement to store numbers wikipedia
+use following code will easy to find out how numbers store in C.
+printf(&amp;quot;%x\n&amp;quot;,1); // 1 printf(&amp;quot;%x\n&amp;quot;,2); // 2 printf(&amp;quot;%x\n&amp;quot;,-1); // ffffffff printf(&amp;quot;%x\n&amp;quot;,-2); // fffffffe printf(&amp;quot;%x\n&amp;quot;,0); // 0 printf(&amp;quot;%x\n&amp;quot;,-0); // 0 printf(&amp;quot;%d\n&amp;quot;,0x80000000); // the minium value -2147483648 printf(&amp;quot;%d\n&amp;quot;,0xffffffff); // -1 printf(&amp;quot;%d\n&amp;quot;,0x7fffffff); // largest value 2147483647 examination: why 0x8000 0000 is minimum value the first one means this number is negative value.</description>
+    </item>
+    
+    <item>
+      <title>Convex And Concave Functions</title>
+      <link>https://zongpitt.com/posts/2020-10-24-convex-and-concave-function/</link>
+      <pubDate>Sat, 24 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-10-24-convex-and-concave-function/</guid>
+      <description>Convex definition Definition. A function \(f\) defined on a convex set \(\Omega\) is said to be convex if, for every \(\mathbf{x}_{1}, \mathbf{x}_{2} \in\) \(\Omega\) and every \(\alpha, 0 \leqslant \alpha \leqslant 1,\) there holds
+\[ \begin{equation} f\left(\alpha \mathbf{x}_{1}+(1-\alpha) \mathbf{x}_{2}\right) \leqslant \alpha f\left(\mathbf{x}_{1}\right)+(1-\alpha) f\left(\mathbf{x}_{2}\right) \end{equation} \]
+If, for every \(\alpha, 0&amp;lt;\alpha&amp;lt;1,\) and \(\mathbf{x}_{1} \neq \mathbf{x}_{2},\) there holds
+\[ \begin{equation} f\left(\alpha \mathbf{x}_{1}+(1-\alpha) \mathbf{x}_{2}\right)&amp;lt;\alpha f\left(\mathbf{x}_{1}\right)+(1-\alpha) f\left(\mathbf{x}_{2}\right) \end{equation} \]
+then \(f\) is said to be strictly convex.</description>
+    </item>
+    
+    <item>
+      <title>First Order necessary condition</title>
+      <link>https://zongpitt.com/posts/2020-10-24-first-order-necessary-conditions/</link>
+      <pubDate>Sat, 24 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-10-24-first-order-necessary-conditions/</guid>
+      <description>Proposition 1. (First-order necessary conditions). Let \(\Omega\) be a subset of \(E^{n}\) and let \(f \in C^{1}\) be a function on \(\Omega\). If \(\mathbf{x}^{*}\) is a relative minimum point of \(f\) over \(\Omega,\) then for any \(\mathbf{d} \in E^{n}\) that is a feasible direction at \(\mathbf{x}^{*}\), we have \(\nabla f\left(\mathbf{x}^{*}\right) \mathbf{d} \geqslant 0 .\)
+Corollary. (Unconstrained case). Let \(\Omega\) be a subset of \(E^{n},\) and let \(f \in C^{1}\) be function on \(\Omega\).</description>
+    </item>
+    
+    <item>
+      <title>Qt Deploy And Compress</title>
+      <link>https://zongpitt.com/posts/2020-10-24-qt-deploy/</link>
+      <pubDate>Sat, 24 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-10-24-qt-deploy/</guid>
+      <description>windeployqt
+This tool will help deploy qt problem.
+usage:
+windeployqt &amp;lt;execute file name&amp;gt; and using enigma Virtual box to package files to one file.
+If deploy as a folder upx can be used to shrink the size.
+enigma Virtual box
+upx</description>
+    </item>
+    
+    <item>
+      <title>Second Order necessary condition</title>
+      <link>https://zongpitt.com/posts/2020-10-24-second-order-necessary-conditions/</link>
+      <pubDate>Sat, 24 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-10-24-second-order-necessary-conditions/</guid>
+      <description>Proposition 1. (Second-order necessary conditions). Let \(\Omega\) be a subset of \(E^{n}\) and let \(f \in C^{2}\) be a function on \(\Omega\). If \(\mathbf{x}^{*}\) is a relative minimum point of \(f\) over \(\Omega,\) then for any \(\mathbf{d} \in E^{n}\) that is a feasible direction at \(\mathbf{x}^{*}\) we have
+\(\nabla f\left(\mathbf{x}^{*}\right) \mathbf{d} \geqslant 0\) if \(\nabla f\left(\mathbf{x}^{*}\right) \mathbf{d}=0,\) then \(\mathbf{d}^{T} \nabla^{2} f\left(\mathbf{x}^{*}\right) \mathbf{d} \geqslant 0\) Proposition 2. (Second-order necessary conditions-unconstrained case). Let \(\mathbf{x}^{*}\) be an interior point of the set \(\Omega,\) and suppose \(\mathbf{x}^{*}\) is a relative minimum point over \(\Omega\) of the function \(f \in C^{2} .</description>
+    </item>
+    
+    <item>
+      <title>Linear Regression And Roc</title>
+      <link>https://zongpitt.com/posts/2020-10-22-linear-regression-and-roc/</link>
+      <pubDate>Thu, 22 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-10-22-linear-regression-and-roc/</guid>
+      <description>Receiver Operating Characteristic contingency table or confusion matrix, image-20201022185345033 \[ recall = TPR = \frac{T P}{T P+F N} \]
+\[ \mathrm{FPR}=\frac{\mathrm{FP}}{\mathrm{FP}+\mathrm{TN}} \]
+receiver operating example img Linear Regression using linear function to minimize the cost function.
+Seems like linear kernel SVM. The difference is SVM only consider support vector, linear regression will consider all samples.
+Experiment Result Food No Food 723 62 No 838 2265 for threshold = 0.1
+Result distribution (Histogram will be better) image-20201022192311836 ROC curve image-20201022192432434 </description>
+    </item>
+    
+    <item>
+      <title>Typora PicGo Setup</title>
+      <link>https://zongpitt.com/posts/2020-10-19-typora-picgo-setup/</link>
+      <pubDate>Mon, 19 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-10-19-typora-picgo-setup/</guid>
+      <description>File -&amp;gt; Preferences -&amp;gt; Image -&amp;gt; upload images
+{ &amp;quot;picBed&amp;quot;: { &amp;quot;current&amp;quot;: &amp;quot;github&amp;quot;, &amp;quot;github&amp;quot;: { &amp;quot;repo&amp;quot;: &amp;quot;chen-gz/picBed&amp;quot;, &amp;quot;branch&amp;quot;: &amp;quot;master&amp;quot;, &amp;quot;token&amp;quot;: &amp;quot;35823da939bd7717afde1449c852a25a26d73bfe&amp;quot;, &amp;quot;path&amp;quot;: &amp;quot;&amp;quot;, &amp;quot;customUrl&amp;quot;: &amp;quot;&amp;quot; } }, &amp;quot;picgoPlugins&amp;quot;: {} } </description>
+    </item>
+    
+    <item>
+      <title>Emerging Memory Technology</title>
+      <link>https://zongpitt.com/posts/2020-10-17-emerging-memory/</link>
+      <pubDate>Sat, 17 Oct 2020 11:00:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-10-17-emerging-memory/</guid>
+      <description> Memory_L01 Memory_L02 Memory_L03 Memory_L04_PCM all ECE 2263 Memory_L05_RRAM 1 ECE 2263 Memory_L06_RRAM II ECE 2263 Memory_L07_v3_Neuromorphic Intro(1) ECE 2263 Memory_L08_Neuromorphic Learning ECE 2263 Memory_L09_Synaptic Electronics </description>
+    </item>
+    
+    <item>
+      <title>Welfare-Optimal Driver Assignment in Ride Sharing</title>
+      <link>https://zongpitt.com/posts/2020-10-16-welfare-optimal-driver-assignment-in-fide-sharing/</link>
+      <pubDate>Fri, 16 Oct 2020 22:32:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-10-16-welfare-optimal-driver-assignment-in-fide-sharing/</guid>
+      <description>Problem Description After graduation, you decide to join ride sharing company Uber. An important problem of Uber is to assign drivers to different locations in order to maximize the sum of all driver’s payoffs, also called the welfare. Suppose there are n drivers to be assigned to l locations. How much payoff a driver can receive at location k will depend on how many drivers in total are at k since they compete with each other.</description>
+    </item>
+    
+    <item>
+      <title>Useful Linux Command</title>
+      <link>https://zongpitt.com/posts/2020-10-17-useful-linux-command/</link>
+      <pubDate>Sat, 17 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-10-17-useful-linux-command/</guid>
+      <description>Get CPU information
+cat /proc/cpuinfo change default terminal
+gsettings set org.cinnamon.desktop.default-applications.terminal exec kitty modify system PATH
+export PATH=$PATH:/place/with/the/file View all network socket and connect status
+netstat -na system sys TCP syn cookies status(default is on)
+sysctl -a | grep cookie (Display the SYN cookie flag) sysctl -w net.ipv4.tcp_syncookies=0 (turn off SYN cookie) sysctl -w net.ipv4.tcp_syncookies=1 (turn on SYN cookie) Netwox Tool 76
+image-20201017151944946 Netwox Tool 78
+image-20201017152400707 synchronize time</description>
+    </item>
+    
+    <item>
+      <title>Evaluation of Page Ranking</title>
+      <link>https://zongpitt.com/posts/2020-10-16-evaluation-of-page-ranking/</link>
+      <pubDate>Fri, 16 Oct 2020 18:39:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-10-16-evaluation-of-page-ranking/</guid>
+      <description>Problem Description After graduation, you decide to join Google. As a leading search engine company, an important problem Google faces is to evaluate the quality of a ranking of web pages. Many measures can capture this quality. In this question, we will consider the number of inverse pairs. Concretely, suppose you are asked o evaluate the ranking of \(n\) web pages. Web page \(i\) is ranked at position \(i\) on a search outcome page by Google.</description>
+    </item>
+    
+    <item>
+      <title>Mathematica Install</title>
+      <link>https://zongpitt.com/posts/2020-10-11-mathematica-install/</link>
+      <pubDate>Sun, 11 Oct 2020 20:20:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-10-11-mathematica-install/</guid>
+      <description>We don’t need using root to execute the file.
+Install Location Create an folder in /opt/ and change owner to normal user
+mkdir Mathematica chown zong:users mathematica provide following position for Mathematica
+/opt/Mathematica/11.3 create directory type y
+it will start installing
+Start Script in order to start Mathematica and change nothing in our system.
+Create a folder bin under Mathematica folder.
+cd /opt/Mathematica/11.3 mkdir bin chown zong:users bin type following command in Mathematica install terminal</description>
+    </item>
+    
+    <item>
+      <title>Git Configuration</title>
+      <link>https://zongpitt.com/posts/2020-10-10-git-configuration/</link>
+      <pubDate>Sat, 10 Oct 2020 23:49:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-10-10-git-configuration/</guid>
+      <description>Because I am using nvim as git different tool, following configuration is required.
+[user] email = guangzong@pitt.edu name = Guangzong Chen [merge] tool = vimdiff [mergetool] keepBackup = false [mergetool &amp;quot;vimdiff&amp;quot;] cmd = nvim -d $LOCAL $REMOTE $MERGED -c &amp;#39;$wincmd w&amp;#39; -c &amp;#39;wincmd J&amp;#39; [diff] tool = vimdiff [difftool] keepBackup = false [difftool &amp;quot;vimdiff&amp;quot;] cmd = nvim -d $LOCAL $REMOTE -c &amp;#39;$wincmd w&amp;#39; </description>
+    </item>
+    
+    <item>
+      <title>Setup ZSH</title>
+      <link>https://zongpitt.com/posts/2020-10-08-setup-zsh/</link>
+      <pubDate>Thu, 08 Oct 2020 23:54:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-10-08-setup-zsh/</guid>
+      <description>install zsh and plugins in order to keep system clear and I don’t need too much functions. So I only using the package which already in archlinux package.
+pacman -Syu zsh zhs-syntax-highlighting zsh-theme-powerlevel10k` pacman -Syu zsh-autosuggestings After these we need zshrc to configure zsh.
+Following command to get my zsh configuration
+wget guanngzong.xyz ./assets/linux/conf/zsh for zsh-theme-powerlevel10k theme, we just using following command to start configuration</description>
+    </item>
+    
+    <item>
+      <title>Vim Configuration</title>
+      <link>https://zongpitt.com/posts/2020-10-10-vim-configuration/</link>
+      <pubDate>Thu, 08 Oct 2020 23:54:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-10-10-vim-configuration/</guid>
+      <description>install neovim install neovim and python-pynvim. Install python-pynvim in order to support python
+basic settings show line number
+set number show invisible number
+set list set listchars=tab:&amp;gt;- share system clipboard. in Archlinux package xclip is required
+set clipboard=unnamedplus convert tab to space
+set expandtab spell check
+set spell spelllang=en_us plug-in plug-in manager vim-plug
+I am using neovim, so following command used to install vim-plug.
+sh -c &amp;#39;curl -fLo &amp;quot;${XDG_DATA_HOME:-$HOME/.local/share}&amp;quot;/nvim/site/autoload/plug.vim --create-dirs \ https://raw.</description>
+    </item>
+    
+    <item>
+      <title>Vim Configuration</title>
+      <link>https://zongpitt.com/posts/misc/vim-configuration/</link>
+      <pubDate>Thu, 08 Oct 2020 23:54:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/misc/vim-configuration/</guid>
+      <description>install neovim install neovim and python-pynvim. Install python-pynvim in order to support python
+vim-shortcut default collection and have the same dicimal keycode. Becareful.
+ZZ save and quit Z = &amp;lt;S-z&amp;gt; za toggle fold :windo diffthis to show the differnt between two buffer. :windo diffoff turn off the differnt view. </description>
+    </item>
+    
+    <item>
+      <title>Setup i3</title>
+      <link>https://zongpitt.com/posts/2020-10-08-setup-i3/</link>
+      <pubDate>Thu, 08 Oct 2020 10:12:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-10-08-setup-i3/</guid>
+      <description>i3 pacman -Syu i3-gap xorg-xint we are using startx to start i3. So change /etc/X11/xinit/xinitrc uncomment last four lines and add follwing lines
+export GTK_IM_MODULE=fcitx export QT_IM_MODULE=fcitx export XMODIFIERS=@im=fcitx exec i3 Before we start i3, we need some configuration. Otherwise we can no do anything aferter i3 been started.
+The configuration file for i3 is here. Follwing command can be use to set up configuration.
+mkdir -p ~/.config/i3 wget https://gist.githubusercontent.com/chen-gz/83eade557baf20a4021af321d973d8fe/raw/d0f0fdcfa03f32f9497d08689dad14c7fcbf54ec/i3_config -o ~/.</description>
+    </item>
+    
+    <item>
+      <title>Setup VPNC</title>
+      <link>https://zongpitt.com/posts/2020-10-06-setup-vpnc/</link>
+      <pubDate>Tue, 06 Oct 2020 17:58:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-10-06-setup-vpnc/</guid>
+      <description>Install pacman -Syu vpnc Configuration copy follwing configuration to /etc/vpnc/&amp;lt;name&amp;gt;.conf
+IPSec gateway vpn.pitt.edu IPSec ID sam_users IPSec secret ooL6ohho Xauth username guc25 </description>
+    </item>
+    
+    <item>
+      <title>Setup Star and GoldenDict Dictionary</title>
+      <link>https://zongpitt.com/posts/misc/2020-10-06-setup-star-dictionary/</link>
+      <pubDate>Tue, 06 Oct 2020 14:57:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/misc/2020-10-06-setup-star-dictionary/</guid>
+      <description>Refer to archlinux wiki and archlinux wiki - goldendict
+Install pacman -Syu Sdcv Once you have the appropriate files you can extract them into /usr/share/stardict/dic.
+Following command can be used.
+mkdir -p /usr/share/stardict/dic &amp;amp;&amp;amp; cd /usr/share/stardict/dic wget &amp;quot;https://github.com/chen-gz/picBed/raw/master/langdao-ec-gb.dict.dz&amp;quot; &amp;amp;&amp;amp; wget &amp;quot;https://raw.githubusercontent.com/chen-gz/picBed/master/langdao-ec-gb.idx&amp;quot; &amp;amp;&amp;amp; wget &amp;quot;https://raw.githubusercontent.com/chen-gz/picBed/master/langdao-ec-gb.ifo&amp;quot; Dictionary files
+dict index info </description>
+    </item>
+    
+    <item>
+      <title>Food Clarify</title>
+      <link>https://zongpitt.com/posts/2020-10-06-food-clarify/</link>
+      <pubDate>Tue, 06 Oct 2020 09:44:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-10-06-food-clarify/</guid>
+      <description>For each image k have 200 tag and confidence level.
+image tag1 confidence level … tag200 confidence level 1 tag1_1_name p1_2 tag200_1_name p1_200 2 tag1_2_name p2_1 tag200_2_name p2_200 … n tag1_n_name pn_1 tag200_n_name pn_200 Totally, 3641 tag appeared in all picture. Pict the tag with the highest frequency.
+construct the vector
+image tag1 tag2 … tag310 tag311 1 p1_1 p1_2 p1_310 p1_310 2 p2_1 p2_2 p2_310 p2_310 … n pn_1 pn_2 pn_310 pn_310 e.</description>
+    </item>
+    
+    <item>
+      <title>Setup Caddy</title>
+      <link>https://zongpitt.com/posts/2020-10-02-setup-caddy/</link>
+      <pubDate>Fri, 02 Oct 2020 16:02:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-10-02-setup-caddy/</guid>
+      <description>caddy configure file Install caddy for now caddy2 not in archlinux official repository, should using aur to install
+follwing key is require when i was install (data: 2020-10-02)
+gpg --keyserver pool.sks-keyservers.net --receive-keys 29D0817A67156E4F25DC24782A349DD577D586A5 After install we need to setup caddy. configure file locate in /etc/caddy/Caddyfile.
+My configure show as follow.
+guangzong.xyz:443 { # i am only using 443 port tls chen-gz@outlook.com root * path_to_you_website_file file_server } For me, my file are locate in user account.</description>
+    </item>
+    
+    <item>
+      <title>linux system log</title>
+      <link>https://zongpitt.com/posts/2020-10-02-linux-system-log/</link>
+      <pubDate>Fri, 02 Oct 2020 15:15:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-10-02-linux-system-log/</guid>
+      <description>login logs using command last and lastb to check the login information.
+last will show the last login information. The log file locate in /var/wtmp.
+last will show the the user who trying to login information. The log file locate in /var/btmp.</description>
+    </item>
+    
+    <item>
+      <title>Protect SSH Port</title>
+      <link>https://zongpitt.com/posts/2020-10-02-protect-ssh-port/</link>
+      <pubDate>Fri, 02 Oct 2020 14:43:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-10-02-protect-ssh-port/</guid>
+      <description>disable password login generate ssh key and put ssh publick to server.
+the location of server ssh key
+${USER_HOME}/.ssh/authorized_keys open /etc/ssh/sshd_config as root user.
+uncomment foloowing lines and becareful about the option should be no
+AuthorizedKeysFile .ssh/authorized_keys PasswordAuthentication no disable using root login the system in file /etc/ssh/sshd_config the option PermitRootLogin should be no
+PermitRootLogin no change login port to protect nmap scan in /etc/ssh/sshd_config uncomment Port 22 change to another port like Port 2020</description>
+    </item>
+    
+    <item>
+      <title>Setup Static Ip Address</title>
+      <link>https://zongpitt.com/posts/2020-09-29-setup-static-ip-address/</link>
+      <pubDate>Tue, 29 Sep 2020 22:01:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-09-29-setup-static-ip-address/</guid>
+      <description>Add following content to /etc/systemd/network/10-static.network
+The service systemd-networkd is required.
+[https://wiki.archlinux.org/index.php/systemd-networkd]
+[Match] Name=enp37s0 # may be wlan0 for wireless. Using ip addr to check [Network] DNS=0.0.0.0 Address=192.168.0.200/24 Gateway=192.168.0.255 </description>
+    </item>
+    
+    <item>
+      <title>How to Configure Arch Linux desktop</title>
+      <link>https://zongpitt.com/posts/2020-09-22-how-to-configure-archlinux-desktop/</link>
+      <pubDate>Tue, 22 Sep 2020 14:30:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-09-22-how-to-configure-archlinux-desktop/</guid>
+      <description>Assume already install Arch Linux. guide is here
+Network manager pacman -Syu networkmanager network-manager-applet dhcpcd dhclient systemctl enable NetworkManager touchpad To enable touchpad tap to click
+copy configure file to /etc/X11/xorg.conf.d/
+congifure file
+backlight pacman -S acpilight and add user to video group
+reference arch wiki
+gpasswd -a user group sound install pulseaudio to support sound
+pacman -S pulseaudio pavucontrol Chinese font pacman -Syu wqy-microhei Browser firefox and chrome both are good choise in linux system.</description>
+    </item>
+    
+    <item>
+      <title>How To Install Archlinux</title>
+      <link>https://zongpitt.com/posts/2020-09-11-how-to-install-archlinux/</link>
+      <pubDate>Fri, 11 Sep 2020 15:30:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-09-11-how-to-install-archlinux/</guid>
+      <description>Setup network In new version of installer image, wifi-menu instead by iwctl.
+using iwctl get into iwctl command window scan the network
+station wlan0 scan get the network
+station wlan0 get-networks connect to the network
+station wlan0 connect &amp;lt;ssid&amp;gt; after connect wireless network, use ping to test network
+ping google.com Synchronised time timedatectl set-ntp true Change mirrorlist choose one close to you
+vim /etc/pacman.d/mirrorlist Partition use lsblk to check disks and decide which one want to be installed archlinux system.</description>
+    </item>
+    
+    <item>
+      <title>MOSFET Structure</title>
+      <link>https://zongpitt.com/posts/2020-08-30-mosfet-structure/</link>
+      <pubDate>Mon, 31 Aug 2020 17:35:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-08-30-mosfet-structure/</guid>
+      <description>Basic Concept MOS stand for metal oxide semiconductor. FET stand for field effects transistor.
+MOSFET has four terminal, gate, source , drain and body. Source and drain actually they are same, they only been determined when there are external connection.
+Gate is used for control MOSFET. Source is the emit the resources. Drain is the receive the resources. Body is main part of MOSFET. Support and provide PN node to cut off the circuit.</description>
+    </item>
+    
+    <item>
+      <title>Fourier Transform</title>
+      <link>https://zongpitt.com/posts/2020-08-30-fourier-transform/</link>
+      <pubDate>Sun, 30 Aug 2020 11:51:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-08-30-fourier-transform/</guid>
+      <description>Reference mathworld Fourier Transform Willard Miller - Fourier Transform)(The pdf from website) Paul Heckbert - Fourier Transforms and the Fast Fourier Transform (FFT) Algorithm Fourier Series Concept The Fourier transform is a generalization of the complex Fourier series in the limit as \(L \to \infty\). Replace the discrete \(A_n\) with the continuous \(F(k)dk\) while letting \(n/L\to k\). Then change the sum to an integral, and the equations become
+\[ f(x)= \int_{-\infty}^\infty F(k) e^{2\pi ikx}dk \\ F(k)=\int_{-\infty}^\infty f(x)e^{-2\pi ikx}dx \]</description>
+    </item>
+    
+    <item>
+      <title>Discrete Fourier Transform</title>
+      <link>https://zongpitt.com/posts/2020-08-30-discrete-fourier-transfrom/</link>
+      <pubDate>Sun, 30 Aug 2020 11:49:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-08-30-discrete-fourier-transfrom/</guid>
+      <description>Reference mathworld Discrete Fourier Transform Paul Heckbert - Fourier Transforms and the Fast Fourier Transform (FFT) Algorithm Fourier Series Fourier Transform Concept When a signal is discrete and periodic, we don’t need the continuous Fourier transform. Instead we use the discrete Fourier transform, or DFT. Suppose our signal is a n for \(n =0 . . . N − 1\), and \(a_n = a_n+ jN\) for all \(n\) and \(j\). The discrete Fourier transform of \(a\)</description>
+    </item>
+    
+    <item>
+      <title>Fourier Seriers</title>
+      <link>https://zongpitt.com/posts/2020-08-30-fourier-series/</link>
+      <pubDate>Sun, 30 Aug 2020 11:47:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-08-30-fourier-series/</guid>
+      <description>Reference mathworld Fourier Series Willard Miller - Fourier Series (The pdf from website) Concept Any set of functions that form a complete orthogonal system have a corresponding generalized Fourier series analogous to the Fourier series. For example, using orthogonality of the roots of a Bessel function of the first kind gives a so-called Fourier-Bessel series.
+Fourier orthogonal function system:
+\[ 1,cosx,sinx,...,coskx,sinkx,\dots. \]
+these functions that form a complete orthogonal system over \([-\pi,\pi]\) in \(L^2[-\pi,\pi]\) space.</description>
+    </item>
+    
+    <item>
+      <title>A linear Programming Standard Form Problem</title>
+      <link>https://zongpitt.com/posts/2020-08-29-a-linear-programming-standard-form-problem/</link>
+      <pubDate>Sat, 29 Aug 2020 17:43:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-08-29-a-linear-programming-standard-form-problem/</guid>
+      <description>Problem from “Linear and Nonlinear Programing” problem 2.9
+Linear programming Standard Form The standard from of linear programming is
+\[ \begin{equation} \begin{array}{cl} \operatorname{minimize} &amp;amp; \mathbf{c}_{1}^{T} \mathbf{x}\\ \text { subject to } &amp;amp; \mathbf{Ax} = \mathbf{b} \\ &amp;amp; \mathbf{x} \geq 0 \end{array} \end{equation} \]
+Description of Problem A class of piecewise linear functions can be represented as \(f(x)=\) Maximum \((\mathbf{c}_{1}^{T} \mathbf{x}+ d_{1}, \mathbf{c}_{2}^{T} \mathbf{x}+d_{2}, \ldots, \mathbf{c}_{p}^{T} \mathbf{x}+d_{p}).\) For such a function \(f\), consider the problem</description>
+    </item>
+    
+    <item>
+      <title>Using RUST and GTK In Windows</title>
+      <link>https://zongpitt.com/posts/2020-08-28-using-rust-and-gtk-in-windows/</link>
+      <pubDate>Fri, 28 Aug 2020 18:30:00 -0400</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2020-08-28-using-rust-and-gtk-in-windows/</guid>
+      <description>Purpose The reason I writing this post is because none of documente give right process to bulid gtk in Windows. I spent a lot to build and simple gtk problem in Windows.
+Two Useful Link https://github.com/rust-lang/rustup/issues/846 https://www.reddit.com/r/rust/comments/86kmhu/compiling_rust_windows_gtk_stepbystep/ Installation And Build Project step to step using rust and gtk in Windows
+Install rust using default setting. Rust Downlaod Link. Go to http://www.msys2.org/ and install msys (x86_64). Downlaod Link Run these commands inside MSYS (not Windows cmd!</description>
+    </item>
+    
+    <item>
+      <title>EditGAN</title>
+      <link>https://zongpitt.com/posts/misc/2020-07-28-editgan/</link>
+      <pubDate>Tue, 28 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/misc/2020-07-28-editgan/</guid>
+      <description>This post summary two papers, DatasetGAN, EditGAN.
+Dataset GAN Dataset GAN proposed use GAN to generate segmentation data.
+Advance: Only few label image (40) can training the segmentation branch.
+Drawback: Only for those image which can be modeled by GAN.
+Network structure This network is based on styleGAN, it add a classification branch for segmentation.
+The key insight of DATASETGAN is that generative models such as GANs that are trained to synthesize highly realistic images must acquire semantic knowledge in their high dimensional latent space.</description>
+    </item>
+    
+    <item>
+      <title>Pandoc Convert Latex to Html</title>
+      <link>https://zongpitt.com/posts/2021-02-16-pandoc-convert-tex-html/</link>
+      <pubDate>Sun, 16 Feb 2020 14:00:52 -0500</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-02-16-pandoc-convert-tex-html/</guid>
+      <description>Following content are from pandoc document
+pandoc math.text -s --mathjax -o mathMathJax.html </description>
+    </item>
+    
+    <item>
+      <title>Logistic Regression</title>
+      <link>https://zongpitt.com/posts/2021-02-11-logistic-regression/</link>
+      <pubDate>Mon, 10 Feb 2020 05:12:52 -0500</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-02-11-logistic-regression/</guid>
+      <description>For many logistic regression note they will put cost function as
+\[ J = - \frac{1}{N} l(\theta) \]
+I am not doing this here, basicaly we can use gradien ascent to to maximized cost function in the notes instread of gradient decent. Ther are almost the same. I alos want to comment \(1/m\) here, for gradient descent algorithm, what we care about is gradient descent direction. We will choose learning rate to change gradient descent speed.</description>
+    </item>
+    
+    <item>
+      <title>Type of Continuous Random Variable</title>
+      <link>https://zongpitt.com/posts/2019-10-03-type-of-continuous-random-variable/</link>
+      <pubDate>Thu, 03 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2019-10-03-type-of-continuous-random-variable/</guid>
+      <description>&lt;h2 id=&#34;exponential-random-variable&#34;&gt;Exponential Random Variable&lt;/h2&gt;
+&lt;p&gt;Continuous version of the discrete geometric RV. Models the
+inter-arrival time for the Poisson process.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Type of Discrete Random Variable</title>
+      <link>https://zongpitt.com/posts/2019-10-03-type-of-discrete-random-variable/</link>
+      <pubDate>Thu, 03 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2019-10-03-type-of-discrete-random-variable/</guid>
+      <description>&lt;h2 id=&#34;uniform-random-variable&#34;&gt;Uniform Random Variable&lt;/h2&gt;
+&lt;p&gt;For each &lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt; in &lt;span
+class=&#34;math inline&#34;&gt;\(S_{X},\)&lt;/span&gt; we have &lt;span
+class=&#34;math inline&#34;&gt;\(p_{X}(k)=\frac{1}{M}\)&lt;/span&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Announcement of this blog</title>
+      <link>https://zongpitt.com/posts/2022-02-05-segment-tree/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2022-02-05-segment-tree/</guid>
+      <description>This blog will not going update anymore. I am going to seperate all topic and migrate to hugo.
+Following are new link for the new blog website.
+Algorithm Book – Collection of algorithms and data structures. Real analysis – permission required Paper notes – My Notes and comment of ML learning papers </description>
+    </item>
+    
+    <item>
+      <title>Reinforcement Learning</title>
+      <link>https://zongpitt.com/posts/2021-12-22-refinforcement-learning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/posts/2021-12-22-refinforcement-learning/</guid>
+      <description>MDPs are meant to be a straightforward framing of the problem of learning from interaction to achieve a goal. The learner and decision maker is called the agent. The thing it interacts with, comprising everything outside the agent, is called the environment. These interact continually, the agent selecting actions and the environment responding to these actions and presenting new situations to the agent. The environment also gives rise to rewards, special numerical values that the agent seeks to maximize over time through its choice of actions.</description>
+    </item>
+    
+  </channel>
+</rss>

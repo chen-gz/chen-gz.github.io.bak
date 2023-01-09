@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css"
+        class="dark-mode-native-dark-original" />
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+     
+    <link rel="stylesheet" href="https://zongpitt.com/sass/main.06935202011a97ba473ebeeb0cb6788daa9fb5a9fff471a4e85850293d1c5ac4.css" />
+    <title>
+          Guangzong Blog | CONTINUITY AND COMPACTNESS
+    </title>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.bundle.min.js"></script>
+    <script src=" https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.js"></script>
+
+    <script
+        src="https://cdn.jsdelivr.net/combine/npm/magnific-popup@1/dist/jquery.magnific-popup.min.js,npm/lozad/dist/lozad.min.js,npm/clipboard@2/dist/clipboard.min.js"></script>
+    <script type="text/javascript" src="/js/commons/back-to-top.js"></script>
+    
+    
+    
+    <script type="text/javascript" src="/js/commons/topbar-switch.js"></script>
+    <script type="text/javascript" src="/js/commons/sidebar.js"></script>
+    <script type="text/javascript" src="/js/utils/category-collapse.js"></script>
+    <script type="text/javascript" src="/js/utils/checkbox.js"></script>
+    <script type="text/javascript" src="/js/utils/clipboard.js"></script>
+    <script type="text/javascript" src="/js/utils/img-extra.js"></script>
+    <script type="text/javascript" src="/js/utils/pageviews.js"></script>
+    
+    <script type="text/javascript" src="/js/utils/timeago.js"></script>
+    
+    
+</head>
+<body data-spy="scroll" data-target="#toc" data-topbar-visible="true" class="d-flex"><div id="sidebar" class="d-flex flex-column align-items-end">
+    <div class="profile-wrapper text-center">
+
+        <div id="avatar">
+            <a href="/" alt="avatar" class="mx-auto"> <img src=https://github.com/chen-gz/chen-gz/blob/main/mine_square.jpg?raw&#61;truehttps://raw.githubusercontent.com/chen-gz/chen-gz/blob/main/mine_square.jpg alt="avatar"
+                    onerror="this.style.display='none'"> </a>
+        </div>
+
+        <div class="site-title mt-3"> <a href="/">Guangzong</a> </div>
+        <div class="site-subtitle font-italic">Welcome to my blog</div>
+    </div>
+
+    <ul>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/">
+                <span>
+                    Home
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/archive/">
+                <span>
+                    Archive
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/tags/">
+                <span>
+                    Tags
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/about/">
+                <span>
+                    About
+                </span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item">
+            
+
+            <a class="nav-link" href="/categories/">
+                <span>
+                    Categories
+                </span>
+            </a>
+        </li>
+        
+    </ul>
+
+    <div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center align-items-center">
+        <button class="mode-toggle btn" aria-label="Switch Mode"> 
+            <i class="fas fa-adjust"></i> 
+        </button>
+
+        <span class="icon-border"></span>
+        <a href="https://github.com/chen-gz" aria-label="github" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i>
+        </a>
+
+        <a href=" javascript:location.href = 'mailto:' + ['chen-gz','outlook.com'].join('@')" aria-label="email">
+            <i class="fas fa-envelope"></i>
+        </a>
+
+        <a href="/feed.xml" aria-label="rss"> <i class="fas fa-rss"></i> </a>
+    </div>
+
+    
+    
+</div>
+<div id="all-wrapper" class="d-flex flex-column"><div id="topbar-wrapper">
+    <div id="topbar" class="d-flex">
+        
+        <span id="breadcrumb" class="d-flex">
+              
+               
+            
+            
+            <div><a href='https://zongpitt.com/'>Home</a></div>
+              
+              
+            
+            <div><a href="https://zongpitt.com/baby-rudin">baby-rudin</a></div>
+               
+              
+            
+            <div><a href="https://zongpitt.com/baby-rudin/ch-4">ch-4</a></div>
+               
+                 
+                
+        </span>
+        <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i>
+        <div id="topbar-title">Guangzong</div>
+        <i id="search-trigger" class="fas fa-search fa-fw"></i>
+        <span id="search-wrapper" class="align-items-center">
+            <i class="fas fa-search fa-fw"></i>
+            <input class="form-control" id="search-input" type="search" aria-label="search" autocomplete="off"
+                placeholder="Search..." />
+            <i class="fa fa-times-circle fa-fw" id="search-cleaner"></i>
+        </span>
+    </div>
+</div>
+<div id="main-wrapper" class="d-flex mt-3">
+            <div id="core-wrapper" class="d-flex flex-column">
+                <div id="main" class="d-flex flex-column">
+                    
+<div class="post pl-1 pr-1 pl-md-2 pr-md-2">
+    
+    <div id="post-content">
+        <h1 style="text-align: center;">CONTINUITY AND COMPACTNESS</h1>
+        <br>
+        
+        <p><strong>4.13 Definition</strong> A mapping <span
+class="math inline">\(f\)</span> of a set <span
+class="math inline">\(E\)</span> into <span
+class="math inline">\(R^{k}\)</span> is said to be bounded if there is a
+real number <span class="math inline">\(M\)</span> such that <span
+class="math inline">\(|\mathrm{f}(x)| \leq M\)</span> for all <span
+class="math inline">\(x \in E\)</span>.</p>
+<p><strong>4.14 Theorem</strong> Suppose <span
+class="math inline">\(f\)</span> is a continuous mapping of a compact
+metric space <span class="math inline">\(X\)</span> into a metric space
+<span class="math inline">\(Y\)</span>. Then <span
+class="math inline">\(f(X)\)</span> is compact.</p>
+<p>Proof Let <span
+class="math inline">\(\left\{V_{\alpha}\right\}\)</span> be an open
+cover of <span class="math inline">\(f(X)\)</span>. Since <span
+class="math inline">\(f\)</span> is continuous, Theorem <span
+class="math inline">\(4.8\)</span> shows that each of the sets <span
+class="math inline">\(f^{-1}\left(V_{\alpha}\right)\)</span> is open.
+Since <span class="math inline">\(X\)</span> is compact, there are
+finitely many indices, say <span class="math inline">\(\alpha_{1},
+\ldots, \alpha_{n}\)</span>, such that <span class="math display">\[
+X \subset f^{-1}\left(V_{\alpha_{1}}\right) \cup \cdots \cup
+f^{-1}\left(V_{\alpha_{n}}\right) .
+\]</span> Since <span class="math inline">\(f\left(f^{-1}(E)\right)
+\subset E\)</span> for every <span class="math inline">\(E \subset
+Y,(12)\)</span> implies that <span class="math display">\[
+f(X) \subset V_{\alpha_{1}} \cup \cdots \cup V_{\alpha_{n}} .
+\]</span> This completes the proof. Note: We have used the relation
+<span class="math inline">\(f\left(f^{-1}(E)\right) \subset E\)</span>,
+valid for <span class="math inline">\(E \subset Y\)</span>. If <span
+class="math inline">\(E \subset X\)</span>, then <span
+class="math inline">\(f^{-1}(f(E)) \supset E\)</span>; equality need not
+hold in either case. We shall now deduce some consequences of Theorem
+4.14.</p>
+<p><strong>4.15 Theorem</strong> If <span
+class="math inline">\(\mathbf{f}\)</span> is a continuous mapping of a
+compact metric space <span class="math inline">\(X\)</span> into <span
+class="math inline">\(R^{k}\)</span>, then <span
+class="math inline">\(\mathbf{f}(X)\)</span> is closed and bounded.
+Thus, <span class="math inline">\(\mathrm{f}\)</span> is bounded.</p>
+<p>This follows from Theorem 2.41. The result is particularly important
+when <span class="math inline">\(f\)</span> is real: 4.16 Theorem
+Suppose <span class="math inline">\(f\)</span> is a continuous real
+function on a compact metric space <span
+class="math inline">\(X\)</span>, and <span class="math display">\[
+M=\sup _{p \in X} f(p), \quad m=\inf _{p \in X} f(p) .
+\]</span> Then there exist points <span class="math inline">\(p, q \in
+X\)</span> such that <span class="math inline">\(f(p)=M\)</span> and
+<span class="math inline">\(f(q)=m\)</span>. The notation in (14) means
+that <span class="math inline">\(M\)</span> is the least upper bound of
+the set of all numbers <span class="math inline">\(f(p)\)</span>, where
+<span class="math inline">\(p\)</span> ranges over <span
+class="math inline">\(X\)</span>, and that <span
+class="math inline">\(m\)</span> is the greatest lower bound of this set
+of numbers.</p>
+<p><strong>4.16 Theorem</strong> Suppose <span
+class="math inline">\(f\)</span> is a continuous real function on a
+compact metric space <span class="math inline">\(X\)</span>, and <span
+class="math display">\[
+M=\sup _{p \in X} f(p), \quad m=\inf _{p \in X} f(p) .
+\]</span> Then there exist points <span class="math inline">\(p, q \in
+X\)</span> such that <span class="math inline">\(f(p)=M\)</span> and
+<span class="math inline">\(f(q)=m\)</span>. The notation in (14) means
+that <span class="math inline">\(M\)</span> is the least upper bound of
+the set of all numbers <span class="math inline">\(f(p)\)</span>, where
+<span class="math inline">\(p\)</span> ranges over <span
+class="math inline">\(X\)</span>, and that <span
+class="math inline">\(m\)</span> is the greatest lower bound of this set
+of numbers.</p>
+<p>The conclusion may also be stated as follows: There exist points
+<span class="math inline">\(p\)</span> and <span
+class="math inline">\(q\)</span> in <span
+class="math inline">\(X\)</span> such that <span
+class="math inline">\(f(q) \leq f(x) \leq f(p)\)</span> for all <span
+class="math inline">\(x \in X\)</span>; that is, <span
+class="math inline">\(f\)</span> attains its maximum (at <span
+class="math inline">\(p\)</span> ) and its minimum (at <span
+class="math inline">\(q)\)</span>.</p>
+<p>Proof By Theorem 4.15, <span class="math inline">\(f(X)\)</span> is a
+closed and bounded set of real numbers; hence <span
+class="math inline">\(f(X)\)</span> contains <span
+class="math display">\[
+M=\sup f(X) \quad \text { and } \quad m=\inf f(X),
+\]</span> by Theorem <span class="math inline">\(2.28\)</span>.</p>
+<p><strong>4.17 Theorem</strong> Suppose <span
+class="math inline">\(f\)</span> is a continuous 1-1 mapping of a
+compact metric space <span class="math inline">\(X\)</span> onto a
+metric space <span class="math inline">\(Y\)</span>. Then the inverse
+mapping <span class="math inline">\(f^{-1}\)</span> defined on <span
+class="math inline">\(Y\)</span> by <span class="math display">\[
+f^{-1}(f(x))=x \quad(x \in X)
+\]</span> is a continuous mapping of <span
+class="math inline">\(Y\)</span> onto <span
+class="math inline">\(X\)</span>. Proof Applying Theorem <span
+class="math inline">\(4.8\)</span> to <span
+class="math inline">\(f^{-1}\)</span> in place of <span
+class="math inline">\(f\)</span>, we see that it suffices to prove that
+<span class="math inline">\(f(V)\)</span> is an open set in <span
+class="math inline">\(Y\)</span> for every open set <span
+class="math inline">\(V\)</span> in <span
+class="math inline">\(X\)</span>. Fix such a set <span
+class="math inline">\(V\)</span>.</p>
+<p>The complement <span class="math inline">\(V^{c}\)</span> of <span
+class="math inline">\(V\)</span> is closed in <span
+class="math inline">\(X\)</span>, hence compact (Theorem 2.35); hence
+<span class="math inline">\(f\left(V^{c}\right)\)</span> is a compact
+subset of <span class="math inline">\(Y\)</span> (Theorem 4.14) and so
+is closed in <span class="math inline">\(Y\)</span> (Theorem 2.34).
+Since <span class="math inline">\(f\)</span> is one-to-one and onto,
+<span class="math inline">\(f(V)\)</span> is the complement of <span
+class="math inline">\(f\left(V^{c}\right)\)</span>. Hence <span
+class="math inline">\(f(V)\)</span> is open.</p>
+<p><strong>4.18 Definition</strong> Let <span
+class="math inline">\(f\)</span> be a mapping of a metric space <span
+class="math inline">\(X\)</span> into a metric space <span
+class="math inline">\(Y\)</span>. We say that <span
+class="math inline">\(f\)</span> is uniformly continuous on <span
+class="math inline">\(X\)</span> if for every <span
+class="math inline">\(\varepsilon&gt;0\)</span> there exists <span
+class="math inline">\(\delta&gt;0\)</span> such that <span
+class="math display">\[
+d_{\mathbf{Y}}(f(p), f(q))&lt;\varepsilon
+\]</span> for all <span class="math inline">\(p\)</span> and <span
+class="math inline">\(q\)</span> in <span
+class="math inline">\(X\)</span> for which <span
+class="math inline">\(d_{\mathbf{X}}(p, q)&lt;\delta\)</span>. Let us
+consider the differences between the concepts of continuity and of
+uniform continuity. First, uniform continuity is a property of a
+function on a set, whereas continuity can be defined at a single point.
+To ask whether a given function is uniformly continuous at a certain
+point is meaningless. Second, if <span class="math inline">\(f\)</span>
+is continuous on <span class="math inline">\(X\)</span>, then it is
+possible to find, for each <span
+class="math inline">\(\varepsilon&gt;0\)</span> and for each point <span
+class="math inline">\(p\)</span> of <span
+class="math inline">\(X\)</span>, a number <span
+class="math inline">\(\delta&gt;0\)</span> having the property specified
+in Definition 4.5. This <span class="math inline">\(\delta\)</span>
+depends on <span class="math inline">\(\varepsilon\)</span> and on <span
+class="math inline">\(p\)</span>. If <span
+class="math inline">\(f\)</span> is, however, uniformly continuous on
+<span class="math inline">\(X\)</span>, then it is possible, for each
+<span class="math inline">\(\varepsilon&gt;0\)</span>, to find one
+number <span class="math inline">\(\delta&gt;0\)</span> which will do
+for all points <span class="math inline">\(p\)</span> of <span
+class="math inline">\(X\)</span>.</p>
+<p>Evidently, every uniformly continuous function is continuous. That
+the two concepts are equivalent on compact sets follows from the next
+theorem.</p>
+<p><strong>4.19 Theorem</strong> Let <span
+class="math inline">\(f\)</span> be a continuous mapping of a compact
+metric space <span class="math inline">\(X\)</span> into a metric space
+<span class="math inline">\(Y\)</span>. Then <span
+class="math inline">\(f\)</span> is uniformly continuous on <span
+class="math inline">\(X\)</span>.</p>
+<p>Proof Let <span class="math inline">\(\varepsilon&gt;0\)</span> be
+given. Since <span class="math inline">\(f\)</span> is continuous, we
+can associate to each point <span class="math inline">\(p \in X\)</span>
+a positive number <span class="math inline">\(\phi(p)\)</span> such that
+(16) <span class="math inline">\(q \in X, d_{X}(p,
+q)&lt;\phi(p)\)</span> implies <span class="math inline">\(d_{Y}(f(p),
+f(q))&lt;\frac{\varepsilon}{2}\)</span>. Let <span
+class="math inline">\(J(p)\)</span> be the set of all <span
+class="math inline">\(q \in X\)</span> for which <span
+class="math display">\[
+d_{\mathbf{x}}(p, q)&lt;\frac{1}{2} \phi(p) .
+\]</span> Since <span class="math inline">\(p \in J(p)\)</span>, the
+collection of all sets <span class="math inline">\(J(p)\)</span> is an
+open cover of <span class="math inline">\(X\)</span>; and since <span
+class="math inline">\(X\)</span> is compact, there is a finite set of
+points <span class="math inline">\(p_{1}, \ldots, p_{n}\)</span> in
+<span class="math inline">\(X\)</span>, such that <span
+class="math display">\[
+\text { We put } \quad \delta=\frac{1}{2} \min
+\left[\phi\left(p_{1}\right), \ldots, \phi\left(p_{n}\right)\right]
+\text {. }
+\]</span> Then <span class="math inline">\(\delta&gt;0\)</span>. (This
+is one point where the finiteness of the covering, inherent in the
+definition of compactness, is essential. The minimum of a finite set of
+positive numbers is positive, whereas the inf of an infinite set of
+positive numbers may very well be 0 .)</p>
+<p>Now let <span class="math inline">\(q\)</span> and <span
+class="math inline">\(p\)</span> be points of <span
+class="math inline">\(X\)</span>, such that <span
+class="math inline">\(d_{X}(p, q)&lt;\delta\)</span>. By (18), there is
+an integer <span class="math inline">\(m, 1 \leq m \leq n\)</span>, such
+that <span class="math inline">\(p \in J\left(p_{m}\right)\)</span>;
+hence <span class="math display">\[
+d_{x}\left(p, p_{m}\right)&lt;\frac{1}{2} \phi\left(p_{m}\right),
+\]</span> and we also have <span class="math display">\[
+d_{X}\left(q, p_{m}\right) \leq d_{X}(p, q)+d_{X}\left(p,
+p_{m}\right)&lt;\delta+\frac{1}{2} \phi\left(p_{m}\right) \leq
+\phi\left(p_{m}\right) .
+\]</span> Finally, (16) shows that therefore <span
+class="math display">\[
+d_{Y}(f(p), f(q)) \leq d_{Y}\left(f(p),
+f\left(p_{m}\right)\right)+d_{Y}\left(f(q),
+f\left(p_{m}\right)\right)&lt;\varepsilon .
+\]</span> This completes the proof. An alternative proof is sketched in
+Exercise <span class="math inline">\(10 .\)</span> We now proceed to
+show that compactness is essential in the hypotheses of Theorems <span
+class="math inline">\(4.14,4.15,4.16\)</span>, and 4.19.</p>
+<p><strong>4.20 Theorem</strong> Let <span
+class="math inline">\(E\)</span> be a noncompact set in <span
+class="math inline">\(R^{1}\)</span>. Then (a) there exists a continuous
+function on <span class="math inline">\(E\)</span> which is not bounded;
+(b) there exists a continuous and bounded function on <span
+class="math inline">\(E\)</span> which has no maximum. If, in addition,
+<span class="math inline">\(E\)</span> is bounded, then</p>
+<ol start="3" type="a">
+<li>there exists a continuous function on <span
+class="math inline">\(E\)</span> which is not uniformly continuous.</li>
+</ol>
+<p>Proof Suppose first that <span class="math inline">\(E\)</span> is
+bounded, so that there exists a limit point <span
+class="math inline">\(x_{0}\)</span> of <span
+class="math inline">\(E\)</span> which is not a point of <span
+class="math inline">\(E\)</span>. Consider <span class="math display">\[
+f(x)=\frac{1}{x-x_{0}} \quad(x \in E)
+\]</span> This is continuous on <span class="math inline">\(E\)</span>
+(Theorem 4.9), but evidently unbounded. To see that (21) is not
+uniformly continuous, let <span
+class="math inline">\(\varepsilon&gt;0\)</span> and <span
+class="math inline">\(\delta&gt;0\)</span> be arbitrary, and choose a
+point <span class="math inline">\(x \in E\)</span> such that <span
+class="math inline">\(\left|x-x_{0}\right|&lt;\delta\)</span>. Taking
+<span class="math inline">\(t\)</span> close enough to <span
+class="math inline">\(x_{0}\)</span>, we can then make the difference
+<span class="math inline">\(|f(t)-f(x)|\)</span> greater than <span
+class="math inline">\(\varepsilon\)</span>, although <span
+class="math inline">\(|t-x|&lt;\delta\)</span>. Since this is true for
+every <span class="math inline">\(\delta&gt;0, f\)</span> is not
+uniformly continuous on <span class="math inline">\(E\)</span>.</p>
+<p>The function <span class="math inline">\(g\)</span> given by <span
+class="math display">\[
+g(x)=\frac{1}{1+\left(x-x_{0}\right)^{2}} \quad(x \in E)
+\]</span> is continuous on <span class="math inline">\(E\)</span>, and
+is bounded, since <span class="math inline">\(0&lt;g(x)&lt;1\)</span>.
+It is clear that <span class="math display">\[
+\sup _{x \in E} g(x)=1,
+\]</span> whereas <span class="math inline">\(g(x)&lt;1\)</span> for all
+<span class="math inline">\(x \in E\)</span>. Thus <span
+class="math inline">\(g\)</span> has no maximum on <span
+class="math inline">\(E\)</span>. Having proved the theorem for bounded
+sets <span class="math inline">\(E\)</span>, let us now suppose that
+<span class="math inline">\(E\)</span> is unbounded. Then <span
+class="math inline">\(f(x)=x\)</span> establishes <span
+class="math inline">\((a)\)</span>, whereas <span
+class="math display">\[
+h(x)=\frac{x^{2}}{1+x^{2}} \quad(x \in E)
+\]</span> establishes <span class="math inline">\((b)\)</span>, since
+<span class="math display">\[
+\sup _{x \in E} h(x)=1
+\]</span> and <span class="math inline">\(h(x)&lt;1\)</span> for all
+<span class="math inline">\(x \in E\)</span>. Assertion <span
+class="math inline">\((c)\)</span> would be false if boundedness were
+omitted from the hypotheses. For, let <span
+class="math inline">\(E\)</span> be the set of all integers. Then every
+function defined on <span class="math inline">\(E\)</span> is uniformly
+continuous on <span class="math inline">\(E\)</span>. To see this, we
+need merely take <span class="math inline">\(\delta&lt;1\)</span> in
+Definition <span class="math inline">\(4.18\)</span>.</p>
+<p>We conclude this section by showing that compactness is also
+essential in Theorem 4.17.</p>
+<p><strong>4.21 Example</strong> Let <span
+class="math inline">\(X\)</span> be the half-open interval <span
+class="math inline">\([0,2 \pi)\)</span> on the real line, and let <span
+class="math inline">\(\mathrm{f}\)</span> be the mapping of <span
+class="math inline">\(X\)</span> onto the circle <span
+class="math inline">\(Y\)</span> consisting of all points whose distance
+from the origin is 1 , given by <span class="math display">\[
+\mathbf{f}(t)=(\cos t, \sin t) \quad(0 \leq t&lt;2 \pi) .
+\]</span> The continuity of the trigonometric functions cosine and sine,
+as well as their periodicity properties, will be established in Chap. 8.
+These results show that <span class="math inline">\(\mathrm{f}\)</span>
+is a continuous 1-1 mapping of <span class="math inline">\(X\)</span>
+onto <span class="math inline">\(Y\)</span>.</p>
+<p>However, the inverse mapping (which exists, since <span
+class="math inline">\(f\)</span> is one-to-one and onto) fails to be
+continuous at the point <span class="math inline">\((1,0)=f(0)\)</span>.
+Of course, <span class="math inline">\(X\)</span> is not compact in this
+example. (It may be of interest to observe that <span
+class="math inline">\(\mathbf{f}^{-1}\)</span> fails to be continuous in
+spite of the fact that <span class="math inline">\(Y\)</span> is
+compact!)</p>
+
+    </div>
+    
+</div>
+</div>
+
+                <div id="footer-wrapper">
+                    <footer class="footer"><footer class="row pl-3 pr-3">
+    <div class="col-12 d-flex justify-content-between align-items-center text-muted pl-0 pr-0">
+        <div class="footer-left">
+            <p class="mb-0"> © 2022 <a href="https://github.com/chen-gz">guangzong</a>. <span data-toggle="tooltip"
+                    data-placement="top"
+                    title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author.">All
+                    rights reserved.</span></p>
+        </div>
+        <div class="footer-right">
+            <p class="mb-0"> Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">hugo</a>
+                with <a href="https://github.com/chen-gz/hugo_zong" target="_blank" rel="noopener">zong</a>
+                theme.</p>
+        </div>
+    </div>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script> MathJax = {
+            tex: {
+                tags: 'ams',
+            }
+        };</script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</footer>
+</footer>
+                </div>
+            </div>
+            <div id="panel-wrapper" class="d-flex flex-column"><div id="toc-wrapper" class="mb-5 pl-2">
+    <span>Contents</span>
+    <nav id="toc" data-toggle="toc">
+        
+        
+        
+    </nav>
+</div>
+
+<div id="access-lastmod" class="pb-4 pl-2">
+    <div class="panel-heading">Recently Updated</div>
+    <ul class="post-content pl-3 pb-1 ml-1 mt-2">
+          
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/1-total-variation/">Total Variation</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-7/1-derivatives-of-measures/">Derivatives of Measures</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/3-consequences-of-the-radon-nikodym-theorem/">Consequences of the Radon-Nikodym Theorem</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/4-bounded-linear-functionals-on-lp/">Bounded linear functional on Lp</a></li>
+        
+        <li><a href="https://zongpitt.com/papa-rudin/ch-6/2-abosolute-continuity/">Abosolute Continuity</a></li>
+        
+    </ul>
+</div>
+
+<div id="access-tags" class="pl-2">
+    <div class="panel-heading">Trending Tags</div>
+    <div class="d-flex flex-wrap mt-3 mb-1 mr-3">
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/algorithm/">Algorithm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/android/">Android</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c/">C</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/c-language/">c language</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/caddy/">Caddy</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cadence/">Cadence</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/cdc/">CDC</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/classification/">classification</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/compress/">Compress</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/conf/">Conf</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/double-column/">Double Column</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/errno13/">Errno13</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/fish/">fish</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gan/">GAN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/git/">Git</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/gtk/">Gtk</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/html/">Html</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/i3/">I3</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/idea/">Idea</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/java/">Java</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/latex/">Latex</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lda/">LDA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linear-programming/">Linear Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/linux/">Linux</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/lr/">LR</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/math/">Math</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mathematics/">Mathematics</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matlab/">Matlab</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/matplot/">matplot</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/memory/">Memory</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mermaid/">Mermaid</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/misc/">Misc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/ml/">ML</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/mosfet/">Mosfet</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/network/">Network</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/nn/">NN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pandoc/">Pandoc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/pca/">PCA</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/probability/">Probability</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/productive/">Productive</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/program/">Program</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/programming/">Programming</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/python/">Python</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/qt/">Qt</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/random-variable/">Random Variable</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rcnn/">RCNN</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/rust/">Rust</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/security/">Security</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/software/">Software</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/std/">Std</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/svd/">Svd</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/tool/">Tool</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/usb/">USB</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vim/">Vim</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpn/">Vpn</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/vpnc/">Vpnc</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/xterm/">xterm</a>
+        
+        <a class="post-tag" href="https://zongpitt.com/tags/zsh/">Zsh</a>
+        
+    </div>
+</div>
+</div><div id="search-result-wrapper" class="d-flex justify-content-center unloaded">
+    <div class="col-12 col-sm-11 post-content">
+        <div id="search-hints"></div>
+        <div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3 col-12"></div>
+    </div>
+</div>
+
+<script src="/js/fuse.min.js"></script>
+<script src="/js/fastsearch.js"></script>
+
+
+</div>
+        <div id="mask"></div>
+        <a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button"
+            style="display: none">
+            <i class="fas fa-angle-up"></i>
+        </a>
+    </div>
+    
+</body>
+
+</html>
