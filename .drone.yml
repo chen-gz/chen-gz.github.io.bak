@@ -12,9 +12,13 @@ steps:
   commands:
     - git submodule update --init --recursive
     - R -q -e "blogdown::build_site()"
-    - pwd
+    # - pwd
     - cd ..
+    - echo $SSH_KEY > ~/.ssh/id_rsa
+    - chmod 400 ~/.ssh/id_rsa
     - git clone git@github.com:chen-gz/chen-gz.github.io.git blog
     - cd blog
     - git checkout gh-page
     - rm -rf *
+    - mv src/public/* ./
+
