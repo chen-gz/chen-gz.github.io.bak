@@ -8,6 +8,24 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 01 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zongpitt.com/papa-rudin/ch-7/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Differentiable Transformations</title>
+      <link>https://zongpitt.com/papa-rudin/ch-7/3-differentiable-transformations/</link>
+      <pubDate>Fri, 13 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/papa-rudin/ch-7/3-differentiable-transformations/</guid>
+      <description>7.22 Definitions Suppose \(V\) is an open set in \(R^k, T\) maps \(V\) into \(R^k\), and \(x \in V\). If there exists a linear operator \(A\) on \(R^k\) (i.e., a linear mapping of \(R^k\) into \(R^k\), as in Definition 2.1) such that \[ \lim _{h \rightarrow 0} \frac{|T(x+h)-T(x)-A h|}{|h|}=0 \] (where, of course, \(h \in R^k\) ), then we say that \(T\) is differentiable at \(x\), and define \[ T^{\prime}(x)=A \text {.</description>
+    </item>
+    
+    <item>
+      <title>The Fundamental Theorem of Calculus</title>
+      <link>https://zongpitt.com/papa-rudin/ch-7/2-the-fundamental-theorem-of-calculus/</link>
+      <pubDate>Fri, 13 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/papa-rudin/ch-7/2-the-fundamental-theorem-of-calculus/</guid>
+      <description>7.16 This theorem concerns functions defined on some compact interval \([a, b]\) in \(R^1\). It has two parts. The first asserts, roughly speaking, that the derivative of the indefinite integral of a function is that same function. We dealt with this in Theorem 7.11. The second part goes the other way: one returns to the original function by integrating its derivative. More precisely \[ f(x)-f(a)=\int_a^x f^{\prime}(t) d t \quad(a \leq x \leq b) .</description>
+    </item>
+    
+    <item>
       <title>Derivatives of Measures</title>
       <link>https://zongpitt.com/papa-rudin/ch-7/1-derivatives-of-measures/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
