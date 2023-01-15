@@ -239,6 +239,364 @@ class="math display">\[
 \]</span> The following lemma seems geometrically obvious. Its proof
 depends on the Brouwer fixed point theorem. One can avoid the use of
 this theorem by imposing</p>
+<p>stronger hypotheses on <span class="math inline">\(F\)</span>, for
+example, by assuming that <span class="math inline">\(F\)</span> is an
+open mapping. But this would lead to unnecessarily strong assumptions in
+Theorem 7.26.</p>
+<h3 id="lemma">7.23 Lemma</h3>
+<p>Let <span class="math inline">\(S=\{x:|x|=1\}\)</span> be the sphere
+in <span class="math inline">\(R^k\)</span> that is the boundary of the
+open unit ball <span class="math inline">\(B=B(0,1)\)</span>. If <span
+class="math inline">\(F: \bar{B} \rightarrow R^k\)</span> is continuous,
+<span class="math inline">\(0&lt;\epsilon&lt;1\)</span>, and <span
+class="math display">\[
+|F(x)-x|&lt;\epsilon
+\]</span> for all <span class="math inline">\(x \in S\)</span>, then
+<span class="math inline">\(F(B) \supset B(0,1-\epsilon)\)</span>.</p>
+<p>Proof Assume, to reach a contradiction, that some point <span
+class="math inline">\(a \in B(0,1-\epsilon)\)</span> is not in <span
+class="math inline">\(F(B)\)</span>. By (1), <span
+class="math inline">\(|F(x)|&gt;1-\epsilon\)</span> if <span
+class="math inline">\(x \in S\)</span>. Thus <span
+class="math inline">\(a\)</span> is not in <span
+class="math inline">\(F(S)\)</span>, and therefore <span
+class="math inline">\(a \neq F(x)\)</span>, for every <span
+class="math inline">\(x \in \bar{B}\)</span>. This enables us to define
+a continuous map <span class="math inline">\(G: \bar{B} \rightarrow
+\bar{B}\)</span> by <span class="math display">\[
+G(x)=\frac{a-F(x)}{|a-F(x)|}
+\]</span> If <span class="math inline">\(x \in S\)</span>, then <span
+class="math inline">\(x \cdot x=|x|^2=1\)</span>, so that <span
+class="math display">\[
+x \cdot(a-F(x))=x \cdot a+x \cdot(x-F(x))-1&lt;|a|+\epsilon-1&lt;0
+\]</span> This shows that <span class="math inline">\(x \cdot
+G(x)&lt;0\)</span>, hence <span class="math inline">\(x \neq
+G(x)\)</span>.</p>
+<p>If <span class="math inline">\(x \in B\)</span>, then obviously <span
+class="math inline">\(x \neq G(x)\)</span>, simply because <span
+class="math inline">\(G(x) \in S\)</span>.</p>
+<p>Thus <span class="math inline">\(G\)</span> fixes no point of <span
+class="math inline">\(\bar{B}\)</span>, contrary to Brouwer’s theorem
+which states that every continuous map of <span
+class="math inline">\(\bar{B}\)</span> into <span
+class="math inline">\(\bar{B}\)</span> has at least one fixed point.</p>
+<h3 id="theorem">7.24 Theorem</h3>
+<p>If (a) <span class="math inline">\(V\)</span> is open in <span
+class="math inline">\(R^k\)</span> (b) <span class="math inline">\(T: V
+\rightarrow R^k\)</span> is continuous, and (c) <span
+class="math inline">\(T\)</span> is differentiable at some point <span
+class="math inline">\(x \in V\)</span>, then <span
+class="math display">\[
+\lim _{r \rightarrow 0} \frac{m(T(B(x, r)))}{m(B(x,
+r))}=\Delta\left(T^{\prime}(x)\right) .
+\]</span> Note that <span class="math inline">\(T(B(x, r))\)</span> is
+Lebesgue measurable; in fact, it is <span
+class="math inline">\(\sigma\)</span>-compact, because <span
+class="math inline">\(B(x, r)\)</span> is <span
+class="math inline">\(\sigma\)</span>-compact and <span
+class="math inline">\(T\)</span> is continuous.</p>
+<p>Proof Assume, without loss of generality, that <span
+class="math inline">\(x=0\)</span> and <span
+class="math inline">\(T(x)=0\)</span>. Put <span
+class="math inline">\(A=T^{\prime}(0)\)</span></p>
+<p>The following elementary fact about linear operators on
+finitedimensional vector spaces will be used: A linear operator <span
+class="math inline">\(A\)</span> on <span
+class="math inline">\(R^k\)</span> is one-to-one if and only if the
+range of <span class="math inline">\(A\)</span> is all of <span
+class="math inline">\(R^k\)</span>. In that case, the inverse <span
+class="math inline">\(A^{-1}\)</span> of <span
+class="math inline">\(A\)</span> is also linear.</p>
+<p>Accordingly, we split the proof into two cases.</p>
+<p>CASE I <span class="math inline">\(A\)</span> is one-to-one. Define
+<span class="math display">\[
+F(x)=A^{-1} T(x) \quad(x \in V) .
+\]</span> Then <span class="math inline">\(F^{\prime}(0)=A^{-1}
+T^{\prime}(0)=A^{-1} A=I\)</span>, the identity operator. We shall prove
+that <span class="math display">\[
+\lim _{r \rightarrow 0} \frac{m(F(B(0, r)))}{m(B(0, r))}=1 .
+\]</span> Since <span class="math inline">\(T(x)=A F(x)\)</span>, we
+have <span class="math display">\[
+m(T(B))=m(A(F(B)))=\Delta(A) m(F(B))
+\]</span> for every ball <span class="math inline">\(B\)</span>, by
+<span class="math inline">\(7.22(3)\)</span>. Hence (3) will give the
+desired result. Choose <span
+class="math inline">\(\epsilon&gt;0\)</span>. Since <span
+class="math inline">\(F(0)=0\)</span> and <span
+class="math inline">\(F^{\prime}(0)=I\)</span>, there exists a <span
+class="math inline">\(\delta&gt;0\)</span> such that <span
+class="math inline">\(0&lt;|x|&lt;\delta\)</span> implies <span
+class="math display">\[
+|F(x)-x|&lt;\epsilon|x| .
+\]</span> We claim that the inclusions <span class="math display">\[
+B(0,(1-\epsilon) r) \subset F(B(0, r)) \subset B(0,(1+\epsilon) r)
+\]</span> hold if <span class="math inline">\(0&lt;r&lt;\delta\)</span>.
+The first of these follows from Lemma 7.23, applied to <span
+class="math inline">\(B(0, r)\)</span> in place of <span
+class="math inline">\(B(0,1)\)</span>, because <span
+class="math inline">\(|F(x)-x|&lt;\epsilon r\)</span> for all <span
+class="math inline">\(x\)</span> with <span
+class="math inline">\(|x|=r\)</span>. The second follows directly from
+(5), since <span
+class="math inline">\(|F(x)|&lt;(1+\epsilon)|x|\)</span>. It is clear
+that (6) implies <span class="math display">\[
+(1-\epsilon)^k \leq \frac{m(F(B(0, r)))}{m(B(0, r))} \leq(1+\epsilon)^k
+\]</span> and this proves (3).</p>
+<p>CASE II <span class="math inline">\(A\)</span> is not one-to-one. In
+this case, <span class="math inline">\(A\)</span> maps <span
+class="math inline">\(R^k\)</span> into a subspace of lower dimension,
+i.e., into a set of measure 0. Given <span
+class="math inline">\(\epsilon&gt;0\)</span>, there is therefore an
+<span class="math inline">\(\eta&gt;0\)</span> such that <span
+class="math inline">\(m\left(E_\eta\right)&lt;\epsilon\)</span> if <span
+class="math inline">\(E_\eta\)</span> is the set of all points in <span
+class="math inline">\(R^k\)</span> whose distance from <span
+class="math inline">\(A(B(0,1))\)</span> is less than <span
+class="math inline">\(\eta\)</span>. Since <span
+class="math inline">\(A=T^{\prime}(0)\)</span>, there is a <span
+class="math inline">\(\delta&gt;0\)</span> such that <span
+class="math inline">\(|x|&lt;\delta\)</span> implies <span
+class="math display">\[
+|T(x)-A x| \leq \eta|x| .
+\]</span> If <span class="math inline">\(r&lt;\delta\)</span>, then
+<span class="math inline">\(T(B(0, r))\)</span> lies therefore in the
+set <span class="math inline">\(E\)</span> that consists of the points
+whose distance from <span class="math inline">\(A(B(0, r))\)</span> is
+less than <span class="math inline">\(\eta r\)</span>. Our choice of
+<span class="math inline">\(\eta\)</span> shows that <span
+class="math inline">\(m(E)&lt;\epsilon r^k\)</span>. Hence <span
+class="math display">\[
+m(T(B(0, r)))&lt;\epsilon r^k \quad(0&lt;r&lt;\delta) .
+\]</span> Since <span class="math inline">\(r^k=m(B(0, r)) /
+m(B(0,1)),(9)\)</span> implies that <span class="math display">\[
+\lim _{r \rightarrow 0} \frac{m(T(B(0, r)))}{m(B(0, r))}=0 .
+\]</span> This proves (1), since <span
+class="math inline">\(\Delta\left(T^{\prime}(0)\right)=\Delta(A)=0\)</span>.</p>
+<h3 id="lemma-1">7.25 Lemma</h3>
+<p>Suppose <span class="math inline">\(E \subset R^k, m(E)=0, T\)</span>
+maps <span class="math inline">\(E\)</span> into <span
+class="math inline">\(R^k\)</span>, and <span class="math display">\[
+\lim \sup \frac{|T(y)-T(x)|}{|y-x|}&lt;\infty
+\]</span> for every <span class="math inline">\(x \in E\)</span>, as
+<span class="math inline">\(y\)</span> tends to <span
+class="math inline">\(x\)</span> within <span
+class="math inline">\(E\)</span>.</p>
+<p>Then <span class="math inline">\(m(T(E))=0\)</span>.</p>
+<p>Proof Fix positive integers <span class="math inline">\(n\)</span>
+and <span class="math inline">\(p\)</span>, let <span
+class="math inline">\(F=F_{n, p}\)</span> be the set of all <span
+class="math inline">\(x \in E\)</span> such that <span
+class="math display">\[
+|T(y)-T(x)| \leq n|y-x|
+\]</span> for all <span class="math inline">\(y \in B(x, 1 / p) \cap
+E\)</span>, and choose <span
+class="math inline">\(\epsilon&gt;0\)</span>. Since <span
+class="math inline">\(m(F)=0, F\)</span> can be covered by balls <span
+class="math inline">\(B_i=B\left(x_i, r_i\right)\)</span>, where <span
+class="math inline">\(x_i \in F, r_i&lt;1 / p\)</span>, in such a way
+that <span class="math inline">\(\sum
+m\left(B_i\right)&lt;\epsilon\)</span>. (To do this, cover <span
+class="math inline">\(F\)</span> by an open set <span
+class="math inline">\(W\)</span> of small measure, decompose <span
+class="math inline">\(W\)</span> into disjoint boxes of small diameter,
+as in Sec. 2.19, and cover each of those that intersect <span
+class="math inline">\(F\)</span> by a ball whose center lies in the box
+and in <span class="math inline">\(F\)</span>.)</p>
+<p>If <span class="math inline">\(x \in F \cap B_i\)</span> then <span
+class="math inline">\(\left|x_i-x\right|&lt;r_i&lt;1 / p\)</span> and
+<span class="math inline">\(x_i \in F\)</span>. Hence <span
+class="math display">\[
+\left|T\left(x_i\right)-T(x)\right| \leq n\left|x_i-x\right|&lt;n r_i
+\]</span> so that <span class="math inline">\(T\left(F \cap B_i\right)
+\subset B\left(T\left(x_i\right), n r_i\right)\)</span>. Therefore <span
+class="math display">\[
+T(F) \subset \bigcup_i B\left(T\left(x_i\right), n r_i\right) .
+\]</span> The measure of this union is at most <span
+class="math display">\[
+\sum_i m\left(B\left(T\left(x_i\right), n r_i\right)=n^k \sum_i
+m\left(B_i\right)&lt;n^k \epsilon\right.
+\]</span> Since Lebesgue measure is complete and <span
+class="math inline">\(\epsilon\)</span> was arbitrary, it follows that
+<span class="math inline">\(T(F)\)</span> is measurable and <span
+class="math inline">\(m(T(F))=0\)</span>.</p>
+<p>To complete the proof, note that <span
+class="math inline">\(E\)</span> is the union of the countable
+collec<span class="math inline">\(\operatorname{tion}\left\{F_{n,
+p}\right\}\)</span></p>
+<p>Here is a special case of the lemma:</p>
+<p>If <span class="math inline">\(V\)</span> is open in <span
+class="math inline">\(R^k\)</span> and <span class="math inline">\(T: V
+\rightarrow R^k\)</span> is differentiable at every point of <span
+class="math inline">\(V\)</span>, then <span
+class="math inline">\(T\)</span> maps sets of measure 0 to sets of
+measure 0 .</p>
+<p>We now come to the change-of-variables theorem.</p>
+<h3 id="theorem-1">7.26 Theorem</h3>
+<p>Suppose that</p>
+<ol type="i">
+<li><span class="math inline">\(X \subset V \subset R^k, V\)</span> is
+open, <span class="math inline">\(T: V \rightarrow R^k\)</span> is
+continuous;</li>
+<li><span class="math inline">\(X\)</span> is Lebesgue measurable, <span
+class="math inline">\(T\)</span> is one-to-one on <span
+class="math inline">\(X\)</span>, and <span
+class="math inline">\(T\)</span> is differentiable at every point of
+<span class="math inline">\(X\)</span>;</li>
+<li><span class="math inline">\(m(T(V-X))=0\)</span>. Then, setting
+<span class="math inline">\(Y=T(X)\)</span>, <span
+class="math display">\[
+\int_Y f d m=\int_X(f \circ T)\left|J_T\right| d m
+\]</span> for every measurable f: <span class="math inline">\(R^k
+\rightarrow[0, \infty]\)</span>.</li>
+</ol>
+<p>The case <span class="math inline">\(X=V\)</span> is perhaps the most
+interesting one. As regards condition (iii), it holds, for instance,
+when <span class="math inline">\(m(V-X)=0\)</span> and <span
+class="math inline">\(T\)</span> satisfies the hypotheses of Lemma <span
+class="math inline">\(7.25\)</span> on <span
+class="math inline">\(V-X\)</span>.</p>
+<p>The proof has some elements in common with that of the implication
+<span class="math inline">\((b) \rightarrow(c)\)</span> in Theorem <span
+class="math inline">\(7.18\)</span>.</p>
+<p>It will be important in this proof to distinguish between Borel sets
+and Lebesgue measurable sets. The <span
+class="math inline">\(\sigma\)</span>-algebra consisting of the Lebesgue
+measurable subsets of <span class="math inline">\(R^k\)</span> will be
+denoted by <span class="math inline">\(\mathfrak{M}\)</span>.</p>
+<p>Proof We break the proof into the following three steps: (I) If <span
+class="math inline">\(E \in \mathfrak{M}\)</span> and <span
+class="math inline">\(E \subset V\)</span>, then <span
+class="math inline">\(T(E) \in \mathfrak{M}\)</span>. (II) For every
+<span class="math inline">\(E \in \mathfrak{M}\)</span>, <span
+class="math display">\[
+m(T(E \cap X))=\int_X \chi_E\left|J_T\right| d m .
+\]</span> (III) For every <span class="math inline">\(A \in
+\mathfrak{M}\)</span>, <span class="math display">\[
+\int_Y \chi_A d m=\int_X\left(\chi_A \circ T\right)\left|J_T\right| d m
+.
+\]</span> If <span class="math inline">\(E_0 \in \mathfrak{M}, E_0
+\subset V\)</span>, and <span
+class="math inline">\(m\left(E_0\right)=0\)</span>, then <span
+class="math inline">\(m\left(T\left(E_0-X\right)\right)=0\)</span> by
+(iii), and <span class="math inline">\(m\left(T\left(E_0 \cap
+X\right)\right)=0\)</span> by Lemma <span
+class="math inline">\(7.25\)</span>. Thus <span
+class="math inline">\(m\left(T\left(E_0\right)\right)=0\)</span>.</p>
+<p>If <span class="math inline">\(E_1 \subset V\)</span> is an <span
+class="math inline">\(F_\sigma\)</span>, then <span
+class="math inline">\(E_1\)</span> is <span
+class="math inline">\(\sigma\)</span>-compact, hence <span
+class="math inline">\(T\left(E_1\right)\)</span> is <span
+class="math inline">\(\sigma\)</span>-compact, because <span
+class="math inline">\(T\)</span> is continuous. Thus <span
+class="math inline">\(T\left(E_1\right) \in \mathfrak{M}\)</span>.</p>
+<p>Since every <span class="math inline">\(E \in \mathfrak{M}\)</span>
+is the union of an <span class="math inline">\(F_\sigma\)</span> and a
+set of measure 0 (Theorem 2.20), (I) is proved. To prove (II), let <span
+class="math inline">\(n\)</span> be a positive integer, and put <span
+class="math display">\[
+V_n=\{x \in V:|T(x)|&lt;n\}, \quad X_n=X \cap V_n .
+\]</span> Because of (I), we can define <span class="math display">\[
+\mu_n(E)=m\left(T\left(E \cap X_n\right)\right) \quad(E \in
+\mathfrak{M}) .
+\]</span> Since <span class="math inline">\(T\)</span> is one-to-one on
+<span class="math inline">\(X_n\)</span>, the countable additivity of
+<span class="math inline">\(m\)</span> shows that <span
+class="math inline">\(\mu_n\)</span> is a measure on <span
+class="math inline">\(\mathfrak{M}\)</span>. Also, <span
+class="math inline">\(\mu_n\)</span> is bounded (this was the reason for
+replacing <span class="math inline">\(X\)</span> temporarily by <span
+class="math inline">\(X_n\)</span> ), and <span
+class="math inline">\(\mu_n \ll m\)</span>, by another application of
+Lemma 7.25.</p>
+<p>Theorem <span class="math inline">\(7.8\)</span> tells us therefore
+that <span class="math inline">\(\left(D \mu_n\right)(x)\)</span> exists
+a.e. <span class="math inline">\([m]\)</span>, that <span
+class="math inline">\(D \mu_n \in L^1(m)\)</span>, and that <span
+class="math display">\[
+\mu_n(E)=\int_E\left(D \mu_n\right) d m \quad(E \in \mathfrak{M}) .
+\]</span> We claim next that <span class="math display">\[
+\left(D \mu_n\right)(x)=\left|J_T(x)\right| \quad\left(x \in X_n\right)
+\]</span> To see this, fix <span class="math inline">\(x \in
+X_n\)</span>, and note that <span class="math inline">\(B(x, r) \subset
+V_n\)</span> for all sufficiently small <span
+class="math inline">\(r&gt;0\)</span>, because <span
+class="math inline">\(V_n\)</span> is open. Since <span
+class="math inline">\(V_n-X_n \subset V-X\)</span>, hypothesis (iii)
+enables us to replace <span class="math inline">\(X_n\)</span> by <span
+class="math inline">\(V_n\)</span> in (3) without changing <span
+class="math inline">\(\mu_n(E)\)</span>. Hence, for small <span
+class="math inline">\(r&gt;0\)</span>, <span class="math display">\[
+\mu_n(B(x, r))=m(T(B(x, r))) .
+\]</span> If we divide both sides of <span
+class="math inline">\((6)\)</span> by <span class="math inline">\(m(B(x,
+r))\)</span> and refer to Theorem <span
+class="math inline">\(7.24\)</span> and formula 7.22(6), we obtain
+(5).</p>
+<p>Since (3) implies that <span
+class="math inline">\(\mu_n(E)=\mu_n\left(E \cap X_n\right)\)</span>, it
+follows from (3), (4), and (5) that <span class="math display">\[
+m\left(T\left(E \cap X_n\right)\right)=\int_{X_n} \chi_E\left|J_T\right|
+d m \quad(E \in \mathfrak{M}) .
+\]</span> If we apply the monotone convergence theorem to (7), letting
+<span class="math inline">\(n \rightarrow \infty\)</span>, we obtain
+(II).</p>
+<p>We begin the proof of (III) by letting <span
+class="math inline">\(A\)</span> be a Borel set in <span
+class="math inline">\(R^k\)</span>. Put <span class="math display">\[
+E=T^{-1}(A)=\{x \in V: T(x) \in A\}
+\]</span> Then <span class="math inline">\(\chi_E=\chi_A \circ
+T\)</span>. Since <span class="math inline">\(\chi_A\)</span> is a Borel
+function and <span class="math inline">\(T\)</span> is continuous, <span
+class="math inline">\(\chi_E\)</span> is a Borel function (Theorem
+1.12), hence <span class="math inline">\(E \in \mathfrak{M}\)</span>.
+Also <span class="math display">\[
+T(E \cap X)=A \cap Y
+\]</span> which implies, by (II), that <span class="math display">\[
+\int_Y \chi_A d m=m(T(E \cap X))=\int_X\left(\chi_A \circ
+T\right)\left|J_T\right| d m .
+\]</span> Finally, if <span class="math inline">\(N \in
+\mathfrak{M}\)</span> and <span class="math inline">\(m(N)=0\)</span>,
+there is a Borel set <span class="math inline">\(A \supset N\)</span>
+with <span class="math inline">\(m(A)=0\)</span>. For this <span
+class="math inline">\(A,(10)\)</span> shows that <span
+class="math inline">\(\left(\chi_A \circ
+T\right)\left|J_T\right|=0\)</span> a.e. <span
+class="math inline">\([m]\)</span>. Since <span class="math inline">\(0
+\leq\)</span> <span class="math inline">\(\chi_N \leq \chi_A\)</span>,
+it follows that both integrals in (10) are 0 if <span
+class="math inline">\(A\)</span> is replaced by <span
+class="math inline">\(N\)</span>. Since every Lebesgue measurable set is
+the disjoint union of a Borel set and a set of measure 0 , (10) holds
+for every <span class="math inline">\(A \in \mathfrak{M}\)</span>. This
+proves (III).</p>
+<p>Once we have (III), it is clear that (1) holds for every nonnegative
+Lebesgue measurable simple function <span
+class="math inline">\(f\)</span>. Another application of the monotone
+convergence theorem completes the proof.</p>
+<p>Note that we did not prove that <span class="math inline">\(f \circ
+T\)</span> is Lebesgue measurable for all Lebesgue measurable <span
+class="math inline">\(f\)</span>. It need not be; see Exercise 8. What
+the proof does establish is the Lebesgue measurability of the product
+<span class="math inline">\((f \circ T)\left|J_T\right|\)</span>. Here
+is a special case of the theorem:</p>
+<p>Suppose <span class="math inline">\(\varphi:[a, b]
+\rightarrow[\alpha, \beta]\)</span> is <span
+class="math inline">\(\mathrm{AC}\)</span>, monotonic, <span
+class="math inline">\(\varphi(a)=\alpha, \varphi(b)=\beta\)</span>, and
+<span class="math inline">\(f \geq 0\)</span> is Lebesgue measurable.
+Then <span class="math display">\[
+\int_\alpha^\beta f(t) d t=\int_a^b f(\varphi(x)) \varphi^{\prime}(x) d
+x .
+\]</span> To derive this from Theorem 7.26, put <span
+class="math inline">\(V=(a, b), T=\varphi\)</span>, let <span
+class="math inline">\(\Omega\)</span> be the union of the maximal
+segments on which <span class="math inline">\(\varphi\)</span> is
+constant (if there are any) and let <span
+class="math inline">\(X\)</span> be the set of all <span
+class="math inline">\(x \in V-\Omega\)</span> where <span
+class="math inline">\(\varphi^{\prime}(x)\)</span> exists (and is
+finite).</p>
 
     </div>
     
@@ -284,11 +642,11 @@ this theorem by imposing</p>
     <div class="panel-heading">Recently Updated</div>
     <ul class="post-content pl-3 pb-1 ml-1 mt-2">
           
+        <li><a href="https://zongpitt.com/papa-rudin/ch-7/3-differentiable-transformations/">Differentiable Transformations</a></li>
+        
         <li><a href="https://zongpitt.com/papa-rudin/ch-7/1-derivatives-of-measures/">Derivatives of Measures</a></li>
         
         <li><a href="https://zongpitt.com/papa-rudin/ch-7/2-the-fundamental-theorem-of-calculus/">The Fundamental Theorem of Calculus</a></li>
-        
-        <li><a href="https://zongpitt.com/papa-rudin/ch-7/3-differentiable-transformations/">Differentiable Transformations</a></li>
         
         <li><a href="https://zongpitt.com/papa-rudin/ch-6/1-total-variation/">Total Variation</a></li>
         
