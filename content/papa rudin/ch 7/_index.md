@@ -1,5 +1,5 @@
 ---
-title: chapter 6 Differentiation
+title: chapter 7 Differentiation
 date: 2023-01-01
 ---
 
