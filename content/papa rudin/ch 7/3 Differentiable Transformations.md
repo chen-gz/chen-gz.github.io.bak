@@ -149,7 +149,7 @@ T(F) \subset \bigcup_i B\left(T\left(x_i\right), n r_i\right) .
 $$
 The measure of this union is at most
 $$
-\sum_i m\left(B\left(T\left(x_i\right), n r_i\right)=n^k \sum_i m\left(B_i\right)<n^k \epsilon\right.
+\sum_i m \left( B\left(T\left(x_i\right), n r_i\right) \right) =n^k \sum_i m\left(B_i\right)<n^k \epsilon.
 $$
 Since Lebesgue measure is complete and $\epsilon$ was arbitrary, it follows that $T(F)$ is measurable and $m(T(F))=0$.
 
