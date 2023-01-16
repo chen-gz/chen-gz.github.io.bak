@@ -1,5 +1,6 @@
 ---
 titile: 1 Measurability on Cartesian Products
+date: 2023-01-16
 ---
 ### 8.1 Definitions 
 
