@@ -1,7 +1,8 @@
 ---
-titile: 1 Measurability on Cartesian Products
+title: 1 Measurability on Cartesian Products
 date: 2023-01-16
 ---
+
 ### 8.1 Definitions 
 
 If $X$ and $Y$ are two sets, their cartesian product $X \times Y$ is the set of all ordered pairs $(x, y)$, with $x \in X$ and $y \in Y$. If $A \subset X$ and $B \subset Y$, it follows that $A \times B \subset X \times Y$. We call any set of the form $A \times B$ a rectangle in $X \times Y$.
