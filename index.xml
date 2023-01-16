@@ -6,7 +6,17 @@
     <description>Recent content on Guangzong Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 13 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zongpitt.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 16 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zongpitt.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://zongpitt.com/papa-rudin/ch-8/1-measurability-on-cartesian-products/</link>
+      <pubDate>Mon, 16 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/papa-rudin/ch-8/1-measurability-on-cartesian-products/</guid>
+      <description>8.1 Definitions If \(X\) and \(Y\) are two sets, their cartesian product \(X \times Y\) is the set of all ordered pairs \((x, y)\), with \(x \in X\) and \(y \in Y\). If \(A \subset X\) and \(B \subset Y\), it follows that \(A \times B \subset X \times Y\). We call any set of the form \(A \times B\) a rectangle in \(X \times Y\).
+Suppose now that \((X, \mathscr{S})\) and \((Y, \mathscr{T})\) are measurable spaces.</description>
+    </item>
+    
     <item>
       <title>Differentiable Transformations</title>
       <link>https://zongpitt.com/papa-rudin/ch-7/3-differentiable-transformations/</link>
@@ -2914,16 +2924,6 @@ def lcs(a, b): c = [[0 for i in range(len(a)+1)] for i in range(len(b)+1)] for i
       
       <guid>https://zongpitt.com/algorithm/primes/</guid>
       <description>#include &amp;lt;cstring&amp;gt; #define maxn 555555 //素数保存在prime数组 int mark[maxn], prime[maxn], res; void get_prime(int n) { //从2----n的素数 memset(mark, 0, sizeof(mark)); res = 0; for (int i = 2; i &amp;lt;= n; i++) { if (!mark[i]) mark[i] = prime[res++] = i; for (int j = 0; j &amp;lt; res &amp;amp;&amp;amp; prime[j] * i &amp;lt;= n; j++) { mark[i*prime[j]] = prime[j]; if (i%prime[j] == 0) break; } } } </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://zongpitt.com/papa-rudin/ch-8/1-measurability-on-cartesian-products/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://zongpitt.com/papa-rudin/ch-8/1-measurability-on-cartesian-products/</guid>
-      <description>8.1 Definitions If \(X\) and \(Y\) are two sets, their cartesian product \(X \times Y\) is the set of all ordered pairs \((x, y)\), with \(x \in X\) and \(y \in Y\). If \(A \subset X\) and \(B \subset Y\), it follows that \(A \times B \subset X \times Y\). We call any set of the form \(A \times B\) a rectangle in \(X \times Y\).
-Suppose now that \((X, \mathscr{S})\) and \((Y, \mathscr{T})\) are measurable spaces.</description>
     </item>
     
     <item>
