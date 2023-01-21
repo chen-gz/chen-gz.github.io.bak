@@ -8,6 +8,16 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 01 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zongpitt.com/papa-rudin/ch-8/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>3 The Fubini Theorem</title>
+      <link>https://zongpitt.com/papa-rudin/ch-8/3-the-fubini-theorem/</link>
+      <pubDate>Thu, 19 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/papa-rudin/ch-8/3-the-fubini-theorem/</guid>
+      <description>8.8 Theorem Let \((X, \mathscr{S}, \mu)\) and \((Y, \mathscr{T}, \lambda)\) be \(\sigma\)-finite measure spaces, and let \(f\) be an \((\mathscr{S} \times \mathscr{T})\)-measurable function on \(X \times Y\).
+If \(0 \leq f \leq \infty\), and if \[ \varphi(x)=\int_Y f_x d \lambda, \quad \psi(y)=\int_X f^y d \mu \quad(x \in X, y \in Y), \] then \(\varphi\) is \(\mathscr{S}\)-measurable, \(\psi\) is \(\mathscr{T}\)-measurable, and \[ \int_X \varphi d \mu=\int_{X \times Y} f d(\mu \times \lambda)=\int_Y \psi d \lambda .</description>
+    </item>
+    
+    <item>
       <title>1 Measurability on Cartesian Products</title>
       <link>https://zongpitt.com/papa-rudin/ch-8/1-measurability-on-cartesian-products/</link>
       <pubDate>Mon, 16 Jan 2023 00:00:00 +0000</pubDate>
@@ -15,6 +25,15 @@
       <guid>https://zongpitt.com/papa-rudin/ch-8/1-measurability-on-cartesian-products/</guid>
       <description>8.1 Definitions If \(X\) and \(Y\) are two sets, their cartesian product \(X \times Y\) is the set of all ordered pairs \((x, y)\), with \(x \in X\) and \(y \in Y\). If \(A \subset X\) and \(B \subset Y\), it follows that \(A \times B \subset X \times Y\). We call any set of the form \(A \times B\) a rectangle in \(X \times Y\).
 Suppose now that \((X, \mathscr{S})\) and \((Y, \mathscr{T})\) are measurable spaces.</description>
+    </item>
+    
+    <item>
+      <title>2 Product Measures</title>
+      <link>https://zongpitt.com/papa-rudin/ch-8/2-product-measures/</link>
+      <pubDate>Mon, 16 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/papa-rudin/ch-8/2-product-measures/</guid>
+      <description>8.6 Theorem Let \((X, \mathscr{S}, \mu)\) and \((Y, \mathscr{T}, \lambda)\) be \(\sigma\)-finite measure spaces. Suppose \(Q \in \mathscr{S} \times \mathscr{T}\). If \[ \varphi(x)=\lambda\left(Q_x\right), \quad \psi(y)=\mu\left(Q^y\right) \] for every \(x \in X\) and \(y \in Y\), then \(\varphi\) is \(\mathscr{S}\)-measurable, \(\psi\) is \(\mathscr{T}\)-measurable, and \[ \int_X \varphi d \mu=\int_Y \psi d \lambda \] Notes: The assumptions on the measure spaces are, more explicitly, that \(\mu\) and \(\lambda\) are positive measures on \(\mathscr{S}\) and \(\mathscr{T}\), respectively, that \(X\) is the union of countably many disjoint sets \(X_n\) with \(\mu\left(X_n\right)&amp;lt;\infty\), and that \(Y\) is the union of countably many disjoint sets \(Y_m\) with \(\lambda\left(Y_m\right)&amp;lt;\infty\).</description>
     </item>
     
   </channel>
