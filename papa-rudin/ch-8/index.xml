@@ -8,6 +8,15 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 01 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zongpitt.com/papa-rudin/ch-8/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>4 Completion of Product Measures</title>
+      <link>https://zongpitt.com/papa-rudin/ch-8/4-completion-of-product-measures/</link>
+      <pubDate>Fri, 20 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://zongpitt.com/papa-rudin/ch-8/4-completion-of-product-measures/</guid>
+      <description>8.10 If \((X, \mathscr{S}, \mu)\) and \((Y, \mathscr{T}, \lambda)\) are complete measure spaces, it need not be true that \((X \times Y, \mathscr{S} \times \mathscr{T}, \mu \times \lambda)\) is complete. There is nothing pathological about this phenomenon: Suppose that there exists an \(A \in \mathscr{S}, A \neq \varnothing\), with \(\mu(A)=0\); and suppose that there exists a \(B \subset Y\) so that \(B \notin \mathscr{T}\). Then \(A \times B \subset A \times Y\), \((\mu \times \lambda)(A \times Y)=0\), but \(A \times B \notin \mathscr{S} \times \mathscr{T}\).</description>
+    </item>
+    
+    <item>
       <title>3 The Fubini Theorem</title>
       <link>https://zongpitt.com/papa-rudin/ch-8/3-the-fubini-theorem/</link>
       <pubDate>Thu, 19 Jan 2023 00:00:00 +0000</pubDate>

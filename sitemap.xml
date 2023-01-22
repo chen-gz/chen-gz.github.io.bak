@@ -2,10 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://zongpitt.com/papa-rudin/ch-8/3-the-fubini-theorem/</loc>
-    <lastmod>2023-01-20T21:34:25-05:00</lastmod>
+    <loc>https://zongpitt.com/papa-rudin/ch-8/4-completion-of-product-measures/</loc>
+    <lastmod>2023-01-22T15:05:06-05:00</lastmod>
   </url><url>
     <loc>https://zongpitt.com/</loc>
+    <lastmod>2023-01-22T15:05:06-05:00</lastmod>
+  </url><url>
+    <loc>https://zongpitt.com/papa-rudin/ch-8/3-the-fubini-theorem/</loc>
     <lastmod>2023-01-20T21:34:25-05:00</lastmod>
   </url><url>
     <loc>https://zongpitt.com/papa-rudin/ch-8/1-measurability-on-cartesian-products/</loc>
